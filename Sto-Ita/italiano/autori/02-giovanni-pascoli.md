@@ -20,11 +20,11 @@ Secondo Pascoli, dentro ogni uomo esiste un fanciullo capace di guardare il mond
 
 Il fanciullino:
 
-- prova meraviglia davanti alle piccole cose;
-- coglie legami segreti tra gli oggetti;
-- vede ciò che gli adulti non notano più;
-- usa un linguaggio semplice ma carico di significati;
-- trasforma la realtà quotidiana in rivelazione poetica.
+- **Prova meraviglia davanti alle piccole cose**: si emoziona per dettagli minuscoli (un fiore, un insetto, un suono) che l'adulto razionale ha imparato a ignorare.
+- **Coglie legami segreti tra gli oggetti**: scopre analogie e corrispondenze nascoste, come fa il poeta simbolista che vede la realtà come una rete di rimandi.
+- **Vede ciò che gli adulti non notano più**: ha lo sguardo nuovo di chi guarda il mondo per la prima volta, libero da abitudini e convenzioni.
+- **Usa un linguaggio semplice ma carico di significati**: parole quotidiane e concrete che però evocano significati profondi e simbolici.
+- **Trasforma la realtà quotidiana in rivelazione poetica**: gli oggetti comuni diventano segni di un mistero più grande, e la poesia è la forma di conoscenza che lo svela.
 
 Questa poetica non significa infantilismo. Il fanciullino è una forma di conoscenza: permette di scoprire il mistero nascosto nelle cose comuni.
 
@@ -34,12 +34,12 @@ Il **nido** è uno dei simboli più importanti di Pascoli.
 
 Indica:
 
-- la famiglia;
-- la casa;
-- la protezione;
-- gli affetti;
-- il desiderio di sicurezza;
-- il rifugio contro la violenza del mondo.
+- **La famiglia**: il nucleo originario di genitori e fratelli, distrutto dalla morte del padre e dei familiari, e poi faticosamente ricostruito con le sorelle Ida e Maria.
+- **La casa**: lo spazio fisico e domestico in cui ci si sente al sicuro, contrapposto all'esterno minaccioso.
+- **La protezione**: la rete di affetti che difende l'individuo dalla durezza e dalla violenza del mondo.
+- **Gli affetti**: i legami profondi e quasi morbosi con i propri cari, considerati l'unico vero valore.
+- **Il desiderio di sicurezza**: il bisogno costante di calore, conforto e familiarità che attraversa tutta la poesia pascoliana.
+- **Il rifugio contro la violenza del mondo**: il nido come barriera contro l'ingiustizia, il caso e la morte, esperienze che hanno segnato la biografia del poeta.
 
 Il nido però è sempre fragile. La morte del padre ha distrutto il nido originario e Pascoli tenta per tutta la vita di ricostruirlo. Per questo nella sua poesia gli affetti familiari sono spesso accompagnati da paura, lutto e senso di minaccia.
 
@@ -51,13 +51,13 @@ La natura non è solo paesaggio bello e armonioso. È piena di segni, suoni, pre
 
 Pascoli spesso parte da dettagli minimi:
 
-- un aratro abbandonato;
-- un gelsomino;
-- un tuono;
-- un lampo;
-- il verso di un animale;
-- una casa lontana;
-- un campo dopo il temporale.
+- **Un aratro abbandonato**: oggetto del lavoro contadino lasciato nel campo, evoca solitudine e attesa (come in *Lavandare*).
+- **Un gelsomino**: fiore notturno che si apre nel buio, simbolo della vita che continua ma anche dell'esclusione del poeta (*Il gelsomino notturno*).
+- **Un tuono**: rumore minaccioso che irrompe dall'esterno e si placa solo nel ritorno alla protezione materna.
+- **Un lampo**: luce improvvisa che svela per un attimo il mondo, immagine di una conoscenza fragile e momentanea.
+- **Il verso di un animale**: rondini, civette, uccelli notturni i cui richiami diventano segnali di morte o presagi inquietanti.
+- **Una casa lontana**: punto di riferimento del nido, intravisto da fuori come promessa di calore irraggiungibile.
+- **Un campo dopo il temporale**: paesaggio in cui torna la quiete, simbolo della pace che segue il dolore (*La mia sera*).
 
 Questi dettagli diventano simboli dell'esistenza.
 
@@ -83,10 +83,10 @@ Il paesaggio esterno rispecchia uno stato d'animo: vuoto, attesa, malinconia.
 
 Pascoli collega il destino del padre a quello di una rondine uccisa mentre torna al nido con il cibo per i piccoli. Il parallelismo è evidente:
 
-- la rondine torna al nido;
-- il padre torna alla famiglia;
-- entrambi vengono uccisi ingiustamente;
-- i piccoli restano ad aspettare.
+- **La rondine torna al nido**: porta il cibo ai rondinotti, compiendo il proprio dovere di madre.
+- **Il padre torna alla famiglia**: cavalca verso casa con i regali per i figli, dopo una giornata al mercato.
+- **Entrambi vengono uccisi ingiustamente**: la rondine viene colpita da un cacciatore, il padre da assassini rimasti impuniti; in entrambi i casi è la violenza cieca del mondo.
+- **I piccoli restano ad aspettare**: i rondinotti nel nido e i figli orfani vivono la stessa attesa vana, simbolo del dolore innocente.
 
 La poesia mostra una visione dolorosa dell'esistenza: il mondo è attraversato da una violenza inspiegabile. Il cielo piange con le stelle cadenti, ma non impedisce il male.
 
@@ -138,15 +138,15 @@ Pascoli rinnova profondamente il linguaggio poetico.
 
 Usa:
 
-- parole semplici e quotidiane;
-- termini tecnici della campagna;
-- nomi precisi di piante e animali;
-- onomatopee;
-- suoni imitativi;
-- frasi brevi;
-- sintassi frammentata;
-- simboli;
-- analogie.
+- **Parole semplici e quotidiane**: lessico comune e domestico, lontano dalla solennità della tradizione classica.
+- **Termini tecnici della campagna**: nomi specifici di attrezzi, lavori agricoli e oggetti rurali, che restituiscono concretezza al paesaggio.
+- **Nomi precisi di piante e animali**: invece di un generico "fiore" o "uccello", Pascoli scrive *gelsomino*, *tamerice*, *rondine*, *assiuolo*, dando consistenza visiva al testo.
+- **Onomatopee**: parole che riproducono i suoni della natura, come il "chiù" dell'assiuolo o il "don don" delle campane.
+- **Suoni imitativi**: scelte foniche che evocano rumori reali (fruscii, soffi, crepitii) anche quando la parola non è propriamente un'onomatopea.
+- **Frasi brevi**: periodi corti, spezzati da virgole e punti, che danno ritmo trattenuto e quasi sospeso.
+- **Sintassi frammentata**: assenza di nessi logici espliciti, accostamenti per giustapposizione, che lasciano spazio al non detto.
+- **Simboli**: oggetti concreti caricati di significati ulteriori (nido, siepe, lampo) tipici della poetica decadente.
+- **Analogie**: accostamenti intuitivi e non logici tra realtà diverse, che svelano legami nascosti tra le cose.
 
 Gianfranco Contini ha sottolineato la grande varietà del linguaggio pascoliano: accanto a parole comuni compaiono termini tecnici, dialettali, latini, infantili e fonosimbolici.
 

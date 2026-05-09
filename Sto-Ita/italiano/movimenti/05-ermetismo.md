@@ -4,11 +4,11 @@
 
 L'**Ermetismo** è una tendenza poetica italiana che si sviluppa soprattutto tra gli anni Trenta e Quaranta del Novecento, in un contesto segnato da:
 
-- crisi delle certezze tradizionali;
-- esperienza traumatica della Prima guerra mondiale;
-- affermazione dei regimi totalitari;
-- censura e controllo della cultura durante il fascismo;
-- bisogno di una poesia lontana dalla retorica ufficiale.
+- **Crisi delle certezze tradizionali**: il positivismo, la fede nel progresso e nei valori liberali entrano in crisi; emergono filosofie del relativismo, dell'irrazionale e dell'angoscia esistenziale.
+- **Trauma della Prima guerra mondiale (1914-1918)**: la "Grande Guerra" rivela la violenza e l'assurdità del moderno, lasciando una generazione segnata dalla perdita e dalla disillusione.
+- **Regimi totalitari**: in tutta Europa si affermano fascismo, nazismo e stalinismo, che soffocano le libertà individuali e impongono un'unica visione del mondo.
+- **Censura fascista**: in Italia il regime controlla stampa, scuola e cultura; i poeti scelgono linguaggi indiretti, allusivi, per sfuggire al controllo e non collaborare alla propaganda.
+- **Necessità di una poesia "altra"**: nasce il bisogno di una poesia lontana dalla retorica ufficiale (dannunziana, patriottica, celebrativa), capace di dire la verità interiore in un'epoca di parole pubbliche false.
 
 Il termine "ermetismo" viene usato nel 1936 dal critico **Francesco Flora** in senso polemico, per indicare una poesia considerata oscura, chiusa, difficile da capire, quasi "ermetica".
 
@@ -22,15 +22,15 @@ L'Ermetismo nasce anche dal rapporto con alcune esperienze europee.
 
 ### Simbolismo francese
 
-Il modello principale è il **simbolismo francese**, soprattutto autori come **Mallarmé**, **Verlaine** e **Rimbaud**.
+Il modello principale è il **simbolismo francese** (seconda metà dell'Ottocento), soprattutto autori come **Stéphane Mallarmé** (teorico della "poesia pura" e della parola assoluta), **Paul Verlaine** (poesia musicale e sfumata) e **Arthur Rimbaud** (visionario, autore di analogie folgoranti e del programma del "poeta veggente").
 
 Dal simbolismo gli ermetici riprendono:
 
-- l'idea che la poesia non debba descrivere la realtà in modo realistico;
-- la fiducia nella forza evocativa della parola;
-- il valore della musica del verso;
-- l'uso di simboli, analogie e immagini allusive;
-- la ricerca di una verità nascosta oltre le apparenze.
+- **Rifiuto del realismo**: la poesia non deve descrivere oggettivamente la realtà esterna, come faceva il naturalismo, ma evocarne il senso nascosto.
+- **Forza evocativa della parola**: la parola non è semplice etichetta delle cose, ma ha un potere magico di suscitare emozioni e visioni nel lettore.
+- **Musicalità del verso**: il suono, il ritmo, la melodia contano quanto il significato; la poesia tende a farsi musica.
+- **Simboli, analogie, immagini allusive**: si comunica per immagini cariche di significati molteplici, non con descrizioni dirette.
+- **Verità nascosta**: si cerca una realtà spirituale o profonda al di là delle apparenze sensibili, accessibile solo attraverso l'intuizione poetica.
 
 ### Poesia pura
 
@@ -56,10 +56,10 @@ La parola poetica non è usata per spiegare, ma per **evocare**.
 
 Ogni parola deve essere:
 
-- essenziale;
-- densa di significato;
-- isolata;
-- capace di aprire molte interpretazioni.
+- **Essenziale**: ridotta al minimo, scelta con precisione assoluta, non sostituibile con un sinonimo.
+- **Densa di significato**: deve concentrare in poco spazio molte risonanze emotive e simboliche.
+- **Isolata**: spesso messa da sola sul verso, circondata dal bianco della pagina, in modo che risuoni con maggior forza.
+- **Polisemica**: capace di aprire più interpretazioni, di non chiudersi in un unico senso univoco.
 
 La poesia diventa una ricerca della parola necessaria, non sostituibile.
 

@@ -10,12 +10,12 @@ Il termine deriva dall'idea di "positivo", cioè concreto, verificabile, fondato
 
 Il Positivismo si basa su alcune idee fondamentali:
 
-- fiducia nella scienza come strumento di conoscenza;
-- importanza dell'osservazione e dell'esperimento;
-- idea di progresso continuo;
-- studio dell'uomo come essere determinato da ambiente, ereditarietà e condizioni sociali;
-- nascita o sviluppo di nuove discipline, come sociologia, psicologia, antropologia e criminologia;
-- influenza della teoria dell'evoluzione di **Charles Darwin**.
+- **fiducia nella scienza come strumento di conoscenza**: solo il sapere scientifico, basato su fatti verificabili, è considerato vero; metafisica e religione vengono escluse dall'ambito del conoscibile;
+- **importanza dell'osservazione e dell'esperimento**: la conoscenza nasce dai dati empirici e dalla loro verifica, secondo il metodo galileiano applicato anche alle scienze umane;
+- **idea di progresso continuo**: la storia dell'umanità è vista come un cammino lineare verso il miglioramento materiale, sociale e morale, sostenuto da scienza e industria;
+- **studio dell'uomo come essere determinato da ambiente, ereditarietà e condizioni sociali**: l'individuo non è libero in senso assoluto, ma è il prodotto di forze esterne e biologiche; principio decisivo per Naturalismo e Verismo;
+- **nascita o sviluppo di nuove discipline, come sociologia, psicologia, antropologia e criminologia**: il metodo scientifico viene esteso alla società (Comte), alla mente (Wundt), alle culture e perfino al delitto (Lombroso);
+- **influenza della teoria dell'evoluzione di Charles Darwin**: l'idea di selezione naturale e lotta per la sopravvivenza viene applicata anche alla società ("darwinismo sociale"), ispirando molta narrativa naturalista e verista.
 
 Secondo questa mentalità, l'uomo non è completamente libero e isolato: è condizionato dal corpo, dalla famiglia, dalla classe sociale, dall'ambiente in cui vive e dalle leggi biologiche. Questa visione avrà conseguenze importanti anche sulla letteratura.
 
@@ -55,11 +55,11 @@ L'idea di **romanzo sperimentale** deriva dal metodo scientifico.
 
 Lo scrittore:
 
-- osserva la realtà;
-- raccoglie documenti;
-- sceglie un ambiente sociale preciso;
-- costruisce personaggi condizionati da ereditarietà e ambiente;
-- mostra le conseguenze di questi condizionamenti.
+- **osserva la realtà**: studia di persona ambienti, mestieri e classi sociali, come uno scienziato che esamina un fenomeno;
+- **raccoglie documenti**: prende appunti, consulta inchieste, statistiche, atti giudiziari per dare base reale alla narrazione (Zola visita miniere, mercati, lavanderie);
+- **sceglie un ambiente sociale preciso**: ogni romanzo si concentra su un mondo definito (operai, contadini, borghesia, demi-monde) di cui descrive condizioni e leggi;
+- **costruisce personaggi condizionati da ereditarietà e ambiente**: i protagonisti non sono liberi, ma plasmati dalla famiglia, dalla classe e dal contesto in cui vivono;
+- **mostra le conseguenze di questi condizionamenti**: la trama segue lo svolgersi inevitabile dei meccanismi sociali e biologici, come una dimostrazione scientifica.
 
 In teoria lo scrittore naturalista dovrebbe essere impersonale, cioè non giudicare direttamente i personaggi. Deve lasciare che i fatti parlino da soli. In realtà, nei romanzi naturalisti è spesso evidente anche una forte denuncia sociale.
 
@@ -71,9 +71,9 @@ Si sviluppa soprattutto negli anni Settanta e Ottanta dell'Ottocento, in un'Ital
 
 Gli autori veristi più importanti sono:
 
-- **Giovanni Verga**;
-- **Luigi Capuana**;
-- **Federico De Roberto**.
+- **Giovanni Verga** (1840-1922): siciliano, è il maggiore scrittore verista; con i *Malavoglia* e *Mastro-don Gesualdo* fonda il "ciclo dei vinti", grande affresco della società italiana attraversata dalla "lotta per la vita".
+- **Luigi Capuana** (1839-1915): siciliano, principale teorico del Verismo, che diffonde le idee di Zola adattandole all'Italia; autore del romanzo *Il marchese di Roccaverdina*, studio quasi clinico dell'ossessione e del rimorso.
+- **Federico De Roberto** (1861-1927): siciliano anch'egli, autore de *I Viceré*, grande romanzo storico-verista sulla decadenza di una famiglia nobile catanese durante il Risorgimento e l'Unità.
 
 ## 7. Naturalismo e Verismo: differenze
 

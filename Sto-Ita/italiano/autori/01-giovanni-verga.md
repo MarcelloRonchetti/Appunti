@@ -32,12 +32,12 @@ Verga vuole rappresentare la realtà in modo oggettivo, senza interventi diretti
 
 I principi fondamentali sono:
 
-- **impersonalità**: l'autore deve sparire;
-- **regressione**: il narratore assume il punto di vista dei personaggi e dell'ambiente;
-- **linguaggio popolare**: modi di dire, proverbi, mentalità collettiva;
-- **pessimismo**: la società è regolata da leggi dure;
-- **lotta per la vita**: i deboli sono schiacciati dai più forti;
-- **ideale dell'ostrica**: chi si stacca dal proprio ambiente rischia di perdersi.
+- **Impersonalità**: l'autore scompare dal racconto, non giudica e non commenta; l'opera deve sembrare "essersi fatta da sé", come se i fatti si raccontassero da soli.
+- **Regressione**: il narratore abbassa il proprio punto di vista fino a coincidere con quello dei personaggi e della comunità rappresentata, adottandone idee, pregiudizi e sensibilità.
+- **Linguaggio popolare**: l'italiano letterario viene contaminato da modi di dire, proverbi, costruzioni sintattiche e cadenze del parlato siciliano, per restituire la mentalità collettiva del paese.
+- **Pessimismo**: la società è regolata da leggi dure e impersonali (denaro, interesse, reputazione) che non lasciano spazio a vere possibilità di riscatto per i più deboli.
+- **Lotta per la vita**: ripresa in chiave sociale del darwinismo, secondo cui in ogni classe i più forti schiacciano i più deboli; il progresso è una selezione che produce sconfitti.
+- **Ideale dell'ostrica**: chi si stacca dal proprio ambiente d'origine, attratto dal miraggio del miglioramento, perde le proprie radici e finisce travolto.
 
 ## 4. L'ideale dell'ostrica
 
@@ -53,11 +53,11 @@ Verga progetta un grande ciclo narrativo, il **Ciclo dei Vinti**, per rappresent
 
 Il progetto comprendeva:
 
-- *I Malavoglia*, dedicato agli umili pescatori;
-- *Mastro-don Gesualdo*, dedicato alla borghesia rurale;
-- *La duchessa di Leyra*;
-- *L'onorevole Scipioni*;
-- *L'uomo di lusso*.
+- ***I Malavoglia*** (1881): la lotta per la vita nel mondo degli umili pescatori siciliani, schiacciati dal debito e dalle disgrazie.
+- ***Mastro-don Gesualdo*** (1889): la sconfitta di un uomo del popolo che riesce ad arricchirsi e a entrare nella borghesia rurale, ma resta isolato e infelice.
+- ***La duchessa di Leyra***: avrebbe dovuto raccontare la sconfitta nell'aristocrazia, attraverso la figlia di Gesualdo entrata nella nobiltà; rimasto incompiuto.
+- ***L'onorevole Scipioni***: progettato per rappresentare il fallimento nella sfera della politica e dell'ambizione parlamentare; mai scritto.
+- ***L'uomo di lusso***: avrebbe chiuso il ciclo con la sconfitta nel mondo dell'arte e del lusso, ai vertici della scala sociale; rimasto solo nei progetti.
 
 Verga completa solo i primi due romanzi.
 
@@ -69,11 +69,11 @@ Il titolo "Vinti" è decisivo: tutti i personaggi che inseguono un miglioramento
 
 Qui Verga mette a punto molte tecniche veriste:
 
-- narratore vicino alla mentalità del paese;
-- personaggi poveri o marginali;
-- forte presenza di giudizi collettivi;
-- linguaggio che imita il parlato;
-- assenza di commento morale dell'autore.
+- **Narratore vicino alla mentalità del paese**: la voce narrante si confonde con quella della comunità, raccontando i fatti come li vedrebbe un compaesano, non un osservatore esterno.
+- **Personaggi poveri o marginali**: contadini, pastori, minatori, donne del popolo; figure escluse dalla letteratura "alta" diventano protagoniste.
+- **Forte presenza di giudizi collettivi**: il "coro" del paese commenta, approva o condanna, esprimendo una morale comune fatta di pregiudizi e proverbi.
+- **Linguaggio che imita il parlato**: sintassi semplice, modi di dire, frasi spezzate e ripetizioni che ricostruiscono la lingua orale della Sicilia rurale.
+- **Assenza di commento morale dell'autore**: Verga non spiega, non pietisce, non condanna; lascia che la durezza dei fatti parli da sé.
 
 ### Rosso Malpelo
 
@@ -125,12 +125,12 @@ La rovina comincia quando la famiglia tenta un piccolo salto economico comprando
 
 Il romanzo parla di:
 
-- crisi della famiglia patriarcale;
-- scontro tra tradizione e modernità;
-- forza distruttiva del progresso;
-- povertà e debito;
-- giudizio della comunità;
-- impossibilità del riscatto sociale.
+- **Crisi della famiglia patriarcale**: l'autorità di padron 'Ntoni si indebolisce, i giovani non riconoscono più i valori dei vecchi e il nucleo familiare si disgrega.
+- **Scontro tra tradizione e modernità**: il mondo chiuso e ripetitivo di Aci Trezza viene scosso dall'arrivo di nuove abitudini, dalla leva militare e dal richiamo della città.
+- **Forza distruttiva del progresso**: il tentativo di entrare nell'economia del commercio (i lupini comprati a credito) precipita la famiglia nella rovina.
+- **Povertà e debito**: il debito con zio Crocifisso diventa una catena che imprigiona i Malavoglia e li espone alla logica spietata del denaro.
+- **Giudizio della comunità**: il paese osserva, mormora e condanna; la perdita della reputazione pesa quanto la perdita economica.
+- **Impossibilità del riscatto sociale**: chi cade non si rialza; anche il ritorno a casa di 'Ntoni non basta a ricucire ciò che è stato spezzato.
 
 ### 'Ntoni
 
@@ -150,8 +150,8 @@ Verga non nega che la società cambi; mostra però il prezzo umano del cambiamen
 
 Il protagonista, **Gesualdo Motta**, è un muratore diventato ricco grazie al lavoro e alla capacità economica. Il titolo contiene già una contraddizione:
 
-- "Mastro" richiama l'origine umile e artigiana;
-- "don" indica il nuovo prestigio sociale.
+- **"Mastro"**: appellativo dato agli artigiani, richiama l'origine umile, manuale e popolare di Gesualdo.
+- **"Don"**: titolo riservato ai notabili e ai signori, segnala la nuova ricchezza e l'aspirazione al prestigio borghese e nobiliare.
 
 Gesualdo vuole salire nella società, ma resta sospeso tra due mondi. I nobili non lo accettano davvero, mentre il popolo lo vede come uno sfruttatore.
 

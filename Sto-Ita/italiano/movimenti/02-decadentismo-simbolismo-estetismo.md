@@ -18,14 +18,14 @@ I decadenti pensano che la realtà visibile non basti. Dietro le cose esistono s
 
 Le caratteristiche principali sono:
 
-- sfiducia nella ragione e nella scienza come strumenti assoluti;
-- attenzione all'inconscio, al sogno, al mistero;
-- interesse per malattia, nevrosi, inquietudine, solitudine;
-- culto della bellezza e dell'arte;
-- rifiuto della morale borghese;
-- figura dell'artista come diverso, isolato, superiore o maledetto;
-- uso di simboli e analogie;
-- musicalità del linguaggio.
+- **Sfiducia nella ragione e nella scienza**: i decadenti rifiutano la pretesa positivista di spiegare tutto con il metodo scientifico, perché la realtà profonda sfugge all'analisi razionale.
+- **Attenzione all'inconscio, al sogno, al mistero**: la verità si cerca in zone oscure della psiche e in esperienze che la coscienza ordinaria non controlla (sogni, allucinazioni, intuizioni).
+- **Interesse per malattia, nevrosi, inquietudine, solitudine**: condizioni considerate "anormali" diventano materia poetica, perché rivelano la fragilità dell'uomo moderno meglio della salute borghese.
+- **Culto della bellezza e dell'arte**: l'arte viene posta al di sopra di ogni altro valore, come unico rifugio dalla volgarità del mondo industriale.
+- **Rifiuto della morale borghese**: le regole del perbenismo e dell'utilità pratica sono viste come ipocrite e soffocanti per l'artista.
+- **Figura dell'artista come diverso, isolato, superiore o maledetto**: il poeta non è più integrato nella società, ma si sente un'eccezione (esteta, veggente, maudit), incompreso e spesso autodistruttivo.
+- **Uso di simboli e analogie**: la poesia non descrive le cose, ma le trasforma in segni che rinviano a significati nascosti, collegando piani lontani della realtà.
+- **Musicalità del linguaggio**: il suono delle parole conta quanto il significato; il verso vuole evocare per ritmo e sonorità, come una melodia.
 
 L'arte non deve solo descrivere la realtà: deve suggerire ciò che è nascosto dietro la realtà.
 
@@ -37,10 +37,10 @@ La sua raccolta più importante è *I fiori del male* (1857). Il titolo contiene
 
 Baudelaire vive la modernità come esperienza ambivalente:
 
-- la città è affascinante ma alienante;
-- la bellezza nasce anche dal brutto e dal corrotto;
-- il poeta è attratto dall'assoluto ma cade nello spleen;
-- l'arte cerca salvezza, ma non elimina il male.
+- **La città è affascinante ma alienante**: Parigi è il nuovo paesaggio della poesia, piena di stimoli e folle, ma rende l'individuo anonimo e solo (è il poeta del *flâneur*, l'osservatore che vaga tra la folla).
+- **La bellezza nasce anche dal brutto e dal corrotto**: Baudelaire cerca poesia in ciò che è considerato basso o ripugnante (carogne, prostitute, miseria), perché anche il male contiene una verità estetica.
+- **Il poeta è attratto dall'assoluto ma cade nello spleen**: l'aspirazione all'ideale (bellezza, infinito, purezza) convive con la ricaduta nell'angoscia e nella noia opprimente.
+- **L'arte cerca salvezza, ma non elimina il male**: la poesia può dare senso all'esperienza, ma non guarisce il dolore esistenziale né cancella il peccato.
 
 ## 5. Corrispondenze
 
@@ -74,14 +74,19 @@ I simbolisti rifiutano la poesia descrittiva e realistica. Secondo loro la poesi
 
 Caratteristiche:
 
-- uso di simboli;
-- analogie tra realtà lontane;
-- musicalità;
-- linguaggio allusivo;
-- centralità della parola poetica;
-- ricerca del mistero oltre le apparenze.
+- **Uso di simboli**: oggetti e immagini concrete che rimandano a significati spirituali o psicologici nascosti, senza spiegarli direttamente.
+- **Analogie tra realtà lontane**: la poesia accosta elementi distanti (un profumo e un ricordo, un colore e un suono) per rivelare corrispondenze segrete (sinestesie).
+- **Musicalità**: il verso punta sul ritmo, sulle assonanze e sulle ripetizioni; Verlaine dirà "De la musique avant toute chose" ("La musica prima di tutto").
+- **Linguaggio allusivo**: la poesia non nomina le cose direttamente, ma le suggerisce per accenni, lasciando spazio all'evocazione e all'interpretazione.
+- **Centralità della parola poetica**: la singola parola è scelta per il suo potere evocativo, non per descrivere; la poesia si autogiustifica come pura creazione linguistica.
+- **Ricerca del mistero oltre le apparenze**: scopo della poesia è cogliere l'invisibile, l'ignoto, ciò che sta dietro la superficie sensibile del mondo.
 
-Tra gli autori principali: **Baudelaire**, **Verlaine**, **Rimbaud**, **Mallarmé**.
+Tra gli autori principali:
+
+- **Charles Baudelaire**: precursore del Simbolismo con *I fiori del male* (1857), introduce il concetto di corrispondenze e la figura del poeta moderno diviso tra spleen e ideale.
+- **Paul Verlaine**: poeta della musicalità e della sfumatura, autore di *Romanze senza parole* e teorico del verso fluido e indefinito.
+- **Arthur Rimbaud**: giovane poeta-veggente, autore di *Illuminazioni* e *Una stagione all'inferno*; teorizza il "deragliamento di tutti i sensi" per accedere all'ignoto.
+- **Stéphane Mallarmé**: poeta della parola pura e dell'assenza; cerca un linguaggio rarefatto e quasi astratto (*L'après-midi d'un faune*, *Un coup de dés*).
 
 ## 9. L'Estetismo
 
@@ -99,10 +104,10 @@ Nel romanzo *Il ritratto di Dorian Gray*, Dorian desidera restare giovane e bell
 
 Il romanzo mostra il fascino e il pericolo dell'estetismo:
 
-- la bellezza diventa un valore assoluto;
-- la vita viene separata dalla responsabilità morale;
-- il piacere diventa ricerca egoistica;
-- l'apparenza nasconde la degradazione interiore.
+- **La bellezza diventa un valore assoluto**: per Dorian (e per Lord Henry, suo mentore) nulla conta più dell'apparenza estetica, neppure il bene o la verità.
+- **La vita viene separata dalla responsabilità morale**: Dorian agisce senza pensare alle conseguenze etiche delle sue azioni, perché il ritratto si fa carico al posto suo del peso morale.
+- **Il piacere diventa ricerca egoistica**: la sua esistenza si riduce a una collezione di esperienze rare ed estreme, senza legami autentici con gli altri.
+- **L'apparenza nasconde la degradazione interiore**: il volto di Dorian resta giovane, ma il ritratto si deforma; è l'immagine perfetta della scissione tra superficie estetica e corruzione dell'anima.
 
 ## 11. Huysmans e *A ritroso*
 

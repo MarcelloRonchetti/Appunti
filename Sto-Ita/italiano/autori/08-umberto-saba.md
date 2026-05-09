@@ -6,9 +6,9 @@
 
 La sua vita è segnata da una situazione familiare difficile:
 
-- il padre abbandona la famiglia prima della sua nascita;
-- la madre è severa e dolorosa;
-- una balia slovena, Peppa Sabaz, gli offre affetto nei primi anni.
+- **Padre assente**: Ugo Edoardo Poli abbandona la famiglia prima della nascita di Umberto, lasciando un vuoto che il poeta vivrà come ferita originaria e che cercherà di ricomporre solo da adulto.
+- **Madre severa**: Felicita Rachele Cohen, di origine ebraica, è una donna anaffettiva e segnata dall'abbandono, fonte di malinconia e rigidità nell'infanzia del poeta.
+- **Balia slovena Peppa Sabaz**: figura sostitutiva e affettuosa dei primi anni di vita; la separazione forzata da lei è un trauma decisivo, e da lei Saba prenderà lo pseudonimo definitivo.
 
 Trieste è fondamentale anche per Saba, come per Svevo: città di confine, aperta a culture diverse, lontana dai centri letterari italiani tradizionali.
 
@@ -30,10 +30,10 @@ Saba è una voce particolare e isolata nella poesia italiana del Novecento.
 
 Non aderisce pienamente:
 
-- al Futurismo;
-- all'Ermetismo;
-- alle avanguardie;
-- alla retorica dannunziana.
+- **Al Futurismo**: rifiuta il culto della velocità, della macchina e della rottura violenta con il passato proposto da Marinetti.
+- **All'Ermetismo**: prende le distanze dall'oscurità linguistica e dall'analogia astratta di Ungaretti e Quasimodo, scegliendo invece la chiarezza.
+- **Alle avanguardie**: estraneo agli sperimentalismi formali del primo Novecento, preferisce le forme metriche tradizionali.
+- **Alla retorica dannunziana**: rifiuta il poeta-vate, il linguaggio sontuoso e il superomismo di D'Annunzio, optando per un tono dimesso e umano.
 
 La sua poesia è più vicina alla **linea antinovecentista**, perché cerca chiarezza, sincerità, concretezza e fedeltà alla vita quotidiana.
 
@@ -43,12 +43,12 @@ Il concetto centrale della poetica di Saba è la **poesia onesta**.
 
 Per Saba la poesia deve:
 
-- dire la verità;
-- evitare artifici inutili;
-- essere sincera;
-- parlare dell'uomo reale;
-- riconoscere anche desideri, debolezze e contraddizioni;
-- usare una lingua chiara.
+- **Dire la verità**: programma esposto nel saggio *Quello che resta da fare ai poeti* (1911), dove Saba contrappone la "poesia onesta" alla poesia "disonesta" di D'Annunzio.
+- **Evitare artifici inutili**: rifiutare ornamenti retorici, virtuosismi formali e bellezze fini a se stesse.
+- **Essere sincera**: nascere da un bisogno autentico di espressione, senza simulare emozioni o pose letterarie.
+- **Parlare dell'uomo reale**: prendere come oggetto la persona concreta, con la sua storia e la sua psicologia, non figure idealizzate.
+- **Riconoscere desideri, debolezze e contraddizioni**: dare voce anche agli aspetti scomodi, inconsci o sgradevoli (gelosie, paure, pulsioni).
+- **Usare una lingua chiara**: scegliere parole comuni e sintassi limpida, perché la verità non ha bisogno di oscurità.
 
 La poesia onesta non significa poesia ingenua. Significa poesia capace di guardare in profondità senza mascherare la realtà.
 
@@ -66,13 +66,13 @@ Il titolo richiama volutamente Petrarca, ma Saba lo usa in modo moderno. Non cos
 
 ### Caratteristiche
 
-- struttura autobiografica;
-- tono narrativo e discorsivo;
-- lingua chiara;
-- forme metriche tradizionali;
-- attenzione alla psicologia;
-- temi quotidiani;
-- sincerità emotiva.
+- **Struttura autobiografica**: l'opera è organizzata come un racconto poetico della vita del poeta, dalle origini alla maturità.
+- **Tono narrativo e discorsivo**: i testi raccontano episodi e situazioni, spesso con andamento prosastico, vicino al parlato.
+- **Lingua chiara**: lessico comune e sintassi piana, accessibili anche al lettore non specialista.
+- **Forme metriche tradizionali**: uso del sonetto, dell'endecasillabo, della rima, in netta contrapposizione alle rotture formali delle avanguardie.
+- **Attenzione alla psicologia**: i testi indagano stati d'animo, conflitti interiori, motivazioni inconsce dei personaggi e del poeta stesso.
+- **Temi quotidiani**: oggetti, persone e luoghi della vita di tutti i giorni (la moglie, la figlia, la città, gli animali, il lavoro).
+- **Sincerità emotiva**: assenza di pose o maschere, esposizione diretta dei sentimenti senza mediazioni retoriche.
 
 ## 5. Temi principali
 
@@ -82,10 +82,10 @@ Trieste è uno dei luoghi centrali della poesia di Saba.
 
 Non è solo sfondo geografico, ma spazio dell'identità:
 
-- città di confine;
-- città popolare;
-- città aperta;
-- città piena di contrasti.
+- **Città di confine**: posta al limite tra mondo italiano, slavo e tedesco, riflette la condizione mista e marginale del poeta.
+- **Città popolare**: fatta di quartieri umili, taverne, vicoli, lontana dai salotti letterari della tradizione fiorentina o romana.
+- **Città aperta**: porto cosmopolita dove convivono lingue, culture e religioni diverse (italiana, slovena, ebraica, mitteleuropea).
+- **Città piena di contrasti**: insieme aspra e affettuosa, moderna e antica, severa e accogliente; la sua "scontrosa grazia" rispecchia l'animo di Saba.
 
 Saba ama Trieste perché vi riconosce la propria diversità.
 
@@ -123,13 +123,13 @@ Lo stile di Saba è apparentemente semplice.
 
 Caratteristiche:
 
-- lessico quotidiano;
-- sintassi chiara;
-- tono narrativo;
-- forme tradizionali;
-- rime frequenti;
-- andamento prosastico;
-- rifiuto dell'oscurità ermetica.
+- **Lessico quotidiano**: parole comuni, anche umili, prese dalla lingua di tutti i giorni, senza ricerche preziose.
+- **Sintassi chiara**: costruzioni lineari e leggibili, senza inversioni o complicazioni retoriche.
+- **Tono narrativo**: i testi raccontano spesso piccoli episodi, come brevi storie in versi.
+- **Forme tradizionali**: sonetto, canzonetta, endecasillabo e settenario, in continuità con la grande lirica italiana da Petrarca a Leopardi.
+- **Rime frequenti**: uso costante della rima, anche baciata o facile, contro la moda novecentesca del verso libero.
+- **Andamento prosastico**: il verso si avvicina al ritmo del discorso parlato, evitando enfasi musicali.
+- **Rifiuto dell'oscurità ermetica**: scelta consapevole della trasparenza, contro le poetiche dell'analogia oscura e del simbolismo difficile.
 
 Questa semplicità è frutto di una scelta precisa: Saba vuole una poesia comprensibile, umana, sincera.
 
@@ -139,13 +139,13 @@ Una delle poesie più note di Saba è **A mia moglie**.
 
 Il poeta paragona la moglie a diversi animali:
 
-- pollastra;
-- giovenca;
-- cagna;
-- coniglia;
-- rondine;
-- formica;
-- ape.
+- **Pollastra**: giovane gallina, simbolo di vivacità domestica e di una bellezza semplice e familiare.
+- **Giovenca**: giovane mucca, immagine di forza tranquilla, fertilità e dolcezza materna.
+- **Cagna**: simbolo di fedeltà, attaccamento, istinto protettivo verso i propri cuccioli.
+- **Coniglia**: figura di tenerezza, fecondità e dolce timidezza.
+- **Rondine**: uccello della casa e del ritorno, simbolo di leggerezza e fedeltà al nido.
+- **Formica**: emblema della laboriosità minuta e instancabile, della cura paziente del quotidiano.
+- **Ape**: figura di operosità ordinata e di dolcezza (il miele), legata alla creazione e alla comunità.
 
 A prima vista i paragoni possono sembrare strani o poco lusinghieri. In realtà esprimono amore e ammirazione per la vitalità naturale della donna.
 
@@ -163,9 +163,9 @@ Trieste è una città con una "scontrosa grazia": non è bella in modo facile, m
 
 La città diventa specchio dell'identità di Saba:
 
-- appartenenza e solitudine;
-- amore e distanza;
-- bisogno di contatto e bisogno di isolamento.
+- **Appartenenza e solitudine**: Saba sente Trieste come propria, ma vi vive anche un isolamento profondo, accentuato dalle origini ebraiche e dal carattere schivo.
+- **Amore e distanza**: ama intensamente la città, eppure la guarda da un "cantuccio" appartato, segno di un legame insieme intimo e laterale.
+- **Bisogno di contatto e bisogno di isolamento**: oscilla tra la ricerca della folla popolare e il ritiro nel silenzio, riflesso dei suoi conflitti interiori.
 
 ## 9. Amai
 
@@ -173,10 +173,10 @@ In **Amai**, Saba riflette sulla propria idea di poesia.
 
 Dice di aver amato:
 
-- parole semplici;
-- rime comuni;
-- verità;
-- chiarezza.
+- **Parole semplici**: il vocabolario comune, accessibile a tutti, contro la ricerca di termini rari o aulici.
+- **Rime comuni**: rime "trite" e prevedibili (come "fiore-amore"), che altri poeti avrebbero rifiutato come banali, e che Saba rivendica come scelta di onestà.
+- **Verità**: la fedeltà al vero psicologico ed esistenziale, anche quando scomoda o poco poetica.
+- **Chiarezza**: la trasparenza del dire, contro l'oscurità ermetica e il preziosismo simbolista.
 
 La poesia conferma la sua poetica: Saba non cerca l'originalità artificiale, ma la verità umana.
 
@@ -190,11 +190,11 @@ Diversamente da Svevo, che usa la psicoanalisi anche in modo ironico, Saba la vi
 
 Nella sua poesia emergono:
 
-- conflitti familiari;
-- desideri nascosti;
-- traumi infantili;
-- bisogno di verità;
-- ricerca di riconciliazione.
+- **Conflitti familiari**: tensioni con la madre severa, peso dell'assenza paterna, difficoltà nei rapporti coniugali.
+- **Desideri nascosti**: pulsioni inconsce, ambivalenze affettive e sessuali che l'analisi aiuta a portare alla luce.
+- **Traumi infantili**: in particolare la separazione dalla balia Peppa Sabaz e la scoperta dell'origine doppia (ebraica e cattolica).
+- **Bisogno di verità**: la psicoanalisi rafforza la sua poetica dell'onestà, spingendolo a dire ciò che di solito si tace.
+- **Ricerca di riconciliazione**: tentativo di ricomporre dentro di sé le ferite del passato, accettando le proprie contraddizioni.
 
 ## 11. Saba e la linea antinovecentista
 
@@ -202,12 +202,12 @@ Saba è uno degli esempi più chiari della **linea antinovecentista**.
 
 Lo dimostrano:
 
-- chiarezza linguistica;
-- tono discorsivo;
-- fedeltà alla tradizione;
-- rifiuto dell'Ermetismo;
-- attenzione alla vita quotidiana;
-- sincerità autobiografica.
+- **Chiarezza linguistica**: lessico comune e sintassi piana, contro l'oscurità delle poetiche d'avanguardia.
+- **Tono discorsivo**: ritmo del parlato e andamento narrativo, lontano dall'enfasi lirica.
+- **Fedeltà alla tradizione**: uso di metri classici (sonetto, endecasillabo) e dialogo costante con Petrarca, Leopardi e i grandi lirici italiani.
+- **Rifiuto dell'Ermetismo**: scelta opposta a quella di Ungaretti e Quasimodo, che puntavano sulla concentrazione analogica e sul simbolo oscuro.
+- **Attenzione alla vita quotidiana**: oggetti, persone, animali, luoghi familiari diventano materia poetica.
+- **Sincerità autobiografica**: la propria vita personale, con tutte le sue contraddizioni, è la fonte centrale della poesia.
 
 La sua poesia sembra semplice, ma affronta temi profondi: identità, dolore, amore, nevrosi, desiderio, memoria.
 
