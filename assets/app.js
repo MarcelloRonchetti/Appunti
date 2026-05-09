@@ -41,6 +41,21 @@ const pages = [
   },
   {
     group: "Italiano - autori",
+    title: "Giovanni Verga",
+    path: "Sto-Ita/italiano/autori/00-giovanni-verga.md",
+  },
+  {
+    group: "Italiano - autori",
+    title: "Giovanni Pascoli",
+    path: "Sto-Ita/italiano/autori/00-giovanni-pascoli.md",
+  },
+  {
+    group: "Italiano - autori",
+    title: "Gabriele D'Annunzio",
+    path: "Sto-Ita/italiano/autori/00-gabriele-dannunzio.md",
+  },
+  {
+    group: "Italiano - autori",
     title: "Italo Svevo",
     path: "Sto-Ita/italiano/autori/01-italo-svevo.md",
   },
@@ -68,6 +83,21 @@ const pages = [
     group: "Italiano - autori",
     title: "Italo Calvino",
     path: "Sto-Ita/italiano/autori/06-italo-calvino.md",
+  },
+  {
+    group: "Italiano - movimenti",
+    title: "Positivismo, Naturalismo e Verismo",
+    path: "Sto-Ita/italiano/movimenti/00-positivismo-naturalismo-verismo.md",
+  },
+  {
+    group: "Italiano - movimenti",
+    title: "Decadentismo, Simbolismo ed Estetismo",
+    path: "Sto-Ita/italiano/movimenti/00-decadentismo-simbolismo-estetismo.md",
+  },
+  {
+    group: "Italiano - movimenti",
+    title: "Avanguardie, Futurismo e Crepuscolarismo",
+    path: "Sto-Ita/italiano/movimenti/05-avanguardie-futurismo-crepuscolarismo.md",
   },
   {
     group: "Italiano - movimenti",

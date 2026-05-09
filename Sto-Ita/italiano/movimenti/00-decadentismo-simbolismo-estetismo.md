@@ -1,0 +1,137 @@
+# Decadentismo, Simbolismo ed Estetismo
+
+## 1. La crisi del Positivismo
+
+Alla fine dell'Ottocento entra in crisi la fiducia positivista nella scienza e nel progresso. La realtà moderna appare più complessa di quanto sembrasse: l'industrializzazione produce anche alienazione, disuguaglianze e perdita di valori; la scienza non riesce a rispondere alle domande sul senso della vita; l'individuo si sente fragile e spaesato.
+
+In questo clima nasce il **Decadentismo**, una sensibilità culturale che rifiuta l'ottimismo positivista e cerca zone più profonde e misteriose dell'esperienza.
+
+## 2. Che cos'è il Decadentismo
+
+Il Decadentismo non è un movimento unico e ordinato, ma un insieme di tendenze europee tra fine Ottocento e inizio Novecento.
+
+Il termine "decadente" nasce in senso negativo: indica artisti considerati malati, raffinati, lontani dalla morale comune. In seguito diventa il nome di una nuova sensibilità.
+
+I decadenti pensano che la realtà visibile non basti. Dietro le cose esistono significati nascosti, corrispondenze, simboli, stati interiori che la ragione non riesce a spiegare completamente.
+
+## 3. Caratteristiche del Decadentismo
+
+Le caratteristiche principali sono:
+
+- sfiducia nella ragione e nella scienza come strumenti assoluti;
+- attenzione all'inconscio, al sogno, al mistero;
+- interesse per malattia, nevrosi, inquietudine, solitudine;
+- culto della bellezza e dell'arte;
+- rifiuto della morale borghese;
+- figura dell'artista come diverso, isolato, superiore o maledetto;
+- uso di simboli e analogie;
+- musicalità del linguaggio.
+
+L'arte non deve solo descrivere la realtà: deve suggerire ciò che è nascosto dietro la realtà.
+
+## 4. Baudelaire e la nascita della poesia moderna
+
+**Charles Baudelaire** è uno degli autori decisivi per la poesia moderna.
+
+La sua raccolta più importante è *I fiori del male* (1857). Il titolo contiene già una contraddizione: i "fiori" richiamano bellezza e poesia, mentre il "male" richiama peccato, dolore, corruzione, malattia morale.
+
+Baudelaire vive la modernità come esperienza ambivalente:
+
+- la città è affascinante ma alienante;
+- la bellezza nasce anche dal brutto e dal corrotto;
+- il poeta è attratto dall'assoluto ma cade nello spleen;
+- l'arte cerca salvezza, ma non elimina il male.
+
+## 5. Corrispondenze
+
+La poesia **Corrispondenze** è un testo fondamentale del Simbolismo.
+
+Baudelaire presenta la natura come una foresta di simboli. Le cose visibili rimandano a significati nascosti e comunicano tra loro attraverso legami misteriosi.
+
+Il poeta è colui che riesce a intuire queste corrispondenze. Non guarda la realtà in modo comune: percepisce rapporti segreti tra profumi, colori, suoni e stati d'animo.
+
+Questa idea apre la strada alla poesia simbolista: il mondo non va spiegato in modo razionale, ma interpretato come un sistema di segni.
+
+## 6. L'albatro
+
+In **L'albatro** Baudelaire rappresenta la condizione del poeta.
+
+L'albatro è un uccello maestoso quando vola in cielo, ma diventa goffo e ridicolo quando viene catturato dai marinai e costretto a camminare sulla nave.
+
+Il significato è chiaro: il poeta è superiore quando si muove nel mondo dell'immaginazione e dell'arte, ma appare inutile e inadatto nella vita comune. La società borghese non comprende la sua grandezza e lo umilia.
+
+## 7. Spleen
+
+Lo **spleen** è uno stato di angoscia, noia, oppressione e disgusto. Non è una semplice tristezza: è la sensazione che il mondo sia chiuso, pesante, senza via d'uscita.
+
+In Baudelaire lo spleen si oppone all'ideale. L'uomo desidera elevarsi verso bellezza, assoluto e infinito, ma ricade nella realtà materiale, nella colpa e nella noia.
+
+## 8. Il Simbolismo
+
+Il **Simbolismo** nasce in Francia e influenza profondamente la poesia europea.
+
+I simbolisti rifiutano la poesia descrittiva e realistica. Secondo loro la poesia deve evocare, non spiegare.
+
+Caratteristiche:
+
+- uso di simboli;
+- analogie tra realtà lontane;
+- musicalità;
+- linguaggio allusivo;
+- centralità della parola poetica;
+- ricerca del mistero oltre le apparenze.
+
+Tra gli autori principali: **Baudelaire**, **Verlaine**, **Rimbaud**, **Mallarmé**.
+
+## 9. L'Estetismo
+
+L'**Estetismo** è una tendenza decadente fondata sul culto della bellezza.
+
+L'esteta considera la vita come un'opera d'arte. Non accetta la mediocrità borghese e cerca esperienze raffinate, artificiali, rare, eccezionali.
+
+Il principio fondamentale è "l'arte per l'arte": l'arte non deve servire alla morale, alla politica o all'utilità pratica. Deve esistere per la bellezza.
+
+## 10. Oscar Wilde e *Il ritratto di Dorian Gray*
+
+**Oscar Wilde** è uno dei principali rappresentanti dell'Estetismo europeo.
+
+Nel romanzo *Il ritratto di Dorian Gray*, Dorian desidera restare giovane e bello per sempre, mentre il suo ritratto invecchia e porta i segni della corruzione morale.
+
+Il romanzo mostra il fascino e il pericolo dell'estetismo:
+
+- la bellezza diventa un valore assoluto;
+- la vita viene separata dalla responsabilità morale;
+- il piacere diventa ricerca egoistica;
+- l'apparenza nasconde la degradazione interiore.
+
+## 11. Huysmans e *A ritroso*
+
+Il romanzo *A ritroso* di **Joris-Karl Huysmans** è un testo simbolo dell'estetismo decadente.
+
+Il protagonista Des Esseintes rifiuta la società e costruisce una vita artificiale, isolata, fatta di oggetti preziosi, profumi, libri rari e sensazioni raffinate.
+
+Il romanzo mostra un punto estremo del Decadentismo: l'artificio viene preferito alla natura, la vita reale sembra volgare e l'esteta cerca rifugio in un mondo completamente costruito.
+
+## 12. D'Annunzio e l'estetismo italiano
+
+In Italia l'Estetismo trova la sua espressione più evidente in **Gabriele D'Annunzio**, soprattutto nel romanzo *Il piacere*.
+
+Il protagonista Andrea Sperelli vuole fare della propria vita un'opera d'arte, ma questo culto della bellezza lo rende incapace di vivere rapporti autentici. L'estetismo dannunziano è quindi affascinante ma anche fragile: dietro l'eleganza si nasconde una crisi morale.
+
+## 13. Parole chiave
+
+| Termine | Significato |
+|---|---|
+| Decadentismo | Sensibilità fondata su crisi, mistero, simbolo e rifiuto del Positivismo |
+| Simbolismo | Poesia che cerca significati nascosti attraverso simboli e analogie |
+| Estetismo | Culto della bellezza e dell'arte come valore assoluto |
+| Spleen | Angoscia, noia, oppressione esistenziale |
+| Poeta maledetto | Artista isolato, diverso, in conflitto con la società |
+| Arte per l'arte | Arte autonoma, non subordinata a morale o utilità |
+| Corrispondenze | Legami misteriosi tra le cose visibili |
+
+## Sintesi finale
+
+Il Decadentismo nasce dalla crisi dell'ottimismo positivista. Gli autori decadenti non credono che la realtà possa essere spiegata solo con scienza e ragione: cercano il mistero, l'inconscio, la bellezza, il simbolo.
+
+Baudelaire apre la poesia moderna con l'idea delle corrispondenze e con la figura del poeta isolato. Il Simbolismo sviluppa una poesia allusiva e musicale; l'Estetismo trasforma la bellezza in valore assoluto, ma mostra anche il rischio di una vita artificiale e moralmente vuota.
