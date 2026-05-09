@@ -1,0 +1,21 @@
+# Fonti e materiali sorgente da non pubblicare su GitHub
+Sto-Ita/Storia Fonti/
+Sto-Ita/Ita Fonti/
+**/* Fonti/
+**/*Fonti/
+**/*source*
+
+# File sorgente pesanti o non pensati per il sito
+*.pdf
+*.docx
+*.mp3
+*.mp4
+
+# File locali del sistema/editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Appunti tecnici locali per agent/editor
+Sto-Ita/CLAUDE.md
+Sto-Ita/.claude/
