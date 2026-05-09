@@ -74,11 +74,20 @@ Questa figura avrà anche conseguenze politiche: D'Annunzio contribuisce a diffo
 
 ## 6. Le Laudi e Alcyone
 
-L'opera poetica più importante di D'Annunzio è il ciclo delle **Laudi**.
+L'opera poetica più importante di D'Annunzio è il ciclo delle **Laudi** (Le Laudi del cielo, del mare, della terra e degli eroi), composto e pubblicato nei primi anni del Novecento. La raccolta più famosa del ciclo è **Alcyone** (1903). L'intero ciclo si colloca grosso modo tra il 1903 e il 1912.
 
-La raccolta più famosa è **Alcyone**, dedicata soprattutto all'estate, alla natura, al paesaggio e alla fusione sensuale tra uomo e mondo naturale.
+Alcyone è dedicata all'estate, alla natura, al paesaggio e alla fusione sensuale tra uomo e mondo naturale: qui D'Annunzio raggiunge l'apice del suo **panismo**, della musicalità del verso e della ricchezza lessicale.
 
-In *Alcyone* domina il **panismo**.
+Caratteristiche principali:
+
+- **Panismo**: fusione tra io lirico e natura, con frequenti metamorfosi tra uomo e paesaggio.
+- **Musicalità**: forte attenzione al suono, alle allitterazioni, alle assonanze; la parola come strumento musicale.
+- **Lessico prezioso e botanico**: termini colti, neologismi e nomi di piante per una descrizione sensoriale precisa.
+- **Sinestesia e sensorialità**: mescolanza di percezioni (suoni, odori, colori, tatto).
+- **Forma e tecnica**: alternanza di versi lunghi e brevi, endecasillabi e ritmi liberi, talvolta frammentazione e prosa lirica.
+- **Temi ricorrenti**: celebrazione dell'estate, eros cosmico, bellezza, eroismo estetico e fusione tra arte e vita.
+
+Esempi famosi in *Alcyone*: "La sera fiesolana" e "La pioggia nel pineto", che mostrano la metamorfosi degli amanti in elementi naturali e la predilezione per ritmo e suono. Le Laudi trasformano l'esperienza sensoriale in una visione mitica e spettacolare, consolidando la poetica dannunziana.
 
 ## 7. Il panismo
 
