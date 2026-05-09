@@ -39,6 +39,8 @@ La linea antinovecentista rifiuta:
 
 Non significa però poesia semplice in senso banale. È una poesia che cerca chiarezza, ma può contenere grande profondità psicologica ed esistenziale.
 
+Il punto centrale è che la chiarezza non coincide con superficialità. Gli autori antinovecentisti parlano spesso di vita comune, città, famiglia, oggetti, paesaggi e sentimenti quotidiani, ma attraverso queste realtà cercano una verità profonda sull'uomo. La loro poesia vuole essere comprensibile senza diventare povera.
+
 ## 3. Caratteristiche principali
 
 ### Chiarezza espressiva
@@ -46,6 +48,8 @@ Non significa però poesia semplice in senso banale. È una poesia che cerca chi
 Rispetto alla poesia ermetica, la linea antinovecentista preferisce un'espressione più comunicativa.
 
 Il testo non vuole essere chiuso in un linguaggio misterioso, ma parlare al lettore in modo più diretto.
+
+Questa scelta ha anche un valore polemico. Mentre l'Ermetismo tende a rivolgersi a un lettore capace di decifrare simboli e allusioni, la linea antinovecentista cerca un rapporto più aperto e comunicativo. Il poeta non rinuncia alla complessità, ma evita di trasformare la poesia in un enigma fine a se stesso.
 
 ### Linguaggio quotidiano
 
@@ -59,6 +63,8 @@ Il lessico è spesso vicino alla vita comune:
 - gesti della vita di tutti i giorni.
 
 Questo non elimina il valore simbolico: gli oggetti possono diventare segni di una condizione interiore, come avviene in Montale.
+
+La differenza rispetto alla poesia puramente simbolista è che l'oggetto conserva sempre una forte concretezza. Una città, un animale, un muro o un paesaggio non sono solo simboli astratti: restano pezzi riconoscibili della vita. Da qui nasce il tono umano di questa linea poetica.
 
 ### Tradizione metrica
 
@@ -79,6 +85,8 @@ La poesia antinovecentista rifiuta il tono solenne del poeta-vate.
 Il poeta non è un profeta o una guida superiore, ma un uomo che osserva la vita, registra il dolore, cerca una verità umana e personale.
 
 In questo senso la linea antinovecentista è vicina a una figura di **borghese onesto**, distaccato dalla retorica del proprio tempo e attento alla concretezza dell'esistenza.
+
+Il rifiuto della retorica riguarda sia D'Annunzio sia la propaganda politica. Invece di parlare con parole solenni e assolute, questi poeti scelgono una lingua più misurata. La poesia non proclama grandi verità: prova a guardare le cose con sincerità.
 
 ## 4. Umberto Saba
 
@@ -106,6 +114,8 @@ Temi principali:
 
 La sua poesia sembra semplice, ma nasce da un profondo lavoro di introspezione.
 
+In Saba la semplicità è una conquista. Il poeta vuole arrivare a una verità personale senza nascondersi dietro parole difficili. Per questo la sua poesia può parlare di Lina, Trieste, animali, infanzia e dolore usando un tono quasi narrativo, ma sempre carico di significato psicologico.
+
 ## 5. Montale e la poetica dell'oggetto
 
 Montale non può essere ridotto alla linea antinovecentista, ma ne condivide alcuni aspetti:
@@ -121,6 +131,8 @@ In *Ossi di seppia* il paesaggio ligure, i muri, i cocci di bottiglia, i limoni,
 Questa è la sua **poetica dell'oggetto**, collegata al correlativo oggettivo di Eliot: un oggetto esprime un sentimento o una verità esistenziale.
 
 Montale non offre certezze, ma solo definizioni negative: "ciò che non siamo, ciò che non vogliamo".
+
+Per questo Montale è vicino ma non identico alla linea antinovecentista. Usa oggetti comuni e rifiuta la retorica, ma la sua poesia è più aspra, simbolica e negativa rispetto a quella di Saba. Gli oggetti montaliani non servono solo a raccontare la vita quotidiana: diventano immagini del limite, dell'aridità e del male di vivere.
 
 ## 6. Cardarelli
 

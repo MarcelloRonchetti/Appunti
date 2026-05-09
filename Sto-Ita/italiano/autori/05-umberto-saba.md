@@ -12,6 +12,8 @@ La sua vita è segnata da una situazione familiare difficile:
 
 Trieste è fondamentale anche per Saba, come per Svevo: città di confine, aperta a culture diverse, lontana dai centri letterari italiani tradizionali.
 
+Questa posizione periferica incide molto sulla sua poesia. Saba non appartiene pienamente ai gruppi dominanti della letteratura italiana del primo Novecento e non cerca di apparire moderno a tutti i costi. La sua originalità nasce proprio da una scelta controcorrente: restare fedele alla vita comune, alla propria storia personale e a una lingua comprensibile.
+
 ### Formazione e lavoro
 
 Saba ha una formazione irregolare. Lavora in vari ambiti e nel 1919 acquista una libreria antiquaria a Trieste, che diventa il suo lavoro principale.
@@ -50,6 +52,8 @@ Per Saba la poesia deve:
 
 La poesia onesta non significa poesia ingenua. Significa poesia capace di guardare in profondità senza mascherare la realtà.
 
+Saba vuole una poesia che non finga. Per lui il poeta deve riconoscere anche ciò che è scomodo: desideri, paure, gelosie, debolezze, contraddizioni familiari. L'onestà non è solo morale, ma conoscitiva: scrivere serve a capire se stessi e gli altri senza abbellire troppo la vita.
+
 ## 4. Il Canzoniere
 
 L'opera principale di Saba è il **Canzoniere**.
@@ -57,6 +61,8 @@ L'opera principale di Saba è il **Canzoniere**.
 Il titolo richiama Petrarca, ma il contenuto è moderno. Saba costruisce una specie di autobiografia poetica: le poesie raccontano la sua vita, i suoi affetti, le sue crisi, la città, la famiglia, il dolore.
 
 Il *Canzoniere* viene pubblicato in varie edizioni e accompagna tutta la sua vita.
+
+Il titolo richiama volutamente Petrarca, ma Saba lo usa in modo moderno. Non costruisce un percorso verso una donna idealizzata, ma una lunga autobiografia interiore. Le poesie funzionano come capitoli di una vita: non raccontano tutto in forma narrativa, ma seguono sentimenti, luoghi e ferite che ritornano nel tempo.
 
 ### Caratteristiche
 
@@ -83,11 +89,15 @@ Non è solo sfondo geografico, ma spazio dell'identità:
 
 Saba ama Trieste perché vi riconosce la propria diversità.
 
+La città viene spesso descritta attraverso luoghi concreti: vie, salite, porto, quartieri popolari, spazi aperti e chiusi. Non è una città idealizzata: ha una bellezza difficile, fatta di contrasti. Proprio per questo rispecchia Saba, che si sente insieme parte della vita comune e diverso dagli altri.
+
 ### La donna
 
 La figura femminile è centrale.
 
 La moglie **Lina** viene rappresentata in modo concreto, non idealizzato. Non è una donna-angelo, ma una presenza reale, quotidiana, fatta di affetto, conflitto, sensualità e dolore.
+
+Questo è uno dei punti che distinguono Saba dalla tradizione lirica più alta. La donna non viene trasformata in figura angelica o simbolo astratto: resta una persona viva, con corpo, carattere, gesti e difetti. Proprio questa concretezza rende l'amore più vero.
 
 ### L'infanzia
 
@@ -143,6 +153,8 @@ La moglie è associata alla dimensione creaturale, semplice e profonda della vit
 
 Il testo mostra bene la distanza di Saba dalla tradizione della donna angelicata: Lina non è idealizzata, ma amata nella sua realtà concreta.
 
+Gli animali scelti non servono a sminuire Lina. Rappresentano qualità naturali: fertilità, fedeltà, tenerezza, energia, istinto materno, laboriosità. Saba guarda la moglie come parte della vita più elementare e profonda, una vita che non ha bisogno di essere nobilitata con immagini solenni.
+
 ## 8. Trieste
 
 Nella poesia **Trieste**, Saba descrive la città come uno spazio insieme aspro e affettuoso.
@@ -167,6 +179,8 @@ Dice di aver amato:
 - chiarezza.
 
 La poesia conferma la sua poetica: Saba non cerca l'originalità artificiale, ma la verità umana.
+
+Il testo è quasi una dichiarazione di poetica. Saba rivendica parole comuni e rime semplici, proprio quelle che altri poeti avrebbero considerato troppo facili. La sua scelta non è mancanza di ambizione: è il desiderio di arrivare a una verità chiara, capace di parlare dell'uomo senza nascondersi dietro l'oscurità.
 
 ## 10. Saba e la psicoanalisi
 
