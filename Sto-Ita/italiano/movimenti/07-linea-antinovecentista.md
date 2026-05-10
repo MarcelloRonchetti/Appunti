@@ -4,13 +4,7 @@
 
 La **linea antinovecentista** non è un movimento organizzato con un manifesto preciso. È una tendenza della poesia italiana del Novecento che si oppone alla poesia più chiusa, sperimentale o "alta" del Novecentismo e dell'Ermetismo.
 
-Gli autori di questa linea cercano una poesia:
-
-- più chiara;
-- più discorsiva;
-- più legata alla realtà quotidiana;
-- meno retorica;
-- più vicina alla tradizione e al parlato.
+Gli autori di questa linea cercano una poesia più chiara e più discorsiva, più legata alla realtà quotidiana, meno retorica e più vicina alla tradizione e al parlato.
 
 Tra i nomi principali si possono ricordare:
 
@@ -23,19 +17,9 @@ Negli appunti questa linea è presentata soprattutto in opposizione all'Ermetism
 
 ## 2. Contesto culturale
 
-Tra le due guerre mondiali la poesia italiana segue direzioni diverse:
+Tra le due guerre mondiali la poesia italiana segue direzioni diverse: da una parte l'Ermetismo, con la parola allusiva, essenziale, oscura; dall'altra una poesia più limpida, narrativa, realistica o colloquiale.
 
-- da una parte l'Ermetismo, con la parola allusiva, essenziale, oscura;
-- dall'altra una poesia più limpida, narrativa, realistica o colloquiale.
-
-La linea antinovecentista rifiuta:
-
-- l'oscurità eccessiva;
-- la poesia come puro enigma;
-- l'enfasi del poeta-vate;
-- la retorica dannunziana;
-- la propaganda;
-- lo sperimentalismo fine a se stesso.
+La linea antinovecentista rifiuta l'oscurità eccessiva, la poesia come puro enigma, l'enfasi del poeta-vate, la retorica dannunziana, la propaganda e ogni forma di sperimentalismo fine a se stesso.
 
 Non significa però poesia semplice in senso banale. È una poesia che cerca chiarezza, ma può contenere grande profondità psicologica ed esistenziale.
 
@@ -53,14 +37,7 @@ Questa scelta ha anche un valore polemico. Mentre l'Ermetismo tende a rivolgersi
 
 ### Linguaggio quotidiano
 
-Il lessico è spesso vicino alla vita comune:
-
-- oggetti quotidiani;
-- luoghi cittadini;
-- figure familiari;
-- animali domestici;
-- paesaggi concreti;
-- gesti della vita di tutti i giorni.
+Il lessico è spesso vicino alla vita comune: oggetti quotidiani, luoghi cittadini, figure familiari, animali domestici, paesaggi concreti e gesti della vita di tutti i giorni.
 
 Questo non elimina il valore simbolico: gli oggetti possono diventare segni di una condizione interiore, come avviene in Montale.
 
@@ -68,13 +45,7 @@ La differenza rispetto alla poesia puramente simbolista è che l'oggetto conserv
 
 ### Tradizione metrica
 
-Molti autori antinovecentisti non rompono completamente con la tradizione. Possono usare:
-
-- rime;
-- metri riconoscibili;
-- strofe regolari;
-- andamento narrativo;
-- musicalità più piana.
+Molti autori antinovecentisti non rompono completamente con la tradizione: possono usare rime e metri riconoscibili, strofe regolari, un andamento narrativo e una musicalità più piana.
 
 Saba, per esempio, resta fedele a forme tradizionali, ma le usa con una lingua limpida e quotidiana.
 
@@ -92,25 +63,9 @@ Il rifiuto della retorica riguarda sia D'Annunzio sia la propaganda politica. In
 
 Saba è uno degli esempi più importanti.
 
-La sua poesia è fondata sull'idea di **poesia onesta**:
+La sua poesia è fondata sull'idea di **poesia onesta**, che si traduce nel rifiuto dell'artificio, nella chiarezza, nella sincerità autobiografica, nell'attenzione alla vita quotidiana e nella fedeltà ai sentimenti comuni.
 
-- rifiuto dell'artificio;
-- chiarezza;
-- sincerità autobiografica;
-- attenzione alla vita quotidiana;
-- fedeltà ai sentimenti comuni.
-
-Temi principali:
-
-- amore;
-- donna;
-- famiglia;
-- città di Trieste;
-- infanzia;
-- dolore;
-- malinconia;
-- rapporto con gli animali;
-- desiderio di capire se stesso.
+I temi principali sono l'amore, la donna, la famiglia, la città di Trieste, l'infanzia, il dolore e la malinconia, ai quali si aggiungono il rapporto con gli animali e il desiderio di capire se stesso.
 
 La sua poesia sembra semplice, ma nasce da un profondo lavoro di introspezione.
 
@@ -118,13 +73,7 @@ In Saba la semplicità è una conquista. Il poeta vuole arrivare a una verità p
 
 ## 5. Montale e la poetica dell'oggetto
 
-Montale non può essere ridotto alla linea antinovecentista, ma ne condivide alcuni aspetti:
-
-- rifiuto della retorica;
-- linguaggio aspro e concreto;
-- attenzione agli oggetti quotidiani;
-- critica del poeta-vate;
-- sfiducia nella parola assoluta.
+Montale non può essere ridotto alla linea antinovecentista, ma ne condivide alcuni aspetti: il rifiuto della retorica, un linguaggio aspro e concreto, l'attenzione agli oggetti quotidiani, la critica del poeta-vate e la sfiducia nella parola assoluta.
 
 In *Ossi di seppia* il paesaggio ligure, i muri, i cocci di bottiglia, i limoni, il rivo strozzato e la foglia secca diventano immagini concrete della condizione umana.
 
@@ -138,14 +87,7 @@ Per questo Montale è vicino ma non identico alla linea antinovecentista. Usa og
 
 Vincenzo **Cardarelli** rappresenta una linea di ritorno al classicismo.
 
-Caratteristiche:
-
-- eleganza formale;
-- controllo stilistico;
-- misura;
-- legame con Leopardi;
-- tono riflessivo;
-- rifiuto delle avanguardie più estreme.
+La sua poesia si caratterizza per l'eleganza formale e il controllo stilistico, per la misura e per il legame con Leopardi, oltre che per un tono riflessivo e per il rifiuto delle avanguardie più estreme.
 
 Cardarelli cerca una poesia ordinata, limpida, lontana sia dalla retorica sia dall'oscurità ermetica.
 
@@ -164,13 +106,7 @@ Cardarelli cerca una poesia ordinata, limpida, lontana sia dalla retorica sia da
 
 Questa tendenza è importante perché mostra che il Novecento poetico non è solo oscurità e sperimentazione.
 
-Esiste anche una poesia che:
-
-- parla della realtà concreta;
-- usa un tono più umano e comunicativo;
-- mantiene un rapporto con la tradizione;
-- mette al centro la sincerità dell'esperienza;
-- rifiuta sia la retorica ufficiale sia l'enigma fine a se stesso.
+Esiste anche una poesia che parla della realtà concreta e usa un tono più umano e comunicativo, che mantiene un rapporto con la tradizione, mette al centro la sincerità dell'esperienza e rifiuta sia la retorica ufficiale sia l'enigma fine a se stesso.
 
 ## Parole chiave
 

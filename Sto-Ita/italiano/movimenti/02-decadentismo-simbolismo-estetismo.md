@@ -20,24 +20,13 @@ I decadenti pensano che la realtà visibile non basti. Dietro le cose esistono s
 
 ### Decadentismo europeo vs decadentismo italiano
 
-In Europa il Decadentismo si sviluppa già dagli anni Sessanta-Settanta dell'Ottocento (Baudelaire, *I fiori del male*, 1857). In **Italia**, invece, si afferma più tardi (dagli anni Ottanta-Novanta) per due ragioni:
-- l'economia italiana procede più a rilento, l'industrializzazione e la modernizzazione sono più tardive;
-- il potere culturale è detenuto da una ristretta **élite classicista** (Carducci e i suoi seguaci) che resiste al rinnovamento.
+In Europa il Decadentismo si sviluppa già dagli anni Sessanta-Settanta dell'Ottocento (Baudelaire, *I fiori del male*, 1857). In **Italia**, invece, si afferma più tardi, dagli anni Ottanta-Novanta, per due ragioni: l'economia italiana procede più a rilento, l'industrializzazione e la modernizzazione sono più tardive; inoltre il potere culturale è detenuto da una ristretta **élite classicista** (Carducci e i suoi seguaci) che resiste al rinnovamento.
 
 I due grandi decadenti italiani sono **Pascoli** e **D'Annunzio**: il primo sviluppa un decadentismo "del nido", intimo e dimesso; il secondo un decadentismo "del Vittoriale", spettacolare ed estetizzante.
 
 ## 3. Caratteristiche del Decadentismo
 
-Le caratteristiche principali sono:
-
-- **Sfiducia nella ragione e nella scienza**: i decadenti rifiutano la pretesa positivista di spiegare tutto con il metodo scientifico, perché la realtà profonda sfugge all'analisi razionale.
-- **Attenzione all'inconscio, al sogno, al mistero**: la verità si cerca in zone oscure della psiche e in esperienze che la coscienza ordinaria non controlla (sogni, allucinazioni, intuizioni).
-- **Interesse per malattia, nevrosi, inquietudine, solitudine**: condizioni considerate "anormali" diventano materia poetica, perché rivelano la fragilità dell'uomo moderno meglio della salute borghese.
-- **Culto della bellezza e dell'arte**: l'arte viene posta al di sopra di ogni altro valore, come unico rifugio dalla volgarità del mondo industriale.
-- **Rifiuto della morale borghese**: le regole del perbenismo e dell'utilità pratica sono viste come ipocrite e soffocanti per l'artista.
-- **Figura dell'artista come diverso, isolato, superiore o maledetto**: il poeta non è più integrato nella società, ma si sente un'eccezione (esteta, veggente, maudit), incompreso e spesso autodistruttivo.
-- **Uso di simboli e analogie**: la poesia non descrive le cose, ma le trasforma in segni che rinviano a significati nascosti, collegando piani lontani della realtà.
-- **Musicalità del linguaggio**: il suono delle parole conta quanto il significato; il verso vuole evocare per ritmo e sonorità, come una melodia.
+Il Decadentismo si presenta anzitutto come una sfiducia nella ragione e nella scienza: i decadenti rifiutano la pretesa positivista di spiegare tutto con il metodo scientifico, perché la realtà profonda sfugge all'analisi razionale. Da qui nasce un'attenzione nuova all'inconscio, al sogno e al mistero, perché la verità si cerca in zone oscure della psiche e in esperienze che la coscienza ordinaria non controlla, come sogni, allucinazioni e intuizioni. A questo si lega l'interesse per malattia, nevrosi, inquietudine e solitudine: condizioni considerate "anormali" diventano materia poetica, perché rivelano la fragilità dell'uomo moderno meglio della salute borghese. Centrale è poi il culto della bellezza e dell'arte, posta al di sopra di ogni altro valore come unico rifugio dalla volgarità del mondo industriale, e di conseguenza il rifiuto della morale borghese, le cui regole di perbenismo e utilità pratica sono viste come ipocrite e soffocanti per l'artista. Cambia anche la figura dell'artista, ora diverso, isolato, superiore o maledetto: il poeta non è più integrato nella società, ma si sente un'eccezione (esteta, veggente, *maudit*), incompreso e spesso autodistruttivo. Sul piano espressivo dominano l'uso di simboli e analogie, perché la poesia non descrive le cose ma le trasforma in segni che rinviano a significati nascosti, e la musicalità del linguaggio: il suono delle parole conta quanto il significato e il verso vuole evocare per ritmo e sonorità, come una melodia.
 
 L'arte non deve solo descrivere la realtà: deve suggerire ciò che è nascosto dietro la realtà.
 
@@ -47,12 +36,7 @@ L'arte non deve solo descrivere la realtà: deve suggerire ciò che è nascosto 
 
 La sua raccolta più importante è *I fiori del male* (1857). Il titolo contiene già una contraddizione: i "fiori" richiamano bellezza e poesia, mentre il "male" richiama peccato, dolore, corruzione, malattia morale.
 
-Baudelaire vive la modernità come esperienza ambivalente:
-
-- **La città è affascinante ma alienante**: Parigi è il nuovo paesaggio della poesia, piena di stimoli e folle, ma rende l'individuo anonimo e solo (è il poeta del *flâneur*, l'osservatore che vaga tra la folla).
-- **La bellezza nasce anche dal brutto e dal corrotto**: Baudelaire cerca poesia in ciò che è considerato basso o ripugnante (carogne, prostitute, miseria), perché anche il male contiene una verità estetica.
-- **Il poeta è attratto dall'assoluto ma cade nello spleen**: l'aspirazione all'ideale (bellezza, infinito, purezza) convive con la ricaduta nell'angoscia e nella noia opprimente.
-- **L'arte cerca salvezza, ma non elimina il male**: la poesia può dare senso all'esperienza, ma non guarisce il dolore esistenziale né cancella il peccato.
+Baudelaire vive la modernità come esperienza ambivalente. La città è per lui affascinante ma alienante: Parigi è il nuovo paesaggio della poesia, piena di stimoli e folle, ma rende l'individuo anonimo e solo (è il poeta del *flâneur*, l'osservatore che vaga tra la folla). Allo stesso tempo la bellezza nasce anche dal brutto e dal corrotto, perché Baudelaire cerca poesia in ciò che è considerato basso o ripugnante (carogne, prostitute, miseria), poiché anche il male contiene una verità estetica. Il poeta è attratto dall'assoluto ma cade nello spleen: l'aspirazione all'ideale (bellezza, infinito, purezza) convive con la ricaduta nell'angoscia e nella noia opprimente. L'arte cerca infine salvezza, ma non elimina il male: la poesia può dare senso all'esperienza, ma non guarisce il dolore esistenziale né cancella il peccato.
 
 ## 5. Corrispondenze
 
@@ -82,12 +66,7 @@ Da questa perdita nasce in Francia la figura del **"poeta maledetto"** (*poète 
 
 ## 6 ter. I poeti maledetti
 
-I poeti maledetti francesi condividono alcuni tratti:
-
-- **vita anticonvenzionale**: Verlaine vive una relazione tempestosa con il giovanissimo Rimbaud (gli spara per gelosia, va in prigione); Rimbaud abbandona la poesia a 21 anni e parte per l'Africa come trafficante d'armi;
-- **rifiuto della morale borghese**: alcol, droga, sessualità non conformista, miseria volontaria;
-- **poesia visionaria**: Rimbaud teorizza il "**deragliamento di tutti i sensi**" come metodo per accedere all'**ignoto**;
-- **fine tragica o anomala**: morte precoce, abbandono dell'arte, esilio, follia.
+I poeti maledetti francesi condividono alcuni tratti caratteristici. Anzitutto una vita anticonvenzionale: Verlaine vive una relazione tempestosa con il giovanissimo Rimbaud (gli spara per gelosia e finisce in prigione), mentre Rimbaud abbandona la poesia a 21 anni e parte per l'Africa come trafficante d'armi. A questo si lega il rifiuto della morale borghese, fatto di alcol, droga, sessualità non conformista e miseria volontaria. La loro è una poesia visionaria: Rimbaud teorizza il "**deragliamento di tutti i sensi**" come metodo per accedere all'**ignoto**. Le loro biografie hanno spesso una fine tragica o anomala: morte precoce, abbandono dell'arte, esilio, follia.
 
 I poeti maledetti incarnano la prima figura moderna dell'**artista contro la società**, antesignana del Novecento.
 
@@ -103,14 +82,7 @@ Il **Simbolismo** nasce in Francia e influenza profondamente la poesia europea.
 
 I simbolisti rifiutano la poesia descrittiva e realistica. Secondo loro la poesia deve evocare, non spiegare.
 
-Caratteristiche:
-
-- **Uso di simboli**: oggetti e immagini concrete che rimandano a significati spirituali o psicologici nascosti, senza spiegarli direttamente.
-- **Analogie tra realtà lontane**: la poesia accosta elementi distanti (un profumo e un ricordo, un colore e un suono) per rivelare corrispondenze segrete (sinestesie).
-- **Musicalità**: il verso punta sul ritmo, sulle assonanze e sulle ripetizioni; Verlaine dirà "De la musique avant toute chose" ("La musica prima di tutto").
-- **Linguaggio allusivo**: la poesia non nomina le cose direttamente, ma le suggerisce per accenni, lasciando spazio all'evocazione e all'interpretazione.
-- **Centralità della parola poetica**: la singola parola è scelta per il suo potere evocativo, non per descrivere; la poesia si autogiustifica come pura creazione linguistica.
-- **Ricerca del mistero oltre le apparenze**: scopo della poesia è cogliere l'invisibile, l'ignoto, ciò che sta dietro la superficie sensibile del mondo.
+Al centro della loro pratica c'è l'uso di simboli, cioè oggetti e immagini concrete che rimandano a significati spirituali o psicologici nascosti, senza spiegarli direttamente. A questo si affianca la ricerca di analogie tra realtà lontane: la poesia accosta elementi distanti (un profumo e un ricordo, un colore e un suono) per rivelare corrispondenze segrete (le sinestesie). Fondamentale è anche la musicalità: il verso punta sul ritmo, sulle assonanze e sulle ripetizioni, tanto che Verlaine dirà "De la musique avant toute chose" ("La musica prima di tutto"). Il linguaggio diventa allusivo, perché la poesia non nomina le cose direttamente ma le suggerisce per accenni, lasciando spazio all'evocazione e all'interpretazione. In questo quadro la singola parola assume una centralità nuova, scelta per il suo potere evocativo e non per descrivere: la poesia si autogiustifica come pura creazione linguistica. Tutto è orientato alla ricerca del mistero oltre le apparenze, perché lo scopo è cogliere l'invisibile, l'ignoto, ciò che sta dietro la superficie sensibile del mondo.
 
 Tra gli autori principali:
 
@@ -133,12 +105,7 @@ Il principio fondamentale è "l'arte per l'arte": l'arte non deve servire alla m
 
 Nel romanzo *Il ritratto di Dorian Gray*, Dorian desidera restare giovane e bello per sempre, mentre il suo ritratto invecchia e porta i segni della corruzione morale.
 
-Il romanzo mostra il fascino e il pericolo dell'estetismo:
-
-- **La bellezza diventa un valore assoluto**: per Dorian (e per Lord Henry, suo mentore) nulla conta più dell'apparenza estetica, neppure il bene o la verità.
-- **La vita viene separata dalla responsabilità morale**: Dorian agisce senza pensare alle conseguenze etiche delle sue azioni, perché il ritratto si fa carico al posto suo del peso morale.
-- **Il piacere diventa ricerca egoistica**: la sua esistenza si riduce a una collezione di esperienze rare ed estreme, senza legami autentici con gli altri.
-- **L'apparenza nasconde la degradazione interiore**: il volto di Dorian resta giovane, ma il ritratto si deforma; è l'immagine perfetta della scissione tra superficie estetica e corruzione dell'anima.
+Il romanzo mostra il fascino e il pericolo dell'estetismo. La bellezza vi diventa un valore assoluto: per Dorian (e per Lord Henry, suo mentore) nulla conta più dell'apparenza estetica, neppure il bene o la verità. Di conseguenza la vita viene separata dalla responsabilità morale, perché Dorian agisce senza pensare alle conseguenze etiche delle sue azioni: il ritratto si fa carico al posto suo del peso morale. Il piacere diventa allora ricerca egoistica, e la sua esistenza si riduce a una collezione di esperienze rare ed estreme, senza legami autentici con gli altri. L'apparenza, infine, nasconde la degradazione interiore: il volto di Dorian resta giovane, ma il ritratto si deforma, ed è l'immagine perfetta della scissione tra superficie estetica e corruzione dell'anima.
 
 ## 11. Huysmans e *A ritroso*
 

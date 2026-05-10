@@ -10,156 +10,61 @@ Il padre muore quando Ungaretti è ancora bambino, mentre lavora al Canale di Su
 
 Ad Alessandria frequenta ambienti culturali vivaci, conosce fuoriusciti e intellettuali, si avvicina alla letteratura francese e inizia a interessarsi alla poesia.
 
-Nel 1912 si trasferisce a **Parigi**, dove entra in contatto con:
-
-- il simbolismo francese;
-- le avanguardie;
-- Picasso;
-- Modigliani;
-- Apollinaire;
-- la filosofia di Bergson.
-
-Parigi è decisiva perché gli fa scoprire una poesia moderna, essenziale e libera dalle forme tradizionali.
+Nel 1912 si trasferisce a **Parigi**, città decisiva per la sua formazione. Qui entra in contatto con il simbolismo francese e con le grandi avanguardie, frequentando artisti come Picasso e Modigliani e poeti come Apollinaire; assorbe inoltre la filosofia di Bergson, centrale per la sua idea di tempo e memoria. Parigi gli fa scoprire una poesia moderna, essenziale e libera dalle forme tradizionali.
 
 ### La guerra
 
-Allo scoppio della Prima guerra mondiale Ungaretti si schiera inizialmente su posizioni interventiste, anche per il desiderio di sentirsi pienamente italiano.
+Allo scoppio della Prima guerra mondiale Ungaretti si schiera inizialmente su posizioni interventiste, anche per il desiderio di sentirsi pienamente italiano. Si arruola volontario e combatte sul **Carso** e poi sul fronte francese.
 
-Si arruola volontario e combatte sul **Carso** e poi sul fronte francese.
-
-L'esperienza della guerra è traumatica: a contatto con la morte, Ungaretti scopre la fragilità dell'uomo e il valore assoluto della vita.
-
-Le poesie della prima fase nascono spesso direttamente in trincea.
+L'esperienza della guerra è traumatica: a contatto con la morte, Ungaretti scopre la fragilità dell'uomo e il valore assoluto della vita. Le poesie della prima fase nascono spesso direttamente in trincea, scritte su foglietti di fortuna tra un'azione e l'altra.
 
 ### Dopo la guerra
 
 Dopo il conflitto vive tra Parigi e l'Italia. Nel 1921 torna a Roma. Nel 1928 vive una conversione religiosa al cattolicesimo, che segna una nuova fase della sua poesia.
 
-Negli anni Trenta insegna in Brasile. Qui subisce lutti profondi: muoiono il fratello e il figlio Antonietto.
+Negli anni Trenta insegna in Brasile. Qui subisce lutti profondi: muoiono il fratello e il figlio Antonietto, ferite che attraverseranno tutta la produzione successiva.
 
-Rientrato in Italia, insegna Letteratura italiana all'università di Roma.
-
-Nel 1969 pubblica l'edizione complessiva della propria opera poetica con il titolo **Vita d'un uomo**.
-
-Muore nel 1970.
+Rientrato in Italia, insegna Letteratura italiana all'università di Roma. Nel 1969 pubblica l'edizione complessiva della propria opera poetica con il titolo **Vita d'un uomo**. Muore nel 1970.
 
 ## 2. Le fasi della produzione poetica
 
-La poesia di Ungaretti può essere divisa in tre fasi principali.
+La poesia di Ungaretti può essere divisa in tre fasi principali, ciascuna legata a un momento esistenziale e a una scelta stilistica diversa.
 
 ### Prima fase: L'Allegria
 
-Comprende le raccolte:
-
-- *Il porto sepolto* (1916);
-- *Allegria di naufragi* (1919);
-- *L'Allegria* (1931).
-
-È la fase più innovativa:
-
-- versi brevissimi;
-- parole isolate;
-- abolizione quasi totale della punteggiatura;
-- spazi bianchi;
-- analogie;
-- linguaggio essenziale;
-- centralità dell'esperienza di guerra.
+La prima fase comprende *Il porto sepolto* (1916), *Allegria di naufragi* (1919) e la raccolta riassuntiva *L'Allegria* (1931). È la fase più innovativa e sperimentale: il verso si frantuma in unità brevissime, talvolta fatte di una sola parola; la punteggiatura quasi scompare; gli spazi bianchi diventano parte attiva del testo, come pause cariche di senso. L'analogia sostituisce la descrizione, il linguaggio si fa essenziale, e l'esperienza della guerra costituisce il nucleo da cui tutto nasce.
 
 ### Seconda fase: Sentimento del tempo
 
-Con *Sentimento del tempo* Ungaretti abbandona in parte la frantumazione estrema della prima fase.
-
-Caratteristiche:
-
-- ritorno a forme più tradizionali;
-- recupero della punteggiatura;
-- sintassi più complessa;
-- attenzione al tempo, alla memoria, alla religione;
-- recupero dei classici, soprattutto Petrarca e Leopardi.
-
-Questa fase si collega al clima europeo del **ritorno all'ordine** dopo le avanguardie.
+Con *Sentimento del tempo* Ungaretti abbandona la frantumazione estrema della prima fase e cerca un equilibrio nuovo. Tornano forme più tradizionali, riemerge la punteggiatura e la sintassi si fa più articolata. Al centro si collocano il tempo, la memoria e la dimensione religiosa, alimentati dal recupero dei classici, in particolare Petrarca e Leopardi. Questa fase si collega al clima europeo del **ritorno all'ordine** dopo le avanguardie.
 
 ### Terza fase: Il dolore e le ultime raccolte
 
-La terza fase comprende raccolte come:
-
-- *Il dolore*;
-- *La terra promessa*;
-- *Un grido e paesaggi*;
-- *Il taccuino del vecchio*.
-
-I temi dominanti sono:
-
-- lutto personale;
-- morte del figlio;
-- dolore universale;
-- Seconda guerra mondiale;
-- vecchiaia;
-- ricerca di una saggezza finale.
+La terza fase comprende *Il dolore*, *La terra promessa*, *Un grido e paesaggi* e *Il taccuino del vecchio*. Il tono cambia profondamente: il lutto personale, in particolare la morte del figlio Antonietto, si apre a un dolore universale che incrocia la tragedia della Seconda guerra mondiale. Sullo sfondo emergono il tema della vecchiaia e la ricerca di una saggezza ultima, una forma di conciliazione faticosa con l'esperienza vissuta.
 
 ## 3. Poetica
 
 ### La poesia come scavo
 
-Per Ungaretti la poesia nasce da uno scavo interiore. Il poeta deve scendere nel profondo di sé per trovare parole essenziali, capaci di rivelare frammenti di verità.
-
-Questa idea è collegata al simbolo del **porto sepolto**: un luogo nascosto, sommerso, misterioso, da cui il poeta riporta alla luce qualcosa.
+Per Ungaretti la poesia nasce da uno scavo interiore. Il poeta deve scendere nel profondo di sé per trovare parole essenziali, capaci di rivelare frammenti di verità. Questa idea è collegata al simbolo del **porto sepolto**: un luogo nascosto, sommerso, misterioso, da cui il poeta riporta alla luce qualcosa di antico e prezioso.
 
 ### La parola essenziale
 
-Ungaretti rifiuta la retorica e la descrizione ampia.
-
-La parola poetica deve essere:
-
-- nuda;
-- concentrata;
-- necessaria;
-- isolata;
-- carica di significato.
-
-Per questo usa spesso versi composti da una sola parola, chiamati anche **versicoli**.
+Ungaretti rifiuta la retorica e la descrizione ampia. La parola poetica deve essere nuda, concentrata, necessaria, isolata e carica di significato: ogni termine deve sostenere da solo il peso del verso. Per questo usa spesso versi composti da una sola parola, chiamati **versicoli**, in cui il bianco della pagina diventa silenzio attivo.
 
 ### Analogia
 
-L'analogia è una tecnica centrale. Consiste nell'accostare immagini lontane senza spiegare tutti i passaggi logici.
-
-L'analogia permette di collegare:
-
-- esperienza personale e condizione universale;
-- guerra e vita;
-- paesaggio e interiorità;
-- dolore individuale e dolore umano.
+L'analogia è una tecnica centrale: consiste nell'accostare immagini lontane senza spiegare i passaggi logici, lasciando che il lettore percepisca la somiglianza per via intuitiva. È il mezzo attraverso cui Ungaretti collega l'esperienza personale alla condizione universale, la guerra alla vita, il paesaggio all'interiorità, il dolore individuale al dolore di tutti gli uomini.
 
 ### Guerra e vita
 
-La guerra non è raccontata come cronaca militare. È un'esperienza estrema che mette l'uomo davanti alla morte e gli fa riscoprire il valore della vita.
-
-Nelle poesie di guerra convivono:
-
-- orrore;
-- fratellanza;
-- dolore;
-- attaccamento alla vita;
-- solitudine;
-- precarietà.
+La guerra non è raccontata come cronaca militare. È un'esperienza estrema che mette l'uomo davanti alla morte e gli fa riscoprire il valore della vita. Nelle poesie di trincea convivono l'orrore e la fratellanza, il dolore e l'attaccamento alla vita, la solitudine e la coscienza della precarietà comune: sentimenti opposti tenuti insieme dall'urgenza del momento.
 
 ## 4. L'Allegria
 
-Il titolo è paradossale: molte poesie parlano di morte, distruzione, trincea, cadaveri.
+Il titolo è paradossale: molte poesie parlano di morte, distruzione, trincea, cadaveri. L'allegria non è felicità superficiale, ma improvviso slancio vitale che nasce proprio davanti alla morte. Il titolo precedente, *Allegria di naufragi*, contiene un ossimoro ancora più forte: nel naufragio, cioè nella distruzione, l'uomo può scoprire un attaccamento più intenso alla vita.
 
-L'allegria non è felicità superficiale, ma improvviso slancio vitale che nasce proprio davanti alla morte.
-
-Il titolo precedente, *Allegria di naufragi*, contiene un ossimoro: nel naufragio, cioè nella distruzione, l'uomo può scoprire un attaccamento più forte alla vita.
-
-Caratteristiche della raccolta:
-
-- componimenti datati e localizzati come pagine di diario;
-- paesaggio del Carso;
-- frammentazione del verso;
-- assenza di punteggiatura;
-- verticalizzazione della poesia;
-- essenzialità;
-- valore dei silenzi.
+La raccolta si presenta come una sorta di diario poetico: i componimenti sono datati e localizzati come pagine di diario, ambientati nel paesaggio del Carso. Lo stile, fortemente verticalizzato, sfrutta la frantumazione del verso, l'assenza di punteggiatura, l'essenzialità delle immagini e il valore espressivo dei silenzi: la pagina bianca pesa quanto le parole.
 
 ## 5. Il porto sepolto
 
@@ -167,144 +72,63 @@ Il titolo ha un doppio significato.
 
 ### Significato autobiografico
 
-Ad Alessandria d'Egitto Ungaretti aveva sentito raccontare di un antico porto sommerso, risalente all'età tolemaica. Questo porto nascosto diventa un'immagine della memoria.
+Ad Alessandria d'Egitto Ungaretti aveva sentito raccontare di un antico porto sommerso, risalente all'età tolemaica. Questo porto nascosto diventa un'immagine della memoria: qualcosa che esiste sotto la superficie e che bisogna cercare in profondità.
 
 ### Significato simbolico
 
-Il porto sepolto è il segreto nascosto dentro l'uomo. Il poeta scende in profondità, come in un abisso, per riportare alla luce frammenti di verità.
-
-La poesia non rivela mai una verità totale, ma solo "schegge" di assoluto.
+Il porto sepolto è il segreto nascosto dentro l'uomo. Il poeta scende in profondità, come in un abisso, per riportare alla luce frammenti di verità. La poesia non rivela mai una verità totale, ma solo "schegge" di assoluto.
 
 ## 6. Veglia
 
-**Veglia** è composta il 23 dicembre 1915.
+**Veglia** è composta il 23 dicembre 1915. Il poeta trascorre la notte accanto al cadavere di un compagno ucciso. La descrizione è cruda e concreta: il corpo massacrato, la bocca deformata, la luna indifferente che illumina la scena.
 
-Il poeta trascorre la notte accanto al cadavere di un compagno ucciso. La descrizione è cruda e concreta: il corpo massacrato, la bocca deformata, la luna indifferente.
-
-La prima parte presenta l'orrore della morte. La seconda parte contiene la rivelazione:
-
-- proprio davanti alla morte il poeta sente un fortissimo attaccamento alla vita;
-- il contatto con il cadavere genera una reazione vitale.
+La poesia si divide in due movimenti. La prima parte presenta l'orrore della morte; la seconda contiene una rivelazione capovolgente: proprio davanti al cadavere il poeta sente un fortissimo attaccamento alla vita, come se il contatto con la morte generasse una reazione vitale incontenibile.
 
 ### Stile
 
-- participi passati violenti;
-- versi brevi;
-- assenza di punteggiatura;
-- pause bianche;
-- forte concentrazione emotiva.
-
-La poesia mostra bene il nucleo dell'*Allegria*: dalla morte nasce la coscienza del valore della vita.
+Lo stile fa leva su participi passati violenti ("massacrato", "digrignata"), versi brevissimi, assenza di punteggiatura e pause bianche cariche di tensione. La concentrazione emotiva è massima e mostra bene il nucleo dell'*Allegria*: dalla morte nasce la coscienza del valore della vita.
 
 ## 7. Fratelli
 
-**Fratelli** è una poesia del 1916.
+**Fratelli** è una poesia del 1916. Il titolo si riferisce ai soldati, anche nemici, accomunati dalla stessa fragilità: nel buio della guerra la parola "fratelli" diventa un grido di umanità contro la violenza.
 
-Il titolo si riferisce ai soldati, anche nemici, accomunati dalla stessa fragilità.
+Il tema centrale è la fratellanza degli uomini di fronte alla morte. La poesia è costruita su parole essenziali, allitterazioni e sul forte valore della parola isolata; al centro si colloca l'immagine della vita come "foglia appena nata", fragile e tremante.
 
-Nel buio della guerra la parola "fratelli" diventa un grido di umanità contro la violenza.
-
-Tema centrale: la fratellanza degli uomini di fronte alla morte.
-
-La poesia è costruita su:
-
-- parole essenziali;
-- allitterazioni;
-- forte valore della parola isolata;
-- idea della vita come "foglia appena nata", fragile e tremante.
-
-La parola "fratelli" non è un semplice saluto militare. Nel contesto della trincea diventa una scoperta: gli uomini, proprio perché esposti alla morte, riconoscono una comune fragilità. La guerra dovrebbe separare e opporre, ma la poesia fa emergere una solidarietà elementare.
+La parola "fratelli" non è un semplice saluto militare. Nel contesto della trincea diventa una scoperta: gli uomini, proprio perché esposti alla morte, riconoscono una comune fragilità. La guerra dovrebbe separare e opporre, ma la poesia fa emergere una solidarietà elementare che precede ogni divisione.
 
 ## 8. Soldati
 
-**Soldati** è una delle poesie più brevi e celebri di Ungaretti.
+**Soldati** è una delle poesie più brevi e celebri di Ungaretti. Il testo paragona i soldati alle foglie sugli alberi in autunno. Il titolo è fondamentale, perché offre il primo termine del paragone: senza di esso la poesia risulterebbe enigmatica.
 
-Il testo paragona i soldati alle foglie sugli alberi in autunno.
-
-Il titolo è fondamentale: offre il primo termine di paragone. Senza il titolo, la poesia risulterebbe più enigmatica.
-
-Significato:
-
-- i soldati sono esposti alla morte;
-- basta poco per cadere, come una foglia;
-- la precarietà dei soldati diventa immagine della precarietà di tutti gli uomini.
-
-### Stile
-
-- forma impersonale;
-- analogia soldati/foglie;
-- estrema essenzialità;
-- parole isolate;
-- musicalità ottenuta con pochi elementi.
+Il significato è insieme concreto e universale. I soldati sono esposti alla morte e basta poco per cadere, come una foglia: la loro precarietà diventa allora immagine della precarietà di tutti gli uomini. Lo stile è coerente con il tema: forma impersonale, analogia secca tra soldati e foglie, parole isolate, una musicalità ottenuta con pochissimi elementi.
 
 La brevità del testo non è povertà, ma concentrazione estrema. Ungaretti elimina tutto ciò che non è necessario e lascia solo l'analogia. In poche parole il destino dei soldati diventa il destino di tutti: essere appesi alla vita in modo provvisorio.
 
 ## 9. Pellegrinaggio
 
-In **Pellegrinaggio** il titolo è una metafora.
+In **Pellegrinaggio** il titolo è una metafora. Il poeta si trascina nella trincea, tra macerie, fango e distruzione, e il cammino fisico diventa un cammino interiore attraverso il dolore. Sofferenza, fatica e resistenza si intrecciano al desiderio di non lasciarsi schiacciare e alla ricerca di una luce lontana che giustifichi il passo successivo.
 
-Il poeta si trascina nella trincea, tra macerie, fango e distruzione. Il cammino fisico diventa un cammino interiore attraverso il dolore.
-
-Temi:
-
-- sofferenza;
-- fatica;
-- resistenza;
-- desiderio di non lasciarsi schiacciare;
-- ricerca di una luce lontana.
-
-L'immagine dell'"uomo di pena" richiama una dimensione quasi cristologica, anche se la conversione religiosa di Ungaretti avverrà solo più tardi.
-
-Il titolo suggerisce che il soldato non sta semplicemente camminando: sta attraversando una prova. La trincea diventa un luogo di sofferenza fisica e morale, ma anche di resistenza. Il poeta non si presenta come eroe, bensì come creatura ferita che continua ad avanzare.
+L'immagine dell'"uomo di pena" richiama una dimensione quasi cristologica, anche se la conversione religiosa di Ungaretti avverrà solo più tardi. Il titolo suggerisce che il soldato non sta semplicemente camminando: sta attraversando una prova. La trincea diventa luogo di sofferenza fisica e morale, ma anche di tenace resistenza. Il poeta non si presenta come eroe, bensì come creatura ferita che continua ad avanzare.
 
 ## 10. San Martino del Carso
 
-La poesia è costruita su un'analogia tra il paese distrutto e il cuore del poeta.
+La poesia è costruita su un'analogia tra il paese distrutto e il cuore del poeta. Le case sventrate diventano immagine dei compagni morti, e il cuore del poeta è "il paese più straziato": la geografia esterna si rovescia in geografia interiore.
 
-Le case distrutte diventano immagine dei compagni morti. Il cuore del poeta è "il paese più straziato".
-
-Caratteristiche:
-
-- parole semplici;
-- ripetizioni;
-- forte simmetria;
-- assenza di retorica;
-- identificazione tra paesaggio e interiorità.
-
-Il cuore diventa una specie di cimitero della memoria.
-
-La poesia procede per sottrazione: poche parole, immagini nude, ripetizioni. Non c'è descrizione patetica delle rovine; bastano i "brandelli di muro" e il ricordo dei compagni morti. La distruzione esterna entra nel poeta e diventa distruzione interiore.
+Lo stile procede per sottrazione: parole semplici, ripetizioni, forte simmetria, totale assenza di retorica. Non c'è descrizione patetica delle rovine; bastano i "brandelli di muro" e il ricordo dei compagni morti. La distruzione esterna entra nel poeta e diventa distruzione interiore, fino a fare del cuore una specie di cimitero della memoria.
 
 ## 11. Sono una creatura
 
-In questa poesia il paesaggio del Carso, arido e pietroso, diventa immagine del dolore interiore.
+In questa poesia il paesaggio del Carso, arido e pietroso, diventa immagine del dolore interiore. La roccia prosciuga l'acqua come il dolore prosciuga le lacrime del poeta. Il tema centrale è che vivere significa soffrire, e la morte appare come possibile fine del dolore.
 
-La roccia prosciuga l'acqua come il dolore prosciuga le lacrime del poeta.
-
-Tema centrale: vivere significa soffrire, e la morte appare come possibile fine del dolore.
-
-La poesia si collega a *Pellegrinaggio* per l'idea della vita come cammino doloroso.
-
-Il Carso è una pietraia arida, senza acqua, e diventa il correlativo concreto del dolore. Il poeta dice che il suo pianto non si vede perché è come l'acqua assorbita dalla roccia. Il dolore è così profondo da non riuscire nemmeno a trasformarsi in lacrime.
+La poesia si collega a *Pellegrinaggio* per l'idea della vita come cammino doloroso. Il Carso, pietraia arida e senza acqua, è il correlativo concreto del dolore: il poeta dice che il suo pianto non si vede perché è come l'acqua assorbita dalla roccia. Il dolore è così profondo da non riuscire nemmeno a trasformarsi in lacrime.
 
 ## 12. I fiumi
 
-**I fiumi** è una delle poesie più importanti dell'*Allegria*.
+**I fiumi** è una delle poesie più importanti dell'*Allegria*. Il poeta si immerge nell'Isonzo e, attraverso il contatto con l'acqua, recupera la memoria della propria vita.
 
-Il poeta si immerge nell'Isonzo e, attraverso il contatto con l'acqua, recupera la memoria della propria vita.
+I fiumi citati segnano le tappe della sua biografia: il **Serchio** rinvia alle origini familiari toscane, il **Nilo** all'infanzia e alla giovinezza in Egitto, la **Senna** alla formazione parigina, l'**Isonzo** all'esperienza della guerra. L'acqua ha valore di purificazione: immerso nel fiume, il poeta si sente parte dell'universo, e la memoria ricompone momentaneamente la sua identità frammentata.
 
-I fiumi citati rappresentano tappe biografiche:
-
-- **Serchio**: origine familiare toscana;
-- **Nilo**: infanzia e giovinezza in Egitto;
-- **Senna**: formazione parigina;
-- **Isonzo**: esperienza della guerra.
-
-L'acqua ha valore di purificazione. Il poeta, immerso nel fiume, si sente parte dell'universo.
-
-La memoria ricompone momentaneamente la sua identità.
-
-Questa poesia è diversa da quelle più brevi e drammatiche della trincea. Qui Ungaretti ricostruisce la propria storia personale attraverso i luoghi: le origini familiari, l'infanzia egiziana, la formazione parigina, la guerra sull'Isonzo. In mezzo alla distruzione, il contatto con il fiume gli permette di sentirsi per un attimo armonizzato con la propria vita.
+Questa poesia è diversa da quelle più brevi e drammatiche della trincea. Qui Ungaretti ricostruisce la propria storia personale attraverso i luoghi, e in mezzo alla distruzione il contatto con il fiume gli permette di sentirsi per un attimo armonizzato con la propria vita.
 
 ## 13. M'illumino d'immenso (Mattina)
 
@@ -317,7 +141,7 @@ Datata "Santa Maria La Longa, 26 gennaio 1917", trincea sul Carso.
 
 **Significato**: rinascita dell'anima dopo la scoperta della morte. Un mattino di luce intensa basta al poeta per sentirsi parte dell'universo. La poesia è il caso estremo di **distillazione della parola**: due parole sole, ognuna densissima di senso, separate dal silenzio della pagina bianca.
 
-**Tecnica**: Ungaretti porta all'estremo il principio di distillazione: ogni parola è un atomo di significato. La poesia è un crocevia tra avanguardia (sperimentazione, abolizione della sintassi) e tradizione (musicalità, equilibrio fonico).
+**Tecnica**: Ungaretti porta all'estremo il principio di distillazione, fino a fare di ogni parola un atomo di significato. La poesia è un crocevia tra avanguardia (sperimentazione, abolizione della sintassi) e tradizione (musicalità, equilibrio fonico).
 
 ## 14. La madre (Sentimento del tempo)
 
@@ -341,18 +165,7 @@ Per Ungaretti la poesia non è opera staccata, ma esistenza fatta parola. Ogni l
 
 ## 17. Ungaretti e l'Ermetismo
 
-Ungaretti è considerato un **precursore dell'Ermetismo**.
-
-Lo anticipano:
-
-- parola essenziale;
-- versi brevi;
-- analogia;
-- silenzio;
-- riduzione della sintassi;
-- ricerca di verità interiori.
-
-Tuttavia Ungaretti non è soltanto ermetico: la sua poesia nasce da un'esperienza concreta e autobiografica, soprattutto la guerra.
+Ungaretti è considerato un **precursore dell'Ermetismo**. Lo anticipano la parola essenziale, il verso breve, l'uso dell'analogia, il valore del silenzio, la riduzione della sintassi e la ricerca di verità interiori più che descrittive. Tuttavia Ungaretti non è soltanto ermetico: la sua poesia nasce da un'esperienza concreta e autobiografica, soprattutto la guerra, e questo la distingue dagli sviluppi più astratti della corrente.
 
 ## Collegamenti
 
@@ -376,6 +189,4 @@ Tuttavia Ungaretti non è soltanto ermetico: la sua poesia nasce da un'esperienz
 
 ## Sintesi finale
 
-Ungaretti rinnova la poesia italiana riducendo il verso all'essenziale. La guerra gli rivela la fragilità dell'uomo, ma anche un fortissimo attaccamento alla vita.
-
-La sua poesia nasce dallo scavo interiore e dalla ricerca di una parola pura, capace di illuminare frammenti di verità. Per questo è considerato il principale precursore dell'Ermetismo.
+Ungaretti rinnova la poesia italiana riducendo il verso all'essenziale. La guerra gli rivela la fragilità dell'uomo, ma anche un fortissimo attaccamento alla vita. La sua poesia nasce dallo scavo interiore e dalla ricerca di una parola pura, capace di illuminare frammenti di verità: per questo è considerato il principale precursore dell'Ermetismo.

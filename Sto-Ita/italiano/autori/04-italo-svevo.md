@@ -4,12 +4,7 @@
 
 **Italo Svevo** è lo pseudonimo di **Aron Hector Schmitz** (italianizzato in Ettore Schmitz). Nasce a **Trieste nel 1861** da una famiglia borghese di **triplice cultura**: tedesca (Schmitz, dal padre boemo-tedesco), ebraica (Aron, dalla famiglia materna), italiana (l'ambiente della città). Questa stratificazione culturale è centrale per capire la sua opera.
 
-Il suo pseudonimo è significativo:
-
-- **Italo** richiama la cultura italiana;
-- **Svevo** richiama la componente germanica e mitteleuropea della sua formazione.
-
-Lo pseudonimo è una **maschera** scelta consapevolmente: nasconde l'identità ebraica e ufficiale (sotto cui lavora come impiegato e poi come industriale), ma proclama insieme l'italianità e la matrice mitteleuropea. È quasi un programma letterario.
+Lo pseudonimo è significativo: **Italo** richiama la cultura italiana, mentre **Svevo** richiama la componente germanica e mitteleuropea della sua formazione. È una **maschera** scelta consapevolmente, che nasconde l'identità ebraica e ufficiale (sotto cui lavora come impiegato e poi come industriale), ma proclama insieme l'italianità e la matrice mitteleuropea: è quasi un programma letterario.
 
 Trieste, all'epoca parte dell'Impero austro-ungarico, è una città fondamentale per capire Svevo: porto commerciale, luogo multietnico, aperto alla cultura europea e in contatto con il mondo tedesco, slavo e italiano.
 
@@ -25,22 +20,9 @@ Svevo non è un intellettuale professionista: vive una normale vita borghese, la
 
 ### Letture e influenze
 
-Durante gli anni di lavoro legge:
+Durante gli anni di lavoro Svevo legge con grande varietà. I **classici italiani e francesi** — i grandi narratori dell'Ottocento come Manzoni, Balzac, Flaubert — gli forniscono il modello del romanzo borghese realista da cui partire. Da **Zola e dal naturalismo** francese eredita l'attenzione all'ambiente sociale e all'osservazione clinica del personaggio, che però svilupperà in chiave psicologica. Da **Darwin** trae la teoria dell'evoluzione e della lotta per la sopravvivenza, che diventa per lui una chiave di lettura della società borghese, in cui i deboli (gli inetti) soccombono. Da **Schopenhauer** assorbe il pessimismo radicale e l'idea che la volontà umana sia debole, illusoria e fonte di sofferenza. Le letture di **testi socialisti e marxisti** alimentano la sua critica della società borghese e capitalistica, influenzando il suo sguardo disincantato sul mondo degli affari e delle convenzioni. Più tardi, le **teorie di Freud** gli forniscono gli strumenti per indagare l'inconscio, i sogni, l'autoinganno e il rapporto padre-figlio.
 
-- **Classici italiani e francesi**: i grandi narratori dell'Ottocento (Manzoni, Balzac, Flaubert) gli forniscono il modello del romanzo borghese realista da cui partire.
-- **Zola e il naturalismo**: dal naturalismo francese eredita l'attenzione all'ambiente sociale e all'osservazione clinica del personaggio, che però svilupperà in chiave psicologica.
-- **Darwin**: la teoria dell'evoluzione e della lotta per la sopravvivenza diventa per Svevo una chiave di lettura della società borghese, in cui i deboli (gli inetti) soccombono.
-- **Schopenhauer**: il filosofo tedesco gli trasmette il pessimismo radicale e l'idea che la volontà umana sia debole, illusoria e fonte di sofferenza.
-- **Testi socialisti e marxisti**: la critica della società borghese e capitalistica influenza il suo sguardo disincantato sul mondo degli affari e delle convenzioni.
-- **Più tardi, le teorie di Freud**: la psicoanalisi gli fornisce gli strumenti per indagare l'inconscio, i sogni, l'autoinganno e il rapporto padre-figlio.
-
-Queste influenze spiegano la sua attenzione per:
-
-- **Il rapporto tra individuo e società**: il personaggio sveviano è sempre in conflitto con l'ambiente borghese, che lo respinge o lo schiaccia.
-- **La lotta per la sopravvivenza**: applicata in chiave darwiniana ai contesti urbani e commerciali, dove vincono i forti e i furbi, non i sensibili.
-- **La debolezza della volontà**: i protagonisti vogliono cambiare, ma non riescono mai a passare dal proposito all'azione, restando paralizzati.
-- **L'inconscio**: i comportamenti dei personaggi sono guidati da motivazioni nascoste, che spesso contraddicono le loro intenzioni dichiarate.
-- **La malattia come condizione dell'uomo moderno**: la nevrosi non è eccezione patologica, ma cifra esistenziale dell'individuo contemporaneo, schiacciato dalla società industriale.
+Queste influenze spiegano la sua attenzione per alcuni nuclei tematici fondamentali. Anzitutto il **rapporto tra individuo e società**: il personaggio sveviano è sempre in conflitto con l'ambiente borghese, che lo respinge o lo schiaccia. Vi è poi la **lotta per la sopravvivenza**, applicata in chiave darwiniana ai contesti urbani e commerciali, dove vincono i forti e i furbi, non i sensibili. Centrale è anche la **debolezza della volontà**: i protagonisti vogliono cambiare, ma non riescono mai a passare dal proposito all'azione, restando paralizzati. A tutto ciò si aggiunge l'attenzione all'**inconscio**, perché i comportamenti dei personaggi sono guidati da motivazioni nascoste, che spesso contraddicono le loro intenzioni dichiarate. Infine c'è la **malattia come condizione dell'uomo moderno**: la nevrosi non è eccezione patologica, ma cifra esistenziale dell'individuo contemporaneo, schiacciato dalla società industriale.
 
 ### Matrimonio e lavoro
 
@@ -58,30 +40,15 @@ Svevo muore nel 1928 in seguito a un incidente stradale.
 
 ## 2. Svevo e il romanzo della crisi
 
-Svevo è uno dei principali autori italiani del **romanzo della crisi**, insieme a Pirandello. Le sue innovazioni:
-
-- il protagonista è un **inetto**: antieroe per eccellenza, prodotto della "**noluntas**" di Schopenhauer (la non-volontà, l'incapacità di volere e quindi di agire);
-- il romanzo è un **antiromanzo** o **romanzo psicologico-analitico**: non valgono i fatti o gli avvenimenti, ma come vengono vissuti e percepiti dal personaggio;
-- il narratore non è più affidabile: la verità è quella della coscienza distorta del protagonista;
-- il tempo non è più cronologico ma soggettivo: la memoria associativa sostituisce la trama lineare.
+Svevo è uno dei principali autori italiani del **romanzo della crisi**, insieme a Pirandello. Le sue innovazioni si concentrano su pochi punti decisivi. Il protagonista è un **inetto**, antieroe per eccellenza, prodotto della "**noluntas**" di Schopenhauer, cioè della non-volontà, dell'incapacità di volere e quindi di agire. Il romanzo diventa un **antiromanzo** o **romanzo psicologico-analitico**: non valgono i fatti o gli avvenimenti, ma come vengono vissuti e percepiti dal personaggio. Il narratore non è più affidabile: la verità è quella della coscienza distorta del protagonista. Anche il tempo non è più cronologico ma soggettivo: la memoria associativa sostituisce la trama lineare.
 
 Il personaggio centrale della narrativa sveviana è l'**inetto**.
 
 ### L'inetto
 
-L'inetto è un individuo che:
+L'inetto è un individuo che vorrebbe affermarsi ma non riesce: ha ambizioni di successo sociale, sentimentale o intellettuale, ma fallisce sistematicamente nel realizzarle. Analizza continuamente se stesso, passando più tempo a riflettere sulle proprie azioni che a compierle, in un'introspezione che spesso si trasforma in paralisi. È pieno di propositi, ma incapace di realizzarli: formula continui buoni propositi (smettere di fumare, cambiare vita, agire con decisione) che restano sempre rimandati. Si sente superiore agli altri, ma viene sconfitto nella vita pratica, perché si crede più sensibile e intelligente dei "normali", ma proprio loro hanno successo dove lui fallisce. Vive nella società borghese senza riuscire ad adattarsi davvero: ne accetta esteriormente le regole (lavoro, matrimonio) ma resta un estraneo, incapace di condividerne i valori.
 
-- **Vorrebbe affermarsi, ma non riesce**: ha ambizioni di successo sociale, sentimentale o intellettuale, ma fallisce sistematicamente nel realizzarle.
-- **Analizza continuamente se stesso**: passa più tempo a riflettere sulle proprie azioni che a compierle, in un'introspezione che spesso si trasforma in paralisi.
-- **È pieno di propositi, ma incapace di realizzarli**: formula continui buoni propositi (smettere di fumare, cambiare vita, agire con decisione) che restano sempre rimandati.
-- **Si sente superiore agli altri, ma viene sconfitto nella vita pratica**: si crede più sensibile e intelligente dei "normali", ma proprio loro hanno successo dove lui fallisce.
-- **Vive nella società borghese senza riuscire ad adattarsi davvero**: ne accetta esteriormente le regole (lavoro, matrimonio) ma resta un estraneo, incapace di condividerne i valori.
-
-Svevo segue l'evoluzione dell'inetto in tre romanzi:
-
-- **Alfonso Nitti** in *Una vita* (1892): impiegato di banca con velleità intellettuali, sconfitto dal suo stesso fallimento e destinato al suicidio; primo modello tragico di inetto.
-- **Emilio Brentani** in *Senilità* (1898): impiegato triestino già "vecchio dentro", incapace di vivere la passione per Angiolina e di assumersi responsabilità affettive; sopravvive nell'autoinganno.
-- **Zeno Cosini** nella *Coscienza di Zeno* (1923): inetto adulto, ironico e autocosciente, che attraverso la malattia arriva a smascherare la falsa salute della società borghese.
+Svevo segue l'evoluzione dell'inetto in tre romanzi. **Alfonso Nitti** in *Una vita* (1892) è un impiegato di banca con velleità intellettuali, sconfitto dal suo stesso fallimento e destinato al suicidio: è il primo modello tragico di inetto. **Emilio Brentani** in *Senilità* (1898) è un impiegato triestino già "vecchio dentro", incapace di vivere la passione per Angiolina e di assumersi responsabilità affettive, che sopravvive nell'autoinganno. **Zeno Cosini** nella *Coscienza di Zeno* (1923) è infine l'inetto adulto, ironico e autocosciente, che attraverso la malattia arriva a smascherare la falsa salute della società borghese.
 
 Zeno è l'inetto più complesso: è malato e nevrotico, ma proprio la sua malattia gli permette di capire che la società apparentemente sana è in realtà malata.
 
@@ -93,13 +60,7 @@ Per Svevo la funzione della letteratura è precisa: **conoscere se stessi**, app
 
 ### Il ruolo dell'intellettuale-inetto
 
-L'inetto svevianno è anche **figura dell'intellettuale moderno**:
-
-- la sua **esclusione** dal mondo borghese gli consente di osservarlo con distacco;
-- smaschera ciò che sembra vincente ma non lo è (i borghesi "sani" che in realtà sono cristallizzati);
-- è personaggio raffinato e colto ma con una percezione minima di sé, marginale nella società;
-- non promuove ideali, non propone riscatto, non insegna: è solo **descrizione del reale**;
-- per sopravvivere bisogna adattarsi, non combattere; la letteratura testimonia, non insegna.
+L'inetto svevianno è anche **figura dell'intellettuale moderno**. La sua esclusione dal mondo borghese gli consente di osservarlo con distacco, e gli permette di smascherare ciò che sembra vincente ma non lo è (i borghesi "sani" che in realtà sono cristallizzati). È personaggio raffinato e colto ma con una percezione minima di sé, marginale nella società; non promuove ideali, non propone riscatto, non insegna: è solo **descrizione del reale**. Per sopravvivere bisogna adattarsi, non combattere, e la letteratura testimonia, non insegna.
 
 In questo Svevo si distingue dal poeta-vate (D'Annunzio) e dall'esteta: il suo intellettuale non è guida né esempio, è solo testimone lucido della crisi.
 
@@ -107,16 +68,7 @@ In questo Svevo si distingue dal poeta-vate (D'Annunzio) e dall'esteta: il suo i
 
 ### La malattia
 
-La **malattia** è il tema centrale di Svevo.
-
-Non è solo malattia fisica, ma:
-
-- **Nevrosi**: disturbo psicologico moderno, fatto di ossessioni, manie, ansie e sintomi che non hanno una causa organica precisa.
-- **Disagio esistenziale**: sensazione di non essere al posto giusto nel mondo, di non riuscire a dare senso alla propria vita.
-- **Incapacità di scegliere**: paralisi della volontà di fronte alle decisioni importanti (carriera, amore, matrimonio), che vengono sempre rimandate.
-- **Autoinganno**: meccanismo per cui il personaggio si racconta una versione comoda della realtà per non affrontare le proprie responsabilità.
-- **Crisi dell'identità**: l'io non è più solido né unitario, ma frammentato, contraddittorio, fatto di voci e ruoli diversi.
-- **Rifiuto inconscio della normalità borghese**: la malattia diventa, senza che il personaggio se ne accorga, una forma di resistenza ai valori e ai doveri della società del lavoro e del profitto.
+La **malattia** è il tema centrale di Svevo, e non si riduce alla dimensione fisica. È anzitutto **nevrosi**, cioè un disturbo psicologico moderno fatto di ossessioni, manie, ansie e sintomi che non hanno una causa organica precisa. È poi **disagio esistenziale**, sensazione di non essere al posto giusto nel mondo, di non riuscire a dare senso alla propria vita. Si manifesta come **incapacità di scegliere**, paralisi della volontà di fronte alle decisioni importanti (carriera, amore, matrimonio), che vengono sempre rimandate, e come **autoinganno**, meccanismo per cui il personaggio si racconta una versione comoda della realtà per non affrontare le proprie responsabilità. Diventa **crisi dell'identità**, perché l'io non è più solido né unitario, ma frammentato, contraddittorio, fatto di voci e ruoli diversi. Soprattutto, è **rifiuto inconscio della normalità borghese**: la malattia diventa, senza che il personaggio se ne accorga, una forma di resistenza ai valori e ai doveri della società del lavoro e del profitto.
 
 In *La coscienza di Zeno* la malattia diventa una categoria universale. Alla fine Zeno comprende che non è solo lui a essere malato: tutta la civiltà moderna lo è.
 
@@ -124,12 +76,7 @@ In *La coscienza di Zeno* la malattia diventa una categoria universale. Alla fin
 
 La società borghese si presenta come sana, ordinata e razionale. Svevo mostra invece che questa salute è spesso solo apparenza.
 
-Zeno, pur essendo nevrotico, riesce a smascherare:
-
-- **Falsità dei rapporti familiari**: dietro l'apparenza di affetti solidi (padre, moglie, suocero) si nascondono conflitti, rivalità, sensi di colpa e desideri inconfessabili.
-- **Ipocrisia della borghesia**: la classe dirigente si presenta come moralmente sana e laboriosa, ma vive di compromessi, doppi giochi e affari poco limpidi.
-- **Fragilità della volontà**: l'idea ottocentesca dell'uomo padrone di sé crolla; ogni proposito viene tradito, ogni decisione rimandata.
-- **Illusione del progresso**: la fiducia ottocentesca nella scienza e nella tecnica come motore di miglioramento è smentita dalla guerra e dalla nevrosi collettiva.
+Zeno, pur essendo nevrotico, riesce a smascherare la **falsità dei rapporti familiari**: dietro l'apparenza di affetti solidi (padre, moglie, suocero) si nascondono conflitti, rivalità, sensi di colpa e desideri inconfessabili. Smaschera l'**ipocrisia della borghesia**, che si presenta come moralmente sana e laboriosa ma vive di compromessi, doppi giochi e affari poco limpidi. Svela inoltre la **fragilità della volontà**: l'idea ottocentesca dell'uomo padrone di sé crolla, ogni proposito viene tradito, ogni decisione rimandata. E rivela infine l'**illusione del progresso**, perché la fiducia ottocentesca nella scienza e nella tecnica come motore di miglioramento è smentita dalla guerra e dalla nevrosi collettiva.
 
 Per questo nel romanzo sveviano la malattia può diventare una forma di conoscenza.
 
@@ -163,21 +110,11 @@ Quando torna, trova Annetta fidanzata con un altro uomo, più deciso e socialmen
 
 ### Significato
 
-Alfonso è il primo grande inetto sveviano:
-
-- **Aspira al successo, ma non sa conquistarlo**: vorrebbe affermarsi nella società triestina, ma non possiede le doti pratiche per farlo davvero.
-- **Sogna una vita diversa, ma resta paralizzato**: immagina destini intellettuali e amorosi grandiosi, però quando l'occasione arriva (Annetta) la lascia sfuggire.
-- **Rifiuta la mediocrità borghese, ma non ha la forza di superarla**: critica l'ambiente impiegatizio in cui vive, ma non riesce né ad accettarlo né ad andarsene.
-- **Si illude di essere superiore, ma viene sconfitto dalla vita**: la sua presunta superiorità intellettuale non lo salva; viene battuto da rivali più decisi e finisce nel suicidio.
+Alfonso è il primo grande inetto sveviano: aspira al successo ma non sa conquistarlo, perché vorrebbe affermarsi nella società triestina ma non possiede le doti pratiche per farlo davvero. Sogna una vita diversa ma resta paralizzato: immagina destini intellettuali e amorosi grandiosi, però quando l'occasione arriva (Annetta) la lascia sfuggire. Rifiuta la mediocrità borghese ma non ha la forza di superarla, perché critica l'ambiente impiegatizio in cui vive senza riuscire né ad accettarlo né ad andarsene. Si illude di essere superiore ma viene sconfitto dalla vita: la sua presunta superiorità intellettuale non lo salva, viene battuto da rivali più decisi e finisce nel suicidio.
 
 ### Tecnica narrativa
 
-Il romanzo è ancora abbastanza tradizionale:
-
-- **Narrazione in terza persona**: il narratore esterno racconta la vicenda di Alfonso dall'esterno, secondo il modello ottocentesco del romanzo realista.
-- **Ordine cronologico**: i fatti si susseguono in modo lineare, senza i salti temporali e le ricostruzioni soggettive che caratterizzeranno *La coscienza di Zeno*.
-- **Ambiente borghese ben riconoscibile**: la banca, la pensione, la famiglia Maller sono descritti con precisione sociale, sul modello della letteratura naturalista.
-- **Influssi del naturalismo**: si nota l'attenzione zoliana al rapporto tra ambiente e personaggio, alla determinazione sociale del destino individuale.
+Il romanzo è ancora abbastanza tradizionale. La narrazione è in **terza persona**: il narratore esterno racconta la vicenda di Alfonso dall'esterno, secondo il modello ottocentesco del romanzo realista. L'**ordine** è cronologico, e i fatti si susseguono in modo lineare, senza i salti temporali e le ricostruzioni soggettive che caratterizzeranno *La coscienza di Zeno*. L'**ambiente borghese** è ben riconoscibile: la banca, la pensione, la famiglia Maller sono descritti con precisione sociale, sul modello della letteratura naturalista. Si notano in generale gli **influssi del naturalismo**, con l'attenzione zoliana al rapporto tra ambiente e personaggio e alla determinazione sociale del destino individuale.
 
 Tuttavia l'interesse principale è già psicologico: Svevo non vuole solo raccontare una vicenda sociale, ma mostrare i meccanismi interiori della sconfitta.
 
@@ -187,13 +124,7 @@ Tuttavia l'interesse principale è già psicologico: Svevo non vuole solo raccon
 
 ### Titolo
 
-"Senilità" non indica solo la vecchiaia biologica. Indica una vecchiaia interiore:
-
-- **Stanchezza**: spossatezza morale e affettiva, il sentirsi già esausti senza aver davvero vissuto.
-- **Incapacità di vivere**: rifiuto inconscio dell'esperienza concreta, dei rischi del desiderio e dell'azione.
-- **Rinuncia**: tendenza a tirarsi indietro davanti alle occasioni, preferendo la sicurezza grigia all'avventura.
-- **Autoinganno**: bisogno di nascondere a se stessi la propria paralisi, mascherandola da prudenza o saggezza.
-- **Paura dell'esperienza**: timore di soffrire, di essere coinvolti, di doversi mettere in gioco fino in fondo.
+"Senilità" non indica solo la vecchiaia biologica. Indica una vecchiaia interiore, fatta di **stanchezza** — spossatezza morale e affettiva, il sentirsi già esausti senza aver davvero vissuto —, di **incapacità di vivere** — rifiuto inconscio dell'esperienza concreta, dei rischi del desiderio e dell'azione —, di **rinuncia**, cioè della tendenza a tirarsi indietro davanti alle occasioni preferendo la sicurezza grigia all'avventura. A questo si aggiunge l'**autoinganno**, il bisogno di nascondere a se stessi la propria paralisi mascherandola da prudenza o saggezza, e la **paura dell'esperienza**, il timore di soffrire, di essere coinvolti, di doversi mettere in gioco fino in fondo.
 
 Il protagonista è giovane o comunque non vecchio in senso fisico, ma vive già come un vecchio.
 
@@ -226,13 +157,7 @@ Il punto di vista è spesso vicino a Emilio, ma il narratore interviene con iron
 
 **La coscienza di Zeno** viene pubblicata nel 1923 ed è il capolavoro di Svevo.
 
-Il romanzo è profondamente innovativo perché:
-
-- **È scritto in prima persona**: Zeno racconta in proprio la sua vita, sostituendo la voce neutra del narratore onnisciente con quella soggettiva e parziale del protagonista.
-- **Ha forma autobiografica e psicoanalitica**: il testo è un memoriale scritto su richiesta di un medico, modellato sui resoconti dei pazienti in cura analitica.
-- **Non segue l'ordine cronologico tradizionale**: i capitoli sono organizzati per nuclei tematici (il fumo, il padre, il matrimonio) e procedono per associazioni psicologiche, non per date.
-- **Presenta un narratore inattendibile**: Zeno mente, omette, giustifica e deforma; il lettore non può prendere per vero ciò che racconta.
-- **Mette al centro memoria, inconscio, malattia e autoinganno**: i temi cardine non sono più gli eventi esterni, ma i processi mentali con cui il personaggio costruisce e distorce la propria storia.
+Il romanzo è profondamente innovativo per molte ragioni intrecciate. È scritto in **prima persona**: Zeno racconta in proprio la sua vita, sostituendo la voce neutra del narratore onnisciente con quella soggettiva e parziale del protagonista. Ha una **forma autobiografica e psicoanalitica**: il testo è un memoriale scritto su richiesta di un medico, modellato sui resoconti dei pazienti in cura analitica. Non segue l'**ordine cronologico tradizionale**, perché i capitoli sono organizzati per nuclei tematici (il fumo, il padre, il matrimonio) e procedono per associazioni psicologiche, non per date. Presenta un **narratore inattendibile**: Zeno mente, omette, giustifica e deforma, e il lettore non può prendere per vero ciò che racconta. Mette infine al centro **memoria, inconscio, malattia e autoinganno**: i temi cardine non sono più gli eventi esterni, ma i processi mentali con cui il personaggio costruisce e distorce la propria storia.
 
 ### Struttura
 
@@ -240,15 +165,7 @@ Il romanzo è introdotto da una **Prefazione** del dottor S., che dichiara di pu
 
 La Prefazione è già un segnale di ambiguità. Il medico dovrebbe essere una figura autorevole e scientifica, ma si comporta in modo vendicativo e poco professionale. Anche la psicoanalisi, quindi, non viene presentata come verità assoluta: è uno strumento utile, ma non risolve automaticamente la malattia di Zeno.
 
-Seguono i capitoli autobiografici, organizzati per temi e nuclei psicologici:
-
-- **Preambolo**: Zeno tenta, su invito del medico, di recuperare i ricordi d'infanzia, ma si scontra con la difficoltà di ricostruire un passato sempre filtrato dal presente.
-- **Il fumo**: il vizio della sigaretta diventa il simbolo dell'inettitudine, con il rito infinito dell'"ultima sigaretta" sempre rimandata.
-- **La morte di mio padre**: il rapporto conflittuale con il genitore culmina nello schiaffo ambiguo del padre morente, da cui nasce un senso di colpa indelebile.
-- **La storia del mio matrimonio**: Zeno corteggia le sorelle Malfenti e finisce per sposare Augusta, la meno desiderata, scoprendo poi in lei una forma di salute borghese.
-- **La moglie e l'amante**: la relazione parallela con la giovane Carla mostra la doppiezza di Zeno e il suo bisogno di vivere insieme stabilità coniugale e trasgressione.
-- **Storia di un'associazione commerciale**: il fallimentare sodalizio in affari con il cognato Guido evidenzia ancora una volta l'incapacità di Zeno e, paradossalmente, la sua superiorità intuitiva.
-- **Psico-analisi**: Zeno interrompe la cura, accusa il dottor S. di aver sbagliato diagnosi e dichiara di essere guarito grazie al successo negli affari di guerra; la "guarigione" è però fortemente ironica.
+Seguono i capitoli autobiografici, organizzati per temi e nuclei psicologici. Nel **Preambolo** Zeno tenta, su invito del medico, di recuperare i ricordi d'infanzia, ma si scontra con la difficoltà di ricostruire un passato sempre filtrato dal presente. Nel capitolo **Il fumo** il vizio della sigaretta diventa il simbolo dell'inettitudine, con il rito infinito dell'"ultima sigaretta" sempre rimandata. **La morte di mio padre** racconta il rapporto conflittuale con il genitore, che culmina nello schiaffo ambiguo del padre morente, da cui nasce un senso di colpa indelebile. **La storia del mio matrimonio** mostra Zeno che corteggia le sorelle Malfenti e finisce per sposare Augusta, la meno desiderata, scoprendo poi in lei una forma di salute borghese. **La moglie e l'amante** racconta la relazione parallela con la giovane Carla, che mostra la doppiezza di Zeno e il suo bisogno di vivere insieme stabilità coniugale e trasgressione. **Storia di un'associazione commerciale** narra il fallimentare sodalizio in affari con il cognato Guido, che evidenzia ancora una volta l'incapacità di Zeno e, paradossalmente, la sua superiorità intuitiva. Nell'ultimo capitolo, **Psico-analisi**, Zeno interrompe la cura, accusa il dottor S. di aver sbagliato diagnosi e dichiara di essere guarito grazie al successo negli affari di guerra: la "guarigione" è però fortemente ironica.
 
 Il racconto non è lineare: Zeno ricostruisce la propria vita attraverso ricordi, associazioni, giustificazioni e contraddizioni.
 
@@ -256,15 +173,7 @@ Nel **Preambolo** Zeno tenta di obbedire al medico e di recuperare i primi ricor
 
 ### Il narratore inattendibile
 
-Zeno racconta se stesso, ma non possiamo fidarci completamente.
-
-È inattendibile perché:
-
-- **Mente al medico**: scrive il memoriale per la cura, ma omette o trasforma episodi importanti per non doversi mettere davvero in discussione.
-- **Mente al lettore**: presenta una versione di sé costruita ad arte, in cui i propri difetti vengono sminuiti o trasformati in qualità.
-- **Mente a se stesso**: si racconta ciò che vuole credere (ad esempio di voler smettere di fumare), pur sapendo a un livello più profondo che non è vero.
-- **Interpreta i fatti per giustificarsi**: ogni episodio viene riletto in modo da scaricare la responsabilità sugli altri o sul caso.
-- **Modifica il passato attraverso la memoria**: i ricordi non sono fotografie oggettive, ma ricostruzioni continuamente riscritte dai bisogni del presente.
+Zeno racconta se stesso, ma non possiamo fidarci completamente. È inattendibile perché mente al medico: scrive il memoriale per la cura, ma omette o trasforma episodi importanti per non doversi mettere davvero in discussione. Mente anche al lettore, presentando una versione di sé costruita ad arte, in cui i propri difetti vengono sminuiti o trasformati in qualità. Mente soprattutto a se stesso, raccontandosi ciò che vuole credere (ad esempio di voler smettere di fumare), pur sapendo a un livello più profondo che non è vero. Interpreta i fatti per giustificarsi, perché ogni episodio viene riletto in modo da scaricare la responsabilità sugli altri o sul caso. Modifica infine il passato attraverso la memoria: i ricordi non sono fotografie oggettive, ma ricostruzioni continuamente riscritte dai bisogni del presente.
 
 La verità del romanzo non è nei fatti oggettivi, ma nelle contraddizioni di Zeno.
 
@@ -274,12 +183,7 @@ La verità del romanzo non è nei fatti oggettivi, ma nelle contraddizioni di Ze
 
 Il fumo è il simbolo più importante dell'inettitudine di Zeno.
 
-Zeno continua a promettersi di smettere, ma ogni sigaretta diventa "l'ultima". Il rito dell'ultima sigaretta gli permette di:
-
-- **Rimandare il cambiamento**: spostare sempre più in là la decisione vera, vivendo nell'illusione di essere sul punto di cambiare.
-- **Trasformare il fallimento in un nuovo proposito**: ogni ricaduta non è una sconfitta definitiva, ma l'occasione per formulare un nuovo "ultima volta" e ricominciare.
-- **Sentirsi sempre sul punto di diventare un uomo diverso**: vivere nella tensione (consolatoria) di un'imminente trasformazione che però non avviene mai.
-- **Non assumersi responsabilità definitive**: rimanendo "in cura" o "in transizione", Zeno evita di scegliere chi è e di accettare le conseguenze delle proprie azioni.
+Zeno continua a promettersi di smettere, ma ogni sigaretta diventa "l'ultima". Il rito dell'ultima sigaretta gli permette di rimandare il cambiamento, spostando sempre più in là la decisione vera e vivendo nell'illusione di essere sul punto di cambiare. Gli permette di trasformare il fallimento in un nuovo proposito: ogni ricaduta non è una sconfitta definitiva, ma l'occasione per formulare un nuovo "ultima volta" e ricominciare. Lo fa sentire sempre sul punto di diventare un uomo diverso, vivendo nella tensione consolatoria di un'imminente trasformazione che però non avviene mai. Soprattutto, gli consente di non assumersi responsabilità definitive: rimanendo "in cura" o "in transizione", Zeno evita di scegliere chi è e di accettare le conseguenze delle proprie azioni.
 
 Il vizio del fumo è legato anche al rapporto con il padre: fumare significa desiderare di diventare adulto, ma anche restare bloccato in un conflitto infantile.
 
@@ -287,12 +191,7 @@ Il capitolo sul fumo mostra bene il meccanismo dell'autoinganno. Zeno non vuole 
 
 ### Il rapporto con il padre
 
-Il padre rappresenta per Zeno:
-
-- **L'autorità borghese**: l'uomo affermato, padrone della propria attività commerciale, simbolo del modello sociale che Zeno non riesce a incarnare.
-- **La normalità**: la salute borghese, fatta di certezze, abitudini e ruoli stabili, rispetto a cui Zeno si sente inadeguato.
-- **Il dovere**: il principio di responsabilità e di disciplina, che Zeno avverte come peso insopportabile e come accusa silenziosa.
-- **La figura che giudica**: l'occhio paterno (anche dopo la morte) continua a giudicare Zeno, alimentando il suo senso di colpa cronico.
+Il padre rappresenta per Zeno l'**autorità borghese**, l'uomo affermato, padrone della propria attività commerciale, simbolo del modello sociale che Zeno non riesce a incarnare. Rappresenta la **normalità**, cioè la salute borghese fatta di certezze, abitudini e ruoli stabili, rispetto a cui Zeno si sente inadeguato. È il **dovere**, principio di responsabilità e di disciplina che Zeno avverte come peso insopportabile e come accusa silenziosa. È infine la **figura che giudica**: l'occhio paterno, anche dopo la morte, continua a giudicare Zeno e ad alimentare il suo senso di colpa cronico.
 
 Quando il padre si ammala, Zeno dovrebbe assumersi responsabilità adulte. Invece vive sentimenti contraddittori: compassione, fastidio, senso di colpa, desiderio inconscio di liberarsi di lui.
 
@@ -308,14 +207,7 @@ Zeno desidera sposarsi perché cerca la salute borghese, cioè una vita ordinata
 
 Si avvicina alla famiglia Malfenti e corteggia le sorelle, ma finisce per sposare **Augusta**, che inizialmente non era la sua scelta principale.
 
-Augusta diventa simbolo della **salute**:
-
-- è stabile;
-- accetta la vita;
-- crede nei valori borghesi;
-- non si pone troppe domande.
-
-Zeno la ammira proprio perché rappresenta ciò che lui non riesce a essere.
+Augusta diventa simbolo della **salute**: è stabile, accetta la vita, crede nei valori borghesi e non si pone troppe domande. Zeno la ammira proprio perché rappresenta ciò che lui non riesce a essere.
 
 ### La guarigione impossibile
 

@@ -6,15 +6,7 @@ All'inizio del Novecento molti artisti sentono che le forme tradizionali non bas
 
 Le **avanguardie storiche** nascono da questo bisogno di rottura. Non vogliono solo modificare lo stile: vogliono cambiare il ruolo dell'arte nella società.
 
-Caratteristiche comuni:
-
-- **Rifiuto della tradizione**: le forme accademiche (metrica regolare, prospettiva, tonalità) vengono considerate morte e da abbattere senza pietà.
-- **Provocazione**: le avanguardie cercano lo scandalo come mezzo espressivo (serate teatrali, performance, dichiarazioni aggressive contro il pubblico).
-- **Manifesti programmatici**: ogni movimento si presenta con un testo-bandiera che ne dichiara principi e nemici (es. il *Manifesto del Futurismo* di Marinetti, 1909).
-- **Sperimentazione**: si inventano nuove tecniche e linguaggi (collage, parole in libertà, versi liberi, atonalità), spesso a costo dell'incomprensibilità.
-- **Culto della novità**: il "nuovo" è valore in sé; bisogna inventare continuamente, perché ciò che è già stato fatto è inutile.
-- **Desiderio di scandalizzare il pubblico borghese**: il borghese è il bersaglio polemico per eccellenza, simbolo di gusto conformista e mediocrità.
-- **Rottura con il passato**: musei, biblioteche e accademie sono considerati cimiteri della cultura; bisogna ripartire da zero.
+Le caratteristiche comuni partono dal rifiuto della tradizione, perché le forme accademiche (metrica regolare, prospettiva, tonalità) vengono considerate morte e da abbattere senza pietà. A questo si aggiunge la provocazione: le avanguardie cercano lo scandalo come mezzo espressivo, attraverso serate teatrali, performance e dichiarazioni aggressive contro il pubblico. Ogni movimento si presenta inoltre con manifesti programmatici, testi-bandiera che ne dichiarano principi e nemici (come il *Manifesto del Futurismo* di Marinetti, 1909). Centrale è poi la sperimentazione: si inventano nuove tecniche e linguaggi (collage, parole in libertà, versi liberi, atonalità), spesso a costo dell'incomprensibilità. Domina inoltre il culto della novità, perché il "nuovo" è valore in sé e bisogna inventare continuamente, dato che ciò che è già stato fatto è inutile. Da qui il desiderio di scandalizzare il pubblico borghese, bersaglio polemico per eccellenza, simbolo di gusto conformista e mediocrità, e la rottura con il passato: musei, biblioteche e accademie sono considerati cimiteri della cultura, e bisogna ripartire da zero.
 
 ## 2. Il Futurismo
 
@@ -24,18 +16,7 @@ Il **Futurismo** nasce ufficialmente nel 1909, quando **Filippo Tommaso Marinett
 
 ## 3. Idee principali del Futurismo
 
-Il Futurismo esalta:
-
-- **Velocità**: simbolo della vita moderna; per Marinetti "un'automobile da corsa è più bella della Vittoria di Samotracia".
-- **Macchine**: viste come nuove divinità del Novecento, oggetti di culto perché incarnano potenza e razionalità tecnica.
-- **Città moderna**: metropoli industriali piene di luci elettriche, traffico, folle e cantieri, contrapposte alla campagna nostalgica.
-- **Industria**: fabbriche, ciminiere, treni e operai diventano materia poetica al posto di paesaggi e sentimenti.
-- **Energia**: forza vitale, esuberanza, potenza fisica e creativa contro la stanchezza del passato.
-- **Movimento**: la realtà è dinamica, non statica; arte e poesia devono catturare il flusso continuo delle cose.
-- **Giovinezza**: i futuristi si proclamano giovani contro i "vecchi" (passatisti); celebrano l'audacia generazionale.
-- **Aggressività**: lotta, violenza verbale e fisica come gesti vitali, contro la moderazione borghese.
-- **Guerra**: vista come purificazione, esperienza estrema e occasione di rinnovamento (con conseguenze tragiche, vista la Prima guerra mondiale).
-- **Modernità tecnica**: tutto ciò che è nuovo, meccanico, elettrico, telegrafico viene esaltato come segno del futuro.
+Il Futurismo esalta soprattutto la velocità, simbolo della vita moderna, al punto che per Marinetti "un'automobile da corsa è più bella della Vittoria di Samotracia". Da qui il culto delle macchine, viste come nuove divinità del Novecento e oggetti di culto perché incarnano potenza e razionalità tecnica, e quello della città moderna, metropoli industriale piena di luci elettriche, traffico, folle e cantieri, contrapposta alla campagna nostalgica. Anche l'industria diventa materia poetica al posto di paesaggi e sentimenti: fabbriche, ciminiere, treni e operai entrano nella poesia. Sul piano vitale dominano l'energia, fatta di forza vitale, esuberanza e potenza fisica e creativa contro la stanchezza del passato, e il movimento, perché la realtà è dinamica, non statica, e arte e poesia devono catturare il flusso continuo delle cose. I futuristi celebrano poi la giovinezza, proclamandosi giovani contro i "vecchi" (passatisti) ed esaltando l'audacia generazionale, e l'aggressività come gesto vitale, lotta, violenza verbale e fisica contro la moderazione borghese. Esaltano infine la guerra, vista come purificazione, esperienza estrema e occasione di rinnovamento (con conseguenze tragiche, vista la Prima guerra mondiale), e in generale la modernità tecnica: tutto ciò che è nuovo, meccanico, elettrico, telegrafico viene esaltato come segno del futuro.
 
 Marinetti arriva a definire la guerra "sola igiene del mondo". Questa frase mostra il lato più problematico del Futurismo: la volontà di distruggere il passato si lega a un culto della violenza.
 
@@ -43,15 +24,7 @@ Marinetti arriva a definire la guerra "sola igiene del mondo". Questa frase most
 
 I futuristi vogliono rompere con la letteratura tradizionale anche sul piano della forma.
 
-Rifiutano:
-
-- **Sintassi regolare**: la frase ordinata soggetto-verbo-complemento è troppo lenta; va sostituita con accostamenti immediati di sostantivi.
-- **Punteggiatura tradizionale**: virgole e punti rallentano la lettura e impongono pause logiche; vengono aboliti o sostituiti da segni matematici e musicali.
-- **Aggettivi e avverbi considerati inutili**: rallentano il ritmo e introducono sfumature psicologiche; meglio il sostantivo nudo e il verbo all'infinito.
-- **Psicologia**: l'analisi dell'interiorità (alla maniera del romanzo ottocentesco) è considerata sorpassata; conta l'oggetto, non il sentimento.
-- **Sentimentalismo**: lacrime, malinconie, amori romantici sono giudicati ridicoli e da donnicciole.
-- **Io lirico tradizionale**: il poeta romantico che esprime sentimenti personali viene sostituito da una scrittura impersonale e tecnologica.
-- **Culto del bello classico**: l'ideale armonioso greco-rinascimentale è morto; la nuova bellezza è quella della macchina e della velocità.
+Rifiutano anzitutto la sintassi regolare, perché la frase ordinata soggetto-verbo-complemento è troppo lenta e va sostituita con accostamenti immediati di sostantivi. Rifiutano poi la punteggiatura tradizionale: virgole e punti rallentano la lettura e impongono pause logiche, e vengono perciò aboliti o sostituiti da segni matematici e musicali. Aggettivi e avverbi sono considerati inutili perché rallentano il ritmo e introducono sfumature psicologiche: meglio il sostantivo nudo e il verbo all'infinito. Cade anche la psicologia, perché l'analisi dell'interiorità alla maniera del romanzo ottocentesco è considerata sorpassata: conta l'oggetto, non il sentimento. Viene rifiutato il sentimentalismo, fatto di lacrime, malinconie e amori romantici, giudicati ridicoli e da donnicciole, e con esso l'io lirico tradizionale: il poeta romantico che esprime sentimenti personali viene sostituito da una scrittura impersonale e tecnologica. Cade infine il culto del bello classico: l'ideale armonioso greco-rinascimentale è morto, e la nuova bellezza è quella della macchina e della velocità.
 
 Vogliono invece una scrittura rapida, simultanea, visiva, rumorosa.
 
@@ -77,14 +50,7 @@ Il Futurismo è un movimento storicamente breve: la sua fase più creativa va da
 
 Il Futurismo non riguarda solo la letteratura, ma anche pittura, scultura, musica, teatro, grafica e costume.
 
-Nell'arte futurista diventano centrali:
-
-- **Dinamismo**: la rappresentazione della forza in atto, non della forma ferma (vedi Boccioni, *Forme uniche della continuità nello spazio*).
-- **Scomposizione del movimento**: una figura in moto viene dipinta in più posizioni sovrapposte, come in *Dinamismo di un cane al guinzaglio* di Balla.
-- **Simultaneità**: rappresentare nello stesso quadro più momenti, luoghi o sensazioni percepiti insieme, come accade nella mente moderna.
-- **Energia della città**: luci, rumori, folle, traffico vengono trasformati in linee di forza colorate (Boccioni, *La città che sale*).
-- **Macchina**: l'automobile, il treno, l'aeroplano sono i nuovi soggetti dell'arte, con forme metalliche e geometriche.
-- **Velocità**: rappresentata con linee oblique, scie, vortici e composizioni diagonali che danno senso di accelerazione.
+Nell'arte futurista diventano centrali alcuni principi. Il primo è il dinamismo, cioè la rappresentazione della forza in atto, non della forma ferma (si veda Boccioni, *Forme uniche della continuità nello spazio*). A questo si lega la scomposizione del movimento: una figura in moto viene dipinta in più posizioni sovrapposte, come in *Dinamismo di un cane al guinzaglio* di Balla. C'è poi la simultaneità, cioè la rappresentazione nello stesso quadro di più momenti, luoghi o sensazioni percepiti insieme, come accade nella mente moderna. Si aggiunge l'energia della città: luci, rumori, folle, traffico vengono trasformati in linee di forza colorate (Boccioni, *La città che sale*). La macchina – l'automobile, il treno, l'aeroplano – diventa il nuovo soggetto dell'arte, con forme metalliche e geometriche. La velocità, infine, è rappresentata con linee oblique, scie, vortici e composizioni diagonali che danno senso di accelerazione.
 
 L'obiettivo non è rappresentare un oggetto fermo, ma il suo movimento nello spazio e nel tempo.
 
@@ -108,30 +74,13 @@ Il **Crepuscolarismo** è una tendenza poetica italiana dei primi anni del Novec
 
 Il termine richiama il "crepuscolo", cioè una luce debole, di fine giornata. Indica una poesia dimessa, malinconica, antieroica, lontana dai toni solenni di D'Annunzio.
 
-I crepuscolari non vogliono essere poeti-vate. Rappresentano:
-
-- **Piccole cose quotidiane**: oggetti minimi e insignificanti (una tazza, un fiore secco, un orologio) al posto di temi alti e solenni.
-- **Ambienti provinciali**: piccole città di provincia, lontane dalla vita mondana e culturale, fatte di silenzio e abitudine.
-- **Case modeste**: interni borghesi senza lusso, con mobili vecchi, salotti polverosi e atmosfere stantie.
-- **Oggetti comuni**: cianfrusaglie, soprammobili, fotografie sbiadite — quelle che Gozzano chiama "buone cose di pessimo gusto".
-- **Malattia**: spesso la tubercolosi (di cui muoiono Gozzano e Corazzini), vissuta come condizione esistenziale e simbolo di fragilità.
-- **Noia**: sensazione di vuoto e di tempo che non passa, opposta all'energia futurista.
-- **Ironia**: distacco sorridente dal proprio ruolo di poeta e dalla retorica letteraria; un modo per non prendersi sul serio.
-- **Senso di inadeguatezza**: il poeta si sente inutile, fuori posto rispetto alla società moderna e incapace di una poesia "grande".
+I crepuscolari non vogliono essere poeti-vate. Rappresentano piccole cose quotidiane, oggetti minimi e insignificanti (una tazza, un fiore secco, un orologio) al posto di temi alti e solenni; ambienti provinciali, piccole città lontane dalla vita mondana e culturale, fatte di silenzio e abitudine; case modeste, interni borghesi senza lusso, con mobili vecchi, salotti polverosi e atmosfere stantie; oggetti comuni come cianfrusaglie, soprammobili e fotografie sbiadite, quelle che Gozzano chiama "buone cose di pessimo gusto". Vi torna spesso la malattia, soprattutto la tubercolosi (di cui muoiono Gozzano e Corazzini), vissuta come condizione esistenziale e simbolo di fragilità, e la noia, sensazione di vuoto e di tempo che non passa, opposta all'energia futurista. Domina poi un'ironia di fondo, distacco sorridente dal proprio ruolo di poeta e dalla retorica letteraria, un modo per non prendersi sul serio, e un profondo senso di inadeguatezza: il poeta si sente inutile, fuori posto rispetto alla società moderna e incapace di una poesia "grande".
 
 ## 10. Caratteristiche del Crepuscolarismo
 
 Il Crepuscolarismo rifiuta la poesia alta e celebrativa.
 
-Caratteristiche:
-
-- **Tono basso e colloquiale**: la poesia parla come si parla nella vita di tutti i giorni, senza pose solenni né sublime.
-- **Linguaggio prosastico**: il verso si avvicina alla prosa, con sintassi piana e lessico comune; sparisce la "lingua poetica" tradizionale.
-- **Malinconia**: sentimento dominante, fatto di rimpianto vago, nostalgia e tristezza dolce, non disperata.
-- **Autoironia**: il poeta sorride di sé stesso, della propria debolezza e del proprio mestiere considerato ormai inutile.
-- **Rifiuto dell'eroismo**: nessun gesto grande, nessuna missione: il crepuscolare è esplicitamente antieroe.
-- **Gusto per oggetti poveri e quotidiani**: le "buone cose di pessimo gusto" sostituiscono i grandi simboli; la poesia trova bellezza nel modesto.
-- **Crisi dell'identità del poeta**: il poeta non sa più cosa sia, non crede di avere un ruolo nella società e dichiara la propria inutilità.
+Lo caratterizza un tono basso e colloquiale: la poesia parla come si parla nella vita di tutti i giorni, senza pose solenni né sublime. Il linguaggio è prosastico, perché il verso si avvicina alla prosa, con sintassi piana e lessico comune, e sparisce la "lingua poetica" tradizionale. Il sentimento dominante è la malinconia, fatta di rimpianto vago, nostalgia e tristezza dolce, non disperata, accompagnata dall'autoironia: il poeta sorride di sé stesso, della propria debolezza e del proprio mestiere considerato ormai inutile. C'è poi un esplicito rifiuto dell'eroismo, perché il crepuscolare non compie nessun gesto grande e non si attribuisce nessuna missione, e un gusto per oggetti poveri e quotidiani, dove le "buone cose di pessimo gusto" sostituiscono i grandi simboli e la poesia trova bellezza nel modesto. Su tutto pesa la crisi dell'identità del poeta: il poeta non sa più cosa sia, non crede di avere un ruolo nella società e dichiara la propria inutilità.
 
 Il poeta non si presenta come guida della società, ma come figura fragile, marginale, spesso malata o ironica.
 

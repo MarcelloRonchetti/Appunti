@@ -4,11 +4,7 @@
 
 **Beppe Fenoglio** nasce nel **1922** ad **Alba**, in Piemonte, in una famiglia di modesta condizione (il padre è macellaio).
 
-La sua biografia è segnata da tre elementi che diventeranno centrali nella sua scrittura:
-
-- **le Langhe**: il paesaggio collinare del Piemonte meridionale, duro, povero, contadino, è lo sfondo costante delle sue opere;
-- **la cultura anglosassone**: studia letteratura inglese e americana, traduce autori come Coleridge, Hopkins, Marlowe, e si forma sui modelli di Hemingway, Faulkner, Conrad;
-- **la Resistenza**: dopo l'8 settembre 1943 si unisce alle formazioni partigiane (prima ai "badogliani", poi ai partigiani azzurri non comunisti) combattendo nelle Langhe.
+La sua biografia è segnata da tre elementi che diventeranno centrali nella sua scrittura. Il primo sono le **Langhe**, il paesaggio collinare del Piemonte meridionale, duro, povero, contadino, sfondo costante delle sue opere. Il secondo è la **cultura anglosassone**: studia letteratura inglese e americana, traduce autori come Coleridge, Hopkins e Marlowe, e si forma sui modelli di Hemingway, Faulkner, Conrad. Il terzo è la **Resistenza**: dopo l'8 settembre 1943 si unisce alle formazioni partigiane, prima ai "badogliani" e poi ai partigiani azzurri non comunisti, combattendo nelle Langhe.
 
 Dopo la guerra torna ad Alba, lavora come impiegato in un'azienda vinicola e scrive in modo appartato, lontano dai grandi circoli letterari.
 
@@ -18,30 +14,15 @@ La sua figura è quella di uno scrittore solitario, severo, ossessionato dalla p
 
 ## 2. La poetica
 
-La scrittura di Fenoglio si fonda su pochi principi forti:
-
-- **memoria della Resistenza**: la guerra partigiana non è solo materia narrativa, ma un'esperienza ossessiva, vissuta come prova morale assoluta;
-- **realismo asciutto**: niente retorica eroica, niente celebrazione, niente ideologia esplicita; i fatti vengono raccontati con secchezza;
-- **influenza anglosassone**: prosa breve, scattante, ritmica, costruita su frasi nominali e dialoghi essenziali, sul modello di Hemingway;
-- **lingua mista**: italiano letterario, dialetto piemontese, calchi dall'inglese; l'italiano di Fenoglio è una lingua artificiale, "inventata", non naturale;
-- **dimensione tragica**: la Resistenza è raccontata come esperienza di morte, paura, errore, non come marcia trionfale verso la libertà.
+La scrittura di Fenoglio si fonda su pochi principi forti, strettamente intrecciati. Al centro c'è la memoria della Resistenza: la guerra partigiana non è solo materia narrativa, ma un'esperienza ossessiva, vissuta come prova morale assoluta. A questo si lega un realismo asciutto, senza retorica eroica, senza celebrazione, senza ideologia esplicita: i fatti vengono raccontati con secchezza. Determinante è poi l'influenza anglosassone, che dà alla prosa un andamento breve, scattante, ritmico, costruito su frasi nominali e dialoghi essenziali, sul modello di Hemingway. La lingua è mista, fatta di italiano letterario, dialetto piemontese e calchi dall'inglese: l'italiano di Fenoglio è una lingua artificiale, "inventata", non naturale. Domina infine una dimensione tragica: la Resistenza è raccontata come esperienza di morte, paura, errore, non come marcia trionfale verso la libertà.
 
 Fenoglio non è un cronista né un memorialista. La sua Resistenza non è documento, è letteratura. Ma è anche una verità morale: ha combattuto davvero, ha visto davvero compagni morire, e questa esperienza diretta dà alle sue pagine una serietà inconfondibile.
 
 ## 3. Fenoglio e il Neorealismo
 
-Fenoglio è cronologicamente e tematicamente dentro il Neorealismo:
+Fenoglio è cronologicamente e tematicamente dentro il Neorealismo: racconta la Resistenza, il mondo contadino e le Langhe povere; usa personaggi popolari, dialetto e paesaggi rurali; evita la prosa lirica e ornata.
 
-- racconta la Resistenza, il mondo contadino, le Langhe povere;
-- usa personaggi popolari, dialetto, paesaggi rurali;
-- evita la prosa lirica e ornata.
-
-Ma se ne distacca per più ragioni:
-
-- **non c'è ottimismo storico**: la Resistenza non è celebrata come riscatto collettivo, ma vissuta come esperienza confusa, dolorosa, spesso assurda;
-- **non c'è militanza ideologica**: Fenoglio non è comunista, non scrive per una causa politica, e i suoi partigiani non sono modelli di virtù rivoluzionaria;
-- **lo stile è troppo elaborato per essere "popolare"**: la lingua mista (italiano-piemontese-inglese) è un costrutto letterario sofisticato, non un'imitazione del parlato;
-- **il punto di vista è interiore**: i suoi romanzi vivono di ossessioni, dubbi, gelosie, paure individuali, non di affreschi collettivi.
+Ma se ne distacca per più ragioni. Anzitutto non c'è ottimismo storico: la Resistenza non è celebrata come riscatto collettivo, ma vissuta come esperienza confusa, dolorosa, spesso assurda. Non c'è nemmeno militanza ideologica, perché Fenoglio non è comunista, non scrive per una causa politica e i suoi partigiani non sono modelli di virtù rivoluzionaria. Lo stile, inoltre, è troppo elaborato per essere "popolare": la lingua mista (italiano-piemontese-inglese) è un costrutto letterario sofisticato, non un'imitazione del parlato. Infine il punto di vista è interiore: i suoi romanzi vivono di ossessioni, dubbi, gelosie, paure individuali, non di affreschi collettivi.
 
 Per questo Fenoglio è considerato lo scrittore che porta il Neorealismo al suo limite più alto, fino a superarlo dall'interno.
 
@@ -71,12 +52,7 @@ Romanzo che segue il protagonista Johnny dalla scuola militare fino all'8 settem
 
 Romanzo incompiuto, considerato il suo capolavoro. Racconta l'esperienza partigiana di Johnny, alter ego dell'autore, sulle colline delle Langhe.
 
-Caratteristiche:
-
-- **lingua sperimentale**: italiano fortemente contaminato dall'inglese, calchi sintattici, lessico ibrido;
-- **realismo fisico**: fame, freddo, fango, paura, stanchezza, descritti senza filtri;
-- **sguardo individuale**: la guerra è vissuta come prova personale, non come epopea collettiva;
-- **assenza di trionfo**: la Resistenza non porta a una vittoria gloriosa, ma a un'esperienza di sopravvivenza ed errore.
+Il romanzo si caratterizza per una lingua sperimentale, italiano fortemente contaminato dall'inglese, con calchi sintattici e lessico ibrido; per un realismo fisico, in cui fame, freddo, fango, paura e stanchezza sono descritti senza filtri; per uno sguardo individuale, che vive la guerra come prova personale e non come epopea collettiva; e per l'assenza di trionfo, perché la Resistenza non porta a una vittoria gloriosa, ma a un'esperienza di sopravvivenza ed errore.
 
 ### Una questione privata (1963)
 
@@ -114,13 +90,7 @@ Questo non significa che la storia non conti. Anzi: la guerra rende la "question
 
 ### Milton
 
-Milton è una figura nuova nel panorama del romanzo resistenziale:
-
-- **non è un eroe**: è un ragazzo timido, brutto, insicuro, che ama Fulvia in silenzio;
-- **è un intellettuale**: studia letteratura inglese, cita Shakespeare, Marlowe, Hopkins;
-- **è ossessionato**: il dubbio sulla relazione di Fulvia con Giorgio diventa monomaniaco, lo spinge a rischiare la vita;
-- **è solo**: nel romanzo si muove quasi sempre da solo, in fuga, in ricerca, isolato dal gruppo partigiano;
-- **è tragico**: la sua corsa finale nella nebbia è la corsa di un uomo che non sa più se sta cercando l'amore, la verità o la morte.
+Milton è una figura nuova nel panorama del romanzo resistenziale. Non è un eroe: è un ragazzo timido, brutto, insicuro, che ama Fulvia in silenzio. È un intellettuale, studia letteratura inglese, cita Shakespeare, Marlowe e Hopkins. È ossessionato, perché il dubbio sulla relazione di Fulvia con Giorgio diventa monomaniaco e lo spinge a rischiare la vita. È solo, e nel romanzo si muove quasi sempre da solo, in fuga, in ricerca, isolato dal gruppo partigiano. È infine tragico: la sua corsa finale nella nebbia è la corsa di un uomo che non sa più se sta cercando l'amore, la verità o la morte.
 
 Milton è l'opposto del partigiano celebrato dalla retorica: non è un uomo d'azione collettiva, è un uomo di pensiero, di dubbio, di ferita interiore.
 
@@ -128,10 +98,7 @@ Milton è l'opposto del partigiano celebrato dalla retorica: non è un uomo d'az
 
 Fulvia è una presenza-assenza. Non compare quasi mai nel romanzo: è ricordata, immaginata, desiderata. Vive nei flashback di Milton, in scene di pace, di villa, di musica, di pomeriggi prima della guerra.
 
-Il contrasto è netto:
-
-- **prima della guerra**: villa, libri, dischi, conversazioni, amicizia con Giorgio, amore non dichiarato;
-- **durante la guerra**: nebbia, fango, fucilazioni, fuga.
+Il contrasto è netto: prima della guerra c'erano la villa, i libri, i dischi, le conversazioni, l'amicizia con Giorgio, l'amore non dichiarato; durante la guerra ci sono nebbia, fango, fucilazioni, fuga.
 
 Fulvia rappresenta il mondo perduto. La guerra ha rotto quel mondo, e Milton non sa più se anche l'amore di Fulvia faceva parte di quella rottura.
 
@@ -145,35 +112,17 @@ Questo è uno dei punti più importanti: Fenoglio non risolve il dubbio. Non sap
 
 ### Il paesaggio
 
-Il paesaggio delle Langhe è un personaggio del romanzo:
-
-- **nebbia**: motivo dominante, simbolo dell'indistinzione tra realtà e ossessione;
-- **collina**: terreno della guerra partigiana, fatto di salite, fughe, agguati;
-- **pioggia, fango, freddo**: realismo fisico della guerriglia;
-- **case isolate**: ville, cascine, fattorie diventano luoghi di rifugio o di morte.
+Il paesaggio delle Langhe è un personaggio del romanzo. La nebbia è il motivo dominante, simbolo dell'indistinzione tra realtà e ossessione; la collina è il terreno della guerra partigiana, fatto di salite, fughe, agguati; pioggia, fango e freddo restituiscono il realismo fisico della guerriglia; le case isolate, ville, cascine, fattorie diventano luoghi di rifugio o di morte.
 
 La nebbia è particolarmente importante: avvolge il romanzo dall'inizio alla fine. Tutto è confuso, niente è chiaro, né i fatti né i sentimenti. La nebbia esterna riflette la nebbia interna di Milton.
 
 ### Lo stile
 
-Lo stile di *Una questione privata* è il marchio di Fenoglio:
-
-- **prosa secca, breve, scattante**: frasi corte, ritmo concitato, soprattutto nelle scene d'azione;
-- **dialoghi essenziali**: poche parole, molto detto col gesto o col silenzio;
-- **lingua mista**: italiano contaminato da piemontese e da calchi dall'inglese;
-- **descrizioni sensoriali**: freddo, umidità, odore della nebbia, luce grigia, suono dei passi nel fango;
-- **alternanza memoria/azione**: il presente di guerra si interrompe in flashback su Fulvia, e poi torna brusco alla realtà partigiana.
+Lo stile di *Una questione privata* è il marchio di Fenoglio: prosa secca, breve, scattante, fatta di frasi corte e di un ritmo concitato soprattutto nelle scene d'azione; dialoghi essenziali, con poche parole e molto detto col gesto o col silenzio; lingua mista, italiano contaminato da piemontese e da calchi dall'inglese; descrizioni sensoriali, fatte di freddo, umidità, odore della nebbia, luce grigia, suono dei passi nel fango; alternanza di memoria e azione, in cui il presente di guerra si interrompe in flashback su Fulvia, e poi torna brusco alla realtà partigiana.
 
 ## 6. I temi centrali
 
-I temi di *Una questione privata* sono anche i temi profondi di Fenoglio:
-
-- **gelosia e dubbio**: l'ossessione interiore che divora il protagonista, indipendente dai fatti reali;
-- **memoria amorosa**: il passato come spazio di felicità irrecuperabile, separato per sempre dal presente di guerra;
-- **Resistenza come sfondo**: la lotta partigiana è reale, durissima, ma non è la materia centrale; è il contesto in cui si consuma il dramma personale;
-- **fallimento della comunicazione**: Milton non riesce mai a parlare né con Fulvia né con Giorgio; le parole decisive non vengono pronunciate;
-- **morte e sopravvivenza**: la guerra è un orizzonte costante di morte; il finale ambiguo lascia aperta la questione della sopravvivenza fisica e morale;
-- **nebbia come metafora**: indistinzione tra verità e immaginazione, tra coraggio e follia, tra amore e morte.
+I temi di *Una questione privata* sono anche i temi profondi di Fenoglio. C'è la gelosia e il dubbio, l'ossessione interiore che divora il protagonista, indipendente dai fatti reali. C'è la memoria amorosa, il passato come spazio di felicità irrecuperabile, separato per sempre dal presente di guerra. C'è la Resistenza come sfondo: la lotta partigiana è reale, durissima, ma non è la materia centrale, è il contesto in cui si consuma il dramma personale. C'è il fallimento della comunicazione, perché Milton non riesce mai a parlare né con Fulvia né con Giorgio e le parole decisive non vengono pronunciate. Ci sono morte e sopravvivenza, perché la guerra è un orizzonte costante di morte e il finale ambiguo lascia aperta la questione della sopravvivenza fisica e morale. C'è infine la nebbia come metafora, indistinzione tra verità e immaginazione, tra coraggio e follia, tra amore e morte.
 
 ## 7. Fenoglio e Calvino: due Resistenze a confronto
 

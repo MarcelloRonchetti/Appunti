@@ -18,14 +18,7 @@ Il termine deriva dall'idea di "positivo", cioè concreto, verificabile, fondato
 
 ## 2. Caratteristiche del Positivismo
 
-Il Positivismo si basa su alcune idee fondamentali:
-
-- **fiducia nella scienza come strumento di conoscenza**: solo il sapere scientifico, basato su fatti verificabili, è considerato vero; metafisica e religione vengono escluse dall'ambito del conoscibile;
-- **importanza dell'osservazione e dell'esperimento**: la conoscenza nasce dai dati empirici e dalla loro verifica, secondo il metodo galileiano applicato anche alle scienze umane;
-- **idea di progresso continuo**: la storia dell'umanità è vista come un cammino lineare verso il miglioramento materiale, sociale e morale, sostenuto da scienza e industria;
-- **studio dell'uomo come essere determinato da ambiente, ereditarietà e condizioni sociali**: l'individuo non è libero in senso assoluto, ma è il prodotto di forze esterne e biologiche; principio decisivo per Naturalismo e Verismo;
-- **nascita o sviluppo di nuove discipline, come sociologia, psicologia, antropologia e criminologia**: il metodo scientifico viene esteso alla società (Comte), alla mente (Wundt), alle culture e perfino al delitto (Lombroso);
-- **influenza della teoria dell'evoluzione di Charles Darwin**: l'idea di selezione naturale e lotta per la sopravvivenza viene applicata anche alla società ("darwinismo sociale"), ispirando molta narrativa naturalista e verista.
+Il Positivismo si fonda su una piena fiducia nella scienza come strumento di conoscenza: solo il sapere scientifico, basato su fatti verificabili, è considerato vero, mentre metafisica e religione vengono escluse dall'ambito del conoscibile. Centrale è dunque l'importanza dell'osservazione e dell'esperimento, perché la conoscenza nasce dai dati empirici e dalla loro verifica, secondo il metodo galileiano applicato anche alle scienze umane. A questo si lega l'idea di un progresso continuo: la storia dell'umanità è vista come un cammino lineare verso il miglioramento materiale, sociale e morale, sostenuto da scienza e industria. L'uomo, in questa prospettiva, è studiato come essere determinato da ambiente, ereditarietà e condizioni sociali; l'individuo non è libero in senso assoluto, ma è il prodotto di forze esterne e biologiche, e questo principio sarà decisivo per Naturalismo e Verismo. In quegli stessi anni nascono o si sviluppano nuove discipline come sociologia, psicologia, antropologia e criminologia: il metodo scientifico viene esteso alla società (Comte), alla mente (Wundt), alle culture e perfino al delitto (Lombroso). Su tutto pesa infine l'influenza della teoria dell'evoluzione di Charles Darwin: l'idea di selezione naturale e lotta per la sopravvivenza viene applicata anche alla società ("darwinismo sociale") e ispira molta narrativa naturalista e verista.
 
 Secondo questa mentalità, l'uomo non è completamente libero e isolato: è condizionato dal corpo, dalla famiglia, dalla classe sociale, dall'ambiente in cui vive e dalle leggi biologiche. Questa visione avrà conseguenze importanti anche sulla letteratura.
 
@@ -33,13 +26,7 @@ Secondo questa mentalità, l'uomo non è completamente libero e isolato: è cond
 
 ### Il Realismo
 
-Il **Realismo** nasce dal bisogno di rappresentare la vita concreta e quotidiana, in opposizione al Romanticismo. Caratteristiche:
-
-- nasce dalla **fiducia nel progresso** e dall'industrializzazione;
-- la letteratura ha pubblico sempre più ampio (borghesia in espansione) e deve essere semplice e comprensibile;
-- aumenta l'interesse per i ceti più umili;
-- la lingua diventa **semplice e popolare**, "fotografia della realtà";
-- nasce la **letteratura di appendice** (romanzi pubblicati a puntate sui giornali, di facile consumo, accessibili al pubblico borghese).
+Il **Realismo** nasce dal bisogno di rappresentare la vita concreta e quotidiana, in opposizione al Romanticismo. Si sviluppa a partire dalla fiducia nel progresso e dall'industrializzazione e si rivolge a un pubblico sempre più ampio, quello della borghesia in espansione, per cui la letteratura deve essere semplice e comprensibile. Cresce così l'interesse per i ceti più umili, mentre la lingua diventa semplice e popolare, una sorta di "fotografia della realtà". In questo clima nasce anche la **letteratura di appendice**, cioè romanzi pubblicati a puntate sui giornali, di facile consumo e accessibili al pubblico borghese.
 
 Si distingue dal "realismo romantico" perché descrive una realtà **scientifica e materialista**, non più filtrata dalla religione o da ideali. Nuovi generi: il **romanzo** (espressione della borghesia) e la **novella** (eredità della letteratura di appendice).
 
@@ -67,11 +54,7 @@ Questa idea è nuova: la letteratura non deve occuparsi solo di personaggi nobil
 
 Il principale teorico del Naturalismo è **Émile Zola**. Nel saggio *Il romanzo sperimentale* sostiene che il romanziere deve studiare l'uomo come uno scienziato studia un fenomeno naturale.
 
-Per Zola il comportamento umano dipende soprattutto da:
-
-- **ereditarietà**, cioè caratteristiche fisiche e psicologiche trasmesse dalla famiglia;
-- **ambiente**, cioè condizioni sociali, economiche e culturali;
-- **momento storico**, cioè il contesto in cui una persona vive.
+Per Zola il comportamento umano dipende soprattutto dall'**ereditarietà**, cioè dalle caratteristiche fisiche e psicologiche trasmesse dalla famiglia, dall'**ambiente**, cioè dalle condizioni sociali, economiche e culturali, e dal **momento storico**, cioè dal contesto in cui una persona vive.
 
 Nei suoi romanzi Zola rappresenta spesso operai, poveri, alcolizzati, prostitute, malati e sfruttati. Non lo fa per gusto dello scandalo, ma per mostrare i meccanismi sociali che producono miseria e degradazione.
 
@@ -79,13 +62,7 @@ Nei suoi romanzi Zola rappresenta spesso operai, poveri, alcolizzati, prostitute
 
 L'idea di **romanzo sperimentale** deriva dal metodo scientifico.
 
-Lo scrittore:
-
-- **osserva la realtà**: studia di persona ambienti, mestieri e classi sociali, come uno scienziato che esamina un fenomeno;
-- **raccoglie documenti**: prende appunti, consulta inchieste, statistiche, atti giudiziari per dare base reale alla narrazione (Zola visita miniere, mercati, lavanderie);
-- **sceglie un ambiente sociale preciso**: ogni romanzo si concentra su un mondo definito (operai, contadini, borghesia, demi-monde) di cui descrive condizioni e leggi;
-- **costruisce personaggi condizionati da ereditarietà e ambiente**: i protagonisti non sono liberi, ma plasmati dalla famiglia, dalla classe e dal contesto in cui vivono;
-- **mostra le conseguenze di questi condizionamenti**: la trama segue lo svolgersi inevitabile dei meccanismi sociali e biologici, come una dimostrazione scientifica.
+Lo scrittore comincia con l'osservare la realtà, studiando di persona ambienti, mestieri e classi sociali, come uno scienziato che esamina un fenomeno; raccoglie poi documenti, prendendo appunti e consultando inchieste, statistiche e atti giudiziari per dare base reale alla narrazione (Zola visita miniere, mercati, lavanderie). Sceglie quindi un ambiente sociale preciso, perché ogni romanzo si concentra su un mondo definito (operai, contadini, borghesia, demi-monde) di cui descrive condizioni e leggi. Costruisce poi personaggi condizionati da ereditarietà e ambiente: i protagonisti non sono liberi, ma plasmati dalla famiglia, dalla classe e dal contesto in cui vivono. Infine mostra le conseguenze di questi condizionamenti, perché la trama segue lo svolgersi inevitabile dei meccanismi sociali e biologici, come una dimostrazione scientifica.
 
 In teoria lo scrittore naturalista dovrebbe essere impersonale, cioè non giudicare direttamente i personaggi. Deve lasciare che i fatti parlino da soli. In realtà, nei romanzi naturalisti è spesso evidente anche una forte denuncia sociale.
 
@@ -103,13 +80,7 @@ Gli autori veristi più importanti sono:
 
 ## 7. Naturalismo e Verismo: differenze
 
-Il Naturalismo francese e il Verismo italiano hanno elementi comuni:
-
-- attenzione alla realtà sociale;
-- personaggi umili;
-- rifiuto dell'idealizzazione romantica;
-- interesse per ambiente e condizionamenti;
-- tendenza all'impersonalità.
+Naturalismo francese e Verismo italiano condividono diversi tratti: l'attenzione alla realtà sociale, la scelta di personaggi umili, il rifiuto dell'idealizzazione romantica, l'interesse per ambiente e condizionamenti e una generale tendenza all'impersonalità.
 
 Ci sono però differenze importanti:
 
@@ -130,15 +101,7 @@ Uno dei principi centrali del Verismo è l'**impersonalità**.
 
 L'autore non deve intervenire per spiegare, giudicare o commuovere il lettore. Deve scomparire dietro la storia, facendo sembrare che il racconto nasca da sé.
 
-Per ottenere questo effetto Verga usa:
-
-- narratore interno al mondo rappresentato;
-- linguaggio vicino a quello dei personaggi;
-- proverbi, modi di dire, espressioni popolari;
-- discorso indiretto libero;
-- regressione del narratore.
-
-La **regressione** significa che il narratore abbassa il proprio punto di vista e adotta mentalità, valori e linguaggio dell'ambiente rappresentato. In questo modo il lettore entra nella logica dei personaggi senza una spiegazione esterna.
+Per ottenere questo effetto Verga ricorre a un narratore interno al mondo rappresentato e a un linguaggio vicino a quello dei personaggi, ricco di proverbi, modi di dire ed espressioni popolari; usa inoltre il discorso indiretto libero e la cosiddetta regressione del narratore. La **regressione** significa che il narratore abbassa il proprio punto di vista e adotta mentalità, valori e linguaggio dell'ambiente rappresentato. In questo modo il lettore entra nella logica dei personaggi senza una spiegazione esterna.
 
 ## 9. Il documento umano
 
@@ -150,12 +113,7 @@ Questo non significa copiare la realtà in modo meccanico. Lo scrittore costruis
 
 Il Verismo è influenzato anche dal darwinismo sociale, cioè dall'idea che nella società valga una forma di lotta per la sopravvivenza.
 
-Nei testi veristi i personaggi vivono in un mondo competitivo e duro:
-
-- i poveri lottano per non precipitare;
-- i deboli vengono schiacciati;
-- chi prova a salire socialmente rischia di perdere identità e affetti;
-- il progresso non porta felicità per tutti.
+Nei testi veristi i personaggi vivono in un mondo competitivo e duro: i poveri lottano per non precipitare, i deboli vengono schiacciati, chi prova a salire socialmente rischia di perdere identità e affetti, e il progresso non porta felicità per tutti.
 
 Questa visione è centrale in Verga: la società è attraversata da una **fiumana del progresso** che travolge chi non riesce a reggere il cambiamento.
 

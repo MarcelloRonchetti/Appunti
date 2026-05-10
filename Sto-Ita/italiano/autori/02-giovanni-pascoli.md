@@ -38,11 +38,7 @@ Pascoli scrive: "Il poeta è il fanciullino che fa sentire la sua voce in noi". 
 
 ### Cosa fa il fanciullino
 
-- **prova meraviglia davanti alle piccole cose**: un insetto, un suono, una foglia diventano per lui rivelazioni;
-- **coglie analogie segrete**: vede legami nascosti tra realtà diverse (un fiore e un dolore, un suono e un ricordo);
-- **rovescia le proporzioni classiche**: le cose grandi diventano insignificanti, le cose piccole diventano universi;
-- **usa un linguaggio semplice ma carico di simboli**: le parole quotidiane si caricano di valori ulteriori;
-- **ha funzione conoscitiva**: la poesia non è ornamento, è uno strumento per **capire il mistero del mondo** che la scienza non sa cogliere.
+Il fanciullino prova anzitutto meraviglia davanti alle piccole cose: un insetto, un suono, una foglia diventano per lui rivelazioni. Coglie inoltre analogie segrete, vedendo legami nascosti tra realtà diverse, come quello tra un fiore e un dolore o tra un suono e un ricordo. Rovescia poi le proporzioni classiche, perché le cose grandi diventano insignificanti e le cose piccole diventano universi. Usa un linguaggio semplice ma carico di simboli, in cui le parole quotidiane si caricano di valori ulteriori. Soprattutto, ha una funzione conoscitiva: la poesia non è ornamento, ma uno strumento per **capire il mistero del mondo** che la scienza non sa cogliere.
 
 ### Implicazioni decadenti
 
@@ -54,35 +50,21 @@ Il **nido** è il simbolo più importante della poesia di Pascoli, e ha sempre u
 
 ### Cosa è il nido
 
-- **la famiglia originaria**: il padre, la madre, i fratelli; quel nido è stato distrutto la sera del 10 agosto;
-- **la famiglia ricostruita**: la casa di Castelvecchio con le sorelle Ida e Maria;
-- **lo spazio protettivo** contro un mondo esterno minaccioso, violento, ingiusto;
-- **il rifugio dagli "assalti"**: nelle poesie di Pascoli ricorre l'immagine di forze esterne (la nebbia, la notte, il temporale, le voci straniere) che premono sul nido per romperlo.
+Il nido è in primo luogo la famiglia originaria — il padre, la madre, i fratelli — quel nido che è stato distrutto la sera del 10 agosto. È poi la famiglia ricostruita, cioè la casa di Castelvecchio con le sorelle Ida e Maria. È al tempo stesso uno spazio protettivo contro un mondo esterno minaccioso, violento e ingiusto, e un rifugio dagli "assalti": nelle poesie di Pascoli ricorre infatti l'immagine di forze esterne — la nebbia, la notte, il temporale, le voci straniere — che premono sul nido per romperlo.
 
 ### Caratteri del nido pascoliano
 
-- **fragile**: può essere distrutto in qualsiasi momento (come quello originario);
-- **chiuso**: il nido protegge solo se rimane separato dal mondo. Pascoli rifiuta i contatti con la "vita" intesa come società, mondanità, sessualità adulta;
-- **morboso**: il rapporto con la sorella Maria è esclusivo, totalizzante; Pascoli vive con angoscia il matrimonio dell'altra sorella Ida, come un tradimento;
-- **simbolico**: nelle poesie il nido reale (la casa di Castelvecchio) si trasforma in nido archetipico (la casa di tutti, la patria, l'umanità).
+Il nido pascoliano è anzitutto fragile: può essere distrutto in qualsiasi momento, come quello originario. È inoltre chiuso, perché protegge solo se rimane separato dal mondo: Pascoli rifiuta i contatti con la "vita" intesa come società, mondanità e sessualità adulta. È anche morboso: il rapporto con la sorella Maria è esclusivo e totalizzante, e Pascoli vive con angoscia il matrimonio dell'altra sorella Ida, come un tradimento. Infine è simbolico, perché nelle poesie il nido reale (la casa di Castelvecchio) si trasforma in nido archetipico, cioè la casa di tutti, la patria, l'umanità.
 
 ### Il nido violato
 
-Tema centrale: il nido è violato dall'esterno. Le **forze che minacciano il nido** sono:
-- la **morte** (il padre ucciso, i fratelli morti);
-- la **sessualità adulta** (matrimonio della sorella, vita coniugale altrui);
-- la **modernità** (l'industrializzazione, l'emigrazione, lo sradicamento);
-- l'**ingiustizia sociale** (il lutto del padre rimasto impunito).
+Tema centrale è quello del nido violato dall'esterno. Le forze che minacciano il nido sono molteplici e intrecciate: la **morte** (il padre ucciso, i fratelli morti); la **sessualità adulta** (il matrimonio della sorella, la vita coniugale altrui); la **modernità** (l'industrializzazione, l'emigrazione, lo sradicamento); l'**ingiustizia sociale** (il lutto del padre rimasto impunito).
 
 ## 4. La visione decadente del mondo
 
 Pascoli vive la **crisi del positivismo**. La scienza non offre più risposte definitive: la natura non è più la legge ordinata dei naturalisti, ma un mistero pieno di presagi.
 
-Il suo decadentismo si manifesta in tre tratti:
-
-- **mistero al di là delle cose**: la realtà è solo la superficie di un significato più profondo;
-- **corrispondenze segrete**: oggetti, suoni, profumi rimandano ad altro (linea simbolista, da Baudelaire);
-- **sfiducia nella ragione**: la conoscenza vera non passa per la scienza ma per l'intuizione del fanciullino.
+Il suo decadentismo si manifesta in tre tratti convergenti. C'è anzitutto un **mistero al di là delle cose**: la realtà è solo la superficie di un significato più profondo. A questo si accompagnano le **corrispondenze segrete**, perché oggetti, suoni e profumi rimandano ad altro, secondo la linea simbolista che parte da Baudelaire. Il terzo tratto è una netta **sfiducia nella ragione**: la conoscenza vera non passa per la scienza ma per l'intuizione del fanciullino.
 
 A differenza di D'Annunzio, però, Pascoli **non si auto-celebra come superuomo**. Il suo decadentismo è dimesso, intimo, dolente. È il "decadentismo del nido" contro il "decadentismo del Vittoriale".
 
@@ -90,32 +72,21 @@ A differenza di D'Annunzio, però, Pascoli **non si auto-celebra come superuomo*
 
 ### Myricae (1891, ampliata fino al 1903)
 
-Titolo dalle *Bucoliche* di Virgilio (IV ecloga: "non omnes arbusta iuvant humilesque myricae" — non a tutti piacciono gli arbusti e le umili tamerici). Le tamerici sono piante di campagna basse, modeste. Il titolo dichiara la **poetica delle piccole cose**: temi umili, paesaggi rurali, oggetti quotidiani.
+Il titolo viene dalle *Bucoliche* di Virgilio (IV ecloga: "non omnes arbusta iuvant humilesque myricae" — non a tutti piacciono gli arbusti e le umili tamerici). Le tamerici sono piante di campagna basse, modeste, e il titolo dichiara la **poetica delle piccole cose**: temi umili, paesaggi rurali, oggetti quotidiani.
 
-**Caratteri**:
-- poesie brevi, spesso 14 versi (sonetti);
-- paesaggio rurale della Romagna prima, poi della Toscana;
-- forte presenza di elementi naturali concreti (uccelli, alberi, attrezzi, fiori);
-- contrasto tra dimensione equilibratrice della natura e ferita interiore del poeta;
-- prefazione che indica i due temi centrali: la **morte invendicata del padre** e la **natura come grande consolatrice**.
+I caratteri della raccolta sono coerenti con questo programma: poesie brevi, spesso di 14 versi (sonetti); paesaggio rurale prima della Romagna, poi della Toscana; forte presenza di elementi naturali concreti come uccelli, alberi, attrezzi, fiori; contrasto tra dimensione equilibratrice della natura e ferita interiore del poeta. La prefazione indica i due temi centrali: la **morte invendicata del padre** e la **natura come grande consolatrice**.
 
 ### Canti di Castelvecchio (1903)
 
-Pubblicato nel periodo della casa di Castelvecchio. Continuazione tematica di *Myricae*, ma con poesie più lunghe e sviluppate.
-
-**Due motivi dominanti**:
-1. **naturalistico**: trascorrere delle stagioni, alternanza vita/morte, ciclo cosmico;
-2. **familiare**: ossessione per il padre ucciso, lutto, ricostruzione del nido.
-
-La morte è qui più presente, più angosciante: minaccia diretta della vita del soggetto. La lingua mescola registro alto (aulico, classico) e registro basso (popolare, dialettale, infantile).
+Pubblicato nel periodo della casa di Castelvecchio, è la continuazione tematica di *Myricae*, ma con poesie più lunghe e sviluppate. Vi si intrecciano due motivi dominanti: uno **naturalistico**, legato al trascorrere delle stagioni, all'alternanza vita/morte e al ciclo cosmico, e uno **familiare**, dominato dall'ossessione per il padre ucciso, dal lutto e dalla ricostruzione del nido. La morte è qui più presente, più angosciante, e diventa minaccia diretta della vita del soggetto. La lingua mescola registro alto (aulico, classico) e registro basso (popolare, dialettale, infantile).
 
 ### Poemetti (1897, ampliati come Primi e Nuovi poemetti)
 
-Composizioni più lunghe, di tono narrativo. Affrontano temi sociali, politici, contemporanei: emigrazione (*Italy*), vita contadina, ferite della modernità.
+Sono composizioni più lunghe, di tono narrativo. Affrontano temi sociali, politici e contemporanei: l'emigrazione (*Italy*), la vita contadina, le ferite della modernità.
 
 ### Poemi conviviali (1904)
 
-Riprese di temi mitologici e classici (Ulisse, Alessandro, Achille). Pascoli reinterpreta il mondo greco con sensibilità decadente.
+Riprendono temi mitologici e classici (Ulisse, Alessandro, Achille). Pascoli reinterpreta il mondo greco con sensibilità decadente.
 
 ## 6. Le poesie principali
 
@@ -221,16 +192,12 @@ Pascoli rinnova profondamente la lingua poetica italiana, in modo radicale e sil
 
 ### Caratteri stilistici
 
-- **lessico misto**: convivono parole quotidiane, termini tecnici (botanici, ornitologici, agricoli), latinismi, dialettalismi, parole infantili. Pascoli usa il nome esatto di ogni pianta e uccello: non "fiore", ma *gelsomino*, *digitale*, *tamerice*; non "uccello", ma *assiuolo*, *rondine*, *pettirosso*.
-- **onomatopee**: il famoso "chiù" dell'assiuolo, il "don don" delle campane, il "videvitt" degli uccelli. Pascoli porta i suoni della natura dentro la lingua poetica.
-- **frasi brevi e spezzate**: sintassi nominale, frammenti, accostamenti per giustapposizione. Effetto di **frammentarietà lirica**.
-- **simboli**: oggetti concreti caricati di valori ulteriori (nido, siepe, fiore, lampo, nebbia).
-- **analogie**: accostamenti intuitivi tra realtà diverse, senza nessi logici espliciti. Linea simbolista.
-- **fonosimbolismo**: i suoni della parola alludono al senso. La sonorità è essa stessa significato.
+Il primo tratto è il **lessico misto**: convivono parole quotidiane, termini tecnici (botanici, ornitologici, agricoli), latinismi, dialettalismi e parole infantili. Pascoli usa il nome esatto di ogni pianta e uccello: non "fiore", ma *gelsomino*, *digitale*, *tamerice*; non "uccello", ma *assiuolo*, *rondine*, *pettirosso*. A questo si lega il largo uso di **onomatopee**: il famoso "chiù" dell'assiuolo, il "don don" delle campane, il "videvitt" degli uccelli. Pascoli porta i suoni della natura dentro la lingua poetica. La sintassi procede per **frasi brevi e spezzate**, sintassi nominale, frammenti, accostamenti per giustapposizione, con un effetto di frammentarietà lirica. Vi sono poi i **simboli**, oggetti concreti caricati di valori ulteriori (nido, siepe, fiore, lampo, nebbia), e le **analogie**, accostamenti intuitivi tra realtà diverse, senza nessi logici espliciti, sulla linea simbolista. Tutto è infine sostenuto dal **fonosimbolismo**: i suoni della parola alludono al senso, perché la sonorità è essa stessa significato.
 
 ### Il linguaggio di Pascoli secondo Contini
 
 **Gianfranco Contini**, nel saggio *Il linguaggio di Pascoli*, ha sottolineato che la lingua pascoliana opera su **tre registri compresenti**:
+
 1. **registro pre-grammaticale** (onomatopee, parole infantili, suoni);
 2. **registro grammaticale** (italiano comune, lessico medio);
 3. **registro post-grammaticale** (latinismi, tecnicismi, lingua dotta).
@@ -239,11 +206,7 @@ Tra questi registri c'è continuo scambio. È la novità più radicale: Pascoli 
 
 ## 8. Pensiero politico
 
-Pascoli ha avuto un'evoluzione politica importante:
-
-- **giovanile**: socialista, vicino agli anarchici, partecipa a movimenti, finisce in carcere;
-- **maturo**: si allontana dalla lotta di classe (rifiuta il marxismo), si avvicina a un **socialismo umanitario** che mira alla solidarietà fraterna senza rivoluzione;
-- **tardo**: aderisce al **nazionalismo umanitario**: l'Italia "proletaria" come nazione povera che si fa rispettare. Sostiene la guerra di Libia (1911) come riscatto sociale.
+Pascoli ha avuto un'evoluzione politica importante. Da giovane è socialista, vicino agli anarchici, partecipa a movimenti e finisce in carcere. Da maturo si allontana dalla lotta di classe e rifiuta il marxismo, avvicinandosi a un **socialismo umanitario** che mira alla solidarietà fraterna senza rivoluzione. Negli ultimi anni aderisce al **nazionalismo umanitario**: l'Italia "proletaria" come nazione povera che si fa rispettare, e in questa logica sostiene la guerra di Libia (1911) come riscatto sociale.
 
 Per Pascoli la lotta tra classi è da rifiutare; bisogna sostituirla con la lotta tra nazioni, dove l'Italia "povera" deve guadagnarsi il suo posto. È una visione ingenua e pericolosa, antesignana di certo nazionalismo italiano del primo Novecento.
 
