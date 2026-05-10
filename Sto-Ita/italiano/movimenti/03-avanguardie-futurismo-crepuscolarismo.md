@@ -65,6 +65,14 @@ Lo scopo è imitare la velocità e il caos della vita moderna.
 
 In *Zang Tumb Tuuum* Marinetti cerca di rendere sulla pagina i suoni della guerra: esplosioni, colpi, rumori metallici, movimento.
 
+### I calligrammi
+
+Una manifestazione tipica del Futurismo è il **calligramma**: la pagina diventa **messaggio grafico**, non più solo testo. Le parole disegnano forme visive: una ruota, un treno, un'esplosione, un volto. La poesia entra nel territorio della pittura. Apollinaire (poeta francese) sviluppa il calligramma come genere, ma il principio è già futurista: la pagina come spazio visivo, non come solo supporto del testo.
+
+### Durata e fortuna
+
+Il Futurismo è un movimento storicamente breve: la sua fase più creativa va dal 1909 al 1916 circa, con un secondo Futurismo (Aeropittura) negli anni Venti-Trenta. Esiste in quanto **provocazione**: una volta accettato, perde la sua forza dirompente. Molti suoi punti programmatici saranno alla base del **fascismo** (esaltazione della guerra, culto della macchina, nazionalismo, distruzione del passato). Marinetti aderirà al fascismo, anche se il rapporto tra futurismo e regime resta ambivalente.
+
 ## 6. Futurismo e arte
 
 Il Futurismo non riguarda solo la letteratura, ma anche pittura, scultura, musica, teatro, grafica e costume.
@@ -126,6 +134,14 @@ Caratteristiche:
 - **Crisi dell'identità del poeta**: il poeta non sa più cosa sia, non crede di avere un ruolo nella società e dichiara la propria inutilità.
 
 Il poeta non si presenta come guida della società, ma come figura fragile, marginale, spesso malata o ironica.
+
+### "Vecchi in un corpo giovane"
+
+Una sintesi celebre dei crepuscolari: "**vecchi rinchiusi in un corpo giovane**". I poeti crepuscolari hanno coscienza della morte più che della vita. Hanno **più coscienza della propria finitudine** che entusiasmo per il futuro. Sono giovani anagraficamente (Gozzano muore di tubercolosi a 35 anni, Corazzini a 21), ma vivono già da invecchiati, stanchi, disillusi.
+
+### Ambienti
+
+Mentre i decadenti amano luoghi naturali (boschi, mari, paesaggi), i crepuscolari amano **luoghi dimenticati dalla società borghese in ascesa**: città di provincia (Torino, dove molti vivono), salotti polverosi, conventi, case borghesi modeste, cimiteri. Sono luoghi di residuo, di abbandono, di passato che continua a sopravvivere ai margini.
 
 ## 11. Guido Gozzano
 

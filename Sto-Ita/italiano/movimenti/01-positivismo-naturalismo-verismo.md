@@ -1,5 +1,15 @@
 # Positivismo, Naturalismo e Verismo
 
+## 0. Contesto storico-economico
+
+Per capire il movimento bisogna inquadrare il quadro storico-economico della seconda metà dell'Ottocento.
+
+Nella **prima metà dell'Ottocento** si afferma in Europa una **borghesia liberista**: classe industriale e commerciale che sostiene la libera concorrenza, il libero scambio, il rifiuto dell'intervento statale nell'economia. Lo sviluppo industriale è rapido e le città si trasformano: nascono i grandi quartieri operai, l'urbanizzazione di massa, le ferrovie, i giornali popolari.
+
+Verso la fine dell'Ottocento la borghesia liberista evolve in **borghesia imperialista**: gli Stati europei adottano una politica aggressiva di concorrenza tra nazioni, con corsa alle colonie in Africa e Asia, sviluppo industriale-bellico, tensioni che porteranno alla **prima guerra mondiale**. Lo sfruttamento delle masse contadine e operaie peggiora; le condizioni di vita nei quartieri popolari sono dure.
+
+In Italia, dopo l'unità del 1861, è particolarmente evidente la **questione meridionale**: il Sud, povero e arretrato, si trova ad affrontare un'unificazione che lo penalizza economicamente. È in questo contesto che Verga, Capuana e De Roberto raccontano la Sicilia.
+
 ## 1. Il Positivismo
 
 Il **Positivismo** è un movimento culturale dell'Ottocento fondato sulla fiducia nella scienza, nella tecnica e nel progresso. Nasce in un periodo in cui l'industrializzazione, le nuove scoperte scientifiche e lo sviluppo delle città sembrano dimostrare che l'uomo possa conoscere e migliorare la realtà attraverso metodi razionali.
@@ -21,11 +31,27 @@ Secondo questa mentalità, l'uomo non è completamente libero e isolato: è cond
 
 ## 3. Dal Realismo al Naturalismo
 
-Il **Realismo** nasce dal bisogno di rappresentare la vita concreta e quotidiana. Gli scrittori non vogliono più raccontare solo eroi eccezionali, passioni romantiche o mondi idealizzati: vogliono osservare la società così com'è.
+### Il Realismo
 
-Il **Naturalismo** francese porta questa tendenza ancora più avanti. Lo scrittore naturalista si comporta quasi come uno scienziato: osserva l'uomo dentro un ambiente preciso e mostra come i comportamenti siano determinati da fattori sociali, economici, biologici e familiari.
+Il **Realismo** nasce dal bisogno di rappresentare la vita concreta e quotidiana, in opposizione al Romanticismo. Caratteristiche:
 
-Il romanzo diventa quindi uno strumento di indagine. Non serve solo a intrattenere, ma anche a mostrare le leggi nascoste della società.
+- nasce dalla **fiducia nel progresso** e dall'industrializzazione;
+- la letteratura ha pubblico sempre più ampio (borghesia in espansione) e deve essere semplice e comprensibile;
+- aumenta l'interesse per i ceti più umili;
+- la lingua diventa **semplice e popolare**, "fotografia della realtà";
+- nasce la **letteratura di appendice** (romanzi pubblicati a puntate sui giornali, di facile consumo, accessibili al pubblico borghese).
+
+Si distingue dal "realismo romantico" perché descrive una realtà **scientifica e materialista**, non più filtrata dalla religione o da ideali. Nuovi generi: il **romanzo** (espressione della borghesia) e la **novella** (eredità della letteratura di appendice).
+
+**Gustave Flaubert** è il padre del Realismo. *Madame Bovary* (1856) è il romanzo antiromantico per eccellenza: impersonale, oggettivo, privo di sentimentalismo. Esclude accuratamente le ideologie e i sentimenti dell'autore, lascia parlare i personaggi, fornisce "spaccati di vita" senza commentare.
+
+### Il Naturalismo
+
+Il **Naturalismo** francese porta il Realismo ancora più avanti. Lo scrittore naturalista si comporta quasi come uno scienziato: osserva l'uomo dentro un ambiente preciso e mostra come i comportamenti siano determinati da fattori sociali, economici, biologici e familiari. Il romanzo diventa quindi uno strumento di indagine, simile a un esperimento di laboratorio.
+
+### La Scapigliatura
+
+Tra Realismo e Naturalismo, in Italia, si colloca la **Scapigliatura** (1860-1880 circa), gruppo di poeti milanesi (Boito, Praga, Tarchetti) che criticano duramente il Romanticismo manzoniano e il neonato Stato unitario. Sono **pars destruens** (pura critica del passato) ma senza un programma costruttivo. Anticipano alcuni temi del Decadentismo (mistero, irrazionale, morte, scienza come sfiducia) e preparano il terreno per il Verismo successivo.
 
 ## 4. Il Naturalismo francese
 
@@ -72,7 +98,7 @@ Si sviluppa soprattutto negli anni Settanta e Ottanta dell'Ottocento, in un'Ital
 Gli autori veristi più importanti sono:
 
 - **Giovanni Verga** (1840-1922): siciliano, è il maggiore scrittore verista; con i *Malavoglia* e *Mastro-don Gesualdo* fonda il "ciclo dei vinti", grande affresco della società italiana attraversata dalla "lotta per la vita".
-- **Luigi Capuana** (1839-1915): siciliano, principale teorico del Verismo, che diffonde le idee di Zola adattandole all'Italia; autore del romanzo *Il marchese di Roccaverdina*, studio quasi clinico dell'ossessione e del rimorso.
+- **Luigi Capuana** (1839-1915): siciliano, principale **teorico del Verismo**. Nei saggi raccolti in *Per l'arte* (1885) elabora i principi del movimento, distaccandosi dal Naturalismo zoliano: in Italia il Verismo deve concentrarsi sulla **regionalità** (paesaggi, dialetti, mentalità locali), non sulla scienza astratta. Capuana è anche autore del romanzo *Il marchese di Roccaverdina* (1901), studio quasi clinico dell'ossessione e del rimorso, che anticipa il romanzo psicologico novecentesco.
 - **Federico De Roberto** (1861-1927): siciliano anch'egli, autore de *I Viceré*, grande romanzo storico-verista sulla decadenza di una famiglia nobile catanese durante il Risorgimento e l'Unità.
 
 ## 7. Naturalismo e Verismo: differenze
@@ -85,11 +111,18 @@ Il Naturalismo francese e il Verismo italiano hanno elementi comuni:
 - interesse per ambiente e condizionamenti;
 - tendenza all'impersonalità.
 
-Ci sono però differenze importanti.
+Ci sono però differenze importanti:
 
-Il Naturalismo francese ha spesso fiducia nella possibilità di cambiare la società attraverso la scienza e la denuncia. Zola crede che mostrare il male possa aiutare a correggerlo.
+| Aspetto | Naturalismo francese | Verismo italiano |
+|---|---|---|
+| **Fiducia nel progresso** | Sì: la denuncia può cambiare la società (Zola) | No: pessimismo profondo, la società non può essere cambiata |
+| **Ambito geografico** | Grandi città, Parigi, mondo industriale | **Regionale**: Sicilia, Sud, mondo contadino e marinaro |
+| **Classi rappresentate** | Operai, prostitute, alcolizzati urbani | **Pescatori, contadini, minatori**, masse meridionali |
+| **Approccio teorico** | Scientifico, sperimentale, "laboratorio" | **Contemplativo**, fotografico, senza pretese scientifiche |
+| **Atteggiamento verso il popolo** | Studio clinico, denuncia sociale | **Rassegnazione**: la plebe non reagisce, l'autore registra la desolante realtà |
+| **Lingua** | Italiano/francese letterario con argot | Italiano "regredito" verso il dialetto, con proverbi e modi di dire siciliani |
 
-Il Verismo italiano, soprattutto in Verga, è più pessimista. La letteratura mostra la realtà, ma non pensa di poterla cambiare facilmente. I poveri e gli umili sono intrappolati in leggi sociali dure: chi prova a migliorare la propria condizione spesso viene sconfitto.
+In sintesi: il Naturalismo è un'ottimismo critico (la scienza/letteratura denuncia per cambiare); il Verismo è un pessimismo contemplativo (la letteratura fotografa una realtà immutabile). I poveri e gli umili sono intrappolati in leggi sociali dure: chi prova a migliorare la propria condizione spesso viene sconfitto (la **morale dell'ostrica** di Verga).
 
 ## 8. L'impersonalità
 

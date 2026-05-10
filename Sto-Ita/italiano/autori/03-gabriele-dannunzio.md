@@ -2,190 +2,309 @@
 
 ## 1. Vita
 
-**Gabriele D'Annunzio** nasce a Pescara nel 1863. Fin da giovane costruisce la propria immagine pubblica con grande abilità: vuole essere non solo uno scrittore, ma un personaggio, un modello di vita, un artista capace di trasformare l'esistenza in spettacolo.
+**Gabriele D'Annunzio** nasce a **Pescara nel 1863**. Vive una giovinezza precoce: a sedici anni pubblica già la prima raccolta di poesie (*Primo vere*) e a venti anni è celebre nei salotti romani.
 
-Vive tra Roma, Firenze, Napoli, la Francia e il Vittoriale degli Italiani, la casa-museo sul lago di Garda che diventa il simbolo della sua personalità.
+A differenza di Pascoli, vissuto come letterato appartato, D'Annunzio costruisce sin dall'inizio se stesso come **personaggio pubblico**. Vuole essere non solo scrittore, ma idolo delle folle, mito di massa, modello di vita. È il primo "intellettuale-celebrità" italiano nel senso moderno.
 
-Partecipa alla vita politica e militare: sostiene l'interventismo nella Prima guerra mondiale, compie imprese clamorose come il volo su Vienna e guida l'occupazione di Fiume nel 1919.
+### Le tappe della vita
 
-Muore nel 1938.
+- **Roma (anni Ottanta-Novanta)**: salotti aristocratici, giornalismo, prima fase letteraria. Si crea una vita scenografica con Eleonora Duse (la più grande attrice italiana del tempo), grandi debiti, viaggi.
+- **Toscana, Settignano (1898-1910)**: vive nella villa "La Capponcina" con Eleonora Duse. Scrive le opere maggiori (*Il piacere* è già del 1889, ma in questa fase escono *Le vergini delle rocce*, *Il fuoco*, le tragedie, le *Laudi* tra cui *Alcyone*).
+- **Francia (1910-1915)**: per sfuggire ai creditori italiani vive in Francia, dove continua a scrivere (anche in francese: *Le martyre de saint Sébastien* per Debussy).
+- **Prima guerra mondiale (1915-1918)**: rientra in Italia come **interventista**, sostiene la guerra con discorsi di altissimo impatto. Si arruola volontario, partecipa a imprese clamorose: il **volo su Vienna** (1918, con il lancio di volantini propagandistici), la **beffa di Buccari** (1918, attacco navale di tre MAS contro la flotta austriaca), perde un occhio in un incidente aereo.
+- **Impresa di Fiume (settembre 1919 – dicembre 1920)**: a capo di un gruppo di volontari ("legionari fiumani") occupa la città di Fiume, contesa tra Italia e Jugoslavia, e vi instaura la "Reggenza italiana del Carnaro" con una propria costituzione (la *Carta del Carnaro*) e una vita pubblica fatta di adunate, riti, discorsi dal balcone, motti collettivi. È un esperimento di **estetizzazione della politica** che il fascismo riprenderà direttamente.
+- **Vittoriale (1921-1938)**: dopo la fine dell'impresa fiumana, Mussolini lo "imborghesisce" e lo isola nella villa di Gardone Riviera, sul lago di Garda, che D'Annunzio trasforma nel **Vittoriale degli Italiani**: casa-museo-mausoleo, costruzione totale di sé, ultima opera d'arte. Vi muore nel **1938**.
 
-## 2. D'Annunzio e il Decadentismo
+### Il rapporto con il fascismo
 
-D'Annunzio è il principale rappresentante italiano del Decadentismo estetizzante.
+D'Annunzio è un precursore del fascismo nel **linguaggio** (saluto romano, motti, rituali, estetica della massa, mito dell'eroe), ma è anche un personaggio scomodo per Mussolini, che ne diffida e lo confina elegantemente al Vittoriale. D'Annunzio è ammirato dai fascisti come padre simbolico, ma non è mai stato un militante di partito.
 
-Nella sua opera troviamo:
+## 2. La poetica
 
-- **Culto della bellezza**: la bellezza diventa valore assoluto, capace di sostituire la morale tradizionale e di dare senso all'esistenza.
-- **Ricerca del piacere**: l'esperienza estetica e sensoriale è il fine supremo della vita, contro ogni etica utilitaria o borghese.
-- **Rifiuto della mediocrità borghese**: D'Annunzio disprezza la vita ordinata e produttiva della borghesia, vista come grigia e priva di grandezza.
-- **Gusto per il lusso e l'artificio**: predilezione per oggetti rari, ambienti raffinati, abiti preziosi; l'artificio è preferito alla natura semplice perché frutto di scelta estetica.
-- **Esaltazione dell'eccezionalità dell'artista**: l'artista è un essere superiore, distinto dalla massa, dotato di sensibilità e diritti speciali.
-- **Sensualità**: il corpo, i sensi, l'eros sono al centro dell'esperienza poetica, vissuti con intensità decadente.
-- **Musicalità della parola**: la lingua poetica è scelta per il suono, il ritmo e la suggestione, più che per il significato razionale.
-- **Fusione tra arte e vita**: la vita stessa va vissuta come opera d'arte, in cui ogni gesto è scenografia ed espressione di stile.
+La scrittura di D'Annunzio si fonda su pochi principi fortissimi:
 
-Per D'Annunzio l'arte non deve essere separata dall'esistenza: la vita stessa deve diventare un'opera d'arte.
+- **culto della bellezza**: l'arte come unico valore assoluto, capace di sostituire la morale tradizionale;
+- **ricerca del piacere**: l'esperienza estetica e sensoriale come fine supremo;
+- **esibizione**: la vita pubblica come opera d'arte, lo scrittore come personaggio (vate, dandy, eroe);
+- **ricerca linguistica**: lavoro maniacale sulla lingua, lessico raro e prezioso, musicalità del verso;
+- **eros**: corpo, sensi, sessualità come materia poetica centrale;
+- **panismo**: fusione dell'uomo con la natura, soprattutto nella poesia matura.
 
-## 3. L'esteta
+### Differenza fondamentale rispetto a Pascoli
 
-La prima grande figura dannunziana è l'**esteta**.
+Pascoli e D'Annunzio sono i due grandi decadenti italiani, ma in posizioni opposte:
 
-L'esteta vive per la bellezza e per il piacere. Disprezza la vita comune, cerca oggetti raffinati, esperienze rare, ambienti eleganti, sensazioni intense.
+| Pascoli | D'Annunzio |
+|---|---|
+| Cerca il sublime nel **basso**, nelle piccole cose | Punta direttamente all'**innalzamento**, alla grandezza |
+| Vita appartata, vissuta in un nido protetto | Vita esposta, scenografica, scandalosa |
+| Linguaggio dimesso, frammenti, suoni | Linguaggio sontuoso, lessico colto, ricchezza |
+| Decadentismo del nido | Decadentismo del Vittoriale |
 
-Il problema è che l'esteta rischia di essere debole: ama la bellezza, ma non sa scegliere; cerca emozioni, ma non costruisce valori solidi; trasforma anche l'amore in esperienza artistica.
+## 3. Le ideologie
 
-## 4. Il piacere
+Le idee di D'Annunzio si organizzano su sette assi:
 
-*Il piacere* viene pubblicato nel 1889 ed è il romanzo più importante della fase estetizzante.
+1. **Estetismo**: l'arte non deve avere scopo morale né civile. La bellezza è valore in sé. Le poesie e i romanzi non hanno un "messaggio": sono un mezzo per creare bellezza assoluta.
+2. **Culto del leader**: gli artisti veri sono pochi, eccezionali, capaci di guidare le masse. Disprezzo per la democrazia parlamentare, percepita come mediocre.
+3. **Nazionalismo**: appoggia la conquista della Libia, la guerra mondiale, l'irredentismo. L'Italia ha una "missione storica" da compiere.
+4. **Interventismo**: nel 1915 si batte ferocemente perché l'Italia entri in guerra, con discorsi pubblici di enorme impatto.
+5. **Concezione aristocratica della società**: una piccola élite di "dominatori superiori" deve guidare la massa, considerata rozza, da educare.
+6. **Recupero del ruolo del poeta-vate**: dopo che la modernità borghese ha "tolto l'aureola" al poeta, D'Annunzio cerca di rientrarci di forza, imponendosi come voce nazionale.
+7. **Superuomo**: ripreso (e semplificato) da Nietzsche, l'uomo capace di darsi le proprie leggi, di superare la morale comune, di plasmare se stesso e gli altri come materia.
 
-Il protagonista è **Andrea Sperelli**, giovane aristocratico romano, raffinato, colto, seduttore. Il padre gli ha insegnato a fare della propria vita un'opera d'arte, ma questa educazione lo rende incapace di autenticità.
+## 4. Le fasi letterarie
 
-Andrea è diviso tra due donne:
+L'opera di D'Annunzio si divide in **quattro fasi** distinte.
 
-- **Elena Muti**, sensuale, passionale, legata al desiderio;
-- **Maria Ferres**, più spirituale, dolce, apparentemente pura.
+### 1. Periodo verista (1880-1885)
 
-In realtà Andrea non ama davvero nessuna delle due: le trasforma in immagini, in oggetti estetici, in proiezioni del proprio desiderio.
+Le prime opere narrative: ***Terra vergine*** (1882), novelle ambientate in Abruzzo. D'Annunzio si ispira al Verga preverista (*Vita dei campi*) e descrive il mondo contadino abruzzese. Tono "verista" molto particolare: sceglie scene primordiali, focose, sensuali, con descrizioni morbose e violente. Non è un vero verismo: è una rielaborazione **estetica** del materiale popolare. Il narratore è esterno (eterodiegetico), il linguaggio è classico ma con elementi di irrazionalità. Già qui si vede che D'Annunzio non descrive il popolo per impegno sociale, ma per **estetica del primordiale**.
 
-### Il fallimento dell'esteta
+### 2. Periodo estetico (1885-1893)
 
-Il romanzo mostra il limite dell'estetismo. Andrea vorrebbe vivere al di sopra della morale comune, ma finisce prigioniero della propria artificiosità. Non sa distinguere vita e arte, sentimento e posa, verità e finzione.
+Il romanzo emblematico è ***Il piacere*** (1889). Il protagonista Andrea Sperelli è il prototipo dell'**esteta** dannunziano: vive solo per il piacere, senza valori morali, in un autocompiacimento continuo. Caratteristiche di questa fase:
+- protagonista amorale, in cerca di piacere e sensazioni rare;
+- forte introspezione psicologica;
+- simbolismo (la vita di Sperelli è simbolo di qualcosa);
+- consapevolezza dell'assenza di valori morali (D'Annunzio sa che la sua è una vita artificiale, ma non vuole rinunciare alla passione dei sensi);
+- modello: Huysmans, *A rebours* (Andrea Sperelli è il "cugino italiano" di Des Esseintes).
 
-Il piacere diventa quindi anche un romanzo di crisi: dietro la bellezza raffinata si nasconde il vuoto morale.
+### 3. Fase della "bontà" (1893-1894)
 
-## 5. Il superuomo
+Breve fase intermedia. D'Annunzio finge di pentirsi degli "antivalori" estetici, e tenta di recuperare valori della fanciullezza, dell'innocenza, dell'affetto familiare. La poesia ***Consolazione*** racconta l'incontro tra il poeta e la madre morente. Apparentemente è un momento toccante; in realtà la madre nella poesia non guarda il figlio negli occhi, non risponde alle scuse del poeta. D'Annunzio mostra di essere consapevole di **non poter cambiare**: l'esteta non si pente davvero, finge solo. Anche questa fase è in fondo estetica.
 
-Dopo la fase dell'esteta, D'Annunzio sviluppa il mito del **superuomo**, influenzato in modo personale e spesso semplificato da Nietzsche.
+### 4. Fase del superuomo (1894 in poi)
 
-Il superuomo dannunziano è un individuo eccezionale che vuole dominare la massa, imporre la propria volontà e guidare la società.
+Da ***Le vergini delle rocce*** (1895) e ***Il fuoco*** (1900) in poi, l'esteta evolve in **superuomo**. Sperelli viveva solo per sé; il superuomo dannunziano vuole **agire pubblicamente**, guidare il popolo, plasmare la storia. Caratteristiche:
+- rifiuto della democrazia e del conformismo borghese;
+- desiderio di guidare la società attraverso parola, arte, gesto politico;
+- figura carismatica e forte che si eleva dalla folla;
+- il superuomo si costruisce da sé, supera i valori comuni, se ne dà di propri "più alti" (in cui consiste il rifiuto dell'egualitarismo);
+- modello nietzschiano semplificato: la "volontà di potenza" diventa pretesa di dominio.
 
-Caratteristiche:
+I romanzi del superuomo (***L'innocente***, ***Trionfo della morte***, ***Le vergini delle rocce***, ***Il fuoco***, ***Forse che sì forse che no***) seguono uno schema ricorrente: il superuomo viene **sopraffatto dalle passioni**, dalla **donna fatale**, e fallisce. Il "superuomo dannunziano" è quindi ancora un esteta in fondo: ne riproduce le sconfitte, anche quando vuole essere eroico.
 
-- **Energia**: vitalità debordante, capacità di affermarsi con la forza fisica e morale al di sopra dei limiti comuni.
-- **Volontà di potenza**: concetto ripreso da Nietzsche; impulso a dominare, plasmare la realtà e imporre la propria visione del mondo.
-- **Disprezzo per la mediocrità**: rifiuto della massa, della morale comune e dei valori borghesi considerati piatti e rinunciatari.
-- **Culto dell'azione**: l'agire eroico e spettacolare è preferito alla riflessione; la vita autentica è quella vissuta con gesti memorabili.
-- **Nazionalismo**: esaltazione della nazione, della sua missione storica e della grandezza romana e italiana, con tono retorico ed espansionista.
-- **Desiderio di grandezza**: ambizione di lasciare un'impronta storica, artistica e politica, vivendo una vita "fuori misura".
-- **Fusione tra arte, politica e vita**: l'azione politica diventa spettacolo estetico; il superuomo è insieme artista, condottiero e uomo pubblico.
+## 5. Il piacere (1889)
 
-Questa figura avrà anche conseguenze politiche: D'Annunzio contribuisce a diffondere un linguaggio eroico, spettacolare e nazionalista.
+### Trama
 
-## 6. Le Laudi e Alcyone
+**Andrea Sperelli**, giovane aristocratico romano colto e raffinato, vive a Roma negli ultimi anni dell'Ottocento. Il romanzo si apre **in medias res**: Andrea, nella sua casa di Palazzo Zuccari, attende l'arrivo di Elena Muti, sua antica amante, due anni dopo la fine della loro relazione.
 
-L'opera poetica più importante di D'Annunzio è il ciclo delle **Laudi** (Le Laudi del cielo, del mare, della terra e degli eroi), composto e pubblicato nei primi anni del Novecento. La raccolta più famosa del ciclo è **Alcyone** (1903). L'intero ciclo si colloca grosso modo tra il 1903 e il 1912.
+**Flashback**: la storia d'amore tra Andrea ed Elena. Conoscenza in un salotto romano, corteggiamento, passione travolgente, abbandono di lei (Elena lo ha lasciato per sposare un ricco lord inglese).
 
-Alcyone è dedicata all'estate, alla natura, al paesaggio e alla fusione sensuale tra uomo e mondo naturale: qui D'Annunzio raggiunge l'apice del suo **panismo**, della musicalità del verso e della ricchezza lessicale.
+Andrea, dopo la separazione, prosegue una vita romana di salotti, amori, debiti. Ferito in duello da uno dei mariti delle sue amanti, va in convalescenza nella villa di campagna della cugina marchesa, in un luogo isolato. Lì conosce **Maria Ferres**, donna sposata, dolce, religiosa, profondamente colta. Andrea si innamora di lei (o crede di farlo).
 
-Caratteristiche principali:
+Tornato a Roma, riprende la relazione con entrambe le donne: Elena (ora sposata col lord inglese) ricompare nella sua vita; Maria si trasferisce a Roma e Andrea la corteggia in parallelo. Il romanzo si chiude in un episodio celebre e patetico: Andrea, mentre fa l'amore con Maria, le sussurra il nome di Elena. Maria, scoperta la verità, lo lascia per sempre. Andrea resta solo, sconfitto, mentre la cugina vende all'asta i mobili della villa di campagna che aveva ospitato il loro amore.
 
-- **Panismo**: fusione tra io lirico e natura, con frequenti metamorfosi tra uomo e paesaggio.
-- **Musicalità**: forte attenzione al suono, alle allitterazioni, alle assonanze; la parola come strumento musicale.
-- **Lessico prezioso e botanico**: termini colti, neologismi e nomi di piante per una descrizione sensoriale precisa.
-- **Sinestesia e sensorialità**: mescolanza di percezioni (suoni, odori, colori, tatto).
-- **Forma e tecnica**: alternanza di versi lunghi e brevi, endecasillabi e ritmi liberi, talvolta frammentazione e prosa lirica.
-- **Temi ricorrenti**: celebrazione dell'estate, eros cosmico, bellezza, eroismo estetico e fusione tra arte e vita.
+### Andrea Sperelli
 
-Esempi famosi in *Alcyone*: "La sera fiesolana" e "La pioggia nel pineto", che mostrano la metamorfosi degli amanti in elementi naturali e la predilezione per ritmo e suono. Le Laudi trasformano l'esperienza sensoriale in una visione mitica e spettacolare, consolidando la poetica dannunziana.
+Alter ego di D'Annunzio. Aristocratico romano, raffinato, colto, esperto d'arte (incide acqueforti, scrive poesie). La sua biografia è programmata sin dall'infanzia: il padre lo educa a "**fare della propria vita un'opera d'arte**". Questa educazione però lo rende **incapace di autenticità**: non sa più distinguere tra sentimento vero e posa, tra amore e gioco estetico.
 
-## 7. Il panismo
+È un **dandy**: vive di apparenze, di gusti raffinati, di sensazioni rare. Disprezza la morale comune. Ma è anche **debole**: incapace di scegliere, sopraffatto dalle proprie passioni. Aveva l'ambizione di diventare superuomo, è solo un esteta dimezzato.
 
-Il **panismo** è la sensazione di fusione totale tra l'uomo e la natura.
+### Le due donne
 
-Il poeta non osserva semplicemente il paesaggio: sente di diventare parte di esso. Corpo, sensi, pioggia, alberi, vento, mare e suoni naturali si mescolano.
+- **Elena Muti**: il polo sensuale. Bella, passionale, sposata a un nobile inglese per denaro. Ricalca alcune caratteristiche di Eleonora Duse, ma anche stereotipi della **femme fatale** decadente. Il nome (Elena) richiama la mitologia (l'Elena di Troia, scatenatrice di guerra per la sua bellezza).
+- **Maria Ferres**: il polo spirituale. Sposata a un diplomatico, religiosa, dolce, amante della musica e dell'arte. Rappresenta l'amore "puro", colto, intellettuale. Andrea vorrebbe essere salvato da lei, ma rovina anche questa relazione perché continua a desiderare Elena.
 
-Questa fusione è tipicamente decadente perché supera i confini razionali dell'io. L'individuo non è più separato dal mondo, ma si scioglie nella vita naturale.
+Andrea non riesce a scegliere: vorrebbe la **fusione delle due**. Vuole il corpo di Elena con l'anima di Maria. La loro impossibile sintesi è la sua sconfitta.
 
-## 8. La sera fiesolana
+### Significato
 
-In **La sera fiesolana** D'Annunzio descrive un paesaggio serale toscano con un linguaggio musicale e ricco di immagini sensoriali.
+*Il piacere* è insieme **manifesto** e **autocritica** dell'estetismo:
+- **manifesto**: D'Annunzio dichiara con il romanzo la sua adesione alla figura dell'esteta dandy, alla vita come opera d'arte, al culto della bellezza;
+- **autocritica**: il finale è il fallimento dell'esteta. Andrea Sperelli non è un superuomo: è un uomo svuotato, incapace di vera passione, prigioniero della propria artificiosità. L'estetismo, portato all'estremo, è una forza distruttiva.
 
-La poesia non racconta una storia: crea un'atmosfera. La sera diventa una presenza quasi femminile e sacra. Le immagini sono delicate, luminose, sospese.
+Brano studiato: ***La vita come opera d'arte***. Manifesto programmatico in cui Andrea (e dietro di lui D'Annunzio) espone l'idea che ogni gesto della vita debba essere costruito esteticamente.
 
-Temi principali:
+### La femme fatale e l'analisi dell'esteta
 
-- **Musicalità**: il verso è costruito sui suoni, sulle ripetizioni e sulle assonanze, in modo da imitare la dolcezza della sera.
-- **Sensualità della natura**: il paesaggio è percepito attraverso il corpo e i sensi, con immagini di profumi, di pelle, di carezze del vento.
-- **Atmosfera religiosa e misteriosa**: la sera è descritta con tono sacro, quasi liturgico, come un evento sospeso tra cielo e terra.
-- **Fusione tra paesaggio e sentimento**: la natura non è sfondo, ma diventa specchio e prolungamento dell'animo del poeta.
-- **Parola poetica raffinata**: lessico colto, prezioso, scelto per la sua suggestione fonica e simbolica più che per la chiarezza.
+Nel romanzo D'Annunzio analizza con freddezza la **falsità dell'esteta**. Comprende:
+- che la donna nella vita di Andrea non è amore ma piacere fisico;
+- che la società dei salotti è falsa e superficiale;
+- che la **femme fatale** è il prodotto di una società corrotta che usa le donne come oggetti.
 
-## 9. La pioggia nel pineto
+Andrea è cosciente dell'immoralità della sua vita ma sceglie di **automistificarsi**: si rifiuta di scegliere tra bene e male, tra moralità e immoralità. È quindi assenza totale di un quadro morale: è il vero **psicologismo** del romanzo, l'analisi spietata degli stati d'animo del protagonista (e dell'autore).
 
-**La pioggia nel pineto** è una delle poesie più celebri di D'Annunzio.
+## 6. La vergine delle rocce (1895)
 
-Il poeta e Ermione camminano in una pineta mentre cade la pioggia. Il testo è costruito sui suoni: la pioggia batte sulle foglie, sui rami, sui cespugli, sui corpi.
+Romanzo del **passaggio dall'esteta al superuomo**. Protagonista **Claudio Cantelmi**, aristocratico romano che incarna ancora il culto della bellezza, ma aggiunge un'ambizione politica nuova: vuole **governare il mondo** (almeno l'Italia).
 
-La parola poetica imita la musica della natura.
+### Trama
 
-### Metamorfosi
+Claudio si trasferisce da Roma (corrotta capitale moderna) in una villa nobiliare fuori città, e lì cerca una donna del suo rango con cui generare il "**futuro re di Roma**", il superuomo che dovrà guidare la nazione. Conosce tre sorelle Capece-Montaga, di una famiglia nobile decaduta: una rappresenta la passione (Massimilla), una la purezza spirituale (Anatolia), la terza i valori familiari (Violante). Claudio non riesce a scegliere. Le tre donne, malate o destinate alla morte, non possono dargli l'erede. Il progetto fallisce. Claudio si rifugia nella letteratura.
 
-Durante la poesia i due amanti si trasformano simbolicamente in elementi naturali:
+### Significato e novità
 
-- **I volti diventano silvani**: i lineamenti umani assumono tratti del bosco, come se gli amanti fossero divinità o creature della selva.
-- **I capelli sembrano profumare come ginestre**: la chioma di Ermione si confonde con i fiori e gli arbusti del paesaggio mediterraneo.
-- **La pelle sembra parte del bosco**: il corpo perde i propri confini e si fonde con la corteccia, le foglie e l'umidità della pineta.
-- **L'identità umana si scioglie nella natura**: l'io individuale si dissolve nell'esperienza panica, perdendo coscienza di sé per diventare puro elemento naturale.
+- transizione esteta → superuomo: l'eroe non vive più solo per sé, vuole agire pubblicamente, ma fallisce perché la realtà non è all'altezza dei suoi sogni;
+- **disprezzo per la borghesia e la democrazia**: Claudio considera il popolo rozzo, la politica democratica volgare. Sogna un'aristocrazia restaurata;
+- **forte simbologia**: aereo come fuga, donna come allegoria della società, paesaggio come specchio dell'anima;
+- lunghi discorsi di **introspezione filosofica**: il romanzo si carica di pagine teoriche sulla società e sulla bellezza;
+- **esaltazione della macchina**: nel romanzo iniziano a comparire la velocità, le automobili, gli aerei. D'Annunzio è ambivalente: ne è affascinato, ma sa che la macchina è "più grande dell'uomo".
 
-Questa metamorfosi esprime il panismo: l'uomo entra nel ritmo vitale del mondo naturale.
+## 7. Il fuoco e altri romanzi del superuomo
 
-### Stile
+- ***L'innocente*** (1892): un nobile uccide il figlio illegittimo della moglie per "purificare" la stirpe.
+- ***Trionfo della morte*** (1894): un esteta ossessionato dall'amante decide di trascinarla con sé in un omicidio-suicidio.
+- ***Il fuoco*** (1900): romanzo a chiave sulla relazione di D'Annunzio con Eleonora Duse, ambientato a Venezia. Il superuomo come artista totale.
+- ***Forse che sì forse che no*** (1910): l'aviatore Paolo Tarsis come nuovo superuomo della modernità tecnologica.
 
-Lo stile è musicale e sensoriale:
+In tutti questi romanzi il superuomo è **sopraffatto dalla passione, dalla donna, dalla società**. Il vitalismo si rivela autodistruttivo. Il superuomo è dunque ancora un esteta che fallisce, perché è dominato dai sensi.
 
-- **Ripetizioni**: parole e formule che ritornano ("Taci", "Piove") creano un ritmo ipnotico simile a una litania.
-- **Onomatopee**: i suoni delle parole imitano direttamente il rumore della pioggia che batte su foglie, rami e cespugli.
-- **Allitterazioni**: il ripetersi di consonanti (in particolare le liquide e le sibilanti) suggerisce lo scorrere dell'acqua e il fruscio del bosco.
-- **Parole rare**: termini ricercati e botanici (mirti, ginestre, tamerici) danno preziosità al testo e nominano il paesaggio con esattezza colta.
-- **Ritmo fluido**: i versi brevi e le rime interne scorrono senza pause nette, come la pioggia continua.
-- **Attenzione ai suoni**: la poesia vale soprattutto come musica; il significato passa attraverso l'orecchio prima che attraverso la ragione.
+## 8. Le Laudi e Alcyone
 
-La poesia è un esempio perfetto dell'idea dannunziana di parola come musica.
+L'opera poetica più importante di D'Annunzio è il ciclo delle **Laudi del cielo, del mare, della terra e degli eroi**, progettato in 7 libri (alcuni mai completati), composti a partire dal 1903 e ispirati al *Cantico delle creature* di San Francesco.
 
-## 10. Il Notturno
+### Struttura del ciclo
 
-D'Annunzio non è solo esteta e poeta sensuale. Nel **Notturno**, scritto dopo un incidente aereo che lo costringe all'immobilità e alla temporanea cecità, emerge un tono più frammentario e interiore.
+I sette libri previsti prendono nomi di stelle delle Pleiadi:
+1. *Maia* (1903) — viaggio in Grecia, mito dell'origine
+2. *Elettra* (1903) — eroismo civile, monumenti italiani
+3. ***Alcyone*** (1903) — l'estate, il panismo, capolavoro lirico
+4. *Merope* (1912) — guerra di Libia, esaltazione coloniale
+5-7 — *Asterope*, *Celeno*, *Taigete*: mai realmente compiuti
 
-La scrittura diventa fatta di ricordi, visioni, impressioni rapide. È una forma più moderna, meno solenne, legata alla memoria e alla percezione.
+Il libro centrale e più studiato è **Alcyone**.
+
+### Alcyone
+
+Pubblicata nel **1903**. Diario lirico di un'estate trascorsa dal poeta in **Versilia** (Toscana, costa tirrenica). Un'estate sola, dall'inizio (giugno) alla fine (settembre), descritta nei suoi momenti, paesaggi, sensazioni.
+
+**Caratteri**:
+- **panismo**: tema dominante. Il poeta si fonde con la natura, perde i confini dell'io, diventa parte del flusso vitale del mondo;
+- **musicalità**: parola scelta per il suono, allitterazioni, assonanze, fonosimbolismo;
+- **lessico raro**: termini botanici, classici, mitologici (oleandri, mirti, ginestre, allori), neologismi;
+- **versi liberi e lunghi**, alternati a forme metriche tradizionali;
+- **eros cosmico**: la fusione con la natura è anche una forma di amore sensuale, accompagnata sempre da una giovane figura femminile (Ermione = Eleonora Duse trasfigurata in mito);
+- **rito iniziatico**: la natura non è solo sfondo, è esperienza sacra, panica, mistica.
+
+### Le poesie principali di Alcyone
+
+#### La sera fiesolana
+
+**Scena**: una sera di giugno sulle colline di Fiesole (presso Firenze). La pioggia sta cessando, l'estate sta cominciando.
+
+**Tema**: la sera viene celebrata come una **divinità femminile** che scende sul mondo. Il poeta le rivolge una **Lauda** (preghiera laica) per la sua bellezza serena e pia.
+
+**Tecniche**:
+- ritornello "Laudata sii" che richiama il *Cantico delle creature*;
+- musicalità ottenuta con allitterazioni, sinestesie ("freschi pensieri", "voce sommessa");
+- atmosfera religiosa-pagana: la natura è sacra, ma di una sacralità estetica;
+- fusione tra paesaggio e sentimento: la sera è specchio dell'anima del poeta.
+
+#### La pioggia nel pineto
+
+**Scena**: il poeta cammina con l'amata **Ermione** in una pineta della Versilia. Comincia a piovere. La pioggia, all'inizio sottile, diventa via via più intensa. I due si trasformano simbolicamente in elementi naturali.
+
+**Riferimenti mitologici**: Ermione è il doppio letterario di **Eleonora Duse**. Il nome è ripreso dalla mitologia greca: **Ermione**, figlia di Menelao ed Elena, in alcune versioni del mito si trasforma in albero. Anche Ermione, in D'Annunzio, esce "dalla corteccia" come una ninfa silvana.
+
+**Struttura**:
+- 4 strofe lunghe, di 32 versi ciascuna;
+- ritornelli che ritornano: "Taci", "Piove";
+- progressione musicale: la pioggia inizia silenziosa, cresce, raggiunge l'apice, diminuisce.
+
+**Metamorfosi panica**: nei versi finali di ogni strofa, gli amanti si trasformano in elementi del bosco:
+- i volti diventano **silvani** (creature del bosco);
+- i capelli sembrano profumare come ginestre;
+- la pelle diventa parte del bosco;
+- l'identità umana si scioglie.
+
+**Tecniche**:
+- **ripetizioni**: parole che ritornano in modo ipnotico ("Taci", "Piove");
+- **onomatopee**: i suoni delle parole imitano direttamente la pioggia ("crepitano", "scricchia", "stride");
+- **allitterazioni e assonanze**: consonanti liquide e sibilanti che evocano lo scorrere dell'acqua;
+- **lessico botanico ricco**: pini, mirti, tamerici, ginestre — D'Annunzio nomina ogni pianta col suo nome esatto;
+- **sinestesie**: mescolanza di sensi (odori, suoni, colori, tatto);
+- **ritmo fluido**: versi brevi e lunghi che imitano il ritmo della pioggia che cade.
+
+**Significato**: è il manifesto del **panismo dannunziano**. L'uomo si scioglie nella natura, diventa parte del flusso vitale del cosmo. È anche una poesia erotica velata: la pioggia che bagna gli amanti, la metamorfosi vegetale, il "silenzio" che precede l'unione.
+
+## 9. Il teatro
+
+Negli anni del superuomo, D'Annunzio scrive anche per il teatro, soprattutto per Eleonora Duse: ***La città morta*** (1898), ***La Gioconda*** (1899), ***Francesca da Rimini*** (1901), ***La figlia di Iorio*** (1904, capolavoro teatrale, ambientato in Abruzzo), ***La nave*** (1908). Sono tragedie liriche che mescolano alta letteratura, mitologia, dramma erotico, atmosfere primitive. ***La figlia di Iorio*** è quella più riuscita, con un coro di donne abruzzesi e un sapore arcaico-pagano molto efficace.
+
+## 10. Il Notturno (1921)
+
+Opera della **vecchiaia**, scritta dopo l'incidente di volo del 1916 in cui D'Annunzio perse temporaneamente la vista. Costretto all'**immobilità** in una stanza buia, scrive su strisce di carta annotazioni frammentarie, ricordi, visioni.
+
+**Caratteri**:
+- prosa frammentata, non narrativa;
+- impressioni rapide, ricordi;
+- forma più moderna, vicina al frammento novecentesco;
+- tono interiore, intimo, lontano dalla solennità precedente.
+
+È l'opera più "moderna" di D'Annunzio: anticipa la prosa frammentaria del Novecento.
 
 ## 11. D'Annunzio e la politica
 
-D'Annunzio ha un ruolo importante nella cultura politica italiana del primo Novecento.
+D'Annunzio è figura politica oltre che letteraria. Il suo contributo (negativo o positivo, dipende dai punti di vista) è enorme:
 
-Contribuisce a diffondere:
+- **mito dell'azione**: agire come valore in sé, anche con violenza;
+- **culto dell'eroismo**: il guerriero, il combattente, il condottiero come superiore alla massa;
+- **nazionalismo**: superiorità della nazione italiana e missione storica;
+- **estetizzazione della politica**: la politica come spettacolo, dramma, liturgia;
+- **uso spettacolare della parola pubblica**: discorsi costruiti come opere d'arte (immagini, ripetizioni, ritmo);
+- **gesti simbolici e rituali collettivi**: cortei, saluti romani, motti, adunate (poi ripresi dal fascismo).
 
-- **Mito dell'azione**: idea che agire, anche con violenza, sia di per sé un valore, contrapposto alla riflessione e alla mediazione politica.
-- **Culto dell'eroismo**: esaltazione del singolo guerriero, del combattente, del condottiero come figura superiore alla massa.
-- **Nazionalismo**: convinzione della superiorità della nazione italiana e della sua missione storica, spesso legata a una politica espansionista.
-- **Estetizzazione della politica**: la politica viene trasformata in spettacolo, in dramma teatrale, in liturgia visiva ed emotiva.
-- **Uso spettacolare della parola pubblica**: discorsi costruiti come opere d'arte, con immagini forti, ripetizioni e ritmo retorico capaci di trascinare le folle.
-- **Gesti simbolici e rituali collettivi**: cortei, saluti, motti, adunate; pratiche che il fascismo riprenderà direttamente dall'esperienza di Fiume.
+L'**impresa di Fiume** (1919-1920) è il laboratorio politico in cui D'Annunzio sperimenta la sintesi tra teatro, arte e potere. Mussolini ne riprenderà ogni elemento.
 
-L'impresa di Fiume mostra bene questa fusione tra teatro, politica e azione militare.
+## 12. Il Vittoriale degli Italiani
+
+A Gardone Riviera, sul lago di Garda, D'Annunzio costruisce dal 1921 in poi il **Vittoriale**: una villa-museo-mausoleo che è la sua **ultima opera d'arte**, la sua autobiografia in pietre, oggetti, reliquie.
+
+Comprende:
+- la **Prioria** (la casa);
+- il **MAS** della beffa di Buccari, esposto;
+- la **prua della nave Puglia**, montata in giardino come monumento;
+- il **mausoleo** dove D'Annunzio è sepolto;
+- giardini, anfiteatro, oggetti da collezione, libri.
+
+Il Vittoriale è la **biografia trasformata in spazio**: il superuomo che ha plasmato la propria vita come opera d'arte, ora plasma la propria casa come monumento. Si lega all'idea della **vita come opera d'arte**.
+
+Nel programma è citata la **visita virtuale** al Vittoriale con lo storico d'arte Philippe Daverio.
 
 ## Collegamenti
 
-- **Decadentismo**: estetismo, simbolo, sensualità, crisi della morale borghese.
-- **Nietzsche**: mito del superuomo, reinterpretato in modo personale.
-- **Futurismo**: culto dell'azione e della modernità, anche se con stili diversi.
-- **Fascismo**: alcuni aspetti del linguaggio politico dannunziano anticipano rituali e miti fascisti.
-- **Pascoli**: entrambi decadenti, ma Pascoli è intimo e inquieto, D'Annunzio spettacolare e sensuale.
+- **Decadentismo europeo**: estetismo, simbolo, sensualità, crisi della morale borghese.
+- **Huysmans, *A rebours***: Andrea Sperelli è il "cugino italiano" di Des Esseintes.
+- **Wilde, *Il ritratto di Dorian Gray***: stessa figura del dandy esteta.
+- **Nietzsche**: mito del superuomo, ripreso e semplificato.
+- **Pascoli**: contemporaneo, decadentismo opposto (intimo vs. spettacolare).
+- **Futurismo**: culto dell'azione, della velocità, della guerra.
+- **Fascismo**: linguaggio, rituali, estetica della politica.
+- **Notturno e prosa frammentaria**: anticipazione del Novecento.
 
 ## Parole chiave
 
 | Termine | Significato |
 |---|---|
-| Esteta | Figura che vive per bellezza e piacere |
-| Superuomo | Individuo eccezionale che vuole dominare la massa |
-| Panismo | Fusione tra uomo e natura |
-| Alcyone | Raccolta poetica centrata su estate, natura, musicalità |
-| Vittoriale | Casa-museo e costruzione simbolica dell'immagine dannunziana |
-| Arte-vita | Idea che l'esistenza debba diventare opera d'arte |
-| Ermione | Figura femminile della *Pioggia nel pineto* |
+| Esteta | Figura che vive per bellezza e piacere (Andrea Sperelli) |
+| Dandy | Aristocratico raffinato che fa della propria immagine un'opera |
+| Superuomo | Individuo eccezionale che vuole dominare la massa (Nietzsche reinterpretato) |
+| Panismo | Fusione tra uomo e natura, tipica di Alcyone |
+| Vate | Poeta-guida del popolo, ruolo che D'Annunzio rivendica |
+| Femme fatale | Donna sensuale e distruttiva (Elena Muti) |
+| Vittoriale | Casa-museo-mausoleo di Gardone Riviera |
+| Fiume | Impresa politica del 1919-1920 |
+| Alcyone | Raccolta poetica del 1903, capolavoro lirico |
+| Ermione | Figura femminile della *Pioggia nel pineto*, doppio di Eleonora Duse |
+| Vita come opera d'arte | Idea che l'esistenza debba essere scolpita esteticamente |
 
 ## Sintesi finale
 
-D'Annunzio è uno degli autori più rappresentativi del Decadentismo italiano. La sua opera ruota attorno a bellezza, piacere, eccezionalità, parola musicale e trasformazione della vita in arte.
+D'Annunzio è il principale esponente del Decadentismo italiano nella sua versione **estetizzante e spettacolare**, in opposizione al Decadentismo intimo e dimesso di Pascoli.
 
-Ne *Il piacere* mostra il fascino e il fallimento dell'esteta; in *Alcyone* raggiunge il massimo della poesia sensoriale e panica; nella politica costruisce una figura pubblica spettacolare, destinata a influenzare l'immaginario italiano del Novecento.
+La sua opera ruota attorno a quattro nuclei:
+1. il **culto della bellezza** e del piacere come valori assoluti;
+2. la figura dell'**esteta** (Andrea Sperelli, *Il piacere*) e la sua sconfitta;
+3. la figura del **superuomo** (Cantelmi, *Le vergini delle rocce*) e la sua impossibile attuazione;
+4. il **panismo** lirico di *Alcyone*, la sua opera poetica più alta.
+
+Sul piano biografico, D'Annunzio costruisce se stesso come **opera d'arte totale**: dalla giovinezza nei salotti romani all'impresa di Fiume al Vittoriale, ogni gesto è messo in scena. È il primo intellettuale-celebrità italiano e il primo a portare l'arte nella sfera pubblica.
+
+Sul piano politico, il suo lascito è ambiguo: ha contribuito a costruire il linguaggio dell'**estetizzazione della politica** (mito, eroe, nazione, rituale collettivo) che il fascismo ha poi pienamente sfruttato. Mussolini lo riconobbe come padre simbolico, ma lo confinò elegantemente al Vittoriale, intuendone la pericolosità autonoma.
+
+Sul piano linguistico, è uno dei più grandi rinnovatori della lingua poetica italiana: musicalità, lessico ricchissimo, sensualità, panismo. *La pioggia nel pineto* e *La sera fiesolana* sono tra le poesie più celebri del Novecento italiano.
+
+Sotto l'apparenza di trionfo, però, l'opera di D'Annunzio racconta sempre **sconfitte**: l'esteta che fallisce, il superuomo sopraffatto dalle passioni, il vate che resta solo nella sua casa-museo. Il decadentismo dannunziano è anche, nascostamente, una lunga elegia della sconfitta.

@@ -306,7 +306,40 @@ La memoria ricompone momentaneamente la sua identità.
 
 Questa poesia è diversa da quelle più brevi e drammatiche della trincea. Qui Ungaretti ricostruisce la propria storia personale attraverso i luoghi: le origini familiari, l'infanzia egiziana, la formazione parigina, la guerra sull'Isonzo. In mezzo alla distruzione, il contatto con il fiume gli permette di sentirsi per un attimo armonizzato con la propria vita.
 
-## 13. Ungaretti e l'Ermetismo
+## 13. M'illumino d'immenso (Mattina)
+
+La poesia più breve e celebre di Ungaretti, dell'*Allegria*. Solo quattro parole:
+
+> M'illumino  
+> d'immenso
+
+Datata "Santa Maria La Longa, 26 gennaio 1917", trincea sul Carso.
+
+**Significato**: rinascita dell'anima dopo la scoperta della morte. Un mattino di luce intensa basta al poeta per sentirsi parte dell'universo. La poesia è il caso estremo di **distillazione della parola**: due parole sole, ognuna densissima di senso, separate dal silenzio della pagina bianca.
+
+**Tecnica**: Ungaretti porta all'estremo il principio di distillazione: ogni parola è un atomo di significato. La poesia è un crocevia tra avanguardia (sperimentazione, abolizione della sintassi) e tradizione (musicalità, equilibrio fonico).
+
+## 14. La madre (Sentimento del tempo)
+
+Poesia della fase matura, della raccolta *Sentimento del tempo*.
+
+**Scena**: il poeta immagina il proprio ultimo giorno. Trovandosi oltre il varco della vita, è la **madre** che lo accoglie e lo prende per mano. Prima di trasportarlo verso Dio, lei stessa interroga il Signore sulla sua identità.
+
+**Significato**: la madre è figura intermediaria tra terra e cielo, tra vita e morte. Crollato il muro che separa l'uomo dall'eterno, prima di Dio c'è la grande figura materna. È una poesia profondamente religiosa, scritta dopo la conversione cattolica del 1928.
+
+**Tema**: la madre come **doppia genitrice** — fa nascere alla vita terrena e introduce alla vita eterna. La sua figura unisce dimensione affettiva e dimensione metafisica.
+
+## 15. I fiumi: nota sulla condizione del beduino
+
+Nel finale di *I fiumi* compare un'immagine importante: il poeta si paragona a un sasso levigato dall'acqua del fiume, abbandonato al flusso. È la **condizione del beduino**, del nomade perenne: chi è nato altrove (Ungaretti in Egitto), chi non ha radici in un solo luogo, chi è stato portato in posti diversi dal destino. Il sasso levigato è simbolo dell'**abbandono** della vita alla dimensione del **caso**: l'uomo è quel che le acque della storia ne fanno.
+
+## 16. Vita d'un uomo
+
+Nel 1969 Ungaretti pubblica l'edizione complessiva della propria opera con il titolo ***Vita d'un uomo***. Il titolo sintetizza tutta la sua poetica: la sua poesia è **autobiografia in versi**, una sola lunga vita (la sua) raccontata dalle prime poesie del Carso fino agli ultimi taccuini della vecchiaia.
+
+Per Ungaretti la poesia non è opera staccata, ma esistenza fatta parola. Ogni libro è un capitolo di un'unica biografia.
+
+## 17. Ungaretti e l'Ermetismo
 
 Ungaretti è considerato un **precursore dell'Ermetismo**.
 

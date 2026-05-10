@@ -10,9 +10,21 @@ In questo clima nasce il **Decadentismo**, una sensibilità culturale che rifiut
 
 Il Decadentismo non è un movimento unico e ordinato, ma un insieme di tendenze europee tra fine Ottocento e inizio Novecento.
 
-Il termine "decadente" nasce in senso negativo: indica artisti considerati malati, raffinati, lontani dalla morale comune. In seguito diventa il nome di una nuova sensibilità.
+### Origine del termine
+
+Il termine "**decadentismo**" deriva dall'idea di **decadenza**, di **tramonto di una civiltà**. Nasce in senso negativo: indica artisti considerati malati, raffinati, lontani dalla morale comune. In seguito diventa il nome rivendicato di una nuova sensibilità: i poeti se ne fanno bandiera, riconoscendosi come voci di un'epoca decadente, di una civiltà al crepuscolo.
+
+### Una nuova visione del mondo
 
 I decadenti pensano che la realtà visibile non basti. Dietro le cose esistono significati nascosti, corrispondenze, simboli, stati interiori che la ragione non riesce a spiegare completamente.
+
+### Decadentismo europeo vs decadentismo italiano
+
+In Europa il Decadentismo si sviluppa già dagli anni Sessanta-Settanta dell'Ottocento (Baudelaire, *I fiori del male*, 1857). In **Italia**, invece, si afferma più tardi (dagli anni Ottanta-Novanta) per due ragioni:
+- l'economia italiana procede più a rilento, l'industrializzazione e la modernizzazione sono più tardive;
+- il potere culturale è detenuto da una ristretta **élite classicista** (Carducci e i suoi seguaci) che resiste al rinnovamento.
+
+I due grandi decadenti italiani sono **Pascoli** e **D'Annunzio**: il primo sviluppa un decadentismo "del nido", intimo e dimesso; il secondo un decadentismo "del Vittoriale", spettacolare ed estetizzante.
 
 ## 3. Caratteristiche del Decadentismo
 
@@ -59,6 +71,25 @@ In **L'albatro** Baudelaire rappresenta la condizione del poeta.
 L'albatro è un uccello maestoso quando vola in cielo, ma diventa goffo e ridicolo quando viene catturato dai marinai e costretto a camminare sulla nave.
 
 Il significato è chiaro: il poeta è superiore quando si muove nel mondo dell'immaginazione e dell'arte, ma appare inutile e inadatto nella vita comune. La società borghese non comprende la sua grandezza e lo umilia.
+
+## 6 bis. La perdita dell'aureola
+
+Concetto fondamentale di Baudelaire (esposto nel poemetto in prosa *Perdita dell'aureola*).
+
+Nella società pre-borghese, il poeta aveva un'**aureola sacra**: era un sacerdote dell'arte, una figura di rispetto religioso. Con la modernità industriale, il poeta perde questa aureola. La massa non lo riconosce più; l'arte diventa una merce come un'altra; lo scrittore deve adattarsi al mercato e alla società dei consumi. L'artista subisce un **processo di massificazione**, perde la funzione privilegiata, si sente declassato e marginale.
+
+Da questa perdita nasce in Francia la figura del **"poeta maledetto"** (*poète maudit*): ribelle, emarginato, autodistruttivo, che rivendica con orgoglio la propria differenza dalla massa borghese. Verlaine nel 1884 pubblica *Les poètes maudits*, il libro che dà il nome a questa generazione (Rimbaud, Mallarmé, Corbière, Tristan Corbière, Marceline Desbordes-Valmore, lo stesso Verlaine).
+
+## 6 ter. I poeti maledetti
+
+I poeti maledetti francesi condividono alcuni tratti:
+
+- **vita anticonvenzionale**: Verlaine vive una relazione tempestosa con il giovanissimo Rimbaud (gli spara per gelosia, va in prigione); Rimbaud abbandona la poesia a 21 anni e parte per l'Africa come trafficante d'armi;
+- **rifiuto della morale borghese**: alcol, droga, sessualità non conformista, miseria volontaria;
+- **poesia visionaria**: Rimbaud teorizza il "**deragliamento di tutti i sensi**" come metodo per accedere all'**ignoto**;
+- **fine tragica o anomala**: morte precoce, abbandono dell'arte, esilio, follia.
+
+I poeti maledetti incarnano la prima figura moderna dell'**artista contro la società**, antesignana del Novecento.
 
 ## 7. Spleen
 

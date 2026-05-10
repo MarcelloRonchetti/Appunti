@@ -106,6 +106,22 @@ Esempi:
 
 Questi oggetti diventano **correlativi oggettivi**: immagini concrete che rappresentano una condizione interiore.
 
+### Le due immagini-chiave di Ossi di seppia
+
+In *Ossi di seppia* due immagini si oppongono e definiscono l'intera poetica:
+
+1. **Il muro invalicabile**: nella vita delle persone esiste un muro contro cui ognuno urta. L'uomo è imprigionato; vorrebbe protendersi verso gli altri o verso una verità assoluta, ma resta chiuso in se stesso. Il muro corrisponde anche fisicamente al paesaggio ligure (i muretti a secco degli orti, i cocci di bottiglia in cima alle muraglie).
+
+2. **Il varco / via d'uscita**: la vita è una grande prigione che costringe l'uomo in una condizione di stenti, simile a un **pesce nella rete del pescatore** che cerca disperatamente una via di fuga, senza in realtà trovarla. Il varco è la possibilità di un'uscita, ma quasi sempre rimane intravista, mai raggiunta.
+
+Tra muro e varco si gioca tutta la tensione di *Ossi di seppia*: l'uomo è chiuso, ma non smette di sperare in un'apertura.
+
+### Demistificazione dei falsi valori
+
+Montale lavora per **smascherare le illusioni** della società moderna: i grandi miti (progresso, religione, ideologie ottocentesche, retorica nazionale) sono **falsi valori** che hanno smesso di funzionare. La poesia non li sostituisce con altre certezze: ne mostra solo la fragilità.
+
+In questo senso il poeta non eleva l'uomo (come per i simbolisti), ma è uguale a tutti gli altri uomini. L'unica cosa che può fare è offrire una **chiave di lettura migliore**, aiutando l'uomo a razionalizzare il mondo in cui si trova a vivere. Non promette salvezza, offre solo una lucidità un poco più aguzza.
+
 ### Il varco
 
 Nella poesia di Montale compare spesso l'attesa di un **varco**, cioè un'apertura improvvisa oltre la realtà quotidiana.

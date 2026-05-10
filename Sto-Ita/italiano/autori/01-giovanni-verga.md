@@ -2,197 +2,248 @@
 
 ## 1. Vita
 
-**Giovanni Verga** nasce a Catania nel 1840 da una famiglia di proprietari terrieri. La sua origine siciliana è fondamentale: anche quando vive lontano dalla Sicilia, il mondo contadino, i paesi, la mentalità popolare e le differenze sociali dell'isola restano al centro della sua opera più importante.
+**Giovanni Verga** nasce a **Catania nel 1840** da una famiglia di proprietari terrieri di origine nobiliare. La sua origine siciliana è fondamentale: anche quando vivrà a lungo a Firenze e a Milano, il mondo contadino dell'isola, i paesi, la mentalità popolare e le differenze sociali della Sicilia resteranno al centro della sua opera matura.
 
-Da giovane scrive romanzi ancora legati al gusto romantico e patriottico. In seguito si trasferisce prima a Firenze e poi a Milano, dove entra in contatto con l'ambiente culturale più moderno dell'Italia postunitaria. Qui conosce meglio il Naturalismo francese e, grazie anche al confronto con Luigi Capuana, matura la poetica verista.
+Da giovane scrive romanzi di gusto romantico e patriottico, in cui non ha ancora trovato la propria voce.
 
-Muore a Catania nel 1922.
+Negli anni Sessanta-Settanta si trasferisce prima a **Firenze** (capitale culturale dopo l'Unità) e poi a **Milano**, dove entra in contatto con l'ambiente letterario più moderno dell'Italia postunitaria. A Milano conosce la **Scapigliatura**, legge i naturalisti francesi (Zola, Flaubert), incontra **Luigi Capuana**, che diventerà il suo principale interlocutore nella formulazione della poetica verista.
+
+Negli anni Ottanta torna stabilmente a Catania, dove vive isolato fino alla morte, nel **1922**.
 
 ## 2. Le fasi della produzione
 
-La produzione di Verga può essere divisa in tre fasi.
+La produzione di Verga si divide nettamente in tre fasi.
 
-### Fase romantico-patriottica
+### Fase romantico-patriottica (1860-1865)
 
-Le prime opere sono ancora legate al clima romantico e risorgimentale. Verga non ha ancora trovato la propria voce più originale.
+Romanzi come *Amore e patria*, *I carbonari della montagna*, *Sulle lagune*: ambienti risorgimentali, eroi appassionati, lingua aulica. Verga è ancora dentro il gusto tardoromantico.
 
-### Fase mondana
+### Fase mondana (1869-1875)
 
-Nei romanzi come *Eva*, *Tigre reale* ed *Eros* racconta ambienti borghesi, passioni sentimentali, artisti e donne fatali. Sono opere più vicine al gusto del pubblico cittadino.
+Romanzi come ***Una peccatrice***, ***Storia di una capinera***, ***Eva***, ***Tigre reale***, ***Eros***. Ambienti borghesi e mondani: Firenze, Milano, salotti, donne fatali, artisti tormentati. Sono opere di consumo, scritte per il pubblico cittadino, con tracce di estetismo e sentimentalismo.
 
-### Fase verista
+### La svolta verista (1874-1880)
 
-La svolta avviene con testi come *Nedda* e poi soprattutto con *Vita dei campi*, *I Malavoglia*, *Novelle rusticane* e *Mastro-don Gesualdo*. Qui Verga abbandona il mondo elegante e si concentra sugli umili, sulla Sicilia contadina e sulle leggi sociali che dominano la vita.
+Il punto di svolta è la novella ***Nedda*** (1874), bozzetto siciliano sulla vita di una raccoglitrice d'olive. Per la prima volta Verga porta in scena il mondo contadino. Ma la **conversione verista** completa avviene attorno al 1878-1880 con *Fantasticheria* e *Rosso Malpelo*.
 
-## 3. Poetica verista
+### La conversione verista (cos'è)
 
-La poetica di Verga nasce dall'incontro tra il Naturalismo francese e una visione molto pessimistica della società.
+Verga, inizialmente attratto dal Naturalismo francese, ne prende le distanze su un punto preciso: secondo lui Zola e i Goncourt non sono davvero impersonali, perché filtrano i fatti attraverso la propria cultura borghese e scientifica. Il vero romanzo impersonale, secondo Verga, deve apparire "fatto da sé", senza che l'autore intervenga né con commenti, né con teorie, né con il proprio italiano colto. Su questo punto si separa da Zola e fonda il **Verismo italiano**.
 
-Verga vuole rappresentare la realtà in modo oggettivo, senza interventi diretti dell'autore. Non vuole spiegare dall'alto, commuovere o giudicare: vuole far parlare i fatti.
+## 3. Le sei innovazioni stilistiche del Verismo verghiano
 
-I principi fondamentali sono:
+Sono i sei principi tecnici che Verga formula (in parte nelle lettere a Capuana, in parte nelle prefazioni di *L'amante di Gramigna* e dei *Malavoglia*).
 
-- **Impersonalità**: l'autore scompare dal racconto, non giudica e non commenta; l'opera deve sembrare "essersi fatta da sé", come se i fatti si raccontassero da soli.
-- **Regressione**: il narratore abbassa il proprio punto di vista fino a coincidere con quello dei personaggi e della comunità rappresentata, adottandone idee, pregiudizi e sensibilità.
-- **Linguaggio popolare**: l'italiano letterario viene contaminato da modi di dire, proverbi, costruzioni sintattiche e cadenze del parlato siciliano, per restituire la mentalità collettiva del paese.
-- **Pessimismo**: la società è regolata da leggi dure e impersonali (denaro, interesse, reputazione) che non lasciano spazio a vere possibilità di riscatto per i più deboli.
-- **Lotta per la vita**: ripresa in chiave sociale del darwinismo, secondo cui in ogni classe i più forti schiacciano i più deboli; il progresso è una selezione che produce sconfitti.
-- **Ideale dell'ostrica**: chi si stacca dal proprio ambiente d'origine, attratto dal miraggio del miglioramento, perde le proprie radici e finisce travolto.
+### 1. Eclissi dell'autore (impersonalità)
 
-## 4. L'ideale dell'ostrica
+Il narratore non coincide con Verga: la voce che racconta è interna alla comunità rappresentata. L'autore "scompare", come dice nella prefazione all'*Amante di Gramigna*: l'opera deve avere "l'impronta dell'avvenimento reale", come se si fosse fatta da sé.
 
-L'**ideale dell'ostrica** è una delle immagini più importanti della visione di Verga.
+### 2. Regressione
 
-Come l'ostrica resta attaccata allo scoglio per sopravvivere, così gli umili devono restare legati alla famiglia, al lavoro, al paese e alle tradizioni. Questo legame può sembrare limitante, ma è anche l'unica protezione possibile.
+Lo scrittore "regredisce" linguisticamente al livello dei personaggi: rinuncia alla propria cultura, finge di non conoscere l'italiano letterario, e adotta i modi di dire, la sintassi e i pregiudizi della comunità rappresentata. È un atto consapevole di abbassamento del punto di vista.
 
-Chi prova a staccarsi dal proprio mondo per salire socialmente viene travolto. Non perché il desiderio di migliorare sia colpevole in sé, ma perché la società non offre davvero possibilità di riscatto agli ultimi.
+### 3. Estraniamento
 
-## 5. Il ciclo dei Vinti
+Effetto di lettura prodotto dalle scelte precedenti. Il lettore borghese vede fatti tragici (un bambino sfruttato in una cava, una donna esclusa dalla comunità) raccontati come se fossero normali, perché lo sono per chi vive in quel mondo. Il contrasto tra ciò che il lettore percepisce come orrore e ciò che la voce narrante dà per scontato genera straniamento e quindi denuncia indiretta.
 
-Verga progetta un grande ciclo narrativo, il **Ciclo dei Vinti**, per rappresentare la lotta per il progresso in diverse classi sociali.
+### 4. Pessimismo
 
-Il progetto comprendeva:
+Il narratore non ha il diritto di giudicare i personaggi (a differenza del narratore onnisciente di Manzoni). Verga rifiuta la pretesa "pedagogica" di istruire la popolazione: il mito del progresso è caduto. Le classi dominanti non hanno pietà per gli umili. Determinismo darwiniano: gli uomini sono come animali nella **lotta per la vita**.
 
-- ***I Malavoglia*** (1881): la lotta per la vita nel mondo degli umili pescatori siciliani, schiacciati dal debito e dalle disgrazie.
-- ***Mastro-don Gesualdo*** (1889): la sconfitta di un uomo del popolo che riesce ad arricchirsi e a entrare nella borghesia rurale, ma resta isolato e infelice.
-- ***La duchessa di Leyra***: avrebbe dovuto raccontare la sconfitta nell'aristocrazia, attraverso la figlia di Gesualdo entrata nella nobiltà; rimasto incompiuto.
-- ***L'onorevole Scipioni***: progettato per rappresentare il fallimento nella sfera della politica e dell'ambizione parlamentare; mai scritto.
-- ***L'uomo di lusso***: avrebbe chiuso il ciclo con la sconfitta nel mondo dell'arte e del lusso, ai vertici della scala sociale; rimasto solo nei progetti.
+### 5. Morale dell'ostrica
 
-Verga completa solo i primi due romanzi.
+L'**ostrica** nasce attaccata allo scoglio. Se vi resta, sopravvive; se si stacca, può raggiungere uno scoglio nuovo, ma quasi sempre viene divorata. Allegoria sociale: l'uomo che resta nella classe in cui è nato sopravvive (povero, ma sopravvive); chi tenta la scalata sociale è destinato a soffrire e fallire. È la legge crudele che governa l'intero ciclo dei *Vinti*.
 
-Il titolo "Vinti" è decisivo: tutti i personaggi che inseguono un miglioramento vengono sconfitti. Il progresso esiste, ma non salva tutti; spesso produce esclusione, solitudine e perdita dei valori originari.
+### 6. Discorso corale
 
-## 6. Vita dei campi
+Soprattutto nei *Malavoglia*: il narratore non è un singolo individuo, ma la **comunità del paese**. Pettegolezzi, proverbi, soprannomi, giudizi morali del villaggio si fondono nella voce narrante. Non c'è un protagonista unico: c'è un coro che osserva, commenta, condanna o approva.
 
-*Vita dei campi* raccoglie novelle ambientate nel mondo popolare siciliano.
+## 4. Il ciclo dei Vinti
 
-Qui Verga mette a punto molte tecniche veriste:
+Verga progetta un grande ciclo narrativo, il **Ciclo dei Vinti**, che doveva rappresentare la "lotta per il progresso" in tutte le classi sociali, partendo dal basso e salendo gradualmente.
 
-- **Narratore vicino alla mentalità del paese**: la voce narrante si confonde con quella della comunità, raccontando i fatti come li vedrebbe un compaesano, non un osservatore esterno.
-- **Personaggi poveri o marginali**: contadini, pastori, minatori, donne del popolo; figure escluse dalla letteratura "alta" diventano protagoniste.
-- **Forte presenza di giudizi collettivi**: il "coro" del paese commenta, approva o condanna, esprimendo una morale comune fatta di pregiudizi e proverbi.
-- **Linguaggio che imita il parlato**: sintassi semplice, modi di dire, frasi spezzate e ripetizioni che ricostruiscono la lingua orale della Sicilia rurale.
-- **Assenza di commento morale dell'autore**: Verga non spiega, non pietisce, non condanna; lascia che la durezza dei fatti parli da sé.
+Il progetto comprendeva cinque romanzi:
+
+1. ***I Malavoglia*** (1881) — la lotta nel mondo dei pescatori siciliani.
+2. ***Mastro-don Gesualdo*** (1889) — la sconfitta nella borghesia rurale.
+3. ***La duchessa di Leyra*** — doveva raccontare la sconfitta nell'aristocrazia (la figlia di Gesualdo entrata nella nobiltà). Rimasto incompiuto.
+4. ***L'onorevole Scipioni*** — fallimento nella sfera politica e parlamentare. Mai scritto.
+5. ***L'uomo di lusso*** — sconfitta nel mondo dell'arte e del lusso, ai vertici della scala sociale. Mai scritto.
+
+Verga completò solo i primi due romanzi.
+
+Il titolo "Vinti" è ideologico: tutti coloro che inseguono il miglioramento vengono sconfitti. Il progresso esiste — Verga non lo nega — ma non salva tutti. È una **fiumana** (vedi prefazione *I Malavoglia*) che vista da lontano sembra positiva, ma da vicino rivela contraddizioni, orrori, soprusi e selezione naturale spietata.
+
+## 5. Vita dei campi (1880)
+
+Prima grande raccolta verista. Novelle ambientate nel mondo popolare siciliano: contadini, pastori, minatori, donne del popolo. È qui che Verga mette a punto le tecniche del Verismo.
 
 ### Rosso Malpelo
 
-**Rosso Malpelo** racconta un ragazzo che lavora in una cava di rena. Il soprannome nasce dai capelli rossi, considerati dal pregiudizio popolare segno di cattiveria.
+**Trama**: il protagonista è un ragazzo che lavora in una cava di rena rossa, vicino Catania. Soprannominato "Malpelo" perché ha i capelli rossi, considerati segno di cattiveria dalla superstizione popolare. La madre lo tratta come un peso, la sorella lo picchia. Il padre, **Mastro Misciu**, muore schiacciato in una frana nella cava: Malpelo cerca di salvarlo grattando la terra con le mani nude, ma nessuno lo aiuta. Da quel momento Malpelo si chiude in se stesso. Diventa amico di un altro ragazzo della cava, soprannominato **Ranocchio** per il suo modo di camminare deformato dalla malattia. Malpelo lo "protegge" nell'unico modo che conosce: picchiandolo, per renderlo capace di sopravvivere alla durezza del mondo. Quando Ranocchio muore di tisi, Malpelo perde l'ultimo legame umano. Alla fine si avventura da solo in un cunicolo della cava per esplorare e non torna più. La novella si chiude con il pregiudizio della comunità: i ragazzi della cava ne hanno paura, dicono che se lo incontrano "si fanno la croce".
 
-La novella mostra come la società costruisca un'identità negativa intorno a un individuo. Malpelo viene trattato da cattivo e finisce per comportarsi secondo il ruolo che gli è stato imposto. Non è naturalmente malvagio: è un bambino deformato dalla violenza, dal lavoro disumano e dall'emarginazione.
-
-Il rapporto con il padre, Mastro Misciu, è l'unico legame affettivo importante. Dopo la morte del padre nella cava, Malpelo resta solo e ancora più chiuso. La sua durezza è una difesa, non una vera mancanza di sentimento.
+**Temi**:
+- **Esclusione del diverso**: Malpelo è il capro espiatorio della comunità; la cattiveria che gli si attribuisce è una proiezione collettiva.
+- **Violenza e sfruttamento del lavoro minorile**: la cava di rena è un microcosmo di sopraffazione, dove i bambini sono schiavi.
+- **Antagonismo tra oppressori e vittime**: la madre, la sorella, il padrone opprimono Malpelo; Malpelo a sua volta opprime l'asino e Ranocchio. La violenza si trasmette in catena.
+- **Legge del più forte (darwinismo sociale)**: l'unico linguaggio che Malpelo conosce è quello della violenza, perché è l'unico che gli è stato insegnato. Non è naturalmente cattivo, è il prodotto di un ambiente determinante.
+- **Pessimismo e determinismo**: la realtà è immutabile. Malpelo non può che adattarsi o sparire.
 
 ### La lupa
 
-**La lupa** mette al centro un personaggio femminile dominato dalla passione. Gnà Pina, chiamata "la Lupa", è vista dalla comunità come una donna pericolosa, fuori dalle regole sociali e religiose.
+**Trama**: la "Gnà Pina", soprannominata "la Lupa" per la sua sensualità inquieta, è una donna del paese che la comunità teme ed esclude. Si innamora del giovane contadino **Nanni**, ma poiché lui è impegnato altrove, gli "concede" la propria figlia **Maricchia** in moglie pur di averlo vicino. Diventata suocera di Nanni, continua a tentarlo. Lui, esasperato, le chiede di lasciarlo in pace, e quando lei insiste lo affronta con un'accetta in mano, dicendole "ammazzami se vuoi, ma lasciami stare". La novella si chiude sull'omicidio annunciato.
 
-La novella mostra la forza distruttiva del desiderio, ma anche il modo in cui la comunità giudica e isola chi non rientra nelle norme.
+**Temi**: passione che rompe le norme sociali; isolamento di chi non rientra negli schemi della comunità; presenza inquietante della sessualità femminile, che la morale del paese non sa gestire se non escludendo chi la incarna.
 
 ### Fantasticheria
 
-In **Fantasticheria** Verga spiega il contrasto tra il punto di vista dei ricchi e quello degli umili. Una donna aristocratica guarda il mondo povero con curiosità superficiale, ma non può comprenderlo davvero.
+**Forma**: lettera scritta da un narratore (uomo, alter ego di Verga) a una giovane donna alto-borghese del Nord, con la quale ha trascorso qualche giorno ad **Aci Trezza**, paesino di pescatori vicino Catania (lo stesso che sarà ambiente dei *Malavoglia*).
 
-La novella contiene l'idea dell'ostrica: gli umili sopravvivono restando attaccati al loro scoglio, cioè alla famiglia e alla comunità.
+**Contenuto**: il narratore mostra alla donna la distanza incolmabile tra il suo mondo (lusso, salotti, divertimenti) e quello dei pescatori siciliani. La donna ha visitato Aci Trezza come una curiosità "pittoresca"; non ha capito niente. Il narratore le spiega che il vero modo di sopravvivere di quella gente è rimanere "ostrica attaccata allo scoglio" — la **morale dell'ostrica** viene formulata qui per la prima volta.
 
-## 7. Novelle rusticane
+**Importanza**: è il **manifesto teorico del Verismo verghiano**, prima ancora dei *Malavoglia*. Contiene già:
+- l'ideale dell'ostrica;
+- l'impegno etico del narratore che si avvicina alla realtà popolare;
+- la critica alla curiosità superficiale della borghesia colta;
+- l'idea che il romanzo deve raccontare il popolo dall'interno.
 
-In *Novelle rusticane* il mondo rappresentato diventa ancora più duro. La fame, la roba, l'interesse economico e la violenza sociale dominano i rapporti umani.
+## 6. Novelle rusticane (1883)
+
+Seconda raccolta verista. Tono ancora più duro, fame, denaro, interesse economico, violenza sociale.
 
 ### La roba
 
-**La roba** racconta Mazzarò, un uomo che dedica tutta la vita ad accumulare beni.
+**Trama**: la novella ricostruisce l'ascesa sociale di **Mazzarò**, contadino di umili origini che a forza di lavoro, fatica, astuzia e privazioni accumula un patrimonio enorme: campi, vigneti, magazzini, animali. Il narratore (popolare) elenca con ammirazione la quantità delle sue ricchezze. Ma Mazzarò non gode di nulla: vive miseramente, dorme su una stuoia, mangia pane e cipolla. Tutta la sua esistenza è ridotta al possesso. Il finale è atroce: il vecchio Mazzarò, capendo di stare per morire e di non poter portare la "roba" con sé, esce dalla stalla bastonando le galline e gridando "Roba mia, vientene con me!". Muore in un accesso di follia, perché la "roba" non lo segue.
 
-La "roba" non è solo ricchezza: diventa una religione, un'ossessione. Mazzarò identifica se stesso con ciò che possiede. Quando capisce che la morte gli porterà via tutto, reagisce con rabbia assurda.
-
-La novella mostra la disumanizzazione prodotta dal possesso: Mazzarò conquista potere economico, ma perde ogni rapporto umano.
+**Temi**: il possesso fine a se stesso; la disumanizzazione prodotta dall'avidità; la **roba come religione laica** che sostituisce ogni rapporto umano; la sconfitta della scalata sociale (Mazzarò è ricco ma resta isolato, senza affetti, senza riconoscimento). Il personaggio prefigura **Mastro-don Gesualdo**.
 
 ### Libertà
 
-**Libertà** è ispirata ai fatti di Bronte del 1860. Verga racconta una rivolta popolare nata dal desiderio di giustizia sociale, ma trasformata in violenza cieca.
+**Trama**: ispirata ai **fatti di Bronte** del 1860. Quando Garibaldi sbarca in Sicilia, i contadini di Bronte, illusi da promesse di redistribuzione delle terre, si sollevano contro i nobili. La rivolta esplode in violenza cieca: il popolo massacra i ricchi e gli odiati notabili. Quando arriva Nino Bixio con i garibaldini, reprime la rivolta con altrettanta violenza: fucilazioni sommarie, processo-farsa, condanne capitali. La "libertà" promessa dal Risorgimento, per i poveri di Bronte, si è rivelata un inganno.
 
-La novella è importante perché mostra il pessimismo storico di Verga: anche quando gli oppressi si ribellano, non riescono davvero a costruire un ordine nuovo. La libertà promessa dal Risorgimento resta incompiuta per le classi più povere.
+**Temi**: pessimismo storico; il Risorgimento come illusione per le classi povere; la rivolta che non costruisce nulla, perché manca un progetto politico; la giustizia di classe (i poveri vengono uccisi, i ricchi sopravvivono). Verga demolisce qui la retorica unitaria.
 
-## 8. I Malavoglia
+## 7. I Malavoglia (1881)
 
-*I Malavoglia* viene pubblicato nel 1881 ed è il primo romanzo del Ciclo dei Vinti.
+Primo romanzo del Ciclo dei Vinti. Ambientato ad **Aci Trezza**, sulla costa orientale della Sicilia.
 
-La famiglia Toscano, soprannominata Malavoglia, vive ad Aci Trezza e possiede la **casa del nespolo** e una barca, la **Provvidenza**. Padron 'Ntoni rappresenta i valori tradizionali: famiglia, lavoro, onore, solidarietà.
+### Trama dettagliata
 
-La rovina comincia quando la famiglia tenta un piccolo salto economico comprando a credito un carico di lupini. La Provvidenza naufraga, Bastianazzo muore e i Malavoglia entrano in una spirale di debiti e disgrazie.
+La famiglia Toscano, soprannominata "Malavoglia" per antifrasi (sono in realtà gran lavoratori), vive nella **casa del nespolo** di Aci Trezza e possiede una barca da pesca, la **Provvidenza**. È guidata dal patriarca **padron 'Ntoni**, vedovo, custode dei valori tradizionali (famiglia, lavoro, onore, solidarietà).
+
+L'equilibrio si spezza quando il giovane **'Ntoni** (nipote omonimo del nonno) viene chiamato alla **leva militare obbligatoria** del nuovo Regno d'Italia e parte per Napoli. Per pagare le tasse e ricomporre il bilancio, padron 'Ntoni decide di fare un piccolo affare: comprare a credito un carico di **lupini** dall'usuraio **zio Crocifisso** e rivenderlo. La Provvidenza parte con il carico, ma viene colta da una burrasca: il carico va perso e il figlio **Bastianazzo** muore in mare.
+
+I Malavoglia sono ora indebitati con zio Crocifisso. Comincia una catena di disgrazie: il debito non viene pagato, devono cedere la casa del nespolo, la nuora **Maruzza ("la Lunga")** muore di colera, la giovane **Lia** scappa di casa e si dà alla prostituzione, **Luca** muore in una battaglia navale a Lissa, **Mena** rinuncia per sempre al matrimonio.
+
+Quando 'Ntoni torna dal servizio militare, ha conosciuto un mondo diverso (la città, il denaro, la modernità) e non sopporta più la vita povera del paese. Si lascia andare all'alcolismo, frequenta una bettola, finisce in cattive compagnie. In una rissa accoltella una guardia di finanza e viene condannato al carcere.
+
+Il vecchio padron 'Ntoni, distrutto dalle disgrazie, muore. Solo il fratello minore **Alessi**, paziente e laborioso, riesce dopo molti anni a ricomprare la casa del nespolo.
+
+Il finale è apparentemente ciclico: la famiglia ritorna nella casa originaria. Ma l'equilibrio non è più quello iniziale: la famiglia è impoverita, frammentata, ridotta. 'Ntoni torna brevemente a casa una notte, capisce che non c'è più posto per lui, e va via per sempre, andando verso un destino di esclusione. La frase finale è la sua: "ora è tempo di andarsene".
+
+### I personaggi (la famiglia)
+
+- **Padron 'Ntoni**: il patriarca. Vedovo, anziano, custode dei proverbi e dei valori tradizionali. Crede nella famiglia e nel lavoro come unica salvezza. Sarà schiacciato dalle disgrazie e dal fallimento dei suoi tentativi di salvare la famiglia.
+- **Bastianazzo**: figlio di padron 'Ntoni. Detto così perché grande e grosso (il vero nome è Sebastiano). Marito di Maruzza. Muore nel naufragio della Provvidenza.
+- **Maruzza, "la Lunga"**: nuora di padron 'Ntoni, moglie di Bastianazzo. Soprannominata "la Lunga" per antifrasi: era piccolina. Madre dei cinque figli. Muore di colera.
+- I cinque figli di Bastianazzo e Maruzza:
+  - **'Ntoni**: il maggiore. Ribelle, vorrebbe scappare dal paese. Sarà la causa principale della rovina familiare insieme al naufragio.
+  - **Luca**: il secondogenito. Mite, lavoratore. Muore nella **battaglia di Lissa** (1866) durante il servizio militare.
+  - **Mena**: la maggiore delle femmine. Soprannominata "Sant'Agata" per la sua mitezza. Avrebbe dovuto sposarsi con il giovane Brasi, ma a causa della rovina familiare il matrimonio salta. Resta nubile, accudisce i fratelli.
+  - **Alessi**: il quartogenito. Paziente, laborioso, simile al nonno. Sarà l'unico a riuscire, anni dopo, a ricomprare la casa del nespolo. Sposerà Nunziata, ragazza povera ma onesta.
+  - **Lia**: la minore. Adolescente quando esplodono le disgrazie. Scapperà di casa e si darà alla prostituzione. Non tornerà mai più.
+
+### Personaggi della comunità di Aci Trezza
+
+- **Zio Crocifisso "Campana di legno"**: usuraio del paese. Concede credito ai Malavoglia per il carico di lupini. È l'antagonista economico, simbolo della modernità capitalistica che invade il villaggio.
+- **Don Silvestro**: il segretario comunale, astuto, opportunista, rappresentante della burocrazia statale postunitaria.
+- **Padron Cipolla, padron Fortunato**: pescatori più ricchi, membri del "coro" del paese.
+- **La Zuppidda**, **la Vespa**, **la Locca**: comari e vecchie del paese, voci del coro che commenta e giudica.
 
 ### Temi principali
 
-Il romanzo parla di:
+- **Crisi della famiglia patriarcale**: il modello della famiglia unita guidata dall'anziano si disgrega sotto la pressione della modernità.
+- **Scontro tradizione/modernità**: il mondo statico e ripetitivo di Aci Trezza viene scosso dalla leva militare, dal commercio, dalla città. I giovani non riconoscono più i valori dei vecchi.
+- **Forza distruttiva del progresso**: il piccolo affare dei lupini (un tentativo di entrare nell'economia di mercato) è sufficiente a precipitare la famiglia nella rovina.
+- **Povertà e debito**: il debito con zio Crocifisso è la catena che imprigiona i Malavoglia. Logica spietata del denaro.
+- **Coro del paese**: la comunità osserva, mormora, condanna. La perdita della reputazione pesa quanto la perdita economica.
+- **Impossibilità del riscatto**: chi cade non si rialza. Anche il ritorno di 'Ntoni non sana la frattura.
 
-- **Crisi della famiglia patriarcale**: l'autorità di padron 'Ntoni si indebolisce, i giovani non riconoscono più i valori dei vecchi e il nucleo familiare si disgrega.
-- **Scontro tra tradizione e modernità**: il mondo chiuso e ripetitivo di Aci Trezza viene scosso dall'arrivo di nuove abitudini, dalla leva militare e dal richiamo della città.
-- **Forza distruttiva del progresso**: il tentativo di entrare nell'economia del commercio (i lupini comprati a credito) precipita la famiglia nella rovina.
-- **Povertà e debito**: il debito con zio Crocifisso diventa una catena che imprigiona i Malavoglia e li espone alla logica spietata del denaro.
-- **Giudizio della comunità**: il paese osserva, mormora e condanna; la perdita della reputazione pesa quanto la perdita economica.
-- **Impossibilità del riscatto sociale**: chi cade non si rialza; anche il ritorno a casa di 'Ntoni non basta a ricucire ciò che è stato spezzato.
+### La Prefazione (la fiumana del progresso)
 
-### 'Ntoni
+Nella prefazione del romanzo (testo studiato come "La fiumana del progresso") Verga espone esplicitamente la sua poetica:
 
-Il giovane **'Ntoni** è il personaggio più inquieto. Dopo il servizio militare conosce un mondo diverso e non riesce più ad accettare la vita povera e ripetitiva del paese.
+- annuncia il **progetto del Ciclo dei Vinti**, in cinque romanzi;
+- chiama "Vinti" tutti coloro che vengono travolti dal cambiamento sociale;
+- spiega la **fiumana del progresso**: una corrente storica che, vista da lontano, appare come avanzata positiva dell'umanità; ma vista da vicino è piena di contraddizioni, soprusi, vittime, selezione naturale crudele;
+- dichiara la propria **sfiducia nel mito positivista**;
+- prende le distanze dal Naturalismo francese, che secondo lui è "finto verismo": i naturalisti pretendono di essere oggettivi ma ragionano per schemi scientifici, trasformando il romanzo in trattato. Il vero Verismo deve invece "essersi fatto da sé".
 
-Il suo desiderio di cambiare è comprensibile, ma nel mondo di Verga diventa pericoloso: chi rompe l'equilibrio della famiglia perde il proprio posto. Alla fine 'Ntoni capisce di essere escluso: torna, ma non può restare.
+## 8. Mastro-don Gesualdo (1889)
 
-### La fiumana del progresso
+Secondo romanzo del Ciclo dei Vinti. Ambientato a **Vizzini** (paese siciliano dell'interno).
 
-Nella prefazione al romanzo Verga parla della **fiumana del progresso**. Il progresso sembra avanzare come una corrente irresistibile, ma travolge soprattutto i più deboli.
+### Trama dettagliata
 
-Verga non nega che la società cambi; mostra però il prezzo umano del cambiamento.
+**Gesualdo Motta** è un ex muratore che a forza di lavoro, astuzia e ingannando sistematicamente le persone è riuscito ad arricchirsi enormemente, comprando terre, magazzini, mulini. Il suo soprannome popolare diventa "Mastro-don Gesualdo": il "Mastro" delle origini popolari (artigiano, manuale) si fonde con il "don" della nuova ricchezza borghese-aristocratica. Il titolo è già una contraddizione.
 
-## 9. Mastro-don Gesualdo
+Per consolidare la sua ascesa sociale, Gesualdo sposa **Bianca Trao**, donna della vecchia nobiltà siciliana decaduta, ormai povera. Il matrimonio è uno scambio: lui le offre il denaro per salvare la famiglia, lei gli offre il nome. Bianca accetta, ma è già incinta di un altro uomo, suo cugino **Ninì Rubiera**: la figlia che nasce poco dopo il matrimonio, **Isabella**, non è di Gesualdo. Lui lo sa, ma la cresce come propria figlia, in parte per orgoglio, in parte per dignità.
 
-*Mastro-don Gesualdo* viene pubblicato nel 1889.
+Gesualdo continua ad arricchirsi. Episodio centrale: l'**asta delle terre comunali** (brano studiato), in cui Gesualdo, sfidando i nobili e i notabili del paese, si aggiudica le terre con un colpo da furbo, scatenando l'odio della casta. Da quel momento la nobiltà locale si coalizza contro di lui.
 
-Il protagonista, **Gesualdo Motta**, è un muratore diventato ricco grazie al lavoro e alla capacità economica. Il titolo contiene già una contraddizione:
+La vita personale di Gesualdo è un fallimento: Bianca non lo ama, lo disprezza per le sue origini popolari; Isabella, cresciuta con i pregiudizi nobiliari della madre, vergogna del padre adottivo. Quando Isabella si innamora di un cugino povero, Gesualdo glielo impedisce e la fa sposare con il **duca di Leyra**, aristocratico decaduto ma di alto lignaggio. Isabella va a vivere a Palermo nel palazzo del duca, dimenticando il padre.
 
-- **"Mastro"**: appellativo dato agli artigiani, richiama l'origine umile, manuale e popolare di Gesualdo.
-- **"Don"**: titolo riservato ai notabili e ai signori, segnala la nuova ricchezza e l'aspirazione al prestigio borghese e nobiliare.
+Bianca muore di tubercolosi. Gesualdo invecchia, malato di un cancro allo stomaco che lo divora. Ormai vecchio, viene "ospitato" nel palazzo aristocratico della figlia, a Palermo. Ma la nobiltà lo disprezza, la servitù lo tratta come un intruso, Isabella lo evita.
 
-Gesualdo vuole salire nella società, ma resta sospeso tra due mondi. I nobili non lo accettano davvero, mentre il popolo lo vede come uno sfruttatore.
+### La morte di Mastro-don Gesualdo (brano studiato)
 
-### La morte di Gesualdo
+Negli ultimi giorni di vita Gesualdo, ridotto a relitto, soffre il dolore fisico del cancro e la solitudine totale. Realizza che tutta la "roba" accumulata in una vita non gli ha dato nulla: né amore, né riconoscimento, né pace. Quando muore, la servitù del palazzo Leyra commenta freddamente la sua morte come una scocciatura: bisogna ora avvertire la duchessa, sistemare il funerale, far sparire il cadavere. Gesualdo muore mentre la servitù discute di chi debba andare a chiamare il prete. La sua morte è un'**estraniazione completa**: il narratore la racconta dalla parte dei domestici, come se fosse l'evento di un estraneo.
 
-Il finale è molto amaro. Gesualdo muore solo, in un palazzo aristocratico che non è mai diventato davvero casa sua. Ha accumulato ricchezze, ma non ha ottenuto affetto né riconoscimento autentico.
+### Differenza dai Malavoglia
 
-La sua sconfitta è diversa da quella dei Malavoglia: non è la sconfitta di chi resta povero, ma di chi riesce ad arricchirsi perdendo però identità, relazioni e pace.
+La sconfitta di Gesualdo è diversa da quella dei Malavoglia:
+- i Malavoglia sono **vinti dalla povertà**: cercano di salvarsi, falliscono perché poveri restano;
+- Gesualdo è **vinto dalla ricchezza**: riesce ad arricchirsi, ma proprio per questo perde radici, identità, affetti, comunità. La scalata sociale è il suo errore, non la sua salvezza.
 
-## 10. Tecniche narrative
+In entrambi i casi vale la **morale dell'ostrica**: chi si stacca dal proprio mondo è destinato alla rovina.
 
-Verga usa tecniche molto innovative:
+## 9. Tecniche narrative riassunte
 
-- **discorso indiretto libero**, che mescola voce del narratore e voce dei personaggi;
-- **straniamento**, perché il lettore vede fatti tragici attraverso una mentalità popolare che li considera normali;
-- **proverbi**, che esprimono la morale collettiva;
-- **coro del paese**, cioè una comunità che osserva e giudica;
-- **linguaggio mimetico**, italiano costruito per ricordare modi di dire siciliani.
+- **Discorso indiretto libero**: il narratore riferisce i pensieri dei personaggi mantenendo la sintassi della loro voce. Fondamentale nei *Malavoglia*.
+- **Straniamento**: il lettore vede fatti tragici filtrati attraverso una mentalità popolare che li considera normali.
+- **Proverbi**: Verga inserisce in continuazione proverbi siciliani tradotti in italiano. Sono la voce della saggezza collettiva, ma anche delle catene mentali del paese.
+- **Coro del paese**: la comunità di Aci Trezza è quasi un personaggio. Voci anonime, soprannomi, pettegolezzi commentano i fatti.
+- **Linguaggio mimetico**: italiano costruito su sintassi e modi di dire siciliani, ma senza dialetto vero (Verga sceglie un'italiano "regionalizzato", non dialettale).
 
 ## Collegamenti
 
-- **Naturalismo**: osservazione della realtà e condizionamenti sociali.
-- **Positivismo**: influenza dell'ambiente e della lotta per la vita.
-- **Questione meridionale**: povertà e arretratezza del Sud postunitario.
-- **Romanzo della crisi**: sconfitta del personaggio, anche se Verga resta ottocentesco.
-- **Neorealismo**: attenzione agli umili e al linguaggio popolare.
+- **Naturalismo francese**: osservazione della realtà, ma Verga si distacca su impersonalità e pessimismo.
+- **Capuana**: teorico del Verismo, modello di romanzo psicologico verista (*Il Marchese di Roccaverdina*).
+- **Positivismo e darwinismo sociale**: lotta per la vita, selezione naturale.
+- **Questione meridionale**: arretratezza del Sud postunitario, latifondo, emigrazione.
+- **Romanzo della crisi**: Verga prepara, con la dissoluzione della famiglia e il pessimismo, il romanzo novecentesco di Svevo e Pirandello.
+- **Neorealismo**: ripresa dell'attenzione agli umili, del linguaggio popolare, del paesaggio meridionale (Verga modello per Vittorini, Pavese).
 
 ## Parole chiave
 
 | Termine | Significato |
 |---|---|
-| Verismo | Rappresentazione oggettiva e pessimistica della realtà |
-| Impersonalità | Scomparsa dell'autore dal racconto |
-| Regressione | Narratore vicino alla mentalità dei personaggi |
-| Ideale dell'ostrica | Necessità di restare legati al proprio ambiente |
-| Vinti | Personaggi sconfitti dalla lotta per il progresso |
-| Roba | Ricchezza materiale che diventa ossessione |
-| Fiumana del progresso | Forza storica che travolge i più deboli |
+| Verismo | Movimento italiano: rappresentazione oggettiva e pessimistica della realtà |
+| Impersonalità | Eclissi dell'autore dal racconto |
+| Regressione | Narratore che adotta lessico e mentalità dei personaggi |
+| Estraniamento | Effetto di lettura: fatti tragici visti come normali |
+| Morale dell'ostrica | Chi si stacca dal proprio ambiente sociale è perduto |
+| Vinti | Coloro che vengono travolti dalla "fiumana del progresso" |
+| Roba | Possesso ossessivo che disumanizza |
+| Fiumana del progresso | Progresso storico che da vicino è violenza e selezione |
+| Coro del paese | Comunità che osserva, mormora, condanna |
+| Casa del nespolo | Casa originaria dei Malavoglia, simbolo dell'identità familiare |
+| Provvidenza | Barca dei Malavoglia, ironicamente nominata |
 
 ## Sintesi finale
 
-Verga è il principale autore del Verismo italiano. La sua grandezza sta nel rappresentare gli umili senza idealizzarli e senza consolarli. Nei suoi testi la società è dominata da leggi dure: famiglia, lavoro, denaro, reputazione e progresso decidono il destino degli individui.
+Verga è il principale autore del Verismo italiano. La sua originalità rispetto al Naturalismo francese sta in tre punti: una vera **impersonalità** (l'autore scompare e adotta la voce del popolo), un radicale **pessimismo** (niente fiducia nel progresso scientifico), un'estensione del Verismo a tutta la scala sociale (il **Ciclo dei Vinti**).
 
-La sua visione è profondamente pessimistica: chi resta fermo soffre, ma chi prova a cambiare condizione spesso viene sconfitto ancora di più.
+Nei *Malavoglia* mostra la rovina di una famiglia di pescatori che cerca un piccolo riscatto economico: la fiumana del progresso li travolge. In *Mastro-don Gesualdo* mostra il rovescio: chi riesce ad arricchirsi perde radici e affetti. La **morale dell'ostrica** è la legge crudele che governa entrambi i romanzi.
+
+La sua grandezza è raccontare gli umili senza idealizzarli e senza consolarli. La società è regolata da leggi dure (denaro, reputazione, comunità, debito) che decidono il destino degli individui senza appello.

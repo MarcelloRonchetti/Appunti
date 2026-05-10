@@ -2,176 +2,288 @@
 
 ## 1. Vita
 
-**Giovanni Pascoli** nasce nel 1855 a San Mauro di Romagna. La sua vita è segnata da un trauma decisivo: il 10 agosto 1867 il padre Ruggero viene ucciso mentre torna a casa. Il delitto resta impunito e per Pascoli diventa il simbolo dell'ingiustizia e della violenza del mondo.
+**Giovanni Pascoli** nasce nel **1855 a San Mauro di Romagna** (oggi San Mauro Pascoli), quarto di dieci figli. La sua vita è dominata da una serie di lutti familiari che lasciano un'impronta indelebile su tutta la sua poesia.
 
-Negli anni successivi muoiono anche la madre e alcuni fratelli. La famiglia si disgrega e Pascoli vive questa perdita come una ferita mai guarita.
+### Il "10 agosto" e la catena dei lutti
 
-Studia a Bologna, dove è allievo di **Giosue Carducci**. Da giovane partecipa anche a movimenti socialisti e conosce il carcere, ma poi si allontana dall'impegno politico diretto.
+Il **10 agosto 1867** il padre **Ruggero Pascoli**, amministratore della tenuta dei principi Torlonia, viene ucciso a fucilate mentre torna a casa con la calesse. Il delitto resta impunito: i mandanti vengono indicati ma non condannati. Questo evento sarà per Pascoli **il trauma fondante**: l'ingiustizia del mondo, la violenza inspiegabile, la rottura del nido familiare.
 
-Diventa professore universitario e cerca di ricostruire un piccolo nucleo familiare con le sorelle Ida e Maria. Il tema del **nido** nasce proprio da questo bisogno di protezione.
+Negli anni successivi crollano gli altri pilastri della famiglia: muoiono la madre, due fratelli (Luigi e Giacomo), e poi una sorella. Pascoli stesso, ragazzo, vive il crollo economico e morale della famiglia.
 
-Muore nel 1912.
+### Formazione
+
+Studia al collegio degli Scolopi, poi all'Università di Bologna, dove è allievo di **Giosue Carducci** (laurea in Lettere, 1882). Da giovane partecipa a movimenti **socialisti** e finisce in carcere alcuni mesi per partecipazione a manifestazioni anarchiche. Dopo il carcere abbandona l'attività politica diretta e si avvicina a un nazionalismo umanitario.
+
+### La ricostruzione del nido
+
+Dopo i lutti, Pascoli punta tutto sulla **ricostruzione del nucleo familiare**. Si trasferisce con le sorelle **Ida** e **Maria** prima a Massa, poi nelle varie sedi delle sue cattedre liceali, infine nella casa di **Castelvecchio di Barga** (Lucchesia), che diventerà il suo "nido" simbolico.
+
+La sorella Ida si sposa nel 1895. Pascoli vive il matrimonio della sorella come un secondo lutto: il nido si spezza di nuovo. Resta legatissimo alla sorella Maria (Mariù) con un rapporto strettissimo, esclusivo, quasi morboso. Maria sarà la custode e la curatrice della sua opera dopo la morte.
+
+### Carriera e morte
+
+Diventa professore universitario a Bologna, succedendo a Carducci sulla cattedra di letteratura italiana. Negli anni delle ultime opere è poeta-vate riconosciuto, voce nazionale dell'Italia umbertina. Muore a **Bologna nel 1912**, di cancro.
 
 ## 2. La poetica del fanciullino
 
-Il testo teorico più importante di Pascoli è **Il fanciullino**.
+Il **fanciullino** è il cuore teorico della poetica di Pascoli. È esposto in un saggio del 1897 (poi ampliato nel 1903), intitolato appunto *Il fanciullino*.
 
-Secondo Pascoli, dentro ogni uomo esiste un fanciullo capace di guardare il mondo con stupore, come se lo vedesse per la prima volta. Il poeta è colui che riesce ad ascoltare questa voce infantile anche da adulto.
+### Idea fondamentale
 
-Il fanciullino:
+Dentro ogni uomo vive un **fanciullo invisibile**. È la parte infantile che continua a guardare il mondo con stupore, a vedere legami misteriosi tra le cose, a riconoscere come straordinarie le piccole realtà che l'adulto razionale ha imparato a ignorare. Negli adulti normali questo fanciullino viene soffocato dalla logica, dalle convenzioni, dalle abitudini sociali. Nei poeti, invece, **il fanciullino sopravvive e parla**.
 
-- **Prova meraviglia davanti alle piccole cose**: si emoziona per dettagli minuscoli (un fiore, un insetto, un suono) che l'adulto razionale ha imparato a ignorare.
-- **Coglie legami segreti tra gli oggetti**: scopre analogie e corrispondenze nascoste, come fa il poeta simbolista che vede la realtà come una rete di rimandi.
-- **Vede ciò che gli adulti non notano più**: ha lo sguardo nuovo di chi guarda il mondo per la prima volta, libero da abitudini e convenzioni.
-- **Usa un linguaggio semplice ma carico di significati**: parole quotidiane e concrete che però evocano significati profondi e simbolici.
-- **Trasforma la realtà quotidiana in rivelazione poetica**: gli oggetti comuni diventano segni di un mistero più grande, e la poesia è la forma di conoscenza che lo svela.
+### Il poeta è il fanciullino
 
-Questa poetica non significa infantilismo. Il fanciullino è una forma di conoscenza: permette di scoprire il mistero nascosto nelle cose comuni.
+Pascoli scrive: "Il poeta è il fanciullino che fa sentire la sua voce in noi". Il poeta non è un superuomo (come per D'Annunzio), non è un vate civile, non è uno scienziato sociale (come per i veristi). È un veggente umile, capace di accedere a una conoscenza che non passa per la ragione.
+
+### Cosa fa il fanciullino
+
+- **prova meraviglia davanti alle piccole cose**: un insetto, un suono, una foglia diventano per lui rivelazioni;
+- **coglie analogie segrete**: vede legami nascosti tra realtà diverse (un fiore e un dolore, un suono e un ricordo);
+- **rovescia le proporzioni classiche**: le cose grandi diventano insignificanti, le cose piccole diventano universi;
+- **usa un linguaggio semplice ma carico di simboli**: le parole quotidiane si caricano di valori ulteriori;
+- **ha funzione conoscitiva**: la poesia non è ornamento, è uno strumento per **capire il mistero del mondo** che la scienza non sa cogliere.
+
+### Implicazioni decadenti
+
+Il fanciullino è il volto pascoliano del **Decadentismo**: rifiuto del positivismo, fiducia in una conoscenza intuitiva e simbolica, valorizzazione dell'irrazionale, dell'inconscio (in anticipo su Freud). La realtà non è solo ciò che appare: è qualcosa di più profondo, e solo l'occhio del fanciullino sa coglierne le tracce.
 
 ## 3. Il nido
 
-Il **nido** è uno dei simboli più importanti di Pascoli.
+Il **nido** è il simbolo più importante della poesia di Pascoli, e ha sempre una doppia natura: protezione e prigione, calore e ossessione.
 
-Indica:
+### Cosa è il nido
 
-- **La famiglia**: il nucleo originario di genitori e fratelli, distrutto dalla morte del padre e dei familiari, e poi faticosamente ricostruito con le sorelle Ida e Maria.
-- **La casa**: lo spazio fisico e domestico in cui ci si sente al sicuro, contrapposto all'esterno minaccioso.
-- **La protezione**: la rete di affetti che difende l'individuo dalla durezza e dalla violenza del mondo.
-- **Gli affetti**: i legami profondi e quasi morbosi con i propri cari, considerati l'unico vero valore.
-- **Il desiderio di sicurezza**: il bisogno costante di calore, conforto e familiarità che attraversa tutta la poesia pascoliana.
-- **Il rifugio contro la violenza del mondo**: il nido come barriera contro l'ingiustizia, il caso e la morte, esperienze che hanno segnato la biografia del poeta.
+- **la famiglia originaria**: il padre, la madre, i fratelli; quel nido è stato distrutto la sera del 10 agosto;
+- **la famiglia ricostruita**: la casa di Castelvecchio con le sorelle Ida e Maria;
+- **lo spazio protettivo** contro un mondo esterno minaccioso, violento, ingiusto;
+- **il rifugio dagli "assalti"**: nelle poesie di Pascoli ricorre l'immagine di forze esterne (la nebbia, la notte, il temporale, le voci straniere) che premono sul nido per romperlo.
 
-Il nido però è sempre fragile. La morte del padre ha distrutto il nido originario e Pascoli tenta per tutta la vita di ricostruirlo. Per questo nella sua poesia gli affetti familiari sono spesso accompagnati da paura, lutto e senso di minaccia.
+### Caratteri del nido pascoliano
 
-## 4. Il mistero e la natura
+- **fragile**: può essere distrutto in qualsiasi momento (come quello originario);
+- **chiuso**: il nido protegge solo se rimane separato dal mondo. Pascoli rifiuta i contatti con la "vita" intesa come società, mondanità, sessualità adulta;
+- **morboso**: il rapporto con la sorella Maria è esclusivo, totalizzante; Pascoli vive con angoscia il matrimonio dell'altra sorella Ida, come un tradimento;
+- **simbolico**: nelle poesie il nido reale (la casa di Castelvecchio) si trasforma in nido archetipico (la casa di tutti, la patria, l'umanità).
 
-Pascoli guarda la natura in modo molto diverso dai poeti romantici.
+### Il nido violato
 
-La natura non è solo paesaggio bello e armonioso. È piena di segni, suoni, presenze, richiami, ma anche di ombre e inquietudini. Un temporale, un lampo, un verso di uccello o un fiore possono diventare segnali di qualcosa di più profondo.
+Tema centrale: il nido è violato dall'esterno. Le **forze che minacciano il nido** sono:
+- la **morte** (il padre ucciso, i fratelli morti);
+- la **sessualità adulta** (matrimonio della sorella, vita coniugale altrui);
+- la **modernità** (l'industrializzazione, l'emigrazione, lo sradicamento);
+- l'**ingiustizia sociale** (il lutto del padre rimasto impunito).
 
-Pascoli spesso parte da dettagli minimi:
+## 4. La visione decadente del mondo
 
-- **Un aratro abbandonato**: oggetto del lavoro contadino lasciato nel campo, evoca solitudine e attesa (come in *Lavandare*).
-- **Un gelsomino**: fiore notturno che si apre nel buio, simbolo della vita che continua ma anche dell'esclusione del poeta (*Il gelsomino notturno*).
-- **Un tuono**: rumore minaccioso che irrompe dall'esterno e si placa solo nel ritorno alla protezione materna.
-- **Un lampo**: luce improvvisa che svela per un attimo il mondo, immagine di una conoscenza fragile e momentanea.
-- **Il verso di un animale**: rondini, civette, uccelli notturni i cui richiami diventano segnali di morte o presagi inquietanti.
-- **Una casa lontana**: punto di riferimento del nido, intravisto da fuori come promessa di calore irraggiungibile.
-- **Un campo dopo il temporale**: paesaggio in cui torna la quiete, simbolo della pace che segue il dolore (*La mia sera*).
+Pascoli vive la **crisi del positivismo**. La scienza non offre più risposte definitive: la natura non è più la legge ordinata dei naturalisti, ma un mistero pieno di presagi.
 
-Questi dettagli diventano simboli dell'esistenza.
+Il suo decadentismo si manifesta in tre tratti:
 
-## 5. Myricae
+- **mistero al di là delle cose**: la realtà è solo la superficie di un significato più profondo;
+- **corrispondenze segrete**: oggetti, suoni, profumi rimandano ad altro (linea simbolista, da Baudelaire);
+- **sfiducia nella ragione**: la conoscenza vera non passa per la scienza ma per l'intuizione del fanciullino.
 
-*Myricae* è una delle raccolte più importanti di Pascoli.
+A differenza di D'Annunzio, però, Pascoli **non si auto-celebra come superuomo**. Il suo decadentismo è dimesso, intimo, dolente. È il "decadentismo del nido" contro il "decadentismo del Vittoriale".
 
-Il titolo deriva dal latino e indica le tamerici, piante umili. La scelta è significativa: Pascoli non vuole cantare temi solenni, ma le piccole cose della campagna, gli oggetti quotidiani, le scene semplici.
+## 5. Le raccolte principali
 
-Dentro questa semplicità, però, si nasconde una forte inquietudine. La campagna pascoliana non è mai solo serena: è attraversata da presagi, silenzi, memorie di morte.
+### Myricae (1891, ampliata fino al 1903)
 
-## 6. Lavandare
+Titolo dalle *Bucoliche* di Virgilio (IV ecloga: "non omnes arbusta iuvant humilesque myricae" — non a tutti piacciono gli arbusti e le umili tamerici). Le tamerici sono piante di campagna basse, modeste. Il titolo dichiara la **poetica delle piccole cose**: temi umili, paesaggi rurali, oggetti quotidiani.
 
-In **Lavandare** Pascoli descrive un paesaggio autunnale: un campo mezzo arato, un aratro dimenticato, il canto delle lavandaie.
+**Caratteri**:
+- poesie brevi, spesso 14 versi (sonetti);
+- paesaggio rurale della Romagna prima, poi della Toscana;
+- forte presenza di elementi naturali concreti (uccelli, alberi, attrezzi, fiori);
+- contrasto tra dimensione equilibratrice della natura e ferita interiore del poeta;
+- prefazione che indica i due temi centrali: la **morte invendicata del padre** e la **natura come grande consolatrice**.
 
-La poesia sembra semplice, ma comunica un senso di abbandono. L'aratro lasciato nel campo diventa immagine di solitudine. Il canto popolare delle lavandaie parla di una persona lontana che non torna.
+### Canti di Castelvecchio (1903)
 
-Il paesaggio esterno rispecchia uno stato d'animo: vuoto, attesa, malinconia.
+Pubblicato nel periodo della casa di Castelvecchio. Continuazione tematica di *Myricae*, ma con poesie più lunghe e sviluppate.
 
-## 7. X Agosto
+**Due motivi dominanti**:
+1. **naturalistico**: trascorrere delle stagioni, alternanza vita/morte, ciclo cosmico;
+2. **familiare**: ossessione per il padre ucciso, lutto, ricostruzione del nido.
 
-**X Agosto** è dedicata alla morte del padre, ucciso proprio il 10 agosto, giorno di San Lorenzo.
+La morte è qui più presente, più angosciante: minaccia diretta della vita del soggetto. La lingua mescola registro alto (aulico, classico) e registro basso (popolare, dialettale, infantile).
 
-Pascoli collega il destino del padre a quello di una rondine uccisa mentre torna al nido con il cibo per i piccoli. Il parallelismo è evidente:
+### Poemetti (1897, ampliati come Primi e Nuovi poemetti)
 
-- **La rondine torna al nido**: porta il cibo ai rondinotti, compiendo il proprio dovere di madre.
-- **Il padre torna alla famiglia**: cavalca verso casa con i regali per i figli, dopo una giornata al mercato.
-- **Entrambi vengono uccisi ingiustamente**: la rondine viene colpita da un cacciatore, il padre da assassini rimasti impuniti; in entrambi i casi è la violenza cieca del mondo.
-- **I piccoli restano ad aspettare**: i rondinotti nel nido e i figli orfani vivono la stessa attesa vana, simbolo del dolore innocente.
+Composizioni più lunghe, di tono narrativo. Affrontano temi sociali, politici, contemporanei: emigrazione (*Italy*), vita contadina, ferite della modernità.
 
-La poesia mostra una visione dolorosa dell'esistenza: il mondo è attraversato da una violenza inspiegabile. Il cielo piange con le stelle cadenti, ma non impedisce il male.
+### Poemi conviviali (1904)
 
-## 8. Temporale, Il lampo e Il tuono
+Riprese di temi mitologici e classici (Ulisse, Alessandro, Achille). Pascoli reinterpreta il mondo greco con sensibilità decadente.
 
-Queste poesie mostrano la capacità di Pascoli di trasformare un fenomeno naturale in simbolo.
+## 6. Le poesie principali
 
-In **Temporale** il paesaggio è costruito con pochi elementi visivi e sonori. I colori e le immagini creano una scena improvvisa, quasi pittorica.
+### Lavandare (Myricae)
 
-In **Il lampo** la luce improvvisa rivela per un attimo la realtà: una casa appare e subito scompare nel buio. Il lampo diventa immagine di una conoscenza momentanea, fragile.
+**Scena**: campo autunnale a metà arato. L'aratro è stato lasciato lì, abbandonato. Sulle rive di un canale, alcune lavandaie battono i panni e cantano una canzone popolare: "Tu mi lasci come la foglia / quando tira il vento di novembre".
 
-In **Il tuono** il rumore spaventoso è seguito da un'immagine domestica e rassicurante: la madre che culla il bambino. Anche qui torna l'opposizione tra minaccia esterna e bisogno di nido.
+**Lettura**: il paesaggio esterno è proiezione di un sentimento interiore. L'aratro abbandonato è il simbolo dell'**assenza**, della solitudine. Il canto popolare delle lavandaie parla esplicitamente di abbandono amoroso, ma la poesia lo fonde con il vuoto del paesaggio. Sintesi del fanciullino: dalle piccole cose (un attrezzo, un canto) emerge il senso universale del distacco.
 
-## 9. Novembre
+**Tecnica**: pochissime parole, immagini visive nette (madreperla del cielo, sbuffi di vapore, tonfi spessi), tre strofe brevi, struttura quasi pittorica.
 
-In **Novembre** Pascoli descrive una giornata apparentemente primaverile: aria limpida, sole chiaro, profumo di primavera.
+### X Agosto (Myricae)
 
-Ma questa impressione è un'illusione. In realtà è novembre: gli alberi sono secchi, il terreno è freddo, l'estate dei morti dura solo un momento.
+**Scena**: notte di San Lorenzo, 10 agosto. Cadono le stelle. In parallelo, il poeta racconta due morti: una **rondine** uccisa da un cacciatore mentre tornava al nido portando il cibo per i piccoli; un **uomo** ucciso da fucilate mentre tornava a casa portando regali ai figli.
 
-La poesia mostra il contrasto tra apparenza e verità. La natura sembra promettere vita, ma rivela la presenza della morte.
+**Significato**: il padre ucciso (mai nominato esplicitamente) è quell'uomo. Il parallelismo rondine/padre è il cuore della poesia. Il cielo "piange" con le stelle cadenti perché la Terra è un "atomo opaco del Male". La morte del padre, evento privato, viene innalzata a simbolo della **violenza universale** del mondo: anche Cristo "in cielo" può solo guardare e piangere.
 
-## 10. Il gelsomino notturno
+**Tecniche**: struttura simmetrica (due quartine sulla rondine, due sull'uomo, una conclusiva sul cielo), rime, sintassi quasi liturgica, religiosità laica della pietà cosmica.
 
-**Il gelsomino notturno** è una poesia dei *Canti di Castelvecchio*.
+### Novembre (Myricae)
 
-Il testo nasce in occasione di un matrimonio e ruota intorno al tema della fecondità. Il fiore che si apre di notte, i profumi, i rumori sommessi e la casa illuminata alludono alla vita coniugale e alla nascita.
+**Trucco della poesia**: descrive una giornata calda e luminosa, con aria limpida, profumi nell'aria, alberi che sembrano fiorire. Sembra primavera. Ma all'ultima strofa, all'improvviso: "È l'estate, / fredda, dei morti". È **l'estate di San Martino**, in novembre. La luce era illusione: il vero paesaggio è di morte.
 
-Il poeta però resta fuori. Osserva la scena dall'esterno, con delicatezza ma anche con esclusione. La poesia parla quindi della vita che continua, ma anche della solitudine del poeta, incapace di partecipare pienamente alla normalità familiare.
+**Significato**: la natura inganna. La vita sembra rinascere, ma è solo apparenza. Sotto, c'è sempre la morte. È una delle più sintetiche poesie pascoliane sulla **menzogna della natura consolatrice**.
 
-## 11. La mia sera
+### Temporale (Myricae)
 
-In **La mia sera** il paesaggio dopo il temporale diventa immagine della vita del poeta.
+**Scena**: brevissimo bozzetto (solo 6 versi). Un temporale all'orizzonte, descritto con elementi visivi (rossa, nera, bianca) e sonori. Una casa apparente in lontananza, "nera, di mezzo al rosseggiar dei nembi".
 
-Dopo la tempesta arrivano pace, silenzio, stelle e campane. Allo stesso modo, dopo una vita segnata da dolore e lutti, il poeta immagina una possibile quiete finale.
+**Tecnica**: poesia quasi-impressionista. Pochi tocchi di colore. Niente narrazione: pura visione.
 
-La sera non è solo un momento del giorno: è il simbolo della vecchiaia, della memoria e del desiderio di riposo.
+### Il lampo
 
-## 12. La grande proletaria si è mossa
+**Scena**: un istante. Lampo che illumina la notte, e per un attimo si vede una casa con la finestra aperta, gli occhi spalancati di chi guarda. Subito dopo: buio.
 
-Pascoli scrive anche testi civili, tra cui **La grande proletaria si è mossa**, discorso legato alla guerra di Libia.
+**Significato**: la conoscenza è momentanea, frammentaria. La realtà si rivela un attimo e subito si nasconde. Il lampo è metafora del fanciullino stesso: visione fugace del mistero.
 
-Qui l'Italia viene rappresentata come una nazione povera, "proletaria", che cerca spazio e dignità. Il testo mostra un Pascoli diverso da quello più intimo: partecipa al clima nazionalista del tempo e vede l'espansione coloniale come possibile riscatto sociale.
+### Il tuono
 
-Questo aspetto va ricordato perché Pascoli non è solo poeta del nido e dell'infanzia: vive anche le contraddizioni politiche e ideologiche del suo tempo.
+**Scena**: notte di temporale. Il tuono spaventa il bambino. Ma sotto, nel buio, una madre che culla e canta. Il tuono finisce; la canzone della madre rimane.
 
-## 13. Lingua e stile
+**Significato**: minaccia esterna (il tuono = il mondo violento) contro nido interno (la madre = la protezione). Schema classico pascoliano.
 
-Pascoli rinnova profondamente il linguaggio poetico.
+### Il gelsomino notturno (Canti di Castelvecchio)
 
-Usa:
+**Occasione**: la poesia nasce per il matrimonio dell'amico **Gabriele Briganti** nel 1901. Pascoli la pubblica come dono per le nozze.
 
-- **Parole semplici e quotidiane**: lessico comune e domestico, lontano dalla solennità della tradizione classica.
-- **Termini tecnici della campagna**: nomi specifici di attrezzi, lavori agricoli e oggetti rurali, che restituiscono concretezza al paesaggio.
-- **Nomi precisi di piante e animali**: invece di un generico "fiore" o "uccello", Pascoli scrive *gelsomino*, *tamerice*, *rondine*, *assiuolo*, dando consistenza visiva al testo.
-- **Onomatopee**: parole che riproducono i suoni della natura, come il "chiù" dell'assiuolo o il "don don" delle campane.
-- **Suoni imitativi**: scelte foniche che evocano rumori reali (fruscii, soffi, crepitii) anche quando la parola non è propriamente un'onomatopea.
-- **Frasi brevi**: periodi corti, spezzati da virgole e punti, che danno ritmo trattenuto e quasi sospeso.
-- **Sintassi frammentata**: assenza di nessi logici espliciti, accostamenti per giustapposizione, che lasciano spazio al non detto.
-- **Simboli**: oggetti concreti caricati di significati ulteriori (nido, siepe, lampo) tipici della poetica decadente.
-- **Analogie**: accostamenti intuitivi e non logici tra realtà diverse, che svelano legami nascosti tra le cose.
+**Scena**: di notte, mentre i fiori del gelsomino si aprono e diffondono il loro profumo, il poeta osserva una casa illuminata, all'interno della quale due sposi vivono la loro prima notte di nozze. Fuori, in giardino, tutto è simbolico: gli insetti che sciamano sui fiori (analogia con l'amore), le api che tornano alle celle ma non trovano più posto (simbolo di esclusione).
 
-Gianfranco Contini ha sottolineato la grande varietà del linguaggio pascoliano: accanto a parole comuni compaiono termini tecnici, dialettali, latini, infantili e fonosimbolici.
+**Significato**: la vita continua, l'amore germina, la fecondità si compie — ma il poeta resta fuori. È una poesia sull'**esclusione del poeta dalla vita normale**, dalla sessualità, dal nido coniugale. Lui può solo guardare attraverso il vetro. È anche una delle poesie più erotiche e velate di Pascoli: il fiore si apre, gli insetti penetrano, la "cella" sboccia.
+
+**Lettura psicoanalitica**: il gelsomino è il sesso femminile, gli insetti il rapporto sessuale, l'ape esclusa il poeta stesso, condannato alla castità.
+
+### La mia sera (Canti di Castelvecchio)
+
+**Scena**: dopo un temporale, torna il sereno. Stelle, campane, luna, silenzio. La sera è dolcissima.
+
+**Significato**: la sera è la **vecchiaia del poeta**. Dopo una vita di lutti e tempeste, arriva una quiete. Non è felicità: è esaurimento, accettazione, attesa della morte. La rima "sera/serenità" è il messaggio.
+
+### Nebbia (Canti di Castelvecchio)
+
+**Scena**: il poeta invoca la nebbia perché copra il mondo, nasconda il dolore, isoli il nido.
+
+**Significato**: la nebbia è l'unico schermo possibile contro l'angoscia della morte. Ma è schermo, non rimedio: il dolore resta sotto, solo nascosto.
+
+### La tessitrice (Myricae)
+
+**Scena**: il poeta torna a San Mauro, dopo molti anni, e va a trovare una giovane tessitrice che aveva amato. Le siede accanto alla panca dove un tempo lei filava. Le parla, lei risponde solo con cenni muti. Solo a un certo punto si capisce: **la tessitrice è morta da molti anni**, vive solo nel ricordo del poeta. Sta tessendo il proprio sudario.
+
+**Significato**: l'amore perduto come morte, la memoria come unica realtà residua, il dialogo impossibile con i morti.
+
+### Le monache di Sogliano (Myricae)
+
+**Occasione**: visita alle sorelle Ida e Maria al monastero di Sogliano, dove erano educande.
+
+**Temi**: la sofferenza delle giovani educande costrette in convento; la freddezza delle monache adulte; la morte come unico rimedio. Topos romantico della **monacazione forzata**, ripresa con il pessimismo decadente.
+
+### Digitale purpurea (Poemetti)
+
+**Scena**: dialogo tra due donne adulte, **Maria** e **Rachele**, che ricordano un episodio del loro tempo di educande in convento. Una suora aveva proibito loro di respirare il profumo di una digitale, fiore rosso porpora, perché velenosa.
+
+**Lettura**: il fiore proibito è simbolo della **sessualità adolescenziale**, di una tentazione vietata e perciò più forte. Si associa l'idea di morte all'idea di piacere proibito. **Anticipazione di temi freudiani**: rimozione, conflitto tra innocenza infantile e scoperta del sesso, fiore-feticcio.
+
+**Connessione biografica**: la figura di Rachele allude al matrimonio della sorella Ida, vissuto da Pascoli come "lutto" e violazione del nido.
+
+### Italy (Poemetti)
+
+**Tema**: l'**emigrazione italiana** verso le Americhe, vista da Castelvecchio. Una bambina italo-americana, **Maria-Molly**, torna in Italia per curarsi la tubercolosi nella casa della nonna in campagna. All'inizio non si capiscono: la bambina parla un misto di italiano e inglese ("Italy"), la nonna non capisce. Poi, lentamente, attraverso gesti e tenerezza, si stabilisce un linguaggio comune. La nonna però muore, sacrificandosi al posto della nipote, che invece si salverà.
+
+**Importanza**: prima poesia italiana sull'emigrazione. Pascoli, ex-socialista e umanitario, denuncia l'ingiustizia che costringe i contadini italiani a partire. Il **nido** assume qui dimensione **storica**: è la patria, dalla quale i "rondinotti" sono costretti ad allontanarsi.
+
+### La grande proletaria si è mossa (1911)
+
+Discorso pronunciato a Barga in occasione della **guerra di Libia**. Pascoli definisce l'Italia "grande proletaria": una nazione povera, costretta a emigrare per fame, che ora va a conquistarsi il proprio posto al sole.
+
+**Importanza**: testo discusso, perché mostra il volto **nazionalista e colonialista** di Pascoli. La giustificazione della guerra in nome del "diritto" dei poveri italiani a una "terra promessa" prefigura, in tono umanitario, la retorica imperialista che porterà al primo conflitto mondiale e oltre.
+
+**Per il programma**: serve a mostrare la **complessità ideologica** di Pascoli, che non è solo poeta del nido, ma anche voce delle illusioni nazionaliste dell'Italia umbertina.
+
+## 7. Lingua e stile
+
+Pascoli rinnova profondamente la lingua poetica italiana, in modo radicale e silenzioso (a differenza dello scandalo dannunziano).
+
+### Caratteri stilistici
+
+- **lessico misto**: convivono parole quotidiane, termini tecnici (botanici, ornitologici, agricoli), latinismi, dialettalismi, parole infantili. Pascoli usa il nome esatto di ogni pianta e uccello: non "fiore", ma *gelsomino*, *digitale*, *tamerice*; non "uccello", ma *assiuolo*, *rondine*, *pettirosso*.
+- **onomatopee**: il famoso "chiù" dell'assiuolo, il "don don" delle campane, il "videvitt" degli uccelli. Pascoli porta i suoni della natura dentro la lingua poetica.
+- **frasi brevi e spezzate**: sintassi nominale, frammenti, accostamenti per giustapposizione. Effetto di **frammentarietà lirica**.
+- **simboli**: oggetti concreti caricati di valori ulteriori (nido, siepe, fiore, lampo, nebbia).
+- **analogie**: accostamenti intuitivi tra realtà diverse, senza nessi logici espliciti. Linea simbolista.
+- **fonosimbolismo**: i suoni della parola alludono al senso. La sonorità è essa stessa significato.
+
+### Il linguaggio di Pascoli secondo Contini
+
+**Gianfranco Contini**, nel saggio *Il linguaggio di Pascoli*, ha sottolineato che la lingua pascoliana opera su **tre registri compresenti**:
+1. **registro pre-grammaticale** (onomatopee, parole infantili, suoni);
+2. **registro grammaticale** (italiano comune, lessico medio);
+3. **registro post-grammaticale** (latinismi, tecnicismi, lingua dotta).
+
+Tra questi registri c'è continuo scambio. È la novità più radicale: Pascoli costruisce un'**italiano nuovo**, non più costruito sul modello della tradizione classica, ma su strati eterogenei. Contini lo considera **il primo poeta italiano moderno** in senso pieno.
+
+## 8. Pensiero politico
+
+Pascoli ha avuto un'evoluzione politica importante:
+
+- **giovanile**: socialista, vicino agli anarchici, partecipa a movimenti, finisce in carcere;
+- **maturo**: si allontana dalla lotta di classe (rifiuta il marxismo), si avvicina a un **socialismo umanitario** che mira alla solidarietà fraterna senza rivoluzione;
+- **tardo**: aderisce al **nazionalismo umanitario**: l'Italia "proletaria" come nazione povera che si fa rispettare. Sostiene la guerra di Libia (1911) come riscatto sociale.
+
+Per Pascoli la lotta tra classi è da rifiutare; bisogna sostituirla con la lotta tra nazioni, dove l'Italia "povera" deve guadagnarsi il suo posto. È una visione ingenua e pericolosa, antesignana di certo nazionalismo italiano del primo Novecento.
+
+## 9. Confronto Pascoli–D'Annunzio
+
+| Pascoli | D'Annunzio |
+|---|---|
+| Cerca il sublime nel **basso**, nel quotidiano, nelle piccole cose | Punta direttamente all'**innalzamento**, all'amplificazione, al sublime esplicito |
+| Si mantiene entro i confini tradizionali del letterato ottocentesco; vita appartata, anche negli interventi politici e civili | Rinnova e si modernizza; figura pubblica scandalosa, mito di massa, fanatismo, leggende (dandy, vate, eroe) |
+| Linguaggio sperimentale ma **dimesso**, basato su frammenti e suoni | Linguaggio sperimentale ma **roboante**, basato su musicalità e ricchezza lessicale |
+| **Decadentismo del nido**: chiusura, protezione, paura | **Decadentismo del Vittoriale**: esposizione, esibizione, conquista |
+
+Entrambi sono i due poli del Decadentismo italiano. Insieme rappresentano le due risposte possibili alla crisi del positivismo.
 
 ## Collegamenti
 
-- **Decadentismo**: mistero, simbolo, crisi delle certezze.
-- **Simbolismo**: realtà visibile come segno di significati nascosti.
-- **Freud**: importanza dell'infanzia e delle zone profonde dell'io.
-- **D'Annunzio**: entrambi decadenti, ma Pascoli è più dimesso e inquieto.
-- **Ungaretti**: essenzialità e valore della parola, anche se in forme diverse.
+- **Decadentismo italiano**: insieme a D'Annunzio è uno dei due grandi poeti decadenti.
+- **Simbolismo**: linea Baudelaire-Verlaine-Mallarmé. Pascoli porta in Italia la poesia delle corrispondenze segrete.
+- **Freud**: anticipazione tematica di nido violato, sessualità rimossa, simbologia onirica (digitale purpurea).
+- **Contini, *Il linguaggio di Pascoli***: saggio critico fondamentale, considera Pascoli il primo poeta italiano moderno.
+- **Ungaretti**: erede della linea pascoliana per la valorizzazione della parola breve, essenziale, fonicamente carica.
 
 ## Parole chiave
 
 | Termine | Significato |
 |---|---|
-| Fanciullino | Voce infantile che guarda il mondo con stupore |
-| Nido | Famiglia, casa, protezione fragile |
-| Simbolo | Oggetto concreto che rimanda a un significato profondo |
-| Myricae | Poesia delle piccole cose |
-| Onomatopea | Suono che imita rumori naturali |
-| Mistero | Presenza nascosta dietro la realtà visibile |
-| Trauma | Ferita biografica che segna la poesia |
+| Fanciullino | Voce infantile dentro l'uomo che vede il mistero delle cose |
+| Nido | Famiglia, casa, protezione fragile contro il mondo |
+| Mistero | Significato nascosto dietro la realtà visibile |
+| Myricae | "Tamerici", piante umili: poetica delle piccole cose |
+| Onomatopea | Parola che imita un suono naturale (chiù, don don) |
+| Fonosimbolismo | Suoni della parola che alludono al significato |
+| 10 agosto | Data dell'omicidio del padre, trauma fondante |
+| Castelvecchio | Casa-nido dove Pascoli vive con la sorella Maria |
+| Decadentismo dimesso | Il decadentismo pascoliano contrapposto all'esibito di D'Annunzio |
 
 ## Sintesi finale
 
-Pascoli è un autore decisivo del Decadentismo italiano. La sua poesia parte da cose umili e quotidiane, ma le trasforma in simboli di dolore, mistero e desiderio di protezione.
+Pascoli è uno dei due grandi poeti del Decadentismo italiano (insieme a D'Annunzio) e, secondo molti critici (Contini), il **primo poeta italiano davvero moderno**. La sua originalità sta in tre punti: una nuova **idea del poeta** (il fanciullino, l'occhio infantile che vede il mistero), una poetica delle **piccole cose** (oggetti quotidiani caricati di simboli), una rivoluzione silenziosa della **lingua poetica** (mescolanza di registri, onomatopee, frammentarietà).
 
-Il fanciullino permette di vedere il mondo con stupore; il nido rappresenta il bisogno di affetto contro la violenza della realtà. Dietro la semplicità apparente dei suoi testi c'è una visione inquieta e moderna dell'esistenza.
+Tutta la sua opera è dominata dal trauma del **10 agosto** e dalla ricostruzione fragile del **nido**: contro la violenza del mondo, l'unico rifugio è la famiglia chiusa, la casa di Castelvecchio, la sorella Maria. Ma il nido è sempre minacciato — dalla morte, dalla sessualità adulta, dalla modernità.
+
+La sua poesia si muove così tra due poli: la **dolcezza delle piccole cose** (un fiore, un canto, un attrezzo agricolo) e l'**angoscia metafisica** (la morte ovunque, l'ingiustizia cosmica, il mistero senza risposta). Sotto la superficie umile dei suoi versi si nasconde una visione **profondamente moderna e inquieta** dell'esistenza.

@@ -48,6 +48,17 @@ Il romanzo del Novecento assimila questa scoperta:
 - **Materiali freudiani come elementi narrativi**: sogni, lapsus, ricordi involontari e ossessioni diventano parti centrali del racconto, perché rivelano l'inconscio del personaggio (es. il fumo, il padre e il rivale in Zeno).
 - **Memoria associativa**: la memoria non procede in modo ordinato e cronologico, ma per salti e libere associazioni, com'è nella mente reale; la struttura del romanzo riflette questo movimento.
 
+### Einstein
+
+Albert **Einstein** con la **teoria della relatività** (ristretta 1905, generale 1915) demolisce il concetto di tempo e spazio assoluti della fisica classica. Tempo e spazio non sono più cornici fisse: dipendono dalla velocità dell'osservatore e dalla gravità.
+
+Le conseguenze culturali sono enormi:
+- **fine del realismo oggettivo**: se anche le grandezze fisiche sono relative all'osservatore, anche la realtà sociale e psicologica perde la sua presunta oggettività;
+- **fine del tempo lineare**: il tempo non è più un fiume che scorre uguale per tutti, è esperienza soggettiva;
+- legittimazione filosofica dei nuovi tipi di romanzo: tempi soggettivi, narratori parziali, spazi mentali.
+
+Pirandello cita esplicitamente Copernico ed Einstein come **distruttori dell'antropocentrismo**: l'uomo non è più al centro dell'universo, e perde le sue verità assolute.
+
 ### Bergson
 
 Henri **Bergson** distingue il tempo misurabile degli orologi dal **tempo interiore**, vissuto dalla coscienza. I ricordi, le emozioni e le sensazioni non seguono l'ordine cronologico, ma si sovrappongono.

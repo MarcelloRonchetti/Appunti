@@ -2,6 +2,22 @@
 
 Questa checklist segue le lezioni svolte e serve per controllare rapidamente cosa ripassare.
 
+## Struttura degli appunti
+
+- **`autori/`** — un file per autore principale (Verga, Pascoli, D'Annunzio, Svevo, Pirandello, Ungaretti, Montale, Calvino, Fenoglio, Primo Levi).
+- **`movimenti/`** — un file per ogni movimento/corrente (Naturalismo/Verismo, Decadentismo/Simbolismo/Estetismo, Avanguardie/Futurismo/Crepuscolarismo, Romanzo della crisi, Ermetismo, Neorealismo, Linea antinovecentista).
+- **`libri/`** — un file per ogni libro che NON appartiene a un autore principale: trama dettagliata, personaggi, luoghi, data. Comprende:
+  - *Il Gattopardo* (Tomasi di Lampedusa)
+  - *Il ritratto di Dorian Gray* (Wilde)
+  - *A rebours* (Huysmans)
+  - *Madame Bovary* (Flaubert)
+  - *L'Ammazzatoio* (Zola)
+  - *Germinie Lacerteux* (Goncourt)
+  - *Il Marchese di Roccaverdina* (Capuana)
+  - *Niente di nuovo sul fronte occidentale* (Remarque)
+  - *Come il vento cucito alla terra* (Tuti)
+  - *La banda di via Panisperna* (Colangelo/Temporelli)
+
 ## 1. Positivismo, Naturalismo e Verismo
 
 - Positivismo: fiducia in scienza, progresso, osservazione e metodo.
@@ -124,28 +140,7 @@ Questa checklist segue le lezioni svolte e serve per controllare rapidamente cos
 - *Satura*: ironia, società di massa, *Xenia* dedicata alla moglie Mosca.
 - *Ho sceso, dandoti il braccio* da *Satura*.
 
-## 13. Umberto Saba
-
-- Vita, Trieste, famiglia difficile (padre assente, madre severa, balia Peppa Sabaz).
-- Posizione isolata nel Novecento: rifiuto di Futurismo, Ermetismo, retorica dannunziana.
-- Poetica della poesia onesta: verità, sincerità, assenza di artifici, lingua chiara.
-- *Il Canzoniere*: autobiografia poetica, struttura narrativa lunga e ordinata.
-- Forme metriche tradizionali: sonetto, endecasillabo, settenario, rime frequenti.
-- Lessico quotidiano e sintassi piana, tono narrativo.
-- *A mia moglie*: paragoni con animali (pollastra, giovenca, cagna, coniglia, rondine, formica, ape).
-- *Trieste*: città di confine, diversità, contrasti, "scontrosa grazia".
-- *Amai*: amore, passione, sincerità emotiva.
-- Temi principali: Trieste, la donna concreta (Lina), l'infanzia e le ferite, il dolore psicologico, gli animali.
-- Linea antinovecentista: chiarezza, quotidiano, antiretorica, continuità con tradizione italiana.
-
-## 13 bis. Linea antinovecentista
-
-- Contrapposizione all'Ermetismo e alle avanguardie.
-- Principi: chiarezza linguistica, fedeltà alla tradizione, sincerità emotiva.
-- Saba come figura centrale della linea antinovecentista.
-- Rifiuto dell'oscurità simbolica e della sperimentazione formale estrema.
-
-## 14. Neorealismo
+## 13. Neorealismo
 
 - Nasce fra 1943 e Cinquanta come necessità di testimonianza dopo guerra e fascismo.
 - Caratteristiche: realtà concreta, classi popolari, antiretorica, linguaggio parlato, dialetti.
@@ -154,7 +149,7 @@ Questa checklist segue le lezioni svolte e serve per controllare rapidamente cos
 - Letteratura neorealista: Vittorini, Pavese, Calvino, Fenoglio.
 - Clima culturale, non scuola rigida: bisogno collettivo di raccontare.
 
-## 15. Italo Calvino
+## 14. Italo Calvino
 
 - Vita, Cuba, Sanremo, Resistenza nelle brigate Garibaldi.
 - Adesione iniziale al PCI, rottura nel 1956 per questione ungherese.
@@ -168,10 +163,30 @@ Questa checklist segue le lezioni svolte e serve per controllare rapidamente cos
 - Sperimentazione narrativa: ordine e caos, meccanismi della narrazione.
 - *Se una notte d'inverno un viaggiatore*: metanarrazione, autoriferenzialità.
 
-## 16. Beppe Fenoglio
+## 15. Beppe Fenoglio
 
-- Vita, Piemonte, Langhe, Resistenza, letteratura americana.
-- *Una questione privata* (1952): guerra partigiana intrecciata con vicenda sentimentale (Milton, Fulvia, Giorgio).
+- Vita, Piemonte, Langhe, Resistenza, letteratura anglosassone (Hemingway, Faulkner).
+- Lingua mista: italiano + piemontese + calchi inglesi.
+- Distacco dal Neorealismo: niente ottimismo storico, niente militanza ideologica, sguardo tragico.
+- Opere principali: *I ventitré giorni della città di Alba*, *La malora*, *Primavera di bellezza*, *Il partigiano Johnny* (postumo).
+- *Una questione privata* (1963): guerra partigiana intrecciata con vicenda sentimentale (Milton, Fulvia, Giorgio).
+- Milton: partigiano-intellettuale, antieroe, ossessionato dal dubbio sul tradimento di Fulvia.
 - Tema della gelosia dentro la Resistenza, memoria ossessiva.
-- Unione di storia collettiva e interiorità privata.
-- Importanza della Resistenza come materia letteraria.
+- Nebbia delle Langhe come simbolo dominante: indistinzione, dubbio, morte.
+- Finale aperto e tragico.
+- Calvino lo definì il romanzo che i neorealisti avevano sognato di scrivere.
+
+## 16. Primo Levi
+
+- Vita: nato a Torino 1919, chimico, ebreo, partigiano, deportato ad Auschwitz nel 1944, liberato 1945.
+- Monowitz (Auschwitz III), salvato dal lavoro come chimico in laboratorio.
+- Numero del Lager: 174.517.
+- Morte nel 1987 (probabile suicidio).
+- Poetica: testimonianza, chiarezza, precisione del chimico, misura, comprensione (non vendetta), lotta contro l'oblio.
+- Opere: *Se questo è un uomo* (1947), *La tregua* (1963), *Il sistema periodico* (1975), *La chiave a stella* (1978), *Se non ora, quando?* (1982), *I sommersi e i salvati* (1986).
+- *Se questo è un uomo*: titolo come domanda etica, poesia in epigrafe come comando, struttura in 17 capitoli, stile da rapporto scientifico.
+- Capitolo I "Il viaggio": cattura, Fossoli, vagone piombato, arrivo, separazione, ingresso al Lager.
+- "Il canto di Ulisse": Pikolo, *Inferno* XXVI, "Considerate la vostra semenza", "fatti non foste a viver come bruti, ma per seguir virtute e canoscenza", la cultura come resistenza spirituale.
+- Temi: disumanizzazione, memoria come dovere, vergogna del sopravvissuto, zona grigia, dignità nella conoscenza.
+- Stile: chiarezza, sobrietà, precisione, plurilinguismo del Lager, modello manzoniano.
+- Collegamento con educazione civica: leggi razziali, Shoah, processo di Norimberga.

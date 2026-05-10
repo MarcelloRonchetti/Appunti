@@ -2,12 +2,14 @@
 
 ## 1. Vita
 
-**Italo Svevo** è lo pseudonimo di **Ettore Schmitz**. Nasce a **Trieste** nel 1861 da una famiglia borghese di origine ebraica.
+**Italo Svevo** è lo pseudonimo di **Aron Hector Schmitz** (italianizzato in Ettore Schmitz). Nasce a **Trieste nel 1861** da una famiglia borghese di **triplice cultura**: tedesca (Schmitz, dal padre boemo-tedesco), ebraica (Aron, dalla famiglia materna), italiana (l'ambiente della città). Questa stratificazione culturale è centrale per capire la sua opera.
 
 Il suo pseudonimo è significativo:
 
 - **Italo** richiama la cultura italiana;
 - **Svevo** richiama la componente germanica e mitteleuropea della sua formazione.
+
+Lo pseudonimo è una **maschera** scelta consapevolmente: nasconde l'identità ebraica e ufficiale (sotto cui lavora come impiegato e poi come industriale), ma proclama insieme l'italianità e la matrice mitteleuropea. È quasi un programma letterario.
 
 Trieste, all'epoca parte dell'Impero austro-ungarico, è una città fondamentale per capire Svevo: porto commerciale, luogo multietnico, aperto alla cultura europea e in contatto con il mondo tedesco, slavo e italiano.
 
@@ -56,9 +58,12 @@ Svevo muore nel 1928 in seguito a un incidente stradale.
 
 ## 2. Svevo e il romanzo della crisi
 
-Svevo è uno dei principali autori italiani del **romanzo della crisi**.
+Svevo è uno dei principali autori italiani del **romanzo della crisi**, insieme a Pirandello. Le sue innovazioni:
 
-Nei suoi romanzi non troviamo eroi forti e sicuri, ma personaggi deboli, contraddittori, incapaci di vivere pienamente.
+- il protagonista è un **inetto**: antieroe per eccellenza, prodotto della "**noluntas**" di Schopenhauer (la non-volontà, l'incapacità di volere e quindi di agire);
+- il romanzo è un **antiromanzo** o **romanzo psicologico-analitico**: non valgono i fatti o gli avvenimenti, ma come vengono vissuti e percepiti dal personaggio;
+- il narratore non è più affidabile: la verità è quella della coscienza distorta del protagonista;
+- il tempo non è più cronologico ma soggettivo: la memoria associativa sostituisce la trama lineare.
 
 Il personaggio centrale della narrativa sveviana è l'**inetto**.
 
@@ -81,6 +86,22 @@ Svevo segue l'evoluzione dell'inetto in tre romanzi:
 Zeno è l'inetto più complesso: è malato e nevrotico, ma proprio la sua malattia gli permette di capire che la società apparentemente sana è in realtà malata.
 
 L'evoluzione è importante: Alfonso e Emilio sono sconfitti dalla vita perché non riescono ad agire; Zeno invece sopravvive, si adatta, fa affari, costruisce una famiglia. Non diventa davvero "sano", ma scopre che in un mondo malato anche la nevrosi può diventare una forma di lucidità. Svevo rovescia così i valori borghesi: chi sembra normale non necessariamente capisce la realtà, mentre il malato può vederne le contraddizioni.
+
+### Funzione della letteratura per Svevo
+
+Per Svevo la funzione della letteratura è precisa: **conoscere se stessi**, approfondire la propria psiche. La realtà interiore permette di guardare in modo più oggettivo se stessi e il proprio passato. L'uomo "in analisi" — cioè l'inetto che si racconta — riesce a capire la differenza tra realtà e apparenza, tra ciò che la società chiama "sano" e ciò che è davvero salute.
+
+### Il ruolo dell'intellettuale-inetto
+
+L'inetto svevianno è anche **figura dell'intellettuale moderno**:
+
+- la sua **esclusione** dal mondo borghese gli consente di osservarlo con distacco;
+- smaschera ciò che sembra vincente ma non lo è (i borghesi "sani" che in realtà sono cristallizzati);
+- è personaggio raffinato e colto ma con una percezione minima di sé, marginale nella società;
+- non promuove ideali, non propone riscatto, non insegna: è solo **descrizione del reale**;
+- per sopravvivere bisogna adattarsi, non combattere; la letteratura testimonia, non insegna.
+
+In questo Svevo si distingue dal poeta-vate (D'Annunzio) e dall'esteta: il suo intellettuale non è guida né esempio, è solo testimone lucido della crisi.
 
 ## 3. Poetica e pensiero
 

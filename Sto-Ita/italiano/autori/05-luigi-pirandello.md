@@ -30,6 +30,18 @@ Due eventi cambiano la sua vita:
 
 Pirandello deve intensificare l'attività di scrittore per mantenere la famiglia. La crisi economica, la follia e la famiglia come prigione diventano temi centrali della sua opera.
 
+### Le tre gabbie dell'uomo moderno
+
+Pirandello descrive l'uomo moderno come prigioniero di **tre gabbie sovrapposte come una matrioska**. Questa visione attraversa tutta la sua opera:
+
+1. **Prima gabbia — il matrimonio**: nasce per Pirandello dall'esperienza autobiografica. Il suo matrimonio fu combinato dal padre, basato sulla fisicità e sul guadagno economico (il padre gestiva la miniera della nuora). Quando la miniera viene allagata e il patrimonio crolla, la moglie Antonietta impazzisce, ossessionata da gelosia morbosa. Pirandello vive imprigionato in casa, fedele alla moglie per legame sociale e per pietà. Questa esperienza diventa archetipo: tutte le sue novelle hanno alla base un **matrimonio-gabbia**, condizione sociale ineluttabile, che garantisce lo status ma non l'amore. Conta più l'opinione degli altri del sentimento reale.
+
+2. **Seconda gabbia — l'urbanizzazione**: la città moderna con i suoi rapporti necessari (imprenditori, banchieri, impiegati) crea un sistema urbano con nuove categorie sociali, in cui i sottomessi sono soprattutto gli **impiegati**, schiacciati dalla burocrazia (Belluca de *Il treno ha fischiato*).
+
+3. **Terza gabbia — il meccanismo economico internazionale**: la grande macchina del capitalismo globale, che governa la vita di tutti senza che nessuno la veda. Le crisi economiche, i fallimenti, le speculazioni colpiscono individui che non hanno alcun controllo né comprensione del meccanismo che li distrugge.
+
+Le tre gabbie spiegano la centralità del tema della **prigione sociale** in Pirandello: l'uomo moderno è imprigionato simultaneamente in famiglia, città, sistema economico, senza possibilità di evasione.
+
 ### Successo e ultimi anni
 
 Pirandello scrive romanzi, novelle e soprattutto opere teatrali.
@@ -282,6 +294,16 @@ Mattia osserva la vita da fuori. Solo prendendo distanza dalle cose si può capi
 Ma chi si mette completamente fuori dalla vita non è libero: diventa un'ombra.
 
 Il brano spesso indicato come **Io e l'ombra mia** chiarisce questa condizione. Adriano Meis non è più una persona pienamente reale: è come un'ombra che cammina, priva di consistenza giuridica e sociale. La libertà assoluta lo rende invisibile.
+
+### Il lanternino Sofia
+
+Anselmo Paleari, padrone di casa di Adriano Meis a Roma, è il **personaggio-filosofo** del romanzo: filosofo artigianale, anonimo, eppure rigorosamente argomentativo. Espone a Mattia la teoria del **lanternino**.
+
+Ogni uomo, secondo Paleari, è come un **lanternino**: ha una sua piccola luce che illumina parzialmente il mondo. Senza quella luce, non si accorgerebbe del buio circostante. Ma ogni lanternino ha un colore diverso: ognuno vede la realtà con una luce soggettiva. È il **relativismo conoscitivo** in forma quasi favolistica.
+
+Quando i lanternini di molti individui si accordano fra loro, danno vita ai **lanternoni**: le grandi ideologie, le religioni, le costruzioni collettive di senso (cristianesimo, patria, scienza) che si propongono di dare un significato all'esistenza. I lanternoni possono spegnersi col tempo (la fede medievale che svanisce, l'ottimismo positivista che crolla), ma i lanternini continuano a rifarsi a quegli ideali ormai morti, pur di non vedere il buio. Oppure si aggirano sperduti, senza più orientamento.
+
+È una delle pagine più importanti del romanzo, perché descrive lo **smarrimento della modernità**: l'uomo che ha perso le grandi ideologie e cerca disperatamente un nuovo lanternone.
 
 ### Lo strappo nel cielo di carta
 

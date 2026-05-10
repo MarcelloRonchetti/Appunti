@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pdfinfo /home/marci/Appunti/Sto-Ita/italiano/ITALIANO.pdf)"
+    ]
+  }
+}
