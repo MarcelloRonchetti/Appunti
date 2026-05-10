@@ -76,13 +76,68 @@ const pages = [
   },
   {
     group: "Italiano - autori",
-    title: "Umberto Saba",
-    path: "Sto-Ita/italiano/autori/08-umberto-saba.md",
+    title: "Italo Calvino",
+    path: "Sto-Ita/italiano/autori/08-italo-calvino.md",
   },
   {
     group: "Italiano - autori",
-    title: "Italo Calvino",
-    path: "Sto-Ita/italiano/autori/09-italo-calvino.md",
+    title: "Beppe Fenoglio",
+    path: "Sto-Ita/italiano/autori/09-beppe-fenoglio.md",
+  },
+  {
+    group: "Italiano - autori",
+    title: "Primo Levi",
+    path: "Sto-Ita/italiano/autori/10-primo-levi.md",
+  },
+  {
+    group: "Italiano - libri",
+    title: "Il Gattopardo (Tomasi di Lampedusa)",
+    path: "Sto-Ita/italiano/libri/01-il-gattopardo.md",
+  },
+  {
+    group: "Italiano - libri",
+    title: "Il ritratto di Dorian Gray (Wilde)",
+    path: "Sto-Ita/italiano/libri/02-il-ritratto-di-dorian-gray.md",
+  },
+  {
+    group: "Italiano - libri",
+    title: "A rebours (Huysmans)",
+    path: "Sto-Ita/italiano/libri/03-a-rebours.md",
+  },
+  {
+    group: "Italiano - libri",
+    title: "Madame Bovary (Flaubert)",
+    path: "Sto-Ita/italiano/libri/04-madame-bovary.md",
+  },
+  {
+    group: "Italiano - libri",
+    title: "L'Ammazzatoio (Zola)",
+    path: "Sto-Ita/italiano/libri/05-l-ammazzatoio.md",
+  },
+  {
+    group: "Italiano - libri",
+    title: "Germinie Lacerteux (Goncourt)",
+    path: "Sto-Ita/italiano/libri/06-germinie-lacerteux.md",
+  },
+  {
+    group: "Italiano - libri",
+    title: "Il Marchese di Roccaverdina (Capuana)",
+    path: "Sto-Ita/italiano/libri/07-il-marchese-di-roccaverdina.md",
+  },
+  {
+    group: "Italiano - libri",
+    title: "Niente di nuovo sul fronte occidentale (Remarque)",
+    path: "Sto-Ita/italiano/libri/08-niente-di-nuovo-sul-fronte-occidentale.md",
+  },
+  {
+    group: "Italiano - libri",
+    title: "Come il vento cucito alla terra (Tuti)",
+    path: "Sto-Ita/italiano/libri/09-come-il-vento-cucito-alla-terra.md",
+  },
+  {
+    group: "Italiano - libri",
+    title: "La banda di via Panisperna (Colangelo/Temporelli)",
+    path: "Sto-Ita/italiano/libri/10-la-banda-di-via-panisperna.md",
   },
   {
     group: "Italiano - movimenti",
