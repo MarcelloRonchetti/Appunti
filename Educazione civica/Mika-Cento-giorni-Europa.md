@@ -2,8 +2,13 @@
 
 *Articolo pubblicato su «Il Corriere della Sera» del 16/02/2019.*
 
+## Chi è l'autore
+- **Mika** (Michael Holbrook Penniman Jr., 1983) è un cantautore pop nato a Beirut, di padre americano e madre libanese-americana, cresciuto fra Parigi e Londra.
+- È volto televisivo noto in Italia per la sua partecipazione come giudice a *X Factor*; parla fluentemente inglese, francese e italiano.
+- L'articolo viene pubblicato circa **cento giorni prima delle elezioni europee del 26 maggio 2019** — da qui il titolo *Cento giorni in Europa* — in un momento di forte ascesa dei movimenti sovranisti ed euroscettici in molti paesi dell'UE.
+
 ## Tesi di fondo
-Mika racconta in prima persona cosa significhi essere europei attraverso la propria biografia: un'identità che non si misura con i passaporti ma con la cultura, la libertà di movimento e una "luce" condivisa che lega i popoli del continente.
+Mika racconta in prima persona cosa significhi essere europei attraverso la propria biografia: un'identità che non si misura con i passaporti ma con la cultura, la libertà di movimento e una "luce" condivisa che lega i popoli del continente. L'articolo è insieme **testimonianza personale** e **appello politico** in difesa del progetto europeo, contro la tentazione del ritorno ai nazionalismi.
 
 ## La memoria familiare
 - L'autore ricorda la prozia che da bambino, nell'appartamento parigino del XVI arrondissement, gli raccontava di **Beirut**, la sua città natale tormentata dalla guerra civile.
@@ -54,3 +59,21 @@ Mika racconta in prima persona cosa significhi essere europei attraverso la prop
 ## Conclusione
 - La luce di Todorov è "**la luce che c'è in me e in te, nelle parti migliori della Storia, quella luce che ci lega tutti come europei**".
 - Il cambiamento è necessario, ma **riconoscere cosa dobbiamo difendere è ugualmente essenziale**.
+
+## Riferimenti culturali citati nell'articolo
+- **Tzvetan Todorov** (1939-2017): saggista e filosofo francese di origine bulgara, autore di *Lo spirito dell'Illuminismo* e di numerose riflessioni sull'identità europea e sulla tolleranza. La sua metafora della "luce" rimanda alla tradizione illuminista (le *Lumières*).
+- **Roberto Saviano**: scrittore italiano, citato per il giudizio sulla pace come maggiore eredità europea.
+- **William Shakespeare** e **Henrik Ibsen**: portati come esempi storici di scambio culturale fra paesi europei già nel Rinascimento e nell'Ottocento.
+- **Feiruz** (Fairuz, 1934): grande cantante libanese, simbolo della cultura araba che Mika associa al ricordo della famiglia.
+
+## Parole chiave del testo
+- **Identità multipla / cosmopolita**: nato in un paese, cresciuto in un altro, formato in un terzo, abitante in più paesi insieme.
+- **Patriottismo europeo**: amore per l'Europa come ideale e come unione, non come singola nazione.
+- **Post-nazionalismo**: la convinzione, oggi messa in discussione, che l'epoca degli Stati nazionali contrapposti fosse finita per sempre.
+- **Cultura della pace**: la pace non come semplice assenza di guerra, ma come orizzonte mentale e civile interiorizzato dalle generazioni cresciute nel dopoguerra.
+- **Luce / Lumières**: metafora dell'apertura, della ragione, della creatività dei popoli europei nei loro momenti migliori (Rinascimento, Illuminismo, anni Sessanta).
+
+## Collegamenti con il programma
+- Il tema della "scelta dell'Europa" si lega al **Manifesto di Ventotene** (Spinelli–Rossi, 1941): in entrambi i testi l'unità europea nasce da un **atto di volontà** politica e culturale, non da un destino automatico.
+- L'allarme sul ritorno del nazionalismo richiama il rischio già denunciato nel Manifesto: la "riedizione dei vecchi stati nazionali" come ricaduta nella violenza.
+- L'idea che la pace sia "la più grande eredità" europea conferma il senso del **premio Nobel per la pace** attribuito all'UE nel 2012.
