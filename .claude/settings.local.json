@@ -1,7 +1,11 @@
 {
   "permissions": {
     "allow": [
-      "Bash(pdfinfo /home/marci/Appunti/Sto-Ita/italiano/ITALIANO.pdf)"
+      "Bash(pdfinfo /home/marci/Appunti/Sto-Ita/italiano/ITALIANO.pdf)",
+      "WebFetch(domain:api.anthropic.com)",
+      "Read(//tmp/design-pkg/**)",
+      "Bash(tar -tf pkg)",
+      "Bash(tar -xf pkg)"
     ]
   }
 }
