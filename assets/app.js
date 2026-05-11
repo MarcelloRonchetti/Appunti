@@ -184,6 +184,16 @@ const pages = [
     title: "Europa",
     path: "Educazione civica/Europa.md",
   },
+  {
+    group: "Educazione civica",
+    title: "Il Manifesto di Ventotene (Spinelli, Rossi)",
+    path: "Educazione civica/Manifesto-di-Ventotene.md",
+  },
+  {
+    group: "Educazione civica",
+    title: "Mika — Cento giorni in Europa",
+    path: "Educazione civica/Mika-Cento-giorni-Europa.md",
+  },
 ];
 
 const content = document.querySelector("#content");
