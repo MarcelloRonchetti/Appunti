@@ -1,23 +1,50 @@
-# Appunti Sto-Ita
+# Appunti 5F — A.S. 2025/26
 
-Sito statico per consultare gli appunti di storia, italiano ed educazione civica.
+Sito statico di appunti per la maturità di 5F ITT. Cinque materie raccolte in un unico quaderno digitale, con due "ali" stilistiche.
+
+## Materie
+
+| Materia | Punto d'ingresso | Stile |
+|---|---|---|
+| Storia | [Appunti.html](Appunti.html) | Quaderno serif crema |
+| Italiano (autori, libri, movimenti) | [Appunti.html](Appunti.html) | Quaderno serif crema |
+| Educazione civica | [Appunti.html](Appunti.html) | Quaderno serif crema |
+| Telecomunicazioni | [telecomunicazioni.html](telecomunicazioni.html) | Tech editoriale (teal) |
+| TPSIT | [tpsit.html](tpsit.html) | Tech editoriale (blu/viola) |
+| Sistemi · Crittografia | [Sistemi/sistemi.html](Sistemi/sistemi.html) | Dark cyberpunk |
+
+La landing [index.html](index.html) raccoglie tutte le materie.
+
+## Struttura
+
+```
+index.html              # Landing (6 destinazioni)
+Appunti.html            # SPA Markdown per storia / italiano / civica
+telecomunicazioni.html  # Indice materia + 8 sottopagine in telecomunicazioni/
+tpsit.html              # Indice materia + 9 sottopagine in tpsit/
+Sistemi/sistemi.html    # Pagina singola: crittografia
+shared/                 # CSS condiviso ala tecnica
+assets/                 # CSS + JS della SPA Sto-Ita
+Sto-Ita/                # Contenuto MD (storia, italiano)
+Educazione civica/      # Contenuto MD (civica)
+```
 
 ## Pubblicazione su GitHub Pages
 
-1. Crea un repository GitHub e carica questa cartella.
-2. Verifica che le cartelle `Fonti` non vengano aggiunte al commit: sono escluse da `.gitignore`.
-3. Su GitHub vai in `Settings > Pages`.
-4. In `Build and deployment`, scegli `Deploy from a branch`.
-5. Seleziona il branch principale e la cartella `/root`.
-
-Il sito non richiede installazioni: `index.html` carica gli appunti Markdown e li mostra come pagine navigabili.
+1. Carica la cartella in un repository.
+2. `Settings > Pages` → `Deploy from a branch` → branch principale, cartella `/root`.
+3. Le cartelle `Fonti` e i PDF di programma sono esclusi via `.gitignore`.
 
 ## Sviluppo locale
 
-Aprire direttamente `index.html` può bloccare il caricamento dei Markdown in alcuni browser. Per provarlo in locale, avvia un piccolo server dalla cartella del progetto:
+`index.html` carica risorse relative; aprirlo direttamente come `file://` può bloccare la SPA Markdown. Avvia un server:
 
 ```sh
 python3 -m http.server 8000
 ```
 
 Poi apri `http://localhost:8000`.
+
+## Tema chiaro/scuro
+
+Toggle in alto a destra su ogni pagina dell'ala umanistica e tecnica; la preferenza è persistita in `localStorage` (`appunti-theme`). La pagina Sistemi è dark-only by design.
