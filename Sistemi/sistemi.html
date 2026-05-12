@@ -375,9 +375,6 @@
             .comparison-grid {
                 grid-template-columns: 1fr;
             }
-            .nav-links {
-                display: none;
-            }
         }
 
         .comparison-card {
@@ -1136,15 +1133,246 @@
             box-shadow: 0 8px 25px rgba(79, 140, 255, 0.4);
         }
 
+        /* === Utility gradient classes (replace inline styles) === */
+        .grad-cyan       { background: linear-gradient(135deg, #06b6d4, #22c55e); color: white; }
+        .grad-purple     { background: linear-gradient(135deg, #a855f7, #ec4899); color: white; }
+        .grad-text-cyan  { background: linear-gradient(135deg, #06b6d4, #22c55e); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .grad-text-purple{ background: linear-gradient(135deg, #a855f7, #ec4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .grad-bg-blue    { background: rgba(79,140,255,0.15);  color: var(--accent-blue); }
+        .grad-bg-green   { background: rgba(34,197,94,0.15);   color: var(--accent-green); }
+        .grad-bg-orange  { background: rgba(249,115,22,0.15);  color: var(--accent-orange); }
+        .grad-bg-purple  { background: rgba(168,85,247,0.15);  color: var(--accent-purple); }
+
+        /* === Section heading anchors (permalinks) === */
+        .section-header h2 { position: relative; }
+        .anchor-link {
+            opacity: 0;
+            margin-left: 0.5rem;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.7em;
+            font-weight: 400;
+            transition: opacity 0.2s ease;
+        }
+        .section-header:hover .anchor-link,
+        .anchor-link:focus-visible { opacity: 1; }
+
+        /* === CIA grid === */
+        .cia-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.25rem;
+        }
+        .cia-card {
+            text-align: center;
+            padding: 2rem 1.5rem;
+            margin-bottom: 0;
+            position: relative;
+        }
+        .cia-card .cia-letter {
+            display: inline-flex;
+            width: 64px;
+            height: 64px;
+            border-radius: 18px;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        .cia-card h4 { font-size: 1.15rem; margin-bottom: 0.4rem; }
+        .cia-c .cia-letter { background: rgba(79,140,255,0.15); color: var(--accent-blue); }
+        .cia-c { border-top: 3px solid var(--accent-blue); }
+        .cia-i .cia-letter { background: rgba(249,115,22,0.15); color: var(--accent-orange); }
+        .cia-i { border-top: 3px solid var(--accent-orange); }
+        .cia-a .cia-letter { background: rgba(34,197,94,0.15);  color: var(--accent-green); }
+        .cia-a { border-top: 3px solid var(--accent-green); }
+        .cia-n .cia-letter { background: rgba(168,85,247,0.15); color: var(--accent-purple); }
+        .cia-n { border-top: 3px solid var(--accent-purple); }
+
+        /* === Comparison good/bad cards === */
+        .cmp-good { border-left: 3px solid var(--accent-green); margin-bottom: 0; }
+        .cmp-good h4 { color: var(--accent-green); }
+        .cmp-bad  { border-left: 3px solid var(--accent-red);   margin-bottom: 0; }
+        .cmp-bad h4  { color: var(--accent-red); }
+
+        /* === Code inline === */
+        .card code, .key-concept code {
+            background: rgba(255,255,255,0.05);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85em;
+            color: var(--accent-cyan);
+        }
+
+        /* === PKI chain === */
+        .pki-chain {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .pki-node {
+            width: 100%;
+            max-width: 480px;
+            padding: 1rem 1.5rem;
+            border-radius: 14px;
+            text-align: center;
+            border: 1.5px solid var(--border-color);
+            background: var(--bg-card);
+        }
+        .pki-node .pki-label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--text-muted);
+            margin-bottom: 4px;
+        }
+        .pki-node .pki-name { font-weight: 700; font-family: 'JetBrains Mono', monospace; font-size: 0.95rem; }
+        .pki-node .pki-meta { font-size: 0.8rem; color: var(--text-muted); margin-top: 6px; }
+        .pki-root { border-color: var(--accent-purple); background: rgba(168,85,247,0.05); }
+        .pki-root .pki-name { color: var(--accent-purple); }
+        .pki-int  { border-color: var(--accent-blue);   background: rgba(79,140,255,0.05); }
+        .pki-int  .pki-name { color: var(--accent-blue); }
+        .pki-leaf { border-color: var(--accent-green);  background: rgba(34,197,94,0.05); }
+        .pki-leaf .pki-name { color: var(--accent-green); }
+        .pki-arrow {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        /* === Riepilogo cards === */
+        .riepilogo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+        .riepilogo-card { margin-bottom: 0; }
+        .riepilogo-blue       { border-left: 4px solid var(--accent-blue); }
+        .riepilogo-blue h4    { color: var(--accent-blue); }
+        .riepilogo-green      { border-left: 4px solid var(--accent-green); }
+        .riepilogo-green h4   { color: var(--accent-green); }
+        .riepilogo-orange     { border-left: 4px solid var(--accent-orange); }
+        .riepilogo-orange h4  { color: var(--accent-orange); }
+        .riepilogo-pink       { border-left: 4px solid var(--accent-pink); }
+        .riepilogo-pink h4    { color: var(--accent-pink); }
+        .riepilogo-cyan       { border-left: 4px solid var(--accent-cyan); }
+        .riepilogo-cyan h4    { color: var(--accent-cyan); }
+        .riepilogo-cyan-light { border-left: 4px solid var(--accent-cyan); }
+        .riepilogo-cyan-light h4 { color: var(--accent-cyan); }
+        .riepilogo-purple     { border-left: 4px solid var(--accent-purple); }
+        .riepilogo-purple h4  { color: var(--accent-purple); }
+
+        /* === Scroll progress bar === */
+        .scroll-progress {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -1px;
+            height: 2px;
+            background: var(--gradient-1);
+            width: 0%;
+            transition: width 0.1s ease;
+        }
+
+        /* === Nav home + hamburger === */
+        .nav-home { color: var(--accent-blue) !important; font-weight: 600; }
+        .nav-toggle {
+            display: none;
+            background: none;
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            width: 42px;
+            height: 42px;
+            cursor: pointer;
+            padding: 0;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 4px;
+        }
+        .nav-toggle span {
+            display: block;
+            width: 18px;
+            height: 2px;
+            background: var(--text-primary);
+            border-radius: 2px;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+        .nav-toggle.open span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+        .nav-toggle.open span:nth-child(2) { opacity: 0; }
+        .nav-toggle.open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+
+        /* === Responsive SVG diagrams === */
+        .diagram-container svg { width: 100%; max-width: 100%; height: auto; }
+
+        /* === Focus visible accessibility === */
+        a:focus-visible,
+        button:focus-visible,
+        input:focus-visible,
+        textarea:focus-visible {
+            outline: 2px solid var(--accent-blue);
+            outline-offset: 2px;
+            border-radius: 6px;
+        }
+
+        /* === Mobile nav === */
+        @media (max-width: 900px) {
+            .nav-toggle { display: flex; }
+            .nav-links {
+                position: absolute;
+                top: 100%;
+                right: 1rem;
+                flex-direction: column;
+                gap: 4px;
+                background: rgba(10,10,15,0.97);
+                backdrop-filter: blur(20px);
+                border: 1px solid var(--border-color);
+                border-radius: 16px;
+                padding: 0.8rem;
+                min-width: 200px;
+                max-height: calc(100vh - 90px);
+                overflow-y: auto;
+                box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+                opacity: 0;
+                pointer-events: none;
+                transform: translateY(-10px);
+                transition: opacity 0.25s ease, transform 0.25s ease;
+            }
+            .nav-links.open {
+                opacity: 1;
+                pointer-events: auto;
+                transform: translateY(0);
+                display: flex;
+            }
+        }
+
+        /* === Reduced motion === */
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+            .animate-on-scroll {
+                opacity: 1;
+                transform: none;
+            }
+        }
+
         /* Print styles */
         @media print {
-            nav, .scroll-top, .bg-grid { display: none; }
+            nav, .scroll-top, .bg-grid, .scroll-progress, .nav-toggle { display: none; }
             body { background: white; color: black; }
-            .card, .comparison-card, .diagram-container { 
-                border: 1px solid #ddd; 
+            .card, .comparison-card, .diagram-container {
+                border: 1px solid #ddd;
                 background: white;
                 break-inside: avoid;
             }
+            .animate-on-scroll { opacity: 1; transform: none; }
         }
     </style>
 </head>
@@ -1167,16 +1395,23 @@
                 </svg>
                 CryptoGuide
             </div>
-            <ul class="nav-links">
-                <li><a href="../index.html" style="color:var(--accent-blue);font-weight:600">← Home</a></li>
+            <button class="nav-toggle" id="navToggle" aria-label="Apri menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../index.html" class="nav-home">← Home</a></li>
                 <li><a href="#intro">Intro</a></li>
+                <li><a href="#domanda1">D1</a></li>
                 <li><a href="#domanda2">D2</a></li>
                 <li><a href="#domanda3">D3</a></li>
                 <li><a href="#domanda4">D4</a></li>
                 <li><a href="#domanda5">D5</a></li>
                 <li><a href="#domanda6">D6</a></li>
+                <li><a href="#approfondimenti">+</a></li>
+                <li><a href="#riepilogo">Riepilogo</a></li>
             </ul>
         </div>
+        <div class="scroll-progress" id="scrollProgress"></div>
     </nav>
 
     <!-- Hero -->
@@ -1184,25 +1419,127 @@
         <div class="hero-content">
             <div class="hero-badge">📚 Guida Completa alla Crittografia</div>
             <h1>Principi Fondamentali di Crittografia</h1>
-            <p>Una guida interattiva e completa che copre tutti i concetti necessari per comprendere la crittografia moderna, da simmetrica a asimmetrica, dagli hash a Diffie-Hellman e alle firme digitali.</p>
+            <p>Una guida interattiva e completa che copre tutti i concetti necessari per comprendere la crittografia moderna: dai principi CIA alla crittografia simmetrica e asimmetrica, dagli hash a Diffie-Hellman, dalle firme digitali alla PKI.</p>
             <div class="hero-grid">
                 <div class="hero-stat">
-                    <div class="number">5</div>
-                    <div class="label">Argomenti chiave</div>
+                    <div class="number">6</div>
+                    <div class="label">Domande chiave</div>
                 </div>
                 <div class="hero-stat">
-                    <div class="number">∞</div>
-                    <div class="label">Esempi pratici</div>
+                    <div class="number">3+</div>
+                    <div class="label">Approfondimenti</div>
                 </div>
                 <div class="hero-stat">
                     <div class="number">3</div>
                     <div class="label">Tipi di crittografia</div>
                 </div>
                 <div class="hero-stat">
-                    <div class="number">100%</div>
-                    <div class="label">Interattivo</div>
+                    <div class="number">SHA-256</div>
+                    <div class="label">Demo interattiva</div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Domanda 1: Cos'è la crittografia + obiettivi (CIA) -->
+    <section class="section" id="domanda1">
+        <div class="section-header animate-on-scroll">
+            <div class="section-number grad-cyan">D1</div>
+            <h2 class="grad-text-cyan">Cos'è la Crittografia e a cosa serve<a href="#domanda1" class="anchor-link" aria-label="Link a questa sezione">#</a></h2>
+            <p>Definizione di crittografia e i suoi obiettivi fondamentali (riservatezza, integrità, autenticità, non ripudio).</p>
+        </div>
+
+        <div class="card animate-on-scroll">
+            <h3>
+                <span class="icon" style="background: rgba(6,182,212,0.15); color: var(--accent-cyan);">📖</span>
+                Definizione
+            </h3>
+            <p>
+                La <strong>crittografia</strong> (dal greco <em>kryptós</em>, "nascosto", e <em>gráphein</em>, "scrivere") è l'insieme di tecniche matematiche che permettono di proteggere un'informazione trasformandola in una forma <strong>illeggibile</strong> a chiunque non possieda una chiave segreta. Storicamente serviva a nascondere messaggi (cifrario di Cesare, Vigenère, Enigma); oggi è il fondamento della sicurezza digitale: HTTPS, messaggistica, banking, firma elettronica, blockchain.
+            </p>
+            <div class="formula">
+                <strong>cifratura:</strong> E<sub>K</sub>(M) = C   &nbsp;&nbsp;|&nbsp;&nbsp;   <strong>decifratura:</strong> D<sub>K</sub>(C) = M
+            </div>
+            <p style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-muted);">
+                dove <em>M</em> è il messaggio in chiaro (plaintext), <em>C</em> il testo cifrato (ciphertext), <em>K</em> la chiave, <em>E</em> ed <em>D</em> le funzioni di cifratura e decifratura.
+            </p>
+        </div>
+
+        <!-- Principi CIA -->
+        <div class="animate-on-scroll" style="margin-top: 3rem;">
+            <h3 style="margin-bottom: 1.5rem; text-align: center;">I 4 Obiettivi Fondamentali — Modello CIA + N</h3>
+            <div class="cia-grid">
+                <div class="card cia-card cia-c">
+                    <div class="cia-letter">C</div>
+                    <h4>Confidenzialità</h4>
+                    <p>Solo i destinatari autorizzati possono leggere il messaggio. Ottenuta tramite <strong>cifratura</strong> (simmetrica o asimmetrica).</p>
+                    <div class="badge badge-blue" style="margin-top: 0.5rem;">AES, RSA, ChaCha20</div>
+                </div>
+                <div class="card cia-card cia-i">
+                    <div class="cia-letter">I</div>
+                    <h4>Integrità</h4>
+                    <p>Il messaggio non è stato alterato durante la trasmissione. Ottenuta tramite <strong>funzioni hash</strong> e <strong>MAC/HMAC</strong>.</p>
+                    <div class="badge badge-orange" style="margin-top: 0.5rem;">SHA-256, HMAC</div>
+                </div>
+                <div class="card cia-card cia-a">
+                    <div class="cia-letter">A</div>
+                    <h4>Autenticità</h4>
+                    <p>Il mittente è davvero chi dichiara di essere. Ottenuta tramite <strong>firme digitali</strong> e <strong>certificati X.509</strong>.</p>
+                    <div class="badge badge-green" style="margin-top: 0.5rem;">RSA-Sig, ECDSA, PKI</div>
+                </div>
+                <div class="card cia-card cia-n">
+                    <div class="cia-letter">N</div>
+                    <h4>Non ripudio</h4>
+                    <p>Il mittente non può negare di aver inviato il messaggio. Conseguenza diretta della <strong>firma digitale</strong>: solo lui possiede la chiave privata.</p>
+                    <div class="badge badge-purple" style="margin-top: 0.5rem;">Firma elettronica qualificata</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Minacce -->
+        <div class="animate-on-scroll" style="margin-top: 3rem;">
+            <h3 style="margin-bottom: 1.5rem;">Le minacce a cui risponde</h3>
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Minaccia</th>
+                        <th>Cosa fa l'attaccante</th>
+                        <th>Contromisura crittografica</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Eavesdropping</strong></td>
+                        <td>Intercetta passivamente il traffico</td>
+                        <td>Cifratura del canale (TLS, VPN)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tampering</strong></td>
+                        <td>Modifica i dati in transito</td>
+                        <td>Hash + MAC/HMAC, firme digitali</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Spoofing</strong></td>
+                        <td>Si finge un altro soggetto</td>
+                        <td>Autenticazione con certificati e firme</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Replay</strong></td>
+                        <td>Ritrasmette un messaggio valido già inviato</td>
+                        <td>Nonce, timestamp, numeri di sequenza</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Man-in-the-Middle</strong></td>
+                        <td>Si inserisce tra mittente e destinatario</td>
+                        <td>Autenticazione mutua + PKI</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="key-concept animate-on-scroll" style="margin-top: 2rem;">
+            <h4>Crittografia ≠ Sicurezza informatica</h4>
+            <p>La crittografia è <strong>uno strumento</strong>, non la soluzione totale. Una chiave debole, una libreria non aggiornata, un'implementazione sbagliata (es. ECB invece di GCM, IV riusati) rendono inutile anche l'algoritmo migliore. <em>"Don't roll your own crypto"</em> — usa sempre librerie standard auditate.</p>
         </div>
     </section>
 
@@ -1210,7 +1547,7 @@
     <section class="section" id="domanda2">
         <div class="section-header animate-on-scroll">
             <div class="section-number" style="background: var(--gradient-1); color: white;">D2</div>
-            <h2 style="background: var(--gradient-1); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Crittografia Simmetrica vs Asimmetrica</h2>
+            <h2 style="background: var(--gradient-1); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Crittografia Simmetrica vs Asimmetrica<a href="#domanda2" class="anchor-link" aria-label="Link a questa sezione">#</a></h2>
             <p>Descrivi la differenza principale tra crittografia simmetrica e asimmetrica e fai un esempio per ciascuna tipologia.</p>
         </div>
 
@@ -1413,7 +1750,7 @@
     <section class="section" id="domanda3">
         <div class="section-header animate-on-scroll">
             <div class="section-number" style="background: var(--gradient-2); color: white;">D3</div>
-            <h2 style="background: var(--gradient-2); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Algoritmo RSA</h2>
+            <h2 style="background: var(--gradient-2); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Algoritmo RSA<a href="#domanda3" class="anchor-link" aria-label="Link a questa sezione">#</a></h2>
             <p>Elenca i passaggi fondamentali dell'algoritmo RSA, spiegando il ruolo della chiave pubblica e della chiave privata.</p>
         </div>
 
@@ -1431,7 +1768,7 @@
         <div class="animate-on-scroll" style="margin: 2rem 0;">
             <h3 style="text-align: center; margin-bottom: 1.5rem;">Schema Generale di RSA</h3>
             <div class="diagram-container">
-                <svg viewBox="0 0 900 400" width="900" height="400">
+                <svg viewBox="0 0 900 400" preserveAspectRatio="xMidYMid meet">
                     <!-- Background grid -->
                     <defs>
                         <linearGradient id="rsaGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -1453,6 +1790,9 @@
                                 <feMergeNode in="SourceGraphic"/>
                             </feMerge>
                         </filter>
+                        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                            <polygon points="0 0, 10 3.5, 0 7" fill="#64748b"/>
+                        </marker>
                     </defs>
 
                     <!-- Phase 1: Key Generation -->
@@ -1525,19 +1865,13 @@
 
                         <text x="125" y="265" text-anchor="middle" fill="#94a3b8" font-size="11" font-weight="600">Proprietà fondamentale</text>
                         <rect x="15" y="275" width="220" height="50" rx="8" fill="rgba(34,197,94,0.1)" stroke="#22c55e" stroke-width="1"/>
-                        <text x="125" y="295" text-anchor="middle" fill="#22c55e" font-family="JetBrains Mono" font-size="11">(Mᵉ) ≡ M mod n</text>
-                        <text x="125" y="315" text-anchor="middle" fill="#94a3b8" font-size="10">ed ≡ 1 (mod φ(n))</text>
+                        <text x="125" y="295" text-anchor="middle" fill="#22c55e" font-family="JetBrains Mono" font-size="11">(Mᵉ)ᵈ ≡ M (mod n)</text>
+                        <text x="125" y="315" text-anchor="middle" fill="#94a3b8" font-size="10">se ed ≡ 1 (mod φ(n))</text>
                     </g>
 
                     <!-- Connecting arrows -->
                     <path d="M300 200 L325 200" stroke="#64748b" stroke-width="2" marker-end="url(#arrowhead)"/>
                     <path d="M580 200 L605 200" stroke="#64748b" stroke-width="2" marker-end="url(#arrowhead)"/>
-
-                    <defs>
-                        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-                            <polygon points="0 0, 10 3.5, 0 7" fill="#64748b"/>
-                        </marker>
-                    </defs>
                 </svg>
             </div>
         </div>
@@ -1621,7 +1955,10 @@
             </div>
 
             <div class="formula" style="margin-top: 2rem;">
-                Proprietà matematica fondamentale: <strong>(Mᵉ) mod n = Mᵈ mod n = M mod n</strong>
+                Proprietà matematica fondamentale: <strong>(Mᵉ)ᵈ ≡ M<sup>e·d</sup> ≡ M (mod n)</strong>
+                <div style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem;">
+                    perché <strong>e · d ≡ 1 (mod φ(n))</strong> → cifrare con e e poi decifrare con d riporta al messaggio originale.
+                </div>
             </div>
         </div>
 
@@ -1662,7 +1999,7 @@
     <section class="section" id="domanda4">
         <div class="section-header animate-on-scroll">
             <div class="section-number" style="background: var(--gradient-3); color: white;">D4</div>
-            <h2 style="background: var(--gradient-3); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Funzioni di Hash</h2>
+            <h2 style="background: var(--gradient-3); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Funzioni di Hash<a href="#domanda4" class="anchor-link" aria-label="Link a questa sezione">#</a></h2>
             <p>Spiega cos'è una funzione di hash e perché è importante nella sicurezza informatica.</p>
         </div>
 
@@ -1830,7 +2167,7 @@
     <section class="section" id="domanda5">
         <div class="section-header animate-on-scroll">
             <div class="section-number" style="background: var(--gradient-4); color: white;">D5</div>
-            <h2 style="background: var(--gradient-4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Scambio di Chiavi Diffie-Hellman</h2>
+            <h2 style="background: var(--gradient-4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Scambio di Chiavi Diffie-Hellman<a href="#domanda5" class="anchor-link" aria-label="Link a questa sezione">#</a></h2>
             <p>Descrivi come funziona a livello base lo scambio di chiavi Diffie-Hellman e quale problema risolve.</p>
         </div>
 
@@ -1851,7 +2188,7 @@
         <div class="animate-on-scroll" style="margin-top: 3rem;">
             <h3 style="text-align: center; margin-bottom: 1.5rem;">Schema del Protocollo Diffie-Hellman</h3>
             <div class="diagram-container">
-                <svg viewBox="0 0 900 500" width="900" height="500">
+                <svg viewBox="0 0 900 500" preserveAspectRatio="xMidYMid meet">
                     <defs>
                         <linearGradient id="dhGradAlice" x1="0%" y1="0%" x2="100%" y2="100%">
                             <stop offset="0%" stop-color="#4f8cff"/>
@@ -2050,7 +2387,7 @@
     <section class="section" id="domanda6">
         <div class="section-header animate-on-scroll">
             <div class="section-number" style="background: var(--gradient-5); color: white;">D6</div>
-            <h2 style="background: var(--gradient-5); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Firma Digitale</h2>
+            <h2 style="background: var(--gradient-5); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Firma Digitale<a href="#domanda6" class="anchor-link" aria-label="Link a questa sezione">#</a></h2>
             <p>Descrivi il concetto di firma digitale e come viene utilizzata per garantire l'autenticità di un messaggio.</p>
         </div>
 
@@ -2085,7 +2422,7 @@
         <div class="animate-on-scroll" style="margin-top: 3rem;">
             <h3 style="text-align: center; margin-bottom: 1.5rem;">Schema della Firma Digitale</h3>
             <div class="diagram-container">
-                <svg viewBox="0 0 900 480" width="900" height="480">
+                <svg viewBox="0 0 900 480" preserveAspectRatio="xMidYMid meet">
                     <defs>
                         <linearGradient id="sigGradAlice" x1="0%" y1="0%" x2="100%" y2="100%">
                             <stop offset="0%" stop-color="#4f8cff"/>
@@ -2320,25 +2657,222 @@
         </div>
     </section>
 
+    <!-- Approfondimenti: salt, HMAC, PKI -->
+    <section class="section" id="approfondimenti">
+        <div class="section-header animate-on-scroll">
+            <div class="section-number grad-purple">+</div>
+            <h2 class="grad-text-purple">Approfondimenti pratici<a href="#approfondimenti" class="anchor-link" aria-label="Link a questa sezione">#</a></h2>
+            <p>Concetti che tornano spesso all'orale: hash delle password, HMAC, infrastruttura a chiave pubblica (PKI).</p>
+        </div>
+
+        <!-- Salt + Rainbow -->
+        <div class="card animate-on-scroll">
+            <h3>
+                <span class="icon" style="background: rgba(168,85,247,0.15); color: var(--accent-purple);">🧂</span>
+                Salt e hash delle password — perché non basta SHA-256
+            </h3>
+            <p>
+                Salvare in database <code>SHA-256(password)</code> non è sufficiente. Un attaccante che ruba il database può confrontare gli hash con tabelle precalcolate (<strong>rainbow tables</strong>): per password comuni l'hash è già noto. Inoltre, due utenti con la stessa password avrebbero lo stesso hash.
+            </p>
+            <p style="margin-top: 0.8rem;">
+                La soluzione è il <strong>salt</strong>: una stringa casuale univoca per ogni utente, concatenata alla password prima dell'hash.
+            </p>
+            <div class="formula">
+                stored = <strong>H(password || salt)</strong>, <em>salt</em>   (entrambi salvati)
+            </div>
+            <div class="comparison-grid" style="margin-top: 1.5rem;">
+                <div class="card cmp-bad">
+                    <h4>❌ Senza salt</h4>
+                    <ul>
+                        <li>Hash uguali per password uguali → visibile chi usa "123456"</li>
+                        <li>Rainbow table precalcolata rompe tutto in secondi</li>
+                        <li>Un attacco rompe N utenti in parallelo</li>
+                    </ul>
+                </div>
+                <div class="card cmp-good">
+                    <h4>✅ Con salt + KDF</h4>
+                    <ul>
+                        <li>Hash diversi per password identiche</li>
+                        <li>Rainbow table inutilizzabili</li>
+                        <li>Ogni utente richiede un attacco bruteforce dedicato</li>
+                        <li>Uso reale: <strong>bcrypt, Argon2, scrypt, PBKDF2</strong> (lenti apposta)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="warning-box" style="margin-top: 1rem;">
+                <h4>SHA-256 non basta nemmeno con salt</h4>
+                <p>SHA-256 è troppo veloce: una GPU calcola miliardi di hash al secondo. Per le password si usano <strong>Key Derivation Functions</strong> apposite (bcrypt, Argon2id), pensate per essere lente e parametrizzabili in costo di memoria/CPU.</p>
+            </div>
+        </div>
+
+        <!-- HMAC -->
+        <div class="card animate-on-scroll" style="margin-top: 2rem;">
+            <h3>
+                <span class="icon" style="background: rgba(6,182,212,0.15); color: var(--accent-cyan);">🔗</span>
+                HMAC — Hash autenticato
+            </h3>
+            <p>
+                Un hash semplice garantisce <strong>integrità</strong> contro errori di trasmissione, ma non contro un attaccante: chi può modificare il messaggio può ricalcolare l'hash. <strong>HMAC</strong> (Hash-based Message Authentication Code) combina hash + chiave segreta condivisa.
+            </p>
+            <div class="formula">
+                HMAC(K, M) = H( (K ⊕ opad) || H( (K ⊕ ipad) || M ) )
+            </div>
+            <p style="margin-top: 0.8rem;">
+                Solo chi conosce <em>K</em> può produrre o verificare l'HMAC. Si usa per cookie firmati, API token, JWT (HS256), TLS record layer.
+            </p>
+            <div class="key-concept" style="margin-top: 1rem;">
+                <h4>Hash vs HMAC vs Firma digitale</h4>
+                <p>
+                    <strong>Hash</strong>: integrità contro errori. Nessuna chiave.<br>
+                    <strong>HMAC</strong>: integrità + autenticità tra due parti che condividono una chiave segreta.<br>
+                    <strong>Firma digitale</strong>: integrità + autenticità + non ripudio, con coppia di chiavi asimmetriche.
+                </p>
+            </div>
+        </div>
+
+        <!-- PKI / CA -->
+        <div class="card animate-on-scroll" style="margin-top: 2rem;">
+            <h3>
+                <span class="icon" style="background: rgba(34,197,94,0.15); color: var(--accent-green);">🏛️</span>
+                PKI e Certificati — Di chi è davvero quella chiave pubblica?
+            </h3>
+            <p>
+                La crittografia asimmetrica risolve lo scambio di chiavi, ma resta un problema: <strong>come faccio a fidarmi che la chiave pubblica X appartenga davvero a quel server?</strong> Un Man-in-the-Middle può sostituire la propria chiave.
+            </p>
+            <p style="margin-top: 0.8rem;">
+                La <strong>PKI</strong> (Public Key Infrastructure) risolve questo con i <strong>certificati digitali X.509</strong> emessi da <strong>Autorità di Certificazione (CA)</strong> di cui il sistema operativo si fida a priori.
+            </p>
+
+            <div class="steps-container" style="margin-top: 1.5rem;">
+                <div class="step">
+                    <div class="step-number grad-bg-blue">1</div>
+                    <div class="step-content">
+                        <h4>Il server genera coppia di chiavi e CSR</h4>
+                        <p>Crea una Certificate Signing Request contenente la propria chiave pubblica e i dati identificativi (dominio, organizzazione).</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number grad-bg-blue">2</div>
+                    <div class="step-content">
+                        <h4>La CA verifica e firma</h4>
+                        <p>L'Autorità di Certificazione (es. Let's Encrypt, DigiCert) verifica il controllo del dominio e <strong>firma con la propria chiave privata</strong> un certificato che lega la chiave pubblica all'identità.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number grad-bg-green">3</div>
+                    <div class="step-content">
+                        <h4>Il browser verifica la catena</h4>
+                        <p>Quando ti colleghi al sito, il server presenta il certificato. Il browser verifica la firma della CA usando la chiave pubblica della CA (già installata nel <strong>trust store</strong> del sistema). Se valida → lucchetto verde.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number grad-bg-purple">4</div>
+                    <div class="step-content">
+                        <h4>Catena di fiducia (chain of trust)</h4>
+                        <p>Spesso ci sono CA intermedie: <em>Root CA → Intermediate CA → Certificato server</em>. Il browser segue la catena fino a una Root CA di cui si fida.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="diagram-container" style="margin-top: 1.5rem;">
+                <div class="pki-chain">
+                    <div class="pki-node pki-root">
+                        <div class="pki-label">Root CA</div>
+                        <div class="pki-name">DigiCert Global Root</div>
+                        <div class="pki-meta">🔐 chiave privata super-segreta (HSM)</div>
+                    </div>
+                    <div class="pki-arrow">firma ↓</div>
+                    <div class="pki-node pki-int">
+                        <div class="pki-label">Intermediate CA</div>
+                        <div class="pki-name">DigiCert TLS RSA SHA-256</div>
+                        <div class="pki-meta">firma quotidianamente migliaia di certificati</div>
+                    </div>
+                    <div class="pki-arrow">firma ↓</div>
+                    <div class="pki-node pki-leaf">
+                        <div class="pki-label">Certificato server</div>
+                        <div class="pki-name">CN = www.esempio.it</div>
+                        <div class="pki-meta">scade ogni 90-365 giorni</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="warning-box" style="margin-top: 1.5rem;">
+                <h4>Se la Root CA viene compromessa…</h4>
+                <p>…tutta la catena salta. Per questo le chiavi private delle Root CA sono conservate in <strong>HSM</strong> (Hardware Security Module) offline e usate solo per firmare le CA intermedie, mai i certificati end-user direttamente.</p>
+            </div>
+        </div>
+
+        <!-- HTTPS: tutti i mattoni insieme -->
+        <div class="card animate-on-scroll" style="margin-top: 2rem;">
+            <h3>
+                <span class="icon" style="background: rgba(79,140,255,0.15); color: var(--accent-blue);">🌐</span>
+                HTTPS — tutti i mattoni insieme
+            </h3>
+            <p>HTTPS è una combinazione di tutti i concetti visti finora. Quando apri un sito sicuro:</p>
+            <div class="steps-container" style="margin-top: 1rem;">
+                <div class="step">
+                    <div class="step-number grad-bg-blue">1</div>
+                    <div class="step-content">
+                        <h4>Handshake TLS</h4>
+                        <p>Client e server scambiano versioni TLS supportate e cipher suite. Il server invia il suo <strong>certificato X.509</strong>.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number grad-bg-green">2</div>
+                    <div class="step-content">
+                        <h4>Autenticazione del server (PKI)</h4>
+                        <p>Il client verifica il certificato con la <strong>chiave pubblica della CA</strong>. Se la firma è valida e il nome corrisponde al dominio, il server è autentico.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number grad-bg-orange">3</div>
+                    <div class="step-content">
+                        <h4>Scambio chiave di sessione (DH / ECDHE)</h4>
+                        <p>Client e server eseguono un <strong>Diffie-Hellman effimero</strong> (Perfect Forward Secrecy) per stabilire una chiave simmetrica condivisa.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number grad-bg-purple">4</div>
+                    <div class="step-content">
+                        <h4>Comunicazione cifrata simmetrica</h4>
+                        <p>Tutto il traffico HTTP viene cifrato con <strong>AES-GCM</strong> (o ChaCha20-Poly1305) usando la chiave di sessione. AES-GCM fornisce cifratura + autenticazione integrata (AEAD).</p>
+                    </div>
+                </div>
+            </div>
+            <div class="success-box" style="margin-top: 1rem;">
+                <h4>Concetti in azione</h4>
+                <p>HTTPS usa <strong>asimmetrica</strong> (RSA/ECDSA per firmare certificati), <strong>DH</strong> (per la sessione), <strong>simmetrica</strong> (AES per il traffico), <strong>hash</strong> (SHA-256 per integrità in MAC e firme). Capire HTTPS = capire tutta la guida.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Riepilogo -->
     <section class="section" id="riepilogo">
         <div class="section-header animate-on-scroll">
-            <h2 style="font-size: 2.5rem;">📋 Riepilogo Finale</h2>
+            <h2 style="font-size: 2.5rem;">📋 Riepilogo Finale<a href="#riepilogo" class="anchor-link" aria-label="Link a questa sezione">#</a></h2>
             <p>Tutti i concetti chiave in una panoramica sintetica</p>
         </div>
 
         <div class="animate-on-scroll">
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
-                <div class="card" style="border-left: 4px solid var(--accent-blue);">
-                    <h4 style="color: var(--accent-blue);">🔑 Simmetrica vs Asimmetrica</h4>
+            <div class="riepilogo-grid">
+                <div class="card riepilogo-card riepilogo-cyan">
+                    <h4>📖 Crittografia e principi CIA</h4>
+                    <ul>
+                        <li>Confidenzialità, Integrità, Autenticità, Non ripudio</li>
+                        <li>Minacce: eavesdropping, tampering, spoofing, MITM, replay</li>
+                        <li>Don't roll your own crypto — usa librerie standard</li>
+                    </ul>
+                </div>
+                <div class="card riepilogo-card riepilogo-blue">
+                    <h4>🔑 Simmetrica vs Asimmetrica</h4>
                     <ul>
                         <li><strong>Simmetrica:</strong> 1 chiave segreta, veloce, problema di scambio</li>
                         <li><strong>Asimmetrica:</strong> 2 chiavi (pubblica+privata), lenta, risolve lo scambio</li>
                         <li><strong>Ibrida:</strong> Asimmetrica per scambiare la chiave, poi simmetrica</li>
                     </ul>
                 </div>
-                <div class="card" style="border-left: 4px solid var(--accent-green);">
-                    <h4 style="color: var(--accent-green);">🔐 RSA</h4>
+                <div class="card riepilogo-card riepilogo-green">
+                    <h4>🔐 RSA</h4>
                     <ul>
                         <li>Basato sulla difficoltà di fattorizzare n = p×q</li>
                         <li>Chiave pubblica (e,n) per cifrare, privata (d,n) per decifrare</li>
@@ -2346,8 +2880,8 @@
                         <li>ed ≡ 1 (mod φ(n))</li>
                     </ul>
                 </div>
-                <div class="card" style="border-left: 4px solid var(--accent-orange);">
-                    <h4 style="color: var(--accent-orange);">🔏 Hash</h4>
+                <div class="card riepilogo-card riepilogo-orange">
+                    <h4>🔏 Hash</h4>
                     <ul>
                         <li>Da lunghezza arbitraria → lunghezza fissa</li>
                         <li>Unidirezionale, deterministico, effetto valanga</li>
@@ -2355,8 +2889,8 @@
                         <li>Usato per: integrità, password, firme, blockchain</li>
                     </ul>
                 </div>
-                <div class="card" style="border-left: 4px solid var(--accent-pink);">
-                    <h4 style="color: var(--accent-pink);">🤝 Diffie-Hellman</h4>
+                <div class="card riepilogo-card riepilogo-pink">
+                    <h4>🤝 Diffie-Hellman</h4>
                     <ul>
                         <li>Risolve lo scambio di chiavi su canale insicuro</li>
                         <li>A = gᵃ mod p, B = gᵇ mod p</li>
@@ -2364,13 +2898,22 @@
                         <li>Sicuro grazie al problema del logaritmo discreto</li>
                     </ul>
                 </div>
-                <div class="card" style="border-left: 4px solid var(--accent-cyan);">
-                    <h4 style="color: var(--accent-cyan);">✍️ Firma Digitale</h4>
+                <div class="card riepilogo-card riepilogo-cyan-light">
+                    <h4>✍️ Firma Digitale</h4>
                     <ul>
                         <li>Hash del messaggio cifrato con chiave privata</li>
                         <li>Garantisce: autenticità, integrità, non ripudio</li>
                         <li>Si verifica decifrando con la chiave pubblica</li>
                         <li>Si firma l'hash per efficienza</li>
+                    </ul>
+                </div>
+                <div class="card riepilogo-card riepilogo-purple">
+                    <h4>🧂 Salt + KDF, HMAC, PKI</h4>
+                    <ul>
+                        <li>Password: hash + salt univoco con bcrypt / Argon2</li>
+                        <li>HMAC = hash + chiave segreta condivisa</li>
+                        <li>PKI: certificati X.509 firmati da CA fidate</li>
+                        <li>HTTPS unisce tutti i mattoni</li>
                     </ul>
                 </div>
             </div>
@@ -2386,93 +2929,107 @@
     <button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>
 
     <script>
-        // Scroll animations
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, { threshold: 0.1 });
+        // === Scroll animations ===
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (prefersReducedMotion) {
+            document.querySelectorAll('.animate-on-scroll').forEach(el => el.classList.add('visible'));
+        } else {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) entry.target.classList.add('visible');
+                });
+            }, { threshold: 0.1 });
+            document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+        }
 
-        document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+        // === Navbar + scroll progress + active link ===
+        const nav = document.getElementById('navbar');
+        const scrollTopBtn = document.getElementById('scrollTop');
+        const progressBar = document.getElementById('scrollProgress');
+        const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+        const sections = document.querySelectorAll('.section[id], .hero[id]');
 
-        // Navbar scroll effect
-        window.addEventListener('scroll', () => {
-            const nav = document.getElementById('navbar');
-            const scrollTop = document.getElementById('scrollTop');
-            
-            if (window.scrollY > 50) {
-                nav.classList.add('scrolled');
-            } else {
-                nav.classList.remove('scrolled');
-            }
+        let ticking = false;
+        function onScroll() {
+            const y = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const progress = docHeight > 0 ? (y / docHeight) * 100 : 0;
 
-            if (window.scrollY > 500) {
-                scrollTop.classList.add('visible');
-            } else {
-                scrollTop.classList.remove('visible');
-            }
+            nav.classList.toggle('scrolled', y > 50);
+            scrollTopBtn.classList.toggle('visible', y > 500);
+            if (progressBar) progressBar.style.width = progress + '%';
 
-            // Active nav link
-            const sections = document.querySelectorAll('.section, .hero');
-            const navLinks = document.querySelectorAll('.nav-links a');
-            
+            // Active link: pick the section whose midpoint is closest to viewport top + 100
+            const viewportRef = y + 120;
             let current = '';
             sections.forEach(section => {
-                const sectionTop = section.offsetTop - 100;
-                if (window.scrollY >= sectionTop) {
-                    current = section.getAttribute('id');
-                }
+                if (section.offsetTop <= viewportRef) current = section.id;
             });
-
             navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === '#' + current) {
-                    link.classList.add('active');
+                link.classList.toggle('active', link.getAttribute('href') === '#' + current);
+            });
+            ticking = false;
+        }
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                window.requestAnimationFrame(onScroll);
+                ticking = true;
+            }
+        }, { passive: true });
+        onScroll();
+
+        // === Mobile hamburger ===
+        const navToggle = document.getElementById('navToggle');
+        const navLinksList = document.getElementById('navLinks');
+        navToggle.addEventListener('click', () => {
+            const isOpen = navLinksList.classList.toggle('open');
+            navToggle.classList.toggle('open', isOpen);
+            navToggle.setAttribute('aria-expanded', isOpen);
+        });
+        // Close menu on link click (mobile)
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (navLinksList.classList.contains('open')) {
+                    navLinksList.classList.remove('open');
+                    navToggle.classList.remove('open');
+                    navToggle.setAttribute('aria-expanded', 'false');
                 }
             });
         });
 
-        // Hash calculation demo
+        // === Smooth scroll (skips when reduced motion is requested by CSS) ===
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                const href = link.getAttribute('href');
+                if (!href || href === '#') return;
+                const target = document.querySelector(href);
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: prefersReducedMotion ? 'auto' : 'smooth', block: 'start' });
+                    history.replaceState(null, '', href);
+                }
+            });
+        });
+
+        // === SHA-256 demo ===
+        async function sha256Hex(text) {
+            const data = new TextEncoder().encode(text);
+            const buf = await crypto.subtle.digest('SHA-256', data);
+            return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, '0')).join('');
+        }
         async function calculateHash() {
             const input = document.getElementById('hashInput').value;
-            const encoder = new TextEncoder();
-            const data = encoder.encode(input);
-            const hashBuffer = await crypto.subtle.digest('SHA-256', data);
-            const hashArray = Array.from(new Uint8Array(hashBuffer));
-            const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
-            document.getElementById('hashOutput').textContent = hashHex;
+            document.getElementById('hashOutput').textContent = await sha256Hex(input);
         }
+        // Live update on typing
+        const hashInputEl = document.getElementById('hashInput');
+        if (hashInputEl) hashInputEl.addEventListener('input', calculateHash);
 
-        // Initialize hash demo values
-        async function initHashDemo() {
-            const encoder = new TextEncoder();
-            
-            const data1 = encoder.encode('Ciao mondo!');
-            const hashBuffer1 = await crypto.subtle.digest('SHA-256', data1);
-            const hashArray1 = Array.from(new Uint8Array(hashBuffer1));
-            document.getElementById('hash1').textContent = hashArray1.map(b => b.toString(16).padStart(2, '0')).join('');
-            
-            const data2 = encoder.encode('Ciao mondo.');
-            const hashBuffer2 = await crypto.subtle.digest('SHA-256', data2);
-            const hashArray2 = Array.from(new Uint8Array(hashBuffer2));
-            document.getElementById('hash2').textContent = hashArray2.map(b => b.toString(16).padStart(2, '0')).join('');
-        }
-
-        initHashDemo();
-        calculateHash();
-
-        // Smooth scroll for nav links
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
-                const target = document.querySelector(link.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-            });
-        });
+        (async () => {
+            document.getElementById('hash1').textContent = await sha256Hex('Ciao mondo!');
+            document.getElementById('hash2').textContent = await sha256Hex('Ciao mondo.');
+            await calculateHash();
+        })();
     </script>
 </body>
 </html>
