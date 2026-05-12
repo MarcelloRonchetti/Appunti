@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Antenne PCB — TPSIT · 5F</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;600&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/tpsit-style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header-bg"></div>
+  <div class="header-inner" style="padding-bottom:1.5rem">
+    <div class="header-eyebrow">
+      <a class="eyebrow-tag" href="../index.html">← Home</a>
+      <a class="eyebrow-tag" href="../tpsit.html">← TPSIT</a>
+      <span class="eyebrow-tag">5F · 2025/26</span>
+      <div class="eyebrow-line"></div>
+      <span class="eyebrow-tag">Antenne PCB</span>
+    </div>
+  </div>
+</header>
+
+<main class="layout-shell">
+  <aside class="sidenav">
+    <a href="../tpsit.html" class="sn-back">← Indice materia</a>
+    <div class="sn-label">Macro-argomenti</div>
+    <a href="esp32.html" class="">
+      <span class="icn">🔧</span>
+      <span>ESP32</span>
+      <span class="num">01</span>
+    </a>
+    <a href="wifi.html" class="">
+      <span class="icn">📡</span>
+      <span>Wi-Fi 802.11</span>
+      <span class="num">02</span>
+    </a>
+    <a href="antenne.html" class="active">
+      <span class="icn">📐</span>
+      <span>Antenne PCB</span>
+      <span class="num">03</span>
+    </a>
+    <a href="bluetooth.html" class="">
+      <span class="icn">📶</span>
+      <span>Bluetooth Classic</span>
+      <span class="num">04</span>
+    </a>
+    <a href="ble.html" class="">
+      <span class="icn">⚡</span>
+      <span>BLE</span>
+      <span class="num">05</span>
+    </a>
+    <a href="lorawan.html" class="">
+      <span class="icn">🌐</span>
+      <span>LoRaWAN</span>
+      <span class="num">06</span>
+    </a>
+    <a href="nbiot.html" class="">
+      <span class="icn">📱</span>
+      <span>NB-IoT</span>
+      <span class="num">07</span>
+    </a>
+    <a href="5g.html" class="">
+      <span class="icn">🚀</span>
+      <span>5G</span>
+      <span class="num">08</span>
+    </a>
+    <a href="confronto.html" class="">
+      <span class="icn">⚖️</span>
+      <span>Confronto</span>
+      <span class="num">09</span>
+    </a>
+  </aside>
+
+  <div class="content-main">
+    <section class="section">
+      <div class="sec-head">
+    <div class="sec-num">03</div>
+    <div class="sec-body">
+      <h2>Antenne PCB</h2>
+      <p>Le antenne integrate su circuito stampato trasducono segnali elettrici in onde elettromagnetiche. Vantaggio: riduzione dimensioni e costi.</p>
+    </div>
+    <span class="sec-badge b-orange">RF · 2.4 GHz</span>
+  </div>
+
+  <div class="explain-box">
+    <h4>📡 Principi base delle antenne</h4>
+    <p>Un'antenna converte energia elettrica in onde elettromagnetiche (TX) o viceversa (RX). Per il Wi-Fi e Bluetooth a 2.4 GHz, la lunghezza d'onda è:</p>
+    <p><code>λ = c / f = 3×10⁸ / 2.4×10⁹ = 12.5 cm</code></p>
+    <p><strong>Dimensioni fisiche:</strong> La dimensione dell'antenna è tipicamente una frazione della lunghezza d'onda:</p>
+    <ul>
+      <li><strong>Dipolo λ/2:</strong> 6.25 cm a 2.4 GHz</li>
+      <li><strong>Monopolo λ/4:</strong> 3.12 cm (richiede ground plane)</li>
+    </ul>
+    <p><strong>Adattamento di impedenza:</strong> Il modulo RF presenta un'uscita a 50 Ω. L'antenna deve avere impedenza 50 Ω. Se c'è mismatch, parte della potenza viene riflessa (Return Loss elevato). L'adattamento si fa con matching network LC, stub matching o modificando la geometria dell'antenna.</p>
+  </div>
+
+  <div class="grid g3" style="margin-bottom:1.25rem">
+    <div class="box" style="text-align:center">
+      <svg class="antenna-svg" width="80" height="80" viewBox="0 0 80 80">
+        <rect x="20" y="60" width="40" height="4" rx="2" fill="none" stroke="var(--blue)" stroke-width="2"/>
+        <path d="M 40 60 L 40 20" stroke="var(--blue)" stroke-width="2"/>
+        <path d="M 40 20 L 10 20 L 10 56 L 40 56" fill="none" stroke="var(--blue)" stroke-width="2"/>
+        <circle cx="40" cy="60" r="4" fill="var(--blue)" opacity=".3"/>
+        <text x="40" y="74" font-size="8" text-anchor="middle" fill="rgba(10,10,15,.4)" font-family="IBM Plex Mono">Loop</text>
+      </svg>
+      <span class="badge b-blue">Antenna Loop</span>
+      <p>Traccia chiusa su PCB. Buona irradiazione omnidirezionale. Adatta per NFC e RFID a bassa frequenza.</p>
+    </div>
+    <div class="box" style="text-align:center">
+      <svg class="antenna-svg" width="80" height="80" viewBox="0 0 80 80">
+        <rect x="10" y="50" width="60" height="6" rx="2" fill="var(--orange)" opacity=".2" stroke="var(--orange)" stroke-width="1.5"/>
+        <rect x="10" y="64" width="60" height="4" rx="2" fill="none" stroke="rgba(10,10,15,.2)" stroke-width="1.5"/>
+        <path d="M 28 50 L 28 20" stroke="var(--orange)" stroke-width="2"/>
+        <path d="M 52 50 L 52 20" stroke="var(--orange)" stroke-width="2"/>
+        <path d="M 28 20 L 52 20" stroke="var(--orange)" stroke-width="2"/>
+        <text x="40" y="74" font-size="8" text-anchor="middle" fill="rgba(10,10,15,.4)" font-family="IBM Plex Mono">Microstrip</text>
+      </svg>
+      <span class="badge b-orange">Antenna Microstrip (Patch)</span>
+      <p>Elemento radiante piano con piano di massa. Alta direzionalità, banda stretta. Diffusa in Wi-Fi e GPS.</p>
+    </div>
+    <div class="box" style="text-align:center">
+      <svg class="antenna-svg" width="80" height="80" viewBox="0 0 80 80">
+        <rect x="10" y="60" width="60" height="4" rx="2" fill="none" stroke="rgba(10,10,15,.2)" stroke-width="1.5"/>
+        <path d="M 20 60 L 20 30 L 50 30 L 50 50 L 20 50" fill="none" stroke="var(--teal)" stroke-width="2"/>
+        <path d="M 50 40 L 65 40" stroke="var(--teal)" stroke-width="2"/>
+        <circle cx="65" cy="40" r="3" fill="var(--teal)" opacity=".4"/>
+        <text x="40" y="74" font-size="8" text-anchor="middle" fill="rgba(10,10,15,.4)" font-family="IBM Plex Mono">F Invertita</text>
+      </svg>
+      <span class="badge b-teal">Antenna IFA</span>
+      <p>Inverted-F Antenna: traccia a forma di F rovesciata. Compatta, efficiente a 2.4 GHz. Usata in moduli ESP32.</p>
+    </div>
+  </div>
+
+  <div class="explain-box">
+    <h4>🔧 Antenna IFA — Funzionamento dettagliato</h4>
+    <p>L'<strong>Inverted-F Antenna (IFA)</strong> è la più comune in moduli Wi-Fi/Bluetooth perché è compatta ed efficiente.</p>
+    <p><strong>Struttura:</strong> Un elemento radiante orizzontale lungo circa λ/4 (~3 cm a 2.4 GHz), un shorting pin che connette l'elemento al ground plane, e un feed point di alimentazione RF posizionato tra lo shorting pin e l'estremità libera.</p>
+    <p><strong>Vantaggi:</strong> Compatta (λ/4), si realizza come traccia PCB, impedenza controllabile spostando il feed point, polarizzazione verticale adatta per dispositivi tenuti in verticale.</p>
+    <p><strong>Progettazione:</strong> Lunghezza elemento ~0.23λ–0.27λ, distanza feed-short 3-8 mm, ground plane deve estendersi almeno λ/4 dietro l'antenna, keep-out area di 5-10 mm senza componenti metallici.</p>
+  </div>
+
+  <div class="grid g2">
+    <div class="box">
+      <div class="box-title">Parametri di progettazione</div>
+      <div class="callout c-blue" style="margin:0">
+        <strong>Return Loss (RL)</strong>
+        Misura la potenza riflessa alla porta RF. Espresso in dB — più negativo è meglio. Buona antenna: RL &lt; −10 dB.
+      </div>
+      <div class="callout c-teal" style="margin:0">
+        <strong>Larghezza di banda</strong>
+        Range di frequenze entro cui l'antenna mantiene RL &lt; −10 dB. Per 2.4 GHz tipicamente 80–200 MHz.
+      </div>
+      <div class="callout c-orange" style="margin:0">
+        <strong>Guadagno &amp; Efficienza</strong>
+        Le antenne omnidirezionali BT hanno guadagno 0–2 dBi in TX e RX.
+      </div>
+    </div>
+    <div class="box">
+      <div class="box-title">Diagramma di irradiazione</div>
+      <div style="display:flex;align-items:center;justify-content:center;height:160px">
+        <svg width="180" height="160" viewBox="-90 -80 180 160">
+          <circle cx="0" cy="0" r="70" fill="none" stroke="rgba(10,10,15,.06)" stroke-width="1"/>
+          <circle cx="0" cy="0" r="50" fill="none" stroke="rgba(10,10,15,.06)" stroke-width="1"/>
+          <circle cx="0" cy="0" r="30" fill="none" stroke="rgba(10,10,15,.06)" stroke-width="1"/>
+          <line x1="-80" y1="0" x2="80" y2="0" stroke="rgba(10,10,15,.1)" stroke-width="1"/>
+          <line x1="0" y1="-80" x2="0" y2="80" stroke="rgba(10,10,15,.1)" stroke-width="1"/>
+          <ellipse cx="0" cy="0" rx="68" ry="66" fill="rgba(37,99,235,.1)" stroke="var(--blue)" stroke-width="1.5"/>
+          <text x="0" y="-75" font-size="9" text-anchor="middle" fill="rgba(10,10,15,.4)" font-family="IBM Plex Mono">0°</text>
+          <text x="82" y="4" font-size="9" text-anchor="start" fill="rgba(10,10,15,.4)" font-family="IBM Plex Mono">90°</text>
+          <text x="0" y="82" font-size="9" text-anchor="middle" fill="rgba(10,10,15,.4)" font-family="IBM Plex Mono">180°</text>
+          <text x="-85" y="4" font-size="9" text-anchor="start" fill="rgba(10,10,15,.4)" font-family="IBM Plex Mono">270°</text>
+          <circle cx="0" cy="0" r="4" fill="var(--blue)"/>
+          <text x="0" y="12" font-size="8" text-anchor="middle" fill="var(--blue)" font-family="IBM Plex Mono">ANT</text>
+        </svg>
+      </div>
+      <p style="text-align:center;font-size:.8rem;font-family:var(--serif);color:rgba(10,10,15,.5)">Pattern omnidirezionale tipico (antenna loop / IFA a 2.4 GHz)</p>
+    </div>
+  </div>
+
+  <div class="explain-box">
+    <h4>📏 Return Loss e parametro S11</h4>
+    <p>Quando alimentiamo un'antenna, parte della potenza viene riflessa per mismatch di impedenza. Il Return Loss misura questa perdita:</p>
+    <p><code>RL (dB) = -20 × log₁₀(|Γ|)</code> dove <code>Γ = (Z_antenna - Z₀) / (Z_antenna + Z₀)</code> con Z₀ = 50 Ω</p>
+    <ul>
+      <li><strong>RL = -10 dB:</strong> 10% potenza riflessa, 90% irradiata — soglia minima</li>
+      <li><strong>RL = -20 dB:</strong> 1% potenza riflessa, 99% irradiata — buona antenna</li>
+    </ul>
+    <p><strong>Parametro S11:</strong> È lo stesso concetto in formato S-parameters. S11 (dB) = 20 × log₁₀(|Γ|) = -RL. Quindi S11 = -10 dB significa RL = +10 dB.</p>
+    <p><strong>Misura:</strong> Con un Vector Network Analyzer (VNA) che inietta un segnale RF sweep e misura Γ per ogni frequenza. Cerchiamo una "valle" (S11 molto negativo) alla frequenza target.</p>
+  </div>
+    </section>
+    <nav class="pagenav"><a class="prev" href="wifi.html"><span class="pn-dir">← Precedente</span><span class="pn-title">📡 Wi-Fi 802.11</span></a><a class="next" href="bluetooth.html"><span class="pn-dir">Successivo →</span><span class="pn-title">📶 Bluetooth Classic</span></a></nav>
+  </div>
+</main>
+
+<footer>
+  TPSIT · 5F 2025/26 · Antenne PCB
+</footer>
+
+</body>
+</html>

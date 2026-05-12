@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BLE — TPSIT · 5F</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;600&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/tpsit-style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header-bg"></div>
+  <div class="header-inner" style="padding-bottom:1.5rem">
+    <div class="header-eyebrow">
+      <a class="eyebrow-tag" href="../index.html">← Home</a>
+      <a class="eyebrow-tag" href="../tpsit.html">← TPSIT</a>
+      <span class="eyebrow-tag">5F · 2025/26</span>
+      <div class="eyebrow-line"></div>
+      <span class="eyebrow-tag">BLE</span>
+    </div>
+  </div>
+</header>
+
+<main class="layout-shell">
+  <aside class="sidenav">
+    <a href="../tpsit.html" class="sn-back">← Indice materia</a>
+    <div class="sn-label">Macro-argomenti</div>
+    <a href="esp32.html" class="">
+      <span class="icn">🔧</span>
+      <span>ESP32</span>
+      <span class="num">01</span>
+    </a>
+    <a href="wifi.html" class="">
+      <span class="icn">📡</span>
+      <span>Wi-Fi 802.11</span>
+      <span class="num">02</span>
+    </a>
+    <a href="antenne.html" class="">
+      <span class="icn">📐</span>
+      <span>Antenne PCB</span>
+      <span class="num">03</span>
+    </a>
+    <a href="bluetooth.html" class="">
+      <span class="icn">📶</span>
+      <span>Bluetooth Classic</span>
+      <span class="num">04</span>
+    </a>
+    <a href="ble.html" class="active">
+      <span class="icn">⚡</span>
+      <span>BLE</span>
+      <span class="num">05</span>
+    </a>
+    <a href="lorawan.html" class="">
+      <span class="icn">🌐</span>
+      <span>LoRaWAN</span>
+      <span class="num">06</span>
+    </a>
+    <a href="nbiot.html" class="">
+      <span class="icn">📱</span>
+      <span>NB-IoT</span>
+      <span class="num">07</span>
+    </a>
+    <a href="5g.html" class="">
+      <span class="icn">🚀</span>
+      <span>5G</span>
+      <span class="num">08</span>
+    </a>
+    <a href="confronto.html" class="">
+      <span class="icn">⚖️</span>
+      <span>Confronto</span>
+      <span class="num">09</span>
+    </a>
+  </aside>
+
+  <div class="content-main">
+    <section class="section">
+      <div class="sec-head">
+    <div class="sec-num">05</div>
+    <div class="sec-body">
+      <h2>Bluetooth Low Energy</h2>
+      <p>Introdotto con BT 4.0 (2010) da Nokia (Wibree). Consumo fino a 100× inferiore al Classic. Lo standard IoT per sensori, wearable e beacon.</p>
+    </div>
+    <span class="sec-badge b-purple">BLE · IoT</span>
+  </div>
+
+  <div class="explain-box">
+    <h4>⚡ Cos'è il BLE e come funziona?</h4>
+    <p><strong>Origini:</strong> Nel 2010 il Bluetooth SIG ha integrato la tecnologia <strong>Wibree</strong> (sviluppata da Nokia) nello standard Bluetooth, rinominandola <strong>Bluetooth Low Energy (BLE)</strong> a partire dalla versione 4.0. Da allora coesistono Bluetooth Classic e BLE, ma ormai la maggior parte dei dispositivi IoT usa BLE.</p>
+    <p><strong>Differenza chiave rispetto al Classic:</strong> Il BLE non è progettato per trasmettere grandi quantità di dati, ma per inviare piccole informazioni in modo rapido. La velocità è ~300 Kbps e i dati vengono inviati tramite pacchetti molto piccoli (circa 20 byte). Questo riduce il tempo in cui il dispositivo resta attivo, risparmiando energia.</p>
+    <p><strong>Il vero punto di forza:</strong> Il consumo energetico è fino a <strong>100 volte inferiore</strong> rispetto al Bluetooth classico. Dispositivi come smartwatch, sensori ambientali o tracker possono funzionare per mesi o anni con una sola batteria.</p>
+    <p><strong>Funzionamento passo passo:</strong></p>
+    <ul>
+      <li><strong>1. Advertising:</strong> Il dispositivo trasmettitore invia periodicamente segnali "advertising" per pubblicizzare la propria presenza, indicando eventualmente il tipo di servizio offerto. Questo permette al BLE di restare in stato di bassissimo consumo per la maggior parte del tempo</li>
+      <li><strong>2. Connessione:</strong> Quando un ricevitore intercetta questi segnali e li riconosce come interessanti, risponde. Viene avviata la procedura di connessione vera e propria</li>
+      <li><strong>3. Scambio dati:</strong> I dispositivi comunicano in modo bidirezionale, organizzando la comunicazione in brevi intervalli di attività alternati a periodi di inattività per ridurre il consumo</li>
+      <li><strong>4. Chiusura:</strong> Terminato lo scambio, la connessione viene chiusa. I dispositivi tornano in stato di basso consumo fino alla successiva necessità</li>
+    </ul>
+  </div>
+
+  <div class="grid g4" style="margin-bottom:1.25rem">
+    <div class="stat"><div class="val" style="color:#c084fc">~300</div><div class="stat-lbl">Kbps data rate</div></div>
+    <div class="stat"><div class="val" style="color:#c084fc">40</div><div class="stat-lbl">Canali da 2 MHz</div></div>
+    <div class="stat"><div class="val" style="color:#c084fc">100m</div><div class="stat-lbl">Copertura max</div></div>
+    <div class="stat"><div class="val" style="color:#c084fc">100×</div><div class="stat-lbl">Meno consumo vs Classic</div></div>
+  </div>
+
+  <div class="grid g2">
+    <div class="box">
+      <div class="box-title">Livelli fisici PHY — Modulazione GFSK</div>
+      <p style="font-size:.87rem;font-family:var(--serif);color:rgba(10,10,15,.6);margin-bottom:1rem">
+        GFSK (Gaussian Frequency Shift Keying): la frequenza portante viene spostata di ±185 kHz per rappresentare bit 0/1. Il filtro Gaussiano riduce il rumore alle transizioni brusche tra 0 e 1, migliorando efficienza spettrale e stabilità.
+      </p>
+      <div style="display:flex;flex-direction:column;gap:.5rem">
+        <div style="padding:.8rem;border-radius:6px;background:var(--purple-l);border:1px solid rgba(124,58,237,.2)">
+          <div style="display:flex;justify-content:space-between;margin-bottom:4px">
+            <span class="badge b-purple" style="margin:0">LE 1M PHY — Obbligatorio</span>
+            <code style="font-size:.75rem;font-family:var(--mono)">1 Ms/s · ±185 kHz</code>
+          </div>
+          <p style="font-family:var(--serif);font-size:.87rem">Bilanciato tra velocità, portata e consumo. Tutti i dispositivi devono supportarlo.</p>
+        </div>
+        <div style="padding:.8rem;border-radius:6px;background:var(--blue-l);border:1px solid rgba(37,99,235,.2)">
+          <div style="display:flex;justify-content:space-between;margin-bottom:4px">
+            <span class="badge b-blue" style="margin:0">LE 2M PHY — Opzionale</span>
+            <code style="font-size:.75rem;font-family:var(--mono)">2 Ms/s · ±370 kHz</code>
+          </div>
+          <p style="font-family:var(--serif);font-size:.87rem">Metà tempo in aria → meno consumo ad alta velocità. Range lievemente ridotto (×0.8).</p>
+        </div>
+        <div style="padding:.8rem;border-radius:6px;background:var(--teal-l);border:1px solid rgba(5,150,105,.2)">
+          <div style="display:flex;justify-content:space-between;margin-bottom:4px">
+            <span class="badge b-teal" style="margin:0">LE Coded PHY — Opzionale</span>
+            <code style="font-size:.75rem;font-family:var(--mono)">1 Ms/s + FEC</code>
+          </div>
+          <p style="font-family:var(--serif);font-size:.87rem">Forward Error Correction aggiunge informazioni ridondanti per correggere errori. S=2 → range ×2 · S=8 → range ×4. Velocità ridotta ma maggiore robustezza.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="box-title">Stack BLE</div>
+      <div class="stack-proto" style="margin-bottom:.75rem">
+        <div class="stack-layer sl-app"><span>Applicazione utente</span><span class="sl-tag">Top</span></div>
+        <div class="stack-layer sl-app"><span>GAP — Generic Access Profile (ruoli, visibilità)</span><span class="sl-tag">App</span></div>
+        <div class="stack-layer sl-high"><span>GATT — Generic Attribute Profile (servizi/caratteristiche)</span><span class="sl-tag">Alto</span></div>
+        <div class="stack-layer sl-high"><span>ATT — Attribute Protocol (client/server UUID)</span><span class="sl-tag">Alto</span></div>
+        <div class="stack-layer sl-link"><span>SMP — Security Manager · L2CAP</span><span class="sl-tag">Sicurezza</span></div>
+        <div class="stack-layer sl-link"><span>HCI — Host Controller Interface</span><span class="sl-tag">HCI</span></div>
+        <div class="stack-layer sl-base"><span>LL — Link Layer (centrale/periferico, timing pacchetti)</span><span class="sl-tag">LL</span></div>
+        <div class="stack-layer sl-radio"><span>PHY — GFSK · 40 canali da 2 MHz</span><span class="sl-tag">HW</span></div>
+      </div>
+      <div class="explain-box" style="margin-bottom:0;padding:1.2rem">
+        <h4 style="font-size:1rem">📚 Spiegazione dei livelli BLE</h4>
+        <p><strong>GAP (Generic Access Profile):</strong> Gestisce l'interazione iniziale tra dispositivi. Definisce come un dispositivo BLE si rende "visibile" agli altri, come avviene la scoperta e il collegamento, e i ruoli: <strong>centrale</strong> (cerca e si connette) e <strong>periferico</strong> (si rende disponibile). Nella terminologia moderna BLE si preferisce "centrale/periferico" invece di "master/slave".</p>
+        <p><strong>Link Layer (LL):</strong> Gestisce la comunicazione radio vera e propria — pacchetti, tempi di trasmissione, mantenimento della connessione a livello fisico.</p>
+        <p><strong>GATT (Generic Attribute Profile):</strong> Struttura logica che definisce come i dati devono essere organizzati, descritti e trasferiti. I dati sono organizzati in <strong>servizi</strong> (funzioni generali, es. monitoraggio salute) e <strong>caratteristiche</strong> (singoli dati, es. frequenza cardiaca).</p>
+        <p><strong>ATT (Attribute Protocol):</strong> Il protocollo vero e proprio per lo scambio dati. Modello client/server: il <strong>server</strong> possiede le informazioni (dati sensori), il <strong>client</strong> le richiede e le utilizza (smartphone). Ogni <strong>attributo</strong> è composto da: tipo (identificato da UUID), valore, permessi/autorizzazioni. I descrittori forniscono informazioni aggiuntive sul significato o formato del valore.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+  <div class="grid g3" style="margin-bottom:1.25rem">
+    <div class="box">
+      <span class="badge b-purple">TAG</span>
+      <h3>Localizzatori</h3>
+      <p>Piccoli dispositivi BLE applicati a risorse o persone per tracciarli in spazi indoor. Varie forme: rettangolare, tondo, braccialetto. Trasmettono continuamente il proprio segnale BLE.</p>
+    </div>
+    <div class="box">
+      <span class="badge b-blue">Beacon</span>
+      <h3>Infrastruttura</h3>
+      <p>Dispositivi fissi ancorati a pareti/soffitti ogni 2–5 metri. Più beacons distribuiti nello spazio = maggiore precisione di localizzazione. Ricevono i segnali dai TAG e li inoltrano.</p>
+    </div>
+    <div class="box">
+      <span class="badge b-teal">Gateway BLE</span>
+      <h3>Hub e Cloud</h3>
+      <p>Scansionano o si connettono a dispositivi BLE vicini, consentendo scambio dati con piattaforme cloud e infrastrutture IoT. Aggregano i flussi dati riducendo la congestione di rete e massimizzando il throughput.</p>
+    </div>
+  </div>
+
+  <div class="explain-box">
+    <h4>📡 Gateway BLE — Funzionamento dettagliato</h4>
+    <p>Il gateway BLE è un device specializzato che funge da ponte tra i dispositivi BLE nell'ambiente e sistemi complessi come piattaforme cloud o server locali.</p>
+    <ul>
+      <li><strong>Raccolta dati:</strong> Scansiona e rileva dispositivi BLE vicini, oppure si connette ad essi per lo scambio di dati</li>
+      <li><strong>Aggregazione:</strong> Funge da hub centrale per più dispositivi contemporaneamente, ricevendo dati da numerosi TAG, sensori o beacon nello stesso momento</li>
+      <li><strong>Pre-elaborazione:</strong> Invece di inviare singolarmente ogni piccola informazione, raccoglie i dati, li organizza e li elabora preliminarmente</li>
+      <li><strong>Trasmissione:</strong> I dati aggregati vengono trasmessi a server locali o piattaforme cloud per analisi approfondite (statistiche, report, indicatori di comportamento)</li>
+      <li><strong>Ottimizzazione rete:</strong> Consolidando i dati prima della trasmissione, riduce la quantità di comunicazioni separate sulla rete, diminuendo la congestione e ottimizzando il throughput</li>
+    </ul>
+  </div>
+
+  <div class="box" style="margin-bottom:1.25rem">
+    <div class="box-title">RTLS — Real-Time Locating Systems</div>
+    <p style="font-size:.95rem;font-family:var(--serif);color:rgba(10,10,15,.6);margin-bottom:1rem">
+      Sistemi di localizzazione in tempo reale per individuare la posizione di oggetti, persone o asset in ambienti indoor dove il GPS non è efficace. Diverse tecniche con diversa precisione e requisiti infrastrutturali.
+    </p>
+    <div class="grid g3">
+      <div class="callout c-blue" style="margin:0">
+        <strong>RSSI — Received Signal Strength Indicator</strong>
+        Sfrutta la potenza del segnale ricevuto dalle antenne per stimare la distanza tra TAG e ricevitori. Più il segnale è forte, più il dispositivo è vicino. Con più antenne in posizioni note, si applicano algoritmi di trilaterazione per stimare la posizione. Precisione max ±3m. Economico ma influenzato da ostacoli, riflessioni e interferenze ambientali.
+      </div>
+      <div class="callout c-teal" style="margin:0">
+        <strong>AoA — Angle of Arrival</strong>
+        Sfrutta l'angolo di arrivo del segnale trasmesso dai TAG su array di antenne riceventi che rilevano potenza e direzione di arrivo. Permette una localizzazione molto più precisa rispetto all'RSSI. In alcuni casi è sufficiente una sola antenna ben progettata per localizzare un TAG.
+      </div>
+      <div class="callout c-purple" style="margin:0">
+        <strong>AoD — Angle of Departure</strong>
+        Introdotto con il Bluetooth 5.1. Il dispositivo trasmettitore invia un segnale strutturato che permette ai ricevitori di calcolare la direzione di uscita del segnale. Combinato con altri dati, consente di ricostruire la posizione dell'oggetto con maggiore precisione e affidabilità.
+      </div>
+    </div>
+  </div>
+
+  <div class="box" style="margin-bottom:1.25rem">
+    <div class="box-title">Evoluzioni BT 5.x</div>
+    <div class="grid g2">
+      <div>
+        <span class="badge b-dark">BT 5.1 — 2016</span>
+        <div style="font-family:var(--mono);font-size:1.2rem;font-weight:600;margin:.4rem 0">2 Mbps · 200m outdoor</div>
+        <p style="font-family:var(--serif);font-size:.9rem">Ampia gamma di funzionalità. Supporto direction finding (AoA/AoD). Adatto per applicazioni multi-dispositivo wireless.</p>
+      </div>
+      <div>
+        <span class="badge b-dark">BT 5.2 — 2019</span>
+        <div style="font-family:var(--mono);font-size:1.2rem;font-weight:600;margin:.4rem 0">2 Mbps · 200m outdoor</div>
+        <p style="font-family:var(--serif);font-size:.9rem">Miglioramenti nel <strong>rilevamento direzione</strong>. Enhanced Attribute Protocol (EATT). LE Isochronous Channels per audio.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="box">
+    <div class="box-title">Ambiti di utilizzo del BLE</div>
+    <div class="grid g2">
+      <div class="callout c-blue" style="margin:0">
+        <strong>Wearable Technology</strong>
+        Fitness tracker e smartwatch sincronizzano dati in tempo reale con smartphone (passi, battito cardiaco, qualità del sonno) senza impattare significativamente la batteria.
+      </div>
+      <div class="callout c-teal" style="margin:0">
+        <strong>Home Automation (Domotica)</strong>
+        Controllo di luci, serrature elettroniche, termostati e elettrodomestici connessi. Basso consumo ideale per dispositivi sempre attivi.
+      </div>
+      <div class="callout c-orange" style="margin:0">
+        <strong>Beacon Technology (Retail)</strong>
+        Piccoli dispositivi BLE inviano segnali periodici per identificare la posizione dell'utente in un negozio. Notifiche personalizzate e offerte promozionali quando si passa vicino a un punto vendita.
+      </div>
+      <div class="callout c-purple" style="margin:0">
+        <strong>Healthcare &amp; Industria</strong>
+        Monitoraggio remoto pazienti (frequenza cardiaca, saturazione ossigeno). Sensori BLE su macchinari per manutenzione predittiva, individuando anomalie prima di guasti gravi.
+      </div>
+    </div>
+  </div>
+    </section>
+    <nav class="pagenav"><a class="prev" href="bluetooth.html"><span class="pn-dir">← Precedente</span><span class="pn-title">📶 Bluetooth Classic</span></a><a class="next" href="lorawan.html"><span class="pn-dir">Successivo →</span><span class="pn-title">🌐 LoRaWAN</span></a></nav>
+  </div>
+</main>
+
+<footer>
+  TPSIT · 5F 2025/26 · BLE
+</footer>
+
+</body>
+</html>

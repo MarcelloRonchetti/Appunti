@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TPSIT — Indice materia · 5F</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;600&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared/tpsit-style.css">
+<style>
+/* index-specific (TPSIT palette: blu/viola) */
+.hero-card{background:var(--accent);color:var(--paper);border-radius:var(--r);padding:2.2rem 2rem;margin-bottom:1.5rem;
+  position:relative;overflow:hidden}
+.hero-card::after{content:'';position:absolute;right:-30px;top:-30px;width:240px;height:240px;border-radius:50%;
+  background:radial-gradient(circle,rgba(37,99,235,.28),transparent 70%);pointer-events:none}
+.hero-card .eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:2px;text-transform:uppercase;color:rgba(245,240,232,.5);margin-bottom:.5rem;display:block}
+.hero-card h1{font-size:clamp(1.8rem,3.6vw,2.6rem);font-weight:800;line-height:1.05;letter-spacing:-.01em;margin-bottom:.4rem}
+.hero-card h1 em{font-style:normal;color:rgba(37,99,235,.95)}
+.hero-card .lead{font-family:var(--serif);font-size:1.05rem;font-style:italic;color:rgba(245,240,232,.7);max-width:560px;margin-bottom:1.2rem}
+.hero-stats{display:flex;gap:1.5rem;flex-wrap:wrap;margin-top:1.2rem}
+.hero-stat{font-family:var(--mono)}
+.hero-stat .v{font-size:1.6rem;font-weight:600;color:rgba(245,240,232,.95);display:block;line-height:1}
+.hero-stat .l{font-size:10px;letter-spacing:1px;color:rgba(245,240,232,.45);text-transform:uppercase;margin-top:4px}
+
+.topic-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem}
+.topic-card{background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:1.4rem;
+  text-decoration:none;color:var(--ink);display:block;transition:all .2s;position:relative;overflow:hidden}
+.topic-card:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.08);border-color:var(--blue)}
+.topic-card .tc-top{display:flex;align-items:center;gap:10px;margin-bottom:.8rem}
+.topic-card .tc-icon{font-size:1.6rem}
+.topic-card .tc-num{margin-left:auto;font-family:var(--mono);font-size:.75rem;letter-spacing:1.5px;color:rgba(10,10,15,.35);font-weight:600}
+.topic-card h3{font-size:1.05rem;font-weight:700;margin-bottom:.4rem;color:var(--accent)}
+.topic-card p{font-family:var(--serif);font-size:.92rem;color:rgba(10,10,15,.62);line-height:1.55}
+.topic-card .tc-tag{display:inline-block;margin-top:.7rem;font-family:var(--mono);font-size:9px;letter-spacing:1.2px;
+  text-transform:uppercase;color:var(--blue);background:rgba(37,99,235,.08);padding:2px 8px;border-radius:3px}
+.topic-card .tc-tag.purple{color:var(--purple);background:rgba(124,58,237,.08)}
+.topic-card .tc-tag.teal{color:var(--teal);background:rgba(5,150,105,.08)}
+.topic-card .tc-tag.orange{color:var(--orange);background:rgba(217,119,6,.08)}
+
+.intro-block{margin-bottom:2rem}
+.intro-block h2{font-size:1.3rem;font-weight:700;margin-bottom:.6rem;color:var(--accent)}
+.intro-block p{font-family:var(--serif);font-size:1rem;color:rgba(10,10,15,.7);line-height:1.7;max-width:680px}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-bg"></div>
+  <div class="header-inner" style="padding-bottom:1.5rem">
+    <div class="header-eyebrow">
+      <a class="eyebrow-tag" href="index.html">← Home</a>
+      <span class="eyebrow-tag">TPSIT · 5F · 2025/26</span>
+      <div class="eyebrow-line"></div>
+      <span class="eyebrow-tag">Indice materia</span>
+    </div>
+  </div>
+</header>
+
+<main class="layout-shell">
+
+  <aside class="sidenav">
+    <a href="index.html" class="sn-back">← Indice generale</a>
+    <div class="sn-label">Macro-argomenti</div>
+    <a href="tpsit/esp32.html"><span class="icn">🔧</span><span>ESP32</span><span class="num">01</span></a>
+    <a href="tpsit/wifi.html"><span class="icn">📡</span><span>Wi-Fi 802.11</span><span class="num">02</span></a>
+    <a href="tpsit/antenne.html"><span class="icn">📐</span><span>Antenne PCB</span><span class="num">03</span></a>
+    <a href="tpsit/bluetooth.html"><span class="icn">📶</span><span>Bluetooth Classic</span><span class="num">04</span></a>
+    <a href="tpsit/ble.html"><span class="icn">⚡</span><span>BLE</span><span class="num">05</span></a>
+    <a href="tpsit/lorawan.html"><span class="icn">🌐</span><span>LoRaWAN</span><span class="num">06</span></a>
+    <a href="tpsit/nbiot.html"><span class="icn">📱</span><span>NB-IoT</span><span class="num">07</span></a>
+    <a href="tpsit/5g.html"><span class="icn">🚀</span><span>5G</span><span class="num">08</span></a>
+    <a href="tpsit/confronto.html"><span class="icn">⚖️</span><span>Confronto</span><span class="num">09</span></a>
+  </aside>
+
+  <div class="content-main">
+
+    <div class="hero-card">
+      <span class="eyebrow">Programma svolto · A.S. 2025/26</span>
+      <h1>TPSIT — Wireless &amp; <em>IoT</em></h1>
+      <p class="lead">Nove pagine: dal SoC ESP32 alle reti cellulari di quinta generazione. Tutti i protocolli wireless del programma, con esempi di codice e confronti applicativi.</p>
+      <div class="hero-stats">
+        <div class="hero-stat"><span class="v">9</span><span class="l">Macro-argomenti</span></div>
+        <div class="hero-stat"><span class="v">5</span><span class="l">Protocolli wireless</span></div>
+        <div class="hero-stat"><span class="v">5F</span><span class="l">Quinta · ITT</span></div>
+      </div>
+    </div>
+
+    <div class="intro-block">
+      <h2>Indice dei contenuti</h2>
+      <p>Ogni macro-argomento è una pagina a sé. Sulla sinistra il sommario; dentro ciascuna pagina trovi sotto-argomenti, schemi architetturali, esempi di codice Arduino/ESP-IDF e — dove serve — esercizi tipo. Inizia da ESP32 se vuoi seguire l'ordine del programma.</p>
+    </div>
+
+    <div class="topic-grid">
+      <a class="topic-card" href="tpsit/esp32.html">
+        <div class="tc-top"><span class="tc-icon">🔧</span><span class="tc-num">01</span></div>
+        <h3>ESP32</h3>
+        <p>SoC Espressif dual-core Xtensa LX6 con Wi-Fi, Bluetooth Classic e BLE integrati. Architettura interna, modalità di risparmio energetico, esempio WIFI_1.</p>
+        <span class="tc-tag">Microcontroller</span>
+      </a>
+      <a class="topic-card" href="tpsit/wifi.html">
+        <div class="tc-top"><span class="tc-icon">📡</span><span class="tc-num">02</span></div>
+        <h3>Wi-Fi 802.11</h3>
+        <p>Standard b/g/n/ac/ax, CSMA/CA, modalità STA/AP/STA+AP, sicurezza WEP/WPA/WPA2/WPA3, frame management.</p>
+        <span class="tc-tag teal">WLAN</span>
+      </a>
+      <a class="topic-card" href="tpsit/antenne.html">
+        <div class="tc-top"><span class="tc-icon">📐</span><span class="tc-num">03</span></div>
+        <h3>Antenne PCB</h3>
+        <p>Tipologie integrate (PIFA, IFA, chip), tracciamento RF, impedenza, lunghezza d'onda a 2.4 GHz e considerazioni di layout.</p>
+        <span class="tc-tag orange">RF</span>
+      </a>
+      <a class="topic-card" href="tpsit/bluetooth.html">
+        <div class="tc-top"><span class="tc-icon">📶</span><span class="tc-num">04</span></div>
+        <h3>Bluetooth Classic</h3>
+        <p>BR/EDR, profili A2DP/SPP/HFP, pairing, piconet e scatternet, frequency hopping a 1600 Hz su 79 canali.</p>
+        <span class="tc-tag purple">PAN</span>
+      </a>
+      <a class="topic-card" href="tpsit/ble.html">
+        <div class="tc-top"><span class="tc-icon">⚡</span><span class="tc-num">05</span></div>
+        <h3>Bluetooth Low Energy</h3>
+        <p>Advertising, scanning, GAP, GATT, servizi e caratteristiche. Profilo a basso consumo per wearable e sensori IoT.</p>
+        <span class="tc-tag teal">Low-Power</span>
+      </a>
+      <a class="topic-card" href="tpsit/lorawan.html">
+        <div class="tc-top"><span class="tc-icon">🌐</span><span class="tc-num">06</span></div>
+        <h3>LoRa &amp; LoRaWAN</h3>
+        <p>Modulazione CSS, classi A/B/C, architettura end-device → gateway → network server. Long range, low power.</p>
+        <span class="tc-tag orange">LPWAN</span>
+      </a>
+      <a class="topic-card" href="tpsit/nbiot.html">
+        <div class="tc-top"><span class="tc-icon">📱</span><span class="tc-num">07</span></div>
+        <h3>NB-IoT</h3>
+        <p>Narrowband-IoT su banda licenziata. Modi di funzionamento in-band, guard-band, stand-alone. PSM e eDRX.</p>
+        <span class="tc-tag">Cellular IoT</span>
+      </a>
+      <a class="topic-card" href="tpsit/5g.html">
+        <div class="tc-top"><span class="tc-icon">🚀</span><span class="tc-num">08</span></div>
+        <h3>5G</h3>
+        <p>eMBB, URLLC, mMTC. Beamforming, network slicing, MIMO massivo, latenza &lt; 1 ms, banda mm-wave.</p>
+        <span class="tc-tag purple">NextGen</span>
+      </a>
+      <a class="topic-card" href="tpsit/confronto.html">
+        <div class="tc-top"><span class="tc-icon">⚖️</span><span class="tc-num">09</span></div>
+        <h3>Confronto protocolli</h3>
+        <p>Tabella riassuntiva: portata, consumo, throughput, costo, casi d'uso. Quando usare cosa.</p>
+        <span class="tc-tag teal">Sintesi</span>
+      </a>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  TPSIT · 5F 2025/26 · Indice materia
+</footer>
+</body>
+</html>

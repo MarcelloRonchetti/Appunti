@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Appunti di storia, italiano ed educazione civica — quaderno di studio digitale."
+    />
+    <title>Appunti Sto-Ita — Quaderno di studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <div id="progress" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <div class="brand">
+        <span class="mark">Appunti Sto-Ita</span>
+        <span class="sub">Archivio di studio</span>
+      </div>
+      <div class="toolbar">
+        <button
+          class="iconbtn"
+          id="btn-reading"
+          title="Modalità lettura"
+          aria-label="Modalità lettura"
+        >
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M3 19V6a1 1 0 011-1h6a2 2 0 012 2v13M3 19h9M3 19a1 1 0 001 1h7a1 1 0 001-1M12 7a2 2 0 012-2h6a1 1 0 011 1v13a1 1 0 01-1 1h-7a1 1 0 01-1-1V7z"
+            />
+          </svg>
+        </button>
+        <button class="iconbtn" id="btn-theme" title="Tema chiaro/scuro" aria-label="Tema">
+          <svg viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z" /></svg>
+        </button>
+      </div>
+    </header>
+
+    <div class="shell">
+      <aside class="nav" aria-label="Navigazione degli appunti">
+        <div class="search">
+          <svg
+            class="search-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <circle cx="11" cy="11" r="7" /><path d="m21 21-4.3-4.3" />
+          </svg>
+          <input id="q" type="search" placeholder="Cerca negli appunti…" autocomplete="off" />
+          <button class="search-clear" id="q-clear" aria-label="Pulisci ricerca">×</button>
+        </div>
+        <nav id="navigation"></nav>
+      </aside>
+
+      <article id="reader" aria-live="polite">
+        <nav class="crumbs" id="crumbs"></nav>
+        <h1 class="title" id="title">Appunti Sto-Ita</h1>
+        <div class="meta" id="meta"></div>
+        <div id="content" class="content">
+          <noscript>
+            Per leggere gli appunti serve JavaScript: il sito carica i file Markdown e li trasforma
+            in pagine navigabili.
+          </noscript>
+        </div>
+      </article>
+
+      <aside class="toc" aria-label="Indice della pagina">
+        <div class="toc-label">Indice della pagina</div>
+        <div id="toc"></div>
+      </aside>
+    </div>
+
+    <button id="totop" aria-label="Torna su" title="Torna su">
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M12 19V5M5 12l7-7 7 7" />
+      </svg>
+    </button>
+
+    <script src="assets/app.js" defer></script>
+  </body>
+</html>

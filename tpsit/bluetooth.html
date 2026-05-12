@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bluetooth Classic — TPSIT · 5F</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;600&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/tpsit-style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header-bg"></div>
+  <div class="header-inner" style="padding-bottom:1.5rem">
+    <div class="header-eyebrow">
+      <a class="eyebrow-tag" href="../index.html">← Home</a>
+      <a class="eyebrow-tag" href="../tpsit.html">← TPSIT</a>
+      <span class="eyebrow-tag">5F · 2025/26</span>
+      <div class="eyebrow-line"></div>
+      <span class="eyebrow-tag">Bluetooth Classic</span>
+    </div>
+  </div>
+</header>
+
+<main class="layout-shell">
+  <aside class="sidenav">
+    <a href="../tpsit.html" class="sn-back">← Indice materia</a>
+    <div class="sn-label">Macro-argomenti</div>
+    <a href="esp32.html" class="">
+      <span class="icn">🔧</span>
+      <span>ESP32</span>
+      <span class="num">01</span>
+    </a>
+    <a href="wifi.html" class="">
+      <span class="icn">📡</span>
+      <span>Wi-Fi 802.11</span>
+      <span class="num">02</span>
+    </a>
+    <a href="antenne.html" class="">
+      <span class="icn">📐</span>
+      <span>Antenne PCB</span>
+      <span class="num">03</span>
+    </a>
+    <a href="bluetooth.html" class="active">
+      <span class="icn">📶</span>
+      <span>Bluetooth Classic</span>
+      <span class="num">04</span>
+    </a>
+    <a href="ble.html" class="">
+      <span class="icn">⚡</span>
+      <span>BLE</span>
+      <span class="num">05</span>
+    </a>
+    <a href="lorawan.html" class="">
+      <span class="icn">🌐</span>
+      <span>LoRaWAN</span>
+      <span class="num">06</span>
+    </a>
+    <a href="nbiot.html" class="">
+      <span class="icn">📱</span>
+      <span>NB-IoT</span>
+      <span class="num">07</span>
+    </a>
+    <a href="5g.html" class="">
+      <span class="icn">🚀</span>
+      <span>5G</span>
+      <span class="num">08</span>
+    </a>
+    <a href="confronto.html" class="">
+      <span class="icn">⚖️</span>
+      <span>Confronto</span>
+      <span class="num">09</span>
+    </a>
+  </aside>
+
+  <div class="content-main">
+    <section class="section">
+      <div class="sec-head">
+    <div class="sec-num">04</div>
+    <div class="sec-body">
+      <h2>Bluetooth Classic</h2>
+      <p>Standard WPAN a 2.4 GHz. Architettura Master/Slave con piconet e scatternet. FHSS su 79 canali da 1 MHz.</p>
+    </div>
+    <span class="sec-badge b-blue">WPAN · 2.4 GHz</span>
+  </div>
+
+  <div class="explain-box">
+    <h4>📻 Bluetooth Classic — Storia e principi</h4>
+    <p><strong>Origine del nome:</strong> Deriva dal re vichingo Harald "Blåtand" (dente blu) che unificò Danimarca e Norvegia nel X secolo. Il Bluetooth unifica diversi dispositivi wireless in una singola rete.</p>
+    <p><strong>Perché 2.4 GHz ISM?</strong> Banda senza licenza in quasi tutti i paesi. Compromesso tra portata e dimensioni antenna. Circuiti RF economici grazie al Wi-Fi.</p>
+    <p><strong>Bluetooth vs Wi-Fi:</strong> BT per connessioni punto-punto (periferiche), Wi-Fi per reti dati. BT ottimizzato per batteria, Wi-Fi più power-hungry. BT ~3 Mbps, Wi-Fi 11+ Mbps.</p>
+  </div>
+
+  <div class="grid g4" style="margin-bottom:1.25rem">
+    <div class="stat"><div class="val" style="color:#60a5fa">79</div><div class="stat-lbl">Canali FHSS 1 MHz</div></div>
+    <div class="stat"><div class="val" style="color:#34d399">7</div><div class="stat-lbl">Slave attivi max/piconet</div></div>
+    <div class="stat"><div class="val" style="color:#f59e0b">1600</div><div class="stat-lbl">Freq hops/sec</div></div>
+    <div class="stat"><div class="val" style="color:#c084fc">625µs</div><div class="stat-lbl">Durata time slot</div></div>
+  </div>
+
+  <div class="explain-box">
+    <h4>⚡ FHSS — Frequency Hopping Spread Spectrum</h4>
+    <p><strong>Problema:</strong> La banda 2.4 GHz è affollata. Come evitare interferenze?</p>
+    <p><strong>Soluzione FHSS:</strong> Il Bluetooth "salta" rapidamente tra 79 canali da 1 MHz ciascuno (da 2.402 GHz a 2.480 GHz).</p>
+    <ul>
+      <li><strong>Clock di sistema:</strong> 3.2 kHz (312.5 µs per tick)</li>
+      <li><strong>Time slot:</strong> Ogni 625 µs = 1 slot. Master TX in slot pari, slave TX in slot dispari</li>
+      <li><strong>Sequenza di hop:</strong> Pseudo-casuale ma deterministica, calcolata da MAC del master e clock</li>
+      <li><strong>Rate:</strong> 1600 hop/sec → cambia frequenza ogni 625 µs</li>
+    </ul>
+    <p><strong>Vantaggi:</strong> Resistenza alle interferenze (se un canale è occupato, gli altri 78 sono liberi), coesistenza (più piconet con sequenze diverse), sicurezza base (sequenza difficile da intercettare).</p>
+    <p><strong>AFH (Adaptive Frequency Hopping):</strong> Introdotto in BT 1.2. Rileva canali disturbati (es. Wi-Fi fisso) ed evita di usarli, riducendo i 79 canali a ~40 "buoni".</p>
+  </div>
+
+  <div class="grid g2">
+    <div class="box">
+      <div class="box-title">Architettura Piconet / Scatternet</div>
+      <div class="callout c-blue" style="margin:0">
+        <strong>Piconet</strong>
+        1 master + fino a 7 slave attivi. Il master commuta rapidamente tra gli slave (TDM). La sequenza FHSS è determinata dal MAC del master.
+      </div>
+      <div class="callout c-purple" style="margin:0">
+        <strong>Scatternet</strong>
+        Più piconet collegate da un <em>gateway device</em> che partecipa a due piconet contemporaneamente. Possono coesistere fino a 10 piconet nella stessa area.
+      </div>
+      <svg width="100%" height="130" viewBox="0 0 340 130" style="margin-top:12px">
+        <circle cx="80" cy="65" r="60" fill="none" stroke="rgba(37,99,235,.15)" stroke-width="1.5" stroke-dasharray="4,3"/>
+        <circle cx="260" cy="65" r="60" fill="none" stroke="rgba(124,58,237,.15)" stroke-width="1.5" stroke-dasharray="4,3"/>
+        <line x1="80" y1="65" x2="50" y2="25" stroke="rgba(37,99,235,.4)" stroke-width="1.2"/>
+        <line x1="80" y1="65" x2="110" y2="25" stroke="rgba(37,99,235,.4)" stroke-width="1.2"/>
+        <line x1="80" y1="65" x2="120" y2="60" stroke="rgba(37,99,235,.4)" stroke-width="1.2"/>
+        <line x1="80" y1="65" x2="50" y2="100" stroke="rgba(37,99,235,.4)" stroke-width="1.2"/>
+        <circle cx="80" cy="65" r="16" fill="rgba(37,99,235,.15)" stroke="var(--blue)" stroke-width="1.5"/>
+        <text x="80" y="69" text-anchor="middle" font-size="9" font-weight="700" fill="var(--blue)" font-family="IBM Plex Mono">MST</text>
+        <circle cx="50" cy="25" r="11" fill="rgba(5,150,105,.1)" stroke="var(--teal)" stroke-width="1.2"/>
+        <text x="50" y="29" text-anchor="middle" font-size="8" fill="var(--teal)" font-family="IBM Plex Mono">S1</text>
+        <circle cx="110" cy="25" r="11" fill="rgba(5,150,105,.1)" stroke="var(--teal)" stroke-width="1.2"/>
+        <text x="110" y="29" text-anchor="middle" font-size="8" fill="var(--teal)" font-family="IBM Plex Mono">S2</text>
+        <circle cx="120" cy="60" r="11" fill="rgba(5,150,105,.1)" stroke="var(--teal)" stroke-width="1.2"/>
+        <text x="120" y="64" text-anchor="middle" font-size="8" fill="var(--teal)" font-family="IBM Plex Mono">S3</text>
+        <circle cx="50" cy="100" r="11" fill="rgba(217,119,6,.1)" stroke="var(--orange)" stroke-width="1.2"/>
+        <text x="50" y="104" text-anchor="middle" font-size="8" fill="var(--orange)" font-family="IBM Plex Mono">PRK</text>
+        <line x1="140" y1="65" x2="200" y2="65" stroke="rgba(10,10,15,.2)" stroke-width="1.5" stroke-dasharray="5,3"/>
+        <rect x="156" y="55" width="28" height="20" rx="4" fill="rgba(180,83,9,.15)" stroke="var(--yellow)" stroke-width="1.5"/>
+        <text x="170" y="68" text-anchor="middle" font-size="8" fill="var(--yellow)" font-weight="700" font-family="IBM Plex Mono">GW</text>
+        <line x1="260" y1="65" x2="230" y2="25" stroke="rgba(124,58,237,.4)" stroke-width="1.2"/>
+        <line x1="260" y1="65" x2="290" y2="25" stroke="rgba(124,58,237,.4)" stroke-width="1.2"/>
+        <line x1="260" y1="65" x2="300" y2="65" stroke="rgba(124,58,237,.4)" stroke-width="1.2"/>
+        <line x1="260" y1="65" x2="260" y2="108" stroke="rgba(124,58,237,.4)" stroke-width="1.2"/>
+        <circle cx="260" cy="65" r="16" fill="rgba(124,58,237,.15)" stroke="var(--purple)" stroke-width="1.5"/>
+        <text x="260" y="69" text-anchor="middle" font-size="9" font-weight="700" fill="var(--purple)" font-family="IBM Plex Mono">MST</text>
+        <circle cx="230" cy="25" r="11" fill="rgba(5,150,105,.1)" stroke="var(--teal)" stroke-width="1.2"/>
+        <text x="230" y="29" text-anchor="middle" font-size="8" fill="var(--teal)" font-family="IBM Plex Mono">S1</text>
+        <circle cx="290" cy="25" r="11" fill="rgba(5,150,105,.1)" stroke="var(--teal)" stroke-width="1.2"/>
+        <text x="290" y="29" text-anchor="middle" font-size="8" fill="var(--teal)" font-family="IBM Plex Mono">S2</text>
+        <circle cx="300" cy="65" r="11" fill="rgba(5,150,105,.1)" stroke="var(--teal)" stroke-width="1.2"/>
+        <text x="300" y="69" text-anchor="middle" font-size="8" fill="var(--teal)" font-family="IBM Plex Mono">S3</text>
+        <circle cx="260" cy="108" r="11" fill="rgba(5,150,105,.1)" stroke="var(--teal)" stroke-width="1.2"/>
+        <text x="260" y="112" text-anchor="middle" font-size="8" fill="var(--teal)" font-family="IBM Plex Mono">S4</text>
+        <text x="80" y="128" text-anchor="middle" font-size="9" fill="rgba(10,10,15,.4)" font-family="IBM Plex Mono">Piconet A</text>
+        <text x="260" y="128" text-anchor="middle" font-size="9" fill="rgba(10,10,15,.4)" font-family="IBM Plex Mono">Piconet B</text>
+      </svg>
+    </div>
+
+    <div class="box">
+      <div class="box-title">Stack protocollare Bluetooth BR/EDR</div>
+      <div class="stack-proto">
+        <div class="stack-layer sl-app"><span>Applicazioni / Profili (A2DP, AVRCP, BPP…)</span><span class="sl-tag">App</span></div>
+        <div class="stack-layer sl-app"><span>TCP/IP · PPP · OBEX · TCS BIN · SDP</span><span class="sl-tag">Adottati</span></div>
+        <div class="stack-layer sl-high"><span>RFCOMM (serial) · TCS · SDP</span><span class="sl-tag">Alto</span></div>
+        <div class="stack-layer sl-high"><span>L2CAP — Logical Link Control &amp; Adaptation</span><span class="sl-tag">LLC</span></div>
+        <div class="stack-layer sl-link"><span>HCI — Host Controller Interface</span><span class="sl-tag">Interfaccia</span></div>
+        <div class="stack-layer sl-link"><span>Link Manager (LMP) — Auth · Crittografia 128 bit</span><span class="sl-tag">LM</span></div>
+        <div class="stack-layer sl-base"><span>Baseband — Pacchetti · Timing · Indirizzi · Slot</span><span class="sl-tag">BB</span></div>
+        <div class="stack-layer sl-radio"><span>Radio — GFSK · π/4-DQPSK · 8DPSK · Potenza</span><span class="sl-tag">RF</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="explain-box">
+    <h4>📚 Stack protocollare — Spiegazione livello per livello</h4>
+    <p><strong>RADIO (RF):</strong> GFSK per BR (±160 kHz), π/4-DQPSK per EDR 2 Mbps (2 bit/simbolo), 8DPSK per EDR 3 Mbps (3 bit/simbolo). Controllo potenza dinamico.</p>
+    <p><strong>BASEBAND:</strong> Gestisce time slot da 625 µs. Master TX in slot pari, slave TX in slot dispari. Pacchetti: Access Code (sincro), Header (indirizzo, tipo, SEQN/ARQN), Payload (dati). FEC per header e payload. CRC per rilevare errori. AMA (Active Member Address) di 3 bit → max 7 slave attivi.</p>
+    <p><strong>LINK MANAGER (LMP):</strong> Autenticazione challenge-response, pairing, crittografia stream cipher E0 a 128 bit (deprecato in v5.0, sostituito da AES-CCM), sincronizzazione clock, power control, modalità Active/Sniff/Hold/Park.</p>
+    <p><strong>HCI:</strong> Interfaccia standard tra controller BT e host (CPU). Permette chip BT generici con qualsiasi OS. Comandi e eventi asincroni. Trasporto via UART, USB, SDIO.</p>
+    <p><strong>L2CAP:</strong> Canali logici sopra i link fisici. Multiplexing, segmentation & reassembly (fino a 64 KB → pacchetti Baseband max 341 byte), QoS, flow control.</p>
+    <p><strong>RFCOMM / TCS / SDP:</strong> RFCOMM emula porta seriale RS-232 (SPP). TCS BIN per segnalazione chiamate. SDP per scoprire servizi remoti (es. "supporta A2DP?").</p>
+    <p><strong>PROTOCOLLI ADOTTATI:</strong> TCP/IP (networking), PPP (dial-up), OBEX (trasferimento file vCard, immagini).</p>
+    <p><strong>PROFILI:</strong> A2DP (audio stereo), AVRCP (telecomando), HFP (vivavoce auto), SPP (seriale virtuale), BPP (stampa), HID (tastiere/mouse).</p>
+  </div>
+
+  <div class="divider"></div>
+  <div class="grid g2">
+    <div class="box">
+      <div class="box-title">Tipi di collegamento</div>
+      <div class="callout c-blue">
+        <strong>SCO — Synchronous Connection Oriented</strong>
+        Collegamento punto-punto <em>simmetrico</em> master↔slave. Riserva uno slot in ciascuna direzione. Pacchetti persi <strong>non</strong> ritrasmessi. Per traffico voce in tempo reale.
+      </div>
+      <div class="callout c-teal">
+        <strong>ACL — Asynchronous Connectionless</strong>
+        Nessuno slot riservato → master scambia pacchetti con tutti gli slave. Pacchetti errati <strong>ritrasmessi</strong> (ARQ). Supporta broadcast. Un solo link ACL tra due dispositivi.
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="box-title">Correzione errori ACL — ACK / NACK</div>
+      <p style="font-size:.87rem;font-family:var(--serif);color:rgba(10,10,15,.65);margin-bottom:10px">
+        Ogni pacchetto porta un bit <strong>SEQN</strong> (0/1 alternato). L'ACK/NACK è inviato nello slot immediatamente successivo, a frequenza diversa.
+      </p>
+      <div class="ack-visual">
+        <div class="ack-row">
+          <div class="ack-label">Master<br>TX</div>
+          <div class="ack-slots">
+            <div class="ack-slot as-full">0</div><div class="ack-slot as-empty"></div>
+            <div class="ack-slot as-full">1</div><div class="ack-slot as-empty"></div>
+            <div class="ack-slot as-full">1</div><div class="ack-slot as-empty"></div>
+            <div class="ack-slot as-full">1</div><div class="ack-slot as-empty"></div>
+            <div class="ack-slot as-full">0</div>
+          </div>
+        </div>
+        <div class="ack-row">
+          <div class="ack-label">Slave<br>RX+ACK</div>
+          <div class="ack-slots">
+            <div class="ack-slot as-empty"></div><div class="ack-slot as-ack">ACK</div>
+            <div class="ack-slot as-empty"></div><div class="ack-slot as-lost">NAK</div>
+            <div class="ack-slot as-empty"></div><div class="ack-slot as-ack">ACK</div>
+            <div class="ack-slot as-empty"></div><div class="ack-slot as-ack">ACK</div>
+            <div class="ack-slot as-empty"></div>
+          </div>
+        </div>
+      </div>
+      <p style="font-size:.8rem;font-family:var(--serif);color:rgba(10,10,15,.45);margin-top:8px">Il NACK perso (lost) causa il reinvio del pacchetto precedente → garantisce consegna corretta.</p>
+    </div>
+  </div>
+
+  <div class="explain-box">
+    <h4>🔁 ARQ — Automatic Repeat reQuest</h4>
+    <p><strong>Problema:</strong> I pacchetti radio possono essere corrotti. Come garantire l'affidabilità?</p>
+    <ol>
+      <li>Il master trasmette un pacchetto con SEQN=0 nello slot N (frequenza F1)</li>
+      <li>Lo slave riceve ed esegue il CRC. Se OK → invia ACK nello slot N+1 (frequenza F2). Se CRC fallisce → invia NACK</li>
+      <li>Il master nello slot N+2 (frequenza F3): se ha ricevuto ACK → trasmette il <em>prossimo</em> pacchetto con SEQN=1; se ha ricevuto NACK o nulla → ritrasmette lo <em>stesso</em> pacchetto con SEQN=0</li>
+      <li>Lo slave riconosce la ritrasmissione dal SEQN invariato → scarta il duplicato se aveva già ricevuto OK</li>
+    </ol>
+    <p><strong>Timeout:</strong> Se il master non riceve risposta entro un certo numero di slot, assume NACK e ritrasmette. Per SCO (voce) ARQ non è usato — meglio perdere un pacchetto che introdurre latenza variabile.</p>
+  </div>
+
+  <div class="divider"></div>
+  <div class="box" style="margin-bottom:1.25rem">
+    <div class="box-title">Classi di potenza</div>
+    <div class="grid g3">
+      <div>
+        <span class="badge b-blue">Classe 1</span>
+        <div style="font-family:var(--mono);font-size:1.5rem;font-weight:600;color:var(--blue);margin:.3rem 0">100 mW · 20 dBm</div>
+        <p style="font-family:var(--serif);font-size:.9rem">Indoor 100m · Outdoor 200m. PC, notebook. Sensibilità RX: −85/−90 dBm.</p>
+      </div>
+      <div>
+        <span class="badge b-teal">Classe 2</span>
+        <div style="font-family:var(--mono);font-size:1.5rem;font-weight:600;color:var(--teal);margin:.3rem 0">2.5 mW · 4 dBm</div>
+        <p style="font-family:var(--serif);font-size:.9rem">Indoor 10m · Outdoor 50m. La più diffusa — adattatori, periferiche, cuffie.</p>
+      </div>
+      <div>
+        <span class="badge b-orange">Classe 3</span>
+        <div style="font-family:var(--mono);font-size:1.5rem;font-weight:600;color:var(--orange);margin:.3rem 0">1 mW · 0 dBm</div>
+        <p style="font-family:var(--serif);font-size:.9rem">Indoor 1m · Outdoor 10m. Dispositivi ultra-low-power, sensori indossabili.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid g2">
+    <div class="box">
+      <div class="box-title">Link Budget — concetti chiave</div>
+      <div class="callout c-orange" style="margin-bottom:.75rem">
+        <strong>Fade Margin</strong>
+        A 2.4 GHz le riflessioni creano interferenze. Aggiungere 10–20 dB di margine per compensare il fading multipath.
+      </div>
+      <table class="tbl">
+        <thead><tr><th>Versione</th><th>Sensibilità tipica</th></tr></thead>
+        <tbody>
+          <tr><td>BT 2.0+EDR</td><td>~−80 dBm</td></tr>
+          <tr><td>BT 3.0+HS</td><td>~−82 dBm</td></tr>
+          <tr><td>BT 4.0 (BLE)</td><td>~−90 dBm</td></tr>
+          <tr><td>BT 5.0</td><td>~−95 dBm</td></tr>
+          <tr><td>BT 5.1/5.2</td><td>~−100 dBm</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="box">
+      <div class="box-title">Esempio — Link Budget Classe 2 a 10m indoor</div>
+      <div class="lbudget-calc">
+        <div class="lbc-row"><span class="lbc-key">P_tx (Classe 2)</span><span class="lbc-val">+4 dBm</span></div>
+        <div class="lbc-row"><span class="lbc-key">G_tx (antenna)</span><span class="lbc-val">0 dBi</span></div>
+        <div class="lbc-row"><span class="lbc-key">G_rx (antenna)</span><span class="lbc-val">0 dBi</span></div>
+        <div class="lbc-row"><span class="lbc-key">L_fs Friis @10m, 2.4GHz</span><span class="lbc-val">−60 dB</span></div>
+        <div class="lbc-row"><span class="lbc-key">L_indoor (pareti)</span><span class="lbc-val">−5 dB</span></div>
+        <div class="lbc-row"><span class="lbc-key">L_cavi (integrato)</span><span class="lbc-val">−1 dB</span></div>
+        <div class="lbc-row"><span class="lbc-key">P_rx = (+4+0)+0−66</span><span class="lbc-val">−62 dBm</span></div>
+        <div class="lbc-row"><span class="lbc-key">Sensibilità RX</span><span class="lbc-val">−90 dBm</span></div>
+        <div class="lbc-row"><span class="lbc-key" style="color:#60a5fa;opacity:1">Link Budget = −62−(−90)</span><span class="lbc-val" style="color:#60a5fa">28 dB ✓</span></div>
+      </div>
+      <p style="font-size:.8rem;font-family:var(--serif);color:rgba(10,10,15,.5);margin-top:8px">28 dB di margine = connessione robusta anche con +20 dB di path loss aggiuntivo.</p>
+    </div>
+  </div>
+
+  <div class="explain-box">
+    <h4>📊 Link Budget — Calcolo dettagliato</h4>
+    <p><strong>Formula generale:</strong> <code>P_rx = P_tx + G_tx + G_rx - L_fs - L_misc</code></p>
+    <p><strong>Free Space Path Loss (Friis):</strong> <code>L_fs (dB) = 20×log₁₀(d_km) + 20×log₁₀(f_MHz) + 32.45</code></p>
+    <p>Per 2.4 GHz e 10 m: <code>L_fs = 20×log₁₀(0.01) + 20×log₁₀(2400) + 32.45 = 60 dB</code></p>
+    <p><strong>Perdite indoor tipiche:</strong> Muro cartongesso: 3-5 dB · Muro mattoni: 8-12 dB · Muro cemento armato: 15-25 dB · Persona (body shadowing): 3-6 dB · Mobili legno: 2-4 dB</p>
+    <p><strong>Margine:</strong> <code>Margin (dB) = P_rx - Sensitivity_rx</code></p>
+    <ul>
+      <li><strong>&gt;10 dB:</strong> Minimo per connessione stabile</li>
+      <li><strong>&gt;20 dB:</strong> Raccomandato per ambienti indoor con movimento</li>
+      <li><strong>&gt;30 dB:</strong> Connessione molto robusta, tollera molti ostacoli</li>
+    </ul>
+  </div>
+    </section>
+    <nav class="pagenav"><a class="prev" href="antenne.html"><span class="pn-dir">← Precedente</span><span class="pn-title">📐 Antenne PCB</span></a><a class="next" href="ble.html"><span class="pn-dir">Successivo →</span><span class="pn-title">⚡ BLE</span></a></nav>
+  </div>
+</main>
+
+<footer>
+  TPSIT · 5F 2025/26 · Bluetooth Classic
+</footer>
+
+</body>
+</html>

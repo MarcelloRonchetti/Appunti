@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>5G — TPSIT · 5F</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;600&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/tpsit-style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header-bg"></div>
+  <div class="header-inner" style="padding-bottom:1.5rem">
+    <div class="header-eyebrow">
+      <a class="eyebrow-tag" href="../index.html">← Home</a>
+      <a class="eyebrow-tag" href="../tpsit.html">← TPSIT</a>
+      <span class="eyebrow-tag">5F · 2025/26</span>
+      <div class="eyebrow-line"></div>
+      <span class="eyebrow-tag">5G</span>
+    </div>
+  </div>
+</header>
+
+<main class="layout-shell">
+  <aside class="sidenav">
+    <a href="../tpsit.html" class="sn-back">← Indice materia</a>
+    <div class="sn-label">Macro-argomenti</div>
+    <a href="esp32.html" class="">
+      <span class="icn">🔧</span>
+      <span>ESP32</span>
+      <span class="num">01</span>
+    </a>
+    <a href="wifi.html" class="">
+      <span class="icn">📡</span>
+      <span>Wi-Fi 802.11</span>
+      <span class="num">02</span>
+    </a>
+    <a href="antenne.html" class="">
+      <span class="icn">📐</span>
+      <span>Antenne PCB</span>
+      <span class="num">03</span>
+    </a>
+    <a href="bluetooth.html" class="">
+      <span class="icn">📶</span>
+      <span>Bluetooth Classic</span>
+      <span class="num">04</span>
+    </a>
+    <a href="ble.html" class="">
+      <span class="icn">⚡</span>
+      <span>BLE</span>
+      <span class="num">05</span>
+    </a>
+    <a href="lorawan.html" class="">
+      <span class="icn">🌐</span>
+      <span>LoRaWAN</span>
+      <span class="num">06</span>
+    </a>
+    <a href="nbiot.html" class="">
+      <span class="icn">📱</span>
+      <span>NB-IoT</span>
+      <span class="num">07</span>
+    </a>
+    <a href="5g.html" class="active">
+      <span class="icn">🚀</span>
+      <span>5G</span>
+      <span class="num">08</span>
+    </a>
+    <a href="confronto.html" class="">
+      <span class="icn">⚖️</span>
+      <span>Confronto</span>
+      <span class="num">09</span>
+    </a>
+  </aside>
+
+  <div class="content-main">
+    <section class="section">
+      <div class="sec-head">
+    <div class="sec-num">08</div>
+    <div class="sec-body">
+      <h2>5G per IoT</h2>
+      <p>Rete convergente eterogenea su licenza + non-licenza. 1 milione di dispositivi/km² (10× il 4G). Network slicing per uso multi-servizio.</p>
+    </div>
+    <span class="sec-badge b-red">5G · mMTC</span>
+  </div>
+
+  <div class="explain-box">
+    <h4>🚀 Cos'è il 5G e come funziona?</h4>
+    <p>Il 5G è progettato per supportare una <strong>rete convergente ed eterogenea</strong> che unisce tecnologie wireless, sia coperte da licenza che prive di licenza. Le architetture 5G saranno piattaforme basate sul software, dove la funzionalità di networking viene gestita dal software piuttosto che dall'hardware.</p>
+    <p><strong>Densità di connessione:</strong> Il 5G consente fino a <strong>un milione di dispositivi per km quadrato</strong>, ossia 10 volte in più rispetto alla tecnologia 4G. Questo è fondamentale per l'IoT, dove miliardi di dispositivi devono connettersi simultaneamente.</p>
+  </div>
+
+  <div class="box" style="margin-bottom:1.25rem">
+    <div class="box-title">Bande di frequenza</div>
+    <div style="display:flex;flex-direction:column;gap:8px;padding:.5rem 0">
+      <div style="display:flex;align-items:center;gap:12px">
+        <div style="width:75px;font-family:var(--mono);font-size:.77rem;color:rgba(10,10,15,.45);text-align:right">700 MHz</div>
+        <div style="flex:.3;height:36px;background:var(--teal-l);border:1px solid rgba(5,150,105,.3);border-radius:6px;display:flex;align-items:center;padding:0 12px">
+          <span style="font-size:.8rem;font-weight:700;color:var(--teal);font-family:var(--sans)">Banda bassa</span>
+        </div>
+        <div style="font-size:.83rem;color:rgba(10,10,15,.55);font-family:var(--serif)">Lungo range · copre aree remote · superiore al 4G</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:12px">
+        <div style="width:75px;font-family:var(--mono);font-size:.77rem;color:rgba(10,10,15,.45);text-align:right">3.7 GHz</div>
+        <div style="flex:.55;height:36px;background:var(--blue-l);border:1px solid rgba(37,99,235,.3);border-radius:6px;display:flex;align-items:center;padding:0 12px">
+          <span style="font-size:.8rem;font-weight:700;color:var(--blue);font-family:var(--sans)">Sub-6 GHz — Banda media</span>
+        </div>
+        <div style="font-size:.83rem;color:rgba(10,10,15,.55);font-family:var(--serif)">Bilanciata · la più diffusa in Italia</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:12px">
+        <div style="width:75px;font-family:var(--mono);font-size:.77rem;color:rgba(10,10,15,.45);text-align:right">26 GHz</div>
+        <div style="flex:1;height:36px;background:var(--red-l);border:1px solid rgba(220,38,38,.3);border-radius:6px;display:flex;align-items:center;padding:0 12px">
+          <span style="font-size:.8rem;font-weight:700;color:var(--red);font-family:var(--sans)">mmWave — Massima velocità · corto range · molti ripetitori</span>
+        </div>
+      </div>
+    </div>
+    <p style="font-size:.83rem;font-family:var(--serif);color:rgba(10,10,15,.5);margin-top:.5rem">⚠️ In Italia la mmWave è quasi inesistente: costi elevati di apparecchiature e densità di ripetitori. La Sub-6 GHz è lo standard più diffuso.</p>
+  </div>
+
+  <div class="explain-box">
+    <h4>🔪 Network Slicing</h4>
+    <p><strong>Problema:</strong> Come gestire servizi molto diversi (sensori ambientali, veicoli autonomi, streaming 4K) su un'unica infrastruttura?</p>
+    <p><strong>Soluzione: Network Slicing</strong> — tecnologia che consente a più reti virtuali di operare su un'unica infrastruttura di rete fisica. Ogni <strong>slice</strong> può essere personalizzata per applicazioni o servizi specifici, con requisiti diversi di velocità, latenza e affidabilità.</p>
+    <p>Ogni tipo di applicazione dovrebbe "vedere" una rete configurata nella maniera ottimale per gestire il suo traffico specifico.</p>
+  </div>
+
+  <div class="grid g3">
+    <div class="box" style="border-top:3px solid var(--teal)">
+      <span class="badge b-teal">mMTC — IoT Slice</span>
+      <h3>Massive Machine-Type Communications</h3>
+      <p>Milioni di dispositivi a basso consumo energetico. Sensori ambientali, contatori intelligenti, asset tracker urbani. Ottimizzata per connessioni ad alta densità.</p>
+    </div>
+    <div class="box" style="border-top:3px solid var(--blue)">
+      <span class="badge b-blue">URLLC — Critico</span>
+      <h3>Ultra-Reliable Low-Latency Communications</h3>
+      <p>Comunicazioni critiche che richiedono affidabilità e bassissima latenza. Veicoli autonomi, controllo industriale, telemedicina. Latenza &lt;1 ms, affidabilità 99.9999%.</p>
+    </div>
+    <div class="box" style="border-top:3px solid var(--red)">
+      <span class="badge b-red">eMBB — Banda larga</span>
+      <h3>Enhanced Mobile Broadband</h3>
+      <p>Elevata larghezza di banda per applicazioni ad alta velocità. Streaming 4K/8K, realtà aumentata/virtuale. Fino a 20 Gbps picco in downlink.</p>
+    </div>
+  </div>
+
+  <div class="explain-box">
+    <h4>📡 Tecniche di accesso del 5G per IoT</h4>
+    <p><strong>NB-IoT (Narrowband IoT):</strong> Opera su banda stretta di 180 kHz. Ottimizzato per bassa complessità, basso consumo, alta penetrazione (deep indoor). Utilizza OFDM nel downlink e SC-FDMA nell'uplink. Ideale per sensori semplici che trasmettono dati piccoli occasionalmente.</p>
+    <p><strong>LTE-M (LTE for Machines, eMTC):</strong> Banda più ampia (1.4 MHz). Supporta velocità di dati maggiori rispetto a NB-IoT (~1 Mbps). Maggiore mobilità e gestione del roaming. Adatto per dispositivi che si spostano e necessitano di maggiore banda.</p>
+    <p><strong>RedCap (Reduced Capability):</strong> Introdotto nelle specifiche 3GPP Release 17. Progettato specificamente per dispositivi IoT in 5G nativo. Riduce la complessità di implementazione e il consumo energetico rispetto al 5G full, mantenendo le funzionalità necessarie per l'IoT industriale avanzato.</p>
+  </div>
+
+  <div class="box" style="margin-top:1rem">
+    <div class="box-title">Tecniche accesso 5G per IoT</div>
+    <table class="tbl">
+      <thead><tr><th>Tecnologia</th><th>Banda</th><th>Velocità</th><th>Caso d'uso</th></tr></thead>
+      <tbody>
+        <tr><td><span class="badge b-orange">NB-IoT</span></td><td>180 kHz</td><td style="font-family:var(--mono);font-size:.83rem">~20 Kbps</td><td>Bassa complessità, deep indoor, batteria lunga</td></tr>
+        <tr><td><span class="badge b-blue">LTE-M (eMTC)</span></td><td>1.4 MHz</td><td style="font-family:var(--mono);font-size:.83rem">1 Mbps</td><td>Mobilità, roaming, voce IoT</td></tr>
+        <tr><td><span class="badge b-teal">RedCap (Rel.17)</span></td><td>5G nativo</td><td style="font-family:var(--mono);font-size:.83rem">Variable</td><td>IoT 5G nativo a complessità ridotta</td></tr>
+      </tbody>
+    </table>
+  </div>
+    </section>
+    <nav class="pagenav"><a class="prev" href="nbiot.html"><span class="pn-dir">← Precedente</span><span class="pn-title">📱 NB-IoT</span></a><a class="next" href="confronto.html"><span class="pn-dir">Successivo →</span><span class="pn-title">⚖️ Confronto</span></a></nav>
+  </div>
+</main>
+
+<footer>
+  TPSIT · 5F 2025/26 · 5G
+</footer>
+
+</body>
+</html>

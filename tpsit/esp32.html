@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ESP32 — TPSIT · 5F</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;600&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/tpsit-style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header-bg"></div>
+  <div class="header-inner" style="padding-bottom:1.5rem">
+    <div class="header-eyebrow">
+      <a class="eyebrow-tag" href="../index.html">← Home</a>
+      <a class="eyebrow-tag" href="../tpsit.html">← TPSIT</a>
+      <span class="eyebrow-tag">5F · 2025/26</span>
+      <div class="eyebrow-line"></div>
+      <span class="eyebrow-tag">ESP32</span>
+    </div>
+  </div>
+</header>
+
+<main class="layout-shell">
+  <aside class="sidenav">
+    <a href="../tpsit.html" class="sn-back">← Indice materia</a>
+    <div class="sn-label">Macro-argomenti</div>
+    <a href="esp32.html" class="active">
+      <span class="icn">🔧</span>
+      <span>ESP32</span>
+      <span class="num">01</span>
+    </a>
+    <a href="wifi.html" class="">
+      <span class="icn">📡</span>
+      <span>Wi-Fi 802.11</span>
+      <span class="num">02</span>
+    </a>
+    <a href="antenne.html" class="">
+      <span class="icn">📐</span>
+      <span>Antenne PCB</span>
+      <span class="num">03</span>
+    </a>
+    <a href="bluetooth.html" class="">
+      <span class="icn">📶</span>
+      <span>Bluetooth Classic</span>
+      <span class="num">04</span>
+    </a>
+    <a href="ble.html" class="">
+      <span class="icn">⚡</span>
+      <span>BLE</span>
+      <span class="num">05</span>
+    </a>
+    <a href="lorawan.html" class="">
+      <span class="icn">🌐</span>
+      <span>LoRaWAN</span>
+      <span class="num">06</span>
+    </a>
+    <a href="nbiot.html" class="">
+      <span class="icn">📱</span>
+      <span>NB-IoT</span>
+      <span class="num">07</span>
+    </a>
+    <a href="5g.html" class="">
+      <span class="icn">🚀</span>
+      <span>5G</span>
+      <span class="num">08</span>
+    </a>
+    <a href="confronto.html" class="">
+      <span class="icn">⚖️</span>
+      <span>Confronto</span>
+      <span class="num">09</span>
+    </a>
+  </aside>
+
+  <div class="content-main">
+    <section class="section">
+      <div class="sec-head">
+    <div class="sec-num">01</div>
+    <div class="sec-body">
+      <h2>ESP32</h2>
+      <p>SoC dual-core Xtensa LX6 con Wi-Fi, Bluetooth Classic e BLE integrati. Il microcontroller IoT più diffuso al mondo.</p>
+    </div>
+    <span class="sec-badge b-blue">Microcontroller</span>
+  </div>
+
+  <div class="explain-box">
+    <h4>📘 Cos'è l'ESP32?</h4>
+    <p><strong>ESP32</strong> è un System-on-Chip (SoC) prodotto da Espressif Systems. Integra processore, memoria, periferiche di I/O e moduli wireless (Wi-Fi e Bluetooth) nello stesso chip.</p>
+    <p><strong>Perché è così popolare nell'IoT?</strong></p>
+    <ul>
+      <li><strong>Costo ridotto:</strong> Pochi euro per modulo, accessibile per hobby e industria</li>
+      <li><strong>Connettività integrata:</strong> Non serve hardware esterno per Wi-Fi/Bluetooth</li>
+      <li><strong>Potenza di calcolo:</strong> Due core a 240 MHz per task complessi</li>
+      <li><strong>Basso consumo:</strong> Diverse modalità di risparmio energetico per dispositivi a batteria</li>
+      <li><strong>Ecosistema ricco:</strong> Supportato da Arduino IDE, PlatformIO, ESP-IDF e centinaia di librerie</li>
+    </ul>
+    <p><strong>Architettura Xtensa LX6:</strong> Architettura RISC a 32 bit sviluppata da Tensilica (ora Cadence). La versione dual-core permette esecuzione indipendente su ciascun core, ottimizzata per DSP e operazioni real-time.</p>
+  </div>
+
+  <div class="box" style="margin-bottom:1.25rem">
+    <div class="box-title">Architettura interna</div>
+    <div class="esp32-diagram">
+      <div class="esp32-left">
+        <div class="esp-block eb-gray">Embedded Flash</div>
+        <div class="esp-block eb-gray">SPI</div>
+        <div class="esp-block eb-gray">I²C</div>
+        <div class="esp-block eb-gray">I²S / SDIO</div>
+        <div class="esp-block eb-gray">UART / CAN</div>
+        <div class="esp-block eb-gray">ETH / IR / PWM</div>
+        <div class="esp-block eb-gray">Temp · Touch · DAC</div>
+        <div class="esp-block eb-gray">SAR ADC</div>
+      </div>
+      <div class="esp32-center">
+        <div class="esp-row">
+          <div class="esp-block eb-blue">BT Link Controller<br><small>Bluetooth Baseband</small></div>
+          <div class="esp-block eb-blue">Wi-Fi MAC<br><small>Wi-Fi Baseband</small></div>
+        </div>
+        <div class="esp-block eb-red" style="display:grid;grid-template-columns:1fr auto auto;align-items:center;gap:8px;text-align:left;padding:8px 12px">
+          <div><small style="opacity:.6">Radio</small><br>RF Receive · Clock Gen · RF Transmit</div>
+          <div style="writing-mode:vertical-lr;font-size:.7rem;opacity:.6">Switch</div>
+          <div style="writing-mode:vertical-lr;font-size:.7rem;opacity:.6">Balun</div>
+        </div>
+        <div class="esp-block eb-teal" style="padding:10px 12px;text-align:left">
+          <b>Core &amp; Memory</b> — Dual/Single-core Xtensa 32-bit LX6<br>
+          <div class="esp-row3" style="margin-top:6px">
+            <div class="esp-block eb-gray" style="padding:4px">ROM</div>
+            <div class="esp-block eb-gray" style="padding:4px">SRAM</div>
+            <div class="esp-block eb-orange" style="padding:4px">Crypto HW</div>
+          </div>
+        </div>
+        <div class="esp-block eb-orange" style="text-align:left;padding:10px 12px">
+          <b>RTC &amp; Low-Power</b>
+          <div class="esp-row3" style="margin-top:6px">
+            <div class="esp-block eb-gray" style="padding:4px;font-size:.7rem">PMU</div>
+            <div class="esp-block eb-gray" style="padding:4px;font-size:.7rem">ULP CoProc</div>
+            <div class="esp-block eb-gray" style="padding:4px;font-size:.7rem">Rec. Mem.</div>
+          </div>
+        </div>
+      </div>
+      <div class="esp32-right" style="gap:6px">
+        <div class="esp-block eb-orange">SHA</div>
+        <div class="esp-block eb-orange">RSA</div>
+        <div class="esp-block eb-orange">AES</div>
+        <div class="esp-block eb-orange">RNG</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="explain-box">
+    <h4>🔍 Spiegazione dei blocchi architetturali</h4>
+    <p><strong>1. WIRELESS CONTROLLERS (Blu):</strong></p>
+    <ul>
+      <li><strong>Wi-Fi MAC & Baseband:</strong> Gestisce il livello MAC dello standard 802.11 b/g/n e la modulazione/demodulazione del segnale</li>
+      <li><strong>BT Link Controller & Baseband:</strong> Implementa stack Bluetooth Classic (BR/EDR) e BLE a livello hardware, gestendo timing, frequency hopping e pacchettizzazione</li>
+    </ul>
+    <p><strong>2. RADIO RF (Rosso):</strong></p>
+    <ul>
+      <li><strong>RF Receive/Transmit:</strong> Circuiti analogici per segnali radio a 2.4 GHz</li>
+      <li><strong>Switch:</strong> Commuta tra TX e RX (ESP32 non può trasmettere e ricevere contemporaneamente)</li>
+      <li><strong>Balun:</strong> Balanced-to-Unbalanced transformer — converte segnali bilanciati interni in segnali sbilanciati per l'antenna</li>
+    </ul>
+    <p><strong>3. CORE & MEMORY (Verde acqua):</strong></p>
+    <ul>
+      <li><strong>Dual-core Xtensa LX6:</strong> Due processori a 240 MHz. Un core per wireless, l'altro per codice applicativo</li>
+      <li><strong>ROM:</strong> Memoria read-only con bootloader e funzioni di sistema</li>
+      <li><strong>SRAM (520 KB):</strong> Memoria volatile per variabili e stack, divisa in tre bank</li>
+      <li><strong>Crypto HW:</strong> Acceleratori hardware per AES, SHA, RSA — operazioni 10-100× più veloci</li>
+    </ul>
+    <p><strong>4. RTC & LOW-POWER (Arancione):</strong></p>
+    <ul>
+      <li><strong>PMU:</strong> Controlla le modalità di risparmio energetico (deep sleep, light sleep, modem sleep)</li>
+      <li><strong>ULP Coprocessor:</strong> Processore ultra-low-power attivo durante deep sleep per monitorare sensori consumando &lt;10 μA</li>
+      <li><strong>Recovery Memory:</strong> 8 KB di memoria RTC che mantiene dati in deep sleep</li>
+    </ul>
+    <p><strong>5. PERIFERICHE:</strong> SPI, I²C, I²S, UART, CAN, ETH, SAR ADC (18 canali), touch sensors (10 GPIO), sensore temperatura interno.</p>
+    <p><strong>6. SICUREZZA:</strong> AES, SHA, RSA, RNG — acceleratori hardware per crittografia.</p>
+  </div>
+
+  <div class="grid g3">
+    <div class="stat"><div class="val" style="color:#60a5fa">2</div><div class="stat-lbl">Core LX6 (32-bit)</div></div>
+    <div class="stat"><div class="val" style="color:#34d399">2.4 GHz</div><div class="stat-lbl">Wi-Fi + BT + BLE</div></div>
+    <div class="stat"><div class="val" style="color:#f59e0b">520 KB</div><div class="stat-lbl">SRAM interna</div></div>
+  </div>
+
+  <div class="grid g2" style="margin-top:1rem">
+    <div class="box">
+      <div class="box-title">Connettività integrata</div>
+      <div class="grid g2" style="gap:.5rem">
+        <div style="padding:.7rem;background:var(--blue-l);border-radius:6px">
+          <div class="lbl" style="color:var(--blue)">Wi-Fi</div>
+          <p style="font-size:.85rem;font-family:var(--serif)">802.11 b/g/n · 2.4 GHz · modalità STA, AP, STA+AP</p>
+        </div>
+        <div style="padding:.7rem;background:var(--purple-l);border-radius:6px">
+          <div class="lbl" style="color:var(--purple)">Bluetooth Classic</div>
+          <p style="font-size:.85rem;font-family:var(--serif)">BR/EDR v4.2 · A2DP, SPP, HFP...</p>
+        </div>
+        <div style="padding:.7rem;background:var(--teal-l);border-radius:6px">
+          <div class="lbl" style="color:var(--teal)">BLE</div>
+          <p style="font-size:.85rem;font-family:var(--serif)">Bluetooth Low Energy · Advertising, GATT, GAP</p>
+        </div>
+        <div style="padding:.7rem;background:var(--orange-l);border-radius:6px">
+          <div class="lbl" style="color:var(--orange)">Crittografia HW</div>
+          <p style="font-size:.85rem;font-family:var(--serif)">AES, SHA, RSA, RNG accelerati in hardware</p>
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="box-title">Esercizio WIFI_1 — Esempio codice</div>
+      <pre style="background:var(--accent);color:var(--paper);border-radius:6px;padding:1rem;font-size:.77rem;font-family:var(--mono);overflow-x:auto;line-height:1.7"><span style="color:#60a5fa">#include</span> &lt;Arduino.h&gt;
+<span style="color:#60a5fa">#include</span> "WiFi.h"
+
+<span style="color:#f59e0b">#define</span> WIFI_NETWORK <span style="color:#34d399">"__SSID__"</span>
+<span style="color:#f59e0b">#define</span> WIFI_PASSWORD <span style="color:#34d399">"__PSW__"</span>
+<span style="color:#f59e0b">#define</span> WIFI_TIMEOUT_MS <span style="color:#f59e0b">20000</span>
+
+<span style="color:#c084fc">void</span> connectToWiFi() {
+  WiFi.mode(<span style="color:#f59e0b">WIFI_STA</span>);
+  WiFi.begin(WIFI_NETWORK, WIFI_PASSWORD);
+  <span style="color:#60a5fa">while</span>(WiFi.status() != WL_CONNECTED){
+    Serial.print(<span style="color:#34d399">"."</span>); delay(100);
+  }
+  Serial.print(WiFi.localIP());
+}</pre>
+    </div>
+  </div>
+
+  <div class="explain-box">
+    <h4>💤 Modalità di risparmio energetico</h4>
+    <p><strong>Active Mode (~160-240 mA):</strong> Entrambi i core attivi a 240 MHz, radio Wi-Fi/BT attive, tutte le periferiche disponibili.</p>
+    <p><strong>Modem Sleep (~20-30 mA):</strong> CPU attiva, radio spenta tra i beacon. Il modem si riattiva periodicamente per ricevere beacon dall'AP. Utile per traffico sporadico.</p>
+    <p><strong>Light Sleep (~0.8 mA):</strong> CPU in pausa, risvegliata da GPIO, timer o eventi. RTC e ULP coprocessor attivi. Risveglio rapido (~5 ms). RAM mantenuta.</p>
+    <p><strong>Deep Sleep (~10 μA):</strong> Solo RTC attivo, tutto spento. 8 KB di RTC memory mantenuta. Risveglio da timer RTC, GPIO esterni o touchpad. Al risveglio il chip fa reboot completo. Perfetto per sensori che inviano dati ogni X minuti/ore.</p>
+    <p><strong>Hibernation (~5 μA):</strong> Anche l'RTC è spento. Solo un timer ultralow-power attivo. Risveglio solo da timer o reset.</p>
+  </div>
+    </section>
+    <nav class="pagenav"><a class="prev disabled" href="#"><span class="pn-dir">←</span><span class="pn-title">Inizio</span></a><a class="next" href="wifi.html"><span class="pn-dir">Successivo →</span><span class="pn-title">📡 Wi-Fi 802.11</span></a></nav>
+  </div>
+</main>
+
+<footer>
+  TPSIT · 5F 2025/26 · ESP32
+</footer>
+
+</body>
+</html>

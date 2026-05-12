@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NB-IoT — TPSIT · 5F</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;600&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/tpsit-style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header-bg"></div>
+  <div class="header-inner" style="padding-bottom:1.5rem">
+    <div class="header-eyebrow">
+      <a class="eyebrow-tag" href="../index.html">← Home</a>
+      <a class="eyebrow-tag" href="../tpsit.html">← TPSIT</a>
+      <span class="eyebrow-tag">5F · 2025/26</span>
+      <div class="eyebrow-line"></div>
+      <span class="eyebrow-tag">NB-IoT</span>
+    </div>
+  </div>
+</header>
+
+<main class="layout-shell">
+  <aside class="sidenav">
+    <a href="../tpsit.html" class="sn-back">← Indice materia</a>
+    <div class="sn-label">Macro-argomenti</div>
+    <a href="esp32.html" class="">
+      <span class="icn">🔧</span>
+      <span>ESP32</span>
+      <span class="num">01</span>
+    </a>
+    <a href="wifi.html" class="">
+      <span class="icn">📡</span>
+      <span>Wi-Fi 802.11</span>
+      <span class="num">02</span>
+    </a>
+    <a href="antenne.html" class="">
+      <span class="icn">📐</span>
+      <span>Antenne PCB</span>
+      <span class="num">03</span>
+    </a>
+    <a href="bluetooth.html" class="">
+      <span class="icn">📶</span>
+      <span>Bluetooth Classic</span>
+      <span class="num">04</span>
+    </a>
+    <a href="ble.html" class="">
+      <span class="icn">⚡</span>
+      <span>BLE</span>
+      <span class="num">05</span>
+    </a>
+    <a href="lorawan.html" class="">
+      <span class="icn">🌐</span>
+      <span>LoRaWAN</span>
+      <span class="num">06</span>
+    </a>
+    <a href="nbiot.html" class="active">
+      <span class="icn">📱</span>
+      <span>NB-IoT</span>
+      <span class="num">07</span>
+    </a>
+    <a href="5g.html" class="">
+      <span class="icn">🚀</span>
+      <span>5G</span>
+      <span class="num">08</span>
+    </a>
+    <a href="confronto.html" class="">
+      <span class="icn">⚖️</span>
+      <span>Confronto</span>
+      <span class="num">09</span>
+    </a>
+  </aside>
+
+  <div class="content-main">
+    <section class="section">
+      <div class="sec-head">
+    <div class="sec-num">07</div>
+    <div class="sec-body">
+      <h2>NB-IoT — Narrowband IoT</h2>
+      <p>LPWAN cellulare su banda licenziata 800 MHz. Opera su infrastruttura LTE esistente. 3GPP Release 13. SIM card M2M.</p>
+    </div>
+    <span class="sec-badge b-orange">Cellulare · 800 MHz</span>
+  </div>
+
+  <div class="explain-box">
+    <h4>📱 Cos'è NB-IoT e come funziona?</h4>
+    <p><strong>NB-IoT (Narrowband IoT)</strong> è una tecnologia di rete geografica LPWAN cellulare progettata per dispositivi IoT che devono scambiare piccole quantità di dati per periodi prolungati. Opera sulla frequenza degli <strong>800 MHz</strong>, una banda licenziata che non richiede autorizzazioni per essere sfruttata.</p>
+    <p><strong>Integrazione con reti esistenti:</strong> NB-IoT integra le caratteristiche principali delle classiche reti cellulari LTE 2G, 3G e 4G. Può essere attivato all'interno di una portante LTE, nella banda di protezione LTE o come soluzione autonoma. Le prime attivazioni sono iniziate alla fine del 2017, con avvio commerciale su larga scala nel 2018.</p>
+    <p><strong>Vantaggi chiave:</strong></p>
+    <ul>
+      <li><strong>Copertura estesa:</strong> Permette di raggiungere anche le aree interrate (deep indoor), ideale per contatori in cantine o tombini</li>
+      <li><strong>Efficienza energetica:</strong> Dispositivi che funzionano a batteria con consumo molto basso</li>
+      <li><strong>Alta densità:</strong> Fino a 50.000 dispositivi gestibili da una singola cella (ciascun settore di un sito radiomobile con canale di 180 kHz)</li>
+      <li><strong>Costo ridotto:</strong> Banda stretta (180 kHz) e bassa complessità → chipset economici</li>
+    </ul>
+    <p><strong>Tecniche di accesso:</strong> Utilizza OFDM nel downlink e SC-FDMA nell'uplink. La velocità di upload è intorno ai <strong>20 Kbps</strong>.</p>
+  </div>
+
+  <div class="grid g4" style="margin-bottom:1.25rem">
+    <div class="stat"><div class="val" style="color:#f59e0b">~20</div><div class="stat-lbl">Kbps upload</div></div>
+    <div class="stat"><div class="val" style="color:#f59e0b">50K</div><div class="stat-lbl">Device/cella</div></div>
+    <div class="stat"><div class="val" style="color:#f59e0b">10+</div><div class="stat-lbl">Anni batteria</div></div>
+    <div class="stat"><div class="val" style="color:#f59e0b">180kHz</div><div class="stat-lbl">Larghezza canale</div></div>
+  </div>
+
+  <div class="grid g2">
+    <div class="box">
+      <div class="box-title">Caratteristiche tecniche</div>
+      <table class="tbl">
+        <tbody>
+          <tr><td style="color:rgba(10,10,15,.5)">Banda</td><td><strong>800 MHz</strong> (licenziata)</td></tr>
+          <tr><td style="color:rgba(10,10,15,.5)">Modulazione</td><td>QPSK</td></tr>
+          <tr><td style="color:rgba(10,10,15,.5)">Accesso</td><td>FDMA uplink · OFDMA downlink</td></tr>
+          <tr><td style="color:rgba(10,10,15,.5)">SIM</td><td>Sì — M2M</td></tr>
+          <tr><td style="color:rgba(10,10,15,.5)">Deep indoor</td><td>Raggiunge cantine e tombini</td></tr>
+          <tr><td style="color:rgba(10,10,15,.5)">Range</td><td>10+ km outdoor</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="box">
+      <div class="box-title">SIM Card IoT M2M</div>
+      <p style="font-size:.95rem;font-family:var(--serif);color:rgba(10,10,15,.6);margin-bottom:1rem">
+        La rete di apparecchiature connesse tramite SIM Machine-to-Machine (M2M) permette a qualsiasi dispositivo elettronico di scambiare dati, informazioni e comandi con altri oggetti, persone o processi connessi.
+      </p>
+      <div class="callout c-orange" style="margin-bottom:.75rem">
+        <strong>IP fisso pubblico</strong>
+        Permette accesso remoto al dispositivo senza aspettare che invii dati. Maggiore controllo e sicurezza. Ideale per contatori, attuatori. VPN dedicata personalizzabile.
+      </div>
+      <div class="callout c-blue" style="margin-bottom:.75rem">
+        <strong>Multi-operatore</strong>
+        La SIM si connette automaticamente all'operatore con segnale migliore. Failover automatico in roaming.
+      </div>
+      <div class="grid g2" style="gap:.5rem">
+        <div style="padding:.8rem;background:rgba(10,10,15,.04);border-radius:6px;border:1px solid var(--border)">
+          <div class="lbl">SIM Standard</div>
+          <p style="font-size:.83rem;font-family:var(--serif)">−25°C a +85°C · uso normale</p>
+        </div>
+        <div style="padding:.8rem;background:var(--orange-l);border-radius:6px;border:1px solid rgba(217,119,6,.2)">
+          <div class="lbl" style="color:var(--orange)">SIM Industriale</div>
+          <p style="font-size:.83rem;font-family:var(--serif)">−40°C a +105°C · vibrazioni</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="explain-box">
+    <h4>📊 Confronto con altre tecnologie LPWAN</h4>
+    <p>NB-IoT si posiziona come tecnologia LPWAN cellulare, in competizione con LoRaWAN e Sigfox. A differenza di queste ultime, NB-IoT utilizza bande licenziate (gestite dagli operatori telefonici) e richiede una SIM card M2M per la connessione.</p>
+    <p><strong>Vantaggi rispetto a LoRaWAN/Sigfox:</strong></p>
+    <ul>
+      <li>Infrastruttura esistente (torri cellulari già presenti)</li>
+      <li>Maggiore affidabilità e qualità del servizio (QoS garantita dall'operatore)</li>
+      <li>Integrazione diretta con sistemi cellulari e roaming internazionale</li>
+      <li>Sicurezza intrinseca della rete cellulare</li>
+    </ul>
+    <p><strong>Svantaggi:</strong></p>
+    <ul>
+      <li>Costo della SIM e del piano dati (abbonamento)</li>
+      <li>Dipendenza dall'operatore telefonico e dalla copertura della sua rete</li>
+      <li>Maggiore consumo energetico rispetto a LoRaWAN/Sigfox (ma comunque molto basso rispetto a 4G/5G full)</li>
+    </ul>
+  </div>
+
+  <div class="box" style="margin-top:1rem">
+    <div class="box-title">Sigfox — Ultra Narrow Band (UNB)</div>
+    <div class="grid g3">
+      <div class="callout c-orange" style="margin:0;grid-column:1/-1">
+        <strong>Principio UNB</strong>
+        Ogni nodo occupa una banda di frequenza estremamente stretta (poche centinaia di Hz). Banda più stretta → rumore più basso (circa −154 dBm per 100 Hz). Range fino a 50 km dal gateway. Limite: max 140 messaggi uplink/giorno, payload massimo 12 byte, 1 messaggio ogni 10 minuti.
+      </div>
+      <div class="stat"><div class="val" style="color:#f59e0b">140</div><div class="stat-lbl">Messaggi uplink/giorno</div></div>
+      <div class="stat"><div class="val" style="color:#f59e0b">50 km</div><div class="stat-lbl">Range dal gateway</div></div>
+      <div class="stat"><div class="val" style="color:#f59e0b">12 B</div><div class="stat-lbl">Payload max</div></div>
+    </div>
+    <p style="font-size:.9rem;font-family:var(--serif);color:rgba(10,10,15,.6);margin-top:1rem">
+      Il ciclo di vita di un messaggio Sigfox è sempre lo stesso: il dispositivo si sveglia e trasmette un messaggio via radio. Più stazioni base nell'area ricevono il messaggio e lo inoltrano al Sigfox Cloud, che infine lo invia alla piattaforma del cliente.
+    </p>
+  </div>
+    </section>
+    <nav class="pagenav"><a class="prev" href="lorawan.html"><span class="pn-dir">← Precedente</span><span class="pn-title">🌐 LoRaWAN</span></a><a class="next" href="5g.html"><span class="pn-dir">Successivo →</span><span class="pn-title">🚀 5G</span></a></nav>
+  </div>
+</main>
+
+<footer>
+  TPSIT · 5F 2025/26 · NB-IoT
+</footer>
+
+</body>
+</html>

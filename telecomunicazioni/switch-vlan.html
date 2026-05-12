@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Switch & VLAN — Telecomunicazioni · 5F</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;600&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/tech-style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header-bg"></div>
+  <div class="header-inner" style="padding-bottom:1.5rem">
+    <div class="header-eyebrow">
+      <a class="eyebrow-tag" href="../index.html">← Home</a>
+      <a class="eyebrow-tag" href="../telecomunicazioni.html">← Telecomunicazioni</a>
+      <span class="eyebrow-tag">5F · 2025/26</span>
+      <div class="eyebrow-line"></div>
+      <span class="eyebrow-tag">Switch & VLAN</span>
+    </div>
+  </div>
+</header>
+
+<main class="layout-shell">
+  <aside class="sidenav">
+    <a href="../telecomunicazioni.html" class="sn-back">← Indice materia</a>
+    <div class="sn-label">Macro-argomenti</div>
+    <a href="onde-antenne.html" class="">
+      <span class="icn">📡</span>
+      <span>Onde & Antenne</span>
+      <span class="num">01</span>
+    </a>
+    <a href="tcp-ip.html" class="">
+      <span class="icn">🌐</span>
+      <span>TCP/IP</span>
+      <span class="num">02</span>
+    </a>
+    <a href="switch-vlan.html" class="active">
+      <span class="icn">🔀</span>
+      <span>Switch & VLAN</span>
+      <span class="num">03</span>
+    </a>
+    <a href="acl.html" class="">
+      <span class="icn">🛡️</span>
+      <span>ACL</span>
+      <span class="num">04</span>
+    </a>
+    <a href="nat.html" class="">
+      <span class="icn">🔁</span>
+      <span>NAT</span>
+      <span class="num">05</span>
+    </a>
+    <a href="wireless-80211.html" class="">
+      <span class="icn">📶</span>
+      <span>Wireless 802.11</span>
+      <span class="num">06</span>
+    </a>
+    <a href="fibra-gpon.html" class="">
+      <span class="icn">💡</span>
+      <span>Fibra & GPON</span>
+      <span class="num">07</span>
+    </a>
+    <a href="laboratorio.html" class="">
+      <span class="icn">🔧</span>
+      <span>Laboratorio</span>
+      <span class="num">08</span>
+    </a>
+  </aside>
+
+  <div class="content-main">
+    <section class="section">
+      <div class="sec-head">
+    <div class="sec-num">03</div>
+    <div class="sec-body">
+      <h2>Switch &amp; VLAN</h2>
+      <p>Modalità di forwarding, segmentazione di livello 2, trunking, inter-VLAN routing, port security.</p>
+    </div>
+    <span class="sec-badge b-orange">Livello 2</span>
+  </div>
+
+  <div class="explain-box">
+    <h4>🔀 Modalità di forwarding negli switch</h4>
+    <p>Quando un frame entra su una porta, lo switch deve decidere quando inoltrarlo. Tre strategie:</p>
+    <ul>
+      <li><strong>Store-and-Forward:</strong> lo switch riceve l'intero frame, calcola il CRC, scarta frame errati e poi inoltra. <em>Latenza alta, affidabilità massima.</em> Default sugli switch moderni.</li>
+      <li><strong>Cut-Through:</strong> appena letto il MAC destinatario (primi 6 byte dopo il preambolo), inoltra subito senza aspettare il resto. <em>Latenza minima, ma inoltra anche frame corrotti.</em></li>
+      <li><strong>Fragment-Free:</strong> compromesso. Aspetta i primi 64 byte (dimensione minima del frame Ethernet) per filtrare le collisioni più frequenti, poi inoltra. <em>Compromesso tra latenza e affidabilità.</em></li>
+    </ul>
+  </div>
+
+  <div class="divider"></div>
+
+  <h3 style="font-size:1.3rem;margin-bottom:1rem;color:var(--accent)">VLAN — Virtual LAN</h3>
+
+  <div class="explain-box">
+    <h4>📦 Cosa sono le VLAN e perché servono</h4>
+    <p>Una <strong>VLAN</strong> è una LAN logica all'interno di uno switch fisico. Le porte di uno stesso switch appartengono a VLAN diverse → host in VLAN diverse non comunicano direttamente (servirebbe un router).</p>
+    <p><strong>Motivazioni e vantaggi:</strong></p>
+    <ul>
+      <li><strong>Segmentazione:</strong> separare reparti (amministrazione, produzione, ospiti) sullo stesso hardware.</li>
+      <li><strong>Sicurezza:</strong> il traffico di una VLAN non è visibile alle altre.</li>
+      <li><strong>Riduzione broadcast domain:</strong> i broadcast ARP/DHCP restano confinati nella VLAN.</li>
+      <li><strong>Flessibilità:</strong> spostando un cavo da una porta all'altra, l'host cambia rete logica senza ri-cablare.</li>
+      <li><strong>Risparmio:</strong> uno switch unico al posto di N switch separati.</li>
+    </ul>
+    <p><strong>VLAN ID:</strong> numero da 1 a 4094. VLAN 1 è di default. Lo standard di tagging è <strong>IEEE 802.1Q</strong> che aggiunge 4 byte al frame Ethernet.</p>
+  </div>
+
+  <div class="box" style="margin-bottom:1.25rem">
+    <div class="box-title">Esempio · 3 VLAN su uno switch</div>
+    <div class="vlan-vis">
+      <div class="vlan-cell vlan-c1">
+        <span class="vlan-tag">VLAN 10</span>
+        <div class="vlan-name">Amministrazione</div>
+        Porte 1-8 · 192.168.10.0/24
+      </div>
+      <div class="vlan-cell vlan-c2">
+        <span class="vlan-tag">VLAN 20</span>
+        <div class="vlan-name">Produzione</div>
+        Porte 9-16 · 192.168.20.0/24
+      </div>
+      <div class="vlan-cell vlan-c3">
+        <span class="vlan-tag">VLAN 30</span>
+        <div class="vlan-name">Ospiti</div>
+        Porte 17-24 · 192.168.30.0/24
+      </div>
+    </div>
+    <p style="font-family:var(--serif);font-size:.92rem;color:rgba(10,10,15,.65)">Tre reti logiche distinte sullo stesso switch fisico. Senza router, non c'è comunicazione tra di loro.</p>
+  </div>
+
+  <div class="explain-box">
+    <h4>🚛 Trunking — far passare più VLAN su un solo cavo</h4>
+    <p><strong>Problema:</strong> ho due switch e voglio estendere le VLAN 10, 20, 30 su entrambi. Servirebbero tre cavi (uno per VLAN). Spreco.</p>
+    <p><strong>Soluzione trunk:</strong> un <strong>link trunk</strong> trasporta tutte le VLAN sullo stesso cavo. Ogni frame viene "taggato" con il VLAN ID con <strong>IEEE 802.1Q</strong>.</p>
+    <ul>
+      <li><strong>Access port:</strong> appartiene a una sola VLAN. Connette gli host. Il frame entra/esce senza tag.</li>
+      <li><strong>Trunk port:</strong> trasporta più VLAN. Connette switch a switch o switch a router. I frame viaggiano con tag 802.1Q.</li>
+      <li><strong>Native VLAN:</strong> VLAN il cui traffico passa sul trunk <em>senza</em> tag. Per default VLAN 1 — è bene cambiarla per sicurezza.</li>
+    </ul>
+  </div>
+
+  <div class="explain-box">
+    <h4>🌉 Inter-VLAN routing — come far comunicare le VLAN</h4>
+    <p>Le VLAN sono isolate per definizione. Per farle comunicare serve un dispositivo di livello 3 (router o switch L3):</p>
+    <ul>
+      <li><strong>Router-on-a-stick:</strong> un router connesso allo switch con un singolo trunk. Sull'interfaccia il router definisce <em>sub-interfacce</em> (es. <code>g0/0.10</code>, <code>g0/0.20</code>), una per VLAN, ciascuna con il suo IP gateway.</li>
+      <li><strong>Switch Layer 3 / SVI:</strong> lo switch ha funzionalità di routing. Per ogni VLAN si crea una Switch Virtual Interface (<code>interface vlan 10</code>) con l'IP gateway. Più veloce del router-on-a-stick perché tutto avviene in hardware.</li>
+    </ul>
+    <p><strong>VLAN Voice (per VoIP):</strong> traffico voce separato dal traffico dati per garantire <em>quality of service</em>. I telefoni IP vengono "scoperti" via CDP/LLDP e assegnati automaticamente alla VLAN voice. La QoS marca i frame voce con priorità alta (es. CoS 5 / DSCP EF).</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <h3 style="font-size:1.3rem;margin-bottom:1rem;color:var(--accent)">Sicurezza a livello 2 · Port Security</h3>
+
+  <div class="explain-box">
+    <h4>🔒 Port Security su switch Cisco/Mikrotik</h4>
+    <p>Impedisce a un host non autorizzato di connettersi a una porta dello switch.</p>
+    <p><strong>Funzionamento:</strong></p>
+    <ul>
+      <li>Limita il numero massimo di MAC address apprendibili per porta (es. 1).</li>
+      <li>Si possono apprendere automaticamente (<em>sticky learning</em>) o configurare manualmente.</li>
+      <li>Se un nuovo MAC tenta di usare la porta, scatta una <strong>violation</strong>.</li>
+    </ul>
+    <p><strong>Modalità di violation:</strong></p>
+    <ul>
+      <li><strong>Shutdown:</strong> la porta entra in stato <em>err-disabled</em>, da riabilitare manualmente. Massima sicurezza.</li>
+      <li><strong>Restrict:</strong> blocca il traffico del MAC non autorizzato ma lascia la porta su, registra l'evento.</li>
+      <li><strong>Protect:</strong> blocca silenziosamente senza log.</li>
+    </ul>
+    <div class="code-block" style="margin-top:.8rem"><span class="c-com">! Esempio Cisco IOS</span>
+<span class="c-kw">interface</span> Fa0/1
+ <span class="c-kw">switchport mode</span> access
+ <span class="c-kw">switchport port-security</span>
+ <span class="c-kw">switchport port-security maximum</span> <span class="c-num">1</span>
+ <span class="c-kw">switchport port-security mac-address sticky</span>
+ <span class="c-kw">switchport port-security violation</span> shutdown</div>
+  </div>
+    </section>
+    <nav class="pagenav"><a class="prev" href="tcp-ip.html"><span class="pn-dir">← Precedente</span><span class="pn-title">🌐 TCP/IP</span></a><a class="next" href="acl.html"><span class="pn-dir">Successivo →</span><span class="pn-title">🛡️ ACL</span></a></nav>
+  </div>
+</main>
+
+<footer>
+  Telecomunicazioni · 5F 2025/26 · Switch & VLAN
+</footer>
+</body>
+</html>

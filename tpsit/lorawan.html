@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LoRaWAN — TPSIT · 5F</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;600&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/tpsit-style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header-bg"></div>
+  <div class="header-inner" style="padding-bottom:1.5rem">
+    <div class="header-eyebrow">
+      <a class="eyebrow-tag" href="../index.html">← Home</a>
+      <a class="eyebrow-tag" href="../tpsit.html">← TPSIT</a>
+      <span class="eyebrow-tag">5F · 2025/26</span>
+      <div class="eyebrow-line"></div>
+      <span class="eyebrow-tag">LoRaWAN</span>
+    </div>
+  </div>
+</header>
+
+<main class="layout-shell">
+  <aside class="sidenav">
+    <a href="../tpsit.html" class="sn-back">← Indice materia</a>
+    <div class="sn-label">Macro-argomenti</div>
+    <a href="esp32.html" class="">
+      <span class="icn">🔧</span>
+      <span>ESP32</span>
+      <span class="num">01</span>
+    </a>
+    <a href="wifi.html" class="">
+      <span class="icn">📡</span>
+      <span>Wi-Fi 802.11</span>
+      <span class="num">02</span>
+    </a>
+    <a href="antenne.html" class="">
+      <span class="icn">📐</span>
+      <span>Antenne PCB</span>
+      <span class="num">03</span>
+    </a>
+    <a href="bluetooth.html" class="">
+      <span class="icn">📶</span>
+      <span>Bluetooth Classic</span>
+      <span class="num">04</span>
+    </a>
+    <a href="ble.html" class="">
+      <span class="icn">⚡</span>
+      <span>BLE</span>
+      <span class="num">05</span>
+    </a>
+    <a href="lorawan.html" class="active">
+      <span class="icn">🌐</span>
+      <span>LoRaWAN</span>
+      <span class="num">06</span>
+    </a>
+    <a href="nbiot.html" class="">
+      <span class="icn">📱</span>
+      <span>NB-IoT</span>
+      <span class="num">07</span>
+    </a>
+    <a href="5g.html" class="">
+      <span class="icn">🚀</span>
+      <span>5G</span>
+      <span class="num">08</span>
+    </a>
+    <a href="confronto.html" class="">
+      <span class="icn">⚖️</span>
+      <span>Confronto</span>
+      <span class="num">09</span>
+    </a>
+  </aside>
+
+  <div class="content-main">
+    <section class="section">
+      <div class="sec-head">
+    <div class="sec-num">06</div>
+    <div class="sec-body">
+      <h2>LoRa / LoRaWAN</h2>
+      <p>LPWAN a lungo raggio per IoT rurale e urbano. LoRa = livello fisico CSS · LoRaWAN = protocollo di rete (MAC layer).</p>
+    </div>
+    <span class="sec-badge b-teal">LPWAN · 868 MHz</span>
+  </div>
+
+  <div class="explain-box">
+    <h4>🌐 Cos'è LoRaWAN e come funziona?</h4>
+    <p><strong>Differenza fondamentale:</strong> <strong>LoRa</strong> è la tecnologia di trasmissione wireless (livello fisico, la modulazione radio), mentre <strong>LoRaWAN</strong> è il protocollo di livello superiore che definisce come i dati vengono organizzati, instradati e protetti, permettendo l'accesso alla rete internet.</p>
+    <p><strong>Problemi dell'IoT risolti da LoRaWAN:</strong> L'IoT prevede miliardi di dispositivi che mandano piccole quantità di dati ma, messi insieme, formano Big Data rischiando di saturare le reti. LoRaWAN offre: <strong>bassa larghezza di banda</strong> (pochi dati trasmessi), <strong>alta efficienza energetica</strong> (batterie che durano anni), e <strong>connettività ovunque</strong> (dispositivi in luoghi difficili da raggiungere).</p>
+    <p><strong>Architettura Star-of-Stars:</strong></p>
+    <ul>
+      <li><strong>End Devices:</strong> Sensori/attuatori IoT sul campo che trasmettono in broadcast (tutte le direzioni)</li>
+      <li><strong>Gateway:</strong> Ricevono pacchetti radio, li convertono in IP e li inoltrano al Network Server via internet. Sono ponti "trasparenti" — non elaborano il contenuto dei messaggi</li>
+      <li><strong>Network Server:</strong> Riceve copie multiple dello stesso messaggio da gateway diversi, elimina i duplicati, valuta la qualità della ricezione e identifica il gateway migliore. Gestisce sicurezza (AES-128 end-to-end), autenticità dispositivi, routing</li>
+      <li><strong>Application Server:</strong> Dove i dati vengono interpretati ed elaborati dall'utente finale</li>
+      <li><strong>Join Server:</strong> Gestisce l'attivazione sicura dei dispositivi, custodisce le root key e genera le chiavi di sessione (NwkSKey per il Network Server, AppSKey per l'Application Server)</li>
+    </ul>
+    <p><strong>Comunicazione single-hop:</strong> Il dispositivo raggiunge uno o più gateway contemporaneamente con un solo salto radio, aumentando l'affidabilità. Il gateway ha un collegamento backhaul flessibile: 3G/4G/5G, Wi-Fi, Ethernet, fibra ottica o radio 2.4 GHz.</p>
+  </div>
+
+  <div class="grid g4" style="margin-bottom:1.25rem">
+    <div class="stat"><div class="val" style="color:#34d399">15 km</div><div class="stat-lbl">Range campo aperto</div></div>
+    <div class="stat"><div class="val" style="color:#34d399">2 km</div><div class="stat-lbl">Range urbano denso</div></div>
+    <div class="stat"><div class="val" style="color:#34d399">105 mo</div><div class="stat-lbl">Batteria 2000 mAh</div></div>
+    <div class="stat"><div class="val" style="color:#34d399">1%</div><div class="stat-lbl">Duty cycle max</div></div>
+  </div>
+
+  <div class="grid g2">
+    <div class="box">
+      <div class="box-title">Architettura Star-of-Stars</div>
+      <div style="display:flex;flex-direction:column;gap:8px;padding:.5rem 0">
+        <div style="display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:center">
+          <div style="width:44px;height:44px;border-radius:8px;background:var(--teal-l);border:1px solid rgba(5,150,105,.3);display:flex;align-items:center;justify-content:center;font-size:18px">📡</div>
+          <div><div class="lbl" style="color:var(--teal)">End Devices</div><p style="font-size:.85rem;font-family:var(--serif)">Sensori LoRa — trasmettono a tutti i gateway vicini</p></div>
+        </div>
+        <div style="margin-left:22px;width:1px;height:20px;background:var(--border)"></div>
+        <div style="display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:center">
+          <div style="width:44px;height:44px;border-radius:8px;background:var(--blue-l);border:1px solid rgba(37,99,235,.3);display:flex;align-items:center;justify-content:center;font-size:18px">🔀</div>
+          <div><div class="lbl" style="color:var(--blue)">Gateway</div><p style="font-size:.85rem;font-family:var(--serif)">Ponte trasparente → forward via IP/4G al Network Server</p></div>
+        </div>
+        <div style="margin-left:22px;width:1px;height:20px;background:var(--border)"></div>
+        <div style="display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:center">
+          <div style="width:44px;height:44px;border-radius:8px;background:var(--orange-l);border:1px solid rgba(217,119,6,.3);display:flex;align-items:center;justify-content:center;font-size:18px">☁️</div>
+          <div><div class="lbl" style="color:var(--orange)">Network Server</div><p style="font-size:.85rem;font-family:var(--serif)">De-duplica, gestisce ADR, sicurezza AES-128, routing</p></div>
+        </div>
+        <div style="margin-left:22px;width:1px;height:20px;background:var(--border)"></div>
+        <div style="display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:center">
+          <div style="width:44px;height:44px;border-radius:8px;background:var(--purple-l);border:1px solid rgba(124,58,237,.3);display:flex;align-items:center;justify-content:center;font-size:18px">🖥️</div>
+          <div><div class="lbl" style="color:var(--purple)">Application Server</div><p style="font-size:.85rem;font-family:var(--serif)">Dati finali decifrati e disponibili all'applicazione</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="box-title">Spreading Factor a 125 kHz</div>
+      <p style="font-size:.87rem;font-family:var(--serif);color:rgba(10,10,15,.6);margin-bottom:1rem">
+        CSS (Chirp Spread Spectrum): la frequenza del chirp varia linearmente nel tempo. I dati sono codificati nella frequenza iniziale del chirp. SF più alto = più portata, meno velocità.
+      </p>
+      <div id="sfBars"></div>
+      <div class="callout c-teal" style="margin-top:1rem;margin-bottom:0">
+        <strong>ADR — Adaptive Data Rate</strong>
+        Il Network Server adatta dinamicamente SF, BW e potenza. Al primo collegamento → SF12 (più lento, massima portata). Quando il segnale migliora → SF scende per velocizzare e risparmiare. Usare solo con nodi fermi (situazioni RF stabili).
+      </div>
+    </div>
+  </div>
+
+  <div class="explain-box">
+    <h4>📡 Chirp Spread Spectrum (CSS) e modulazione Chirp</h4>
+    <p><strong>Cos'è un chirp?</strong> È un segnale sinusoidale la cui frequenza non è costante nel tempo, ma varia linearmente: parte da una frequenza e sale (o scende) in modo regolare e continuo fino a un'altra. Il nome "chirp" deriva dal verso degli uccelli o dei pipistrelli.</p>
+    <p><strong>CSS (Chirp Spread Spectrum):</strong> Tecnica di trasmissione a spettro espanso che utilizza chirp a banda larga con modulazione di frequenza lineare. L'idea dello spread spectrum è distribuire l'energia del segnale su una banda di frequenze molto più ampia di quella strettamente necessaria. Questo rende il segnale estremamente resistente alle interferenze e al rumore — anche se una parte della banda viene disturbata, il resto rimane integro e ricevibile.</p>
+    <p><strong>Modulazione Chirp elementare:</strong> La pendenza del chirp trasporta l'informazione digitale — pendenza positiva = 1, pendenza negativa = 0. La pendenza è facilmente rilevabile anche in presenza di rumore.</p>
+    <p><strong>Modulazione LoRa (brevettata):</strong> Invece di usare solo la pendenza, LoRa incorpora l'informazione nella <strong>frequenza di partenza</strong> del chirp. Ogni simbolo è un chirp che percorre sempre l'intera banda disponibile, ma il punto esatto da cui inizia la salita varia da simbolo a simbolo. Questo permette di rappresentare molti più valori distinti con un singolo chirp — non solo 0 e 1, ma un intero insieme di simboli — aumentando notevolmente la quantità di informazione trasportata.</p>
+  </div>
+
+  <div class="explain-box">
+    <h4>📦 Formato pacchetto LoRa</h4>
+    <p><strong>Explicit Header Mode (default):</strong> Il pacchetto include un header corto con: lunghezza del payload (byte), coding rate (tasso di ridondanza per correzione errori), flag presenza CRC. Struttura: Preamble → Payload Length → CR → CRC present → Payload → Payload CRC. Il ricevitore non ha bisogno di sapere in anticipo nulla sulla struttura del messaggio.</p>
+    <p><strong>Implicit Header Mode:</strong> L'intestazione viene completamente rimossa dal pacchetto. Riduce il <strong>Time on Air (ToA)</strong>, cioè il tempo in cui il dispositivo occupa il canale radio, con benefici su consumo energetico e rispetto del duty cycle. Il prezzo: tutte le informazioni (lunghezza payload, coding rate, presenza CRC) devono essere configurate manualmente e identicamente su trasmettitore e ricevitore. Se non allineati → comunicazione fallisce.</p>
+  </div>
+
+  <div class="explain-box">
+    <h4>⚙️ Livello fisico LoRa — Banda ISM 868 MHz</h4>
+    <p>LoRaWAN opera nella banda ISM a <strong>868 MHz</strong> (da 865 MHz a 870 MHz), una banda di frequenze libera da licenza in Europa. Lavorare a frequenze basse ha un vantaggio fisico preciso: le onde radio penetrano meglio attraverso muri, edifici e ostacoli — ideale per dispositivi in ambienti difficili (seminterrati, aree rurali, infrastrutture urbane).</p>
+    <p><strong>Restrizioni sulla banda:</strong></p>
+    <ul>
+      <li><strong>Potenza di trasmissione massima:</strong> Tipicamente 25 mW (equivalente a 14 dBm). Circa un quarto della potenza di un router Wi-Fi, ma sufficiente per coprire chilometri grazie all'efficienza della modulazione LoRa</li>
+      <li><strong>Duty cycle:</strong> Frazione massima di tempo in cui un dispositivo può trasmettere in un'ora. Un duty cycle dell'1% significa che in un'ora il dispositivo può occupare il canale per massimo 36 secondi. Indicato anche come <strong>Time on Air (ToA)</strong></li>
+    </ul>
+    <p><strong>Deep Indoor:</strong> L'elevata immunità al rumore di CSS consente di raggiungere facilmente luoghi "nascosti" come contatori dell'acqua in cantine, sotto ai tombini o nei cavedi.</p>
+  </div>
+
+  <div class="grid g3" style="margin-top:1rem">
+    <div class="box">
+      <span class="badge b-red">Classe A — Battery</span>
+      <h3>Ultra Low Power</h3>
+      <p>Uplink + 2 brevi finestre downlink. La modalità più efficiente energeticamente. Obbligatoria per tutti i dispositivi LoRaWAN.</p>
+    </div>
+    <div class="box">
+      <span class="badge b-teal">Classe B — Beacon</span>
+      <h3>Slot Programmati</h3>
+      <p>Come A + finestre di ricezione aggiuntive schedulate tramite beacon del gateway. Latenza downlink prevedibile.</p>
+    </div>
+    <div class="box">
+      <span class="badge b-blue">Classe C — Continuous</span>
+      <h3>Ascolto Continuo</h3>
+      <p>Finestra di ricezione sempre aperta. Latenza minima in downlink. Maggiore consumo → solitamente alimentati a rete.</p>
+    </div>
+  </div>
+
+  <div class="explain-box">
+    <h4>🔐 Sicurezza LoRaWAN</h4>
+    <p>La trasmissione dei dati è protetta con crittografia <strong>AES-128</strong> (Advanced Encryption Standard a 128 bit), lo stesso standard usato in ambito bancario e militare. La sicurezza è integrata direttamente nel protocollo, non un'aggiunta opzionale.</p>
+    <ul>
+      <li><strong>NwkSKey (Network Session Key):</strong> Protegge la comunicazione a livello di rete, trasferita al Network Server</li>
+      <li><strong>AppSKey (Application Session Key):</strong> Protegge il payload applicativo, inviata all'Application Server</li>
+      <li><strong>Separazione delle chiavi:</strong> Garantisce che nemmeno il Network Server possa leggere il contenuto dei dati applicativi — un ulteriore livello di privacy e sicurezza architetturale</li>
+    </ul>
+  </div>
+    </section>
+    <nav class="pagenav"><a class="prev" href="ble.html"><span class="pn-dir">← Precedente</span><span class="pn-title">⚡ BLE</span></a><a class="next" href="nbiot.html"><span class="pn-dir">Successivo →</span><span class="pn-title">📱 NB-IoT</span></a></nav>
+  </div>
+</main>
+
+<footer>
+  TPSIT · 5F 2025/26 · LoRaWAN
+</footer>
+<script>
+function show(tab, btn) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('sec-'+tab).classList.add('active');
+  if(btn) btn.classList.add('active');
+}
+
+// SF Bars
+(function(){
+  const sfs = [
+    {sf:'SF7', bps:'5470', dist:'2 km', pct:12, color:'var(--teal)'},
+    {sf:'SF8', bps:'3125', dist:'4 km', pct:22, color:'#16a34a'},
+    {sf:'SF9', bps:'1760', dist:'6 km', pct:36, color:'var(--yellow)'},
+    {sf:'SF10', bps:'980',  dist:'8 km', pct:52, color:'var(--orange)'},
+    {sf:'SF11', bps:'440',  dist:'11 km',pct:72, color:'var(--purple)'},
+    {sf:'SF12', bps:'290',  dist:'14 km',pct:100,color:'var(--red)'},
+  ];
+  const c = document.getElementById('sfBars');
+  if(c) {
+    sfs.forEach(s => {
+      const row = document.createElement('div');
+      row.className = 'sf-bar';
+      row.innerHTML = `
+        <span class="sf-key" style="color:${s.color}">${s.sf}</span>
+        <div class="sf-track">
+          <div class="sf-fill" style="width:${s.pct}%;background:${s.color};opacity:.3;border-right:2px solid ${s.color}"></div>
+        </div>
+        <span class="sf-meta">${s.bps} bps · ${s.dist}</span>`;
+      c.appendChild(row);
+    });
+  }
+})();
+
+// no tabs to switch — re-run SF bars on load
+</script>
+</body>
+</html>

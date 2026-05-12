@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wireless 802.11 — Telecomunicazioni · 5F</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;600&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/tech-style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header-bg"></div>
+  <div class="header-inner" style="padding-bottom:1.5rem">
+    <div class="header-eyebrow">
+      <a class="eyebrow-tag" href="../index.html">← Home</a>
+      <a class="eyebrow-tag" href="../telecomunicazioni.html">← Telecomunicazioni</a>
+      <span class="eyebrow-tag">5F · 2025/26</span>
+      <div class="eyebrow-line"></div>
+      <span class="eyebrow-tag">Wireless 802.11</span>
+    </div>
+  </div>
+</header>
+
+<main class="layout-shell">
+  <aside class="sidenav">
+    <a href="../telecomunicazioni.html" class="sn-back">← Indice materia</a>
+    <div class="sn-label">Macro-argomenti</div>
+    <a href="onde-antenne.html" class="">
+      <span class="icn">📡</span>
+      <span>Onde & Antenne</span>
+      <span class="num">01</span>
+    </a>
+    <a href="tcp-ip.html" class="">
+      <span class="icn">🌐</span>
+      <span>TCP/IP</span>
+      <span class="num">02</span>
+    </a>
+    <a href="switch-vlan.html" class="">
+      <span class="icn">🔀</span>
+      <span>Switch & VLAN</span>
+      <span class="num">03</span>
+    </a>
+    <a href="acl.html" class="">
+      <span class="icn">🛡️</span>
+      <span>ACL</span>
+      <span class="num">04</span>
+    </a>
+    <a href="nat.html" class="">
+      <span class="icn">🔁</span>
+      <span>NAT</span>
+      <span class="num">05</span>
+    </a>
+    <a href="wireless-80211.html" class="active">
+      <span class="icn">📶</span>
+      <span>Wireless 802.11</span>
+      <span class="num">06</span>
+    </a>
+    <a href="fibra-gpon.html" class="">
+      <span class="icn">💡</span>
+      <span>Fibra & GPON</span>
+      <span class="num">07</span>
+    </a>
+    <a href="laboratorio.html" class="">
+      <span class="icn">🔧</span>
+      <span>Laboratorio</span>
+      <span class="num">08</span>
+    </a>
+  </aside>
+
+  <div class="content-main">
+    <section class="section">
+      <div class="sec-head">
+    <div class="sec-num">06</div>
+    <div class="sec-body">
+      <h2>Reti wireless · 802.11</h2>
+      <p>CSMA/CA, MIMO, varianti 802.11b/g/n/ac/ad, sicurezza WEP/WPA, BSS, beacon, link budget radio.</p>
+    </div>
+    <span class="sec-badge b-teal">WLAN</span>
+  </div>
+
+  <div class="explain-box">
+    <h4>📡 IEEE 802.11 — La famiglia degli standard Wi-Fi</h4>
+    <p><strong>Wi-Fi</strong> è il marchio commerciale, <strong>IEEE 802.11</strong> è lo standard tecnico. Opera nelle bande ISM senza licenza: 2.4 GHz, 5 GHz, 60 GHz.</p>
+    <p>I documenti tecnici definiscono il PHY (livello fisico, modulazioni) e il MAC (accesso al mezzo). Sopra c'è LLC (Logical Link Control) condiviso con Ethernet.</p>
+  </div>
+
+  <div class="box" style="margin-bottom:1.25rem">
+    <div class="box-title">Confronto varianti 802.11</div>
+    <table class="tbl">
+      <thead><tr><th>Standard</th><th>Banda</th><th>Max Rate</th><th>Modulazione</th><th>MIMO</th></tr></thead>
+      <tbody>
+        <tr><td><code>802.11a</code></td><td>5 GHz</td><td>54 Mbps</td><td>OFDM/QAM-64</td><td>—</td></tr>
+        <tr><td><code>802.11b</code></td><td>2.4 GHz</td><td>11 Mbps</td><td>DSSS/CCK</td><td>—</td></tr>
+        <tr><td><code>802.11g</code></td><td>2.4 GHz</td><td>54 Mbps</td><td>OFDM</td><td>—</td></tr>
+        <tr><td><code>802.11n</code> (Wi-Fi 4)</td><td>2.4+5 GHz</td><td>600 Mbps</td><td>OFDM/QAM-64</td><td>4×4</td></tr>
+        <tr><td><code>802.11ac</code> (Wi-Fi 5)</td><td>5 GHz</td><td>3.2 Gbps</td><td>OFDM/QAM-256</td><td>8×8 MU-MIMO</td></tr>
+        <tr><td><code>802.11ad</code> (WiGig)</td><td>60 GHz</td><td>7 Gbps</td><td>SC/OFDM</td><td>Beamforming</td></tr>
+        <tr><td><code>802.11ax</code> (Wi-Fi 6)</td><td>2.4+5 GHz</td><td>9.6 Gbps</td><td>OFDMA/QAM-1024</td><td>8×8 MU-MIMO</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="explain-box">
+    <h4>👂 CSMA/CA — Carrier Sense Multiple Access with Collision Avoidance</h4>
+    <p>Su Ethernet (cavo) si usa CSMA/CD: si trasmette e si rileva la collisione. <strong>In radio non funziona</strong>: la stazione non sente bene la propria trasmissione e ha il problema dell'<em>hidden terminal</em> (due stazioni che si trasmettono entrambe verso l'AP senza sentirsi tra loro).</p>
+    <p><strong>Soluzione CSMA/CA — Si <em>evita</em> la collisione:</strong></p>
+    <ol>
+      <li><strong>Listen Before Talk:</strong> la stazione ascolta il canale (DIFS). Se è libero → trasmette.</li>
+      <li><strong>Backoff casuale:</strong> se è occupato, aspetta che si liberi + un tempo casuale (contention window). Riduce la probabilità che due stazioni partano insieme.</li>
+      <li><strong>ACK obbligatorio:</strong> il ricevente deve confermare ogni frame con un ACK. Se l'ACK non arriva, il mittente ritrasmette.</li>
+      <li><strong>RTS/CTS opzionale:</strong> per frame grandi o problema hidden terminal, il mittente invia un <em>Request to Send</em>, l'AP risponde con <em>Clear to Send</em>: gli altri sentono il CTS e tacciono.</li>
+    </ol>
+  </div>
+
+  <div class="explain-box">
+    <h4>📡 MIMO — Multiple Input Multiple Output</h4>
+    <p>Più antenne TX e RX usate insieme per:</p>
+    <ul>
+      <li><strong>Spatial multiplexing:</strong> trasmettere flussi diversi sulle diverse antenne → throughput moltiplicato.</li>
+      <li><strong>Diversità spaziale:</strong> trasmettere lo stesso dato su più antenne → robustezza contro fading.</li>
+      <li><strong>Beamforming:</strong> combinare le fasi delle antenne per "puntare" il segnale verso il client.</li>
+    </ul>
+    <p><strong>Notazione:</strong> n×m MIMO = n antenne TX × m RX. <strong>MU-MIMO</strong> (Multi-User) permette di servire più client contemporaneamente.</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <h3 style="font-size:1.3rem;margin-bottom:1rem;color:var(--accent)">Architettura della cella Wi-Fi</h3>
+
+  <div class="grid g2" style="margin-bottom:1.25rem">
+    <div class="box">
+      <div class="box-title">BSS / BSSID / SSID</div>
+      <div class="callout c-blue" style="margin:0">
+        <strong>BSS — Basic Service Set</strong>
+        Un AP + tutti i client associati. La <em>cella</em> Wi-Fi.
+      </div>
+      <div class="callout c-teal" style="margin:0">
+        <strong>BSSID</strong>
+        L'identificatore della BSS: 6 byte, coincide con il MAC dell'AP.
+      </div>
+      <div class="callout c-orange" style="margin:0">
+        <strong>SSID</strong>
+        Il nome "umano" della WLAN (fino a 32 caratteri). Lo stesso SSID può essere condiviso da più AP (ESS) per il roaming.
+      </div>
+      <div class="callout c-purple" style="margin:0">
+        <strong>ESS — Extended Service Set</strong>
+        Più BSS con lo stesso SSID collegate da un Distribution System (LAN cablata). Permette il roaming senza perdere la connessione.
+      </div>
+    </div>
+    <div class="box">
+      <div class="box-title">Beacon frame e associazione</div>
+      <p style="font-family:var(--serif);margin-bottom:.6rem">L'AP trasmette <strong>beacon</strong> ogni ~100 ms con SSID, capabilities, supported rates, security.</p>
+      <div class="proto-step">
+        <span class="proto-num">1·Scanning</span>
+        <span class="proto-text">Il client ascolta i beacon (passive) o invia Probe Request (active).</span>
+      </div>
+      <div class="proto-step">
+        <span class="proto-num">2·Auth</span>
+        <span class="proto-text">Autenticazione 802.11 di livello MAC (open o shared).</span>
+      </div>
+      <div class="proto-step">
+        <span class="proto-num">3·Assoc</span>
+        <span class="proto-text">Il client invia Association Request; l'AP risponde con un AID.</span>
+      </div>
+      <div class="proto-step">
+        <span class="proto-num">4·4WHS</span>
+        <span class="proto-text">Se WPA2/WPA3: 4-way handshake per generare le chiavi temporanee (PTK, GTK).</span>
+      </div>
+      <div class="proto-step">
+        <span class="proto-num">5·Data</span>
+        <span class="proto-text">Cifratura attiva, scambio dati.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="box" style="margin-bottom:1.25rem">
+    <div class="box-title">Struttura del pacchetto 802.11 (MAC frame)</div>
+    <div class="header-fields">
+      <div class="hf hf-c1"><span class="hf-bits">2 byte</span><span class="hf-name">Frame Control</span></div>
+      <div class="hf hf-c1"><span class="hf-bits">2 byte</span><span class="hf-name">Duration / ID</span></div>
+      <div class="hf hf-c2"><span class="hf-bits">6 byte</span><span class="hf-name">Address 1</span></div>
+      <div class="hf hf-c2"><span class="hf-bits">6 byte</span><span class="hf-name">Address 2</span></div>
+      <div class="hf hf-c2"><span class="hf-bits">6 byte</span><span class="hf-name">Address 3</span></div>
+      <div class="hf hf-c3"><span class="hf-bits">2 byte</span><span class="hf-name">Seq Ctrl</span></div>
+      <div class="hf hf-c2"><span class="hf-bits">6 byte</span><span class="hf-name">Address 4*</span></div>
+      <div class="hf hf-c4"><span class="hf-bits">0-2312</span><span class="hf-name">Frame Body</span></div>
+      <div class="hf hf-c5"><span class="hf-bits">4 byte</span><span class="hf-name">FCS / CRC</span></div>
+    </div>
+    <p style="font-family:var(--serif);font-size:.9rem;margin-top:.8rem;color:rgba(10,10,15,.65)">Address 4 presente solo nei frame WDS (wireless distribution system). I quattro campi indirizzo servono perché ci sono mittente, destinatario, BSSID e (in WDS) AP sorgente.</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <h3 style="font-size:1.3rem;margin-bottom:1rem;color:var(--accent)">Sicurezza Wi-Fi</h3>
+
+  <div class="grid g3" style="margin-bottom:1.25rem">
+    <div class="box">
+      <span class="badge b-red">WEP (1999) ☠</span>
+      <h3>Da non usare</h3>
+      <p style="font-family:var(--serif);font-size:.9rem">RC4 con IV a 24 bit. Crackabile in minuti con strumenti pubblici (es. aircrack-ng). Deprecato.</p>
+    </div>
+    <div class="box">
+      <span class="badge b-orange">WPA (2003)</span>
+      <h3>Patch temporanea</h3>
+      <p style="font-family:var(--serif);font-size:.9rem">Introduce <strong>TKIP</strong> (Temporal Key Integrity Protocol) con chiavi che cambiano per ogni pacchetto. Compatibile con HW WEP esistente, ma non più sicuro a sufficienza.</p>
+    </div>
+    <div class="box">
+      <span class="badge b-teal">WPA2 (2004)</span>
+      <h3>Standard di fatto</h3>
+      <p style="font-family:var(--serif);font-size:.9rem">Usa <strong>AES-CCMP</strong> al posto di RC4. Tutt'oggi usato. Vulnerabile a KRACK (2017, ora patchato). Sostituito da WPA3 ma compatibilità garantita.</p>
+    </div>
+  </div>
+
+  <div class="explain-box">
+    <h4>👤 WPA-Personal vs WPA-Enterprise · RADIUS</h4>
+    <ul>
+      <li><strong>WPA2-Personal (PSK):</strong> una passphrase condivisa per tutti (la tipica password Wi-Fi di casa). Da essa si deriva la <em>Pairwise Master Key</em> via PBKDF2.</li>
+      <li><strong>WPA2-Enterprise (802.1X / EAP):</strong> ogni utente ha credenziali proprie (username/password o certificato). Il client le invia all'AP, che le inoltra a un <strong>server RADIUS</strong> (Remote Authentication Dial-In User Service) per la validazione. Solo dopo l'OK del RADIUS l'AP completa il 4-way handshake.</li>
+    </ul>
+    <p><strong>Vantaggi RADIUS:</strong> revoca puntuale delle credenziali, log centralizzato, integrazione con LDAP/Active Directory, policy per utente. Standard in ambito aziendale.</p>
+  </div>
+
+  <div class="explain-box">
+    <h4>📊 Link budget di un ponte radio Wi-Fi</h4>
+    <p>Stesso schema del caso generale, applicato a un ponte punto-punto (esempio outdoor):</p>
+    <ul>
+      <li>Potenza TX: <strong>+20 dBm</strong> (limite EU ETSI per outdoor su 5 GHz = 30 dBm EIRP).</li>
+      <li>Antenne settoriali o paraboliche: <strong>+15 ÷ +24 dBi</strong> di guadagno.</li>
+      <li>FSL su collegamento di 5 km a 5 GHz: <code>L<sub>FS</sub> = 32.45 + 20·log(5) + 20·log(5000) ≈ 120 dB</code>.</li>
+      <li>Margine di fading: <strong>10 ÷ 20 dB</strong> per pioggia, neve, multipath.</li>
+    </ul>
+    <p>Per ponti molto lunghi (decine di km) si valuta anche il <strong>Fresnel zone clearance</strong>: la prima zona di Fresnel deve essere libera al 60% almeno, altrimenti l'attenuazione cresce.</p>
+  </div>
+
+  <div class="box">
+    <div class="box-title">Accenni — WiMAX e nuove frontiere</div>
+    <p style="font-family:var(--serif);font-size:.95rem"><strong>WiMAX (IEEE 802.16):</strong> standard per accesso wireless a banda larga su scala metropolitana. Range fino a 50 km, throughput decine di Mbps. Usato come "ultimo miglio" in zone non raggiunte da fibra. Largamente superato da LTE/5G nel mobile e da fibra nel fisso, ma sopravvive in nicchie (industria, dorsali wireless rurali).</p>
+  </div>
+    </section>
+    <nav class="pagenav"><a class="prev" href="nat.html"><span class="pn-dir">← Precedente</span><span class="pn-title">🔁 NAT</span></a><a class="next" href="fibra-gpon.html"><span class="pn-dir">Successivo →</span><span class="pn-title">💡 Fibra & GPON</span></a></nav>
+  </div>
+</main>
+
+<footer>
+  Telecomunicazioni · 5F 2025/26 · Wireless 802.11
+</footer>
+</body>
+</html>

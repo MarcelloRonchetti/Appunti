@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ACL — Telecomunicazioni · 5F</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;600&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/tech-style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header-bg"></div>
+  <div class="header-inner" style="padding-bottom:1.5rem">
+    <div class="header-eyebrow">
+      <a class="eyebrow-tag" href="../index.html">← Home</a>
+      <a class="eyebrow-tag" href="../telecomunicazioni.html">← Telecomunicazioni</a>
+      <span class="eyebrow-tag">5F · 2025/26</span>
+      <div class="eyebrow-line"></div>
+      <span class="eyebrow-tag">ACL</span>
+    </div>
+  </div>
+</header>
+
+<main class="layout-shell">
+  <aside class="sidenav">
+    <a href="../telecomunicazioni.html" class="sn-back">← Indice materia</a>
+    <div class="sn-label">Macro-argomenti</div>
+    <a href="onde-antenne.html" class="">
+      <span class="icn">📡</span>
+      <span>Onde & Antenne</span>
+      <span class="num">01</span>
+    </a>
+    <a href="tcp-ip.html" class="">
+      <span class="icn">🌐</span>
+      <span>TCP/IP</span>
+      <span class="num">02</span>
+    </a>
+    <a href="switch-vlan.html" class="">
+      <span class="icn">🔀</span>
+      <span>Switch & VLAN</span>
+      <span class="num">03</span>
+    </a>
+    <a href="acl.html" class="active">
+      <span class="icn">🛡️</span>
+      <span>ACL</span>
+      <span class="num">04</span>
+    </a>
+    <a href="nat.html" class="">
+      <span class="icn">🔁</span>
+      <span>NAT</span>
+      <span class="num">05</span>
+    </a>
+    <a href="wireless-80211.html" class="">
+      <span class="icn">📶</span>
+      <span>Wireless 802.11</span>
+      <span class="num">06</span>
+    </a>
+    <a href="fibra-gpon.html" class="">
+      <span class="icn">💡</span>
+      <span>Fibra & GPON</span>
+      <span class="num">07</span>
+    </a>
+    <a href="laboratorio.html" class="">
+      <span class="icn">🔧</span>
+      <span>Laboratorio</span>
+      <span class="num">08</span>
+    </a>
+  </aside>
+
+  <div class="content-main">
+    <section class="section">
+      <div class="sec-head">
+    <div class="sec-num">04</div>
+    <div class="sec-body">
+      <h2>Access Control List (ACL)</h2>
+      <p>Filtri di traffico applicati sulle interfacce dei router. Standard, estese, wildcard, firewall.</p>
+    </div>
+    <span class="sec-badge b-red">Sicurezza</span>
+  </div>
+
+  <div class="explain-box">
+    <h4>🛡️ Cosa sono le ACL</h4>
+    <p>Una <strong>Access Control List</strong> è una lista ordinata di regole <em>permit</em> / <em>deny</em> applicate al traffico che entra (<code>in</code>) o esce (<code>out</code>) da un'interfaccia di router. Il router controlla ogni pacchetto contro le regole in ordine e applica la <em>prima</em> che fa match.</p>
+    <p><strong>Regola implicita finale:</strong> <code>deny any any</code>. Tutto ciò che non è esplicitamente permesso viene scartato.</p>
+    <p><strong>Posizionamento:</strong></p>
+    <ul>
+      <li><strong>ACL standard:</strong> il più vicino possibile alla destinazione (filtrano solo per IP sorgente, quindi se messe vicino alla sorgente bloccherebbero anche traffico legittimo).</li>
+      <li><strong>ACL estese:</strong> il più vicino possibile alla sorgente (filtrano per IP, protocollo, porte → si possono mettere all'origine senza danni collaterali, riducendo carico sulla rete).</li>
+    </ul>
+  </div>
+
+  <div class="explain-box">
+    <h4>✳️ Wildcard mask — l'inverso della subnet mask</h4>
+    <p>Le ACL usano una <strong>wildcard mask</strong> per esprimere range di IP. Funziona al contrario della subnet mask:</p>
+    <ul>
+      <li><strong>Bit a 0:</strong> il bit corrispondente dell'IP <em>deve</em> corrispondere (controllo esatto).</li>
+      <li><strong>Bit a 1:</strong> il bit corrispondente dell'IP <em>può essere qualsiasi cosa</em> (don't care).</li>
+    </ul>
+    <p><strong>Esempi:</strong></p>
+    <ul>
+      <li><code>0.0.0.0</code> → host singolo (sinonimo di <code>host</code>)</li>
+      <li><code>0.0.0.255</code> → tutta una /24 (es. 192.168.1.0 0.0.0.255 = 192.168.1.0/24)</li>
+      <li><code>0.0.0.3</code> → 4 IP consecutivi (/30)</li>
+      <li><code>255.255.255.255</code> → tutti gli IP (sinonimo di <code>any</code>)</li>
+    </ul>
+    <p><strong>Trucco:</strong> wildcard = <code>255.255.255.255 − subnet mask</code>. Es. /24 → 255.255.255.0 → wildcard 0.0.0.255.</p>
+  </div>
+
+  <div class="grid g2" style="margin-bottom:1.25rem">
+    <div class="box">
+      <span class="badge b-blue">ACL Standard</span>
+      <h3>Filtra solo su IP sorgente</h3>
+      <p style="font-family:var(--serif);font-size:.92rem">Numerate <strong>1–99</strong> e 1300–1999. Sintassi semplice.</p>
+      <div class="code-block" style="margin-top:.8rem"><span class="c-com">! permette solo dalla rete 192.168.10.0/24</span>
+<span class="c-kw">access-list</span> <span class="c-num">10</span> <span class="c-kw">permit</span> <span class="c-num">192.168.10.0</span> <span class="c-num">0.0.0.255</span>
+<span class="c-kw">access-list</span> <span class="c-num">10</span> <span class="c-kw">deny</span> any
+
+<span class="c-kw">interface</span> g0/1
+ <span class="c-kw">ip access-group</span> <span class="c-num">10</span> <span class="c-kw">out</span></div>
+    </div>
+    <div class="box">
+      <span class="badge b-red">ACL Estese</span>
+      <h3>Filtra su IP src/dst, protocollo, porte</h3>
+      <p style="font-family:var(--serif);font-size:.92rem">Numerate <strong>100–199</strong> e 2000–2699. Granularità massima.</p>
+      <div class="code-block" style="margin-top:.8rem"><span class="c-com">! permette HTTPS verso il web server</span>
+<span class="c-kw">access-list</span> <span class="c-num">110</span> <span class="c-kw">permit tcp</span>
+   <span class="c-num">192.168.10.0</span> <span class="c-num">0.0.0.255</span>
+   <span class="c-kw">host</span> <span class="c-num">10.0.0.5</span> <span class="c-kw">eq</span> <span class="c-num">443</span>
+
+<span class="c-com">! blocca tutto il resto verso il server</span>
+<span class="c-kw">access-list</span> <span class="c-num">110</span> <span class="c-kw">deny ip</span> any <span class="c-kw">host</span> <span class="c-num">10.0.0.5</span>
+<span class="c-kw">access-list</span> <span class="c-num">110</span> <span class="c-kw">permit ip</span> any any
+
+<span class="c-kw">interface</span> g0/0
+ <span class="c-kw">ip access-group</span> <span class="c-num">110</span> <span class="c-kw">in</span></div>
+    </div>
+  </div>
+
+  <div class="explain-box">
+    <h4>🔥 ACL come firewall</h4>
+    <p>Con una sequenza di ACL estese sui router perimetrali si realizza un <strong>firewall stateless</strong>:</p>
+    <ul>
+      <li>Si permettono solo i servizi necessari (web, mail, DNS).</li>
+      <li>Si bloccano protocolli di management dall'esterno (telnet, SSH se non da IP fidati).</li>
+      <li>Si applicano regole anti-spoofing: pacchetti con IP sorgente privato che arrivano da fuori → <em>deny</em>.</li>
+    </ul>
+    <p>Limite: stateless = non tiene traccia delle connessioni. Per stateful inspection si passa a firewall dedicati (es. Mikrotik con <code>connection-state established/related</code>).</p>
+  </div>
+    </section>
+    <nav class="pagenav"><a class="prev" href="switch-vlan.html"><span class="pn-dir">← Precedente</span><span class="pn-title">🔀 Switch & VLAN</span></a><a class="next" href="nat.html"><span class="pn-dir">Successivo →</span><span class="pn-title">🔁 NAT</span></a></nav>
+  </div>
+</main>
+
+<footer>
+  Telecomunicazioni · 5F 2025/26 · ACL
+</footer>
+</body>
+</html>

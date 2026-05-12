@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wi-Fi 802.11 — TPSIT · 5F</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;600&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/tpsit-style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header-bg"></div>
+  <div class="header-inner" style="padding-bottom:1.5rem">
+    <div class="header-eyebrow">
+      <a class="eyebrow-tag" href="../index.html">← Home</a>
+      <a class="eyebrow-tag" href="../tpsit.html">← TPSIT</a>
+      <span class="eyebrow-tag">5F · 2025/26</span>
+      <div class="eyebrow-line"></div>
+      <span class="eyebrow-tag">Wi-Fi 802.11</span>
+    </div>
+  </div>
+</header>
+
+<main class="layout-shell">
+  <aside class="sidenav">
+    <a href="../tpsit.html" class="sn-back">← Indice materia</a>
+    <div class="sn-label">Macro-argomenti</div>
+    <a href="esp32.html" class="">
+      <span class="icn">🔧</span>
+      <span>ESP32</span>
+      <span class="num">01</span>
+    </a>
+    <a href="wifi.html" class="active">
+      <span class="icn">📡</span>
+      <span>Wi-Fi 802.11</span>
+      <span class="num">02</span>
+    </a>
+    <a href="antenne.html" class="">
+      <span class="icn">📐</span>
+      <span>Antenne PCB</span>
+      <span class="num">03</span>
+    </a>
+    <a href="bluetooth.html" class="">
+      <span class="icn">📶</span>
+      <span>Bluetooth Classic</span>
+      <span class="num">04</span>
+    </a>
+    <a href="ble.html" class="">
+      <span class="icn">⚡</span>
+      <span>BLE</span>
+      <span class="num">05</span>
+    </a>
+    <a href="lorawan.html" class="">
+      <span class="icn">🌐</span>
+      <span>LoRaWAN</span>
+      <span class="num">06</span>
+    </a>
+    <a href="nbiot.html" class="">
+      <span class="icn">📱</span>
+      <span>NB-IoT</span>
+      <span class="num">07</span>
+    </a>
+    <a href="5g.html" class="">
+      <span class="icn">🚀</span>
+      <span>5G</span>
+      <span class="num">08</span>
+    </a>
+    <a href="confronto.html" class="">
+      <span class="icn">⚖️</span>
+      <span>Confronto</span>
+      <span class="num">09</span>
+    </a>
+  </aside>
+
+  <div class="content-main">
+    <section class="section">
+      <div class="sec-head">
+    <div class="sec-num">02</div>
+    <div class="sec-body">
+      <h2>Wi-Fi — IEEE 802.11</h2>
+      <p>Standard WLAN. Il termine "Wi-Fi" nasce nell'agosto 1999, coniato da Interbrand. Opera nelle bande 2.4, 5 e 60 GHz.</p>
+    </div>
+    <span class="sec-badge b-teal">IEEE 802.11</span>
+  </div>
+
+  <div class="explain-box">
+    <h4>📡 Cos'è il Wi-Fi e come funziona?</h4>
+    <p><strong>Wi-Fi</strong> è il nome commerciale dato dalla Wi-Fi Alliance allo standard IEEE 802.11. "Wi-Fi" NON sta per "Wireless Fidelity" — è un marchio inventato per essere riconoscibile.</p>
+    <p><strong>Principio di funzionamento:</strong></p>
+    <ul>
+      <li><strong>1. Codifica:</strong> Dati convertiti in sequenze di bit (0 e 1)</li>
+      <li><strong>2. Modulazione:</strong> I bit modulano una portante radio a 2.4 GHz o 5 GHz usando OFDM e QAM</li>
+      <li><strong>3. Trasmissione:</strong> L'antenna converte il segnale elettrico in onde elettromagnetiche</li>
+      <li><strong>4. Ricezione:</strong> L'antenna ricevente cattura le onde e le riconverte in segnale elettrico</li>
+      <li><strong>5. Demodulazione:</strong> Il segnale viene demodulato per estrarre i dati originali</li>
+    </ul>
+    <p><strong>Perché 2.4 GHz e 5 GHz?</strong></p>
+    <ul>
+      <li><strong>2.4 GHz:</strong> Banda ISM senza licenza. Maggiore portata ma più affollata (Bluetooth, microonde). Penetra meglio gli ostacoli</li>
+      <li><strong>5 GHz:</strong> Meno affollata, più canali disponibili (23 vs 3), velocità maggiori. Portata ridotta</li>
+      <li><strong>60 GHz (802.11ad):</strong> Velocità multi-gigabit ma range limitatissimo (~10m) e assorbimento totale da muri</li>
+    </ul>
+  </div>
+
+  <div class="box" style="margin-bottom:1.25rem">
+    <div class="box-title">Evoluzione — Generazioni Wi-Fi</div>
+    <div class="wifi-timeline">
+      <div class="wifi-gen">
+        <div class="wifi-bar-wrap"><div class="wifi-bar" style="height:4%;background:#1a1a2e"><span class="speed-tag">2M</span></div></div>
+        <div class="wifi-gen-label">Wi-Fi 1</div>
+        <div class="wifi-gen-year">1997</div>
+        <div class="wifi-gen-std">802.11</div>
+      </div>
+      <div class="wifi-gen">
+        <div class="wifi-bar-wrap"><div class="wifi-bar" style="height:8%;background:#1e3a5f"><span class="speed-tag">11M</span></div></div>
+        <div class="wifi-gen-label">Wi-Fi 2</div>
+        <div class="wifi-gen-year">1999</div>
+        <div class="wifi-gen-std">802.11b</div>
+      </div>
+      <div class="wifi-gen">
+        <div class="wifi-bar-wrap"><div class="wifi-bar" style="height:14%;background:#1e4d3a"><span class="speed-tag">54M</span></div></div>
+        <div class="wifi-gen-label">Wi-Fi 3</div>
+        <div class="wifi-gen-year">2003</div>
+        <div class="wifi-gen-std">802.11g</div>
+      </div>
+      <div class="wifi-gen">
+        <div class="wifi-bar-wrap"><div class="wifi-bar" style="height:38%;background:#3b4a1a"><span class="speed-tag">600M</span></div></div>
+        <div class="wifi-gen-label">Wi-Fi 4</div>
+        <div class="wifi-gen-year">2008</div>
+        <div class="wifi-gen-std">802.11n</div>
+      </div>
+      <div class="wifi-gen">
+        <div class="wifi-bar-wrap"><div class="wifi-bar" style="height:70%;background:#5b2d0a"><span class="speed-tag">6.9G</span></div></div>
+        <div class="wifi-gen-label">Wi-Fi 5</div>
+        <div class="wifi-gen-year">2014</div>
+        <div class="wifi-gen-std">802.11ac</div>
+      </div>
+      <div class="wifi-gen">
+        <div class="wifi-bar-wrap"><div class="wifi-bar" style="height:100%;background:#1a1a2e"><span class="speed-tag">9.6G</span></div></div>
+        <div class="wifi-gen-label" style="font-weight:800">Wi-Fi 6</div>
+        <div class="wifi-gen-year">2019</div>
+        <div class="wifi-gen-std">802.11ax</div>
+      </div>
+      <div class="wifi-gen">
+        <div class="wifi-bar-wrap"><div class="wifi-bar" style="height:44%;background:#4a1a2e"><span class="speed-tag">7G</span></div></div>
+        <div class="wifi-gen-label">Wi-Fi 6E/ad</div>
+        <div class="wifi-gen-year">2021</div>
+        <div class="wifi-gen-std">802.11ad</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="explain-box">
+    <h4>📊 OFDM — Orthogonal Frequency-Division Multiplexing</h4>
+    <p>È la tecnica di modulazione chiave del Wi-Fi moderno (802.11a/g/n/ac/ax). Invece di trasmettere su una singola frequenza, OFDM divide il canale in tante sotto-portanti parallele (52 in 802.11a/g, fino a 2048 in 802.11ax).</p>
+    <ul>
+      <li><strong>Robustezza:</strong> Se una sotto-portante subisce interferenza, solo una piccola parte dei dati viene persa</li>
+      <li><strong>Efficienza spettrale:</strong> Le sotto-portanti sono "ortogonali" tra loro → si sfrutta meglio lo spettro</li>
+      <li><strong>Multipath:</strong> OFDM gestisce bene gli echi usando un "cyclic prefix"</li>
+    </ul>
+    <p><strong>Modulazioni QAM:</strong> Ogni sotto-portante può usare diverse modulazioni QAM. Maggiore è il QAM (BPSK → 1024-QAM), più dati trasmetti per simbolo, ma serve un segnale più pulito (SNR elevato). L'Access Point e il client negoziano dinamicamente la modulazione migliore.</p>
+  </div>
+
+  <div class="grid g3" style="margin-bottom:1.25rem">
+    <div class="box">
+      <span class="badge b-blue">802.11ad — WiGig</span>
+      <h3>Three-Band</h3>
+      <p>Supporta simultaneamente 2.4, 5 e <strong>60 GHz</strong> → fino a 7 Gbps. Video non compressi e 4K gaming. Copertura "only 60 GHz" limitata a ~5m.</p>
+    </div>
+    <div class="box">
+      <span class="badge b-teal">802.11ax — Wi-Fi 6</span>
+      <h3>Alta Densità</h3>
+      <p>Modulazione <strong>QAM-1024</strong> trasmette 10 bit simultaneamente. Max 9.6 Gbps. Riduzione della latenza. Pensato per ambienti affollati.</p>
+    </div>
+    <div class="box">
+      <span class="badge b-orange">MIMO</span>
+      <h3>Multiple Antenna</h3>
+      <p>802.11n: 4×4 MIMO · 802.11ac: 8×8 MIMO. Più antenne TX/RX → throughput e affidabilità maggiori.</p>
+    </div>
+  </div>
+
+  <div class="explain-box">
+    <h4>📡 MIMO — Multiple Input Multiple Output</h4>
+    <p><strong>Problema:</strong> Una singola antenna trasmette un solo flusso di dati alla volta. Come aumentare la velocità?</p>
+    <p><strong>Soluzione MIMO:</strong> Usa più antenne contemporaneamente per trasmettere flussi paralleli. Esempio 2×2 MIMO: l'AP trasmette Stream A dall'antenna 1 e Stream B dall'antenna 2 simultaneamente. Il client li separa grazie a spatial multiplexing. Risultato: velocità raddoppiata.</p>
+    <p><strong>MU-MIMO (Multi-User MIMO):</strong> L'AP può trasmettere a più client contemporaneamente usando stream diversi. Esempio: 4×4 AP serve 4 client 1×1 simultaneamente.</p>
+  </div>
+
+  <div class="grid g2">
+    <div class="box">
+      <div class="box-title">Architettura di rete WLAN</div>
+      <div class="callout c-blue" style="margin-bottom:.75rem">
+        <strong>BSS — Basic Service Set</strong>
+        Il gruppo formato da un Access Point e tutti gli host nel suo raggio. Costituisce una <em>cella</em>. Identificato dal <strong>BSSID</strong> (6 byte = indirizzo MAC dell'AP).
+      </div>
+      <div class="callout c-teal" style="margin-bottom:.75rem">
+        <strong>ESS — Extended Service Set</strong>
+        Più BSS collegate tramite <em>Distribution System</em> (DS), cablato o wireless. Permette roaming tra celle.
+      </div>
+      <div class="callout c-orange" style="margin-bottom:0">
+        <strong>SSID — Service Set Identifier</strong>
+        Stringa di 32 caratteri che identifica la WLAN. Configurato sull'AP e comunicato al client per l'associazione.
+      </div>
+    </div>
+    <div class="box">
+      <div class="box-title">Confronto versioni IEEE 802.11</div>
+      <table class="tbl">
+        <thead><tr><th>Standard</th><th>Banda</th><th>Max Rate</th><th>Tipico</th></tr></thead>
+        <tbody>
+          <tr><td><code style="font-family:var(--mono);font-size:.8rem">802.11a</code></td><td>5 GHz</td><td>54 Mbps</td><td>—</td></tr>
+          <tr><td><code style="font-family:var(--mono);font-size:.8rem">802.11b</code></td><td>2.4 GHz</td><td>11 Mbps</td><td>—</td></tr>
+          <tr><td><code style="font-family:var(--mono);font-size:.8rem">802.11g</code></td><td>2.4 GHz</td><td>54 Mbps</td><td>25 Mbps</td></tr>
+          <tr><td><code style="font-family:var(--mono);font-size:.8rem">802.11n</code></td><td>2.4+5 GHz</td><td>600 Mbps</td><td>150 Mbps</td></tr>
+          <tr><td><code style="font-family:var(--mono);font-size:.8rem">802.11ac</code></td><td>5 GHz</td><td>3.2 Gbps</td><td>—</td></tr>
+          <tr><td><code style="font-family:var(--mono);font-size:.8rem">802.11ax</code></td><td>2.4+5 GHz</td><td>9.6 Gbps</td><td>—</td></tr>
+          <tr><td><code style="font-family:var(--mono);font-size:.8rem">802.11ad</code></td><td>2.4+5+60</td><td>7 Gbps</td><td>—</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="explain-box">
+    <h4>🔗 Processo di associazione e roaming</h4>
+    <p><strong>1. Scanning:</strong> Il client ascolta i beacon frame (~100 ms) o trasmette Probe Request su tutti i canali.</p>
+    <p><strong>2. Authentication:</strong> Autenticazione di livello MAC (open system). L'autenticazione vera (WPA2/WPA3) avviene dopo.</p>
+    <p><strong>3. Association:</strong> Il client invia Association Request con i suoi capability. L'AP risponde assegnando un AID (Association ID).</p>
+    <p><strong>4. 4-Way Handshake (se WPA2/WPA3):</strong> AP e client negoziano le chiavi di cifratura temporanee (PTK, GTK). Solo dopo questo handshake i dati vengono cifrati.</p>
+    <p><strong>Roaming:</strong> Quando il segnale degrada, il client cerca un AP con lo stesso SSID ma RSSI migliore, invia Reassociation Request al nuovo AP. Il passaggio idealmente avviene in &lt;50 ms per non interrompere applicazioni VoIP.</p>
+  </div>
+    </section>
+    <nav class="pagenav"><a class="prev" href="esp32.html"><span class="pn-dir">← Precedente</span><span class="pn-title">🔧 ESP32</span></a><a class="next" href="antenne.html"><span class="pn-dir">Successivo →</span><span class="pn-title">📐 Antenne PCB</span></a></nav>
+  </div>
+</main>
+
+<footer>
+  TPSIT · 5F 2025/26 · Wi-Fi 802.11
+</footer>
+
+</body>
+</html>

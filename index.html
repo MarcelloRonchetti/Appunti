@@ -1,97 +1,825 @@
 <!doctype html>
 <html lang="it">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Appunti di storia, italiano ed educazione civica — quaderno di studio digitale."
-    />
-    <title>Appunti Sto-Ita — Quaderno di studio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/styles.css" />
-  </head>
-  <body>
-    <div id="progress" aria-hidden="true"></div>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="description" content="Appunti di Storia, Italiano, Educazione civica, Telecomunicazioni e TPSIT — quaderno di studio digitale, 5F 2025/26." />
+<title>Appunti 5F — Archivio di studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper:         #f1e7cf;
+  --paper-card:    #faf3dd;
+  --paper-edge:    #e8dcbf;
+  --ink:           #2a2114;
+  --ink-soft:      #5a4a30;
+  --muted:         #8c7a58;
+  --rule:          #d4c39a;
+  --rule-soft:     #e3d5ab;
+  --accent:        #8a2820;
+  --accent-soft:   #a9433c;
+  --gold:          #a87f2f;
+  --tech-ink:      #1a1a2e;
+  --tech-blue:     #2563eb;
+  --tech-teal:     #059669;
+  --tech-purple:   #7c3aed;
+  --shadow:        0 1px 0 rgba(60,40,10,.05), 0 18px 36px -20px rgba(60,40,10,.28);
+}
+:root[data-theme="dark"] {
+  --paper:         #16120c;
+  --paper-card:    #1f1a12;
+  --paper-edge:    #2a2418;
+  --ink:           #ecdfbf;
+  --ink-soft:      #b6a47a;
+  --muted:         #7a6c4c;
+  --rule:          #3b3221;
+  --rule-soft:     #2a2418;
+  --accent:        #d3776c;
+  --accent-soft:   #b9594f;
+  --gold:          #d4af6b;
+  --tech-ink:      #0d0d18;
+  --tech-blue:     #60a5fa;
+  --tech-teal:     #34d399;
+  --tech-purple:   #a78bfa;
+  --shadow:        0 1px 0 rgba(0,0,0,.4), 0 20px 40px -20px rgba(0,0,0,.6);
+}
 
-    <header class="topbar">
-      <div class="brand">
-        <span class="mark">Appunti Sto-Ita</span>
-        <span class="sub">Archivio di studio</span>
-      </div>
-      <div class="toolbar">
-        <button
-          class="iconbtn"
-          id="btn-reading"
-          title="Modalità lettura"
-          aria-label="Modalità lettura"
-        >
-          <svg viewBox="0 0 24 24">
-            <path
-              d="M3 19V6a1 1 0 011-1h6a2 2 0 012 2v13M3 19h9M3 19a1 1 0 001 1h7a1 1 0 001-1M12 7a2 2 0 012-2h6a1 1 0 011 1v13a1 1 0 01-1 1h-7a1 1 0 01-1-1V7z"
-            />
-          </svg>
-        </button>
-        <button class="iconbtn" id="btn-theme" title="Tema chiaro/scuro" aria-label="Tema">
-          <svg viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z" /></svg>
-        </button>
-      </div>
-    </header>
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: "Newsreader", Georgia, serif;
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--ink);
+  background: var(--paper);
+  background-image:
+    radial-gradient(at 20% 10%, rgba(168,127,47,.06), transparent 50%),
+    radial-gradient(at 80% 80%, rgba(138,40,32,.05), transparent 55%);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
 
-    <div class="shell">
-      <aside class="nav" aria-label="Navigazione degli appunti">
-        <div class="search">
-          <svg
-            class="search-icon"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-          >
-            <circle cx="11" cy="11" r="7" /><path d="m21 21-4.3-4.3" />
-          </svg>
-          <input id="q" type="search" placeholder="Cerca negli appunti…" autocomplete="off" />
-          <button class="search-clear" id="q-clear" aria-label="Pulisci ricerca">×</button>
-        </div>
-        <nav id="navigation"></nav>
-      </aside>
+/* TOPBAR */
+.topbar {
+  position: sticky; top: 0; z-index: 50;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 16px 40px;
+  background: color-mix(in oklab, var(--paper) 88%, transparent);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--rule-soft);
+}
+.brand {
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 22px;
+  color: var(--accent);
+  letter-spacing: .01em;
+}
+.brand::before { content: "❦"; margin-right: 8px; color: var(--gold); font-style: normal; }
+.topnav { display: flex; gap: 24px; align-items: center; flex-wrap: wrap; }
+.topnav a {
+  font-family: "Inter", sans-serif;
+  font-size: 12px; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--ink-soft); text-decoration: none; font-weight: 600;
+  transition: color .15s;
+}
+.topnav a:hover { color: var(--accent); }
+.iconbtn {
+  width: 38px; height: 38px;
+  display: inline-flex; align-items: center; justify-content: center;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  background: var(--paper-card);
+  color: var(--ink-soft);
+  cursor: pointer;
+  transition: all .15s;
+}
+.iconbtn:hover { color: var(--accent); border-color: var(--accent); }
+.iconbtn svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+@media (max-width: 700px) {
+  .topbar { padding: 14px 20px; }
+  .topnav { gap: 14px; }
+  .topnav a:not(.cta) { display: none; }
+}
 
-      <article id="reader" aria-live="polite">
-        <nav class="crumbs" id="crumbs"></nav>
-        <h1 class="title" id="title">Appunti Sto-Ita</h1>
-        <div class="meta" id="meta"></div>
-        <div id="content" class="content">
-          <noscript>
-            Per leggere gli appunti serve JavaScript: il sito carica i file Markdown e li trasforma
-            in pagine navigabili.
-          </noscript>
-        </div>
-      </article>
+/* HERO */
+.hero {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 40px 60px;
+  text-align: center;
+  position: relative;
+}
+.hero .eyebrow {
+  font-family: "Inter", sans-serif;
+  font-size: 11px; letter-spacing: .3em; text-transform: uppercase;
+  color: var(--accent); font-weight: 700;
+  display: inline-flex; gap: 14px; align-items: center;
+  margin-bottom: 28px;
+}
+.hero .eyebrow::before, .hero .eyebrow::after {
+  content: ""; width: 36px; height: 1px; background: var(--gold);
+}
+.hero h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-size: clamp(48px, 8vw, 104px);
+  line-height: .98;
+  letter-spacing: -.015em;
+  margin: 0 0 24px;
+  color: var(--ink);
+  text-wrap: balance;
+}
+.hero h1 em {
+  font-style: italic;
+  color: var(--accent);
+  font-weight: 500;
+}
+.hero h1 .mono {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: .78em;
+  font-style: normal;
+  font-weight: 500;
+  color: var(--gold);
+  letter-spacing: -.02em;
+}
+.hero .tagline {
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  font-size: clamp(20px, 2.4vw, 26px);
+  font-weight: 400;
+  color: var(--ink-soft);
+  max-width: 680px;
+  margin: 0 auto 12px;
+  line-height: 1.4;
+  text-wrap: balance;
+}
+.hero .byline {
+  font-family: "Inter", sans-serif;
+  font-size: 11px; letter-spacing: .22em; text-transform: uppercase;
+  color: var(--muted); font-weight: 600;
+  margin: 24px 0 36px;
+}
 
-      <aside class="toc" aria-label="Indice della pagina">
-        <div class="toc-label">Indice della pagina</div>
-        <div id="toc"></div>
-      </aside>
-    </div>
+.hero-cta {
+  display: inline-flex; gap: 14px; margin-top: 8px; flex-wrap: wrap; justify-content: center;
+}
+.btn {
+  font-family: "Inter", sans-serif;
+  font-size: 13px; font-weight: 600;
+  letter-spacing: .08em; text-transform: uppercase;
+  padding: 14px 26px;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-flex; align-items: center; gap: 10px;
+  transition: all .18s;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.btn-primary {
+  background: var(--accent); color: var(--paper-card);
+  border-color: var(--accent);
+}
+.btn-primary:hover { background: var(--accent-soft); border-color: var(--accent-soft); transform: translateY(-1px); }
+.btn-primary svg { transition: transform .18s; }
+.btn-primary:hover svg { transform: translateX(3px); }
+.btn-ghost {
+  background: transparent; color: var(--ink-soft);
+  border-color: var(--rule);
+}
+.btn-ghost:hover { color: var(--accent); border-color: var(--accent); }
+.btn svg { width: 14px; height: 14px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 
-    <button id="totop" aria-label="Torna su" title="Torna su">
-      <svg
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      >
-        <path d="M12 19V5M5 12l7-7 7 7" />
-      </svg>
+/* HERO ORNAMENT */
+.hero-frame {
+  position: absolute; inset: 60px 20px;
+  border: 1px solid var(--rule-soft);
+  pointer-events: none;
+  opacity: .5;
+}
+.hero-frame::before, .hero-frame::after,
+.hero-frame > span:nth-child(1), .hero-frame > span:nth-child(2) {
+  content: "❦";
+  position: absolute;
+  font-size: 16px; color: var(--gold);
+  background: var(--paper);
+  width: 28px; height: 28px;
+  display: flex; align-items: center; justify-content: center;
+}
+.hero-frame::before { top: -14px; left: -14px; }
+.hero-frame::after  { top: -14px; right: -14px; }
+.hero-frame > span:nth-child(1) { bottom: -14px; left: -14px; }
+.hero-frame > span:nth-child(2) { bottom: -14px; right: -14px; }
+
+/* STATS STRIP */
+.stats {
+  max-width: 1100px;
+  margin: 0 auto 80px;
+  padding: 0 40px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+}
+@media (max-width: 900px) { .stats { grid-template-columns: repeat(2, 1fr); } }
+.stat {
+  text-align: center;
+  padding: 22px 8px;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+}
+.stat .n {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1;
+  color: var(--accent);
+  display: block;
+}
+.stat .l {
+  font-family: "Inter", sans-serif;
+  font-size: 10px; letter-spacing: .18em; text-transform: uppercase;
+  color: var(--muted); font-weight: 600;
+  margin-top: 8px;
+  display: block;
+}
+
+/* FLEURON DIVIDER */
+.fleuron {
+  text-align: center;
+  margin: 40px 0;
+  color: var(--gold);
+  font-size: 16px;
+  letter-spacing: 1em;
+  user-select: none;
+}
+.fleuron::before { content: "❦ ✦ ❦"; }
+
+/* SECTION TITLE */
+.section-title {
+  max-width: 1100px;
+  margin: 80px auto 32px;
+  padding: 0 40px;
+  text-align: center;
+}
+.section-title .eye {
+  font-family: "Inter", sans-serif;
+  font-size: 10px; letter-spacing: .3em; text-transform: uppercase;
+  color: var(--gold); font-weight: 700;
+  display: block; margin-bottom: 12px;
+}
+.section-title h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-size: clamp(34px, 4.4vw, 52px);
+  line-height: 1.05;
+  margin: 0 0 10px;
+  color: var(--ink);
+  text-wrap: balance;
+}
+.section-title p {
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  font-size: 19px;
+  color: var(--ink-soft);
+  margin: 0;
+  max-width: 600px; margin-inline: auto;
+}
+
+/* WING LABEL */
+.wing-label {
+  max-width: 1100px;
+  margin: 56px auto 18px;
+  padding: 0 40px;
+  display: flex; align-items: center; gap: 18px;
+}
+.wing-label .tag {
+  font-family: "Inter", sans-serif;
+  font-size: 11px; letter-spacing: .26em; text-transform: uppercase;
+  color: var(--gold); font-weight: 700;
+}
+.wing-label .ln { flex: 1; height: 1px; background: var(--rule); }
+
+/* DESTINATION GRID */
+.destinations {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+@media (max-width: 820px) { .destinations { grid-template-columns: 1fr; } }
+.destinations.tech { grid-template-columns: repeat(2, 1fr); }
+@media (max-width: 820px) { .destinations.tech { grid-template-columns: 1fr; } }
+
+.card {
+  background: var(--paper-card);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 34px 32px 28px;
+  box-shadow: var(--shadow);
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: transform .25s, box-shadow .25s, border-color .25s;
+  overflow: hidden;
+}
+.card:hover { transform: translateY(-3px); box-shadow: 0 1px 0 rgba(60,40,10,.05), 0 28px 48px -20px rgba(60,40,10,.32); }
+.card::before, .card::after {
+  content: "";
+  position: absolute;
+  width: 22px; height: 22px;
+  border: 1px solid var(--gold);
+  opacity: .35;
+}
+.card::before { top: 12px; left: 12px; border-right: 0; border-bottom: 0; }
+.card::after  { bottom: 12px; right: 12px; border-left: 0; border-top: 0; }
+
+.card .roman {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--gold);
+  letter-spacing: .2em;
+  border: 1px solid var(--gold);
+  padding: 3px 10px;
+  border-radius: 2px;
+  display: inline-block;
+  margin-bottom: 18px;
+}
+.card h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.1;
+  color: var(--ink);
+  margin: 0 0 6px;
+}
+.card .kicker {
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  font-size: 17px;
+  color: var(--ink-soft);
+  margin: 0 0 18px;
+}
+.card .desc {
+  font-size: 15.5px;
+  color: var(--ink-soft);
+  margin: 0 0 18px;
+  line-height: 1.55;
+}
+.card ul {
+  list-style: none; padding: 0; margin: 0 0 22px;
+  border-top: 1px dashed var(--rule);
+}
+.card li {
+  padding: 8px 0;
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  color: var(--ink-soft);
+  border-bottom: 1px dashed var(--rule);
+  display: flex; justify-content: space-between; align-items: center;
+  gap: 10px;
+}
+.card li span.no { color: var(--muted); font-variant-numeric: tabular-nums; font-size: 11px; letter-spacing: .12em; flex-shrink: 0; }
+
+.card .more {
+  font-family: "Inter", sans-serif;
+  font-size: 12px; font-weight: 600;
+  color: var(--accent);
+  letter-spacing: .08em; text-transform: uppercase;
+  display: inline-flex; gap: 8px; align-items: center;
+  transition: gap .2s;
+}
+.card:hover .more { gap: 14px; }
+
+/* Tech variant */
+.card.tech { border-color: var(--rule); }
+.card.tech:hover { border-color: var(--tech-blue); }
+.card.tech .roman {
+  font-family: "IBM Plex Mono", monospace;
+  color: var(--tech-blue);
+  border-color: var(--tech-blue);
+  font-size: 11px;
+  letter-spacing: .18em;
+}
+.card.tech::before, .card.tech::after { border-color: var(--tech-blue); opacity: .25; }
+.card.tech .more { color: var(--tech-blue); font-family: "IBM Plex Mono", monospace; }
+.card.tech li { font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: .02em; }
+.card.tech li span.no { font-family: "IBM Plex Mono", monospace; }
+.card.tpsit:hover { border-color: var(--tech-purple); }
+.card.tpsit .roman { color: var(--tech-purple); border-color: var(--tech-purple); }
+.card.tpsit::before, .card.tpsit::after { border-color: var(--tech-purple); }
+.card.tpsit .more { color: var(--tech-purple); }
+
+/* CIVICA strip */
+.civica-strip {
+  max-width: 1100px;
+  margin: 28px auto 0;
+  padding: 0 40px;
+}
+.civica-card {
+  background: var(--paper-card);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 26px 30px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 22px;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  transition: all .2s;
+  box-shadow: var(--shadow);
+  position: relative;
+  overflow: hidden;
+}
+.civica-card::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 4px;
+  background: linear-gradient(180deg, var(--gold), var(--accent));
+}
+.civica-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+.civica-card .badge {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--gold);
+  letter-spacing: .2em;
+  border: 1px solid var(--gold);
+  padding: 4px 12px;
+  border-radius: 2px;
+}
+.civica-card h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.1;
+  margin: 0 0 4px;
+}
+.civica-card p { margin: 0; font-size: 14.5px; color: var(--ink-soft); line-height: 1.5; }
+.civica-card .arrow {
+  font-family: "Inter", sans-serif;
+  font-size: 12px; font-weight: 600;
+  color: var(--accent);
+  letter-spacing: .08em; text-transform: uppercase;
+}
+@media (max-width: 700px) {
+  .civica-card { grid-template-columns: 1fr; text-align: center; }
+}
+
+/* FEATURED */
+.featured { max-width: 1100px; margin: 0 auto; padding: 0 40px; }
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+@media (max-width: 820px) { .featured-grid { grid-template-columns: 1fr; } }
+
+.feat {
+  background: var(--paper-card);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 26px 24px;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  display: block;
+  transition: all .2s;
+}
+.feat:hover { border-color: var(--accent); transform: translateY(-2px); }
+.feat.tech:hover { border-color: var(--tech-blue); }
+.feat.tpsit:hover { border-color: var(--tech-purple); }
+.feat .tag {
+  font-family: "Inter", sans-serif;
+  font-size: 10px; letter-spacing: .18em; text-transform: uppercase;
+  color: var(--accent); font-weight: 700;
+  display: block; margin-bottom: 14px;
+}
+.feat.tech .tag { color: var(--tech-blue); font-family: "IBM Plex Mono", monospace; }
+.feat.tpsit .tag { color: var(--tech-purple); font-family: "IBM Plex Mono", monospace; }
+.feat h4 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.2;
+  margin: 0 0 8px;
+  color: var(--ink);
+}
+.feat p { margin: 0 0 14px; font-size: 14px; color: var(--ink-soft); line-height: 1.5; }
+.feat .meta {
+  font-family: "Inter", sans-serif;
+  font-size: 11px;
+  color: var(--muted);
+  letter-spacing: .08em;
+  display: flex; gap: 10px; align-items: center;
+  flex-wrap: wrap;
+}
+.feat .meta .dot { width: 3px; height: 3px; border-radius: 999px; background: var(--rule); }
+
+/* MANIFESTO */
+.manifesto {
+  max-width: 760px;
+  margin: 100px auto 60px;
+  padding: 56px 48px;
+  background: var(--paper-card);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  position: relative;
+  box-shadow: var(--shadow);
+}
+.manifesto::before, .manifesto::after {
+  content: "";
+  position: absolute;
+  width: 32px; height: 32px;
+  border: 1px solid var(--gold);
+  opacity: .4;
+}
+.manifesto::before { top: 14px; left: 14px; border-right: 0; border-bottom: 0; }
+.manifesto::after  { bottom: 14px; right: 14px; border-left: 0; border-top: 0; }
+
+.manifesto .label {
+  font-family: "Inter", sans-serif;
+  font-size: 10px; letter-spacing: .3em; text-transform: uppercase;
+  color: var(--gold); font-weight: 700;
+  text-align: center; display: block; margin-bottom: 22px;
+}
+.manifesto p {
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  font-size: 22px;
+  line-height: 1.5;
+  color: var(--ink);
+  text-align: center;
+  margin: 0 0 18px;
+  text-wrap: pretty;
+}
+.manifesto p:last-child { margin-bottom: 0; }
+.manifesto p.sign {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-size: 11px; letter-spacing: .2em; text-transform: uppercase;
+  color: var(--muted); font-weight: 600;
+  margin-top: 28px;
+}
+@media (max-width: 640px) { .manifesto { padding: 40px 26px; } .manifesto p { font-size: 18px; } }
+
+/* FOOTER */
+footer {
+  max-width: 1100px;
+  margin: 60px auto 0;
+  padding: 32px 40px;
+  border-top: 1px solid var(--rule);
+  display: flex; justify-content: space-between; align-items: center;
+  font-family: "Inter", sans-serif;
+  font-size: 12px; color: var(--muted);
+  flex-wrap: wrap; gap: 12px;
+}
+footer .left { display: flex; gap: 8px; align-items: center; }
+footer a { color: var(--ink-soft); text-decoration: none; }
+footer a:hover { color: var(--accent); }
+@media (max-width: 640px) {
+  footer { flex-direction: column; gap: 12px; text-align: center; }
+}
+
+/* fade in */
+@keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+.hero, .stats, .destinations, .civica-strip, .featured, .manifesto { animation: fadeIn .5s ease-out both; }
+.stats { animation-delay: .06s; }
+.destinations { animation-delay: .10s; }
+.civica-strip { animation-delay: .14s; }
+.featured { animation-delay: .18s; }
+.manifesto { animation-delay: .22s; }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">Appunti 5F</div>
+  <nav class="topnav">
+    <a href="#destinazioni">Materie</a>
+    <a href="#scelti">In evidenza</a>
+    <a href="#manifesto">Manifesto</a>
+    <a href="Appunti.html" class="cta">Apri archivio →</a>
+    <button class="iconbtn" id="btn-theme" title="Tema chiaro/scuro" aria-label="Tema">
+      <svg viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"/></svg>
     </button>
+  </nav>
+</header>
 
-    <script src="assets/app.js" defer></script>
-  </body>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-frame"><span></span><span></span></div>
+  <span class="eyebrow">Archivio di studio · Quinta · A.S. 2025/26</span>
+  <h1>Storia, <em>italiano</em>, <span class="mono">reti</span>.</h1>
+  <p class="tagline">Un quaderno aperto: appunti riordinati di un anno di lezioni — umanistiche e tecniche, sotto lo stesso tetto.</p>
+  <p class="byline">A cura di Marcello Ronchetti · 5F · ITT</p>
+  <div class="hero-cta">
+    <a class="btn btn-primary" href="#destinazioni">
+      Scegli la materia
+      <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+    <a class="btn btn-ghost" href="#manifesto">Leggi il manifesto</a>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+  <div class="stat"><span class="n">8</span><span class="l">Storia · pagine</span></div>
+  <div class="stat"><span class="n">10</span><span class="l">Italiano · autori</span></div>
+  <div class="stat"><span class="n">3</span><span class="l">Civica · documenti</span></div>
+  <div class="stat"><span class="n">8</span><span class="l">Telecom · pagine</span></div>
+  <div class="stat"><span class="n">9</span><span class="l">TPSIT · pagine</span></div>
+</section>
+
+<div class="fleuron"></div>
+
+<!-- DESTINATIONS -->
+<div class="section-title" id="destinazioni">
+  <span class="eye">Le cinque materie</span>
+  <h2>Scegli da dove cominciare</h2>
+  <p>Cinque stanze, due ali: umanistiche da una parte, tecniche dall'altra. La porta è dove vuoi tu.</p>
+</div>
+
+<!-- Wing 1: humanities -->
+<div class="wing-label">
+  <span class="tag">Ala umanistica</span>
+  <span class="ln"></span>
+</div>
+
+<section class="destinations">
+  <a class="card" href="Appunti.html">
+    <span class="roman">I</span>
+    <h3>Storia</h3>
+    <p class="kicker">Dal Novecento alla Resistenza</p>
+    <p class="desc">Le grandi fratture del secolo breve: il primo dopoguerra, l'ascesa dei totalitarismi, la crisi del '29, la Seconda guerra mondiale e la nascita dell'Italia repubblicana.</p>
+    <ul>
+      <li>Il Fascismo italiano <span class="no">1919 — 1939</span></li>
+      <li>Il Nazismo <span class="no">1919 — 1945</span></li>
+      <li>Rivoluzione russa e stalinismo <span class="no">1917 — 1953</span></li>
+      <li>La crisi del 1929 <span class="no">1929 — 1933</span></li>
+      <li>Resistenza e liberazione <span class="no">1943 — 1945</span></li>
+    </ul>
+    <span class="more">Sfoglia la raccolta <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+  </a>
+
+  <a class="card" href="Appunti.html">
+    <span class="roman">II</span>
+    <h3>Italiano</h3>
+    <p class="kicker">Autori, libri, movimenti</p>
+    <p class="desc">Schede d'autore con poetica e opere, riassunti per capitoli dei libri letti, e una mappa dei movimenti — dal Verismo al Neorealismo, passando per Decadentismo e Avanguardie.</p>
+    <ul>
+      <li>Giovanni Verga <span class="no">Verismo</span></li>
+      <li>Gabriele D'Annunzio <span class="no">Estetismo</span></li>
+      <li>Eugenio Montale <span class="no">Lirica</span></li>
+      <li>Primo Levi <span class="no">Memoria</span></li>
+      <li>Il Gattopardo · Madame Bovary <span class="no">Libri</span></li>
+    </ul>
+    <span class="more">Sfoglia la raccolta <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+  </a>
+</section>
+
+<!-- Civica strip -->
+<div class="civica-strip">
+  <a class="civica-card" href="Appunti.html">
+    <span class="badge">III</span>
+    <div>
+      <h3>Educazione Civica</h3>
+      <p>Il Manifesto di Ventotene, l'idea d'Europa, l'Unione Europea e la Costituzione: i fondamenti della cittadinanza.</p>
+    </div>
+    <span class="arrow">Apri →</span>
+  </a>
+</div>
+
+<!-- Wing 2: tech -->
+<div class="wing-label">
+  <span class="tag">Ala tecnica</span>
+  <span class="ln"></span>
+</div>
+
+<section class="destinations tech">
+  <a class="card tech" href="telecomunicazioni.html">
+    <span class="roman">IV</span>
+    <h3>Telecomunicazioni</h3>
+    <p class="kicker">Reti, onde &amp; protocolli</p>
+    <p class="desc">Otto macro-argomenti: dal campo elettromagnetico al laboratorio Mikrotik. Suite TCP/IP, VLAN, ACL, NAT, wireless 802.11, fibra ottica e GPON. Documento del 15 maggio.</p>
+    <ul>
+      <li>Onde &amp; Antenne <span class="no">01</span></li>
+      <li>Suite TCP/IP <span class="no">02</span></li>
+      <li>Switch &amp; VLAN <span class="no">03</span></li>
+      <li>ACL · NAT <span class="no">04 — 05</span></li>
+      <li>Wireless · Fibra · Lab <span class="no">06 — 08</span></li>
+    </ul>
+    <span class="more">Apri l'indice materia <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+  </a>
+
+  <a class="card tech tpsit" href="tpsit.html">
+    <span class="roman">V</span>
+    <h3>TPSIT</h3>
+    <p class="kicker">Wireless &amp; IoT</p>
+    <p class="desc">Nove pagine: ESP32, Wi-Fi 802.11, antenne PCB, Bluetooth Classic, BLE, LoRaWAN, NB-IoT, 5G — più una tabella di confronto. Codice Arduino/ESP-IDF dove serve.</p>
+    <ul>
+      <li>ESP32 · Wi-Fi <span class="no">01 — 02</span></li>
+      <li>Antenne · Bluetooth · BLE <span class="no">03 — 05</span></li>
+      <li>LoRaWAN <span class="no">06</span></li>
+      <li>NB-IoT · 5G <span class="no">07 — 08</span></li>
+      <li>Confronto protocolli <span class="no">09</span></li>
+    </ul>
+    <span class="more">Apri l'indice materia <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+  </a>
+</section>
+
+<div class="fleuron"></div>
+
+<!-- FEATURED -->
+<div class="section-title" id="scelti">
+  <span class="eye">Aggiunti di recente</span>
+  <h2>In evidenza questo mese</h2>
+  <p>Le pagine appena riordinate o ampliate, dalle due ali.</p>
+</div>
+
+<section class="featured">
+  <div class="featured-grid">
+    <a class="feat" href="Appunti.html">
+      <span class="tag">Civica · Europa</span>
+      <h4>Manifesto di Ventotene</h4>
+      <p>Spinelli, Rossi, Colorni e l'idea di una federazione europea nata sull'isola. Il testo, il contesto, l'eredità nell'UE.</p>
+      <span class="meta">5 sezioni <span class="dot"></span> ≈ 9 min <span class="dot"></span> nuovo</span>
+    </a>
+    <a class="feat tech" href="telecomunicazioni/tcp-ip.html">
+      <span class="tag">Telecom · 02</span>
+      <h4>Suite TCP/IP</h4>
+      <p>IP, subnetting VLSM, DHCP, ARP, TCP vs UDP, three-way handshake, sliding window, ICMP. Il livello di trasporto spiegato a fondo.</p>
+      <span class="meta">8 sezioni <span class="dot"></span> ≈ 15 min <span class="dot"></span> aggiornato</span>
+    </a>
+    <a class="feat tpsit" href="tpsit/esp32.html">
+      <span class="tag">TPSIT · 01</span>
+      <h4>ESP32 — il SoC IoT</h4>
+      <p>Architettura interna del SoC Espressif, connettività integrata (Wi-Fi + BT + BLE), modalità di risparmio energetico, esempio WIFI_1.</p>
+      <span class="meta">6 sezioni <span class="dot"></span> ≈ 12 min <span class="dot"></span> nuovo</span>
+    </a>
+  </div>
+</section>
+
+<!-- MANIFESTO -->
+<aside class="manifesto" id="manifesto">
+  <span class="label">Manifesto del quaderno</span>
+  <p>Questi appunti sono <em>miei</em>. Servono a me per studiare, e ad altri studenti se possono essere utili.</p>
+  <p>Non riproduco fonti, non sostituisco i manuali, non pretendo di essere completo. Riordinato, sì. Definitivo, no.</p>
+  <p>Storia e italiano stanno accanto alle reti e all'IoT: lo stesso quaderno, due grafie diverse.</p>
+  <p>Se trovi un errore, scrivimi. Se ti aiuta, prendilo.</p>
+  <p class="sign">— M. R.</p>
+</aside>
+
+<footer>
+  <div class="left">
+    <span>❦</span>
+    <span>Appunti 5F · A.S. 2025/26</span>
+  </div>
+  <div>
+    <a href="https://github.com/MarcelloRonchetti/Appunti">Sorgente</a>
+    &nbsp;·&nbsp;
+    <a href="Appunti.html">Archivio Sto-Ita</a>
+    &nbsp;·&nbsp;
+    <a href="telecomunicazioni.html">Telecom</a>
+    &nbsp;·&nbsp;
+    <a href="tpsit.html">TPSIT</a>
+  </div>
+</footer>
+
+<script>
+/* THEME TOGGLE */
+(function () {
+  const root = document.documentElement;
+  const saved = localStorage.getItem('appunti-theme');
+  if (saved) root.setAttribute('data-theme', saved);
+  else if (window.matchMedia('(prefers-color-scheme: dark)').matches) root.setAttribute('data-theme', 'dark');
+
+  const btn = document.getElementById('btn-theme');
+  function paintIcon() {
+    const isDark = root.getAttribute('data-theme') === 'dark';
+    btn.innerHTML = isDark
+      ? '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>'
+      : '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"/></svg>';
+  }
+  paintIcon();
+  btn.addEventListener('click', () => {
+    const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    localStorage.setItem('appunti-theme', next);
+    paintIcon();
+  });
+})();
+</script>
+
+</body>
 </html>

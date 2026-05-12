@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fibra & GPON — Telecomunicazioni · 5F</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;600&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/tech-style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header-bg"></div>
+  <div class="header-inner" style="padding-bottom:1.5rem">
+    <div class="header-eyebrow">
+      <a class="eyebrow-tag" href="../index.html">← Home</a>
+      <a class="eyebrow-tag" href="../telecomunicazioni.html">← Telecomunicazioni</a>
+      <span class="eyebrow-tag">5F · 2025/26</span>
+      <div class="eyebrow-line"></div>
+      <span class="eyebrow-tag">Fibra & GPON</span>
+    </div>
+  </div>
+</header>
+
+<main class="layout-shell">
+  <aside class="sidenav">
+    <a href="../telecomunicazioni.html" class="sn-back">← Indice materia</a>
+    <div class="sn-label">Macro-argomenti</div>
+    <a href="onde-antenne.html" class="">
+      <span class="icn">📡</span>
+      <span>Onde & Antenne</span>
+      <span class="num">01</span>
+    </a>
+    <a href="tcp-ip.html" class="">
+      <span class="icn">🌐</span>
+      <span>TCP/IP</span>
+      <span class="num">02</span>
+    </a>
+    <a href="switch-vlan.html" class="">
+      <span class="icn">🔀</span>
+      <span>Switch & VLAN</span>
+      <span class="num">03</span>
+    </a>
+    <a href="acl.html" class="">
+      <span class="icn">🛡️</span>
+      <span>ACL</span>
+      <span class="num">04</span>
+    </a>
+    <a href="nat.html" class="">
+      <span class="icn">🔁</span>
+      <span>NAT</span>
+      <span class="num">05</span>
+    </a>
+    <a href="wireless-80211.html" class="">
+      <span class="icn">📶</span>
+      <span>Wireless 802.11</span>
+      <span class="num">06</span>
+    </a>
+    <a href="fibra-gpon.html" class="active">
+      <span class="icn">💡</span>
+      <span>Fibra & GPON</span>
+      <span class="num">07</span>
+    </a>
+    <a href="laboratorio.html" class="">
+      <span class="icn">🔧</span>
+      <span>Laboratorio</span>
+      <span class="num">08</span>
+    </a>
+  </aside>
+
+  <div class="content-main">
+    <section class="section">
+      <div class="sec-head">
+    <div class="sec-num">07</div>
+    <div class="sec-body">
+      <h2>Connessione in fibra ottica</h2>
+      <p>Tipologie di fibra, TX/RX, WDM, link budget ottico, GPON, incapsulamento GEM.</p>
+    </div>
+    <span class="sec-badge b-yellow">Fibra · FTTH</span>
+  </div>
+
+  <div class="explain-box">
+    <h4>💡 Principio della fibra ottica</h4>
+    <p>Un sottile filamento di vetro (silice) trasmette luce per <strong>riflessione interna totale</strong>. Il <em>core</em> ha indice di rifrazione leggermente maggiore del <em>cladding</em> che lo circonda → la luce non esce dal core.</p>
+    <p><strong>Vantaggi rispetto al rame:</strong></p>
+    <ul>
+      <li>Banda passante enorme (THz vs MHz).</li>
+      <li>Attenuazione bassissima (~0.2 dB/km a 1550 nm) vs cavo coassiale (~30 dB/km).</li>
+      <li>Immune alle interferenze elettromagnetiche.</li>
+      <li>Sicurezza: non irradia, difficile da intercettare.</li>
+      <li>Niente diafonia tra fibre vicine.</li>
+    </ul>
+  </div>
+
+  <div class="grid g2" style="margin-bottom:1.25rem">
+    <div class="box">
+      <span class="badge b-blue">Fibra multimodale (MMF)</span>
+      <h3>Core 50/62.5 μm</h3>
+      <p style="font-family:var(--serif);font-size:.92rem">La luce si propaga su <strong>più modi</strong> (raggi a angoli diversi). Più semplice e economica. Dispersione modale: i modi arrivano con tempi diversi → max ~500 m a 1 Gbps. Sorgente: LED o VCSEL.</p>
+      <p style="font-family:var(--serif);font-size:.9rem;color:rgba(10,10,15,.6);margin-top:.4rem"><em>Uso: cablaggio strutturato interno, datacenter su brevi distanze.</em></p>
+    </div>
+    <div class="box">
+      <span class="badge b-teal">Fibra monomodale (SMF)</span>
+      <h3>Core 9 μm</h3>
+      <p style="font-family:var(--serif);font-size:.92rem">Un solo modo si propaga. Niente dispersione modale → distanze enormi (decine di km senza amplificazione) e throughput altissimo. Sorgente: laser DFB. Più costosa, ma è lo standard per telecom e FTTH.</p>
+      <p style="font-family:var(--serif);font-size:.9rem;color:rgba(10,10,15,.6);margin-top:.4rem"><em>Uso: dorsali, FTTH GPON, link metropolitani.</em></p>
+    </div>
+  </div>
+
+  <div class="box" style="margin-bottom:1.25rem">
+    <div class="box-title">Apparati di trasmissione e ricezione</div>
+    <div class="grid g3">
+      <div>
+        <div class="lbl" style="color:var(--blue)">Sorgente luminosa (TX)</div>
+        <p style="font-family:var(--serif);font-size:.92rem"><strong>LED:</strong> ampia banda spettrale, economico, per MMF, &lt; 100 Mbps.</p>
+        <p style="font-family:var(--serif);font-size:.92rem;margin-top:.4rem"><strong>Laser (DFB, VCSEL):</strong> spettro stretto, coerente, per SMF, fino a 100+ Gbps per λ.</p>
+      </div>
+      <div>
+        <div class="lbl" style="color:var(--teal)">Fotorivelatore (RX)</div>
+        <p style="font-family:var(--serif);font-size:.92rem"><strong>PIN photodiode:</strong> semplice, economico, sensibilità media.</p>
+        <p style="font-family:var(--serif);font-size:.92rem;margin-top:.4rem"><strong>APD (Avalanche):</strong> guadagno interno, sensibilità maggiore (utile su link lunghi).</p>
+      </div>
+      <div>
+        <div class="lbl" style="color:var(--orange)">Lunghezze d'onda</div>
+        <p style="font-family:var(--serif);font-size:.92rem"><strong>O-band 1310 nm:</strong> dispersione cromatica minima.</p>
+        <p style="font-family:var(--serif);font-size:.92rem;margin-top:.4rem"><strong>C-band 1550 nm:</strong> attenuazione minima, ideale per lunghe distanze (con EDFA).</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="explain-box">
+    <h4>🌈 WDM — Wavelength Division Multiplexing</h4>
+    <p>Una singola fibra trasporta più "colori" di luce contemporaneamente, ciascuno con il proprio canale dati. È come avere più fibre fisiche in un cavo solo.</p>
+    <ul>
+      <li><strong>CWDM (Coarse):</strong> ~8 canali distanziati di 20 nm. Economico. Usato in metro/access.</li>
+      <li><strong>DWDM (Dense):</strong> 40–96+ canali distanziati di 0.4 / 0.8 nm. Per dorsali long-haul. Permette decine di Tbps per fibra.</li>
+    </ul>
+    <p>Lo schema a blocchi: <strong>TX laser (vari λ)</strong> → <strong>multiplexer ottico</strong> → <strong>fibra</strong> → <strong>amplificatore EDFA</strong> (rigenera senza conversione elettrica) → <strong>demultiplexer ottico</strong> → <strong>RX</strong>.</p>
+  </div>
+
+  <div class="box" style="margin-bottom:1.25rem">
+    <div class="box-title">Link budget ottico</div>
+    <table class="tbl">
+      <tbody>
+        <tr><td>Potenza TX (laser)</td><td>+3 dBm</td></tr>
+        <tr><td>Attenuazione fibra (20 km × 0.25 dB/km)</td><td>−5 dB</td></tr>
+        <tr><td>Splitter 1:32 (GPON)</td><td>−17 dB</td></tr>
+        <tr><td>Connettori (4 × 0.3 dB)</td><td>−1.2 dB</td></tr>
+        <tr><td>Margine di sicurezza</td><td>−3 dB</td></tr>
+        <tr style="background:var(--teal-l)"><td><strong>Potenza all'RX (ONU)</strong></td><td><strong>−23.2 dBm</strong></td></tr>
+        <tr><td>Sensibilità ONU</td><td>−28 dBm</td></tr>
+        <tr style="background:var(--teal-l)"><td><strong>Margine residuo</strong></td><td><strong>+4.8 dB ✓</strong></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="divider"></div>
+
+  <h3 style="font-size:1.3rem;margin-bottom:1rem;color:var(--accent)">GPON — Gigabit Passive Optical Network</h3>
+
+  <div class="explain-box">
+    <h4>🌳 Architettura GPON</h4>
+    <p>Rete PON = <strong>Passive Optical Network</strong>: tra centrale e utenti ci sono solo dispositivi passivi (splitter), niente amplificatori → bassi costi di manutenzione.</p>
+    <ul>
+      <li><strong>OLT (Optical Line Terminal):</strong> in centrale, dialoga con tutti gli utenti del PON.</li>
+      <li><strong>ODN (Optical Distribution Network):</strong> fibra + splitter passivi (tipicamente 1:32 o 1:64).</li>
+      <li><strong>ONU/ONT (Optical Network Unit/Terminal):</strong> apparato presso l'utente. Il "modem" della fibra.</li>
+    </ul>
+    <p><strong>Caratteristiche GPON (ITU-T G.984):</strong></p>
+    <ul>
+      <li>Downstream <strong>2.488 Gbps</strong> a 1490 nm — broadcast a tutti gli ONU; ciascuno legge solo i propri pacchetti.</li>
+      <li>Upstream <strong>1.244 Gbps</strong> a 1310 nm — TDMA: l'OLT assegna slot temporali agli ONU.</li>
+      <li>Distanza massima logica: 60 km; pratica: 20 km.</li>
+      <li>Split ratio fino a 1:64 (oggi 1:128 con GPON XGS).</li>
+    </ul>
+  </div>
+
+  <div class="explain-box">
+    <h4>📦 Incapsulamento GEM — GPON Encapsulation Method</h4>
+    <p>I dati dell'utente (Ethernet, IP, voce) vengono trasportati su GPON dentro <strong>GEM frame</strong>:</p>
+    <ul>
+      <li>Ogni GEM frame ha un header con <strong>Port-ID</strong> (12 bit) che identifica il flusso logico.</li>
+      <li>Le frame Ethernet del cliente vengono inserite nei GEM (un Ethernet può occupare uno o più GEM).</li>
+      <li>L'OLT mappa ogni Port-ID a un determinato ONU/servizio, garantendo isolamento.</li>
+      <li>Supporto nativo per voce, dati, video con classi di servizio differenti.</li>
+    </ul>
+    <p><strong>Sicurezza:</strong> il downstream è in chiaro a tutti gli ONU del PON. GPON cifra il payload utente con AES-128 e chiave per-ONU per evitare che un cliente legga il traffico di un altro.</p>
+  </div>
+    </section>
+    <nav class="pagenav"><a class="prev" href="wireless-80211.html"><span class="pn-dir">← Precedente</span><span class="pn-title">📶 Wireless 802.11</span></a><a class="next" href="laboratorio.html"><span class="pn-dir">Successivo →</span><span class="pn-title">🔧 Laboratorio</span></a></nav>
+  </div>
+</main>
+
+<footer>
+  Telecomunicazioni · 5F 2025/26 · Fibra & GPON
+</footer>
+</body>
+</html>

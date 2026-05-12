@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NAT — Telecomunicazioni · 5F</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;600&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/tech-style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header-bg"></div>
+  <div class="header-inner" style="padding-bottom:1.5rem">
+    <div class="header-eyebrow">
+      <a class="eyebrow-tag" href="../index.html">← Home</a>
+      <a class="eyebrow-tag" href="../telecomunicazioni.html">← Telecomunicazioni</a>
+      <span class="eyebrow-tag">5F · 2025/26</span>
+      <div class="eyebrow-line"></div>
+      <span class="eyebrow-tag">NAT</span>
+    </div>
+  </div>
+</header>
+
+<main class="layout-shell">
+  <aside class="sidenav">
+    <a href="../telecomunicazioni.html" class="sn-back">← Indice materia</a>
+    <div class="sn-label">Macro-argomenti</div>
+    <a href="onde-antenne.html" class="">
+      <span class="icn">📡</span>
+      <span>Onde & Antenne</span>
+      <span class="num">01</span>
+    </a>
+    <a href="tcp-ip.html" class="">
+      <span class="icn">🌐</span>
+      <span>TCP/IP</span>
+      <span class="num">02</span>
+    </a>
+    <a href="switch-vlan.html" class="">
+      <span class="icn">🔀</span>
+      <span>Switch & VLAN</span>
+      <span class="num">03</span>
+    </a>
+    <a href="acl.html" class="">
+      <span class="icn">🛡️</span>
+      <span>ACL</span>
+      <span class="num">04</span>
+    </a>
+    <a href="nat.html" class="active">
+      <span class="icn">🔁</span>
+      <span>NAT</span>
+      <span class="num">05</span>
+    </a>
+    <a href="wireless-80211.html" class="">
+      <span class="icn">📶</span>
+      <span>Wireless 802.11</span>
+      <span class="num">06</span>
+    </a>
+    <a href="fibra-gpon.html" class="">
+      <span class="icn">💡</span>
+      <span>Fibra & GPON</span>
+      <span class="num">07</span>
+    </a>
+    <a href="laboratorio.html" class="">
+      <span class="icn">🔧</span>
+      <span>Laboratorio</span>
+      <span class="num">08</span>
+    </a>
+  </aside>
+
+  <div class="content-main">
+    <section class="section">
+      <div class="sec-head">
+    <div class="sec-num">05</div>
+    <div class="sec-body">
+      <h2>Network Address Translation</h2>
+      <p>NAT statico, dinamico, PAT (overload), port forwarding. Connettere reti private a Internet.</p>
+    </div>
+    <span class="sec-badge b-purple">Routing</span>
+  </div>
+
+  <div class="explain-box">
+    <h4>🔁 Perché esiste il NAT</h4>
+    <p>Gli IPv4 pubblici sono finiti (~4 miliardi, esauriti nel 2011). Le organizzazioni usano IP privati (RFC 1918) all'interno della LAN, ma per andare in Internet servono IP pubblici. Il <strong>NAT</strong> traduce IP privati ↔ IP pubblici sul router di bordo.</p>
+    <p><strong>Terminologia:</strong></p>
+    <ul>
+      <li><strong>Inside local:</strong> IP privato dell'host interno (es. 192.168.1.10).</li>
+      <li><strong>Inside global:</strong> IP pubblico assegnato al router (es. 91.10.10.5).</li>
+      <li><strong>Outside global:</strong> IP del server Internet a cui ci si connette (es. 142.250.180.4).</li>
+    </ul>
+  </div>
+
+  <div class="grid g3" style="margin-bottom:1.25rem">
+    <div class="box">
+      <span class="badge b-blue">NAT Statico</span>
+      <h3>1 IP privato ↔ 1 IP pubblico</h3>
+      <p style="font-family:var(--serif);font-size:.92rem">Mapping fisso. Usato per server interni che devono essere sempre raggiungibili dallo stesso IP pubblico. Costoso (un IP pubblico per host).</p>
+      <div class="code-block" style="margin-top:.6rem;font-size:.78rem"><span class="c-kw">ip nat inside source static</span>
+  <span class="c-num">192.168.1.5</span> <span class="c-num">91.10.10.5</span></div>
+    </div>
+    <div class="box">
+      <span class="badge b-teal">NAT Dinamico</span>
+      <h3>Pool di IP pubblici</h3>
+      <p style="font-family:var(--serif);font-size:.92rem">Gli host privati prendono un IP pubblico da un <em>pool</em> mentre serve. Quando rilasciano la connessione, l'IP torna libero. Numero host ≤ dimensione pool.</p>
+      <div class="code-block" style="margin-top:.6rem;font-size:.78rem"><span class="c-kw">ip nat pool</span> POOL <span class="c-num">91.10.10.2</span>
+  <span class="c-num">91.10.10.10</span> netmask <span class="c-num">/29</span>
+<span class="c-kw">ip nat inside source list</span> <span class="c-num">1</span>
+  <span class="c-kw">pool</span> POOL</div>
+    </div>
+    <div class="box">
+      <span class="badge b-orange">PAT / NAT Overload</span>
+      <h3>N privati ↔ 1 pubblico</h3>
+      <p style="font-family:var(--serif);font-size:.92rem">Molti host privati condividono <em>un solo</em> IP pubblico distinguendosi per <strong>numero di porta</strong>. È quello che fa il router di casa. Migliaia di host su un IP solo.</p>
+      <div class="code-block" style="margin-top:.6rem;font-size:.78rem"><span class="c-kw">ip nat inside source list</span> <span class="c-num">1</span>
+  <span class="c-kw">interface</span> g0/0 <span class="c-kw">overload</span></div>
+    </div>
+  </div>
+
+  <div class="explain-box">
+    <h4>📥 Port forwarding — esporre un servizio interno</h4>
+    <p><strong>Problema:</strong> il NAT è asimmetrico — il traffico esce facilmente, ma uno dall'esterno non sa come raggiungere un server dentro la LAN (vede solo l'IP pubblico del router).</p>
+    <p><strong>Soluzione:</strong> port forwarding (PAT statico). Si dice al router: <em>"il traffico che arriva sull'IP pubblico porta X, inoltralo all'host privato Y porta Z"</em>.</p>
+    <div class="code-block" style="margin-top:.8rem"><span class="c-com">! Web server interno raggiungibile da Internet</span>
+<span class="c-kw">ip nat inside source static tcp</span>
+  <span class="c-num">192.168.1.10</span> <span class="c-num">80</span>
+  <span class="c-kw">interface</span> g0/0 <span class="c-num">80</span></div>
+    <p style="margin-top:.6rem">In ambito Mikrotik si configura come regola <code>dst-nat</code> nella tabella NAT.</p>
+  </div>
+
+  <div class="box">
+    <div class="box-title">Verifica e troubleshooting</div>
+    <div class="code-block" style="margin-bottom:.6rem"><span class="c-com">! tabella traduzioni attive</span>
+<span class="c-kw">show ip nat translations</span>
+
+<span class="c-com">! statistiche</span>
+<span class="c-kw">show ip nat statistics</span>
+
+<span class="c-com">! debug in tempo reale (attenzione su router carico!)</span>
+<span class="c-kw">debug ip nat</span></div>
+  </div>
+    </section>
+    <nav class="pagenav"><a class="prev" href="acl.html"><span class="pn-dir">← Precedente</span><span class="pn-title">🛡️ ACL</span></a><a class="next" href="wireless-80211.html"><span class="pn-dir">Successivo →</span><span class="pn-title">📶 Wireless 802.11</span></a></nav>
+  </div>
+</main>
+
+<footer>
+  Telecomunicazioni · 5F 2025/26 · NAT
+</footer>
+</body>
+</html>

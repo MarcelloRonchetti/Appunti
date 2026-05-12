@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laboratorio — Telecomunicazioni · 5F</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;600&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/tech-style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header-bg"></div>
+  <div class="header-inner" style="padding-bottom:1.5rem">
+    <div class="header-eyebrow">
+      <a class="eyebrow-tag" href="../index.html">← Home</a>
+      <a class="eyebrow-tag" href="../telecomunicazioni.html">← Telecomunicazioni</a>
+      <span class="eyebrow-tag">5F · 2025/26</span>
+      <div class="eyebrow-line"></div>
+      <span class="eyebrow-tag">Laboratorio</span>
+    </div>
+  </div>
+</header>
+
+<main class="layout-shell">
+  <aside class="sidenav">
+    <a href="../telecomunicazioni.html" class="sn-back">← Indice materia</a>
+    <div class="sn-label">Macro-argomenti</div>
+    <a href="onde-antenne.html" class="">
+      <span class="icn">📡</span>
+      <span>Onde & Antenne</span>
+      <span class="num">01</span>
+    </a>
+    <a href="tcp-ip.html" class="">
+      <span class="icn">🌐</span>
+      <span>TCP/IP</span>
+      <span class="num">02</span>
+    </a>
+    <a href="switch-vlan.html" class="">
+      <span class="icn">🔀</span>
+      <span>Switch & VLAN</span>
+      <span class="num">03</span>
+    </a>
+    <a href="acl.html" class="">
+      <span class="icn">🛡️</span>
+      <span>ACL</span>
+      <span class="num">04</span>
+    </a>
+    <a href="nat.html" class="">
+      <span class="icn">🔁</span>
+      <span>NAT</span>
+      <span class="num">05</span>
+    </a>
+    <a href="wireless-80211.html" class="">
+      <span class="icn">📶</span>
+      <span>Wireless 802.11</span>
+      <span class="num">06</span>
+    </a>
+    <a href="fibra-gpon.html" class="">
+      <span class="icn">💡</span>
+      <span>Fibra & GPON</span>
+      <span class="num">07</span>
+    </a>
+    <a href="laboratorio.html" class="active">
+      <span class="icn">🔧</span>
+      <span>Laboratorio</span>
+      <span class="num">08</span>
+    </a>
+  </aside>
+
+  <div class="content-main">
+    <section class="section">
+      <div class="sec-head">
+    <div class="sec-num">08</div>
+    <div class="sec-body">
+      <h2>Laboratorio Mikrotik</h2>
+      <p>Sette esperienze su router Mikrotik dedicato. Analisi, progetto, simulazione, realizzazione, collaudo.</p>
+    </div>
+    <span class="sec-badge b-orange">Pratica</span>
+  </div>
+
+  <div class="explain-box">
+    <h4>🔧 Metodologia</h4>
+    <p>Ogni esperienza partiva dalla descrizione di un problema o di un servizio. Le fasi sviluppate in autonomia:</p>
+    <ol>
+      <li><strong>Analisi</strong> dei requisiti e dei vincoli.</li>
+      <li><strong>Progetto</strong> della topologia e degli indirizzamenti.</li>
+      <li><strong>Simulazione</strong> (eventuale) per verificare la logica.</li>
+      <li><strong>Realizzazione pratica</strong> sul router Mikrotik.</li>
+      <li><strong>Documentazione</strong> con schema e configurazione.</li>
+      <li><strong>Collaudo</strong> contestuale dell'esperienza.</li>
+    </ol>
+    <p style="font-family:var(--serif);font-size:.92rem;color:rgba(10,10,15,.6)">Tutte realizzate da singolo studente in aula, con un router Mikrotik dedicato e macchine virtuali per emulare client e server.</p>
+  </div>
+
+  <div class="grid" style="grid-template-columns:1fr;gap:.8rem;margin-bottom:1.25rem">
+    <div class="lab-card">
+      <div class="lab-num">1</div>
+      <div class="lab-body">
+        <h3>Subnetting e funzionalità del router</h3>
+        <p>Primo approccio al nuovo router: studio del CLI Mikrotik, della WebFig, configurazione delle interfacce, definizione di subnet con VLSM secondo una traccia assegnata. Verifica connettività con <code>ping</code> e tabella <code>ip route</code>.</p>
+        <span class="lab-tag">VLSM · interfacce · routing base</span>
+      </div>
+    </div>
+    <div class="lab-card">
+      <div class="lab-num">2</div>
+      <div class="lab-body">
+        <h3>SNAT, DNAT e firewall</h3>
+        <p>Rete locale composta da router, una VM e un notebook, inserita nel sistema informativo della scuola. <strong>SNAT</strong> per il NAT in uscita (overload), <strong>DNAT</strong> con port forwarding per pubblicare verso Internet servizi web (porta 80) e SSH (porta 22) ospitati sui due host interni.</p>
+        <span class="lab-tag">srcnat masquerade · dst-nat · firewall input/forward</span>
+      </div>
+    </div>
+    <div class="lab-card">
+      <div class="lab-num">3</div>
+      <div class="lab-body">
+        <h3>VLAN con e senza inter-VLAN routing</h3>
+        <p>Due router e macchine virtuali per simulare due VLAN. Prima configurazione: VLAN isolate (no comunicazione). Seconda: inter-VLAN routing con sub-interfacce taggate 802.1Q e default gateway per VLAN. Verifica con <code>ping</code> cross-VLAN.</p>
+        <span class="lab-tag">802.1Q · trunk · inter-VLAN routing</span>
+      </div>
+    </div>
+    <div class="lab-card">
+      <div class="lab-num">4</div>
+      <div class="lab-body">
+        <h3>Firewall e regole di sicurezza interne</h3>
+        <p>Definizione di policy granulari: blocco traffico SSH non autorizzato, limitazione ICMP dall'esterno, anti-spoofing, regole <code>connection-state</code> per stateful inspection. Test con scansioni nmap di prova.</p>
+        <span class="lab-tag">filter rules · stateful · connection-state</span>
+      </div>
+    </div>
+    <div class="lab-card">
+      <div class="lab-num">5</div>
+      <div class="lab-body">
+        <h3>VRRP — alta disponibilità del gateway</h3>
+        <p>Due router configurati come <strong>VRRP master</strong> e <strong>backup</strong> condividono un IP virtuale come default gateway. Verifica del failover scollegando il master: il backup assume l'IP virtuale entro pochi secondi, gli host non perdono la connessione.</p>
+        <span class="lab-tag">VRRP · master/backup · virtual IP</span>
+      </div>
+    </div>
+    <div class="lab-card">
+      <div class="lab-num">6</div>
+      <div class="lab-body">
+        <h3>Routing dinamico OSPF</h3>
+        <p>Rete con più router in area OSPF 0. Configurazione di <code>router-id</code>, network statements, verifica adiacenze. Test di failover: si interrompe un link e si verifica che la rete si auto-riconfigura — i pacchetti seguono il nuovo cammino entro pochi secondi.</p>
+        <span class="lab-tag">OSPF · adjacency · convergenza</span>
+      </div>
+    </div>
+    <div class="lab-card">
+      <div class="lab-num">7</div>
+      <div class="lab-body">
+        <h3>DMZ + regole ACL</h3>
+        <p>Topologia con LAN interna, <strong>DMZ</strong> (web server pubblico) e Internet. ACL del router configurate per: permettere accesso pubblico ai servizi della DMZ, vietare alla DMZ di iniziare connessioni verso la LAN interna, permettere alla LAN di accedere sia a DMZ sia a Internet. Verifica con traffico reale.</p>
+        <span class="lab-tag">DMZ · zone-based firewall · least privilege</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="explain-box">
+    <h4>📋 Output dell'attività</h4>
+    <p>Ciascuna esperienza è stata corredata da un <strong>report completo</strong> contenente:</p>
+    <ul>
+      <li>Schema di rete con indirizzamento.</li>
+      <li>Configurazione del router (export Mikrotik).</li>
+      <li>Procedura di verifica e collaudo.</li>
+      <li>Osservazioni sui problemi incontrati e sulle soluzioni adottate.</li>
+    </ul>
+  </div>
+    </section>
+    <nav class="pagenav"><a class="prev" href="fibra-gpon.html"><span class="pn-dir">← Precedente</span><span class="pn-title">💡 Fibra & GPON</span></a><a class="next disabled" href="#"><span class="pn-dir">→</span><span class="pn-title">Fine</span></a></nav>
+  </div>
+</main>
+
+<footer>
+  Telecomunicazioni · 5F 2025/26 · Laboratorio
+</footer>
+</body>
+</html>

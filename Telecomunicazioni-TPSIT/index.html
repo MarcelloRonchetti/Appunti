@@ -1,0 +1,1561 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wireless & IoT — Appunti TPSIT 5F 2025/26 </title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;600&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --ink:#0a0a0f;
+  --paper:#f5f0e8;
+  --paper2:#ede8df;
+  --paper3:#e5dfd4;
+  --accent:#1a1a2e;
+  --blue:#2563eb;
+  --blue-l:rgba(37,99,235,0.12);
+  --teal:#059669;
+  --teal-l:rgba(5,150,105,0.1);
+  --red:#dc2626;
+  --red-l:rgba(220,38,38,0.1);
+  --orange:#d97706;
+  --orange-l:rgba(217,119,6,0.1);
+  --purple:#7c3aed;
+  --purple-l:rgba(124,58,237,0.1);
+  --yellow:#b45309;
+  --border:rgba(10,10,15,0.12);
+  --mono:'IBM Plex Mono',monospace;
+  --sans:'Syne',sans-serif;
+  --serif:'Crimson Pro',serif;
+  --r:8px;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--paper);color:var(--ink);min-height:100vh;line-height:1.7;overflow-x:hidden;font-size:1.05rem}
+
+body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");pointer-events:none;z-index:9999;opacity:.6}
+
+.header{background:var(--accent);color:var(--paper);padding:0;position:relative;overflow:hidden}
+.header-bg{position:absolute;inset:0;background:
+  radial-gradient(ellipse 60% 120% at 80% 50%,rgba(37,99,235,.25) 0%,transparent 60%),
+  radial-gradient(ellipse 40% 80% at 10% 80%,rgba(124,58,237,.18) 0%,transparent 60%);
+  pointer-events:none}
+.header-inner{position:relative;z-index:1;max-width:1100px;margin:0 auto;padding:3rem 2rem 0}
+.header-eyebrow{display:flex;align-items:center;gap:12px;margin-bottom:1.2rem}
+.eyebrow-tag{font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;
+  color:rgba(245,240,232,.5);border:1px solid rgba(245,240,232,.15);padding:4px 10px;border-radius:3px}
+.eyebrow-line{flex:1;height:1px;background:rgba(245,240,232,.1)}
+.header h1{font-size:clamp(2.4rem,5vw,4.2rem);font-weight:800;line-height:1.05;letter-spacing:-0.02em;
+  margin-bottom:.6rem}
+.header h1 em{font-style:normal;color:rgba(37,99,235,.9);text-shadow:0 0 40px rgba(37,99,235,.4)}
+.header-sub{font-family:var(--serif);font-size:1.15rem;color:rgba(245,240,232,.55);margin-bottom:2rem;font-style:italic}
+
+.tabs-bar{background:rgba(0,0,0,.25);backdrop-filter:blur(8px);border-top:1px solid rgba(255,255,255,.06)}
+.tabs-inner{max-width:1100px;margin:0 auto;padding:0 2rem;display:flex;gap:0;overflow-x:auto;scrollbar-width:none}
+.tabs-inner::-webkit-scrollbar{display:none}
+.tab-btn{background:none;border:none;border-bottom:2px solid transparent;color:rgba(245,240,232,.45);
+  cursor:pointer;font-family:var(--sans);font-size:12px;font-weight:600;
+  padding:14px 18px;white-space:nowrap;transition:all .2s;letter-spacing:.8px;text-transform:uppercase}
+.tab-btn:hover{color:rgba(245,240,232,.8)}
+.tab-btn.active{color:var(--paper);border-bottom-color:var(--paper)}
+.tab-icon{margin-right:6px;opacity:.7}
+
+.content{max-width:1100px;margin:0 auto;padding:2.5rem 2rem 4rem}
+.section{display:none}.section.active{display:block;animation:fadeUp .3s ease}
+@keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+
+.sec-head{display:grid;grid-template-columns:auto 1fr auto;align-items:start;gap:1.5rem;
+  margin-bottom:2.5rem;padding:1.75rem;background:var(--accent);border-radius:var(--r);color:var(--paper);
+  position:relative;overflow:hidden}
+.sec-head::after{content:'';position:absolute;right:-20px;top:-20px;width:180px;height:180px;
+  border-radius:50%;background:rgba(255,255,255,.03);pointer-events:none}
+.sec-num{font-family:var(--mono);font-size:2.8rem;font-weight:600;opacity:.18;line-height:1}
+.sec-body{}
+.sec-body h2{font-size:1.7rem;font-weight:800;margin-bottom:.3rem}
+.sec-body p{font-family:var(--serif);font-size:1.05rem;opacity:.6;font-style:italic}
+.sec-badge{font-family:var(--mono);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;
+  padding:4px 10px;border-radius:3px;white-space:nowrap;align-self:flex-start}
+
+.grid{display:grid;gap:1rem;margin-bottom:1.5rem}
+.g2{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.g4{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+
+.box{background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:1.5rem;transition:box-shadow .2s}
+.box:hover{box-shadow:0 4px 20px rgba(0,0,0,.08)}
+.box-title{font-family:var(--mono);font-size:11px;letter-spacing:1.5px;text-transform:uppercase;
+  margin-bottom:1.2rem;display:flex;align-items:center;gap:8px;color:rgba(10,10,15,.4)}
+.box-title::after{content:'';flex:1;height:1px;background:var(--border)}
+.box h3{font-size:1.1rem;font-weight:700;margin-bottom:.4rem}
+.box p{font-size:.95rem;color:rgba(10,10,15,.65);line-height:1.7;font-family:var(--serif)}
+.lbl{font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;margin-bottom:6px}
+
+.stat{background:var(--accent);color:var(--paper);border-radius:var(--r);padding:1.2rem 1.4rem;text-align:center}
+.stat .val{font-family:var(--mono);font-size:2.2rem;font-weight:600;line-height:1.1;margin-bottom:3px}
+.stat .stat-lbl{font-size:.75rem;opacity:.5;letter-spacing:1px;text-transform:uppercase}
+
+.callout{padding:1.1rem 1.3rem;border-radius:var(--r);border-left:3px solid;margin-bottom:1.25rem;
+  font-family:var(--serif);font-size:1rem;line-height:1.7}
+.callout strong{font-family:var(--sans);font-size:.85rem;font-weight:700;letter-spacing:.5px;display:block;margin-bottom:4px}
+.c-blue{background:var(--blue-l);border-color:var(--blue);color:rgba(10,10,15,.75)}
+.c-teal{background:var(--teal-l);border-color:var(--teal);color:rgba(10,10,15,.75)}
+.c-red{background:var(--red-l);border-color:var(--red);color:rgba(10,10,15,.75)}
+.c-orange{background:var(--orange-l);border-color:var(--orange);color:rgba(10,10,15,.75)}
+.c-purple{background:var(--purple-l);border-color:var(--purple);color:rgba(10,10,15,.75)}
+
+.badge{display:inline-block;font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.8px;
+  text-transform:uppercase;padding:3px 8px;border-radius:3px;margin-bottom:8px}
+.b-blue{background:var(--blue-l);color:var(--blue)}
+.b-teal{background:var(--teal-l);color:var(--teal)}
+.b-red{background:var(--red-l);color:var(--red)}
+.b-orange{background:var(--orange-l);color:var(--orange)}
+.b-purple{background:var(--purple-l);color:var(--purple)}
+.b-yellow{background:rgba(180,83,9,.1);color:var(--yellow)}
+.b-dark{background:var(--accent);color:var(--paper)}
+
+.stack-proto{display:flex;flex-direction:column;gap:3px}
+.stack-layer{padding:9px 14px;border-radius:5px;display:flex;justify-content:space-between;align-items:center;
+  font-size:.85rem;font-weight:600;border:1px solid;cursor:default;transition:transform .15s}
+.stack-layer:hover{transform:translateX(5px)}
+.sl-app{background:var(--purple-l);border-color:rgba(124,58,237,.25);color:var(--purple)}
+.sl-high{background:var(--blue-l);border-color:rgba(37,99,235,.25);color:var(--blue)}
+.sl-link{background:var(--teal-l);border-color:rgba(5,150,105,.25);color:var(--teal)}
+.sl-base{background:var(--orange-l);border-color:rgba(217,119,6,.25);color:var(--orange)}
+.sl-radio{background:var(--red-l);border-color:rgba(220,38,38,.25);color:var(--red)}
+.sl-tag{font-family:var(--mono);font-size:10px;opacity:.6;letter-spacing:.5px;text-transform:uppercase}
+
+.explain-box{background:linear-gradient(135deg, rgba(37,99,235,.06) 0%, rgba(124,58,237,.04) 100%);
+  border:1px solid var(--border);border-radius:var(--r);padding:1.6rem;margin-bottom:1.5rem}
+.explain-box h4{font-size:1.15rem;font-weight:700;margin-bottom:.8rem;color:var(--accent)}
+.explain-box p{font-family:var(--serif);font-size:.97rem;line-height:1.85;margin-bottom:.75rem}
+.explain-box ul{font-family:var(--serif);font-size:.95rem;line-height:1.75;padding-left:1.5rem;margin-bottom:.75rem}
+.explain-box li{margin-bottom:.45rem}
+.explain-box code{background:rgba(10,10,15,.06);padding:2px 7px;border-radius:3px;font-family:var(--mono);font-size:.88em}
+
+.tbl{width:100%;border-collapse:collapse;font-size:.88rem}
+.tbl th{text-align:left;padding:10px 12px;font-family:var(--mono);font-size:10px;letter-spacing:1px;
+  text-transform:uppercase;color:rgba(10,10,15,.4);border-bottom:2px solid var(--border)}
+.tbl td{padding:10px 12px;border-bottom:1px solid rgba(10,10,15,.05);font-family:var(--serif);font-size:.95rem}
+.tbl tr:hover td{background:rgba(37,99,235,.03)}
+.tbl tr:last-child td{border-bottom:none}
+
+.divider{height:1px;background:var(--border);margin:1.75rem 0}
+
+.esp32-diagram{display:grid;grid-template-columns:1fr 2fr 1fr;gap:3px;padding:1rem 0;font-size:.8rem}
+.esp32-left,.esp32-right{display:flex;flex-direction:column;gap:3px;justify-content:center}
+.esp32-center{display:grid;grid-template-rows:auto auto auto auto;gap:3px}
+.esp-block{padding:7px 11px;border-radius:4px;text-align:center;font-weight:600;border:1px solid;font-size:.77rem}
+.eb-blue{background:var(--blue-l);border-color:rgba(37,99,235,.3);color:var(--blue)}
+.eb-teal{background:var(--teal-l);border-color:rgba(5,150,105,.3);color:var(--teal)}
+.eb-orange{background:var(--orange-l);border-color:rgba(217,119,6,.3);color:var(--orange)}
+.eb-gray{background:rgba(10,10,15,.04);border-color:var(--border);color:rgba(10,10,15,.6)}
+.eb-purple{background:var(--purple-l);border-color:rgba(124,58,237,.3);color:var(--purple)}
+.eb-red{background:var(--red-l);border-color:rgba(220,38,38,.3);color:var(--red)}
+.esp-row{display:grid;grid-template-columns:1fr 1fr;gap:3px}
+.esp-row3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:3px}
+
+.wifi-timeline{display:flex;gap:0;overflow-x:auto;scrollbar-width:none;padding-bottom:8px}
+.wifi-timeline::-webkit-scrollbar{display:none}
+.wifi-gen{flex:1;min-width:105px;position:relative;padding:0 4px}
+.wifi-bar-wrap{display:flex;flex-direction:column-reverse;height:160px;margin-bottom:8px;
+  border-bottom:2px solid var(--border);padding-bottom:4px}
+.wifi-bar{border-radius:4px 4px 0 0;width:100%;background:var(--accent);position:relative;
+  display:flex;align-items:flex-start;justify-content:center;padding-top:6px}
+.wifi-bar .speed-tag{font-family:var(--mono);font-size:10px;font-weight:600;color:var(--paper);opacity:.8}
+.wifi-gen-label{text-align:center;font-size:.75rem;font-weight:700;color:rgba(10,10,15,.6);margin-bottom:2px}
+.wifi-gen-year{text-align:center;font-family:var(--mono);font-size:.7rem;color:rgba(10,10,15,.35)}
+.wifi-gen-std{text-align:center;font-family:var(--mono);font-size:.65rem;color:rgba(10,10,15,.3);margin-top:2px}
+
+.antenna-row{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:1rem}
+.antenna-card{flex:1;min-width:170px;background:#fff;border:1px solid var(--border);border-radius:var(--r);
+  padding:1.2rem;position:relative;overflow:hidden}
+.antenna-svg{margin:0 auto 12px;display:block}
+
+.ack-visual{display:flex;flex-direction:column;gap:0;border-radius:var(--r);overflow:hidden}
+.ack-row{display:grid;grid-template-columns:65px 1fr;border-bottom:1px solid var(--border)}
+.ack-row:last-child{border-bottom:none}
+.ack-label{background:var(--accent);color:var(--paper);display:flex;align-items:center;justify-content:center;
+  font-family:var(--mono);font-size:.7rem;font-weight:600;padding:8px 4px;text-align:center}
+.ack-slots{display:flex;gap:2px;padding:8px;background:#fff;align-items:center}
+.ack-slot{flex:1;height:26px;border-radius:3px;display:flex;align-items:center;justify-content:center;
+  font-family:var(--mono);font-size:.65rem;font-weight:600;border:1px solid}
+.as-full{background:var(--blue-l);border-color:rgba(37,99,235,.4);color:var(--blue)}
+.as-empty{background:rgba(10,10,15,.03);border-color:var(--border);color:rgba(10,10,15,.25)}
+.as-ack{background:var(--teal-l);border-color:rgba(5,150,105,.4);color:var(--teal)}
+.as-nack{background:var(--red-l);border-color:rgba(220,38,38,.4);color:var(--red)}
+.as-lost{background:rgba(217,119,6,.12);border-color:rgba(217,119,6,.3);color:var(--orange);text-decoration:line-through}
+
+.sf-bar{display:flex;align-items:center;gap:10px;margin-bottom:6px;font-size:.8rem}
+.sf-key{font-family:var(--mono);font-weight:600;width:38px;font-size:.8rem}
+.sf-track{flex:1;height:16px;background:rgba(10,10,15,.06);border-radius:3px;overflow:hidden}
+.sf-fill{height:100%;border-radius:3px}
+.sf-meta{width:140px;color:rgba(10,10,15,.5);font-family:var(--serif);font-size:.85rem}
+
+.lbudget-calc{background:var(--accent);color:var(--paper);border-radius:var(--r);padding:1.5rem;font-family:var(--mono);font-size:.85rem}
+.lbc-row{display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid rgba(255,255,255,.07)}
+.lbc-row:last-child{border-bottom:none;font-weight:600;color:rgba(37,99,235,.9);font-size:.9rem;padding-top:10px}
+.lbc-key{opacity:.6}
+.lbc-val{font-weight:600}
+
+.compare-wrap{overflow-x:auto;border-radius:var(--r);border:1px solid var(--border)}
+.compare-wrap .tbl{min-width:760px}
+
+.pos-chart{position:relative;height:320px;background:#fff;border-radius:var(--r);border:1px solid var(--border);overflow:hidden}
+.pos-axis-x{position:absolute;bottom:30px;left:50px;right:16px;height:1px;background:rgba(10,10,15,.1)}
+.pos-axis-y{position:absolute;bottom:30px;left:80px;top:16px;width:1px;background:rgba(10,10,15,.1)}
+.pos-label-x{position:absolute;bottom:10px;right:20px;font-family:var(--mono);font-size:.7rem;color:rgba(10,10,15,.35);letter-spacing:1px;text-transform:uppercase}
+.pos-label-y{position:absolute;top:20px;left:6px;font-family:var(--mono);font-size:.7rem;color:rgba(10,10,15,.35);letter-spacing:1px;text-transform:uppercase;writing-mode:vertical-lr;transform:rotate(180deg)}
+.pos-node{position:absolute;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  font-weight:700;font-size:.75rem;font-family:var(--sans);border:2px solid;cursor:default;transition:transform .2s;transform:translate(-50%,50%)}
+.pos-node:hover{transform:translate(-50%,50%) scale(1.15);z-index:10}
+.pos-sub{position:absolute;top:102%;left:50%;transform:translateX(-50%);white-space:nowrap;
+  font-size:.6rem;font-family:var(--mono);color:rgba(10,10,15,.4);text-align:center}
+
+footer{text-align:center;padding:2rem;font-family:var(--mono);font-size:.75rem;color:rgba(10,10,15,.3);
+  border-top:1px solid var(--border);letter-spacing:.5px}
+
+@media(max-width:640px){
+  .content{padding:1.5rem 1rem 3rem}
+  .sec-head{grid-template-columns:1fr;gap:.75rem}
+  .sec-num{display:none}
+  .g2,.g3,.g4{grid-template-columns:1fr}
+  .esp32-diagram{grid-template-columns:1fr}
+  .esp32-left,.esp32-right{display:none}
+}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-bg"></div>
+  <div class="header-inner">
+    <div class="header-eyebrow">
+      <span class="eyebrow-tag">TPSIT · 5F · 2025/26</span>
+      <div class="eyebrow-line"></div>
+      <span class="eyebrow-tag">Appunti Interattivi ESPANSI</span>
+    </div>
+    <h1>Wireless &amp; <em>IoT</em></h1>
+    <p class="header-sub">ESP32 · Wi-Fi 802.11 · Antenne PCB · Bluetooth Classic · BLE · LoRaWAN · NB-IoT · 5G</p>
+  </div>
+  <div class="tabs-bar">
+    <div class="tabs-inner">
+      <button class="tab-btn active" onclick="show('esp32',this)"><span class="tab-icon">🔧</span>ESP32</button>
+      <button class="tab-btn" onclick="show('wifi',this)"><span class="tab-icon">📡</span>Wi-Fi</button>
+      <button class="tab-btn" onclick="show('antenna',this)"><span class="tab-icon">🔌</span>Antenne</button>
+      <button class="tab-btn" onclick="show('bluetooth',this)"><span class="tab-icon">📶</span>Bluetooth</button>
+      <button class="tab-btn" onclick="show('ble',this)"><span class="tab-icon">⚡</span>BLE</button>
+      <button class="tab-btn" onclick="show('lora',this)"><span class="tab-icon">🌐</span>LoRaWAN</button>
+      <button class="tab-btn" onclick="show('nbiot',this)"><span class="tab-icon">📱</span>NB-IoT</button>
+      <button class="tab-btn" onclick="show('5g',this)"><span class="tab-icon">🚀</span>5G</button>
+      <button class="tab-btn" onclick="show('compare',this)"><span class="tab-icon">⚖️</span>Confronto</button>
+    </div>
+  </div>
+</header>
+
+<main class="content">
+
+<!-- ══════════════ ESP32 ══════════════ -->
+<section class="section active" id="sec-esp32">
+  <div class="sec-head">
+    <div class="sec-num">01</div>
+    <div class="sec-body">
+      <h2>ESP32</h2>
+      <p>SoC dual-core Xtensa LX6 con Wi-Fi, Bluetooth Classic e BLE integrati. Il microcontroller IoT più diffuso al mondo.</p>
+    </div>
+    <span class="sec-badge b-blue">Microcontroller</span>
+  </div>
+
+  <div class="explain-box">
+    <h4>📘 Cos'è l'ESP32?</h4>
+    <p><strong>ESP32</strong> è un System-on-Chip (SoC) prodotto da Espressif Systems. Integra processore, memoria, periferiche di I/O e moduli wireless (Wi-Fi e Bluetooth) nello stesso chip.</p>
+    <p><strong>Perché è così popolare nell'IoT?</strong></p>
+    <ul>
+      <li><strong>Costo ridotto:</strong> Pochi euro per modulo, accessibile per hobby e industria</li>
+      <li><strong>Connettività integrata:</strong> Non serve hardware esterno per Wi-Fi/Bluetooth</li>
+      <li><strong>Potenza di calcolo:</strong> Due core a 240 MHz per task complessi</li>
+      <li><strong>Basso consumo:</strong> Diverse modalità di risparmio energetico per dispositivi a batteria</li>
+      <li><strong>Ecosistema ricco:</strong> Supportato da Arduino IDE, PlatformIO, ESP-IDF e centinaia di librerie</li>
+    </ul>
+    <p><strong>Architettura Xtensa LX6:</strong> Architettura RISC a 32 bit sviluppata da Tensilica (ora Cadence). La versione dual-core permette esecuzione indipendente su ciascun core, ottimizzata per DSP e operazioni real-time.</p>
+  </div>
+
+  <div class="box" style="margin-bottom:1.25rem">
+    <div class="box-title">Architettura interna</div>
+    <div class="esp32-diagram">
+      <div class="esp32-left">
+        <div class="esp-block eb-gray">Embedded Flash</div>
+        <div class="esp-block eb-gray">SPI</div>
+        <div class="esp-block eb-gray">I²C</div>
+        <div class="esp-block eb-gray">I²S / SDIO</div>
+        <div class="esp-block eb-gray">UART / CAN</div>
+        <div class="esp-block eb-gray">ETH / IR / PWM</div>
+        <div class="esp-block eb-gray">Temp · Touch · DAC</div>
+        <div class="esp-block eb-gray">SAR ADC</div>
+      </div>
+      <div class="esp32-center">
+        <div class="esp-row">
+          <div class="esp-block eb-blue">BT Link Controller<br><small>Bluetooth Baseband</small></div>
+          <div class="esp-block eb-blue">Wi-Fi MAC<br><small>Wi-Fi Baseband</small></div>
+        </div>
+        <div class="esp-block eb-red" style="display:grid;grid-template-columns:1fr auto auto;align-items:center;gap:8px;text-align:left;padding:8px 12px">
+          <div><small style="opacity:.6">Radio</small><br>RF Receive · Clock Gen · RF Transmit</div>
+          <div style="writing-mode:vertical-lr;font-size:.7rem;opacity:.6">Switch</div>
+          <div style="writing-mode:vertical-lr;font-size:.7rem;opacity:.6">Balun</div>
+        </div>
+        <div class="esp-block eb-teal" style="padding:10px 12px;text-align:left">
+          <b>Core &amp; Memory</b> — Dual/Single-core Xtensa 32-bit LX6<br>
+          <div class="esp-row3" style="margin-top:6px">
+            <div class="esp-block eb-gray" style="padding:4px">ROM</div>
+            <div class="esp-block eb-gray" style="padding:4px">SRAM</div>
+            <div class="esp-block eb-orange" style="padding:4px">Crypto HW</div>
+          </div>
+        </div>
+        <div class="esp-block eb-orange" style="text-align:left;padding:10px 12px">
+          <b>RTC &amp; Low-Power</b>
+          <div class="esp-row3" style="margin-top:6px">
+            <div class="esp-block eb-gray" style="padding:4px;font-size:.7rem">PMU</div>
+            <div class="esp-block eb-gray" style="padding:4px;font-size:.7rem">ULP CoProc</div>
+            <div class="esp-block eb-gray" style="padding:4px;font-size:.7rem">Rec. Mem.</div>
+          </div>
+        </div>
+      </div>
+      <div class="esp32-right" style="gap:6px">
+        <div class="esp-block eb-orange">SHA</div>
+        <div class="esp-block eb-orange">RSA</div>
+        <div class="esp-block eb-orange">AES</div>
+        <div class="esp-block eb-orange">RNG</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="explain-box">
+    <h4>🔍 Spiegazione dei blocchi architetturali</h4>
+    <p><strong>1. WIRELESS CONTROLLERS (Blu):</strong></p>
+    <ul>
+      <li><strong>Wi-Fi MAC & Baseband:</strong> Gestisce il livello MAC dello standard 802.11 b/g/n e la modulazione/demodulazione del segnale</li>
+      <li><strong>BT Link Controller & Baseband:</strong> Implementa stack Bluetooth Classic (BR/EDR) e BLE a livello hardware, gestendo timing, frequency hopping e pacchettizzazione</li>
+    </ul>
+    <p><strong>2. RADIO RF (Rosso):</strong></p>
+    <ul>
+      <li><strong>RF Receive/Transmit:</strong> Circuiti analogici per segnali radio a 2.4 GHz</li>
+      <li><strong>Switch:</strong> Commuta tra TX e RX (ESP32 non può trasmettere e ricevere contemporaneamente)</li>
+      <li><strong>Balun:</strong> Balanced-to-Unbalanced transformer — converte segnali bilanciati interni in segnali sbilanciati per l'antenna</li>
+    </ul>
+    <p><strong>3. CORE & MEMORY (Verde acqua):</strong></p>
+    <ul>
+      <li><strong>Dual-core Xtensa LX6:</strong> Due processori a 240 MHz. Un core per wireless, l'altro per codice applicativo</li>
+      <li><strong>ROM:</strong> Memoria read-only con bootloader e funzioni di sistema</li>
+      <li><strong>SRAM (520 KB):</strong> Memoria volatile per variabili e stack, divisa in tre bank</li>
+      <li><strong>Crypto HW:</strong> Acceleratori hardware per AES, SHA, RSA — operazioni 10-100× più veloci</li>
+    </ul>
+    <p><strong>4. RTC & LOW-POWER (Arancione):</strong></p>
+    <ul>
+      <li><strong>PMU:</strong> Controlla le modalità di risparmio energetico (deep sleep, light sleep, modem sleep)</li>
+      <li><strong>ULP Coprocessor:</strong> Processore ultra-low-power attivo durante deep sleep per monitorare sensori consumando &lt;10 μA</li>
+      <li><strong>Recovery Memory:</strong> 8 KB di memoria RTC che mantiene dati in deep sleep</li>
+    </ul>
+    <p><strong>5. PERIFERICHE:</strong> SPI, I²C, I²S, UART, CAN, ETH, SAR ADC (18 canali), touch sensors (10 GPIO), sensore temperatura interno.</p>
+    <p><strong>6. SICUREZZA:</strong> AES, SHA, RSA, RNG — acceleratori hardware per crittografia.</p>
+  </div>
+
+  <div class="grid g3">
+    <div class="stat"><div class="val" style="color:#60a5fa">2</div><div class="stat-lbl">Core LX6 (32-bit)</div></div>
+    <div class="stat"><div class="val" style="color:#34d399">2.4 GHz</div><div class="stat-lbl">Wi-Fi + BT + BLE</div></div>
+    <div class="stat"><div class="val" style="color:#f59e0b">520 KB</div><div class="stat-lbl">SRAM interna</div></div>
+  </div>
+
+  <div class="grid g2" style="margin-top:1rem">
+    <div class="box">
+      <div class="box-title">Connettività integrata</div>
+      <div class="grid g2" style="gap:.5rem">
+        <div style="padding:.7rem;background:var(--blue-l);border-radius:6px">
+          <div class="lbl" style="color:var(--blue)">Wi-Fi</div>
+          <p style="font-size:.85rem;font-family:var(--serif)">802.11 b/g/n · 2.4 GHz · modalità STA, AP, STA+AP</p>
+        </div>
+        <div style="padding:.7rem;background:var(--purple-l);border-radius:6px">
+          <div class="lbl" style="color:var(--purple)">Bluetooth Classic</div>
+          <p style="font-size:.85rem;font-family:var(--serif)">BR/EDR v4.2 · A2DP, SPP, HFP...</p>
+        </div>
+        <div style="padding:.7rem;background:var(--teal-l);border-radius:6px">
+          <div class="lbl" style="color:var(--teal)">BLE</div>
+          <p style="font-size:.85rem;font-family:var(--serif)">Bluetooth Low Energy · Advertising, GATT, GAP</p>
+        </div>
+        <div style="padding:.7rem;background:var(--orange-l);border-radius:6px">
+          <div class="lbl" style="color:var(--orange)">Crittografia HW</div>
+          <p style="font-size:.85rem;font-family:var(--serif)">AES, SHA, RSA, RNG accelerati in hardware</p>
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="box-title">Esercizio WIFI_1 — Esempio codice</div>
+      <pre style="background:var(--accent);color:var(--paper);border-radius:6px;padding:1rem;font-size:.77rem;font-family:var(--mono);overflow-x:auto;line-height:1.7"><span style="color:#60a5fa">#include</span> &lt;Arduino.h&gt;
+<span style="color:#60a5fa">#include</span> "WiFi.h"
+
+<span style="color:#f59e0b">#define</span> WIFI_NETWORK <span style="color:#34d399">"__SSID__"</span>
+<span style="color:#f59e0b">#define</span> WIFI_PASSWORD <span style="color:#34d399">"__PSW__"</span>
+<span style="color:#f59e0b">#define</span> WIFI_TIMEOUT_MS <span style="color:#f59e0b">20000</span>
+
+<span style="color:#c084fc">void</span> connectToWiFi() {
+  WiFi.mode(<span style="color:#f59e0b">WIFI_STA</span>);
+  WiFi.begin(WIFI_NETWORK, WIFI_PASSWORD);
+  <span style="color:#60a5fa">while</span>(WiFi.status() != WL_CONNECTED){
+    Serial.print(<span style="color:#34d399">"."</span>); delay(100);
+  }
+  Serial.print(WiFi.localIP());
+}</pre>
+    </div>
+  </div>
+
+  <div class="explain-box">
+    <h4>💤 Modalità di risparmio energetico</h4>
+    <p><strong>Active Mode (~160-240 mA):</strong> Entrambi i core attivi a 240 MHz, radio Wi-Fi/BT attive, tutte le periferiche disponibili.</p>
+    <p><strong>Modem Sleep (~20-30 mA):</strong> CPU attiva, radio spenta tra i beacon. Il modem si riattiva periodicamente per ricevere beacon dall'AP. Utile per traffico sporadico.</p>
+    <p><strong>Light Sleep (~0.8 mA):</strong> CPU in pausa, risvegliata da GPIO, timer o eventi. RTC e ULP coprocessor attivi. Risveglio rapido (~5 ms). RAM mantenuta.</p>
+    <p><strong>Deep Sleep (~10 μA):</strong> Solo RTC attivo, tutto spento. 8 KB di RTC memory mantenuta. Risveglio da timer RTC, GPIO esterni o touchpad. Al risveglio il chip fa reboot completo. Perfetto per sensori che inviano dati ogni X minuti/ore.</p>
+    <p><strong>Hibernation (~5 μA):</strong> Anche l'RTC è spento. Solo un timer ultralow-power attivo. Risveglio solo da timer o reset.</p>
+  </div>
+</section>
+
+<!-- ══════════════ WI-FI ══════════════ -->
+<section class="section" id="sec-wifi">
+  <div class="sec-head">
+    <div class="sec-num">02</div>
+    <div class="sec-body">
+      <h2>Wi-Fi — IEEE 802.11</h2>
+      <p>Standard WLAN. Il termine "Wi-Fi" nasce nell'agosto 1999, coniato da Interbrand. Opera nelle bande 2.4, 5 e 60 GHz.</p>
+    </div>
+    <span class="sec-badge b-teal">IEEE 802.11</span>
+  </div>
+
+  <div class="explain-box">
+    <h4>📡 Cos'è il Wi-Fi e come funziona?</h4>
+    <p><strong>Wi-Fi</strong> è il nome commerciale dato dalla Wi-Fi Alliance allo standard IEEE 802.11. "Wi-Fi" NON sta per "Wireless Fidelity" — è un marchio inventato per essere riconoscibile.</p>
+    <p><strong>Principio di funzionamento:</strong></p>
+    <ul>
+      <li><strong>1. Codifica:</strong> Dati convertiti in sequenze di bit (0 e 1)</li>
+      <li><strong>2. Modulazione:</strong> I bit modulano una portante radio a 2.4 GHz o 5 GHz usando OFDM e QAM</li>
+      <li><strong>3. Trasmissione:</strong> L'antenna converte il segnale elettrico in onde elettromagnetiche</li>
+      <li><strong>4. Ricezione:</strong> L'antenna ricevente cattura le onde e le riconverte in segnale elettrico</li>
+      <li><strong>5. Demodulazione:</strong> Il segnale viene demodulato per estrarre i dati originali</li>
+    </ul>
+    <p><strong>Perché 2.4 GHz e 5 GHz?</strong></p>
+    <ul>
+      <li><strong>2.4 GHz:</strong> Banda ISM senza licenza. Maggiore portata ma più affollata (Bluetooth, microonde). Penetra meglio gli ostacoli</li>
+      <li><strong>5 GHz:</strong> Meno affollata, più canali disponibili (23 vs 3), velocità maggiori. Portata ridotta</li>
+      <li><strong>60 GHz (802.11ad):</strong> Velocità multi-gigabit ma range limitatissimo (~10m) e assorbimento totale da muri</li>
+    </ul>
+  </div>
+
+  <div class="box" style="margin-bottom:1.25rem">
+    <div class="box-title">Evoluzione — Generazioni Wi-Fi</div>
+    <div class="wifi-timeline">
+      <div class="wifi-gen">
+        <div class="wifi-bar-wrap"><div class="wifi-bar" style="height:4%;background:#1a1a2e"><span class="speed-tag">2M</span></div></div>
+        <div class="wifi-gen-label">Wi-Fi 1</div>
+        <div class="wifi-gen-year">1997</div>
+        <div class="wifi-gen-std">802.11</div>
+      </div>
+      <div class="wifi-gen">
+        <div class="wifi-bar-wrap"><div class="wifi-bar" style="height:8%;background:#1e3a5f"><span class="speed-tag">11M</span></div></div>
+        <div class="wifi-gen-label">Wi-Fi 2</div>
+        <div class="wifi-gen-year">1999</div>
+        <div class="wifi-gen-std">802.11b</div>
+      </div>
+      <div class="wifi-gen">
+        <div class="wifi-bar-wrap"><div class="wifi-bar" style="height:14%;background:#1e4d3a"><span class="speed-tag">54M</span></div></div>
+        <div class="wifi-gen-label">Wi-Fi 3</div>
+        <div class="wifi-gen-year">2003</div>
+        <div class="wifi-gen-std">802.11g</div>
+      </div>
+      <div class="wifi-gen">
+        <div class="wifi-bar-wrap"><div class="wifi-bar" style="height:38%;background:#3b4a1a"><span class="speed-tag">600M</span></div></div>
+        <div class="wifi-gen-label">Wi-Fi 4</div>
+        <div class="wifi-gen-year">2008</div>
+        <div class="wifi-gen-std">802.11n</div>
+      </div>
+      <div class="wifi-gen">
+        <div class="wifi-bar-wrap"><div class="wifi-bar" style="height:70%;background:#5b2d0a"><span class="speed-tag">6.9G</span></div></div>
+        <div class="wifi-gen-label">Wi-Fi 5</div>
+        <div class="wifi-gen-year">2014</div>
+        <div class="wifi-gen-std">802.11ac</div>
+      </div>
+      <div class="wifi-gen">
+        <div class="wifi-bar-wrap"><div class="wifi-bar" style="height:100%;background:#1a1a2e"><span class="speed-tag">9.6G</span></div></div>
+        <div class="wifi-gen-label" style="font-weight:800">Wi-Fi 6</div>
+        <div class="wifi-gen-year">2019</div>
+        <div class="wifi-gen-std">802.11ax</div>
+      </div>
+      <div class="wifi-gen">
+        <div class="wifi-bar-wrap"><div class="wifi-bar" style="height:44%;background:#4a1a2e"><span class="speed-tag">7G</span></div></div>
+        <div class="wifi-gen-label">Wi-Fi 6E/ad</div>
+        <div class="wifi-gen-year">2021</div>
+        <div class="wifi-gen-std">802.11ad</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="explain-box">
+    <h4>📊 OFDM — Orthogonal Frequency-Division Multiplexing</h4>
+    <p>È la tecnica di modulazione chiave del Wi-Fi moderno (802.11a/g/n/ac/ax). Invece di trasmettere su una singola frequenza, OFDM divide il canale in tante sotto-portanti parallele (52 in 802.11a/g, fino a 2048 in 802.11ax).</p>
+    <ul>
+      <li><strong>Robustezza:</strong> Se una sotto-portante subisce interferenza, solo una piccola parte dei dati viene persa</li>
+      <li><strong>Efficienza spettrale:</strong> Le sotto-portanti sono "ortogonali" tra loro → si sfrutta meglio lo spettro</li>
+      <li><strong>Multipath:</strong> OFDM gestisce bene gli echi usando un "cyclic prefix"</li>
+    </ul>
+    <p><strong>Modulazioni QAM:</strong> Ogni sotto-portante può usare diverse modulazioni QAM. Maggiore è il QAM (BPSK → 1024-QAM), più dati trasmetti per simbolo, ma serve un segnale più pulito (SNR elevato). L'Access Point e il client negoziano dinamicamente la modulazione migliore.</p>
+  </div>
+
+  <div class="grid g3" style="margin-bottom:1.25rem">
+    <div class="box">
+      <span class="badge b-blue">802.11ad — WiGig</span>
+      <h3>Three-Band</h3>
+      <p>Supporta simultaneamente 2.4, 5 e <strong>60 GHz</strong> → fino a 7 Gbps. Video non compressi e 4K gaming. Copertura "only 60 GHz" limitata a ~5m.</p>
+    </div>
+    <div class="box">
+      <span class="badge b-teal">802.11ax — Wi-Fi 6</span>
+      <h3>Alta Densità</h3>
+      <p>Modulazione <strong>QAM-1024</strong> trasmette 10 bit simultaneamente. Max 9.6 Gbps. Riduzione della latenza. Pensato per ambienti affollati.</p>
+    </div>
+    <div class="box">
+      <span class="badge b-orange">MIMO</span>
+      <h3>Multiple Antenna</h3>
+      <p>802.11n: 4×4 MIMO · 802.11ac: 8×8 MIMO. Più antenne TX/RX → throughput e affidabilità maggiori.</p>
+    </div>
+  </div>
+
+  <div class="explain-box">
+    <h4>📡 MIMO — Multiple Input Multiple Output</h4>
+    <p><strong>Problema:</strong> Una singola antenna trasmette un solo flusso di dati alla volta. Come aumentare la velocità?</p>
+    <p><strong>Soluzione MIMO:</strong> Usa più antenne contemporaneamente per trasmettere flussi paralleli. Esempio 2×2 MIMO: l'AP trasmette Stream A dall'antenna 1 e Stream B dall'antenna 2 simultaneamente. Il client li separa grazie a spatial multiplexing. Risultato: velocità raddoppiata.</p>
+    <p><strong>MU-MIMO (Multi-User MIMO):</strong> L'AP può trasmettere a più client contemporaneamente usando stream diversi. Esempio: 4×4 AP serve 4 client 1×1 simultaneamente.</p>
+  </div>
+
+  <div class="grid g2">
+    <div class="box">
+      <div class="box-title">Architettura di rete WLAN</div>
+      <div class="callout c-blue" style="margin-bottom:.75rem">
+        <strong>BSS — Basic Service Set</strong>
+        Il gruppo formato da un Access Point e tutti gli host nel suo raggio. Costituisce una <em>cella</em>. Identificato dal <strong>BSSID</strong> (6 byte = indirizzo MAC dell'AP).
+      </div>
+      <div class="callout c-teal" style="margin-bottom:.75rem">
+        <strong>ESS — Extended Service Set</strong>
+        Più BSS collegate tramite <em>Distribution System</em> (DS), cablato o wireless. Permette roaming tra celle.
+      </div>
+      <div class="callout c-orange" style="margin-bottom:0">
+        <strong>SSID — Service Set Identifier</strong>
+        Stringa di 32 caratteri che identifica la WLAN. Configurato sull'AP e comunicato al client per l'associazione.
+      </div>
+    </div>
+    <div class="box">
+      <div class="box-title">Confronto versioni IEEE 802.11</div>
+      <table class="tbl">
+        <thead><tr><th>Standard</th><th>Banda</th><th>Max Rate</th><th>Tipico</th></tr></thead>
+        <tbody>
+          <tr><td><code style="font-family:var(--mono);font-size:.8rem">802.11a</code></td><td>5 GHz</td><td>54 Mbps</td><td>—</td></tr>
+          <tr><td><code style="font-family:var(--mono);font-size:.8rem">802.11b</code></td><td>2.4 GHz</td><td>11 Mbps</td><td>—</td></tr>
+          <tr><td><code style="font-family:var(--mono);font-size:.8rem">802.11g</code></td><td>2.4 GHz</td><td>54 Mbps</td><td>25 Mbps</td></tr>
+          <tr><td><code style="font-family:var(--mono);font-size:.8rem">802.11n</code></td><td>2.4+5 GHz</td><td>600 Mbps</td><td>150 Mbps</td></tr>
+          <tr><td><code style="font-family:var(--mono);font-size:.8rem">802.11ac</code></td><td>5 GHz</td><td>3.2 Gbps</td><td>—</td></tr>
+          <tr><td><code style="font-family:var(--mono);font-size:.8rem">802.11ax</code></td><td>2.4+5 GHz</td><td>9.6 Gbps</td><td>—</td></tr>
+          <tr><td><code style="font-family:var(--mono);font-size:.8rem">802.11ad</code></td><td>2.4+5+60</td><td>7 Gbps</td><td>—</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="explain-box">
+    <h4>🔗 Processo di associazione e roaming</h4>
+    <p><strong>1. Scanning:</strong> Il client ascolta i beacon frame (~100 ms) o trasmette Probe Request su tutti i canali.</p>
+    <p><strong>2. Authentication:</strong> Autenticazione di livello MAC (open system). L'autenticazione vera (WPA2/WPA3) avviene dopo.</p>
+    <p><strong>3. Association:</strong> Il client invia Association Request con i suoi capability. L'AP risponde assegnando un AID (Association ID).</p>
+    <p><strong>4. 4-Way Handshake (se WPA2/WPA3):</strong> AP e client negoziano le chiavi di cifratura temporanee (PTK, GTK). Solo dopo questo handshake i dati vengono cifrati.</p>
+    <p><strong>Roaming:</strong> Quando il segnale degrada, il client cerca un AP con lo stesso SSID ma RSSI migliore, invia Reassociation Request al nuovo AP. Il passaggio idealmente avviene in &lt;50 ms per non interrompere applicazioni VoIP.</p>
+  </div>
+</section>
+
+<!-- ══════════════ ANTENNE PCB ══════════════ -->
+<section class="section" id="sec-antenna">
+  <div class="sec-head">
+    <div class="sec-num">03</div>
+    <div class="sec-body">
+      <h2>Antenne PCB</h2>
+      <p>Le antenne integrate su circuito stampato trasducono segnali elettrici in onde elettromagnetiche. Vantaggio: riduzione dimensioni e costi.</p>
+    </div>
+    <span class="sec-badge b-orange">RF · 2.4 GHz</span>
+  </div>
+
+  <div class="explain-box">
+    <h4>📡 Principi base delle antenne</h4>
+    <p>Un'antenna converte energia elettrica in onde elettromagnetiche (TX) o viceversa (RX). Per il Wi-Fi e Bluetooth a 2.4 GHz, la lunghezza d'onda è:</p>
+    <p><code>λ = c / f = 3×10⁸ / 2.4×10⁹ = 12.5 cm</code></p>
+    <p><strong>Dimensioni fisiche:</strong> La dimensione dell'antenna è tipicamente una frazione della lunghezza d'onda:</p>
+    <ul>
+      <li><strong>Dipolo λ/2:</strong> 6.25 cm a 2.4 GHz</li>
+      <li><strong>Monopolo λ/4:</strong> 3.12 cm (richiede ground plane)</li>
+    </ul>
+    <p><strong>Adattamento di impedenza:</strong> Il modulo RF presenta un'uscita a 50 Ω. L'antenna deve avere impedenza 50 Ω. Se c'è mismatch, parte della potenza viene riflessa (Return Loss elevato). L'adattamento si fa con matching network LC, stub matching o modificando la geometria dell'antenna.</p>
+  </div>
+
+  <div class="grid g3" style="margin-bottom:1.25rem">
+    <div class="box" style="text-align:center">
+      <svg class="antenna-svg" width="80" height="80" viewBox="0 0 80 80">
+        <rect x="20" y="60" width="40" height="4" rx="2" fill="none" stroke="var(--blue)" stroke-width="2"/>
+        <path d="M 40 60 L 40 20" stroke="var(--blue)" stroke-width="2"/>
+        <path d="M 40 20 L 10 20 L 10 56 L 40 56" fill="none" stroke="var(--blue)" stroke-width="2"/>
+        <circle cx="40" cy="60" r="4" fill="var(--blue)" opacity=".3"/>
+        <text x="40" y="74" font-size="8" text-anchor="middle" fill="rgba(10,10,15,.4)" font-family="IBM Plex Mono">Loop</text>
+      </svg>
+      <span class="badge b-blue">Antenna Loop</span>
+      <p>Traccia chiusa su PCB. Buona irradiazione omnidirezionale. Adatta per NFC e RFID a bassa frequenza.</p>
+    </div>
+    <div class="box" style="text-align:center">
+      <svg class="antenna-svg" width="80" height="80" viewBox="0 0 80 80">
+        <rect x="10" y="50" width="60" height="6" rx="2" fill="var(--orange)" opacity=".2" stroke="var(--orange)" stroke-width="1.5"/>
+        <rect x="10" y="64" width="60" height="4" rx="2" fill="none" stroke="rgba(10,10,15,.2)" stroke-width="1.5"/>
+        <path d="M 28 50 L 28 20" stroke="var(--orange)" stroke-width="2"/>
+        <path d="M 52 50 L 52 20" stroke="var(--orange)" stroke-width="2"/>
+        <path d="M 28 20 L 52 20" stroke="var(--orange)" stroke-width="2"/>
+        <text x="40" y="74" font-size="8" text-anchor="middle" fill="rgba(10,10,15,.4)" font-family="IBM Plex Mono">Microstrip</text>
+      </svg>
+      <span class="badge b-orange">Antenna Microstrip (Patch)</span>
+      <p>Elemento radiante piano con piano di massa. Alta direzionalità, banda stretta. Diffusa in Wi-Fi e GPS.</p>
+    </div>
+    <div class="box" style="text-align:center">
+      <svg class="antenna-svg" width="80" height="80" viewBox="0 0 80 80">
+        <rect x="10" y="60" width="60" height="4" rx="2" fill="none" stroke="rgba(10,10,15,.2)" stroke-width="1.5"/>
+        <path d="M 20 60 L 20 30 L 50 30 L 50 50 L 20 50" fill="none" stroke="var(--teal)" stroke-width="2"/>
+        <path d="M 50 40 L 65 40" stroke="var(--teal)" stroke-width="2"/>
+        <circle cx="65" cy="40" r="3" fill="var(--teal)" opacity=".4"/>
+        <text x="40" y="74" font-size="8" text-anchor="middle" fill="rgba(10,10,15,.4)" font-family="IBM Plex Mono">F Invertita</text>
+      </svg>
+      <span class="badge b-teal">Antenna IFA</span>
+      <p>Inverted-F Antenna: traccia a forma di F rovesciata. Compatta, efficiente a 2.4 GHz. Usata in moduli ESP32.</p>
+    </div>
+  </div>
+
+  <div class="explain-box">
+    <h4>🔧 Antenna IFA — Funzionamento dettagliato</h4>
+    <p>L'<strong>Inverted-F Antenna (IFA)</strong> è la più comune in moduli Wi-Fi/Bluetooth perché è compatta ed efficiente.</p>
+    <p><strong>Struttura:</strong> Un elemento radiante orizzontale lungo circa λ/4 (~3 cm a 2.4 GHz), un shorting pin che connette l'elemento al ground plane, e un feed point di alimentazione RF posizionato tra lo shorting pin e l'estremità libera.</p>
+    <p><strong>Vantaggi:</strong> Compatta (λ/4), si realizza come traccia PCB, impedenza controllabile spostando il feed point, polarizzazione verticale adatta per dispositivi tenuti in verticale.</p>
+    <p><strong>Progettazione:</strong> Lunghezza elemento ~0.23λ–0.27λ, distanza feed-short 3-8 mm, ground plane deve estendersi almeno λ/4 dietro l'antenna, keep-out area di 5-10 mm senza componenti metallici.</p>
+  </div>
+
+  <div class="grid g2">
+    <div class="box">
+      <div class="box-title">Parametri di progettazione</div>
+      <div class="callout c-blue" style="margin:0">
+        <strong>Return Loss (RL)</strong>
+        Misura la potenza riflessa alla porta RF. Espresso in dB — più negativo è meglio. Buona antenna: RL &lt; −10 dB.
+      </div>
+      <div class="callout c-teal" style="margin:0">
+        <strong>Larghezza di banda</strong>
+        Range di frequenze entro cui l'antenna mantiene RL &lt; −10 dB. Per 2.4 GHz tipicamente 80–200 MHz.
+      </div>
+      <div class="callout c-orange" style="margin:0">
+        <strong>Guadagno &amp; Efficienza</strong>
+        Le antenne omnidirezionali BT hanno guadagno 0–2 dBi in TX e RX.
+      </div>
+    </div>
+    <div class="box">
+      <div class="box-title">Diagramma di irradiazione</div>
+      <div style="display:flex;align-items:center;justify-content:center;height:160px">
+        <svg width="180" height="160" viewBox="-90 -80 180 160">
+          <circle cx="0" cy="0" r="70" fill="none" stroke="rgba(10,10,15,.06)" stroke-width="1"/>
+          <circle cx="0" cy="0" r="50" fill="none" stroke="rgba(10,10,15,.06)" stroke-width="1"/>
+          <circle cx="0" cy="0" r="30" fill="none" stroke="rgba(10,10,15,.06)" stroke-width="1"/>
+          <line x1="-80" y1="0" x2="80" y2="0" stroke="rgba(10,10,15,.1)" stroke-width="1"/>
+          <line x1="0" y1="-80" x2="0" y2="80" stroke="rgba(10,10,15,.1)" stroke-width="1"/>
+          <ellipse cx="0" cy="0" rx="68" ry="66" fill="rgba(37,99,235,.1)" stroke="var(--blue)" stroke-width="1.5"/>
+          <text x="0" y="-75" font-size="9" text-anchor="middle" fill="rgba(10,10,15,.4)" font-family="IBM Plex Mono">0°</text>
+          <text x="82" y="4" font-size="9" text-anchor="start" fill="rgba(10,10,15,.4)" font-family="IBM Plex Mono">90°</text>
+          <text x="0" y="82" font-size="9" text-anchor="middle" fill="rgba(10,10,15,.4)" font-family="IBM Plex Mono">180°</text>
+          <text x="-85" y="4" font-size="9" text-anchor="start" fill="rgba(10,10,15,.4)" font-family="IBM Plex Mono">270°</text>
+          <circle cx="0" cy="0" r="4" fill="var(--blue)"/>
+          <text x="0" y="12" font-size="8" text-anchor="middle" fill="var(--blue)" font-family="IBM Plex Mono">ANT</text>
+        </svg>
+      </div>
+      <p style="text-align:center;font-size:.8rem;font-family:var(--serif);color:rgba(10,10,15,.5)">Pattern omnidirezionale tipico (antenna loop / IFA a 2.4 GHz)</p>
+    </div>
+  </div>
+
+  <div class="explain-box">
+    <h4>📏 Return Loss e parametro S11</h4>
+    <p>Quando alimentiamo un'antenna, parte della potenza viene riflessa per mismatch di impedenza. Il Return Loss misura questa perdita:</p>
+    <p><code>RL (dB) = -20 × log₁₀(|Γ|)</code> dove <code>Γ = (Z_antenna - Z₀) / (Z_antenna + Z₀)</code> con Z₀ = 50 Ω</p>
+    <ul>
+      <li><strong>RL = -10 dB:</strong> 10% potenza riflessa, 90% irradiata — soglia minima</li>
+      <li><strong>RL = -20 dB:</strong> 1% potenza riflessa, 99% irradiata — buona antenna</li>
+    </ul>
+    <p><strong>Parametro S11:</strong> È lo stesso concetto in formato S-parameters. S11 (dB) = 20 × log₁₀(|Γ|) = -RL. Quindi S11 = -10 dB significa RL = +10 dB.</p>
+    <p><strong>Misura:</strong> Con un Vector Network Analyzer (VNA) che inietta un segnale RF sweep e misura Γ per ogni frequenza. Cerchiamo una "valle" (S11 molto negativo) alla frequenza target.</p>
+  </div>
+</section>
+
+<!-- ══════════════ BLUETOOTH ══════════════ -->
+<section class="section" id="sec-bluetooth">
+  <div class="sec-head">
+    <div class="sec-num">04</div>
+    <div class="sec-body">
+      <h2>Bluetooth Classic</h2>
+      <p>Standard WPAN a 2.4 GHz. Architettura Master/Slave con piconet e scatternet. FHSS su 79 canali da 1 MHz.</p>
+    </div>
+    <span class="sec-badge b-blue">WPAN · 2.4 GHz</span>
+  </div>
+
+  <div class="explain-box">
+    <h4>📻 Bluetooth Classic — Storia e principi</h4>
+    <p><strong>Origine del nome:</strong> Deriva dal re vichingo Harald "Blåtand" (dente blu) che unificò Danimarca e Norvegia nel X secolo. Il Bluetooth unifica diversi dispositivi wireless in una singola rete.</p>
+    <p><strong>Perché 2.4 GHz ISM?</strong> Banda senza licenza in quasi tutti i paesi. Compromesso tra portata e dimensioni antenna. Circuiti RF economici grazie al Wi-Fi.</p>
+    <p><strong>Bluetooth vs Wi-Fi:</strong> BT per connessioni punto-punto (periferiche), Wi-Fi per reti dati. BT ottimizzato per batteria, Wi-Fi più power-hungry. BT ~3 Mbps, Wi-Fi 11+ Mbps.</p>
+  </div>
+
+  <div class="grid g4" style="margin-bottom:1.25rem">
+    <div class="stat"><div class="val" style="color:#60a5fa">79</div><div class="stat-lbl">Canali FHSS 1 MHz</div></div>
+    <div class="stat"><div class="val" style="color:#34d399">7</div><div class="stat-lbl">Slave attivi max/piconet</div></div>
+    <div class="stat"><div class="val" style="color:#f59e0b">1600</div><div class="stat-lbl">Freq hops/sec</div></div>
+    <div class="stat"><div class="val" style="color:#c084fc">625µs</div><div class="stat-lbl">Durata time slot</div></div>
+  </div>
+
+  <div class="explain-box">
+    <h4>⚡ FHSS — Frequency Hopping Spread Spectrum</h4>
+    <p><strong>Problema:</strong> La banda 2.4 GHz è affollata. Come evitare interferenze?</p>
+    <p><strong>Soluzione FHSS:</strong> Il Bluetooth "salta" rapidamente tra 79 canali da 1 MHz ciascuno (da 2.402 GHz a 2.480 GHz).</p>
+    <ul>
+      <li><strong>Clock di sistema:</strong> 3.2 kHz (312.5 µs per tick)</li>
+      <li><strong>Time slot:</strong> Ogni 625 µs = 1 slot. Master TX in slot pari, slave TX in slot dispari</li>
+      <li><strong>Sequenza di hop:</strong> Pseudo-casuale ma deterministica, calcolata da MAC del master e clock</li>
+      <li><strong>Rate:</strong> 1600 hop/sec → cambia frequenza ogni 625 µs</li>
+    </ul>
+    <p><strong>Vantaggi:</strong> Resistenza alle interferenze (se un canale è occupato, gli altri 78 sono liberi), coesistenza (più piconet con sequenze diverse), sicurezza base (sequenza difficile da intercettare).</p>
+    <p><strong>AFH (Adaptive Frequency Hopping):</strong> Introdotto in BT 1.2. Rileva canali disturbati (es. Wi-Fi fisso) ed evita di usarli, riducendo i 79 canali a ~40 "buoni".</p>
+  </div>
+
+  <div class="grid g2">
+    <div class="box">
+      <div class="box-title">Architettura Piconet / Scatternet</div>
+      <div class="callout c-blue" style="margin:0">
+        <strong>Piconet</strong>
+        1 master + fino a 7 slave attivi. Il master commuta rapidamente tra gli slave (TDM). La sequenza FHSS è determinata dal MAC del master.
+      </div>
+      <div class="callout c-purple" style="margin:0">
+        <strong>Scatternet</strong>
+        Più piconet collegate da un <em>gateway device</em> che partecipa a due piconet contemporaneamente. Possono coesistere fino a 10 piconet nella stessa area.
+      </div>
+      <svg width="100%" height="130" viewBox="0 0 340 130" style="margin-top:12px">
+        <circle cx="80" cy="65" r="60" fill="none" stroke="rgba(37,99,235,.15)" stroke-width="1.5" stroke-dasharray="4,3"/>
+        <circle cx="260" cy="65" r="60" fill="none" stroke="rgba(124,58,237,.15)" stroke-width="1.5" stroke-dasharray="4,3"/>
+        <line x1="80" y1="65" x2="50" y2="25" stroke="rgba(37,99,235,.4)" stroke-width="1.2"/>
+        <line x1="80" y1="65" x2="110" y2="25" stroke="rgba(37,99,235,.4)" stroke-width="1.2"/>
+        <line x1="80" y1="65" x2="120" y2="60" stroke="rgba(37,99,235,.4)" stroke-width="1.2"/>
+        <line x1="80" y1="65" x2="50" y2="100" stroke="rgba(37,99,235,.4)" stroke-width="1.2"/>
+        <circle cx="80" cy="65" r="16" fill="rgba(37,99,235,.15)" stroke="var(--blue)" stroke-width="1.5"/>
+        <text x="80" y="69" text-anchor="middle" font-size="9" font-weight="700" fill="var(--blue)" font-family="IBM Plex Mono">MST</text>
+        <circle cx="50" cy="25" r="11" fill="rgba(5,150,105,.1)" stroke="var(--teal)" stroke-width="1.2"/>
+        <text x="50" y="29" text-anchor="middle" font-size="8" fill="var(--teal)" font-family="IBM Plex Mono">S1</text>
+        <circle cx="110" cy="25" r="11" fill="rgba(5,150,105,.1)" stroke="var(--teal)" stroke-width="1.2"/>
+        <text x="110" y="29" text-anchor="middle" font-size="8" fill="var(--teal)" font-family="IBM Plex Mono">S2</text>
+        <circle cx="120" cy="60" r="11" fill="rgba(5,150,105,.1)" stroke="var(--teal)" stroke-width="1.2"/>
+        <text x="120" y="64" text-anchor="middle" font-size="8" fill="var(--teal)" font-family="IBM Plex Mono">S3</text>
+        <circle cx="50" cy="100" r="11" fill="rgba(217,119,6,.1)" stroke="var(--orange)" stroke-width="1.2"/>
+        <text x="50" y="104" text-anchor="middle" font-size="8" fill="var(--orange)" font-family="IBM Plex Mono">PRK</text>
+        <line x1="140" y1="65" x2="200" y2="65" stroke="rgba(10,10,15,.2)" stroke-width="1.5" stroke-dasharray="5,3"/>
+        <rect x="156" y="55" width="28" height="20" rx="4" fill="rgba(180,83,9,.15)" stroke="var(--yellow)" stroke-width="1.5"/>
+        <text x="170" y="68" text-anchor="middle" font-size="8" fill="var(--yellow)" font-weight="700" font-family="IBM Plex Mono">GW</text>
+        <line x1="260" y1="65" x2="230" y2="25" stroke="rgba(124,58,237,.4)" stroke-width="1.2"/>
+        <line x1="260" y1="65" x2="290" y2="25" stroke="rgba(124,58,237,.4)" stroke-width="1.2"/>
+        <line x1="260" y1="65" x2="300" y2="65" stroke="rgba(124,58,237,.4)" stroke-width="1.2"/>
+        <line x1="260" y1="65" x2="260" y2="108" stroke="rgba(124,58,237,.4)" stroke-width="1.2"/>
+        <circle cx="260" cy="65" r="16" fill="rgba(124,58,237,.15)" stroke="var(--purple)" stroke-width="1.5"/>
+        <text x="260" y="69" text-anchor="middle" font-size="9" font-weight="700" fill="var(--purple)" font-family="IBM Plex Mono">MST</text>
+        <circle cx="230" cy="25" r="11" fill="rgba(5,150,105,.1)" stroke="var(--teal)" stroke-width="1.2"/>
+        <text x="230" y="29" text-anchor="middle" font-size="8" fill="var(--teal)" font-family="IBM Plex Mono">S1</text>
+        <circle cx="290" cy="25" r="11" fill="rgba(5,150,105,.1)" stroke="var(--teal)" stroke-width="1.2"/>
+        <text x="290" y="29" text-anchor="middle" font-size="8" fill="var(--teal)" font-family="IBM Plex Mono">S2</text>
+        <circle cx="300" cy="65" r="11" fill="rgba(5,150,105,.1)" stroke="var(--teal)" stroke-width="1.2"/>
+        <text x="300" y="69" text-anchor="middle" font-size="8" fill="var(--teal)" font-family="IBM Plex Mono">S3</text>
+        <circle cx="260" cy="108" r="11" fill="rgba(5,150,105,.1)" stroke="var(--teal)" stroke-width="1.2"/>
+        <text x="260" y="112" text-anchor="middle" font-size="8" fill="var(--teal)" font-family="IBM Plex Mono">S4</text>
+        <text x="80" y="128" text-anchor="middle" font-size="9" fill="rgba(10,10,15,.4)" font-family="IBM Plex Mono">Piconet A</text>
+        <text x="260" y="128" text-anchor="middle" font-size="9" fill="rgba(10,10,15,.4)" font-family="IBM Plex Mono">Piconet B</text>
+      </svg>
+    </div>
+
+    <div class="box">
+      <div class="box-title">Stack protocollare Bluetooth BR/EDR</div>
+      <div class="stack-proto">
+        <div class="stack-layer sl-app"><span>Applicazioni / Profili (A2DP, AVRCP, BPP…)</span><span class="sl-tag">App</span></div>
+        <div class="stack-layer sl-app"><span>TCP/IP · PPP · OBEX · TCS BIN · SDP</span><span class="sl-tag">Adottati</span></div>
+        <div class="stack-layer sl-high"><span>RFCOMM (serial) · TCS · SDP</span><span class="sl-tag">Alto</span></div>
+        <div class="stack-layer sl-high"><span>L2CAP — Logical Link Control &amp; Adaptation</span><span class="sl-tag">LLC</span></div>
+        <div class="stack-layer sl-link"><span>HCI — Host Controller Interface</span><span class="sl-tag">Interfaccia</span></div>
+        <div class="stack-layer sl-link"><span>Link Manager (LMP) — Auth · Crittografia 128 bit</span><span class="sl-tag">LM</span></div>
+        <div class="stack-layer sl-base"><span>Baseband — Pacchetti · Timing · Indirizzi · Slot</span><span class="sl-tag">BB</span></div>
+        <div class="stack-layer sl-radio"><span>Radio — GFSK · π/4-DQPSK · 8DPSK · Potenza</span><span class="sl-tag">RF</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="explain-box">
+    <h4>📚 Stack protocollare — Spiegazione livello per livello</h4>
+    <p><strong>RADIO (RF):</strong> GFSK per BR (±160 kHz), π/4-DQPSK per EDR 2 Mbps (2 bit/simbolo), 8DPSK per EDR 3 Mbps (3 bit/simbolo). Controllo potenza dinamico.</p>
+    <p><strong>BASEBAND:</strong> Gestisce time slot da 625 µs. Master TX in slot pari, slave TX in slot dispari. Pacchetti: Access Code (sincro), Header (indirizzo, tipo, SEQN/ARQN), Payload (dati). FEC per header e payload. CRC per rilevare errori. AMA (Active Member Address) di 3 bit → max 7 slave attivi.</p>
+    <p><strong>LINK MANAGER (LMP):</strong> Autenticazione challenge-response, pairing, crittografia stream cipher E0 a 128 bit (deprecato in v5.0, sostituito da AES-CCM), sincronizzazione clock, power control, modalità Active/Sniff/Hold/Park.</p>
+    <p><strong>HCI:</strong> Interfaccia standard tra controller BT e host (CPU). Permette chip BT generici con qualsiasi OS. Comandi e eventi asincroni. Trasporto via UART, USB, SDIO.</p>
+    <p><strong>L2CAP:</strong> Canali logici sopra i link fisici. Multiplexing, segmentation & reassembly (fino a 64 KB → pacchetti Baseband max 341 byte), QoS, flow control.</p>
+    <p><strong>RFCOMM / TCS / SDP:</strong> RFCOMM emula porta seriale RS-232 (SPP). TCS BIN per segnalazione chiamate. SDP per scoprire servizi remoti (es. "supporta A2DP?").</p>
+    <p><strong>PROTOCOLLI ADOTTATI:</strong> TCP/IP (networking), PPP (dial-up), OBEX (trasferimento file vCard, immagini).</p>
+    <p><strong>PROFILI:</strong> A2DP (audio stereo), AVRCP (telecomando), HFP (vivavoce auto), SPP (seriale virtuale), BPP (stampa), HID (tastiere/mouse).</p>
+  </div>
+
+  <div class="divider"></div>
+  <div class="grid g2">
+    <div class="box">
+      <div class="box-title">Tipi di collegamento</div>
+      <div class="callout c-blue">
+        <strong>SCO — Synchronous Connection Oriented</strong>
+        Collegamento punto-punto <em>simmetrico</em> master↔slave. Riserva uno slot in ciascuna direzione. Pacchetti persi <strong>non</strong> ritrasmessi. Per traffico voce in tempo reale.
+      </div>
+      <div class="callout c-teal">
+        <strong>ACL — Asynchronous Connectionless</strong>
+        Nessuno slot riservato → master scambia pacchetti con tutti gli slave. Pacchetti errati <strong>ritrasmessi</strong> (ARQ). Supporta broadcast. Un solo link ACL tra due dispositivi.
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="box-title">Correzione errori ACL — ACK / NACK</div>
+      <p style="font-size:.87rem;font-family:var(--serif);color:rgba(10,10,15,.65);margin-bottom:10px">
+        Ogni pacchetto porta un bit <strong>SEQN</strong> (0/1 alternato). L'ACK/NACK è inviato nello slot immediatamente successivo, a frequenza diversa.
+      </p>
+      <div class="ack-visual">
+        <div class="ack-row">
+          <div class="ack-label">Master<br>TX</div>
+          <div class="ack-slots">
+            <div class="ack-slot as-full">0</div><div class="ack-slot as-empty"></div>
+            <div class="ack-slot as-full">1</div><div class="ack-slot as-empty"></div>
+            <div class="ack-slot as-full">1</div><div class="ack-slot as-empty"></div>
+            <div class="ack-slot as-full">1</div><div class="ack-slot as-empty"></div>
+            <div class="ack-slot as-full">0</div>
+          </div>
+        </div>
+        <div class="ack-row">
+          <div class="ack-label">Slave<br>RX+ACK</div>
+          <div class="ack-slots">
+            <div class="ack-slot as-empty"></div><div class="ack-slot as-ack">ACK</div>
+            <div class="ack-slot as-empty"></div><div class="ack-slot as-lost">NAK</div>
+            <div class="ack-slot as-empty"></div><div class="ack-slot as-ack">ACK</div>
+            <div class="ack-slot as-empty"></div><div class="ack-slot as-ack">ACK</div>
+            <div class="ack-slot as-empty"></div>
+          </div>
+        </div>
+      </div>
+      <p style="font-size:.8rem;font-family:var(--serif);color:rgba(10,10,15,.45);margin-top:8px">Il NACK perso (lost) causa il reinvio del pacchetto precedente → garantisce consegna corretta.</p>
+    </div>
+  </div>
+
+  <div class="explain-box">
+    <h4>🔁 ARQ — Automatic Repeat reQuest</h4>
+    <p><strong>Problema:</strong> I pacchetti radio possono essere corrotti. Come garantire l'affidabilità?</p>
+    <ol>
+      <li>Il master trasmette un pacchetto con SEQN=0 nello slot N (frequenza F1)</li>
+      <li>Lo slave riceve ed esegue il CRC. Se OK → invia ACK nello slot N+1 (frequenza F2). Se CRC fallisce → invia NACK</li>
+      <li>Il master nello slot N+2 (frequenza F3): se ha ricevuto ACK → trasmette il <em>prossimo</em> pacchetto con SEQN=1; se ha ricevuto NACK o nulla → ritrasmette lo <em>stesso</em> pacchetto con SEQN=0</li>
+      <li>Lo slave riconosce la ritrasmissione dal SEQN invariato → scarta il duplicato se aveva già ricevuto OK</li>
+    </ol>
+    <p><strong>Timeout:</strong> Se il master non riceve risposta entro un certo numero di slot, assume NACK e ritrasmette. Per SCO (voce) ARQ non è usato — meglio perdere un pacchetto che introdurre latenza variabile.</p>
+  </div>
+
+  <div class="divider"></div>
+  <div class="box" style="margin-bottom:1.25rem">
+    <div class="box-title">Classi di potenza</div>
+    <div class="grid g3">
+      <div>
+        <span class="badge b-blue">Classe 1</span>
+        <div style="font-family:var(--mono);font-size:1.5rem;font-weight:600;color:var(--blue);margin:.3rem 0">100 mW · 20 dBm</div>
+        <p style="font-family:var(--serif);font-size:.9rem">Indoor 100m · Outdoor 200m. PC, notebook. Sensibilità RX: −85/−90 dBm.</p>
+      </div>
+      <div>
+        <span class="badge b-teal">Classe 2</span>
+        <div style="font-family:var(--mono);font-size:1.5rem;font-weight:600;color:var(--teal);margin:.3rem 0">2.5 mW · 4 dBm</div>
+        <p style="font-family:var(--serif);font-size:.9rem">Indoor 10m · Outdoor 50m. La più diffusa — adattatori, periferiche, cuffie.</p>
+      </div>
+      <div>
+        <span class="badge b-orange">Classe 3</span>
+        <div style="font-family:var(--mono);font-size:1.5rem;font-weight:600;color:var(--orange);margin:.3rem 0">1 mW · 0 dBm</div>
+        <p style="font-family:var(--serif);font-size:.9rem">Indoor 1m · Outdoor 10m. Dispositivi ultra-low-power, sensori indossabili.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid g2">
+    <div class="box">
+      <div class="box-title">Link Budget — concetti chiave</div>
+      <div class="callout c-orange" style="margin-bottom:.75rem">
+        <strong>Fade Margin</strong>
+        A 2.4 GHz le riflessioni creano interferenze. Aggiungere 10–20 dB di margine per compensare il fading multipath.
+      </div>
+      <table class="tbl">
+        <thead><tr><th>Versione</th><th>Sensibilità tipica</th></tr></thead>
+        <tbody>
+          <tr><td>BT 2.0+EDR</td><td>~−80 dBm</td></tr>
+          <tr><td>BT 3.0+HS</td><td>~−82 dBm</td></tr>
+          <tr><td>BT 4.0 (BLE)</td><td>~−90 dBm</td></tr>
+          <tr><td>BT 5.0</td><td>~−95 dBm</td></tr>
+          <tr><td>BT 5.1/5.2</td><td>~−100 dBm</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="box">
+      <div class="box-title">Esempio — Link Budget Classe 2 a 10m indoor</div>
+      <div class="lbudget-calc">
+        <div class="lbc-row"><span class="lbc-key">P_tx (Classe 2)</span><span class="lbc-val">+4 dBm</span></div>
+        <div class="lbc-row"><span class="lbc-key">G_tx (antenna)</span><span class="lbc-val">0 dBi</span></div>
+        <div class="lbc-row"><span class="lbc-key">G_rx (antenna)</span><span class="lbc-val">0 dBi</span></div>
+        <div class="lbc-row"><span class="lbc-key">L_fs Friis @10m, 2.4GHz</span><span class="lbc-val">−60 dB</span></div>
+        <div class="lbc-row"><span class="lbc-key">L_indoor (pareti)</span><span class="lbc-val">−5 dB</span></div>
+        <div class="lbc-row"><span class="lbc-key">L_cavi (integrato)</span><span class="lbc-val">−1 dB</span></div>
+        <div class="lbc-row"><span class="lbc-key">P_rx = (+4+0)+0−66</span><span class="lbc-val">−62 dBm</span></div>
+        <div class="lbc-row"><span class="lbc-key">Sensibilità RX</span><span class="lbc-val">−90 dBm</span></div>
+        <div class="lbc-row"><span class="lbc-key" style="color:#60a5fa;opacity:1">Link Budget = −62−(−90)</span><span class="lbc-val" style="color:#60a5fa">28 dB ✓</span></div>
+      </div>
+      <p style="font-size:.8rem;font-family:var(--serif);color:rgba(10,10,15,.5);margin-top:8px">28 dB di margine = connessione robusta anche con +20 dB di path loss aggiuntivo.</p>
+    </div>
+  </div>
+
+  <div class="explain-box">
+    <h4>📊 Link Budget — Calcolo dettagliato</h4>
+    <p><strong>Formula generale:</strong> <code>P_rx = P_tx + G_tx + G_rx - L_fs - L_misc</code></p>
+    <p><strong>Free Space Path Loss (Friis):</strong> <code>L_fs (dB) = 20×log₁₀(d_km) + 20×log₁₀(f_MHz) + 32.45</code></p>
+    <p>Per 2.4 GHz e 10 m: <code>L_fs = 20×log₁₀(0.01) + 20×log₁₀(2400) + 32.45 = 60 dB</code></p>
+    <p><strong>Perdite indoor tipiche:</strong> Muro cartongesso: 3-5 dB · Muro mattoni: 8-12 dB · Muro cemento armato: 15-25 dB · Persona (body shadowing): 3-6 dB · Mobili legno: 2-4 dB</p>
+    <p><strong>Margine:</strong> <code>Margin (dB) = P_rx - Sensitivity_rx</code></p>
+    <ul>
+      <li><strong>&gt;10 dB:</strong> Minimo per connessione stabile</li>
+      <li><strong>&gt;20 dB:</strong> Raccomandato per ambienti indoor con movimento</li>
+      <li><strong>&gt;30 dB:</strong> Connessione molto robusta, tollera molti ostacoli</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ══════════════ BLE ══════════════ -->
+<section class="section" id="sec-ble">
+  <div class="sec-head">
+    <div class="sec-num">05</div>
+    <div class="sec-body">
+      <h2>Bluetooth Low Energy</h2>
+      <p>Introdotto con BT 4.0 (2010) da Nokia (Wibree). Consumo fino a 100× inferiore al Classic. Lo standard IoT per sensori, wearable e beacon.</p>
+    </div>
+    <span class="sec-badge b-purple">BLE · IoT</span>
+  </div>
+
+  <div class="explain-box">
+    <h4>⚡ Cos'è il BLE e come funziona?</h4>
+    <p><strong>Origini:</strong> Nel 2010 il Bluetooth SIG ha integrato la tecnologia <strong>Wibree</strong> (sviluppata da Nokia) nello standard Bluetooth, rinominandola <strong>Bluetooth Low Energy (BLE)</strong> a partire dalla versione 4.0. Da allora coesistono Bluetooth Classic e BLE, ma ormai la maggior parte dei dispositivi IoT usa BLE.</p>
+    <p><strong>Differenza chiave rispetto al Classic:</strong> Il BLE non è progettato per trasmettere grandi quantità di dati, ma per inviare piccole informazioni in modo rapido. La velocità è ~300 Kbps e i dati vengono inviati tramite pacchetti molto piccoli (circa 20 byte). Questo riduce il tempo in cui il dispositivo resta attivo, risparmiando energia.</p>
+    <p><strong>Il vero punto di forza:</strong> Il consumo energetico è fino a <strong>100 volte inferiore</strong> rispetto al Bluetooth classico. Dispositivi come smartwatch, sensori ambientali o tracker possono funzionare per mesi o anni con una sola batteria.</p>
+    <p><strong>Funzionamento passo passo:</strong></p>
+    <ul>
+      <li><strong>1. Advertising:</strong> Il dispositivo trasmettitore invia periodicamente segnali "advertising" per pubblicizzare la propria presenza, indicando eventualmente il tipo di servizio offerto. Questo permette al BLE di restare in stato di bassissimo consumo per la maggior parte del tempo</li>
+      <li><strong>2. Connessione:</strong> Quando un ricevitore intercetta questi segnali e li riconosce come interessanti, risponde. Viene avviata la procedura di connessione vera e propria</li>
+      <li><strong>3. Scambio dati:</strong> I dispositivi comunicano in modo bidirezionale, organizzando la comunicazione in brevi intervalli di attività alternati a periodi di inattività per ridurre il consumo</li>
+      <li><strong>4. Chiusura:</strong> Terminato lo scambio, la connessione viene chiusa. I dispositivi tornano in stato di basso consumo fino alla successiva necessità</li>
+    </ul>
+  </div>
+
+  <div class="grid g4" style="margin-bottom:1.25rem">
+    <div class="stat"><div class="val" style="color:#c084fc">~300</div><div class="stat-lbl">Kbps data rate</div></div>
+    <div class="stat"><div class="val" style="color:#c084fc">40</div><div class="stat-lbl">Canali da 2 MHz</div></div>
+    <div class="stat"><div class="val" style="color:#c084fc">100m</div><div class="stat-lbl">Copertura max</div></div>
+    <div class="stat"><div class="val" style="color:#c084fc">100×</div><div class="stat-lbl">Meno consumo vs Classic</div></div>
+  </div>
+
+  <div class="grid g2">
+    <div class="box">
+      <div class="box-title">Livelli fisici PHY — Modulazione GFSK</div>
+      <p style="font-size:.87rem;font-family:var(--serif);color:rgba(10,10,15,.6);margin-bottom:1rem">
+        GFSK (Gaussian Frequency Shift Keying): la frequenza portante viene spostata di ±185 kHz per rappresentare bit 0/1. Il filtro Gaussiano riduce il rumore alle transizioni brusche tra 0 e 1, migliorando efficienza spettrale e stabilità.
+      </p>
+      <div style="display:flex;flex-direction:column;gap:.5rem">
+        <div style="padding:.8rem;border-radius:6px;background:var(--purple-l);border:1px solid rgba(124,58,237,.2)">
+          <div style="display:flex;justify-content:space-between;margin-bottom:4px">
+            <span class="badge b-purple" style="margin:0">LE 1M PHY — Obbligatorio</span>
+            <code style="font-size:.75rem;font-family:var(--mono)">1 Ms/s · ±185 kHz</code>
+          </div>
+          <p style="font-family:var(--serif);font-size:.87rem">Bilanciato tra velocità, portata e consumo. Tutti i dispositivi devono supportarlo.</p>
+        </div>
+        <div style="padding:.8rem;border-radius:6px;background:var(--blue-l);border:1px solid rgba(37,99,235,.2)">
+          <div style="display:flex;justify-content:space-between;margin-bottom:4px">
+            <span class="badge b-blue" style="margin:0">LE 2M PHY — Opzionale</span>
+            <code style="font-size:.75rem;font-family:var(--mono)">2 Ms/s · ±370 kHz</code>
+          </div>
+          <p style="font-family:var(--serif);font-size:.87rem">Metà tempo in aria → meno consumo ad alta velocità. Range lievemente ridotto (×0.8).</p>
+        </div>
+        <div style="padding:.8rem;border-radius:6px;background:var(--teal-l);border:1px solid rgba(5,150,105,.2)">
+          <div style="display:flex;justify-content:space-between;margin-bottom:4px">
+            <span class="badge b-teal" style="margin:0">LE Coded PHY — Opzionale</span>
+            <code style="font-size:.75rem;font-family:var(--mono)">1 Ms/s + FEC</code>
+          </div>
+          <p style="font-family:var(--serif);font-size:.87rem">Forward Error Correction aggiunge informazioni ridondanti per correggere errori. S=2 → range ×2 · S=8 → range ×4. Velocità ridotta ma maggiore robustezza.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="box-title">Stack BLE</div>
+      <div class="stack-proto" style="margin-bottom:.75rem">
+        <div class="stack-layer sl-app"><span>Applicazione utente</span><span class="sl-tag">Top</span></div>
+        <div class="stack-layer sl-app"><span>GAP — Generic Access Profile (ruoli, visibilità)</span><span class="sl-tag">App</span></div>
+        <div class="stack-layer sl-high"><span>GATT — Generic Attribute Profile (servizi/caratteristiche)</span><span class="sl-tag">Alto</span></div>
+        <div class="stack-layer sl-high"><span>ATT — Attribute Protocol (client/server UUID)</span><span class="sl-tag">Alto</span></div>
+        <div class="stack-layer sl-link"><span>SMP — Security Manager · L2CAP</span><span class="sl-tag">Sicurezza</span></div>
+        <div class="stack-layer sl-link"><span>HCI — Host Controller Interface</span><span class="sl-tag">HCI</span></div>
+        <div class="stack-layer sl-base"><span>LL — Link Layer (centrale/periferico, timing pacchetti)</span><span class="sl-tag">LL</span></div>
+        <div class="stack-layer sl-radio"><span>PHY — GFSK · 40 canali da 2 MHz</span><span class="sl-tag">HW</span></div>
+      </div>
+      <div class="explain-box" style="margin-bottom:0;padding:1.2rem">
+        <h4 style="font-size:1rem">📚 Spiegazione dei livelli BLE</h4>
+        <p><strong>GAP (Generic Access Profile):</strong> Gestisce l'interazione iniziale tra dispositivi. Definisce come un dispositivo BLE si rende "visibile" agli altri, come avviene la scoperta e il collegamento, e i ruoli: <strong>centrale</strong> (cerca e si connette) e <strong>periferico</strong> (si rende disponibile). Nella terminologia moderna BLE si preferisce "centrale/periferico" invece di "master/slave".</p>
+        <p><strong>Link Layer (LL):</strong> Gestisce la comunicazione radio vera e propria — pacchetti, tempi di trasmissione, mantenimento della connessione a livello fisico.</p>
+        <p><strong>GATT (Generic Attribute Profile):</strong> Struttura logica che definisce come i dati devono essere organizzati, descritti e trasferiti. I dati sono organizzati in <strong>servizi</strong> (funzioni generali, es. monitoraggio salute) e <strong>caratteristiche</strong> (singoli dati, es. frequenza cardiaca).</p>
+        <p><strong>ATT (Attribute Protocol):</strong> Il protocollo vero e proprio per lo scambio dati. Modello client/server: il <strong>server</strong> possiede le informazioni (dati sensori), il <strong>client</strong> le richiede e le utilizza (smartphone). Ogni <strong>attributo</strong> è composto da: tipo (identificato da UUID), valore, permessi/autorizzazioni. I descrittori forniscono informazioni aggiuntive sul significato o formato del valore.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+  <div class="grid g3" style="margin-bottom:1.25rem">
+    <div class="box">
+      <span class="badge b-purple">TAG</span>
+      <h3>Localizzatori</h3>
+      <p>Piccoli dispositivi BLE applicati a risorse o persone per tracciarli in spazi indoor. Varie forme: rettangolare, tondo, braccialetto. Trasmettono continuamente il proprio segnale BLE.</p>
+    </div>
+    <div class="box">
+      <span class="badge b-blue">Beacon</span>
+      <h3>Infrastruttura</h3>
+      <p>Dispositivi fissi ancorati a pareti/soffitti ogni 2–5 metri. Più beacons distribuiti nello spazio = maggiore precisione di localizzazione. Ricevono i segnali dai TAG e li inoltrano.</p>
+    </div>
+    <div class="box">
+      <span class="badge b-teal">Gateway BLE</span>
+      <h3>Hub e Cloud</h3>
+      <p>Scansionano o si connettono a dispositivi BLE vicini, consentendo scambio dati con piattaforme cloud e infrastrutture IoT. Aggregano i flussi dati riducendo la congestione di rete e massimizzando il throughput.</p>
+    </div>
+  </div>
+
+  <div class="explain-box">
+    <h4>📡 Gateway BLE — Funzionamento dettagliato</h4>
+    <p>Il gateway BLE è un device specializzato che funge da ponte tra i dispositivi BLE nell'ambiente e sistemi complessi come piattaforme cloud o server locali.</p>
+    <ul>
+      <li><strong>Raccolta dati:</strong> Scansiona e rileva dispositivi BLE vicini, oppure si connette ad essi per lo scambio di dati</li>
+      <li><strong>Aggregazione:</strong> Funge da hub centrale per più dispositivi contemporaneamente, ricevendo dati da numerosi TAG, sensori o beacon nello stesso momento</li>
+      <li><strong>Pre-elaborazione:</strong> Invece di inviare singolarmente ogni piccola informazione, raccoglie i dati, li organizza e li elabora preliminarmente</li>
+      <li><strong>Trasmissione:</strong> I dati aggregati vengono trasmessi a server locali o piattaforme cloud per analisi approfondite (statistiche, report, indicatori di comportamento)</li>
+      <li><strong>Ottimizzazione rete:</strong> Consolidando i dati prima della trasmissione, riduce la quantità di comunicazioni separate sulla rete, diminuendo la congestione e ottimizzando il throughput</li>
+    </ul>
+  </div>
+
+  <div class="box" style="margin-bottom:1.25rem">
+    <div class="box-title">RTLS — Real-Time Locating Systems</div>
+    <p style="font-size:.95rem;font-family:var(--serif);color:rgba(10,10,15,.6);margin-bottom:1rem">
+      Sistemi di localizzazione in tempo reale per individuare la posizione di oggetti, persone o asset in ambienti indoor dove il GPS non è efficace. Diverse tecniche con diversa precisione e requisiti infrastrutturali.
+    </p>
+    <div class="grid g3">
+      <div class="callout c-blue" style="margin:0">
+        <strong>RSSI — Received Signal Strength Indicator</strong>
+        Sfrutta la potenza del segnale ricevuto dalle antenne per stimare la distanza tra TAG e ricevitori. Più il segnale è forte, più il dispositivo è vicino. Con più antenne in posizioni note, si applicano algoritmi di trilaterazione per stimare la posizione. Precisione max ±3m. Economico ma influenzato da ostacoli, riflessioni e interferenze ambientali.
+      </div>
+      <div class="callout c-teal" style="margin:0">
+        <strong>AoA — Angle of Arrival</strong>
+        Sfrutta l'angolo di arrivo del segnale trasmesso dai TAG su array di antenne riceventi che rilevano potenza e direzione di arrivo. Permette una localizzazione molto più precisa rispetto all'RSSI. In alcuni casi è sufficiente una sola antenna ben progettata per localizzare un TAG.
+      </div>
+      <div class="callout c-purple" style="margin:0">
+        <strong>AoD — Angle of Departure</strong>
+        Introdotto con il Bluetooth 5.1. Il dispositivo trasmettitore invia un segnale strutturato che permette ai ricevitori di calcolare la direzione di uscita del segnale. Combinato con altri dati, consente di ricostruire la posizione dell'oggetto con maggiore precisione e affidabilità.
+      </div>
+    </div>
+  </div>
+
+  <div class="box" style="margin-bottom:1.25rem">
+    <div class="box-title">Evoluzioni BT 5.x</div>
+    <div class="grid g2">
+      <div>
+        <span class="badge b-dark">BT 5.1 — 2016</span>
+        <div style="font-family:var(--mono);font-size:1.2rem;font-weight:600;margin:.4rem 0">2 Mbps · 200m outdoor</div>
+        <p style="font-family:var(--serif);font-size:.9rem">Ampia gamma di funzionalità. Supporto direction finding (AoA/AoD). Adatto per applicazioni multi-dispositivo wireless.</p>
+      </div>
+      <div>
+        <span class="badge b-dark">BT 5.2 — 2019</span>
+        <div style="font-family:var(--mono);font-size:1.2rem;font-weight:600;margin:.4rem 0">2 Mbps · 200m outdoor</div>
+        <p style="font-family:var(--serif);font-size:.9rem">Miglioramenti nel <strong>rilevamento direzione</strong>. Enhanced Attribute Protocol (EATT). LE Isochronous Channels per audio.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="box">
+    <div class="box-title">Ambiti di utilizzo del BLE</div>
+    <div class="grid g2">
+      <div class="callout c-blue" style="margin:0">
+        <strong>Wearable Technology</strong>
+        Fitness tracker e smartwatch sincronizzano dati in tempo reale con smartphone (passi, battito cardiaco, qualità del sonno) senza impattare significativamente la batteria.
+      </div>
+      <div class="callout c-teal" style="margin:0">
+        <strong>Home Automation (Domotica)</strong>
+        Controllo di luci, serrature elettroniche, termostati e elettrodomestici connessi. Basso consumo ideale per dispositivi sempre attivi.
+      </div>
+      <div class="callout c-orange" style="margin:0">
+        <strong>Beacon Technology (Retail)</strong>
+        Piccoli dispositivi BLE inviano segnali periodici per identificare la posizione dell'utente in un negozio. Notifiche personalizzate e offerte promozionali quando si passa vicino a un punto vendita.
+      </div>
+      <div class="callout c-purple" style="margin:0">
+        <strong>Healthcare &amp; Industria</strong>
+        Monitoraggio remoto pazienti (frequenza cardiaca, saturazione ossigeno). Sensori BLE su macchinari per manutenzione predittiva, individuando anomalie prima di guasti gravi.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ LORA ══════════════ -->
+<section class="section" id="sec-lora">
+  <div class="sec-head">
+    <div class="sec-num">06</div>
+    <div class="sec-body">
+      <h2>LoRa / LoRaWAN</h2>
+      <p>LPWAN a lungo raggio per IoT rurale e urbano. LoRa = livello fisico CSS · LoRaWAN = protocollo di rete (MAC layer).</p>
+    </div>
+    <span class="sec-badge b-teal">LPWAN · 868 MHz</span>
+  </div>
+
+  <div class="explain-box">
+    <h4>🌐 Cos'è LoRaWAN e come funziona?</h4>
+    <p><strong>Differenza fondamentale:</strong> <strong>LoRa</strong> è la tecnologia di trasmissione wireless (livello fisico, la modulazione radio), mentre <strong>LoRaWAN</strong> è il protocollo di livello superiore che definisce come i dati vengono organizzati, instradati e protetti, permettendo l'accesso alla rete internet.</p>
+    <p><strong>Problemi dell'IoT risolti da LoRaWAN:</strong> L'IoT prevede miliardi di dispositivi che mandano piccole quantità di dati ma, messi insieme, formano Big Data rischiando di saturare le reti. LoRaWAN offre: <strong>bassa larghezza di banda</strong> (pochi dati trasmessi), <strong>alta efficienza energetica</strong> (batterie che durano anni), e <strong>connettività ovunque</strong> (dispositivi in luoghi difficili da raggiungere).</p>
+    <p><strong>Architettura Star-of-Stars:</strong></p>
+    <ul>
+      <li><strong>End Devices:</strong> Sensori/attuatori IoT sul campo che trasmettono in broadcast (tutte le direzioni)</li>
+      <li><strong>Gateway:</strong> Ricevono pacchetti radio, li convertono in IP e li inoltrano al Network Server via internet. Sono ponti "trasparenti" — non elaborano il contenuto dei messaggi</li>
+      <li><strong>Network Server:</strong> Riceve copie multiple dello stesso messaggio da gateway diversi, elimina i duplicati, valuta la qualità della ricezione e identifica il gateway migliore. Gestisce sicurezza (AES-128 end-to-end), autenticità dispositivi, routing</li>
+      <li><strong>Application Server:</strong> Dove i dati vengono interpretati ed elaborati dall'utente finale</li>
+      <li><strong>Join Server:</strong> Gestisce l'attivazione sicura dei dispositivi, custodisce le root key e genera le chiavi di sessione (NwkSKey per il Network Server, AppSKey per l'Application Server)</li>
+    </ul>
+    <p><strong>Comunicazione single-hop:</strong> Il dispositivo raggiunge uno o più gateway contemporaneamente con un solo salto radio, aumentando l'affidabilità. Il gateway ha un collegamento backhaul flessibile: 3G/4G/5G, Wi-Fi, Ethernet, fibra ottica o radio 2.4 GHz.</p>
+  </div>
+
+  <div class="grid g4" style="margin-bottom:1.25rem">
+    <div class="stat"><div class="val" style="color:#34d399">15 km</div><div class="stat-lbl">Range campo aperto</div></div>
+    <div class="stat"><div class="val" style="color:#34d399">2 km</div><div class="stat-lbl">Range urbano denso</div></div>
+    <div class="stat"><div class="val" style="color:#34d399">105 mo</div><div class="stat-lbl">Batteria 2000 mAh</div></div>
+    <div class="stat"><div class="val" style="color:#34d399">1%</div><div class="stat-lbl">Duty cycle max</div></div>
+  </div>
+
+  <div class="grid g2">
+    <div class="box">
+      <div class="box-title">Architettura Star-of-Stars</div>
+      <div style="display:flex;flex-direction:column;gap:8px;padding:.5rem 0">
+        <div style="display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:center">
+          <div style="width:44px;height:44px;border-radius:8px;background:var(--teal-l);border:1px solid rgba(5,150,105,.3);display:flex;align-items:center;justify-content:center;font-size:18px">📡</div>
+          <div><div class="lbl" style="color:var(--teal)">End Devices</div><p style="font-size:.85rem;font-family:var(--serif)">Sensori LoRa — trasmettono a tutti i gateway vicini</p></div>
+        </div>
+        <div style="margin-left:22px;width:1px;height:20px;background:var(--border)"></div>
+        <div style="display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:center">
+          <div style="width:44px;height:44px;border-radius:8px;background:var(--blue-l);border:1px solid rgba(37,99,235,.3);display:flex;align-items:center;justify-content:center;font-size:18px">🔀</div>
+          <div><div class="lbl" style="color:var(--blue)">Gateway</div><p style="font-size:.85rem;font-family:var(--serif)">Ponte trasparente → forward via IP/4G al Network Server</p></div>
+        </div>
+        <div style="margin-left:22px;width:1px;height:20px;background:var(--border)"></div>
+        <div style="display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:center">
+          <div style="width:44px;height:44px;border-radius:8px;background:var(--orange-l);border:1px solid rgba(217,119,6,.3);display:flex;align-items:center;justify-content:center;font-size:18px">☁️</div>
+          <div><div class="lbl" style="color:var(--orange)">Network Server</div><p style="font-size:.85rem;font-family:var(--serif)">De-duplica, gestisce ADR, sicurezza AES-128, routing</p></div>
+        </div>
+        <div style="margin-left:22px;width:1px;height:20px;background:var(--border)"></div>
+        <div style="display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:center">
+          <div style="width:44px;height:44px;border-radius:8px;background:var(--purple-l);border:1px solid rgba(124,58,237,.3);display:flex;align-items:center;justify-content:center;font-size:18px">🖥️</div>
+          <div><div class="lbl" style="color:var(--purple)">Application Server</div><p style="font-size:.85rem;font-family:var(--serif)">Dati finali decifrati e disponibili all'applicazione</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="box-title">Spreading Factor a 125 kHz</div>
+      <p style="font-size:.87rem;font-family:var(--serif);color:rgba(10,10,15,.6);margin-bottom:1rem">
+        CSS (Chirp Spread Spectrum): la frequenza del chirp varia linearmente nel tempo. I dati sono codificati nella frequenza iniziale del chirp. SF più alto = più portata, meno velocità.
+      </p>
+      <div id="sfBars"></div>
+      <div class="callout c-teal" style="margin-top:1rem;margin-bottom:0">
+        <strong>ADR — Adaptive Data Rate</strong>
+        Il Network Server adatta dinamicamente SF, BW e potenza. Al primo collegamento → SF12 (più lento, massima portata). Quando il segnale migliora → SF scende per velocizzare e risparmiare. Usare solo con nodi fermi (situazioni RF stabili).
+      </div>
+    </div>
+  </div>
+
+  <div class="explain-box">
+    <h4>📡 Chirp Spread Spectrum (CSS) e modulazione Chirp</h4>
+    <p><strong>Cos'è un chirp?</strong> È un segnale sinusoidale la cui frequenza non è costante nel tempo, ma varia linearmente: parte da una frequenza e sale (o scende) in modo regolare e continuo fino a un'altra. Il nome "chirp" deriva dal verso degli uccelli o dei pipistrelli.</p>
+    <p><strong>CSS (Chirp Spread Spectrum):</strong> Tecnica di trasmissione a spettro espanso che utilizza chirp a banda larga con modulazione di frequenza lineare. L'idea dello spread spectrum è distribuire l'energia del segnale su una banda di frequenze molto più ampia di quella strettamente necessaria. Questo rende il segnale estremamente resistente alle interferenze e al rumore — anche se una parte della banda viene disturbata, il resto rimane integro e ricevibile.</p>
+    <p><strong>Modulazione Chirp elementare:</strong> La pendenza del chirp trasporta l'informazione digitale — pendenza positiva = 1, pendenza negativa = 0. La pendenza è facilmente rilevabile anche in presenza di rumore.</p>
+    <p><strong>Modulazione LoRa (brevettata):</strong> Invece di usare solo la pendenza, LoRa incorpora l'informazione nella <strong>frequenza di partenza</strong> del chirp. Ogni simbolo è un chirp che percorre sempre l'intera banda disponibile, ma il punto esatto da cui inizia la salita varia da simbolo a simbolo. Questo permette di rappresentare molti più valori distinti con un singolo chirp — non solo 0 e 1, ma un intero insieme di simboli — aumentando notevolmente la quantità di informazione trasportata.</p>
+  </div>
+
+  <div class="explain-box">
+    <h4>📦 Formato pacchetto LoRa</h4>
+    <p><strong>Explicit Header Mode (default):</strong> Il pacchetto include un header corto con: lunghezza del payload (byte), coding rate (tasso di ridondanza per correzione errori), flag presenza CRC. Struttura: Preamble → Payload Length → CR → CRC present → Payload → Payload CRC. Il ricevitore non ha bisogno di sapere in anticipo nulla sulla struttura del messaggio.</p>
+    <p><strong>Implicit Header Mode:</strong> L'intestazione viene completamente rimossa dal pacchetto. Riduce il <strong>Time on Air (ToA)</strong>, cioè il tempo in cui il dispositivo occupa il canale radio, con benefici su consumo energetico e rispetto del duty cycle. Il prezzo: tutte le informazioni (lunghezza payload, coding rate, presenza CRC) devono essere configurate manualmente e identicamente su trasmettitore e ricevitore. Se non allineati → comunicazione fallisce.</p>
+  </div>
+
+  <div class="explain-box">
+    <h4>⚙️ Livello fisico LoRa — Banda ISM 868 MHz</h4>
+    <p>LoRaWAN opera nella banda ISM a <strong>868 MHz</strong> (da 865 MHz a 870 MHz), una banda di frequenze libera da licenza in Europa. Lavorare a frequenze basse ha un vantaggio fisico preciso: le onde radio penetrano meglio attraverso muri, edifici e ostacoli — ideale per dispositivi in ambienti difficili (seminterrati, aree rurali, infrastrutture urbane).</p>
+    <p><strong>Restrizioni sulla banda:</strong></p>
+    <ul>
+      <li><strong>Potenza di trasmissione massima:</strong> Tipicamente 25 mW (equivalente a 14 dBm). Circa un quarto della potenza di un router Wi-Fi, ma sufficiente per coprire chilometri grazie all'efficienza della modulazione LoRa</li>
+      <li><strong>Duty cycle:</strong> Frazione massima di tempo in cui un dispositivo può trasmettere in un'ora. Un duty cycle dell'1% significa che in un'ora il dispositivo può occupare il canale per massimo 36 secondi. Indicato anche come <strong>Time on Air (ToA)</strong></li>
+    </ul>
+    <p><strong>Deep Indoor:</strong> L'elevata immunità al rumore di CSS consente di raggiungere facilmente luoghi "nascosti" come contatori dell'acqua in cantine, sotto ai tombini o nei cavedi.</p>
+  </div>
+
+  <div class="grid g3" style="margin-top:1rem">
+    <div class="box">
+      <span class="badge b-red">Classe A — Battery</span>
+      <h3>Ultra Low Power</h3>
+      <p>Uplink + 2 brevi finestre downlink. La modalità più efficiente energeticamente. Obbligatoria per tutti i dispositivi LoRaWAN.</p>
+    </div>
+    <div class="box">
+      <span class="badge b-teal">Classe B — Beacon</span>
+      <h3>Slot Programmati</h3>
+      <p>Come A + finestre di ricezione aggiuntive schedulate tramite beacon del gateway. Latenza downlink prevedibile.</p>
+    </div>
+    <div class="box">
+      <span class="badge b-blue">Classe C — Continuous</span>
+      <h3>Ascolto Continuo</h3>
+      <p>Finestra di ricezione sempre aperta. Latenza minima in downlink. Maggiore consumo → solitamente alimentati a rete.</p>
+    </div>
+  </div>
+
+  <div class="explain-box">
+    <h4>🔐 Sicurezza LoRaWAN</h4>
+    <p>La trasmissione dei dati è protetta con crittografia <strong>AES-128</strong> (Advanced Encryption Standard a 128 bit), lo stesso standard usato in ambito bancario e militare. La sicurezza è integrata direttamente nel protocollo, non un'aggiunta opzionale.</p>
+    <ul>
+      <li><strong>NwkSKey (Network Session Key):</strong> Protegge la comunicazione a livello di rete, trasferita al Network Server</li>
+      <li><strong>AppSKey (Application Session Key):</strong> Protegge il payload applicativo, inviata all'Application Server</li>
+      <li><strong>Separazione delle chiavi:</strong> Garantisce che nemmeno il Network Server possa leggere il contenuto dei dati applicativi — un ulteriore livello di privacy e sicurezza architetturale</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ══════════════ NB-IOT ══════════════ -->
+<section class="section" id="sec-nbiot">
+  <div class="sec-head">
+    <div class="sec-num">07</div>
+    <div class="sec-body">
+      <h2>NB-IoT — Narrowband IoT</h2>
+      <p>LPWAN cellulare su banda licenziata 800 MHz. Opera su infrastruttura LTE esistente. 3GPP Release 13. SIM card M2M.</p>
+    </div>
+    <span class="sec-badge b-orange">Cellulare · 800 MHz</span>
+  </div>
+
+  <div class="explain-box">
+    <h4>📱 Cos'è NB-IoT e come funziona?</h4>
+    <p><strong>NB-IoT (Narrowband IoT)</strong> è una tecnologia di rete geografica LPWAN cellulare progettata per dispositivi IoT che devono scambiare piccole quantità di dati per periodi prolungati. Opera sulla frequenza degli <strong>800 MHz</strong>, una banda licenziata che non richiede autorizzazioni per essere sfruttata.</p>
+    <p><strong>Integrazione con reti esistenti:</strong> NB-IoT integra le caratteristiche principali delle classiche reti cellulari LTE 2G, 3G e 4G. Può essere attivato all'interno di una portante LTE, nella banda di protezione LTE o come soluzione autonoma. Le prime attivazioni sono iniziate alla fine del 2017, con avvio commerciale su larga scala nel 2018.</p>
+    <p><strong>Vantaggi chiave:</strong></p>
+    <ul>
+      <li><strong>Copertura estesa:</strong> Permette di raggiungere anche le aree interrate (deep indoor), ideale per contatori in cantine o tombini</li>
+      <li><strong>Efficienza energetica:</strong> Dispositivi che funzionano a batteria con consumo molto basso</li>
+      <li><strong>Alta densità:</strong> Fino a 50.000 dispositivi gestibili da una singola cella (ciascun settore di un sito radiomobile con canale di 180 kHz)</li>
+      <li><strong>Costo ridotto:</strong> Banda stretta (180 kHz) e bassa complessità → chipset economici</li>
+    </ul>
+    <p><strong>Tecniche di accesso:</strong> Utilizza OFDM nel downlink e SC-FDMA nell'uplink. La velocità di upload è intorno ai <strong>20 Kbps</strong>.</p>
+  </div>
+
+  <div class="grid g4" style="margin-bottom:1.25rem">
+    <div class="stat"><div class="val" style="color:#f59e0b">~20</div><div class="stat-lbl">Kbps upload</div></div>
+    <div class="stat"><div class="val" style="color:#f59e0b">50K</div><div class="stat-lbl">Device/cella</div></div>
+    <div class="stat"><div class="val" style="color:#f59e0b">10+</div><div class="stat-lbl">Anni batteria</div></div>
+    <div class="stat"><div class="val" style="color:#f59e0b">180kHz</div><div class="stat-lbl">Larghezza canale</div></div>
+  </div>
+
+  <div class="grid g2">
+    <div class="box">
+      <div class="box-title">Caratteristiche tecniche</div>
+      <table class="tbl">
+        <tbody>
+          <tr><td style="color:rgba(10,10,15,.5)">Banda</td><td><strong>800 MHz</strong> (licenziata)</td></tr>
+          <tr><td style="color:rgba(10,10,15,.5)">Modulazione</td><td>QPSK</td></tr>
+          <tr><td style="color:rgba(10,10,15,.5)">Accesso</td><td>FDMA uplink · OFDMA downlink</td></tr>
+          <tr><td style="color:rgba(10,10,15,.5)">SIM</td><td>Sì — M2M</td></tr>
+          <tr><td style="color:rgba(10,10,15,.5)">Deep indoor</td><td>Raggiunge cantine e tombini</td></tr>
+          <tr><td style="color:rgba(10,10,15,.5)">Range</td><td>10+ km outdoor</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="box">
+      <div class="box-title">SIM Card IoT M2M</div>
+      <p style="font-size:.95rem;font-family:var(--serif);color:rgba(10,10,15,.6);margin-bottom:1rem">
+        La rete di apparecchiature connesse tramite SIM Machine-to-Machine (M2M) permette a qualsiasi dispositivo elettronico di scambiare dati, informazioni e comandi con altri oggetti, persone o processi connessi.
+      </p>
+      <div class="callout c-orange" style="margin-bottom:.75rem">
+        <strong>IP fisso pubblico</strong>
+        Permette accesso remoto al dispositivo senza aspettare che invii dati. Maggiore controllo e sicurezza. Ideale per contatori, attuatori. VPN dedicata personalizzabile.
+      </div>
+      <div class="callout c-blue" style="margin-bottom:.75rem">
+        <strong>Multi-operatore</strong>
+        La SIM si connette automaticamente all'operatore con segnale migliore. Failover automatico in roaming.
+      </div>
+      <div class="grid g2" style="gap:.5rem">
+        <div style="padding:.8rem;background:rgba(10,10,15,.04);border-radius:6px;border:1px solid var(--border)">
+          <div class="lbl">SIM Standard</div>
+          <p style="font-size:.83rem;font-family:var(--serif)">−25°C a +85°C · uso normale</p>
+        </div>
+        <div style="padding:.8rem;background:var(--orange-l);border-radius:6px;border:1px solid rgba(217,119,6,.2)">
+          <div class="lbl" style="color:var(--orange)">SIM Industriale</div>
+          <p style="font-size:.83rem;font-family:var(--serif)">−40°C a +105°C · vibrazioni</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="explain-box">
+    <h4>📊 Confronto con altre tecnologie LPWAN</h4>
+    <p>NB-IoT si posiziona come tecnologia LPWAN cellulare, in competizione con LoRaWAN e Sigfox. A differenza di queste ultime, NB-IoT utilizza bande licenziate (gestite dagli operatori telefonici) e richiede una SIM card M2M per la connessione.</p>
+    <p><strong>Vantaggi rispetto a LoRaWAN/Sigfox:</strong></p>
+    <ul>
+      <li>Infrastruttura esistente (torri cellulari già presenti)</li>
+      <li>Maggiore affidabilità e qualità del servizio (QoS garantita dall'operatore)</li>
+      <li>Integrazione diretta con sistemi cellulari e roaming internazionale</li>
+      <li>Sicurezza intrinseca della rete cellulare</li>
+    </ul>
+    <p><strong>Svantaggi:</strong></p>
+    <ul>
+      <li>Costo della SIM e del piano dati (abbonamento)</li>
+      <li>Dipendenza dall'operatore telefonico e dalla copertura della sua rete</li>
+      <li>Maggiore consumo energetico rispetto a LoRaWAN/Sigfox (ma comunque molto basso rispetto a 4G/5G full)</li>
+    </ul>
+  </div>
+
+  <div class="box" style="margin-top:1rem">
+    <div class="box-title">Sigfox — Ultra Narrow Band (UNB)</div>
+    <div class="grid g3">
+      <div class="callout c-orange" style="margin:0;grid-column:1/-1">
+        <strong>Principio UNB</strong>
+        Ogni nodo occupa una banda di frequenza estremamente stretta (poche centinaia di Hz). Banda più stretta → rumore più basso (circa −154 dBm per 100 Hz). Range fino a 50 km dal gateway. Limite: max 140 messaggi uplink/giorno, payload massimo 12 byte, 1 messaggio ogni 10 minuti.
+      </div>
+      <div class="stat"><div class="val" style="color:#f59e0b">140</div><div class="stat-lbl">Messaggi uplink/giorno</div></div>
+      <div class="stat"><div class="val" style="color:#f59e0b">50 km</div><div class="stat-lbl">Range dal gateway</div></div>
+      <div class="stat"><div class="val" style="color:#f59e0b">12 B</div><div class="stat-lbl">Payload max</div></div>
+    </div>
+    <p style="font-size:.9rem;font-family:var(--serif);color:rgba(10,10,15,.6);margin-top:1rem">
+      Il ciclo di vita di un messaggio Sigfox è sempre lo stesso: il dispositivo si sveglia e trasmette un messaggio via radio. Più stazioni base nell'area ricevono il messaggio e lo inoltrano al Sigfox Cloud, che infine lo invia alla piattaforma del cliente.
+    </p>
+  </div>
+</section>
+
+<!-- ══════════════ 5G ══════════════ -->
+<section class="section" id="sec-5g">
+  <div class="sec-head">
+    <div class="sec-num">08</div>
+    <div class="sec-body">
+      <h2>5G per IoT</h2>
+      <p>Rete convergente eterogenea su licenza + non-licenza. 1 milione di dispositivi/km² (10× il 4G). Network slicing per uso multi-servizio.</p>
+    </div>
+    <span class="sec-badge b-red">5G · mMTC</span>
+  </div>
+
+  <div class="explain-box">
+    <h4>🚀 Cos'è il 5G e come funziona?</h4>
+    <p>Il 5G è progettato per supportare una <strong>rete convergente ed eterogenea</strong> che unisce tecnologie wireless, sia coperte da licenza che prive di licenza. Le architetture 5G saranno piattaforme basate sul software, dove la funzionalità di networking viene gestita dal software piuttosto che dall'hardware.</p>
+    <p><strong>Densità di connessione:</strong> Il 5G consente fino a <strong>un milione di dispositivi per km quadrato</strong>, ossia 10 volte in più rispetto alla tecnologia 4G. Questo è fondamentale per l'IoT, dove miliardi di dispositivi devono connettersi simultaneamente.</p>
+  </div>
+
+  <div class="box" style="margin-bottom:1.25rem">
+    <div class="box-title">Bande di frequenza</div>
+    <div style="display:flex;flex-direction:column;gap:8px;padding:.5rem 0">
+      <div style="display:flex;align-items:center;gap:12px">
+        <div style="width:75px;font-family:var(--mono);font-size:.77rem;color:rgba(10,10,15,.45);text-align:right">700 MHz</div>
+        <div style="flex:.3;height:36px;background:var(--teal-l);border:1px solid rgba(5,150,105,.3);border-radius:6px;display:flex;align-items:center;padding:0 12px">
+          <span style="font-size:.8rem;font-weight:700;color:var(--teal);font-family:var(--sans)">Banda bassa</span>
+        </div>
+        <div style="font-size:.83rem;color:rgba(10,10,15,.55);font-family:var(--serif)">Lungo range · copre aree remote · superiore al 4G</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:12px">
+        <div style="width:75px;font-family:var(--mono);font-size:.77rem;color:rgba(10,10,15,.45);text-align:right">3.7 GHz</div>
+        <div style="flex:.55;height:36px;background:var(--blue-l);border:1px solid rgba(37,99,235,.3);border-radius:6px;display:flex;align-items:center;padding:0 12px">
+          <span style="font-size:.8rem;font-weight:700;color:var(--blue);font-family:var(--sans)">Sub-6 GHz — Banda media</span>
+        </div>
+        <div style="font-size:.83rem;color:rgba(10,10,15,.55);font-family:var(--serif)">Bilanciata · la più diffusa in Italia</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:12px">
+        <div style="width:75px;font-family:var(--mono);font-size:.77rem;color:rgba(10,10,15,.45);text-align:right">26 GHz</div>
+        <div style="flex:1;height:36px;background:var(--red-l);border:1px solid rgba(220,38,38,.3);border-radius:6px;display:flex;align-items:center;padding:0 12px">
+          <span style="font-size:.8rem;font-weight:700;color:var(--red);font-family:var(--sans)">mmWave — Massima velocità · corto range · molti ripetitori</span>
+        </div>
+      </div>
+    </div>
+    <p style="font-size:.83rem;font-family:var(--serif);color:rgba(10,10,15,.5);margin-top:.5rem">⚠️ In Italia la mmWave è quasi inesistente: costi elevati di apparecchiature e densità di ripetitori. La Sub-6 GHz è lo standard più diffuso.</p>
+  </div>
+
+  <div class="explain-box">
+    <h4>🔪 Network Slicing</h4>
+    <p><strong>Problema:</strong> Come gestire servizi molto diversi (sensori ambientali, veicoli autonomi, streaming 4K) su un'unica infrastruttura?</p>
+    <p><strong>Soluzione: Network Slicing</strong> — tecnologia che consente a più reti virtuali di operare su un'unica infrastruttura di rete fisica. Ogni <strong>slice</strong> può essere personalizzata per applicazioni o servizi specifici, con requisiti diversi di velocità, latenza e affidabilità.</p>
+    <p>Ogni tipo di applicazione dovrebbe "vedere" una rete configurata nella maniera ottimale per gestire il suo traffico specifico.</p>
+  </div>
+
+  <div class="grid g3">
+    <div class="box" style="border-top:3px solid var(--teal)">
+      <span class="badge b-teal">mMTC — IoT Slice</span>
+      <h3>Massive Machine-Type Communications</h3>
+      <p>Milioni di dispositivi a basso consumo energetico. Sensori ambientali, contatori intelligenti, asset tracker urbani. Ottimizzata per connessioni ad alta densità.</p>
+    </div>
+    <div class="box" style="border-top:3px solid var(--blue)">
+      <span class="badge b-blue">URLLC — Critico</span>
+      <h3>Ultra-Reliable Low-Latency Communications</h3>
+      <p>Comunicazioni critiche che richiedono affidabilità e bassissima latenza. Veicoli autonomi, controllo industriale, telemedicina. Latenza &lt;1 ms, affidabilità 99.9999%.</p>
+    </div>
+    <div class="box" style="border-top:3px solid var(--red)">
+      <span class="badge b-red">eMBB — Banda larga</span>
+      <h3>Enhanced Mobile Broadband</h3>
+      <p>Elevata larghezza di banda per applicazioni ad alta velocità. Streaming 4K/8K, realtà aumentata/virtuale. Fino a 20 Gbps picco in downlink.</p>
+    </div>
+  </div>
+
+  <div class="explain-box">
+    <h4>📡 Tecniche di accesso del 5G per IoT</h4>
+    <p><strong>NB-IoT (Narrowband IoT):</strong> Opera su banda stretta di 180 kHz. Ottimizzato per bassa complessità, basso consumo, alta penetrazione (deep indoor). Utilizza OFDM nel downlink e SC-FDMA nell'uplink. Ideale per sensori semplici che trasmettono dati piccoli occasionalmente.</p>
+    <p><strong>LTE-M (LTE for Machines, eMTC):</strong> Banda più ampia (1.4 MHz). Supporta velocità di dati maggiori rispetto a NB-IoT (~1 Mbps). Maggiore mobilità e gestione del roaming. Adatto per dispositivi che si spostano e necessitano di maggiore banda.</p>
+    <p><strong>RedCap (Reduced Capability):</strong> Introdotto nelle specifiche 3GPP Release 17. Progettato specificamente per dispositivi IoT in 5G nativo. Riduce la complessità di implementazione e il consumo energetico rispetto al 5G full, mantenendo le funzionalità necessarie per l'IoT industriale avanzato.</p>
+  </div>
+
+  <div class="box" style="margin-top:1rem">
+    <div class="box-title">Tecniche accesso 5G per IoT</div>
+    <table class="tbl">
+      <thead><tr><th>Tecnologia</th><th>Banda</th><th>Velocità</th><th>Caso d'uso</th></tr></thead>
+      <tbody>
+        <tr><td><span class="badge b-orange">NB-IoT</span></td><td>180 kHz</td><td style="font-family:var(--mono);font-size:.83rem">~20 Kbps</td><td>Bassa complessità, deep indoor, batteria lunga</td></tr>
+        <tr><td><span class="badge b-blue">LTE-M (eMTC)</span></td><td>1.4 MHz</td><td style="font-family:var(--mono);font-size:.83rem">1 Mbps</td><td>Mobilità, roaming, voce IoT</td></tr>
+        <tr><td><span class="badge b-teal">RedCap (Rel.17)</span></td><td>5G nativo</td><td style="font-family:var(--mono);font-size:.83rem">Variable</td><td>IoT 5G nativo a complessità ridotta</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ══════════════ CONFRONTO ══════════════ -->
+<section class="section" id="sec-compare">
+  <div class="sec-head">
+    <div class="sec-num">09</div>
+    <div class="sec-body">
+      <h2>Confronto Tecnologie</h2>
+      <p>Panoramica comparativa di tutti gli standard wireless IoT: dalla portata al consumo energetico, dalla modulazione alla topologia.</p>
+    </div>
+    <span class="sec-badge b-yellow">Comparazione</span>
+  </div>
+
+  <div class="box" style="margin-bottom:1.25rem">
+    <div class="box-title">Posizionamento — Portata vs Data Rate</div>
+    <div class="pos-chart">
+      <div class="pos-label-x">PORTATA →</div>
+      <div class="pos-label-y">DATA RATE</div>
+      <div class="pos-axis-x"></div>
+      <div class="pos-axis-y"></div>
+      <div class="pos-node" style="left:16%;bottom:72%;width:52px;height:52px;background:var(--blue-l);border-color:var(--blue);color:var(--blue)">BLE<div class="pos-sub">300K · ~100m</div></div>
+      <div class="pos-node" style="left:22%;bottom:88%;width:54px;height:54px;background:rgba(180,83,9,.1);border-color:var(--yellow);color:var(--yellow)">Wi-Fi<div class="pos-sub">Gbps · 50m</div></div>
+      <div class="pos-node" style="left:14%;bottom:60%;width:48px;height:48px;background:var(--purple-l);border-color:var(--purple);color:var(--purple)">BT<div class="pos-sub">3M · 100m</div></div>
+      <div class="pos-node" style="left:75%;bottom:18%;width:54px;height:54px;background:var(--teal-l);border-color:var(--teal);color:var(--teal)">LoRa<div class="pos-sub">50K · 15km</div></div>
+      <div class="pos-node" style="left:65%;bottom:14%;width:52px;height:52px;background:var(--orange-l);border-color:var(--orange);color:var(--orange)">NB-IoT<div class="pos-sub">20K · 10km</div></div>
+      <div class="pos-node" style="left:85%;bottom:8%;width:50px;height:50px;background:var(--red-l);border-color:var(--red);color:var(--red)">Sigfox<div class="pos-sub">100b · 50km</div></div>
+      <div class="pos-node" style="left:50%;bottom:82%;width:52px;height:52px;background:rgba(10,10,15,.07);border-color:rgba(10,10,15,.3);color:rgba(10,10,15,.7)">4G/5G<div class="pos-sub">Gbps · naz.</div></div>
+    </div>
+  </div>
+
+  <div class="box" style="margin-bottom:1.25rem">
+    <div class="box-title">Tabella comparativa completa</div>
+    <div class="compare-wrap">
+      <table class="tbl">
+        <thead>
+          <tr>
+            <th>Parametro</th>
+            <th style="color:var(--blue)">BLE</th>
+            <th style="color:var(--purple)">BT Classic</th>
+            <th style="color:var(--teal)">LoRaWAN</th>
+            <th style="color:var(--orange)">NB-IoT</th>
+            <th style="color:var(--red)">Sigfox</th>
+            <th>5G mMTC</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td style="color:rgba(10,10,15,.5)">Range</td><td>~100m</td><td>10–100m</td><td style="color:var(--teal);font-weight:600">15 km</td><td>10 km+</td><td style="color:var(--teal);font-weight:600">50 km</td><td>Variable</td></tr>
+          <tr><td style="color:rgba(10,10,15,.5)">Data Rate</td><td style="color:var(--blue);font-weight:600">300 Kbps</td><td style="color:var(--purple);font-weight:600">1–3 Mbps</td><td>290b–50K</td><td>~20 Kbps</td><td>100 bps</td><td>200K–1M</td></tr>
+          <tr><td style="color:rgba(10,10,15,.5)">Consumo</td><td style="color:var(--teal)">Molto basso</td><td>Medio</td><td style="color:var(--teal)">Molto basso</td><td style="color:var(--teal)">Molto basso</td><td style="color:var(--teal)">Molto basso</td><td>Medio</td></tr>
+          <tr><td style="color:rgba(10,10,15,.5)">Batteria</td><td>Mesi–anni</td><td>Giorni</td><td>105 mesi</td><td>10+ anni</td><td>12+ anni</td><td>18 mesi</td></tr>
+          <tr><td style="color:rgba(10,10,15,.5)">Licenza</td><td>No</td><td>No</td><td>No</td><td style="color:var(--red)">Sì</td><td>No</td><td style="color:var(--red)">Sì</td></tr>
+          <tr><td style="color:rgba(10,10,15,.5)">Frequenza</td><td>2.4 GHz</td><td>2.4 GHz</td><td>868 MHz</td><td>800 MHz</td><td>Sub-GHz</td><td>700M–26G</td></tr>
+          <tr><td style="color:rgba(10,10,15,.5)">Modulazione</td><td>GFSK</td><td>GFSK/DQPSK</td><td>CSS Chirp</td><td>QPSK</td><td>UNB/BPSK</td><td>OFDMA</td></tr>
+          <tr><td style="color:rgba(10,10,15,.5)">Topologia</td><td>P2P/Mesh</td><td>Master/Slave</td><td>Star-of-Stars</td><td>Cellulare</td><td>Star</td><td>Cellulare</td></tr>
+          <tr><td style="color:rgba(10,10,15,.5)">Standard</td><td>BT SIG</td><td>BT SIG</td><td>LoRa Alliance</td><td>3GPP Rel.13</td><td>Sigfox</td><td>3GPP Rel.15+</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="box">
+    <div class="box-title">Guida rapida alla scelta</div>
+    <div class="grid g2">
+      <div class="callout c-blue" style="margin:0">
+        <strong>→ Scegli BLE</strong>
+        Indoor · corto raggio · wearable · beacon · real-time · smartphone come hub · localizzazione RTLS
+      </div>
+      <div class="callout c-teal" style="margin:0">
+        <strong>→ Scegli LoRaWAN</strong>
+        Lungo raggio · no SIM · dati piccoli periodici · agricoltura · smart city · utility · outdoor
+      </div>
+      <div class="callout c-orange" style="margin:0">
+        <strong>→ Scegli NB-IoT</strong>
+        Deep indoor · infrastruttura cellulare · mobilità · sicurezza enterprise · contatori gas/acqua
+      </div>
+      <div class="callout c-red" style="margin:0">
+        <strong>→ Scegli 5G URLLC</strong>
+        Latenza critica · veicoli autonomi · industria 4.0 · telemedicina · alta densità dispositivi
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  Appunti TPSIT · Reti Wireless IoT ESPANSI · 5F/5M 2025/26 · ESP32 · Wi-Fi · BT · BLE · LoRaWAN · NB-IoT · 5G
+</footer>
+
+<script>
+function show(tab, btn) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('sec-'+tab).classList.add('active');
+  if(btn) btn.classList.add('active');
+}
+
+// SF Bars
+(function(){
+  const sfs = [
+    {sf:'SF7', bps:'5470', dist:'2 km', pct:12, color:'var(--teal)'},
+    {sf:'SF8', bps:'3125', dist:'4 km', pct:22, color:'#16a34a'},
+    {sf:'SF9', bps:'1760', dist:'6 km', pct:36, color:'var(--yellow)'},
+    {sf:'SF10', bps:'980',  dist:'8 km', pct:52, color:'var(--orange)'},
+    {sf:'SF11', bps:'440',  dist:'11 km',pct:72, color:'var(--purple)'},
+    {sf:'SF12', bps:'290',  dist:'14 km',pct:100,color:'var(--red)'},
+  ];
+  const c = document.getElementById('sfBars');
+  if(c) {
+    sfs.forEach(s => {
+      const row = document.createElement('div');
+      row.className = 'sf-bar';
+      row.innerHTML = `
+        <span class="sf-key" style="color:${s.color}">${s.sf}</span>
+        <div class="sf-track">
+          <div class="sf-fill" style="width:${s.pct}%;background:${s.color};opacity:.3;border-right:2px solid ${s.color}"></div>
+        </div>
+        <span class="sf-meta">${s.bps} bps · ${s.dist}</span>`;
+      c.appendChild(row);
+    });
+  }
+})();
+</script>
+</body>
+</html>
+

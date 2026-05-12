@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TCP/IP — Telecomunicazioni · 5F</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;600&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/tech-style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header-bg"></div>
+  <div class="header-inner" style="padding-bottom:1.5rem">
+    <div class="header-eyebrow">
+      <a class="eyebrow-tag" href="../index.html">← Home</a>
+      <a class="eyebrow-tag" href="../telecomunicazioni.html">← Telecomunicazioni</a>
+      <span class="eyebrow-tag">5F · 2025/26</span>
+      <div class="eyebrow-line"></div>
+      <span class="eyebrow-tag">TCP/IP</span>
+    </div>
+  </div>
+</header>
+
+<main class="layout-shell">
+  <aside class="sidenav">
+    <a href="../telecomunicazioni.html" class="sn-back">← Indice materia</a>
+    <div class="sn-label">Macro-argomenti</div>
+    <a href="onde-antenne.html" class="">
+      <span class="icn">📡</span>
+      <span>Onde & Antenne</span>
+      <span class="num">01</span>
+    </a>
+    <a href="tcp-ip.html" class="active">
+      <span class="icn">🌐</span>
+      <span>TCP/IP</span>
+      <span class="num">02</span>
+    </a>
+    <a href="switch-vlan.html" class="">
+      <span class="icn">🔀</span>
+      <span>Switch & VLAN</span>
+      <span class="num">03</span>
+    </a>
+    <a href="acl.html" class="">
+      <span class="icn">🛡️</span>
+      <span>ACL</span>
+      <span class="num">04</span>
+    </a>
+    <a href="nat.html" class="">
+      <span class="icn">🔁</span>
+      <span>NAT</span>
+      <span class="num">05</span>
+    </a>
+    <a href="wireless-80211.html" class="">
+      <span class="icn">📶</span>
+      <span>Wireless 802.11</span>
+      <span class="num">06</span>
+    </a>
+    <a href="fibra-gpon.html" class="">
+      <span class="icn">💡</span>
+      <span>Fibra & GPON</span>
+      <span class="num">07</span>
+    </a>
+    <a href="laboratorio.html" class="">
+      <span class="icn">🔧</span>
+      <span>Laboratorio</span>
+      <span class="num">08</span>
+    </a>
+  </aside>
+
+  <div class="content-main">
+    <section class="section">
+      <div class="sec-head">
+    <div class="sec-num">02</div>
+    <div class="sec-body">
+      <h2>Suite TCP/IP</h2>
+      <p>IP, subnetting VLSM, ARP, DHCP, TCP vs UDP, three-way handshake, strumenti diagnostici.</p>
+    </div>
+    <span class="sec-badge b-blue">Reti</span>
+  </div>
+
+  <div class="explain-box">
+    <h4>🧱 Lo stack TCP/IP in 4 livelli</h4>
+    <ol>
+      <li><strong>Application:</strong> protocolli di applicazione (HTTP, DNS, SMTP, FTP, SSH...). Usano TCP o UDP sotto.</li>
+      <li><strong>Transport:</strong> <strong>TCP</strong> (orientato alla connessione, affidabile) e <strong>UDP</strong> (senza connessione, veloce).</li>
+      <li><strong>Internet:</strong> <strong>IP</strong> (instradamento end-to-end via indirizzi), <strong>ICMP</strong> (controllo), <strong>ARP</strong> (risoluzione MAC).</li>
+      <li><strong>Network Access:</strong> Ethernet, Wi-Fi, PPP, ecc. Trama fisica e indirizzi MAC.</li>
+    </ol>
+    <p><strong>Incapsulamento:</strong> i dati partono dall'applicazione, scendono lo stack e ad ogni livello viene aggiunto un header. Sul destinatario lo stack viene risalito e gli header vengono rimossi.</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <h3 style="font-size:1.3rem;margin-bottom:1rem;color:var(--accent)">Indirizzi IPv4 &amp; subnetting</h3>
+
+  <div class="explain-box">
+    <h4>🔢 Anatomia di un indirizzo IPv4</h4>
+    <p>32 bit = 4 ottetti separati da punti (es. <code>192.168.1.10</code>). Diviso in <strong>Net-ID</strong> (parte rete) e <strong>Host-ID</strong> (parte host).</p>
+    <p><strong>Subnet mask:</strong> indica quanti bit appartengono al Net-ID. Notazione CIDR <code>/n</code>. Es. <code>/24</code> = 255.255.255.0 → primi 24 bit di rete, ultimi 8 di host.</p>
+    <p><strong>Indirizzi speciali in ogni subnet:</strong></p>
+    <ul>
+      <li><strong>Network address:</strong> tutti i bit host a 0 → identifica la rete (es. 192.168.1.0/24).</li>
+      <li><strong>Broadcast address:</strong> tutti i bit host a 1 → invio a tutti gli host (es. 192.168.1.255/24).</li>
+      <li>Gli host utilizzabili sono <code>2<sup>n</sup> − 2</code> con n = bit host.</li>
+    </ul>
+  </div>
+
+  <div class="grid g2" style="margin-bottom:1.25rem">
+    <div class="box">
+      <div class="box-title">Classi IP storiche (deprecate ma utili)</div>
+      <table class="tbl">
+        <thead><tr><th>Classe</th><th>Range</th><th>Default mask</th><th>Uso</th></tr></thead>
+        <tbody>
+          <tr><td><code>A</code></td><td>0–127</td><td>/8</td><td>Grandi reti</td></tr>
+          <tr><td><code>B</code></td><td>128–191</td><td>/16</td><td>Medie reti</td></tr>
+          <tr><td><code>C</code></td><td>192–223</td><td>/24</td><td>Piccole reti</td></tr>
+          <tr><td><code>D</code></td><td>224–239</td><td>—</td><td>Multicast</td></tr>
+          <tr><td><code>E</code></td><td>240–255</td><td>—</td><td>Sperimentale</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="box">
+      <div class="box-title">IP privati (RFC 1918) — non instradabili in Internet</div>
+      <table class="tbl">
+        <thead><tr><th>Classe</th><th>Range</th><th>Host</th></tr></thead>
+        <tbody>
+          <tr><td><code>A</code></td><td>10.0.0.0/8</td><td>16,7M</td></tr>
+          <tr><td><code>B</code></td><td>172.16.0.0/12</td><td>1,0M</td></tr>
+          <tr><td><code>C</code></td><td>192.168.0.0/16</td><td>65k</td></tr>
+        </tbody>
+      </table>
+      <p style="font-family:var(--serif);font-size:.88rem;color:rgba(10,10,15,.6);margin-top:.6rem">Devono passare attraverso NAT per uscire in Internet con un IP pubblico.</p>
+    </div>
+  </div>
+
+  <div class="explain-box">
+    <h4>✂️ Subnetting VLSM — Variable Length Subnet Mask</h4>
+    <p><strong>Idea:</strong> partire da una rete grande e dividerla in sottoreti di dimensioni <em>diverse</em> in base alle esigenze reali, senza sprecare indirizzi.</p>
+    <p><strong>Procedura:</strong></p>
+    <ol>
+      <li>Elenca le sottoreti necessarie ordinandole per numero di host <strong>decrescente</strong>.</li>
+      <li>Per ognuna calcola i bit host: <code>n = ⌈log₂(host+2)⌉</code>.</li>
+      <li>Assegna i blocchi partendo dal più grande, allineati ai confini del blocco.</li>
+    </ol>
+    <p><strong>Esempio:</strong> rete 192.168.10.0/24, devo creare:</p>
+    <ul>
+      <li>LAN-A: 60 host → /26 (62 host) → 192.168.10.0/26 (0–63)</li>
+      <li>LAN-B: 28 host → /27 (30 host) → 192.168.10.64/27 (64–95)</li>
+      <li>LAN-C: 12 host → /28 (14 host) → 192.168.10.96/28 (96–111)</li>
+      <li>Link router-router: 2 host → /30 (2 host) → 192.168.10.112/30 (112–115)</li>
+    </ul>
+    <p>Indirizzi rimanenti (116–255) restano liberi per espansioni future. <strong>Risparmio:</strong> con subnetting classful avremmo bisogno di 4 reti /24.</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <h3 style="font-size:1.3rem;margin-bottom:1rem;color:var(--accent)">Protocolli di supporto</h3>
+
+  <div class="grid g2" style="margin-bottom:1.25rem">
+    <div class="box">
+      <div class="box-title">DHCP — Dynamic Host Configuration Protocol</div>
+      <p style="font-family:var(--serif);margin-bottom:.8rem">Assegna automaticamente IP, subnet mask, default gateway, DNS al client.</p>
+      <div class="proto-step">
+        <span class="proto-num">1·DISCOVER</span>
+        <span class="proto-text">Il client invia <strong>broadcast UDP</strong> (porta 67) chiedendo un server DHCP.</span>
+      </div>
+      <div class="proto-step">
+        <span class="proto-num">2·OFFER</span>
+        <span class="proto-text">Il server risponde offrendo un IP e i parametri.</span>
+      </div>
+      <div class="proto-step">
+        <span class="proto-num">3·REQUEST</span>
+        <span class="proto-text">Il client richiede formalmente l'IP offerto.</span>
+      </div>
+      <div class="proto-step">
+        <span class="proto-num">4·ACK</span>
+        <span class="proto-text">Il server conferma l'assegnazione con un <em>lease</em> (tempo di validità).</span>
+      </div>
+      <p style="font-family:var(--serif);font-size:.88rem;color:rgba(10,10,15,.6);margin-top:.6rem"><em>"DORA" = Discover, Offer, Request, Acknowledge.</em></p>
+    </div>
+    <div class="box">
+      <div class="box-title">ARP — Address Resolution Protocol</div>
+      <p style="font-family:var(--serif);margin-bottom:.8rem">In una LAN i frame Ethernet usano indirizzi <strong>MAC</strong>, non IP. ARP traduce IP → MAC.</p>
+      <div class="proto-step">
+        <span class="proto-num">1·Cache</span>
+        <span class="proto-text">L'host controlla la propria <strong>ARP cache</strong> per l'IP destinatario.</span>
+      </div>
+      <div class="proto-step">
+        <span class="proto-num">2·Request</span>
+        <span class="proto-text">Se non c'è, invia <strong>ARP Request</strong> in broadcast: <em>"chi ha IP 192.168.1.5?"</em></span>
+      </div>
+      <div class="proto-step">
+        <span class="proto-num">3·Reply</span>
+        <span class="proto-text">L'host con quell'IP risponde in unicast con il suo MAC.</span>
+      </div>
+      <div class="proto-step">
+        <span class="proto-num">4·Salva</span>
+        <span class="proto-text">Il mittente salva la coppia IP-MAC nella cache (TTL tipico ~2 min).</span>
+      </div>
+      <p style="font-family:var(--serif);font-size:.88rem;color:rgba(10,10,15,.6);margin-top:.6rem">Comando: <code>arp -a</code> per visualizzare la cache.</p>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <h3 style="font-size:1.3rem;margin-bottom:1rem;color:var(--accent)">TCP vs UDP — livello di trasporto</h3>
+
+  <div class="grid g2" style="margin-bottom:1.25rem">
+    <div class="box">
+      <span class="badge b-blue">UDP — User Datagram Protocol</span>
+      <h3>Connectionless · Best effort</h3>
+      <p style="font-family:var(--serif);margin-bottom:.8rem">Nessuna connessione, nessuna garanzia di consegna. Velocità massima, overhead minimo.</p>
+      <p style="font-size:.85rem;font-family:var(--mono);color:rgba(10,10,15,.5);margin-bottom:.6rem">Header solo 8 byte:</p>
+      <div class="header-fields">
+        <div class="hf hf-c1"><span class="hf-bits">16 bit</span><span class="hf-name">Source Port</span></div>
+        <div class="hf hf-c1"><span class="hf-bits">16 bit</span><span class="hf-name">Dest. Port</span></div>
+        <div class="hf hf-c2"><span class="hf-bits">16 bit</span><span class="hf-name">Length</span></div>
+        <div class="hf hf-c2"><span class="hf-bits">16 bit</span><span class="hf-name">Checksum</span></div>
+      </div>
+      <p style="font-family:var(--serif);font-size:.88rem;color:rgba(10,10,15,.65);margin-top:.8rem"><strong>Usi tipici:</strong> DNS, DHCP, VoIP, streaming live, gaming online — applicazioni che preferiscono la velocità all'affidabilità.</p>
+    </div>
+    <div class="box">
+      <span class="badge b-teal">TCP — Transmission Control Protocol</span>
+      <h3>Connection-oriented · Affidabile</h3>
+      <p style="font-family:var(--serif);margin-bottom:.8rem">Connessione, garanzia di consegna in ordine, controllo di flusso e congestione tramite sliding window.</p>
+      <p style="font-size:.85rem;font-family:var(--mono);color:rgba(10,10,15,.5);margin-bottom:.6rem">Header 20+ byte:</p>
+      <div class="header-fields">
+        <div class="hf hf-c2"><span class="hf-bits">16 b</span><span class="hf-name">Src Port</span></div>
+        <div class="hf hf-c2"><span class="hf-bits">16 b</span><span class="hf-name">Dst Port</span></div>
+      </div>
+      <div class="header-fields" style="margin-top:2px">
+        <div class="hf hf-c3"><span class="hf-bits">32 bit</span><span class="hf-name">Sequence Number</span></div>
+      </div>
+      <div class="header-fields" style="margin-top:2px">
+        <div class="hf hf-c4"><span class="hf-bits">32 bit</span><span class="hf-name">Acknowledgment Number</span></div>
+      </div>
+      <div class="header-fields" style="margin-top:2px">
+        <div class="hf hf-c5"><span class="hf-bits">8 b</span><span class="hf-name">HLen+Flags</span></div>
+        <div class="hf hf-c5"><span class="hf-bits">16 b</span><span class="hf-name">Window</span></div>
+        <div class="hf hf-c5"><span class="hf-bits">16 b</span><span class="hf-name">Checksum</span></div>
+      </div>
+      <p style="font-family:var(--serif);font-size:.88rem;color:rgba(10,10,15,.65);margin-top:.8rem"><strong>Usi tipici:</strong> HTTP/HTTPS, SMTP, FTP, SSH — quando l'affidabilità è essenziale.</p>
+    </div>
+  </div>
+
+  <div class="explain-box">
+    <h4>🤝 Three-way handshake (apertura connessione TCP)</h4>
+    <ol>
+      <li><strong>SYN:</strong> il client invia segmento con flag SYN=1 e Sequence Number iniziale (ISN<sub>c</sub>).</li>
+      <li><strong>SYN-ACK:</strong> il server risponde con SYN=1, ACK=1, ISN<sub>s</sub>, ACK# = ISN<sub>c</sub>+1.</li>
+      <li><strong>ACK:</strong> il client invia ACK=1, ACK# = ISN<sub>s</sub>+1. La connessione è aperta.</li>
+    </ol>
+    <p>Dopo questo scambio entrambi i lati conoscono i numeri di sequenza dell'altro e possono cominciare a scambiare dati.</p>
+    <h4 style="margin-top:1rem">👋 Svincolo connessione (graceful close)</h4>
+    <p>Avviene tipicamente con un <strong>four-way handshake</strong>: ciascun lato chiude la propria direzione indipendentemente.</p>
+    <ol>
+      <li><strong>FIN</strong> dal lato che vuole chiudere.</li>
+      <li><strong>ACK</strong> dall'altro lato.</li>
+      <li>L'altro lato eventualmente invia il proprio <strong>FIN</strong> quando ha finito.</li>
+      <li>Il primo lato risponde con <strong>ACK</strong> e la connessione si chiude (TIME_WAIT per ~2·MSL).</li>
+    </ol>
+  </div>
+
+  <div class="box" style="margin-bottom:1.25rem">
+    <div class="box-title">Sliding window — controllo di flusso TCP</div>
+    <p style="font-family:var(--serif);margin-bottom:.6rem">Il ricevitore annuncia nella <strong>Window Size</strong> dell'header quanti byte è disposto ad accettare. Il mittente non può inviare più di Window byte non confermati.</p>
+    <p style="font-family:var(--serif);font-size:.92rem">La "finestra" scorre man mano che arrivano ACK. Permette di sfruttare tutta la banda disponibile (pipeline di segmenti) senza sommergere il ricevitore.</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <h3 style="font-size:1.3rem;margin-bottom:1rem;color:var(--accent)">Strumenti diagnostici</h3>
+
+  <div class="grid g2">
+    <div class="box">
+      <span class="badge b-orange">ICMP</span>
+      <h3>Internet Control Message Protocol</h3>
+      <p style="font-family:var(--serif)">Messaggi di errore e diagnostica del livello IP. Tipi notevoli:</p>
+      <ul style="font-family:var(--serif);font-size:.93rem;padding-left:1.2rem;margin-top:.5rem">
+        <li><strong>Echo Request / Reply</strong> → ping</li>
+        <li><strong>Destination Unreachable</strong> → host/rete irraggiungibile</li>
+        <li><strong>Time Exceeded</strong> → TTL scaduto (base del traceroute)</li>
+        <li><strong>Redirect</strong> → instradamento migliore disponibile</li>
+      </ul>
+    </div>
+    <div class="box">
+      <span class="badge b-purple">Comandi utili</span>
+      <h3>Network toolkit</h3>
+      <div class="code-block" style="margin-top:.6rem"><span class="c-com"># risolvere un host e testarne la raggiungibilità</span>
+<span class="c-fn">ping</span> <span class="c-str">www.google.com</span>
+
+<span class="c-com"># tracciare il percorso pacchetto-pacchetto</span>
+<span class="c-fn">traceroute</span> <span class="c-str">8.8.8.8</span>      <span class="c-com"># linux/mac</span>
+<span class="c-fn">tracert</span> <span class="c-str">8.8.8.8</span>          <span class="c-com"># windows</span>
+
+<span class="c-com"># vedere la propria configurazione IP</span>
+<span class="c-fn">ip a</span>                       <span class="c-com"># linux</span>
+<span class="c-fn">ipconfig</span> <span class="c-kw">/all</span>             <span class="c-com"># windows</span>
+
+<span class="c-com"># cache ARP</span>
+<span class="c-fn">arp</span> <span class="c-kw">-a</span>
+
+<span class="c-com"># connessioni aperte</span>
+<span class="c-fn">netstat</span> <span class="c-kw">-an</span></div>
+    </div>
+  </div>
+    </section>
+    <nav class="pagenav"><a class="prev" href="onde-antenne.html"><span class="pn-dir">← Precedente</span><span class="pn-title">📡 Onde & Antenne</span></a><a class="next" href="switch-vlan.html"><span class="pn-dir">Successivo →</span><span class="pn-title">🔀 Switch & VLAN</span></a></nav>
+  </div>
+</main>
+
+<footer>
+  Telecomunicazioni · 5F 2025/26 · TCP/IP
+</footer>
+</body>
+</html>
