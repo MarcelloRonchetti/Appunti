@@ -1,0 +1,2479 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crittografia - Guida Completa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-card: #1a1a2e;
+            --bg-card-hover: #22223a;
+            --accent-blue: #4f8cff;
+            --accent-purple: #a855f7;
+            --accent-green: #22c55e;
+            --accent-orange: #f97316;
+            --accent-red: #ef4444;
+            --accent-cyan: #06b6d4;
+            --accent-pink: #ec4899;
+            --text-primary: #e2e8f0;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --border-color: #2a2a3e;
+            --gradient-1: linear-gradient(135deg, #4f8cff, #a855f7);
+            --gradient-2: linear-gradient(135deg, #22c55e, #06b6d4);
+            --gradient-3: linear-gradient(135deg, #f97316, #ef4444);
+            --gradient-4: linear-gradient(135deg, #ec4899, #a855f7);
+            --gradient-5: linear-gradient(135deg, #06b6d4, #22c55e);
+            --shadow-glow: 0 0 40px rgba(79, 140, 255, 0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        /* Animated Background */
+        .bg-grid {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(circle at 25% 25%, rgba(79, 140, 255, 0.03) 0%, transparent 50%),
+                radial-gradient(circle at 75% 75%, rgba(168, 85, 247, 0.03) 0%, transparent 50%),
+                radial-gradient(circle at 50% 50%, rgba(34, 197, 94, 0.02) 0%, transparent 50%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .bg-grid::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(rgba(79, 140, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(79, 140, 255, 0.03) 1px, transparent 1px);
+            background-size: 60px 60px;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(10, 10, 15, 0.85);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-color);
+            padding: 0 2rem;
+            transition: all 0.3s ease;
+        }
+
+        nav.scrolled {
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 70px;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 800;
+            font-size: 1.3rem;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-logo svg {
+            width: 32px;
+            height: 32px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 8px;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 500;
+            padding: 8px 14px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--text-primary);
+            background: rgba(79, 140, 255, 0.1);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            z-index: 1;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 120px 2rem 80px;
+        }
+
+        .hero-content {
+            max-width: 900px;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(79, 140, 255, 0.1);
+            border: 1px solid rgba(79, 140, 255, 0.2);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--accent-blue);
+            margin-bottom: 2rem;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #fff 0%, #4f8cff 50%, #a855f7 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            max-width: 650px;
+            margin: 0 auto 3rem;
+            line-height: 1.8;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1rem;
+            margin-top: 3rem;
+        }
+
+        .hero-stat {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 1.5rem 1rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .hero-stat:hover {
+            border-color: var(--accent-blue);
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .hero-stat .number {
+            font-size: 2rem;
+            font-weight: 800;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-stat .label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+
+        /* Sections */
+        .section {
+            position: relative;
+            z-index: 1;
+            padding: 100px 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            border-radius: 14px;
+            font-weight: 800;
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .section-header h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+
+        .section-header p {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Cards */
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--gradient-1);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .card:hover {
+            border-color: rgba(79, 140, 255, 0.3);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .card:hover::before {
+            opacity: 1;
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .card h3 .icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .card p, .card li {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .card ul li {
+            padding: 8px 0;
+            padding-left: 24px;
+            position: relative;
+        }
+
+        .card ul li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--accent-blue);
+            font-weight: 600;
+        }
+
+        /* Diagram Containers */
+        .diagram-container {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 2rem;
+            margin: 2rem 0;
+            overflow-x: auto;
+        }
+
+        .diagram-container svg {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Comparison Grid */
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .comparison-grid {
+                grid-template-columns: 1fr;
+            }
+            .nav-links {
+                display: none;
+            }
+        }
+
+        .comparison-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .comparison-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+        }
+
+        .comparison-card.symmetric::before {
+            background: var(--gradient-1);
+        }
+
+        .comparison-card.asymmetric::before {
+            background: var(--gradient-2);
+        }
+
+        .comparison-card h4 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Steps */
+        .steps-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .step {
+            display: flex;
+            gap: 1.5rem;
+            align-items: flex-start;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 1.5rem 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .step:hover {
+            border-color: rgba(79, 140, 255, 0.3);
+            transform: translateX(8px);
+        }
+
+        .step-number {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+
+        .step-content h4 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .step-content p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* Code Blocks */
+        .code-block {
+            background: #0d1117;
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            overflow: hidden;
+            margin: 1.5rem 0;
+        }
+
+        .code-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 20px;
+            background: rgba(255, 255, 255, 0.03);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .code-header span {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .code-dots {
+            display: flex;
+            gap: 6px;
+        }
+
+        .code-dots span {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+
+        .code-dots span:nth-child(1) { background: #ef4444; }
+        .code-dots span:nth-child(2) { background: #f59e0b; }
+        .code-dots span:nth-child(3) { background: #22c55e; }
+
+        pre {
+            padding: 1.5rem;
+            overflow-x: auto;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            line-height: 1.8;
+            color: #e2e8f0;
+        }
+
+        .keyword { color: #ff7b72; }
+        .function { color: #d2a8ff; }
+        .string { color: #a5d6ff; }
+        .comment { color: #8b949e; }
+        .number { color: #79c0ff; }
+        .variable { color: #ffa657; }
+
+        /* Flow Diagram */
+        .flow-diagram {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .flow-box {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 14px;
+            padding: 1.2rem 1.5rem;
+            text-align: center;
+            min-width: 140px;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .flow-box:hover {
+            transform: scale(1.05);
+            border-color: var(--accent-blue);
+        }
+
+        .flow-box.highlight {
+            border-color: var(--accent-blue);
+            box-shadow: 0 0 20px rgba(79, 140, 255, 0.2);
+        }
+
+        .flow-box .label {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 4px;
+        }
+
+        .flow-box .value {
+            font-weight: 700;
+            font-size: 1rem;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .flow-arrow {
+            color: var(--accent-blue);
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        /* Table */
+        .styled-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin: 2rem 0;
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+        }
+
+        .styled-table thead {
+            background: var(--bg-card);
+        }
+
+        .styled-table th {
+            padding: 16px 20px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: var(--text-primary);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .styled-table td {
+            padding: 14px 20px;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            border-bottom: 1px solid rgba(42, 42, 62, 0.5);
+            background: var(--bg-secondary);
+        }
+
+        .styled-table tbody tr:hover td {
+            background: var(--bg-card);
+        }
+
+        /* Key Concept Box */
+        .key-concept {
+            background: linear-gradient(135deg, rgba(79, 140, 255, 0.1), rgba(168, 85, 247, 0.1));
+            border: 1px solid rgba(79, 140, 255, 0.2);
+            border-radius: 16px;
+            padding: 2rem;
+            margin: 2rem 0;
+            position: relative;
+        }
+
+        .key-concept::before {
+            content: '💡';
+            position: absolute;
+            top: -14px;
+            left: 24px;
+            font-size: 1.5rem;
+            background: var(--bg-primary);
+            padding: 0 8px;
+        }
+
+        .key-concept h4 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 0.8rem;
+            color: var(--accent-blue);
+        }
+
+        .key-concept p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        /* Warning Box */
+        .warning-box {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.2);
+            border-radius: 16px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .warning-box::before {
+            content: '⚠️';
+            font-size: 1.5rem;
+            display: block;
+            margin-bottom: 0.8rem;
+        }
+
+        .warning-box h4 {
+            color: var(--accent-red);
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .warning-box p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        /* Success Box */
+        .success-box {
+            background: rgba(34, 197, 94, 0.1);
+            border: 1px solid rgba(34, 197, 94, 0.2);
+            border-radius: 16px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .success-box::before {
+            content: '✅';
+            font-size: 1.5rem;
+            display: block;
+            margin-bottom: 0.8rem;
+        }
+
+        .success-box h4 {
+            color: var(--accent-green);
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Interactive Tabs */
+        .tabs {
+            display: flex;
+            gap: 4px;
+            margin-bottom: 2rem;
+            background: var(--bg-secondary);
+            border-radius: 14px;
+            padding: 4px;
+            border: 1px solid var(--border-color);
+            flex-wrap: wrap;
+        }
+
+        .tab-btn {
+            padding: 10px 20px;
+            border: none;
+            background: transparent;
+            color: var(--text-secondary);
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .tab-btn.active {
+            background: var(--accent-blue);
+            color: white;
+        }
+
+        .tab-btn:hover:not(.active) {
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text-primary);
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Formula */
+        .formula {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem 2rem;
+            margin: 1rem 0;
+            text-align: center;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.1rem;
+            color: var(--accent-cyan);
+            overflow-x: auto;
+        }
+
+        /* Badge */
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 4px 12px;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .badge-blue { background: rgba(79, 140, 255, 0.15); color: var(--accent-blue); }
+        .badge-green { background: rgba(34, 197, 94, 0.15); color: var(--accent-green); }
+        .badge-orange { background: rgba(249, 115, 22, 0.15); color: var(--accent-orange); }
+        .badge-red { background: rgba(239, 68, 68, 0.15); color: var(--accent-red); }
+        .badge-purple { background: rgba(168, 85, 247, 0.15); color: var(--accent-purple); }
+
+        /* Footer */
+        footer {
+            position: relative;
+            z-index: 1;
+            border-top: 1px solid var(--border-color);
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        footer p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        /* Scroll animations */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Interactive DH Visualization */
+        .dh-viz {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 2rem;
+        }
+
+        .dh-actors {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 800px;
+            position: relative;
+        }
+
+        .dh-actor {
+            text-align: center;
+            z-index: 2;
+        }
+
+        .dh-actor-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin: 0 auto 0.8rem;
+            border: 2px solid var(--border-color);
+        }
+
+        .dh-actor-icon.alice {
+            background: rgba(79, 140, 255, 0.15);
+            border-color: var(--accent-blue);
+        }
+
+        .dh-actor-icon.bob {
+            background: rgba(168, 85, 247, 0.15);
+            border-color: var(--accent-purple);
+        }
+
+        .dh-actor-icon.eve {
+            background: rgba(239, 68, 68, 0.15);
+            border-color: var(--accent-red);
+        }
+
+        .dh-actor-name {
+            font-weight: 700;
+            font-size: 1rem;
+        }
+
+        .dh-actor-secret {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .dh-channel {
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            right: 10%;
+            height: 4px;
+            background: var(--border-color);
+            transform: translateY(-50%);
+            z-index: 1;
+        }
+
+        .dh-channel.active {
+            background: var(--gradient-1);
+        }
+
+        .dh-message {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            padding: 6px 14px;
+            border-radius: 8px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            font-weight: 600;
+            z-index: 3;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: translateY(-50%) scale(1); }
+            50% { transform: translateY(-50%) scale(1.05); }
+        }
+
+        .dh-steps-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .dh-step-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem 1.5rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .dh-step-item:hover,
+        .dh-step-item.active {
+            border-color: var(--accent-blue);
+            background: rgba(79, 140, 255, 0.05);
+        }
+
+        .dh-step-item .step-num {
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            background: var(--accent-blue);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.85rem;
+            flex-shrink: 0;
+        }
+
+        .dh-step-item .step-text {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .dh-step-item .step-text strong {
+            color: var(--text-primary);
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        /* RSA Key Diagram */
+        .rsa-keys {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            gap: 1.5rem;
+            align-items: center;
+            margin: 2rem 0;
+        }
+
+        .rsa-key-box {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .rsa-key-box h4 {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .rsa-key-box .key-value {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            color: var(--accent-cyan);
+            word-break: break-all;
+        }
+
+        .rsa-arrow {
+            font-size: 2rem;
+            color: var(--accent-blue);
+        }
+
+        @media (max-width: 768px) {
+            .rsa-keys {
+                grid-template-columns: 1fr;
+            }
+            .rsa-arrow {
+                transform: rotate(90deg);
+            }
+        }
+
+        /* Hash visualization */
+        .hash-demo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 2rem;
+        }
+
+        .hash-input-box {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .hash-input-box label {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .hash-input-box input,
+        .hash-input-box textarea {
+            width: 100%;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 12px 16px;
+            color: var(--text-primary);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        .hash-input-box input:focus,
+        .hash-input-box textarea:focus {
+            border-color: var(--accent-blue);
+        }
+
+        .hash-output {
+            width: 100%;
+            max-width: 600px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 16px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            color: var(--accent-green);
+            word-break: break-all;
+            min-height: 50px;
+        }
+
+        .hash-btn {
+            background: var(--gradient-1);
+            border: none;
+            color: white;
+            padding: 12px 32px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .hash-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(79, 140, 255, 0.3);
+        }
+
+        /* Avalanche visualization */
+        .avalanche-grid {
+            display: grid;
+            grid-template-columns: repeat(16, 1fr);
+            gap: 4px;
+            max-width: 400px;
+            margin: 1rem auto;
+        }
+
+        .avalanche-bit {
+            width: 100%;
+            aspect-ratio: 1;
+            border-radius: 3px;
+            transition: background-color 0.3s ease;
+        }
+
+        .avalanche-bit.zero { background: rgba(79, 140, 255, 0.2); }
+        .avalanche-bit.one { background: var(--accent-blue); }
+        .avalanche-bit.changed { background: var(--accent-orange); }
+
+        /* Signature Flow */
+        .sig-flow {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            padding: 2rem;
+        }
+
+        .sig-row {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .sig-box {
+            padding: 1rem 1.5rem;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-align: center;
+            min-width: 120px;
+        }
+
+        .sig-box.encrypt { background: rgba(79, 140, 255, 0.15); border: 1px solid var(--accent-blue); }
+        .sig-box.decrypt { background: rgba(34, 197, 94, 0.15); border: 1px solid var(--accent-green); }
+        .sig-box.sign { background: rgba(249, 115, 22, 0.15); border: 1px solid var(--accent-orange); }
+        .sig-box.verify { background: rgba(168, 85, 247, 0.15); border: 1px solid var(--accent-purple); }
+
+        .sig-arrow {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+        }
+
+        /* Scroll to top */
+        .scroll-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 48px;
+            height: 48px;
+            border-radius: 14px;
+            background: var(--accent-blue);
+            border: none;
+            color: white;
+            font-size: 1.2rem;
+            cursor: pointer;
+            z-index: 100;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .scroll-top.visible {
+            display: flex;
+        }
+
+        .scroll-top:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 25px rgba(79, 140, 255, 0.4);
+        }
+
+        /* Print styles */
+        @media print {
+            nav, .scroll-top, .bg-grid { display: none; }
+            body { background: white; color: black; }
+            .card, .comparison-card, .diagram-container { 
+                border: 1px solid #ddd; 
+                background: white;
+                break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-grid"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <svg viewBox="0 0 32 32" fill="none">
+                    <rect width="32" height="32" rx="8" fill="url(#grad1)"/>
+                    <path d="M10 16L14 20L22 12" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <defs>
+                        <linearGradient id="grad1" x1="0" y1="0" x2="32" y2="32">
+                            <stop stop-color="#4f8cff"/>
+                            <stop offset="1" stop-color="#a855f7"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                CryptoGuide
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html" style="color:var(--accent-blue);font-weight:600">← Home</a></li>
+                <li><a href="#intro">Intro</a></li>
+                <li><a href="#domanda2">D2</a></li>
+                <li><a href="#domanda3">D3</a></li>
+                <li><a href="#domanda4">D4</a></li>
+                <li><a href="#domanda5">D5</a></li>
+                <li><a href="#domanda6">D6</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="intro">
+        <div class="hero-content">
+            <div class="hero-badge">📚 Guida Completa alla Crittografia</div>
+            <h1>Principi Fondamentali di Crittografia</h1>
+            <p>Una guida interattiva e completa che copre tutti i concetti necessari per comprendere la crittografia moderna, da simmetrica a asimmetrica, dagli hash a Diffie-Hellman e alle firme digitali.</p>
+            <div class="hero-grid">
+                <div class="hero-stat">
+                    <div class="number">5</div>
+                    <div class="label">Argomenti chiave</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="number">∞</div>
+                    <div class="label">Esempi pratici</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="number">3</div>
+                    <div class="label">Tipi di crittografia</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="number">100%</div>
+                    <div class="label">Interattivo</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Domanda 2: Simmetrica vs Asimmetrica -->
+    <section class="section" id="domanda2">
+        <div class="section-header animate-on-scroll">
+            <div class="section-number" style="background: var(--gradient-1); color: white;">D2</div>
+            <h2 style="background: var(--gradient-1); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Crittografia Simmetrica vs Asimmetrica</h2>
+            <p>Descrivi la differenza principale tra crittografia simmetrica e asimmetrica e fai un esempio per ciascuna tipologia.</p>
+        </div>
+
+        <div class="comparison-grid animate-on-scroll">
+            <!-- Simmetrica -->
+            <div class="comparison-card symmetric">
+                <h4>
+                    <span class="icon" style="background: rgba(79, 140, 255, 0.15); color: var(--accent-blue);">🔑</span>
+                    Crittografia Simmetrica
+                </h4>
+                <div class="badge badge-blue">Una sola chiave</div>
+                <p style="margin-top: 1rem; color: var(--text-secondary);">
+                    Utilizza <strong style="color: var(--text-primary);">la stessa chiave</strong> sia per cifrare che per decifrare il messaggio. Entrambe le parti devono condividere segretamente questa chiave prima della comunicazione.
+                </p>
+                <div class="flow-diagram" style="padding: 1.5rem 0;">
+                    <div class="flow-box">
+                        <div class="label">Messaggio</div>
+                        <div class="value">Plaintext</div>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-box highlight">
+                        <div class="label">Chiave Segreta</div>
+                        <div class="value">K</div>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-box">
+                        <div class="label">Cifrato</div>
+                        <div class="value">Ciphertext</div>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-box highlight">
+                        <div class="label">Chiave Segreta</div>
+                        <div class="value">K</div>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-box">
+                        <div class="label">Messaggio</div>
+                        <div class="value">Plaintext</div>
+                    </div>
+                </div>
+                <div class="card" style="margin-top: 1.5rem; padding: 1.5rem;">
+                    <h4 style="font-size: 1.1rem; margin-bottom: 0.8rem;">Esempi</h4>
+                    <ul>
+                        <li><strong>AES</strong> (Advanced Encryption Standard) — lo standard attuale</li>
+                        <li><strong>DES / 3DES</strong> — predecessori storici</li>
+                        <li><strong>ChaCha20</strong> — cifrario a flusso moderno</li>
+                        <li>Utilizzato per: cifrare file, dischi, traffico TLS</li>
+                    </ul>
+                </div>
+                <div class="key-concept" style="margin-top: 1.5rem;">
+                    <h4>Vantaggi</h4>
+                    <p>Velocità elevata, efficienza computazionale, ideale per grandi volumi di dati.</p>
+                </div>
+                <div class="warning-box" style="margin-top: 1rem;">
+                    <h4>Problema</h4>
+                    <p>Come scambiare la chiave in modo sicuro senza che venga intercettata?</p>
+                </div>
+            </div>
+
+            <!-- Asimmetrica -->
+            <div class="comparison-card asymmetric">
+                <h4>
+                    <span class="icon" style="background: rgba(34, 197, 94, 0.15); color: var(--accent-green);">🔐</span>
+                    Crittografia Asimmetrica
+                </h4>
+                <div class="badge badge-green">Coppia di chiavi</div>
+                <p style="margin-top: 1rem; color: var(--text-secondary);">
+                    Utilizza una <strong style="color: var(--text-primary);">coppia di chiavi</strong>: una pubblica (nota a tutti) per cifrare e una privata (segreta) per decifrare. La chiave pubblica può essere distribuita liberamente.
+                </p>
+                <div class="flow-diagram" style="padding: 1.5rem 0;">
+                    <div class="flow-box">
+                        <div class="label">Messaggio</div>
+                        <div class="value">Plaintext</div>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-box highlight">
+                        <div class="label">Chiave Pubblica</div>
+                        <div class="value">Pub<sub>B</sub></div>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-box">
+                        <div class="label">Cifrato</div>
+                        <div class="value">Ciphertext</div>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-box highlight">
+                        <div class="label">Chiave Privata</div>
+                        <div class="value">Priv<sub>B</sub></div>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-box">
+                        <div class="label">Messaggio</div>
+                        <div class="value">Plaintext</div>
+                    </div>
+                </div>
+                <div class="card" style="margin-top: 1.5rem; padding: 1.5rem;">
+                    <h4 style="font-size: 1.1rem; margin-bottom: 0.8rem;">Esempi</h4>
+                    <ul>
+                        <li><strong>RSA</strong> — il più diffuso (Rivest, Shamir, Adleman)</li>
+                        <li><strong>ECC</strong> (Elliptic Curve Cryptography) — chiavi più corte</li>
+                        <li><strong>DSA</strong> — per firme digitali</li>
+                        <li>Utilizzato per: scambio chiavi, firme, certificati SSL/TLS</li>
+                    </ul>
+                </div>
+                <div class="key-concept" style="margin-top: 1.5rem;">
+                    <h4>Vantaggi</h4>
+                    <p>Risolve il problema dello scambio delle chiavi, abilita firme digitali e autenticazione.</p>
+                </div>
+                <div class="warning-box" style="margin-top: 1rem;">
+                    <h4>Svantaggio</h4>
+                    <p>Molto più lento della crittografia simmetrica (100-1000x). Per questo si usa ibrida.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabella di confronto -->
+        <div class="animate-on-scroll">
+            <h3 style="text-align: center; margin-bottom: 1.5rem; font-size: 1.3rem;">Tabella di Confronto</h3>
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Caratteristica</th>
+                        <th>Simmetrica</th>
+                        <th>Asimmetrica</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Chiavi utilizzate</strong></td>
+                        <td>1 chiave segreta condivisa</td>
+                        <td>2 chiavi (pubblica + privata)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Velocità</strong></td>
+                        <td><span class="badge badge-green">Molto veloce</span></td>
+                        <td><span class="badge badge-orange">Lenta</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Lunghezza chiavi</strong></td>
+                        <td>128-256 bit (AES)</td>
+                        <td>2048-4096 bit (RSA)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Scambio chiavi</strong></td>
+                        <td>Problema aperto</td>
+                        <td>Non necessario (pubblica è aperta)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Uso principale</strong></td>
+                        <td>Cifratura dati massivi</td>
+                        <td>Scambio chiavi, firme, certificati</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Algoritmi</strong></td>
+                        <td>AES, 3DES, ChaCha20</td>
+                        <td>RSA, ECC, DSA, ElGamal</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Crittografia Ibrida -->
+        <div class="animate-on-scroll" style="margin-top: 3rem;">
+            <div class="key-concept">
+                <h4>🔗 Crittografia Ibrida — L'approccio reale</h4>
+                <p>
+                    Nella pratica si usa un <strong>approccio ibrido</strong>: la crittografia asimmetrica viene usata solo per scambiare in modo sicuro una chiave di sessione simmetrica. Poi la comunicazione prosegue con la crittografia simmetrica (molto più veloce). Questo è esattamente come funziona <strong>TLS/HTTPS</strong>!
+                </p>
+            </div>
+            <div class="flow-diagram">
+                <div class="flow-box">
+                    <div class="label">1. Crea chiave</div>
+                    <div class="value">AES-256 Key</div>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-box highlight">
+                    <div class="label">2. Cifra con</div>
+                    <div class="value">RSA PubKey</div>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-box">
+                    <div class="label">3. Trasmetti</div>
+                    <div class="value">Chiave cifrata</div>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-box highlight">
+                    <div class="label">4. Decifra con</div>
+                    <div class="value">RSA PrivKey</div>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-box">
+                    <div class="label">5. Comunica con</div>
+                    <div class="value">AES-256</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Domanda 3: RSA -->
+    <section class="section" id="domanda3">
+        <div class="section-header animate-on-scroll">
+            <div class="section-number" style="background: var(--gradient-2); color: white;">D3</div>
+            <h2 style="background: var(--gradient-2); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Algoritmo RSA</h2>
+            <p>Elenca i passaggi fondamentali dell'algoritmo RSA, spiegando il ruolo della chiave pubblica e della chiave privata.</p>
+        </div>
+
+        <div class="card animate-on-scroll">
+            <h3>
+                <span class="icon" style="background: rgba(34, 197, 94, 0.15); color: var(--accent-green);">🔐</span>
+                Cos'è RSA?
+            </h3>
+            <p>
+                <strong>RSA</strong> (Rivest-Shamir-Adleman, 1978) è uno dei primi e più diffusi algoritmi di crittografia a chiave pubblica. Si basa sulla difficoltà matematica di <strong>fattorizzare numeri interi molto grandi</strong> nei loro fattori primi. La sicurezza di RSA deriva dal fatto che è facile moltiplicare due numeri primi enormi, ma estremamente difficile risalire ai fattori partendo dal prodotto.
+            </p>
+        </div>
+
+        <!-- RSA Schema Grafico -->
+        <div class="animate-on-scroll" style="margin: 2rem 0;">
+            <h3 style="text-align: center; margin-bottom: 1.5rem;">Schema Generale di RSA</h3>
+            <div class="diagram-container">
+                <svg viewBox="0 0 900 400" width="900" height="400">
+                    <!-- Background grid -->
+                    <defs>
+                        <linearGradient id="rsaGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#4f8cff"/>
+                            <stop offset="100%" stop-color="#a855f7"/>
+                        </linearGradient>
+                        <linearGradient id="rsaGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#22c55e"/>
+                            <stop offset="100%" stop-color="#06b6d4"/>
+                        </linearGradient>
+                        <linearGradient id="rsaGrad3" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#f97316"/>
+                            <stop offset="100%" stop-color="#ef4444"/>
+                        </linearGradient>
+                        <filter id="glow">
+                            <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                            <feMerge>
+                                <feMergeNode in="coloredBlur"/>
+                                <feMergeNode in="SourceGraphic"/>
+                            </feMerge>
+                        </filter>
+                    </defs>
+
+                    <!-- Phase 1: Key Generation -->
+                    <g transform="translate(50, 30)">
+                        <rect x="0" y="0" width="250" height="340" rx="16" fill="#1a1a2e" stroke="#2a2a3e" stroke-width="1"/>
+                        <rect x="0" y="0" width="250" height="40" rx="16" fill="url(#rsaGrad1)"/>
+                        <rect x="0" y="20" width="250" height="20" fill="url(#rsaGrad1)"/>
+                        <text x="125" y="28" text-anchor="middle" fill="white" font-weight="700" font-size="14">1. Generazione Chiavi</text>
+                        
+                        <text x="125" y="70" text-anchor="middle" fill="#94a3b8" font-size="11" font-weight="600">Scegli due numeri primi</text>
+                        <rect x="30" y="80" width="190" height="36" rx="8" fill="#0d1117" stroke="#4f8cff" stroke-width="1"/>
+                        <text x="125" y="103" text-anchor="middle" fill="#4f8cff" font-family="JetBrains Mono" font-size="13" font-weight="600">p = 17, q = 11</text>
+
+                        <text x="125" y="138" text-anchor="middle" fill="#94a3b8" font-size="11" font-weight="600">Calcola n = p × q</text>
+                        <rect x="30" y="148" width="190" height="36" rx="8" fill="#0d1117" stroke="#4f8cff" stroke-width="1"/>
+                        <text x="125" y="171" text-anchor="middle" fill="#4f8cff" font-family="JetBrains Mono" font-size="13" font-weight="600">n = 17 × 11 = 187</text>
+
+                        <text x="125" y="206" text-anchor="middle" fill="#94a3b8" font-size="11" font-weight="600">Calcola φ(n) = (p-1)(q-1)</text>
+                        <rect x="30" y="216" width="190" height="36" rx="8" fill="#0d1117" stroke="#4f8cff" stroke-width="1"/>
+                        <text x="125" y="239" text-anchor="middle" fill="#4f8cff" font-family="JetBrains Mono" font-size="13" font-weight="600">φ(187) = 16 × 10 = 160</text>
+
+                        <text x="125" y="274" text-anchor="middle" fill="#94a3b8" font-size="11" font-weight="600">Scegli e coprimo con φ(n)</text>
+                        <rect x="30" y="284" width="190" height="36" rx="8" fill="#0d1117" stroke="#4f8cff" stroke-width="1"/>
+                        <text x="125" y="307" text-anchor="middle" fill="#4f8cff" font-family="JetBrains Mono" font-size="13" font-weight="600">e = 7  (MCD(7,160)=1)</text>
+                    </g>
+
+                    <!-- Phase 2: Public/Private Keys -->
+                    <g transform="translate(330, 30)">
+                        <rect x="0" y="0" width="250" height="340" rx="16" fill="#1a1a2e" stroke="#2a2a3e" stroke-width="1"/>
+                        <rect x="0" y="0" width="250" height="40" rx="16" fill="url(#rsaGrad2)"/>
+                        <rect x="0" y="20" width="250" height="20" fill="url(#rsaGrad2)"/>
+                        <text x="125" y="28" text-anchor="middle" fill="white" font-weight="700" font-size="14">2. Coppia di Chiavi</text>
+
+                        <text x="125" y="70" text-anchor="middle" fill="#94a3b8" font-size="11" font-weight="600">Chiave Pubblica (e, n)</text>
+                        <rect x="20" y="80" width="210" height="80" rx="10" fill="rgba(34,197,94,0.1)" stroke="#22c55e" stroke-width="1.5"/>
+                        <text x="125" y="110" text-anchor="middle" fill="#22c55e" font-family="JetBrains Mono" font-size="11">e = 7</text>
+                        <text x="125" y="130" text-anchor="middle" fill="#22c55e" font-family="JetBrains Mono" font-size="11">n = 187</text>
+                        <text x="125" y="150" text-anchor="middle" fill="#94a3b8" font-size="9">🔓 Distribuita a tutti</text>
+
+                        <text x="125" y="195" text-anchor="middle" fill="#94a3b8" font-size="11" font-weight="600">Calcola d (inverso di e mod φ(n))</text>
+                        <rect x="30" y="205" width="190" height="36" rx="8" fill="#0d1117" stroke="#22c55e" stroke-width="1"/>
+                        <text x="125" y="228" text-anchor="middle" fill="#22c55e" font-family="JetBrains Mono" font-size="13" font-weight="600">d = 23</text>
+                        <text x="125" y="238" text-anchor="middle" fill="#94a3b8" font-size="9">(23×7=161=160+1≡1)</text>
+
+                        <text x="125" y="265" text-anchor="middle" fill="#94a3b8" font-size="11" font-weight="600">Chiave Privata (d, n)</text>
+                        <rect x="20" y="275" width="210" height="50" rx="10" fill="rgba(239,68,68,0.1)" stroke="#ef4444" stroke-width="1.5"/>
+                        <text x="125" y="295" text-anchor="middle" fill="#ef4444" font-family="JetBrains Mono" font-size="11">d = 23</text>
+                        <text x="125" y="315" text-anchor="middle" fill="#94a3b8" font-size="9">🔒 Segreta, solo per il proprietario</text>
+                    </g>
+
+                    <!-- Phase 3: Encryption/Decryption -->
+                    <g transform="translate(610, 30)">
+                        <rect x="0" y="0" width="250" height="340" rx="16" fill="#1a1a2e" stroke="#2a2a3e" stroke-width="1"/>
+                        <rect x="0" y="0" width="250" height="40" rx="16" fill="url(#rsaGrad3)"/>
+                        <rect x="0" y="20" width="250" height="20" fill="url(#rsaGrad3)"/>
+                        <text x="125" y="28" text-anchor="middle" fill="white" font-weight="700" font-size="14">3. Cifratura / Decifratura</text>
+
+                        <text x="125" y="70" text-anchor="middle" fill="#94a3b8" font-size="11" font-weight="600">Cifratura (con chiave pubblica)</text>
+                        <rect x="15" y="80" width="220" height="55" rx="8" fill="#0d1117" stroke="#f97316" stroke-width="1"/>
+                        <text x="125" y="100" text-anchor="middle" fill="#f97316" font-family="JetBrains Mono" font-size="12">C = Mᵉ mod n</text>
+                        <text x="125" y="120" text-anchor="middle" fill="#94a3b8" font-size="10">M = 88 → C = 88⁷ mod 187 = 11</text>
+
+                        <!-- Arrow -->
+                        <text x="125" y="155" text-anchor="middle" fill="#64748b" font-size="20">↓</text>
+
+                        <text x="125" y="175" text-anchor="middle" fill="#94a3b8" font-size="11" font-weight="600">Decifratura (con chiave privata)</text>
+                        <rect x="15" y="185" width="220" height="55" rx="8" fill="#0d1117" stroke="#06b6d4" stroke-width="1"/>
+                        <text x="125" y="205" text-anchor="middle" fill="#06b6d4" font-family="JetBrains Mono" font-size="12">M = Cᵈ mod n</text>
+                        <text x="125" y="225" text-anchor="middle" fill="#94a3b8" font-size="10">C = 11 → M = 11²³ mod 187 = 88</text>
+
+                        <text x="125" y="265" text-anchor="middle" fill="#94a3b8" font-size="11" font-weight="600">Proprietà fondamentale</text>
+                        <rect x="15" y="275" width="220" height="50" rx="8" fill="rgba(34,197,94,0.1)" stroke="#22c55e" stroke-width="1"/>
+                        <text x="125" y="295" text-anchor="middle" fill="#22c55e" font-family="JetBrains Mono" font-size="11">(Mᵉ) ≡ M mod n</text>
+                        <text x="125" y="315" text-anchor="middle" fill="#94a3b8" font-size="10">ed ≡ 1 (mod φ(n))</text>
+                    </g>
+
+                    <!-- Connecting arrows -->
+                    <path d="M300 200 L325 200" stroke="#64748b" stroke-width="2" marker-end="url(#arrowhead)"/>
+                    <path d="M580 200 L605 200" stroke="#64748b" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+                    <defs>
+                        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                            <polygon points="0 0, 10 3.5, 0 7" fill="#64748b"/>
+                        </marker>
+                    </defs>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Passaggi dettagliati -->
+        <div class="animate-on-scroll">
+            <h3 style="margin-bottom: 1.5rem;">Passaggi Fondamentali</h3>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number" style="background: rgba(79, 140, 255, 0.15); color: var(--accent-blue);">1</div>
+                    <div class="step-content">
+                        <h4>Scelta di due numeri primi</h4>
+                        <p>Scegliere due numeri primi grandi e distinti <strong>p</strong> e <strong>q</strong>. Nella pratica, questi numeri sono molto grandi (centinaia di cifre). Esempio didattico: p = 17, q = 11.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number" style="background: rgba(79, 140, 255, 0.15); color: var(--accent-blue);">2</div>
+                    <div class="step-content">
+                        <h4>Calcolo del modulo n</h4>
+                        <p>Calcolare <strong>n = p × q</strong>. Questo sarà il modulo usato in tutte le operazioni. Per p=17, q=11: <strong>n = 187</strong>. La sicurezza di RSA si basa sulla difficoltà di fattorizzare n nei suoi fattori primi.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number" style="background: rgba(79, 140, 255, 0.15); color: var(--accent-blue);">3</div>
+                    <div class="step-content">
+                        <h4>Calcolo della funzione di Eulero φ(n)</h4>
+                        <p>Calcolare <strong>φ(n) = (p-1)(q-1)</strong>. Per n=187: φ(187) = 16 × 10 = <strong>160</strong>. Questa funzione conta quanti numeri coprimi con n ci sono nell'intervallo [1, n-1].</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number" style="background: rgba(79, 140, 255, 0.15); color: var(--accent-blue);">4</div>
+                    <div class="step-content">
+                        <h4>Scelta dell'esponente pubblico e</h4>
+                        <p>Scegliere un intero <strong>e</strong> tale che: 1 < e < φ(n) e <strong>MCD(e, φ(n)) = 1</strong> (coprimo). Comunemente si usa e = 65537. Esempio: e = <strong>7</strong> (MCD(7, 160) = 1 ✓).</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number" style="background: rgba(168, 85, 247, 0.15); color: var(--accent-purple);">5</div>
+                    <div class="step-content">
+                        <h4>Calcolo dell'esponente privato d</h4>
+                        <p>Calcolare <strong>d</strong> tale che: <strong>ed ≡ 1 (mod φ(n))</strong>. Ovvero, d è l'inverso moltiplicativo di e modulo φ(n). Si usa l'algoritmo euclideo esteso. Per e=7, φ(n)=160: <strong>d = 23</strong> (perché 7×23 = 161 ≡ 1 mod 160).</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number" style="background: rgba(34, 197, 94, 0.15); color: var(--accent-green);">6</div>
+                    <div class="step-content">
+                        <h4>Formazione delle chiavi</h4>
+                        <p>
+                            <strong>Chiave pubblica = (e, n) = (7, 187)</strong> → distribuita a tutti<br>
+                            <strong>Chiave privata = (d, n) = (23, 187)</strong> → mantenuta segreta
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ruolo delle chiavi -->
+        <div class="animate-on-scroll" style="margin-top: 3rem;">
+            <h3 style="text-align: center; margin-bottom: 2rem;">Ruolo della Chiave Pubblica e Privata</h3>
+            <div class="comparison-grid">
+                <div class="card" style="border-left: 4px solid var(--accent-green);">
+                    <h4 style="color: var(--accent-green);">🔓 Chiave Pubblica (e, n)</h4>
+                    <ul>
+                        <li><strong>Usata per cifrare</strong> i messaggi</li>
+                        <li>Condivisa apertamente con tutti</li>
+                        <li>Chiunque può cifrare un messaggio per il proprietario</li>
+                        <li>Sola non può decifrare</li>
+                        <li>Formule: <strong>C = Mᵉ mod n</strong></li>
+                    </ul>
+                </div>
+                <div class="card" style="border-left: 4px solid var(--accent-red);">
+                    <h4 style="color: var(--accent-red);">🔒 Chiave Privata (d, n)</h4>
+                    <ul>
+                        <li><strong>Usata per decifrare</strong> i messaggi</li>
+                        <li>Deve rimanere assolutamente segreta</li>
+                        <li>Solo il proprietario può decifrare</li>
+                        <li>Usata anche per firmare digitalmente</li>
+                        <li>Formule: <strong>M = Cᵈ mod n</strong></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="formula" style="margin-top: 2rem;">
+                Proprietà matematica fondamentale: <strong>(Mᵉ) mod n = Mᵈ mod n = M mod n</strong>
+            </div>
+        </div>
+
+        <!-- Esempio numerico completo -->
+        <div class="animate-on-scroll" style="margin-top: 2rem;">
+            <h3 style="margin-bottom: 1.5rem;">Esempio Numerico Completo</h3>
+            <div class="card">
+                <p style="margin-bottom: 1rem;">Dati: <strong>p=17, q=11, n=187, φ(n)=160, e=7, d=23</strong></p>
+                
+                <div class="steps-container">
+                    <div class="step">
+                        <div class="step-number" style="background: rgba(249, 115, 22, 0.15); color: var(--accent-orange);">📝</div>
+                        <div class="step-content">
+                            <h4>Messaggio originale</h4>
+                            <p>M = 88 (il numero intero che vogliamo cifrare, deve essere &lt; n)</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number" style="background: rgba(79, 140, 255, 0.15); color: var(--accent-blue);">🔐</div>
+                        <div class="step-content">
+                            <h4>Cifratura con chiave pubblica</h4>
+                            <p>C = 88⁷ mod 187 = <strong>11</strong> (questo è il ciphertext)</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number" style="background: rgba(168, 85, 247, 0.15); color: var(--accent-purple);">🔓</div>
+                        <div class="step-content">
+                            <h4>Decifratura con chiave privata</h4>
+                            <p>M = 11²³ mod 187 = <strong>88</strong> (ritroviamo il messaggio originale!)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Domanda 4: Funzioni Hash -->
+    <section class="section" id="domanda4">
+        <div class="section-header animate-on-scroll">
+            <div class="section-number" style="background: var(--gradient-3); color: white;">D4</div>
+            <h2 style="background: var(--gradient-3); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Funzioni di Hash</h2>
+            <p>Spiega cos'è una funzione di hash e perché è importante nella sicurezza informatica.</p>
+        </div>
+
+        <div class="card animate-on-scroll">
+            <h3>
+                <span class="icon" style="background: rgba(249, 115, 22, 0.15); color: var(--accent-orange);">🔏</span>
+                Cos'è una funzione di hash?
+            </h3>
+            <p>
+                Una <strong>funzione di hash crittografica</strong> è una funzione matematica che prende in input un messaggio di lunghezza arbitraria e produce in output un'impronta digitale (<strong>digest</strong> o <strong>hash</strong>) di lunghezza fissa. È una funzione <strong>unidirezionale</strong> (one-way): è facile calcolare l'hash dato il messaggio, ma è computazionalmente impossibile risalire al messaggio dall'hash.
+            </p>
+            <div class="formula">
+                <strong>Hash</strong> = H(<strong>Messaggio</strong> di qualsiasi lunghezza) → <strong>Stringa fissa</strong> (es. 256 bit per SHA-256)
+            </div>
+        </div>
+
+        <!-- Proprietà -->
+        <div class="animate-on-scroll" style="margin-top: 2rem;">
+            <h3 style="margin-bottom: 1.5rem;">Proprietà Fondamentali</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+                <div class="card">
+                    <div class="badge badge-blue">Proprietà 1</div>
+                    <h4 style="margin-top: 0.8rem;">Determinismo</h4>
+                    <p>Lo stesso input produce sempre lo stesso output. H("ciao") sarà sempre identico.</p>
+                </div>
+                <div class="card">
+                    <div class="badge badge-green">Proprietà 2</div>
+                    <h4 style="margin-top: 0.8rem;">Resistenza alla pre-immagine</h4>
+                    <p>Dato un hash h, è computazionalmente impossibile trovare un messaggio m tale che H(m) = h.</p>
+                </div>
+                <div class="card">
+                    <div class="badge badge-orange">Proprietà 3</div>
+                    <h4 style="margin-top: 0.8rem;">Effetto valanga</h4>
+                    <p>Un singolo bit cambiato nell'input produce un hash completamente diverso e imprevedibile.</p>
+                </div>
+                <div class="card">
+                    <div class="badge badge-purple">Proprietà 4</div>
+                    <h4 style="margin-top: 0.8rem;">Resistenza alle collisioni</h4>
+                    <p>È computazionalmente impossibile trovare due messaggi diversi che producano lo stesso hash.</p>
+                </div>
+                <div class="card">
+                    <div class="badge badge-red">Proprietà 5</div>
+                    <h4 style="margin-top: 0.8rem;">Efficienza</h4>
+                    <p>Il calcolo dell'hash deve essere veloce, anche per input molto grandi.</p>
+                </div>
+                <div class="card">
+                    <div class="badge badge-blue">Proprietà 6</div>
+                    <h4 style="margin-top: 0.8rem;">Lunghezza fissa</h4>
+                    <p>L'output ha sempre la stessa lunghezza, indipendentemente dalla dimensione dell'input.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Demo interattiva hash -->
+        <div class="animate-on-scroll" style="margin-top: 3rem;">
+            <h3 style="margin-bottom: 1.5rem;">Demo Interattiva</h3>
+            <div class="card">
+                <div class="hash-demo">
+                    <div class="hash-input-box">
+                        <label>Inserisci un messaggio:</label>
+                        <input type="text" id="hashInput" placeholder="Scrivi qualcosa..." value="Ciao mondo!">
+                    </div>
+                    <button class="hash-btn" onclick="calculateHash()">Calcola SHA-256 Hash</button>
+                    <div class="hash-output" id="hashOutput">Clicca per calcolare...</div>
+                </div>
+
+                <!-- Effetto valanga -->
+                <div style="margin-top: 2rem;">
+                    <h4 style="text-align: center; margin-bottom: 1rem;">Dimostrazione Effetto Valanga</h4>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; max-width: 700px; margin: 0 auto;">
+                        <div style="text-align: center;">
+                            <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.5rem;">"Ciao mondo!"</p>
+                            <div style="background: var(--bg-secondary); border-radius: 8px; padding: 12px; font-family: 'JetBrains Mono'; font-size: 0.65rem; color: var(--accent-cyan); word-break: break-all;" id="hash1"></div>
+                        </div>
+                        <div style="text-align: center;">
+                            <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.5rem;">"Ciao mondo." (solo il punto)</p>
+                            <div style="background: var(--bg-secondary); border-radius: 8px; padding: 12px; font-family: 'JetBrains Mono'; font-size: 0.65rem; color: var(--accent-orange); word-break: break-all;" id="hash2"></div>
+                        </div>
+                    </div>
+                    <p style="text-align: center; margin-top: 1rem; color: var(--text-muted); font-size: 0.85rem;">
+                        Basta cambiare un carattere per ottenere un hash completamente diverso!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Algoritmi hash -->
+        <div class="animate-on-scroll" style="margin-top: 3rem;">
+            <h3 style="margin-bottom: 1.5rem;">Algoritmi Hash Principali</h3>
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Algoritmo</th>
+                        <th>Lunghezza Hash</th>
+                        <th>Stato</th>
+                        <th>Note</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>MD5</strong></td>
+                        <td>128 bit (32 hex)</td>
+                        <td><span class="badge badge-red">⚠️ Insecure</span></td>
+                        <td>Collisioni note. Non usare per sicurezza.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>SHA-1</strong></td>
+                        <td>160 bit (40 hex)</td>
+                        <td><span class="badge badge-orange">⚠️ Deprecato</span></td>
+                        <td>Collisioni dimostrate nel 2017 (SHAttered).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>SHA-256</strong></td>
+                        <td>256 bit (64 hex)</td>
+                        <td><span class="badge badge-green">✅ Sicuro</span></td>
+                        <td>Standard attuale, usato in Bitcoin e TLS.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>SHA-3</strong></td>
+                        <td>Variabile</td>
+                        <td><span class="badge badge-green">✅ Sicuro</span></td>
+                        <td>Architettura Keccak, alternativa a SHA-2.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Importanza -->
+        <div class="animate-on-scroll" style="margin-top: 3rem;">
+            <h3 style="margin-bottom: 1.5rem;">Perché è importante nella sicurezza?</h3>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number" style="background: rgba(34, 197, 94, 0.15); color: var(--accent-green);">✓</div>
+                    <div class="step-content">
+                        <h4>Verifica dell'integrità dei dati</h4>
+                        <p>Quando scarichi un file, il sito pubblica anche il suo hash. Basta ricalcolarlo e confrontare: se coincidono, il file non è stato manomesso o corrotto durante il trasferimento.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number" style="background: rgba(79, 140, 255, 0.15); color: var(--accent-blue);">🔑</div>
+                    <div class="step-content">
+                        <h4>Memorizzazione sicura delle password</h4>
+                        <p>I sistemi non salvano la password in chiaro, ma il suo hash (con un "salt" casuale). Al login, ricalcolano l'hash e confrontano. Anche se il database viene rubato, le password restano protette.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number" style="background: rgba(168, 85, 247, 0.15); color: var(--accent-purple);">✍️</div>
+                    <div class="step-content">
+                        <h4>Firme digitali</h4>
+                        <p>Firmare un documento enorme sarebbe lento. Si firma invece il suo hash — piccolo e di dimensione fissa — ottenendo lo stesso effetto con costo computazionale minimo.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number" style="background: rgba(249, 115, 22, 0.15); color: var(--accent-orange);">⛓️</div>
+                    <div class="step-content">
+                        <h4>Blockchain e criptovalute</h4>
+                        <p>Ogni blocco contiene l'hash del blocco precedente. Modificare un blocco cambierebbe il suo hash, invalidando tutti i blocchi successivi. Questo rende la catena a prova di manomissione.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Domanda 5: Diffie-Hellman -->
+    <section class="section" id="domanda5">
+        <div class="section-header animate-on-scroll">
+            <div class="section-number" style="background: var(--gradient-4); color: white;">D5</div>
+            <h2 style="background: var(--gradient-4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Scambio di Chiavi Diffie-Hellman</h2>
+            <p>Descrivi come funziona a livello base lo scambio di chiavi Diffie-Hellman e quale problema risolve.</p>
+        </div>
+
+        <div class="card animate-on-scroll">
+            <h3>
+                <span class="icon" style="background: rgba(236, 72, 153, 0.15); color: var(--accent-pink);">🤝</span>
+                Qual è il problema che risolve?
+            </h3>
+            <p>
+                Il protocollo <strong>Diffie-Hellman</strong> (1976) risolve il <strong>problema dello scambio delle chiavi</strong>: come possono due parti (Alice e Bob) stabilire una chiave segreta condivisa comunicando su un canale insicuro, senza aver mai condiviso un segreto in precedenza?
+            </p>
+            <p style="margin-top: 0.8rem;">
+                Prima di DH, era necessario scambiare la chiave segreta in modo sicuro (di persona, per corriere, ecc.). DH permette di farlo <strong>su Internet</strong>, anche se un attaccante (Eve) intercetta tutte le comunicazioni!
+            </p>
+        </div>
+
+        <!-- Diagramma Diffie-Hellman -->
+        <div class="animate-on-scroll" style="margin-top: 3rem;">
+            <h3 style="text-align: center; margin-bottom: 1.5rem;">Schema del Protocollo Diffie-Hellman</h3>
+            <div class="diagram-container">
+                <svg viewBox="0 0 900 500" width="900" height="500">
+                    <defs>
+                        <linearGradient id="dhGradAlice" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#4f8cff"/>
+                            <stop offset="100%" stop-color="#2563eb"/>
+                        </linearGradient>
+                        <linearGradient id="dhGradBob" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#a855f7"/>
+                            <stop offset="100%" stop-color="#7c3aed"/>
+                        </linearGradient>
+                        <linearGradient id="dhGradSecret" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#22c55e"/>
+                            <stop offset="50%" stop-color="#06b6d4"/>
+                            <stop offset="100%" stop-color="#22c55e"/>
+                        </linearGradient>
+                        <linearGradient id="dhGradEve" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#ef4444"/>
+                            <stop offset="100%" stop-color="#dc2626"/>
+                        </linearGradient>
+                        <filter id="dhGlow">
+                            <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+                            <feMerge>
+                                <feMergeNode in="coloredBlur"/>
+                                <feMergeNode in="SourceGraphic"/>
+                            </feMerge>
+                        </filter>
+                    </defs>
+
+                    <!-- Background -->
+                    <rect x="0" y="0" width="900" height="500" fill="#0d1117" rx="16"/>
+
+                    <!-- Public parameters box -->
+                    <rect x="300" y="20" width="300" height="50" rx="12" fill="rgba(79,140,255,0.1)" stroke="#4f8cff" stroke-width="1.5"/>
+                    <text x="450" y="42" text-anchor="middle" fill="#4f8cff" font-weight="700" font-size="13">Parametri pubblici: p (primo), g (generatore)</text>
+                    <text x="450" y="58" text-anchor="middle" fill="#94a3b8" font-size="10">p = 23, g = 5 (condivisi apertamente)</text>
+
+                    <!-- Alice -->
+                    <g transform="translate(80, 120)">
+                        <rect x="0" y="0" width="220" height="160" rx="16" fill="rgba(79,140,255,0.05)" stroke="#4f8cff" stroke-width="1.5"/>
+                        <circle cx="110" cy="40" r="25" fill="url(#dhGradAlice)" filter="url(#dhGlow)"/>
+                        <text x="110" y="47" text-anchor="middle" fill="white" font-weight="800" font-size="14">A</text>
+                        <text x="110" y="85" text-anchor="middle" fill="#4f8cff" font-weight="700" font-size="13">Alice</text>
+                        <rect x="20" y="100" width="180" height="40" rx="8" fill="rgba(239,68,68,0.1)" stroke="#ef4444" stroke-width="1"/>
+                        <text x="110" y="118" text-anchor="middle" fill="#ef4444" font-size="9" font-weight="600">Segreto privato: a = 6</text>
+                        <text x="110" y="133" text-anchor="middle" fill="#94a3b8" font-size="8">(solo Alice lo conosce)</text>
+                    </g>
+
+                    <!-- Bob -->
+                    <g transform="translate(600, 120)">
+                        <rect x="0" y="0" width="220" height="160" rx="16" fill="rgba(168,85,247,0.05)" stroke="#a855f7" stroke-width="1.5"/>
+                        <circle cx="110" cy="40" r="25" fill="url(#dhGradBob)" filter="url(#dhGlow)"/>
+                        <text x="110" y="47" text-anchor="middle" fill="white" font-weight="800" font-size="14">B</text>
+                        <text x="110" y="85" text-anchor="middle" fill="#a855f7" font-weight="700" font-size="13">Bob</text>
+                        <rect x="20" y="100" width="180" height="40" rx="8" fill="rgba(239,68,68,0.1)" stroke="#ef4444" stroke-width="1"/>
+                        <text x="110" y="118" text-anchor="middle" fill="#ef4444" font-size="9" font-weight="600">Segreto privato: b = 15</text>
+                        <text x="110" y="133" text-anchor="middle" fill="#94a3b8" font-size="8">(solo Bob lo conosce)</text>
+                    </g>
+
+                    <!-- Eve (attaccante) -->
+                    <g transform="translate(380, 130)">
+                        <rect x="0" y="0" width="140" height="50" rx="10" fill="rgba(239,68,68,0.05)" stroke="#ef4444" stroke-width="1" stroke-dasharray="4,2"/>
+                        <text x="70" y="22" text-anchor="middle" fill="#ef4444" font-size="10">👁️ Eve</text>
+                        <text x="70" y="38" text-anchor="middle" fill="#94a3b8" font-size="8">Intercetta tutto</text>
+                    </g>
+
+                    <!-- Step 1: Alice → Bob -->
+                    <g transform="translate(0, 320)">
+                        <!-- Alice calculates A -->
+                        <rect x="30" y="10" width="180" height="50" rx="10" fill="rgba(79,140,255,0.1)" stroke="#4f8cff" stroke-width="1"/>
+                        <text x="120" y="30" text-anchor="middle" fill="#4f8cff" font-size="10" font-weight="600">Alice calcola:</text>
+                        <text x="120" y="48" text-anchor="middle" fill="#4f8cff" font-family="JetBrains Mono" font-size="11" font-weight="700">A = gᵃ mod p = 5⁶ mod 23 = 8</text>
+
+                        <!-- Arrow to Bob -->
+                        <path d="M220 35 L380 35" stroke="#4f8cff" stroke-width="2" marker-end="url(#dhArrow)"/>
+                        <text x="300" y="28" text-anchor="middle" fill="#4f8cff" font-size="10" font-weight="600">Invia A = 8</text>
+
+                        <!-- Bob receives A -->
+                        <rect x="390" y="10" width="180" height="50" rx="10" fill="rgba(168,85,247,0.1)" stroke="#a855f7" stroke-width="1"/>
+                        <text x="480" y="30" text-anchor="middle" fill="#a855f7" font-size="10" font-weight="600">Bob riceve A = 8</text>
+                        <text x="480" y="48" text-anchor="middle" fill="#94a3b8" font-size="9">Eve vede anche A = 8</text>
+                    </g>
+
+                    <!-- Step 2: Bob → Alice -->
+                    <g transform="translate(0, 400)">
+                        <!-- Bob calculates B -->
+                        <rect x="390" y="10" width="180" height="50" rx="10" fill="rgba(168,85,247,0.1)" stroke="#a855f7" stroke-width="1"/>
+                        <text x="480" y="30" text-anchor="middle" fill="#a855f7" font-size="10" font-weight="600">Bob calcola:</text>
+                        <text x="480" y="48" text-anchor="middle" fill="#a855f7" font-family="JetBrains Mono" font-size="11" font-weight="700">B = gᵇ mod p = 5¹⁵ mod 23 = 19</text>
+
+                        <!-- Arrow to Alice -->
+                        <path d="M380 35 L220 35" stroke="#a855f7" stroke-width="2" marker-end="url(#dhArrowBob)"/>
+                        <text x="300" y="28" text-anchor="middle" fill="#a855f7" font-size="10" font-weight="600">Invia B = 19</text>
+
+                        <!-- Alice receives B -->
+                        <rect x="30" y="10" width="180" height="50" rx="10" fill="rgba(79,140,255,0.1)" stroke="#4f8cff" stroke-width="1"/>
+                        <text x="120" y="30" text-anchor="middle" fill="#4f8cff" font-size="10" font-weight="600">Alice riceve B = 19</text>
+                        <text x="120" y="48" text-anchor="middle" fill="#94a3b8" font-size="9">Eve vede anche B = 19</text>
+                    </g>
+
+                    <defs>
+                        <marker id="dhArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                            <polygon points="0 0, 10 3.5, 0 7" fill="#4f8cff"/>
+                        </marker>
+                        <marker id="dhArrowBob" markerWidth="10" markerHeight="7" refX="1" refY="3.5" orient="auto">
+                            <polygon points="10 0, 0 3.5, 10 7" fill="#a855f7"/>
+                        </marker>
+                    </defs>
+
+                    <!-- Step 3: Shared Secret -->
+                    <g transform="translate(250, 470)">
+                        <rect x="0" y="0" width="400" height="24" rx="12" fill="url(#dhGradSecret)" opacity="0.3"/>
+                        <text x="200" y="16" text-anchor="middle" fill="#22c55e" font-weight="700" font-size="10">Chiave condivisa: K = Bᵃ mod p = Aᵇ mod p = 2</text>
+                    </g>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Spiegazione passo passo -->
+        <div class="animate-on-scroll" style="margin-top: 3rem;">
+            <h3 style="margin-bottom: 1.5rem;">Come Funziona — Spiegazione Passo Passo</h3>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number" style="background: rgba(79, 140, 255, 0.15); color: var(--accent-blue);">1</div>
+                    <div class="step-content">
+                        <h4>Accordo sui parametri pubblici</h4>
+                        <p>Alice e Bob concordano pubblicamente su un numero primo <strong>p</strong> e un generatore <strong>g</strong> (un numero tale che le sue potenze modulo p coprano tutti i valori). Esempio: <strong>p = 23, g = 5</strong>. Questi parametri sono pubblici, Eve li conosce.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number" style="background: rgba(79, 140, 255, 0.15); color: var(--accent-blue);">2</div>
+                    <div class="step-content">
+                        <h4>Scelta dei segreti privati</h4>
+                        <p>
+                            Alice sceglie un numero segreto <strong>a</strong> (es. a = 6)<br>
+                            Bob sceglie un numero segreto <strong>b</strong> (es. b = 15)<br>
+                            Questi numeri <strong>non vengono mai trasmessi</strong>.
+                        </p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number" style="background: rgba(79, 140, 255, 0.15); color: var(--accent-blue);">3</div>
+                    <div class="step-content">
+                        <h4>Calcolo dei valori pubblici</h4>
+                        <p>
+                            Alice calcola: <strong>A = gᵃ mod p = 5⁶ mod 23 = 8</strong><br>
+                            Bob calcola: <strong>B = gᵇ mod p = 5¹⁵ mod 23 = 19</strong><br>
+                            Alice invia A a Bob, Bob invia B ad Alice. Eve intercetta entrambi.
+                        </p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number" style="background: rgba(34, 197, 94, 0.15); color: var(--accent-green);">4</div>
+                    <div class="step-content">
+                        <h4>Calcolo della chiave condivisa</h4>
+                        <p>
+                            Alice calcola: <strong>K = Bᵃ mod p = 19⁶ mod 23 = 2</strong><br>
+                            Bob calcola: <strong>K = Aᵇ mod p = 8¹⁵ mod 23 = 2</strong><br>
+                            <strong style="color: var(--accent-green);">Entrambi ottengono lo stesso segreto K = 2!</strong>
+                        </p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number" style="background: rgba(239, 68, 68, 0.15); color: var(--accent-red);">🛡️</div>
+                    <div class="step-content">
+                        <h4>Perché Eve non può ottenere la chiave?</h4>
+                        <p>Eve conosce p, g, A e B, ma per trovare K dovrebbe calcolare <strong>a</strong> da A = gᵃ mod p (logaritmo discreto) oppure <strong>b</strong> da B = gᵇ mod p. Con numeri grandi, questo è <strong>computazionalmente impossibile</strong>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Formula matematica -->
+        <div class="animate-on-scroll" style="margin-top: 2rem;">
+            <div class="key-concept">
+                <h4>🧮 La magia matematica</h4>
+                <p>
+                    La chiave sta nelle proprietà delle potenze modulari:<br><br>
+                    <strong>K = Bᵃ mod p = (gᵇ)ᵃ mod p = gᵇᵃ mod p</strong><br>
+                    <strong>K = Aᵇ mod p = (gᵃ)ᵇ mod p = gᵃᵇ mod p</strong><br><br>
+                    Poiché <strong>a×b = b×a</strong>, Alice e Bob ottengono lo stesso risultato! Ma Eve, che conosce solo A=gᵃ e B=gᵇ, non può risalire a <strong>a</strong> o <strong>b</strong> (problema del logaritmo discreto).
+                </p>
+            </div>
+        </div>
+
+        <!-- Attenzione: Man-in-the-Middle -->
+        <div class="animate-on-scroll" style="margin-top: 2rem;">
+            <div class="warning-box">
+                <h4>⚠️ Limite: Attacco Man-in-the-Middle</h4>
+                <p>
+                    Diffie-Hellman di per sé <strong>non autentica</strong> i partecipanti. Un attaccante attivo potrebbe inserirsi tra Alice e Bob, presentarsi separatamente a ciascuno e stabilire due chiavi diverse. Per questo, nei protocolli reali, DH viene combinato con meccanismi di autenticazione (firme digitali, certificati).
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Domanda 6: Firma Digitale -->
+    <section class="section" id="domanda6">
+        <div class="section-header animate-on-scroll">
+            <div class="section-number" style="background: var(--gradient-5); color: white;">D6</div>
+            <h2 style="background: var(--gradient-5); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Firma Digitale</h2>
+            <p>Descrivi il concetto di firma digitale e come viene utilizzata per garantire l'autenticità di un messaggio.</p>
+        </div>
+
+        <div class="card animate-on-scroll">
+            <h3>
+                <span class="icon" style="background: rgba(6, 182, 212, 0.15); color: var(--accent-cyan);">✍️</span>
+                Cos'è una firma digitale?
+            </h3>
+            <p>
+                Una <strong>firma digitale</strong> è l'equivalente elettronico di una firma manoscritta, ma con un livello di sicurezza matematicamente superiore. Permette di verificare:
+            </p>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 1.5rem;">
+                <div style="text-align: center; padding: 1rem; background: rgba(6, 182, 212, 0.1); border-radius: 12px; border: 1px solid rgba(6, 182, 212, 0.2);">
+                    <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🔐</div>
+                    <strong style="color: var(--accent-cyan);">Autenticità</strong>
+                    <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">Il messaggio proviene dal mittente dichiarato</p>
+                </div>
+                <div style="text-align: center; padding: 1rem; background: rgba(34, 197, 94, 0.1); border-radius: 12px; border: 1px solid rgba(34, 197, 94, 0.2);">
+                    <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🛡️</div>
+                    <strong style="color: var(--accent-green);">Integrità</strong>
+                    <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">Il messaggio non è stato alterato</p>
+                </div>
+                <div style="text-align: center; padding: 1rem; background: rgba(168, 85, 247, 0.1); border-radius: 12px; border: 1px solid rgba(168, 85, 247, 0.2);">
+                    <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">🚫</div>
+                    <strong style="color: var(--accent-purple);">Non ripudio</strong>
+                    <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">Il mittente non può negare di aver firmato</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Schema Firma Digitale -->
+        <div class="animate-on-scroll" style="margin-top: 3rem;">
+            <h3 style="text-align: center; margin-bottom: 1.5rem;">Schema della Firma Digitale</h3>
+            <div class="diagram-container">
+                <svg viewBox="0 0 900 480" width="900" height="480">
+                    <defs>
+                        <linearGradient id="sigGradAlice" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#4f8cff"/>
+                            <stop offset="100%" stop-color="#2563eb"/>
+                        </linearGradient>
+                        <linearGradient id="sigGradBob" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#22c55e"/>
+                            <stop offset="100%" stop-color="#16a34a"/>
+                        </linearGradient>
+                        <linearGradient id="sigGradSign" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#f97316"/>
+                            <stop offset="100%" stop-color="#ef4444"/>
+                        </linearGradient>
+                        <filter id="sigGlow">
+                            <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                            <feMerge>
+                                <feMergeNode in="coloredBlur"/>
+                                <feMergeNode in="SourceGraphic"/>
+                            </feMerge>
+                        </filter>
+                    </defs>
+
+                    <!-- Background -->
+                    <rect x="0" y="0" width="900" height="480" fill="#0d1117" rx="16"/>
+
+                    <!-- Title -->
+                    <text x="450" y="35" text-anchor="middle" fill="white" font-weight="800" font-size="16">FIRMA DIGITALE — Firma e Verifica</text>
+
+                    <!-- ==================== FIRMA (Alice) ==================== -->
+                    <text x="450" y="70" text-anchor="middle" fill="#f97316" font-weight="700" font-size="13"> FASE 1: FIRMA (Mittente — Alice)</text>
+
+                    <!-- Alice's message -->
+                    <rect x="30" y="90" width="180" height="50" rx="12" fill="rgba(79,140,255,0.1)" stroke="#4f8cff" stroke-width="1.5"/>
+                    <text x="120" y="112" text-anchor="middle" fill="#4f8cff" font-size="11" font-weight="600">Messaggio M</text>
+                    <text x="120" y="128" text-anchor="middle" fill="#94a3b8" font-size="9">"Contratto di vendita"</text>
+
+                    <!-- Arrow -->
+                    <path d="M210 115 L240 115" stroke="#64748b" stroke-width="2" marker-end="url(#sigArrow)"/>
+
+                    <!-- Hash function -->
+                    <rect x="245" y="85" width="120" height="60" rx="12" fill="rgba(249,115,22,0.1)" stroke="#f97316" stroke-width="1.5"/>
+                    <text x="305" y="105" text-anchor="middle" fill="#f97316" font-size="10" font-weight="600">Funzione Hash</text>
+                    <text x="305" y="120" text-anchor="middle" fill="#f97316" font-family="JetBrains Mono" font-size="12" font-weight="700">H(M)</text>
+                    <text x="305" y="135" text-anchor="middle" fill="#94a3b8" font-size="8">SHA-256</text>
+
+                    <!-- Arrow -->
+                    <path d="M365 115 L395 115" stroke="#64748b" stroke-width="2" marker-end="url(#sigArrow)"/>
+
+                    <!-- Alice's private key -->
+                    <rect x="400" y="90" width="100" height="50" rx="10" fill="rgba(239,68,68,0.15)" stroke="#ef4444" stroke-width="1.5"/>
+                    <text x="450" y="112" text-anchor="middle" fill="#ef4444" font-size="10" font-weight="600">Chiave Privata</text>
+                    <text x="450" y="128" text-anchor="middle" fill="#94a3b8" font-size="8">PrivAlice</text>
+
+                    <!-- Arrow -->
+                    <path d="M450 140 L450 165" stroke="#64748b" stroke-width="2" marker-end="url(#sigArrowDown)"/>
+
+                    <!-- Signature -->
+                    <rect x="370" y="170" width="160" height="50" rx="12" fill="rgba(249,115,22,0.15)" stroke="#f97316" stroke-width="1.5" filter="url(#sigGlow)"/>
+                    <text x="450" y="192" text-anchor="middle" fill="#f97316" font-size="11" font-weight="700">Firma Digitale</text>
+                    <text x="450" y="208" text-anchor="middle" fill="#94a3b8" font-size="8">Sig = H(M)^(PrivAlice) mod n</text>
+
+                    <!-- Arrow -->
+                    <path d="M450 220 L450 250" stroke="#64748b" stroke-width="2" marker-end="url(#sigArrowDown)"/>
+
+                    <!-- Sent package -->
+                    <rect x="340" y="255" width="220" height="60" rx="12" fill="rgba(79,140,255,0.1)" stroke="#4f8cff" stroke-width="1.5"/>
+                    <text x="450" y="278" text-anchor="middle" fill="#4f8cff" font-size="11" font-weight="700">📦 Pacchetto inviato</text>
+                    <text x="450" y="295" text-anchor="middle" fill="#94a3b8" font-size="9">{Messaggio M, Firma Sig}</text>
+                    <text x="450" y="310" text-anchor="middle" fill="#94a3b8" font-size="8">(entrambi trasmessi)</text>
+
+                    <!-- ==================== VERIFICA (Bob) ==================== -->
+                    <text x="450" y="350" text-anchor="middle" fill="#22c55e" font-weight="700" font-size="13">🔍 FASE 2: VERIFICA (Destinatario — Bob)</text>
+
+                    <!-- Received message -->
+                    <rect x="30" y="375" width="160" height="50" rx="12" fill="rgba(34,197,94,0.1)" stroke="#22c55e" stroke-width="1.5"/>
+                    <text x="110" y="395" text-anchor="middle" fill="#22c55e" font-size="10" font-weight="600">Messaggio M ricevuto</text>
+                    <text x="110" y="412" text-anchor="middle" fill="#94a3b8" font-size="8">+ Firma Sig</text>
+
+                    <!-- Arrow -->
+                    <path d="M190 400 L220 400" stroke="#64748b" stroke-width="2" marker-end="url(#sigArrow)"/>
+
+                    <!-- Bob hashes -->
+                    <rect x="225" y="370" width="110" height="60" rx="12" fill="rgba(249,115,22,0.1)" stroke="#f97316" stroke-width="1.5"/>
+                    <text x="280" y="392" text-anchor="middle" fill="#f97316" font-size="10" font-weight="600">Hash(M)</text>
+                    <text x="280" y="407" text-anchor="middle" fill="#22c55e" font-size="10" font-weight="700">h₁</text>
+                    <text x="280" y="420" text-anchor="middle" fill="#94a3b8" font-size="8">Calcolato da Bob</text>
+
+                    <!-- Arrow -->
+                    <path d="M335 400 L365 400" stroke="#64748b" stroke-width="2" marker-end="url(#sigArrow)"/>
+
+                    <!-- Bob verifies -->
+                    <rect x="370" y="370" width="140" height="60" rx="12" fill="rgba(34,197,94,0.15)" stroke="#22c55e" stroke-width="1.5"/>
+                    <text x="440" y="392" text-anchor="middle" fill="#22c55e" font-size="10" font-weight="600">Verifica con</text>
+                    <text x="440" y="407" text-anchor="middle" fill="#22c55e" font-size="10" font-weight="700">PubAlice</text>
+                    <text x="440" y="420" text-anchor="middle" fill="#94a3b8" font-size="8">Decifra Sig → h₂</text>
+
+                    <!-- Arrow -->
+                    <path d="M510 400 L540 400" stroke="#64748b" stroke-width="2" marker-end="url(#sigArrow)"/>
+
+                    <!-- Comparison -->
+                    <rect x="545" y="370" width="160" height="60" rx="12" fill="rgba(34,197,94,0.15)" stroke="#22c55e" stroke-width="1.5"/>
+                    <text x="625" y="392" text-anchor="middle" fill="#22c55e" font-size="10" font-weight="600">Confronto</text>
+                    <text x="625" y="407" text-anchor="middle" fill="#22c55e" font-size="12" font-weight="800">h₁ = h₂ ?</text>
+                    <text x="625" y="420" text-anchor="middle" fill="#22c55e" font-size="10" font-weight="700">✅ UGUALI!</text>
+
+                    <!-- Success badge -->
+                    <rect x="720" y="375" width="150" height="50" rx="12" fill="rgba(34,197,94,0.2)" stroke="#22c55e" stroke-width="2"/>
+                    <text x="795" y="397" text-anchor="middle" fill="#22c55e" font-size="11" font-weight="800">✅ VERIFICATA</text>
+                    <text x="795" y="413" text-anchor="middle" fill="#94a3b8" font-size="9">Autentico e integro</text>
+
+                    <defs>
+                        <marker id="sigArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                            <polygon points="0 0, 10 3.5, 0 7" fill="#64748b"/>
+                        </marker>
+                        <marker id="sigArrowDown" markerWidth="7" markerHeight="10" refX="3.5" refY="9" orient="auto">
+                            <polygon points="0 0, 3.5 10, 7 0" fill="#64748b"/>
+                        </marker>
+                    </defs>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Come funziona -->
+        <div class="animate-on-scroll" style="margin-top: 3rem;">
+            <h3 style="margin-bottom: 1.5rem;">Come Funziona — Spiegazione</h3>
+            <div class="comparison-grid">
+                <div class="card" style="border-top: 4px solid var(--accent-orange);">
+                    <h4 style="color: var(--accent-orange);">📝 Fase 1: Firma (Mittente)</h4>
+                    <div class="steps-container">
+                        <div class="step" style="padding: 1rem;">
+                            <div class="step-number" style="width: 32px; height: 32px; font-size: 0.8rem; background: rgba(249,115,22,0.15); color: var(--accent-orange);">1</div>
+                            <div class="step-content">
+                                <h4 style="font-size: 0.95rem;">Calcola l'hash del messaggio</h4>
+                                <p style="font-size: 0.85rem;"><strong>h = H(M)</strong></p>
+                            </div>
+                        </div>
+                        <div class="step" style="padding: 1rem;">
+                            <div class="step-number" style="width: 32px; height: 32px; font-size: 0.8rem; background: rgba(249,115,22,0.15); color: var(--accent-orange);">2</div>
+                            <div class="step-content">
+                                <h4 style="font-size: 0.95rem;">Cifra l'hash con la chiave privata</h4>
+                                <p style="font-size: 0.85rem;"><strong>sig = h<sup>d</sup> mod n</strong> (usa la chiave privata di RSA)</p>
+                            </div>
+                        </div>
+                        <div class="step" style="padding: 1rem;">
+                            <div class="step-number" style="width: 32px; height: 32px; font-size: 0.8rem; background: rgba(249,115,22,0.15); color: var(--accent-orange);">3</div>
+                            <div class="step-content">
+                                <h4 style="font-size: 0.95rem;">Invia messaggio + firma</h4>
+                                <p style="font-size: 0.85rem;">Trasmette <strong>{M, sig}</strong> al destinatario</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" style="border-top: 4px solid var(--accent-green);">
+                    <h4 style="color: var(--accent-green);">🔍 Fase 2: Verifica (Destinatario)</h4>
+                    <div class="steps-container">
+                        <div class="step" style="padding: 1rem;">
+                            <div class="step-number" style="width: 32px; height: 32px; font-size: 0.8rem; background: rgba(34,197,94,0.15); color: var(--accent-green);">1</div>
+                            <div class="step-content">
+                                <h4 style="font-size: 0.95rem;">Calcola l'hash del messaggio ricevuto</h4>
+                                <p style="font-size: 0.85rem;"><strong>h₁ = H(M)</strong></p>
+                            </div>
+                        </div>
+                        <div class="step" style="padding: 1rem;">
+                            <div class="step-number" style="width: 32px; height: 32px; font-size: 0.8rem; background: rgba(34,197,94,0.15); color: var(--accent-green);">2</div>
+                            <div class="step-content">
+                                <h4 style="font-size: 0.95rem;">Decifra la firma con la chiave pubblica</h4>
+                                <p style="font-size: 0.85rem;"><strong>h₂ = sig<sup>e</sup> mod n</strong> (usa la chiave pubblica del mittente)</p>
+                            </div>
+                        </div>
+                        <div class="step" style="padding: 1rem;">
+                            <div class="step-number" style="width: 32px; height: 32px; font-size: 0.8rem; background: rgba(34,197,94,0.15); color: var(--accent-green);">3</div>
+                            <div class="step-content">
+                                <h4 style="font-size: 0.95rem;">Confronta gli hash</h4>
+                                <p style="font-size: 0.85rem;">Se <strong>h₁ = h₂</strong> → ✅ Firma valida! Altrimenti → ❌ Manomissione.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Perché si firma l'hash e non il messaggio -->
+        <div class="animate-on-scroll" style="margin-top: 2rem;">
+            <div class="key-concept">
+                <h4>🤔 Perché si firma l'hash e non il messaggio intero?</h4>
+                <p>
+                    Firmare un documento enorme (es. un PDF di 10MB) sarebbe molto lento con RSA. L'hash ha sempre la stessa lunghezza fissa (256 bit per SHA-256), quindi firmare l'hash è <strong>molto più efficiente</strong>. Inoltre, grazie all'effetto valanga, se anche un solo bit del messaggio cambia, l'hash cambia completamente → la firma non sarà più valida. Quindi firmare l'hash equivale a firmare il messaggio!
+                </p>
+            </div>
+        </div>
+
+        <!-- Garanzie -->
+        <div class="animate-on-scroll" style="margin-top: 3rem;">
+            <h3 style="margin-bottom: 1.5rem;">Garanzie Offerte dalla Firma Digitale</h3>
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Garanzia</th>
+                        <th>Cosa significa</th>
+                        <th>Come si ottiene</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>🔐 Autenticità</strong></td>
+                        <td>Il messaggio proviene dal mittente dichiarato</td>
+                        <td>Solo il mittente possiede la chiave privata per creare la firma</td>
+                    </tr>
+                    <tr>
+                        <td><strong>🛡️ Integrità</strong></td>
+                        <td>Il messaggio non è stato alterato durante la trasmissione</td>
+                        <td>L'hash del messaggio ricevuto deve corrispondere all'hash decifrato dalla firma</td>
+                    </tr>
+                    <tr>
+                        <td><strong>🚫 Non ripudio</strong></td>
+                        <td>Il mittente non può negare di aver firmato il messaggio</td>
+                        <td>Solo il mittente ha la chiave privata → la firma è una prova legale</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Esempio pratico -->
+        <div class="animate-on-scroll" style="margin-top: 2rem;">
+            <div class="success-box">
+                <h4>Esempio Pratico</h4>
+                <p>
+                    Quando installi un'applicazione dal sito ufficiale, il file .exe o .dmg è spesso accompagnato da una firma digitale. Il sistema operativo verifica automaticamente che la firma corrisponda al certificato dello sviluppatore e che il file non sia stato modificato. Se la verifica fallisce, ricevi un avviso di sicurezza!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Riepilogo -->
+    <section class="section" id="riepilogo">
+        <div class="section-header animate-on-scroll">
+            <h2 style="font-size: 2.5rem;">📋 Riepilogo Finale</h2>
+            <p>Tutti i concetti chiave in una panoramica sintetica</p>
+        </div>
+
+        <div class="animate-on-scroll">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+                <div class="card" style="border-left: 4px solid var(--accent-blue);">
+                    <h4 style="color: var(--accent-blue);">🔑 Simmetrica vs Asimmetrica</h4>
+                    <ul>
+                        <li><strong>Simmetrica:</strong> 1 chiave segreta, veloce, problema di scambio</li>
+                        <li><strong>Asimmetrica:</strong> 2 chiavi (pubblica+privata), lenta, risolve lo scambio</li>
+                        <li><strong>Ibrida:</strong> Asimmetrica per scambiare la chiave, poi simmetrica</li>
+                    </ul>
+                </div>
+                <div class="card" style="border-left: 4px solid var(--accent-green);">
+                    <h4 style="color: var(--accent-green);">🔐 RSA</h4>
+                    <ul>
+                        <li>Basato sulla difficoltà di fattorizzare n = p×q</li>
+                        <li>Chiave pubblica (e,n) per cifrare, privata (d,n) per decifrare</li>
+                        <li>C = Mᵉ mod n, M = Cᵈ mod n</li>
+                        <li>ed ≡ 1 (mod φ(n))</li>
+                    </ul>
+                </div>
+                <div class="card" style="border-left: 4px solid var(--accent-orange);">
+                    <h4 style="color: var(--accent-orange);">🔏 Hash</h4>
+                    <ul>
+                        <li>Da lunghezza arbitraria → lunghezza fissa</li>
+                        <li>Unidirezionale, deterministico, effetto valanga</li>
+                        <li>SHA-256 è lo standard attuale</li>
+                        <li>Usato per: integrità, password, firme, blockchain</li>
+                    </ul>
+                </div>
+                <div class="card" style="border-left: 4px solid var(--accent-pink);">
+                    <h4 style="color: var(--accent-pink);">🤝 Diffie-Hellman</h4>
+                    <ul>
+                        <li>Risolve lo scambio di chiavi su canale insicuro</li>
+                        <li>A = gᵃ mod p, B = gᵇ mod p</li>
+                        <li>K = Bᵃ mod p = Aᵇ mod p = gᵃᵇ mod p</li>
+                        <li>Sicuro grazie al problema del logaritmo discreto</li>
+                    </ul>
+                </div>
+                <div class="card" style="border-left: 4px solid var(--accent-cyan);">
+                    <h4 style="color: var(--accent-cyan);">✍️ Firma Digitale</h4>
+                    <ul>
+                        <li>Hash del messaggio cifrato con chiave privata</li>
+                        <li>Garantisce: autenticità, integrità, non ripudio</li>
+                        <li>Si verifica decifrando con la chiave pubblica</li>
+                        <li>Si firma l'hash per efficienza</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>CryptoGuide — Guida Completa alla Crittografia • Realizzato con HTML, CSS, JavaScript e SVG</p>
+    </footer>
+
+    <!-- Scroll to top button -->
+    <button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>
+
+    <script>
+        // Scroll animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            const scrollTop = document.getElementById('scrollTop');
+            
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+
+            if (window.scrollY > 500) {
+                scrollTop.classList.add('visible');
+            } else {
+                scrollTop.classList.remove('visible');
+            }
+
+            // Active nav link
+            const sections = document.querySelectorAll('.section, .hero');
+            const navLinks = document.querySelectorAll('.nav-links a');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                if (window.scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Hash calculation demo
+        async function calculateHash() {
+            const input = document.getElementById('hashInput').value;
+            const encoder = new TextEncoder();
+            const data = encoder.encode(input);
+            const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+            const hashArray = Array.from(new Uint8Array(hashBuffer));
+            const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+            document.getElementById('hashOutput').textContent = hashHex;
+        }
+
+        // Initialize hash demo values
+        async function initHashDemo() {
+            const encoder = new TextEncoder();
+            
+            const data1 = encoder.encode('Ciao mondo!');
+            const hashBuffer1 = await crypto.subtle.digest('SHA-256', data1);
+            const hashArray1 = Array.from(new Uint8Array(hashBuffer1));
+            document.getElementById('hash1').textContent = hashArray1.map(b => b.toString(16).padStart(2, '0')).join('');
+            
+            const data2 = encoder.encode('Ciao mondo.');
+            const hashBuffer2 = await crypto.subtle.digest('SHA-256', data2);
+            const hashArray2 = Array.from(new Uint8Array(hashBuffer2));
+            document.getElementById('hash2').textContent = hashArray2.map(b => b.toString(16).padStart(2, '0')).join('');
+        }
+
+        initHashDemo();
+        calculateHash();
+
+        // Smooth scroll for nav links
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const target = document.querySelector(link.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
