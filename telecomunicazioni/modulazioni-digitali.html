@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="it" class="theme-init">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Canali &amp; modulazioni digitali — Telecomunicazioni · 5F</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/tele-style.css">
+<script>
+(function(){
+  try{ document.documentElement.setAttribute('data-theme', localStorage.getItem('tele-theme') || 'light'); }catch(e){}
+  document.documentElement.classList.remove('theme-init');
+})();
+</script>
+</head>
+<body>
+
+<div class="scope-bar">
+  <div class="scope-bar-inner">
+    <span class="scope-led"></span>
+    <span class="scope-tag"><a href="../index.html">← Home</a></span>
+    <span class="scope-tag"><a href="../telecomunicazioni.html">← Telecom</a></span>
+    <span class="scope-tag"><strong>CH2</strong> · CANALI &amp; MODULAZIONI</span>
+    <span class="scope-spacer"></span>
+    <span class="scope-readout"><span>FREQ <b>VAR</b></span><span>MOD <b>QAM/OFDM</b></span></span>
+    <button class="theme-toggle" type="button" id="themeToggle">Tema</button>
+  </div>
+</div>
+
+<main class="scope-shell">
+
+  <aside class="sn">
+    <div class="sn-head"><span class="h-dot"></span><span class="h-lbl">Canali · Indice</span></div>
+    <a href="../telecomunicazioni.html" class="sn-back">← Indice materia</a>
+    <ul class="sn-list">
+      <li><a href="onde-antenne.html"><span class="sn-ch">CH1</span><span>Onde &amp; Antenne</span><span class="sn-num">01</span></a></li>
+      <li><a href="modulazioni-digitali.html" class="active"><span class="sn-ch">CH2</span><span>Canali &amp; Modulazioni</span><span class="sn-num">02</span></a></li>
+      <li><a href="tcp-ip.html"><span class="sn-ch">CH3</span><span>Suite TCP/IP</span><span class="sn-num">03</span></a></li>
+      <li><a href="switch-vlan.html"><span class="sn-ch">CH4</span><span>Switch &amp; VLAN</span><span class="sn-num">04</span></a></li>
+      <li><a href="acl.html"><span class="sn-ch">CH5</span><span>ACL</span><span class="sn-num">05</span></a></li>
+      <li><a href="nat.html"><span class="sn-ch">CH6</span><span>NAT</span><span class="sn-num">06</span></a></li>
+      <li><a href="routing.html"><span class="sn-ch">CH7</span><span>Routing</span><span class="sn-num">07</span></a></li>
+      <li><a href="wireless-80211.html"><span class="sn-ch">CH8</span><span>Wireless 802.11</span><span class="sn-num">08</span></a></li>
+      <li><a href="fibra-gpon.html"><span class="sn-ch">CH9</span><span>Fibra &amp; GPON</span><span class="sn-num">09</span></a></li>
+      <li><a href="laboratorio.html"><span class="sn-ch">L0</span><span>Laboratorio</span><span class="sn-num">10</span></a></li>
+    </ul>
+  </aside>
+
+  <div>
+
+    <div class="sig-head">
+      <div class="sig-num">02</div>
+      <div class="sig-body">
+        <h2>Canali &amp; modulazioni digitali</h2>
+        <p>Passa-basso vs passa-banda, codici di linea, modulazioni ASK/FSK/PSK/QAM, OFDM. Nyquist, Shannon, BER, EVM, MER.</p>
+      </div>
+      <span class="sig-badge">PHY</span>
+    </div>
+
+    <div class="panel">
+      <h4>Classificazione dei canali digitali</h4>
+      <p>La classificazione di base si fonda sulla <strong>necessità o meno di modulare</strong> il segnale prima di immetterlo sul canale.</p>
+      <div class="grid g2">
+        <div class="note t-teal">
+          <strong>Canale passa-basso</strong>
+          Trasmissione in <em>banda base</em>: non serve un modulatore. Al suo posto un <strong>codificatore di linea</strong> trasforma i livelli logici 0/1 in impulsi elettrici. In ricezione: filtro + decodificatore. TX e RX hanno clock sincronizzato; errori di sincronismo influiscono sul BER. Clock ottimale: <code>T<sub>clk</sub></code> = tempo di trasmissione di 1 bit.
+        </div>
+        <div class="note t-blue">
+          <strong>Canale passa-banda</strong>
+          Il segnale deve avere frequenza dentro una certa banda → serve <strong>modulazione</strong>: una portante sinusoidale viene alterata da un'informazione digitale. Il parametro modulato (ampiezza, frequenza, fase) varia in modo discreto su <em>M</em> stati.
+        </div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-title">Codici di linea (banda base)</div>
+      <p>Un codice di linea deve: <strong>(1)</strong> eliminare la componente continua sul rame, <strong>(2)</strong> permettere la sincronizzazione dei clock TX/RX, <strong>(3)</strong> ridurre l'occupazione di banda spettrale del segnale.</p>
+      <div class="grid g3">
+        <div class="metric">
+          <div class="m-lbl">Binari · 2 livelli</div>
+          <div class="m-val">2L</div>
+          <div class="m-sub">NRZ, RZ, <strong>Manchester</strong>, bifase differenziale</div>
+        </div>
+        <div class="metric">
+          <div class="m-lbl">Pseudoternari · 3 livelli</div>
+          <div class="m-val t-teal">3L</div>
+          <div class="m-sub">HDB-3, <strong>MLT-3</strong> (100Base-TX)</div>
+        </div>
+        <div class="metric">
+          <div class="m-lbl">Multilivello · &gt;2 bit/sym</div>
+          <div class="m-val t-blue">N·L</div>
+          <div class="m-sub">2B-1Q (ISDN), <strong>PAM5</strong> (1000Base-T)</div>
+        </div>
+      </div>
+      <h4 style="margin-top:1rem">Manchester · il classico di Ethernet 10 Mbps</h4>
+      <p>Valor medio nullo (no DC). Il valore binario è dato dal <strong>tipo di transizione</strong> al centro del periodo, non dal livello: <em>alto→basso = 1</em>, <em>basso→alto = 0</em>. Garantisce sincronismo perché ogni bit ha una transizione.</p>
+      <svg class="wave" viewBox="0 0 400 60" preserveAspectRatio="none">
+        <g class="wf-grid">
+          <line x1="0" y1="15" x2="400" y2="15"/>
+          <line x1="0" y1="30" x2="400" y2="30"/>
+          <line x1="0" y1="45" x2="400" y2="45"/>
+        </g>
+        <line class="wf-axis" x1="0" y1="30" x2="400" y2="30"/>
+        <path class="wf-trace" d="M 0 15 L 25 15 L 25 45 L 50 45 L 50 15 L 75 15 L 75 45 L 100 45 L 100 45 L 150 45 L 150 15 L 175 15 L 175 45 L 200 45 L 200 15 L 225 15 L 225 45 L 250 45 L 250 15 L 275 15 L 275 45 L 300 45 L 300 15 L 325 15 L 325 45 L 350 45 L 350 15 L 375 15 L 375 45 L 400 45"/>
+        <text x="5" y="58" font-family="monospace" font-size="8" fill="currentColor" opacity=".6">1   0   1   0   0   1   0   1   0   1   0</text>
+      </svg>
+      <p style="font-size:.85rem;color:var(--ink-mute);font-style:italic">Aumentando il numero di livelli si trasmette più informazione nello stesso tempo, ma la tensione del cavo è limitata: oltre un certo punto l'SNR crolla.</p>
+    </div>
+
+    <div class="panel">
+      <h4>Qualità della trasmissione · cosa la degrada</h4>
+      <div class="grid g2">
+        <div class="note t-violet">
+          <strong>Jitter</strong>
+          Irregolarità del clock. Sulle lunghe distanze l'errore di sincronismo si accumula tra rigeneratore e rigeneratore. Causa BER più alto.
+        </div>
+        <div class="note t-magenta">
+          <strong>ISI · Intersymbol Interference</strong>
+          Al ricevitore arrivano sovrapposte le forme d'onda di bit successivi. Due cause: distorsioni del mezzo (allargamento dell'impulso) e <em>percorsi multipli</em> (eco riflessi). Peggiora aumentando la velocità: il tempo di bit si riduce.
+        </div>
+        <div class="note t-teal">
+          <strong>Rigenerazione</strong>
+          Sulle lunghe distanze il segnale subisce attenuazione e rumore: il rigeneratore lo "riproduce" pulito prima della decodifica.
+        </div>
+        <div class="note t-blue">
+          <strong>Condizione di Nyquist</strong>
+          Per non avere ISI: <code>B<sub>min</sub> = f<sub>bit</sub>/2</code> (velocità di Nyquist). Le forme d'onda devono essere a banda limitata e annullarsi ad ogni periodo di clock precedente e successivo.
+        </div>
+      </div>
+    </div>
+
+    <div class="sig-head" style="margin-top:2.5rem">
+      <div class="sig-num">B</div>
+      <div class="sig-body">
+        <h2>Modulazioni digitali</h2>
+        <p>Una portante sinusoidale viene alterata da un'informazione digitale. Parametri modulati: ampiezza (ASK), frequenza (FSK), fase (PSK), ampiezza+fase combinati (QAM).</p>
+      </div>
+      <span class="sig-badge b-blue">PASSA-BANDA</span>
+    </div>
+
+    <div class="panel">
+      <h4>Stati, baud rate, bit rate</h4>
+      <p>Con codifica multilivello si parla di <strong>baud rate</strong> (simboli/s). Vale <code>f<sub>bit</sub> = f<sub>baud</sub> · n</code> con <em>n</em> = bit per simbolo (log<sub>2</sub>M).</p>
+      <div class="eq">f<sub>bit</sub> = f<sub>baud</sub> · log<sub>2</sub>(M)</div>
+      <p>Aumentando M aumenta il bit-rate a parità di banda, <strong>ma</strong>: gli stati si avvicinano, sale la probabilità d'errore, servono apparati più complessi e potenza maggiore. Compromesso.</p>
+      <div class="note t-teal">
+        <strong>Secondo teorema di Shannon</strong>
+        Su un canale rumoroso esiste una capacità C [bit/s] tale che se la velocità R&lt;C la probabilità d'errore può essere resa arbitrariamente piccola. Per avvicinarsi a C: (1) più potenza, (2) più banda, (3) <em>più complessità di codifica di canale</em> (FEC, Trellis).
+      </div>
+      <h4 style="margin-top:1rem">Campi di applicazione</h4>
+      <div class="grid g2">
+        <div class="metric">
+          <div class="m-lbl">Efficienti in potenza</div>
+          <div class="m-val">2-PSK · FSK · MSK</div>
+          <div class="m-sub">BER basso anche con SNR scarsa. Ambienti rumorosi (LoRa, satellite, M2M).</div>
+        </div>
+        <div class="metric">
+          <div class="m-lbl">Efficienti in banda</div>
+          <div class="m-val t-blue">M-QAM · OFDM</div>
+          <div class="m-sub">Sfruttano al massimo la banda. M elevato. Richiedono rumore basso (DSL, LTE, Wi-Fi).</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-title">ASK · Amplitude Shift Keying</div>
+      <p>L'ampiezza della portante cambia in funzione del bit. Il caso più semplice è <strong>OOK</strong> (On-Off Keying): portante presente = 1, assente = 0. Robusto, ma sensibile al rumore additivo. Usato nei telecomandi e in alcune trasmissioni LoRa preamble.</p>
+      <svg class="wave" viewBox="0 0 400 60" preserveAspectRatio="none">
+        <line class="wf-axis" x1="0" y1="30" x2="400" y2="30"/>
+        <path class="wf-trace" d="M 0 30
+          Q 5 14 10 30 T 20 30 T 30 30 T 40 30 T 50 30 T 60 30 T 70 30 T 80 30 T 90 30 T 100 30
+          L 100 30 L 200 30
+          Q 205 14 210 30 T 220 30 T 230 30 T 240 30 T 250 30 T 260 30 T 270 30 T 280 30 T 290 30 T 300 30
+          L 300 30 L 400 30"/>
+        <text x="40" y="56" font-family="monospace" font-size="8" fill="currentColor" opacity=".6">bit = 1 (portante ON)</text>
+        <text x="140" y="56" font-family="monospace" font-size="8" fill="currentColor" opacity=".6">bit = 0 (OFF)</text>
+        <text x="240" y="56" font-family="monospace" font-size="8" fill="currentColor" opacity=".6">bit = 1</text>
+      </svg>
+    </div>
+
+    <div class="panel">
+      <div class="panel-title">FSK · Frequency Shift Keying</div>
+      <p>La frequenza della portante salta tra due valori prefissati: <code>f<sub>0</sub> = f<sub>p</sub> − Δf</code> (per lo 0), <code>f<sub>1</sub> = f<sub>p</sub> + Δf</code> (per l'1). Pensabile come somma di due ASK su portanti diverse.</p>
+      <div class="eq">B<sub>FSK</sub> = 2·(Δf + R)</div>
+      <p>Con R = bit rate. Vantaggio principale: elevata <strong>immunità ai disturbi</strong>. Svantaggio: occupa più banda dell'ASK e ha componenti spettrali fuori canale.</p>
+      <div class="grid g2">
+        <div class="note">
+          <strong>MSK · Minimum Shift Keying</strong>
+          Variante a <em>fase continua</em>: le frequenze sono scelte con la minima differenza che evita discontinuità. Lo sfasamento ±π/2 applicato alla fine di ogni bit compensa le brusche transizioni. Δf = 1/(4·t<sub>bit</sub>).
+        </div>
+        <div class="note t-teal">
+          <strong>GFSK · Gaussian FSK</strong>
+          Il segnale modulante viene <em>pre-filtrato</em> con un filtro gaussiano: si elimina lo spettro fuori banda, si guadagna efficienza spettrale. Prezzo: più ISI. Usato in <strong>GSM</strong>, DECT cordless, <strong>Bluetooth Classic</strong>.
+        </div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-title">PSK · Phase Shift Keying</div>
+      <p>La fase della portante assume M valori (max 8 prima che il rumore renda indistinguibili gli stati adiacenti). Il demodulatore deve essere sincronizzato sulla frequenza della portante: ne consegue accuratezza richiesta dagli apparati.</p>
+      <table class="tbl">
+        <thead><tr><th>Variante</th><th>Stati</th><th>Bit/sym</th><th>Note</th></tr></thead>
+        <tbody>
+          <tr><td><strong>2-PSK (BPSK)</strong></td><td>2</td><td>1</td><td>φ = 0° (bit 1) · 180° (bit 0). Massima robustezza.</td></tr>
+          <tr><td><strong>4-PSK (Q-PSK)</strong></td><td>4</td><td>2 (dibit)</td><td>0°/90°/180°/270° (tipo A) oppure 45°/135°/225°/315° (B). Ponti radio 34 Mbps, modem 2400 bps.</td></tr>
+          <tr><td><strong>8-PSK</strong></td><td>8</td><td>3 (tribit)</td><td>Ponti radio 68 Mbps, modem 4800 bps. Velocità doppia rispetto a 4-PSK.</td></tr>
+          <tr class="hl"><td><strong>DPSK · Differential PSK</strong></td><td>—</td><td>—</td><td>Identifica i bit con variazioni di fase relative anziché assolute. Decodifica indipendente dalla fase originale della portante. Diffusa nelle codifiche multilivello.</td></tr>
+        </tbody>
+      </table>
+      <h4 style="margin-top:1rem">Diagramma I-Q · costellazione</h4>
+      <p>Si rappresentano gli stati nel piano cartesiano: asse <strong>I</strong> = portante in fase, asse <strong>Q</strong> = portante sfasata di π/2. Per Q-PSK gli stati sono sfasati di π/2 tra loro (da qui il nome <em>quadrature</em>). Per M alto si parla di <strong>costellazione</strong>: solo i punti, non più i vettori.</p>
+      <div class="constellation">
+        <svg width="280" height="220" viewBox="0 0 280 220">
+          <defs>
+            <pattern id="cgrid" width="20" height="20" patternUnits="userSpaceOnUse">
+              <path d="M 20 0 L 0 0 0 20" stroke="currentColor" stroke-width=".4" fill="none" opacity=".25"/>
+            </pattern>
+          </defs>
+          <rect width="280" height="220" fill="url(#cgrid)" opacity=".5"/>
+          <line x1="20" y1="110" x2="260" y2="110" stroke="currentColor" stroke-width=".7" opacity=".5"/>
+          <line x1="140" y1="20" x2="140" y2="200" stroke="currentColor" stroke-width=".7" opacity=".5"/>
+          <text x="265" y="114" font-family="monospace" font-size="10" fill="currentColor" opacity=".7">I</text>
+          <text x="138" y="16" font-family="monospace" font-size="10" fill="currentColor" opacity=".7">Q</text>
+          <!-- 4-PSK constellation -->
+          <g fill="var(--trace-1)">
+            <circle cx="200" cy="50" r="5"/>
+            <circle cx="80" cy="50" r="5"/>
+            <circle cx="80" cy="170" r="5"/>
+            <circle cx="200" cy="170" r="5"/>
+          </g>
+          <g font-family="monospace" font-size="9" fill="currentColor" opacity=".75">
+            <text x="208" y="48">11</text>
+            <text x="60" y="48">01</text>
+            <text x="60" y="180">00</text>
+            <text x="208" y="180">10</text>
+          </g>
+          <text x="20" y="210" font-family="monospace" font-size="9" fill="currentColor" opacity=".55">QPSK · codifica Gray adiacente</text>
+        </svg>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-title">QAM · Quadrature Amplitude Modulation</div>
+      <p>Modulazione <em>mista</em>: ampiezza + fase su due portanti in quadratura. Permette di aumentare gli stati senza incappare nel solo rumore di fase. Per <strong>16-QAM</strong> i bit sono divisi in <em>quadribit</em>: 3 bit per la fase (8 salti, come 8-DPSK) + 1 bit per l'ampiezza → 2³·2 = 16 stati. Vale la pena pensarla come una <strong>doppia 4-ASK</strong>.</p>
+      <table class="tbl">
+        <thead><tr><th>Schema</th><th>Bit/sym</th><th>Applicazione tipica</th></tr></thead>
+        <tbody>
+          <tr><td>16-QAM</td><td>4</td><td>Modem V.29 (9600 bps), DVB-T, WiFi a bassa SNR</td></tr>
+          <tr><td>64-QAM</td><td>6</td><td>DVB-C, WiFi 802.11n, LTE downlink medio</td></tr>
+          <tr><td>256-QAM</td><td>8</td><td>WiFi 802.11ac, LTE-A, fibra ottica coerente</td></tr>
+          <tr><td>1024-QAM</td><td>10</td><td>WiFi 802.11ax (Wi-Fi 6), 5G in condizioni ottimali</td></tr>
+          <tr class="hl"><td><strong>TCM · Trellis Coded Modulation</strong></td><td>fino a 1664L (960L completa)</td><td>QAM + FEC (Forward Error Correction): si recuperano errori in ricezione, si sale di livelli senza aumentare potenza. <em>Guadagno di codice</em> in dB descrive la differenza E<sub>bit</sub>/N<sub>0</sub> rispetto al QAM puro.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="panel">
+      <div class="panel-title">Parametri di qualità · come si misura</div>
+      <div class="grid g3">
+        <div class="metric">
+          <div class="m-lbl">BER · Bit Error Ratio</div>
+          <div class="m-val">10<sup>−9</sup></div>
+          <div class="m-sub">Bit errati / bit inviati. Fibra ottica: ~10⁻⁹. Linea telefonica: ~10⁻⁴.</div>
+        </div>
+        <div class="metric">
+          <div class="m-lbl">EVM · Error Vector Magnitude</div>
+          <div class="m-val t-magenta">%</div>
+          <div class="m-sub">Modulo del vettore errore (differenza tra simbolo ricevuto e ideale) rispetto al massimo teorico. Si esprime in percentuale.</div>
+        </div>
+        <div class="metric">
+          <div class="m-lbl">MER · Modulation Error Ratio</div>
+          <div class="m-val t-teal">dB</div>
+          <div class="m-sub">Rapporto in dB tra vettore teorico e vettore errore. Più alto = miglior demodulazione possibile.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-title">OFDM · Orthogonal Frequency Division Multiplexing</div>
+      <p>Tecnica multiportante usata in <strong>ADSL, DVB-T, Wi-Fi, LTE, 5G</strong>. Il flusso dati ad alta velocità viene suddiviso in N flussi paralleli, ciascuno modulato (QPSK / 16-QAM / 64-QAM / 256-QAM) su una <em>sottoportante</em>. Le sottoportanti sono <strong>ortogonali</strong>: nello spettro, il massimo di una sottoportante coincide con gli zeri delle altre — non servono bande di guardia.</p>
+      <div class="eq">N sottoportanti · spaziatura Δf · ogni sottocanale a velocità ridotta = T<sub>simbolo</sub> grande → meno ISI</div>
+      <div class="grid g2">
+        <div class="note t-teal">
+          <strong>Vantaggi</strong>
+          <ul>
+            <li>Bassa sensibilità al <em>multipath fading</em>: ogni sottocanale è stretto, su esso il fading è "piatto".</li>
+            <li>Allocazione dinamica della potenza per sottoportante: si schiva rumore colorato e attenuazione selettiva.</li>
+            <li>Adattabilità: cambio modulazione (QPSK → 256-QAM) e numero di sottocanali in base alle condizioni.</li>
+          </ul>
+        </div>
+        <div class="note t-magenta">
+          <strong>Svantaggi</strong>
+          <ul>
+            <li>Richiede sincronizzazione di frequenza molto accurata: una deriva degli oscillatori distrugge l'ortogonalità.</li>
+            <li>PAPR alto (Peak-to-Average Power Ratio): serve un amplificatore lineare → costoso, energivoro.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <nav class="pagenav">
+      <a class="prev" href="onde-antenne.html"><span class="pn-dir">← Precedente</span><span class="pn-title">CH1 · Onde &amp; Antenne</span></a>
+      <a class="next" href="tcp-ip.html"><span class="pn-dir">Successivo →</span><span class="pn-title">CH3 · TCP/IP</span></a>
+    </nav>
+
+  </div>
+</main>
+
+<footer class="scope-footer">
+  <span class="sf-dot"></span>
+  <span>TELECOM · 5F · 2025/26 · CH2 — MODULAZIONI</span>
+  <span class="sf-spacer"></span>
+  <span>FONTE · CANALI E MODULAZIONI DIGITALI 25/26</span>
+</footer>
+
+<script>
+(function(){
+  var btn = document.getElementById('themeToggle');
+  if(!btn) return;
+  btn.addEventListener('click', function(){
+    var cur = document.documentElement.getAttribute('data-theme') || 'light';
+    var next = cur === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    try{ localStorage.setItem('tele-theme', next); }catch(e){}
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,146 +1,180 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="it" class="theme-init">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Telecomunicazioni — Indice materia · 5F</title>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;600&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="shared/tech-style.css">
-<style>
-/* index-specific */
-.hero-card{background:var(--accent);color:var(--paper);border-radius:var(--r);padding:2.2rem 2rem;margin-bottom:1.5rem;
-  position:relative;overflow:hidden}
-.hero-card::after{content:'';position:absolute;right:-30px;top:-30px;width:240px;height:240px;border-radius:50%;
-  background:radial-gradient(circle,rgba(5,150,105,.25),transparent 70%);pointer-events:none}
-.hero-card .eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:2px;text-transform:uppercase;color:rgba(245,240,232,.5);margin-bottom:.5rem;display:block}
-.hero-card h1{font-size:clamp(1.8rem,3.6vw,2.6rem);font-weight:800;line-height:1.05;letter-spacing:-.01em;margin-bottom:.4rem}
-.hero-card h1 em{font-style:normal;color:rgba(5,150,105,.95)}
-.hero-card .lead{font-family:var(--serif);font-size:1.05rem;font-style:italic;color:rgba(245,240,232,.7);max-width:560px;margin-bottom:1.2rem}
-.hero-stats{display:flex;gap:1.5rem;flex-wrap:wrap;margin-top:1.2rem}
-.hero-stat{font-family:var(--mono)}
-.hero-stat .v{font-size:1.6rem;font-weight:600;color:rgba(245,240,232,.95);display:block;line-height:1}
-.hero-stat .l{font-size:10px;letter-spacing:1px;color:rgba(245,240,232,.45);text-transform:uppercase;margin-top:4px}
-
-.topic-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem}
-.topic-card{background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:1.4rem;
-  text-decoration:none;color:var(--ink);display:block;transition:all .2s;position:relative;overflow:hidden}
-.topic-card:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.08);border-color:var(--teal)}
-.topic-card .tc-top{display:flex;align-items:center;gap:10px;margin-bottom:.8rem}
-.topic-card .tc-icon{font-size:1.6rem}
-.topic-card .tc-num{margin-left:auto;font-family:var(--mono);font-size:.75rem;letter-spacing:1.5px;color:rgba(10,10,15,.35);font-weight:600}
-.topic-card h3{font-size:1.05rem;font-weight:700;margin-bottom:.4rem;color:var(--accent)}
-.topic-card p{font-family:var(--serif);font-size:.92rem;color:rgba(10,10,15,.62);line-height:1.55}
-.topic-card .tc-tag{display:inline-block;margin-top:.7rem;font-family:var(--mono);font-size:9px;letter-spacing:1.2px;
-  text-transform:uppercase;color:var(--teal);background:rgba(5,150,105,.08);padding:2px 8px;border-radius:3px}
-
-.intro-block{margin-bottom:2rem}
-.intro-block h2{font-size:1.3rem;font-weight:700;margin-bottom:.6rem;color:var(--accent)}
-.intro-block p{font-family:var(--serif);font-size:1rem;color:rgba(10,10,15,.7);line-height:1.7;max-width:680px}
-</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared/tele-style.css">
+<script>
+(function(){
+  try{
+    var t = localStorage.getItem('tele-theme') || 'light';
+    document.documentElement.setAttribute('data-theme', t);
+  }catch(e){}
+  document.documentElement.classList.remove('theme-init');
+})();
+</script>
 </head>
 <body>
 
-<header class="header">
-  <div class="header-bg"></div>
-  <div class="header-inner" style="padding-bottom:1.5rem">
-    <div class="header-eyebrow">
-      <a class="eyebrow-tag" href="index.html">← Home</a>
-      <span class="eyebrow-tag">Telecomunicazioni · 5F · 2025/26</span>
-      <div class="eyebrow-line"></div>
-      <span class="eyebrow-tag">Indice materia</span>
-    </div>
+<div class="scope-bar">
+  <div class="scope-bar-inner">
+    <span class="scope-led"></span>
+    <span class="scope-tag"><a href="index.html">← Home</a></span>
+    <span class="scope-tag"><strong>TELECOM</strong> · 5F · A.S. 2025/26</span>
+    <span class="scope-spacer"></span>
+    <span class="scope-readout">
+      <span>CH<b>10</b></span>
+      <span>SRC <b>PROG·15MAG</b></span>
+    </span>
+    <button class="theme-toggle" type="button" id="themeToggle">Tema</button>
   </div>
-</header>
+</div>
 
-<main class="layout-shell">
+<main class="scope-shell">
 
-  <aside class="sidenav">
+  <aside class="sn">
+    <div class="sn-head">
+      <span class="h-dot"></span>
+      <span class="h-lbl">Canali · Indice</span>
+    </div>
     <a href="index.html" class="sn-back">← Indice generale</a>
-    <div class="sn-label">Macro-argomenti</div>
-    <a href="telecomunicazioni/onde-antenne.html"><span class="icn">📡</span><span>Onde &amp; Antenne</span><span class="num">01</span></a>
-    <a href="telecomunicazioni/tcp-ip.html"><span class="icn">🌐</span><span>TCP/IP</span><span class="num">02</span></a>
-    <a href="telecomunicazioni/switch-vlan.html"><span class="icn">🔀</span><span>Switch &amp; VLAN</span><span class="num">03</span></a>
-    <a href="telecomunicazioni/acl.html"><span class="icn">🛡️</span><span>ACL</span><span class="num">04</span></a>
-    <a href="telecomunicazioni/nat.html"><span class="icn">🔁</span><span>NAT</span><span class="num">05</span></a>
-    <a href="telecomunicazioni/wireless-80211.html"><span class="icn">📶</span><span>Wireless 802.11</span><span class="num">06</span></a>
-    <a href="telecomunicazioni/fibra-gpon.html"><span class="icn">💡</span><span>Fibra &amp; GPON</span><span class="num">07</span></a>
-    <a href="telecomunicazioni/laboratorio.html"><span class="icn">🔧</span><span>Laboratorio</span><span class="num">08</span></a>
+    <ul class="sn-list">
+      <li><a href="telecomunicazioni/onde-antenne.html"><span class="sn-ch">CH1</span><span>Onde &amp; Antenne</span><span class="sn-num">01</span></a></li>
+      <li><a href="telecomunicazioni/modulazioni-digitali.html"><span class="sn-ch">CH2</span><span>Canali &amp; Modulazioni</span><span class="sn-num">02</span></a></li>
+      <li><a href="telecomunicazioni/tcp-ip.html"><span class="sn-ch">CH3</span><span>Suite TCP/IP</span><span class="sn-num">03</span></a></li>
+      <li><a href="telecomunicazioni/switch-vlan.html"><span class="sn-ch">CH4</span><span>Switch &amp; VLAN</span><span class="sn-num">04</span></a></li>
+      <li><a href="telecomunicazioni/acl.html"><span class="sn-ch">CH5</span><span>ACL</span><span class="sn-num">05</span></a></li>
+      <li><a href="telecomunicazioni/nat.html"><span class="sn-ch">CH6</span><span>NAT</span><span class="sn-num">06</span></a></li>
+      <li><a href="telecomunicazioni/routing.html"><span class="sn-ch">CH7</span><span>Routing</span><span class="sn-num">07</span></a></li>
+      <li><a href="telecomunicazioni/wireless-80211.html"><span class="sn-ch">CH8</span><span>Wireless 802.11</span><span class="sn-num">08</span></a></li>
+      <li><a href="telecomunicazioni/fibra-gpon.html"><span class="sn-ch">CH9</span><span>Fibra &amp; GPON</span><span class="sn-num">09</span></a></li>
+      <li><a href="telecomunicazioni/laboratorio.html"><span class="sn-ch">L0</span><span>Laboratorio</span><span class="sn-num">10</span></a></li>
+    </ul>
   </aside>
 
-  <div class="content-main">
+  <div>
 
-    <div class="hero-card">
-      <span class="eyebrow">Programma svolto · A.S. 2025/26</span>
-      <h1>Telecomunicazioni — Reti, onde &amp; <em>protocolli</em></h1>
-      <p class="lead">Otto macro-argomenti: dal campo elettromagnetico al laboratorio Mikrotik. Appunti riordinati a partire dal documento del 15 maggio.</p>
-      <div class="hero-stats">
-        <div class="hero-stat"><span class="v">8</span><span class="l">Macro-argomenti</span></div>
-        <div class="hero-stat"><span class="v">7</span><span class="l">Esperienze lab</span></div>
-        <div class="hero-stat"><span class="v">5F</span><span class="l">Quinta · ITT</span></div>
+    <div class="hero-scope">
+      <div class="hero-eyebrow">
+        <span class="e-trace">SIGNAL · LIVE</span>
+        <span>PROGRAMMA SVOLTO</span>
+        <span class="e-line"></span>
+        <span>2025 / 26</span>
+      </div>
+      <h1>Telecomunicazioni — <em>onde, reti, protocolli</em></h1>
+      <p class="lead">Dieci canali di studio: dal campo elettromagnetico alla modulazione QAM, dal subnetting al routing dinamico OSPF, fino al laboratorio Mikrotik. Riordinati a partire dal documento del 15 maggio e dalle nuove dispense del prof.</p>
+      <div class="hero-readout">
+        <div class="r-cell"><div class="r-lbl">Canali</div><div class="r-val">10<span class="r-unit">macro</span></div></div>
+        <div class="r-cell"><div class="r-lbl">Lab</div><div class="r-val">7<span class="r-unit">esp.</span></div></div>
+        <div class="r-cell"><div class="r-lbl">Fonti</div><div class="r-val">6<span class="r-unit">pdf</span></div></div>
+        <div class="r-cell"><div class="r-lbl">Classe</div><div class="r-val"><em>5F</em><span class="r-unit">ITT</span></div></div>
       </div>
     </div>
 
-    <div class="intro-block">
-      <h2>Indice dei contenuti</h2>
-      <p>Ogni macro-argomento è una pagina a sé. Sulla sinistra il sommario; dentro ciascuna pagina trovi i sotto-argomenti, esempi di configurazione e — dove serve — esercizi tipo. Inizia da dove vuoi.</p>
+    <div class="ch-grid">
+
+      <a class="ch-card" href="telecomunicazioni/onde-antenne.html">
+        <div class="ch-top"><span class="ch-no">CH1 · 01</span><span class="ch-meta">RF</span></div>
+        <h3>Campo EM &amp; antenne</h3>
+        <p>Maxwell, classificazione onde, ionosfera. Antenne hertziana → array LEO. Link budget.</p>
+        <div class="ch-trace"><svg viewBox="0 0 200 14" preserveAspectRatio="none"><path d="M 0 7 Q 10 1 20 7 T 40 7 T 60 7 T 80 7 T 100 7 T 120 7 T 140 7 T 160 7 T 180 7 T 200 7"/></svg></div>
+      </a>
+
+      <a class="ch-card" href="telecomunicazioni/modulazioni-digitali.html">
+        <div class="ch-top"><span class="ch-no">CH2 · 02</span><span class="ch-meta">NUOVO · PHY</span></div>
+        <h3>Canali &amp; modulazioni digitali</h3>
+        <p>Passa-basso vs passa-banda. Codici di linea. ASK, FSK, PSK, QAM, OFDM. Nyquist, Shannon, BER.</p>
+        <div class="ch-trace"><svg viewBox="0 0 200 14" preserveAspectRatio="none"><path d="M 0 3 H 25 V 11 H 50 V 3 H 75 V 11 H 100 V 3 H 125 V 11 H 150 V 3 H 175 V 11 H 200"/></svg></div>
+      </a>
+
+      <a class="ch-card" href="telecomunicazioni/tcp-ip.html">
+        <div class="ch-top"><span class="ch-no">CH3 · 03</span><span class="ch-meta">L3 · L4</span></div>
+        <h3>Suite TCP/IP</h3>
+        <p>IP, subnetting VLSM, DHCP, ARP. TCP vs UDP, 3-way handshake. ICMP, traceroute, ipconfig.</p>
+        <div class="ch-trace"><svg viewBox="0 0 200 14" preserveAspectRatio="none"><path d="M 0 11 L 25 11 L 25 3 L 50 3 L 50 11 L 100 11 L 100 3 L 130 3 L 130 11 L 170 11 L 170 7 L 200 7"/></svg></div>
+      </a>
+
+      <a class="ch-card" href="telecomunicazioni/switch-vlan.html">
+        <div class="ch-top"><span class="ch-no">CH4 · 04</span><span class="ch-meta">L2</span></div>
+        <h3>Switch &amp; VLAN</h3>
+        <p>Store-and-forward, cut-through. VLAN, trunking 802.1Q, inter-VLAN routing, voice VLAN, port-security.</p>
+        <div class="ch-trace"><svg viewBox="0 0 200 14" preserveAspectRatio="none"><path d="M 0 7 L 50 7 L 50 3 L 100 3 L 100 11 L 150 11 L 150 7 L 200 7"/></svg></div>
+      </a>
+
+      <a class="ch-card" href="telecomunicazioni/acl.html">
+        <div class="ch-top"><span class="ch-no">CH5 · 05</span><span class="ch-meta">SEC</span></div>
+        <h3>Access Control List</h3>
+        <p>Wildcard mask. ACL standard ed estese. Posizionamento, IOS, firewall stateless.</p>
+        <div class="ch-trace"><svg viewBox="0 0 200 14" preserveAspectRatio="none"><path d="M 0 7 L 30 7 L 40 3 L 50 11 L 60 3 L 70 11 L 80 7 L 200 7"/></svg></div>
+      </a>
+
+      <a class="ch-card" href="telecomunicazioni/nat.html">
+        <div class="ch-top"><span class="ch-no">CH6 · 06</span><span class="ch-meta">L3</span></div>
+        <h3>Network Address Translation</h3>
+        <p>NAT statico, dinamico, PAT/overload. Port forwarding. Verifica e troubleshooting su IOS / Mikrotik.</p>
+        <div class="ch-trace"><svg viewBox="0 0 200 14" preserveAspectRatio="none"><path d="M 0 7 Q 50 -1 100 7 T 200 7"/></svg></div>
+      </a>
+
+      <a class="ch-card" href="telecomunicazioni/routing.html">
+        <div class="ch-top"><span class="ch-no">CH7 · 07</span><span class="ch-meta">NUOVO · L3</span></div>
+        <h3>Routing dinamico</h3>
+        <p>AS, ASN. Distance-vector vs link-state. RIP/RIPv2, OSPF (Dijkstra, DR/BDR), BGP, hijacking.</p>
+        <div class="ch-trace"><svg viewBox="0 0 200 14" preserveAspectRatio="none"><path d="M 0 11 L 40 11 L 50 3 L 90 3 L 100 11 L 140 11 L 150 3 L 190 3 L 200 7"/></svg></div>
+      </a>
+
+      <a class="ch-card" href="telecomunicazioni/wireless-80211.html">
+        <div class="ch-top"><span class="ch-no">CH8 · 08</span><span class="ch-meta">WLAN</span></div>
+        <h3>Reti wireless 802.11</h3>
+        <p>CSMA/CA, MIMO. b/g/n/ac/ad. WEP→WPA3. RADIUS. BSSID, beacon, frame. WiMAX, WPAN, WWAN.</p>
+        <div class="ch-trace"><svg viewBox="0 0 200 14" preserveAspectRatio="none"><path d="M 0 7 Q 8 0 16 7 T 32 7 T 48 7 T 64 7 T 80 7 T 96 7 T 112 7 T 128 7 T 144 7 T 160 7 T 176 7 T 192 7 T 208 7"/></svg></div>
+      </a>
+
+      <a class="ch-card" href="telecomunicazioni/fibra-gpon.html">
+        <div class="ch-top"><span class="ch-no">CH9 · 09</span><span class="ch-meta">FTTH</span></div>
+        <h3>Trasmissione cablata &amp; GPON</h3>
+        <p>Cavi ethernet, codifiche 4B/5B, 8B/10B. Fibra mono/multi. WDM, link budget. OLT, ONU, GEM.</p>
+        <div class="ch-trace"><svg viewBox="0 0 200 14" preserveAspectRatio="none"><path d="M 0 7 L 200 7"/><path d="M 30 7 L 30 3 M 60 7 L 60 11 M 110 7 L 110 3 M 160 7 L 160 11" stroke-dasharray="2,2" opacity=".6"/></svg></div>
+      </a>
+
+      <a class="ch-card" href="telecomunicazioni/laboratorio.html">
+        <div class="ch-top"><span class="ch-no">L0 · 10</span><span class="ch-meta">LAB · MIKROTIK</span></div>
+        <h3>Laboratorio Mikrotik</h3>
+        <p>7 esperienze: subnetting, SNAT/DNAT, VLAN, firewall, VRRP, OSPF, DMZ con ACL.</p>
+        <div class="ch-trace"><svg viewBox="0 0 200 14" preserveAspectRatio="none"><path d="M 0 7 L 20 7 L 20 3 L 40 3 L 40 11 L 60 11 L 60 7 L 80 7 L 80 3 L 100 3 L 100 11 L 120 11 L 120 7 L 200 7"/></svg></div>
+      </a>
+
     </div>
 
-    <div class="topic-grid">
-      <a class="topic-card" href="telecomunicazioni/onde-antenne.html">
-        <div class="tc-top"><span class="tc-icon">📡</span><span class="tc-num">01</span></div>
-        <h3>Campo EM &amp; antenne</h3>
-        <p>Onde di superficie, diretta, riflessa, spaziale. Ionosfera, fading da percorsi multipli. Antenne hertziana, Marconi, Yagi-Uda, parabola, array LEO. Link budget.</p>
-        <span class="tc-tag">Onde radio</span>
-      </a>
-      <a class="topic-card" href="telecomunicazioni/tcp-ip.html">
-        <div class="tc-top"><span class="tc-icon">🌐</span><span class="tc-num">02</span></div>
-        <h3>Suite TCP/IP</h3>
-        <p>IP, subnetting VLSM, IP privati. DHCP, ARP. TCP vs UDP. Three-way handshake, sliding window. ICMP, traceroute, ipconfig.</p>
-        <span class="tc-tag">Reti</span>
-      </a>
-      <a class="topic-card" href="telecomunicazioni/switch-vlan.html">
-        <div class="tc-top"><span class="tc-icon">🔀</span><span class="tc-num">03</span></div>
-        <h3>Switch &amp; VLAN</h3>
-        <p>Store-and-forward, cut-through, fragment-free. VLAN, trunking 802.1Q, inter-VLAN routing, voice VLAN. Port security.</p>
-        <span class="tc-tag">Livello 2</span>
-      </a>
-      <a class="topic-card" href="telecomunicazioni/acl.html">
-        <div class="tc-top"><span class="tc-icon">🛡️</span><span class="tc-num">04</span></div>
-        <h3>Access Control List</h3>
-        <p>Wildcard mask. ACL standard ed estese. Posizionamento. Istruzioni IOS. Realizzazione di un firewall stateless.</p>
-        <span class="tc-tag">Sicurezza</span>
-      </a>
-      <a class="topic-card" href="telecomunicazioni/nat.html">
-        <div class="tc-top"><span class="tc-icon">🔁</span><span class="tc-num">05</span></div>
-        <h3>Network Address Translation</h3>
-        <p>NAT statico, dinamico, PAT/overload. Port forwarding. Verifica e troubleshooting. Configurazioni IOS.</p>
-        <span class="tc-tag">Routing</span>
-      </a>
-      <a class="topic-card" href="telecomunicazioni/wireless-80211.html">
-        <div class="tc-top"><span class="tc-icon">📶</span><span class="tc-num">06</span></div>
-        <h3>Reti wireless 802.11</h3>
-        <p>CSMA/CA, MIMO. Varianti b/g/n/ac/ad. Sicurezza WEP/WPA/WPA2. RADIUS. Struttura cella, beacon, frame 802.11. WiMAX.</p>
-        <span class="tc-tag">WLAN</span>
-      </a>
-      <a class="topic-card" href="telecomunicazioni/fibra-gpon.html">
-        <div class="tc-top"><span class="tc-icon">💡</span><span class="tc-num">07</span></div>
-        <h3>Fibra ottica &amp; GPON</h3>
-        <p>Multi/monomodale. TX/RX. WDM. Link budget ottico. Architettura GPON (OLT, ONU, splitter). Incapsulamento GEM.</p>
-        <span class="tc-tag">FTTH</span>
-      </a>
-      <a class="topic-card" href="telecomunicazioni/laboratorio.html">
-        <div class="tc-top"><span class="tc-icon">🔧</span><span class="tc-num">08</span></div>
-        <h3>Laboratorio Mikrotik</h3>
-        <p>Sette esperienze: subnetting, SNAT/DNAT, VLAN, firewall, VRRP, OSPF, DMZ con ACL. Tutte su router Mikrotik singolo.</p>
-        <span class="tc-tag">Pratica</span>
-      </a>
+    <div class="note t-teal" style="margin-top:1.5rem">
+      <strong>Fonti</strong>
+      Le pagine integrano il <em>documento del 15 maggio</em> e le sei dispense del prof: <code>canali e modulazioni digitali</code>, <code>routing</code>, <code>trasmissione cablata</code>, <code>TX senza fili</code>, <code>wireless</code>, <code>ACL</code>. I PDF originali restano in <code>telecomunicazioni/Fonti-tele/</code> (esclusi dal sito).
     </div>
 
   </div>
 </main>
 
-<footer>
-  Telecomunicazioni · 5F 2025/26 · Indice materia
+<footer class="scope-footer">
+  <span class="sf-dot"></span>
+  <span>TELECOM · 5F · 2025/26 · INDICE</span>
+  <span class="sf-spacer"></span>
+  <span>SCOPE THEME · v1</span>
 </footer>
+
+<script>
+(function(){
+  var btn = document.getElementById('themeToggle');
+  if(!btn) return;
+  btn.addEventListener('click', function(){
+    var cur = document.documentElement.getAttribute('data-theme') || 'light';
+    var next = cur === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    try{ localStorage.setItem('tele-theme', next); }catch(e){}
+  });
+})();
+</script>
 </body>
 </html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="it" class="theme-init">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Routing dinamico — Telecomunicazioni · 5F</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/tele-style.css">
+<script>
+(function(){
+  try{ document.documentElement.setAttribute('data-theme', localStorage.getItem('tele-theme') || 'light'); }catch(e){}
+  document.documentElement.classList.remove('theme-init');
+})();
+</script>
+</head>
+<body>
+
+<div class="scope-bar">
+  <div class="scope-bar-inner">
+    <span class="scope-led"></span>
+    <span class="scope-tag"><a href="../index.html">← Home</a></span>
+    <span class="scope-tag"><a href="../telecomunicazioni.html">← Telecom</a></span>
+    <span class="scope-tag"><strong>CH7</strong> · ROUTING</span>
+    <span class="scope-spacer"></span>
+    <span class="scope-readout"><span>PROTO <b>OSPF/BGP</b></span><span>AS <b>×N</b></span></span>
+    <button class="theme-toggle" type="button" id="themeToggle">Tema</button>
+  </div>
+</div>
+
+<main class="scope-shell">
+
+  <aside class="sn">
+    <div class="sn-head"><span class="h-dot"></span><span class="h-lbl">Canali · Indice</span></div>
+    <a href="../telecomunicazioni.html" class="sn-back">← Indice materia</a>
+    <ul class="sn-list">
+      <li><a href="onde-antenne.html"><span class="sn-ch">CH1</span><span>Onde &amp; Antenne</span><span class="sn-num">01</span></a></li>
+      <li><a href="modulazioni-digitali.html"><span class="sn-ch">CH2</span><span>Canali &amp; Modulazioni</span><span class="sn-num">02</span></a></li>
+      <li><a href="tcp-ip.html"><span class="sn-ch">CH3</span><span>Suite TCP/IP</span><span class="sn-num">03</span></a></li>
+      <li><a href="switch-vlan.html"><span class="sn-ch">CH4</span><span>Switch &amp; VLAN</span><span class="sn-num">04</span></a></li>
+      <li><a href="acl.html"><span class="sn-ch">CH5</span><span>ACL</span><span class="sn-num">05</span></a></li>
+      <li><a href="nat.html"><span class="sn-ch">CH6</span><span>NAT</span><span class="sn-num">06</span></a></li>
+      <li><a href="routing.html" class="active"><span class="sn-ch">CH7</span><span>Routing</span><span class="sn-num">07</span></a></li>
+      <li><a href="wireless-80211.html"><span class="sn-ch">CH8</span><span>Wireless 802.11</span><span class="sn-num">08</span></a></li>
+      <li><a href="fibra-gpon.html"><span class="sn-ch">CH9</span><span>Fibra &amp; GPON</span><span class="sn-num">09</span></a></li>
+      <li><a href="laboratorio.html"><span class="sn-ch">L0</span><span>Laboratorio</span><span class="sn-num">10</span></a></li>
+    </ul>
+  </aside>
+
+  <div>
+
+    <div class="sig-head">
+      <div class="sig-num">07</div>
+      <div class="sig-body">
+        <h2>Routing dinamico</h2>
+        <p>Sistemi autonomi, protocolli interni (RIP, OSPF) ed esterni (BGP). Distance-vector vs link-state, Dijkstra, DR/BDR, AS hijacking.</p>
+      </div>
+      <span class="sig-badge b-blue">L3 · INSTRADAMENTO</span>
+    </div>
+
+    <div class="panel">
+      <h4>Routing statico vs dinamico</h4>
+      <div class="grid g2">
+        <div class="note t-teal">
+          <strong>Statico</strong>
+          I cammini cambiano raramente, la rete è piccola. Una volta assegnati, restano fissi salvo intervento umano. <em>Pro</em>: nessun overhead, semplicità, prevedibilità. <em>Contro</em>: nessuna reazione a guasti, non scala.
+        </div>
+        <div class="note t-blue">
+          <strong>Dinamico</strong>
+          Per reti che variano nel tempo e dimensioni rilevanti. L'algoritmo modifica i percorsi in base a topologia e traffico. Obiettivo: tabelle di routing sempre aggiornate, scambiate tra router come pacchetti <strong>routing update</strong>.
+        </div>
+      </div>
+      <p style="margin-top:1rem">Un router prende le info che riceve, applica un <em>algoritmo</em> e ottiene la <strong>metrica</strong> — un valore numerico che identifica la <em>best path</em> tra quelle conosciute. L'algoritmo è caratteristico del protocollo.</p>
+    </div>
+
+    <div class="panel">
+      <h4>Sistemi Autonomi (AS) · architettura a due livelli</h4>
+      <p>Un <strong>Autonomous System</strong> è un gruppo di router e reti IP sotto un'unica autorità amministrativa. L'architettura di routing in Internet è gerarchica:</p>
+      <div class="proto-step">
+        <span class="proto-num">L1 · interno</span>
+        <div class="proto-text"><strong>IGP — Interior Gateway Protocol.</strong> Ogni AS gestisce internamente l'instradamento con un suo protocollo (RIP, OSPF, EIGRP). Mappa topologica completa del dominio.</div>
+      </div>
+      <div class="proto-step">
+        <span class="proto-num">L2 · interdomain</span>
+        <div class="proto-text"><strong>EGP — Exterior Gateway Protocol.</strong> Descrive come gli AS si interconnettono. Non mantiene transiti interni: i percorsi tra reti sono <em>sequenze di AS</em>.</div>
+      </div>
+      <div class="note t-teal" style="margin-top:1rem">
+        <strong>ASN · Autonomous System Number</strong>
+        Un AS è identificato da un numero a 16 bit (con il prefisso 0 riservato), ora estendibile a 32 bit. Assegnato dallo <strong>IANA</strong>, può essere pubblico o privato. <strong>BGP</strong> usa l'ASN per identificare univocamente ogni sistema durante l'instradamento inter-AS.
+      </div>
+    </div>
+
+    <div class="panel">
+      <h4>Classificazione dei protocolli di routing</h4>
+      <div class="grid g2">
+        <div class="note t-blue">
+          <strong>Distance Vector</strong>
+          Ogni router conosce solo <em>distanza e direzione</em>: per ogni rete destinazione invia ai vicini la coppia <code>[indirizzo, distanza]</code> (DV). Stima via <strong>Bellman-Ford distribuito</strong>. La distanza è calcolata in base a parametri caratteristici (hop count, bandwidth…). Esempi: <strong>RIP</strong>, RIPv2, EIGRP.
+        </div>
+        <div class="note t-magenta">
+          <strong>Link State</strong>
+          Ogni router ha una <em>visione globale</em> della rete: tutti i router di un AS hanno la stessa mappa topologica. Ogni router invia in flooding i propri <strong>Link-State Advertisement</strong> e applica <strong>Dijkstra</strong> sull'intero grafo. Esempi: <strong>OSPF</strong>, IS-IS.
+        </div>
+      </div>
+    </div>
+
+    <div class="sig-head" style="margin-top:2.5rem">
+      <div class="sig-num">A</div>
+      <div class="sig-body">
+        <h2>RIP &amp; RIPv2 · Distance Vector</h2>
+        <p>Routing Information Protocol, metrica hop-count, update periodici.</p>
+      </div>
+      <span class="sig-badge">CLASSIC IGP</span>
+    </div>
+
+    <div class="panel">
+      <h4>RIP — il classico</h4>
+      <ul>
+        <li><strong>Metrica:</strong> hop count (numero di router attraversati).</li>
+        <li><strong>Update:</strong> intera copia della routing table ogni <strong>30 s</strong> e quando cambia la topologia. In quel caso parte un update <em>immediato</em>, senza attendere il timer.</li>
+        <li>Ogni router incrementa di 1 l'hop count e indica come <em>next hop</em> l'IP del router che gli ha mandato l'update.</li>
+        <li><strong>Distanza amministrativa:</strong> 120.</li>
+        <li><strong>Numero massimo di hop:</strong> 15 (oltre = rete irraggiungibile). Limita pesantemente la dimensione della rete.</li>
+      </ul>
+      <div class="note t-magenta">
+        <strong>RIP vs RIPv2</strong>
+        <ul>
+          <li>RIP <em>non</em> invia la subnet mask: errori se ci sono sottoreti VLSM (è <strong>classful</strong>). RIPv2 ha il campo subnet mask → <strong>classless</strong>.</li>
+          <li>RIP usa <em>broadcast</em> per gli update → sovraccarica la rete. RIPv2 usa <strong>multicast</strong> a <code>224.0.0.9</code> → solo i router interessati.</li>
+          <li>RIPv2 introduce <strong>autenticazione</strong> (password in chiaro o MD5).</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-title">Configurazione RIP / RIPv2 · IOS Cisco</div>
+      <div class="term"><span class="c-com"># entro in configurazione del router</span>
+Router&gt; <span class="c-prompt">enable</span>
+Router# <span class="c-prompt">configure terminal</span>
+
+<span class="c-com"># RIP base</span>
+Router(config)# <span class="c-kw">router rip</span>
+Router(config-router)# <span class="c-kw">network</span> <span class="c-num">192.168.10.0</span>
+Router(config-router)# <span class="c-kw">network</span> <span class="c-num">10.0.0.0</span>
+
+<span class="c-com"># attivo RIPv2 + ottimizzazioni</span>
+Router(config-router)# <span class="c-kw">version 2</span>
+Router(config-router)# <span class="c-kw">no auto-summary</span>           <span class="c-com">! disabilita riassunto classful</span>
+Router(config-router)# <span class="c-kw">passive-interface</span> g0/0    <span class="c-com">! non invia update su g0/0</span>
+Router(config-router)# <span class="c-kw">default-information originate</span>  <span class="c-com">! propaga la default route</span></div>
+    </div>
+
+    <div class="sig-head" style="margin-top:2.5rem">
+      <div class="sig-num">B</div>
+      <div class="sig-body">
+        <h2>OSPF · Open Shortest Path First</h2>
+        <p>Link-state, Dijkstra. Il protocollo IGP più usato in Internet.</p>
+      </div>
+      <span class="sig-badge b-blue">LINK-STATE</span>
+    </div>
+
+    <div class="panel">
+      <h4>Come funziona OSPF</h4>
+      <p>Ciascun router costruisce una <strong>mappa topologica</strong> del sistema autonomo, ponendo sé stesso come radice. Esegue l'<strong>algoritmo di Dijkstra</strong> per determinare l'albero delle rotte di costo minimo verso tutte le sottoreti.</p>
+      <ul>
+        <li>Se due percorsi hanno lo stesso costo, il carico viene <strong>distribuito</strong> equamente (ECMP).</li>
+        <li>Il costo di ogni link è definito dall'amministratore (di default, inversamente proporzionale alla bandwidth).</li>
+        <li>OSPFv2 (per IPv4) è la versione più diffusa.</li>
+      </ul>
+      <div class="note t-blue">
+        <strong>Algoritmo di Dijkstra · Link-State</strong>
+        Ogni nodo ha conoscenza completa di grafo e costi. Inizialmente conosce solo il proprio ambito locale (vicini diretti) → trasmette in flooding queste informazioni con <strong>Link-State Packet</strong>. Con tutti i LSP, costruisce uno <strong>Spanning Tree</strong> dei cammini di costo minimo verso tutte le destinazioni.
+      </div>
+    </div>
+
+    <div class="panel">
+      <h4>Aree OSPF · come si scala</h4>
+      <p>Un grande AS produrrebbe troppi LSA e tempi di convergenza esagerati. Soluzione: si divide l'AS in <strong>aree</strong>. Tutti i router di una stessa area condividono lo stesso <em>area ID</em>.</p>
+      <ul>
+        <li>Ogni router invia LSA <strong>solo</strong> ai router della propria area.</li>
+        <li>I dettagli interni di un'area non escono.</li>
+        <li>Per far comunicare aree diverse esistono <strong>router di confine</strong> (ABR — Area Border Router).</li>
+        <li>Ogni AS multi-area richiede una <strong>backbone area (area 0)</strong> che instrada il traffico tra le altre.</li>
+      </ul>
+      <div class="grid g2" style="margin-top:1rem">
+        <div class="metric">
+          <div class="m-lbl">DR · Designated Router</div>
+          <div class="m-val">×1</div>
+          <div class="m-sub">"Amministratore" dell'area: gli altri sincronizzano i propri DB con lui → meno messaggi.</div>
+        </div>
+        <div class="metric">
+          <div class="m-lbl">BDR · Backup DR</div>
+          <div class="m-val t-teal">×1</div>
+          <div class="m-sub">Subentra se il DR cade.</div>
+        </div>
+      </div>
+      <p style="margin-top:.8rem">Multicast usati: i router non-DR mandano al DR via <code>224.0.0.6</code>, il DR redistribuisce a tutti via <code>224.0.0.5</code>. <strong>Elezione DR/BDR:</strong> vince il router con priorità OSPF più alta (default 1); in caso di pareggio vince il router ID più alto.</p>
+    </div>
+
+    <div class="panel">
+      <h4>Link-State Database (LSDB)</h4>
+      <p>Ogni router mantiene un <strong>LSDB</strong> composto da <em>Record Link-State</em> per ciascuna area su cui è operativo: è la descrizione topologica dell'area. I record vengono aggiornati con <strong>LSA — Link-State Advertisement</strong>.</p>
+      <p>Da un LSDB identico, ogni router costruisce <em>il proprio</em> SPF tree: pur partendo dalle stesse informazioni, ognuno ha la sua "vista" della rete con sé come radice.</p>
+    </div>
+
+    <div class="panel">
+      <div class="panel-title">Configurazione OSPF · IOS Cisco</div>
+      <div class="term"><span class="c-com"># OSPF process ID locale al router (non deve combaciare tra router)</span>
+Router(config)# <span class="c-kw">router ospf</span> <span class="c-num">1</span>
+
+<span class="c-com"># dichiaro le reti partecipanti, con wildcard mask</span>
+Router(config-router)# <span class="c-kw">network</span> <span class="c-num">192.168.10.0 0.0.0.255 area</span> <span class="c-num">0</span>
+Router(config-router)# <span class="c-kw">network</span> <span class="c-num">10.0.0.0 0.0.0.3 area</span> <span class="c-num">0</span>
+
+<span class="c-com"># router ID fisso (consigliato)</span>
+Router(config-router)# <span class="c-kw">router-id</span> <span class="c-num">1.1.1.1</span>
+
+<span class="c-com"># interfacce passive (non vogliamo OSPF verso LAN utenti)</span>
+Router(config-router)# <span class="c-kw">passive-interface</span> g0/0
+
+<span class="c-com"># verifica</span>
+Router# <span class="c-kw">show ip ospf neighbor</span>
+Router# <span class="c-kw">show ip route ospf</span></div>
+    </div>
+
+    <div class="sig-head" style="margin-top:2.5rem">
+      <div class="sig-num">C</div>
+      <div class="sig-body">
+        <h2>BGP · il routing tra AS</h2>
+        <p>Border Gateway Protocol. Il protocollo che "tiene insieme" Internet.</p>
+      </div>
+      <span class="sig-badge b-magenta">EGP · INTER-AS</span>
+    </div>
+
+    <div class="panel">
+      <h4>Come funziona BGP</h4>
+      <p>BGP è usato per la <strong>comunicazione tra sistemi autonomi</strong>. È il protocollo più usato dagli <strong>ISP</strong>.</p>
+      <ul>
+        <li>Appena stabilita la sessione, i router si scambiano <em>tutta</em> la routing table.</li>
+        <li>Dopo, si aggiornano <strong>solo quando cambiano i percorsi</strong> disponibili.</li>
+        <li>Il pacchetto di update riguarda <em>solo</em> la route modificata (incrementale).</li>
+        <li>L'algoritmo di best-path non usa solo hop count, ma <strong>attributi</strong> definiti dall'amministratore (AS-PATH, LOCAL_PREF, MED, COMMUNITY…) per controllare il flusso del traffico.</li>
+      </ul>
+    </div>
+
+    <div class="panel">
+      <h4>BGP &amp; considerazioni commerciali</h4>
+      <p>Gli AS non appartengono tutti alla stessa organizzazione: spesso sono <em>concorrenti</em> (ISP, aziende commerciali, governi). I percorsi di BGP riflettono accordi commerciali: gli AS si addebitano reciprocamente il transito del traffico, e il prezzo dell'accesso influenza la scelta del percorso.</p>
+      <div class="note t-magenta">
+        <strong>BGP Hijacking · attacco</strong>
+        Un attaccante annuncia falsamente la proprietà di prefissi IP che non gli appartengono. Il traffico per quegli IP viene rerouted attraverso reti malevole. Per riuscirci serve <em>controllare</em> o compromettere un router BGP che fa da ponte tra AS — non è alla portata di chiunque, ma è successo storicamente (e ha causato outage globali).
+      </div>
+    </div>
+
+    <div class="panel">
+      <h4>MP-BGP · Multiprotocol BGP</h4>
+      <p>Estende BGP per distribuire dati sfruttando l'<strong>IP multicast routing</strong>: lo stesso contenuto (es. aggiornamento della routing table) viene inviato a più nodi/AS in contemporanea. Risparmio di tempo e di risorse di rete.</p>
+    </div>
+
+    <div class="sig-head" style="margin-top:2.5rem">
+      <div class="sig-num">D</div>
+      <div class="sig-body">
+        <h2>VRRP · in laboratorio</h2>
+        <p>Virtual Router Redundancy Protocol — usato nelle esperienze Mikrotik per ridondanza del gateway.</p>
+      </div>
+      <span class="sig-badge b-violet">LAB · HA</span>
+    </div>
+
+    <div class="panel">
+      <p>Due (o più) router condividono un <strong>IP virtuale</strong> che fa da gateway per la LAN. Un router è <strong>master</strong>, gli altri <strong>backup</strong>. Se il master cade (mancano gli annunci VRRP), un backup prende il ruolo e l'IP virtuale rimane attivo. Gli host della LAN non si accorgono di nulla.</p>
+      <p style="margin-top:.6rem">Nell'esperienza di laboratorio si verifica il fallback simulando il guasto del master: ping continuo dal client + spegnimento del router master → il backup subentra entro pochi secondi senza perdita di connessione.</p>
+    </div>
+
+    <nav class="pagenav">
+      <a class="prev" href="nat.html"><span class="pn-dir">← Precedente</span><span class="pn-title">CH6 · NAT</span></a>
+      <a class="next" href="wireless-80211.html"><span class="pn-dir">Successivo →</span><span class="pn-title">CH8 · Wireless 802.11</span></a>
+    </nav>
+
+  </div>
+</main>
+
+<footer class="scope-footer">
+  <span class="sf-dot"></span>
+  <span>TELECOM · 5F · 2025/26 · CH7 — ROUTING</span>
+  <span class="sf-spacer"></span>
+  <span>FONTE · ROUTING 2025/26</span>
+</footer>
+
+<script>
+(function(){
+  var btn = document.getElementById('themeToggle');
+  if(!btn) return;
+  btn.addEventListener('click', function(){
+    var cur = document.documentElement.getAttribute('data-theme') || 'light';
+    var next = cur === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    try{ localStorage.setItem('tele-theme', next); }catch(e){}
+  });
+})();
+</script>
+</body>
+</html>

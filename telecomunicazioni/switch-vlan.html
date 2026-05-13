@@ -1,72 +1,49 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="it" class="theme-init">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Switch & VLAN — Telecomunicazioni · 5F</title>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=IBM+Plex+Mono:wght@400;600&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../shared/tech-style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/tele-style.css">
+<script>
+(function(){
+  try{ document.documentElement.setAttribute("data-theme", localStorage.getItem("tele-theme") || "light"); }catch(e){}
+  document.documentElement.classList.remove("theme-init");
+})();
+</script>
 </head>
 <body>
 
-<header class="header">
-  <div class="header-bg"></div>
-  <div class="header-inner" style="padding-bottom:1.5rem">
-    <div class="header-eyebrow">
-      <a class="eyebrow-tag" href="../index.html">← Home</a>
-      <a class="eyebrow-tag" href="../telecomunicazioni.html">← Telecomunicazioni</a>
-      <span class="eyebrow-tag">5F · 2025/26</span>
-      <div class="eyebrow-line"></div>
-      <span class="eyebrow-tag">Switch & VLAN</span>
-    </div>
+<div class="scope-bar">
+  <div class="scope-bar-inner">
+    <span class="scope-led"></span>
+    <span class="scope-tag"><a href="../index.html">← Home</a></span>
+    <span class="scope-tag"><a href="../telecomunicazioni.html">← Telecom</a></span>
+    <span class="scope-tag"><strong>CH4</strong> · SWITCH & VLAN</span>
+    <span class="scope-spacer"></span>
+    <span class="scope-readout"><span>5F · 2025/26</span></span>
+    <button class="theme-toggle" type="button" id="themeToggle">Tema</button>
   </div>
-</header>
+</div>
 
 <main class="layout-shell">
   <aside class="sidenav">
-    <a href="../telecomunicazioni.html" class="sn-back">← Indice materia</a>
-    <div class="sn-label">Macro-argomenti</div>
-    <a href="onde-antenne.html" class="">
-      <span class="icn">📡</span>
-      <span>Onde & Antenne</span>
-      <span class="num">01</span>
-    </a>
-    <a href="tcp-ip.html" class="">
-      <span class="icn">🌐</span>
-      <span>TCP/IP</span>
-      <span class="num">02</span>
-    </a>
-    <a href="switch-vlan.html" class="active">
-      <span class="icn">🔀</span>
-      <span>Switch & VLAN</span>
-      <span class="num">03</span>
-    </a>
-    <a href="acl.html" class="">
-      <span class="icn">🛡️</span>
-      <span>ACL</span>
-      <span class="num">04</span>
-    </a>
-    <a href="nat.html" class="">
-      <span class="icn">🔁</span>
-      <span>NAT</span>
-      <span class="num">05</span>
-    </a>
-    <a href="wireless-80211.html" class="">
-      <span class="icn">📶</span>
-      <span>Wireless 802.11</span>
-      <span class="num">06</span>
-    </a>
-    <a href="fibra-gpon.html" class="">
-      <span class="icn">💡</span>
-      <span>Fibra & GPON</span>
-      <span class="num">07</span>
-    </a>
-    <a href="laboratorio.html" class="">
-      <span class="icn">🔧</span>
-      <span>Laboratorio</span>
-      <span class="num">08</span>
-    </a>
-  </aside>
+  <a href="../telecomunicazioni.html" class="sn-back">← Indice materia</a>
+  <div class="sn-label">Canali · Indice</div>
+  <a href="onde-antenne.html"><span class="icn">CH1</span><span>Onde &amp; Antenne</span><span class="num">01</span></a>
+  <a href="modulazioni-digitali.html"><span class="icn">CH2</span><span>Canali &amp; Modulazioni</span><span class="num">02</span></a>
+  <a href="tcp-ip.html"><span class="icn">CH3</span><span>Suite TCP/IP</span><span class="num">03</span></a>
+  <a href="switch-vlan.html" class="active"><span class="icn">CH4</span><span>Switch &amp; VLAN</span><span class="num">04</span></a>
+  <a href="acl.html"><span class="icn">CH5</span><span>ACL</span><span class="num">05</span></a>
+  <a href="nat.html"><span class="icn">CH6</span><span>NAT</span><span class="num">06</span></a>
+  <a href="routing.html"><span class="icn">CH7</span><span>Routing</span><span class="num">07</span></a>
+  <a href="wireless-80211.html"><span class="icn">CH8</span><span>Wireless 802.11</span><span class="num">08</span></a>
+  <a href="fibra-gpon.html"><span class="icn">CH9</span><span>Fibra &amp; GPON</span><span class="num">09</span></a>
+  <a href="laboratorio.html"><span class="icn">L0</span><span>Laboratorio</span><span class="num">10</span></a>
+</aside>
 
   <div class="content-main">
     <section class="section">
@@ -182,8 +159,23 @@
   </div>
 </main>
 
-<footer>
-  Telecomunicazioni · 5F 2025/26 · Switch & VLAN
+<footer class="scope-footer">
+  <span class="sf-dot"></span>
+  <span>TELECOM · 5F · 2025/26 · CH4 — SWITCH & VLAN</span>
+  <span class="sf-spacer"></span>
+  <span>SCOPE THEME · v1</span>
 </footer>
+<script>
+(function(){
+  var btn = document.getElementById("themeToggle");
+  if(!btn) return;
+  btn.addEventListener("click", function(){
+    var cur = document.documentElement.getAttribute("data-theme") || "light";
+    var next = cur === "dark" ? "light" : "dark";
+    document.documentElement.setAttribute("data-theme", next);
+    try{ localStorage.setItem("tele-theme", next); }catch(e){}
+  });
+})();
+</script>
 </body>
 </html>
