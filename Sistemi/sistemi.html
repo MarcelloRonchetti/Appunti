@@ -1744,6 +1744,146 @@
                 </div>
             </div>
         </div>
+
+        <!-- AES: lo standard simmetrico -->
+        <div class="animate-on-scroll" style="margin-top: 4rem;">
+            <h3 style="margin-bottom: 1.5rem;">AES — Lo Standard Simmetrico</h3>
+            <div class="card">
+                <h4>
+                    <span class="icon" style="background: rgba(79, 140, 255, 0.15); color: var(--accent-blue);">⚙️</span>
+                    Advanced Encryption Standard
+                </h4>
+                <p>
+                    <strong>AES</strong> (Advanced Encryption Standard) è il cifrario simmetrico adottato come standard dal NIST nel 2001 (algoritmo originale: <em>Rijndael</em>). È un <strong>cifrario a blocchi</strong>: divide il testo in chiaro in blocchi di <strong>16 byte (128 bit)</strong> e cifra ogni blocco con la chiave. La chiave può essere di 128, 192 o 256 bit (AES-128, AES-192, AES-256).
+                </p>
+                <div class="formula" style="margin-top: 1rem;">
+                    Blocco da 16 byte + Chiave → AES → Blocco cifrato da 16 byte
+                </div>
+                <p style="margin-top: 1rem;">
+                    AES è veloce, sicuro e implementato in hardware nei processori moderni (istruzioni <em>AES-NI</em>). Viene usato ovunque: cifratura del disco (BitLocker, FileVault), HTTPS/TLS, Wi-Fi WPA2/WPA3, archivi cifrati.
+                </p>
+            </div>
+            <div class="warning-box" style="margin-top: 1.5rem;">
+                <h4>Il problema dei messaggi lunghi</h4>
+                <p>
+                    AES cifra <strong>un blocco da 16 byte alla volta</strong>. Ma un messaggio reale (un file, una pagina HTML, un'immagine) è molto più lungo. Come si combinano i blocchi cifrati? La risposta sono le <strong>modalità operative</strong>.
+                </p>
+            </div>
+        </div>
+
+        <!-- Modalità ECB vs CBC -->
+        <div class="animate-on-scroll" style="margin-top: 3rem;">
+            <h3 style="margin-bottom: 1.5rem;">Modalità Operative — ECB vs CBC</h3>
+            <div class="comparison-grid">
+                <!-- ECB -->
+                <div class="comparison-card symmetric">
+                    <h4>
+                        <span class="icon" style="background: rgba(239, 68, 68, 0.15); color: var(--accent-red);">⚠️</span>
+                        ECB — Electronic CodeBook
+                    </h4>
+                    <div class="badge badge-red">Insicura</div>
+                    <p style="margin-top: 1rem; color: var(--text-secondary);">
+                        Ogni blocco viene cifrato <strong style="color: var(--text-primary);">in modo indipendente</strong> con la stessa chiave. Semplice da implementare e parallelizzabile.
+                    </p>
+                    <div class="flow-diagram" style="padding: 1.5rem 0;">
+                        <div class="flow-box"><div class="label">Blocco 1</div><div class="value">P₁</div></div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-box highlight"><div class="label">AES(K)</div><div class="value">🔒</div></div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-box"><div class="label">Cifrato 1</div><div class="value">C₁</div></div>
+                    </div>
+                    <div class="warning-box" style="margin-top: 1rem;">
+                        <h4>Difetto fondamentale</h4>
+                        <p>Blocchi <strong>identici</strong> in chiaro producono blocchi <strong>identici</strong> nel cifrato. La struttura del messaggio rimane visibile nel cifrato.</p>
+                    </div>
+                </div>
+
+                <!-- CBC -->
+                <div class="comparison-card asymmetric">
+                    <h4>
+                        <span class="icon" style="background: rgba(34, 197, 94, 0.15); color: var(--accent-green);">✅</span>
+                        CBC — Cipher Block Chaining
+                    </h4>
+                    <div class="badge badge-green">Sicura</div>
+                    <p style="margin-top: 1rem; color: var(--text-secondary);">
+                        Ogni blocco viene <strong style="color: var(--text-primary);">XORato con il cifrato precedente</strong> prima di essere passato ad AES. Il primo blocco usa un <strong style="color: var(--text-primary);">IV</strong> casuale.
+                    </p>
+                    <div class="flow-diagram" style="padding: 1.5rem 0;">
+                        <div class="flow-box"><div class="label">P₁ ⊕ IV</div><div class="value">⊕</div></div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-box highlight"><div class="label">AES(K)</div><div class="value">🔒</div></div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-box"><div class="label">C₁ → ⊕ P₂</div><div class="value">C₁</div></div>
+                    </div>
+                    <div class="key-concept" style="margin-top: 1rem;">
+                        <h4>Vantaggio</h4>
+                        <p>Anche due blocchi in chiaro identici producono cifrati <strong>diversi</strong>, perché il contesto precedente (cifrato precedente) cambia sempre.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Esempio visivo del difetto di ECB -->
+        <div class="animate-on-scroll" style="margin-top: 3rem;">
+            <h3 style="text-align: center; margin-bottom: 1.5rem;">Perché ECB è pericolosa — la dimostrazione visiva</h3>
+            <div class="card">
+                <p>
+                    Cifriamo un'immagine con aree di colore uniforme (es. il celebre <em>pinguino Tux</em> di Linux) usando ECB e CBC. I pixel uguali producono blocchi in chiaro uguali — e questo, in ECB, significa blocchi cifrati uguali.
+                </p>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 1.5rem; text-align: center;">
+                    <div>
+                        <div style="background: linear-gradient(135deg, #e5e7eb 0%, #9ca3af 100%); aspect-ratio: 1; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 4rem;">🐧</div>
+                        <p style="margin-top: 0.6rem; font-size: 0.85rem; color: var(--text-muted);"><strong>Originale</strong><br>Aree uniformi visibili</p>
+                    </div>
+                    <div>
+                        <div style="background-image: repeating-conic-gradient(from 0deg at 30% 40%, #6b7280 0deg 25deg, #374151 25deg 50deg, #9ca3af 50deg 75deg, #4b5563 75deg 100deg); aspect-ratio: 1; border-radius: 12px; opacity: 0.85; display: flex; align-items: center; justify-content: center; font-size: 4rem; mix-blend-mode: multiply;">🐧</div>
+                        <p style="margin-top: 0.6rem; font-size: 0.85rem; color: var(--accent-red);"><strong>Cifrata con ECB</strong><br>⚠️ Si vede ancora il pinguino!</p>
+                    </div>
+                    <div>
+                        <div style="background-image: url('data:image/svg+xml;utf8,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;200&quot; height=&quot;200&quot;><filter id=&quot;n&quot;><feTurbulence type=&quot;fractalNoise&quot; baseFrequency=&quot;0.9&quot; numOctaves=&quot;3&quot;/></filter><rect width=&quot;200&quot; height=&quot;200&quot; filter=&quot;url(%23n)&quot;/></svg>'); background-size: cover; aspect-ratio: 1; border-radius: 12px;"></div>
+                        <p style="margin-top: 0.6rem; font-size: 0.85rem; color: var(--accent-green);"><strong>Cifrata con CBC</strong><br>✅ Rumore indistinguibile</p>
+                    </div>
+                </div>
+                <p style="margin-top: 1.5rem; text-align: center; color: var(--text-muted); font-size: 0.9rem;">
+                    Stesso pixel → stesso blocco in chiaro → in ECB anche lo stesso blocco cifrato. La struttura dell'immagine sopravvive alla cifratura. <strong style="color: var(--text-primary);">Per questo ECB non va mai usata.</strong>
+                </p>
+            </div>
+        </div>
+
+        <!-- IV -->
+        <div class="animate-on-scroll" style="margin-top: 3rem;">
+            <h3 style="margin-bottom: 1.5rem;">IV — Initialization Vector</h3>
+            <div class="card">
+                <h4>
+                    <span class="icon" style="background: rgba(168, 85, 247, 0.15); color: var(--accent-purple);">🎲</span>
+                    A cosa serve l'IV
+                </h4>
+                <p>
+                    L'<strong>IV</strong> (Initialization Vector, "vettore di inizializzazione") è un valore casuale lungo quanto un blocco (16 byte per AES) usato all'inizio della cifratura nelle modalità CBC, CFB, OFB, CTR. Garantisce che cifrando <strong>due volte lo stesso messaggio</strong> con la stessa chiave si ottengano <strong>cifrati diversi</strong>.
+                </p>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-top: 1.5rem;">
+                    <div class="card" style="padding: 1.2rem;">
+                        <div class="badge badge-green">Regola 1</div>
+                        <h4 style="margin-top: 0.6rem; font-size: 1rem;">L'IV non è segreto</h4>
+                        <p>Viene trasmesso in chiaro insieme al cifrato. Il destinatario ne ha bisogno per decifrare.</p>
+                    </div>
+                    <div class="card" style="padding: 1.2rem;">
+                        <div class="badge badge-orange">Regola 2</div>
+                        <h4 style="margin-top: 0.6rem; font-size: 1rem;">Deve essere casuale</h4>
+                        <p>Generato con un PRNG crittografico. Un IV prevedibile riapre falle di sicurezza.</p>
+                    </div>
+                    <div class="card" style="padding: 1.2rem;">
+                        <div class="badge badge-red">Regola 3</div>
+                        <h4 style="margin-top: 0.6rem; font-size: 1rem;">Mai riusato con la stessa chiave</h4>
+                        <p>Riutilizzare un IV con la stessa K vanifica la sicurezza. Ogni messaggio = nuovo IV.</p>
+                    </div>
+                </div>
+                <div class="key-concept" style="margin-top: 1.5rem;">
+                    <h4>🔐 La chiave è segreta, l'IV no</h4>
+                    <p>La distinzione è importante: tutta la sicurezza dipende dalla <strong>chiave K</strong>, che resta segreta. L'<strong>IV</strong> serve solo per evitare ripetizioni nel cifrato e può circolare in chiaro.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Domanda 3: RSA -->
@@ -2161,6 +2301,98 @@
                 </div>
             </div>
         </div>
+
+        <!-- Salt -->
+        <div class="animate-on-scroll" style="margin-top: 4rem;">
+            <h3 style="margin-bottom: 1.5rem;">Salt — Proteggere le Password dagli Attacchi a Dizionario</h3>
+            <div class="card">
+                <h4>
+                    <span class="icon" style="background: rgba(34, 197, 94, 0.15); color: var(--accent-green);">🧂</span>
+                    Perché non basta l'hash da solo
+                </h4>
+                <p>
+                    Salvare <code>SHA-256(password)</code> sembra sicuro, ma ha un grosso problema: due utenti con la stessa password hanno lo stesso hash, e gli attaccanti precalcolano enormi <strong>tabelle di hash</strong> (le <em>rainbow tables</em>) per le password più comuni. Se rubano il database, basta cercare l'hash nella tabella per ottenere la password originale.
+                </p>
+                <div class="warning-box" style="margin-top: 1.5rem;">
+                    <h4>Esempio del problema</h4>
+                    <p>Hash SHA-256 di <code>"123456"</code> = <code>8d969eef6ec...</code> — è lo stesso per <strong>tutti</strong> gli utenti che usano quella password, e si trova in 1 millisecondo in una rainbow table.</p>
+                </div>
+                <h4 style="margin-top: 1.5rem;">La soluzione: aggiungere un sale</h4>
+                <p>
+                    Il <strong>salt</strong> è una stringa casuale lunga (es. 16 byte) generata per ogni utente al momento della registrazione. Si calcola l'hash di <strong>salt + password</strong>, e si salvano sia il salt sia l'hash:
+                </p>
+                <div class="formula" style="margin-top: 1rem;">
+                    hash_memorizzato = SHA-256(salt || password)<br>
+                    Database: { utente, salt, hash_memorizzato }
+                </div>
+                <div class="key-concept" style="margin-top: 1.5rem;">
+                    <h4>Cosa cambia</h4>
+                    <p>
+                        Due utenti con la stessa password ora hanno hash <strong>completamente diversi</strong>, perché hanno salt diversi. Le rainbow tables diventano inutili: l'attaccante dovrebbe ricalcolare una tabella per ogni salt. In più, oggi si usano funzioni <strong>lente di proposito</strong> come <code>bcrypt</code>, <code>scrypt</code>, <code>Argon2</code> per rendere costoso anche il brute force singolo.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- HMAC -->
+        <div class="animate-on-scroll" style="margin-top: 3rem;">
+            <h3 style="margin-bottom: 1.5rem;">HMAC — Autenticazione di Messaggi con Hash</h3>
+            <div class="card">
+                <h4>
+                    <span class="icon" style="background: rgba(168, 85, 247, 0.15); color: var(--accent-purple);">🔏</span>
+                    Il problema dell'autenticità
+                </h4>
+                <p>
+                    Una funzione di hash garantisce l'integrità, ma non l'autenticità: chiunque può calcolare <code>SHA-256(messaggio)</code>. Se Eve intercetta un messaggio e lo modifica, può ricalcolare l'hash e Bob non se ne accorgerebbe. Serve qualcosa che dimostri anche che il messaggio viene <strong>davvero da Alice</strong>.
+                </p>
+                <h4 style="margin-top: 1.5rem;">La soluzione: HMAC</h4>
+                <p>
+                    L'<strong>HMAC</strong> (Hash-based Message Authentication Code) combina una <strong>chiave segreta condivisa</strong> con la funzione di hash. Solo chi conosce la chiave può calcolare un HMAC valido per un messaggio.
+                </p>
+                <div class="formula" style="margin-top: 1rem;">
+                    HMAC(K, m) = H( (K ⊕ opad) || H( (K ⊕ ipad) || m ) )
+                </div>
+                <p style="margin-top: 1rem; color: var(--text-muted); font-size: 0.9rem;">
+                    Dove H è una funzione di hash (es. SHA-256), K è la chiave segreta, m è il messaggio, e <em>ipad</em>/<em>opad</em> sono costanti di padding. Il doppio hashing protegge da attacchi specifici alla struttura interna di H.
+                </p>
+
+                <div class="flow-diagram" style="padding: 1.5rem 0; margin-top: 1.5rem;">
+                    <div class="flow-box"><div class="label">Messaggio</div><div class="value">m</div></div>
+                    <div class="flow-arrow">+</div>
+                    <div class="flow-box highlight"><div class="label">Chiave Segreta</div><div class="value">K</div></div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-box"><div class="label">HMAC</div><div class="value">tag</div></div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-box"><div class="label">Invia</div><div class="value">(m, tag)</div></div>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-top: 1.5rem;">
+                    <div class="card" style="padding: 1.2rem;">
+                        <div class="badge badge-green">Integrità</div>
+                        <p style="margin-top: 0.6rem;">Se Eve modifica m, il tag non torna più. Bob ricalcola HMAC(K, m_ricevuto) e vede che è diverso.</p>
+                    </div>
+                    <div class="card" style="padding: 1.2rem;">
+                        <div class="badge badge-blue">Autenticità</div>
+                        <p style="margin-top: 0.6rem;">Eve non conosce K, quindi non può forgiare un tag valido per un messaggio modificato.</p>
+                    </div>
+                    <div class="card" style="padding: 1.2rem;">
+                        <div class="badge badge-purple">Velocità</div>
+                        <p style="margin-top: 0.6rem;">Solo due hash, molto più veloce di una firma digitale asimmetrica.</p>
+                    </div>
+                </div>
+
+                <div class="key-concept" style="margin-top: 1.5rem;">
+                    <h4>Dove si usa</h4>
+                    <p>
+                        HMAC è ovunque: nelle <strong>API REST</strong> (firma delle richieste AWS, GitHub webhooks), nei <strong>token JWT</strong> (HS256 = HMAC-SHA256), nel protocollo <strong>TLS</strong> per autenticare ogni record cifrato, nei sistemi di <strong>2FA TOTP</strong>.
+                    </p>
+                </div>
+                <div class="warning-box" style="margin-top: 1rem;">
+                    <h4>HMAC ≠ Firma digitale</h4>
+                    <p>HMAC usa una <strong>chiave simmetrica condivisa</strong>: chi verifica può anche generare. Non garantisce <strong>non-ripudio</strong>. Per quello servono le firme digitali asimmetriche (vedi D6).</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Domanda 5: Diffie-Hellman -->
@@ -2379,6 +2611,111 @@
                 <p>
                     Diffie-Hellman di per sé <strong>non autentica</strong> i partecipanti. Un attaccante attivo potrebbe inserirsi tra Alice e Bob, presentarsi separatamente a ciascuno e stabilire due chiavi diverse. Per questo, nei protocolli reali, DH viene combinato con meccanismi di autenticazione (firme digitali, certificati).
                 </p>
+            </div>
+        </div>
+
+        <!-- Approfondimento: perché p primo e g generatore -->
+        <div class="animate-on-scroll" style="margin-top: 4rem;">
+            <h3 style="margin-bottom: 1.5rem;">Approfondimento — Perché p deve essere primo e g deve essere un generatore</h3>
+
+            <div class="card">
+                <h4>
+                    <span class="icon" style="background: rgba(79, 140, 255, 0.15); color: var(--accent-blue);">🔢</span>
+                    Il ruolo del numero primo p
+                </h4>
+                <p>
+                    Lavorando modulo un numero <strong>primo</strong> p, l'insieme dei resti non nulli <code>{1, 2, …, p−1}</code> forma una struttura algebrica con proprietà speciali (è un <em>gruppo moltiplicativo ciclico</em>): ogni elemento ha un inverso, e le potenze si comportano in modo regolare e prevedibile. Se p <strong>non</strong> fosse primo, alcuni valori non sarebbero invertibili (gcd(g,p) ≠ 1) e il protocollo si romperebbe matematicamente.
+                </p>
+                <div class="formula" style="margin-top: 1rem;">
+                    p primo  ⇒  l'insieme {1, 2, …, p−1} è chiuso, ogni elemento è invertibile mod p
+                </div>
+            </div>
+
+            <div class="card" style="margin-top: 1.5rem;">
+                <h4>
+                    <span class="icon" style="background: rgba(168, 85, 247, 0.15); color: var(--accent-purple);">♾️</span>
+                    Cos'è un generatore (radice primitiva)
+                </h4>
+                <p>
+                    Un elemento <strong>g</strong> è un <strong>generatore</strong> modulo p (o "radice primitiva") se le sue potenze <code>g¹, g², g³, …</code> mod p producono <strong>tutti</strong> i valori non nulli da 1 a p−1 prima di tornare a 1. In altre parole, l'<strong>ordine</strong> di g è esattamente p−1.
+                </p>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1.5rem;">
+                    <div class="card" style="padding: 1.2rem; background: rgba(34, 197, 94, 0.06); border-color: rgba(34, 197, 94, 0.3);">
+                        <div class="badge badge-green">Caso buono: g = 5, p = 23</div>
+                        <p style="margin-top: 0.6rem;">Le potenze di 5 modulo 23 sono:</p>
+                        <div class="formula" style="font-size: 0.78rem; margin-top: 0.6rem;">
+                            5¹=5, 5²=2, 5³=10, 5⁴=4, 5⁵=20,<br>
+                            5⁶=8, 5⁷=17, 5⁸=16, 5⁹=11, 5¹⁰=9,<br>
+                            5¹¹=22, 5¹²=18, 5¹³=21, …, 5²²=1
+                        </div>
+                        <p style="margin-top: 0.6rem; color: var(--accent-green);"><strong>Tutti i 22 resti</strong> compaiono → <strong>g=5 è generatore</strong>. Ordine = 22 = p−1.</p>
+                    </div>
+                    <div class="card" style="padding: 1.2rem; background: rgba(239, 68, 68, 0.06); border-color: rgba(239, 68, 68, 0.3);">
+                        <div class="badge badge-red">Caso cattivo: g = 2, p = 23</div>
+                        <p style="margin-top: 0.6rem;">Le potenze di 2 modulo 23 sono:</p>
+                        <div class="formula" style="font-size: 0.78rem; margin-top: 0.6rem;">
+                            2¹=2, 2²=4, 2³=8, 2⁴=16, 2⁵=9,<br>
+                            2⁶=18, 2⁷=13, 2⁸=3, 2⁹=6, 2¹⁰=12,<br>
+                            2¹¹=1, 2¹²=2, … (si ripete)
+                        </div>
+                        <p style="margin-top: 0.6rem; color: var(--accent-red);"><strong>Solo 11 resti</strong> raggiunti, poi torna a 1. <strong>g=2 NON è generatore</strong>. Ordine = 11.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="margin-top: 1.5rem;">
+                <h4>
+                    <span class="icon" style="background: rgba(249, 115, 22, 0.15); color: var(--accent-orange);">⚖️</span>
+                    Perché ci interessa che g sia generatore
+                </h4>
+                <p>
+                    Anche se g non è un generatore, il protocollo DH "funziona" matematicamente: Alice e Bob ottengono la stessa chiave K. Il problema è la <strong>sicurezza</strong>:
+                </p>
+                <ul style="margin-top: 0.8rem;">
+                    <li><strong>Se g è generatore</strong>: K può assumere qualsiasi valore tra 1 e p−1. L'attaccante deve cercare in tutto lo spazio.</li>
+                    <li><strong>Se g non è generatore</strong>: K può cadere solo in un <strong>sottoinsieme ristretto</strong> dei resti (il sottogruppo generato da g). L'attaccante ha meno candidati da provare → l'attacco brute force diventa più veloce.</li>
+                </ul>
+                <div class="formula" style="margin-top: 1rem;">
+                    Esempio: con g=2, p=23 lo spazio delle chiavi possibili è ridotto da 22 a soli 11 valori. Sicurezza dimezzata.
+                </div>
+            </div>
+
+            <div class="card" style="margin-top: 1.5rem;">
+                <h4>
+                    <span class="icon" style="background: rgba(236, 72, 153, 0.15); color: var(--accent-pink);">🧮</span>
+                    Come si verifica se g è un generatore
+                </h4>
+                <p>Test classico, usando i fattori primi di p−1:</p>
+                <ol style="margin-top: 0.8rem;">
+                    <li>Calcolare i fattori primi di p−1: <code>p−1 = q₁ · q₂ · …</code></li>
+                    <li>Per ogni fattore primo q, calcolare <code>g^((p−1)/q) mod p</code></li>
+                    <li>Se <strong>nessuno</strong> di questi è ≡ 1, allora g è un generatore</li>
+                </ol>
+                <div class="formula" style="margin-top: 1rem;">
+                    Esempio p=23: p−1 = 22 = 2·11<br>
+                    g=5: 5^11 mod 23 = 22 ≠ 1, 5^2 mod 23 = 2 ≠ 1 → ✅ generatore<br>
+                    g=2: 2^11 mod 23 = 1 → ❌ non generatore
+                </div>
+            </div>
+
+            <div class="key-concept" style="margin-top: 2rem;">
+                <h4>🔐 Il problema del logaritmo discreto</h4>
+                <p>
+                    La sicurezza di Diffie-Hellman si basa sul <strong>Problema del Logaritmo Discreto</strong> (DLP): dati g, p e <code>A = gᵃ mod p</code>, trovare <strong>a</strong> è facile se p è piccolo, ma diventa <strong>computazionalmente impossibile</strong> per p molto grande (oggi si usano primi da almeno 2048 bit). Non esiste un algoritmo efficiente noto. Questa è esattamente la trappola in cui Eve cade: vede A e B ma non riesce a estrarre a o b.
+                </p>
+            </div>
+
+            <div class="warning-box" style="margin-top: 1.5rem;">
+                <h4>📐 In pratica: numeri giganteschi</h4>
+                <p>
+                    Gli esempi con p = 23 servono solo per capire. Nel mondo reale si usano:
+                </p>
+                <ul style="margin-top: 0.6rem;">
+                    <li><strong>DH classico</strong>: p primo di almeno 2048 bit (≈ 617 cifre decimali)</li>
+                    <li><strong>Gruppi DH standardizzati</strong>: definiti in RFC 3526 e usati in IKE, IPsec, TLS</li>
+                    <li><strong>ECDH</strong> (Elliptic Curve DH): stessa idea ma sui punti di una curva ellittica → chiavi da 256 bit con sicurezza equivalente a DH 3072 bit</li>
+                </ul>
             </div>
         </div>
     </section>
