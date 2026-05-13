@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fibra & GPON — Telecomunicazioni · 5F</title>
+<title>Trasmissione cablata &amp; GPON — Telecomunicazioni · 5F</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
@@ -48,16 +48,59 @@
   <div class="content-main">
     <section class="section">
       <div class="sec-head">
-    <div class="sec-num">07</div>
+    <div class="sec-num">09</div>
     <div class="sec-body">
-      <h2>Connessione in fibra ottica</h2>
-      <p>Tipologie di fibra, TX/RX, WDM, link budget ottico, GPON, incapsulamento GEM.</p>
+      <h2>Trasmissione cablata: dal cavo Ethernet alla fibra ottica</h2>
+      <p>Cavi UTP cat5–cat7, codifiche di linea, NBaseA. Fibra mono/multi-modale, WDM, link budget. GPON, OLT, ONU, incapsulamento GEM.</p>
     </div>
-    <span class="sec-badge b-yellow">Fibra · FTTH</span>
+    <span class="sec-badge b-yellow">Cablato · FTTH</span>
   </div>
 
   <div class="explain-box">
-    <h4>💡 Principio della fibra ottica</h4>
+    <h4>🔌 Cavi Ethernet · banda base + codifiche di linea</h4>
+    <p>Nei cavi Ethernet la trasmissione è <strong>solo in banda base</strong>: si applicano <em>codifiche di linea</em> per aumentare il bit-rate sfruttando al massimo lo spettro. Il bit-rate del mezzo è espresso in Mbit/s (10, 100, 1000…).</p>
+    <div class="note t-teal">
+      <strong>Nomenclatura · NBaseA</strong>
+      <code>N</code> = velocità in Mbit/s, <code>Base</code> = banda base, <code>A</code> = sigla del tipo di cavo (T = doppino twisted, TX = doppino cat≥5, F = fibra, SX/LX = fibra multimodale/monomodale).
+    </div>
+  </div>
+
+  <table class="tbl">
+    <thead><tr><th>Standard</th><th>Velocità</th><th>Cavo</th><th>Codifica</th><th>Distanza max</th><th>IEEE</th></tr></thead>
+    <tbody>
+      <tr><td><strong>10Base-T</strong></td><td>10 Mbit/s</td><td>UTP cat3</td><td>Manchester</td><td>100 m</td><td>802.3</td></tr>
+      <tr><td><strong>100Base-TX</strong> <em>(Fast Ethernet)</em></td><td>100 Mbit/s</td><td>UTP cat5+</td><td>4B/5B + MLT-3</td><td>100 m</td><td>802.3u</td></tr>
+      <tr><td><strong>1000Base-T</strong> <em>(Gigabit)</em></td><td>1 Gbit/s</td><td>UTP cat5e</td><td>PAM5 (4 coppie)</td><td>100 m</td><td>802.3ab</td></tr>
+      <tr><td><strong>1000Base-TX</strong></td><td>1 Gbit/s</td><td>UTP cat6</td><td>PAM5</td><td>100 m</td><td>802.3ab</td></tr>
+      <tr><td><strong>2.5G/5GBase-T</strong></td><td>2.5–5 Gbit/s</td><td>UTP cat6a</td><td>—</td><td>100 m</td><td>802.3bz</td></tr>
+      <tr><td><strong>10GBase-T</strong></td><td>10 Gbit/s</td><td>UTP cat7</td><td>4B/5B avanzato</td><td>55–100 m¹</td><td>802.3an</td></tr>
+      <tr class="hl"><td><strong>40GBase-T</strong></td><td>40 Gbit/s</td><td>UTP cat8</td><td>—</td><td>30 m (15–50 m)²</td><td>802.3bq</td></tr>
+    </tbody>
+  </table>
+  <p style="font-size:.82rem;color:var(--ink-mute);font-style:italic">¹ A 100 m la velocità scende a 1 Gbit/s; tra 55 e 100 m è degradata. ² Oltre 15 m la velocità decresce rapidamente; 40 Gbit/s richiede tratte sotto i 30 m.</p>
+
+  <div class="explain-box" style="margin-top:1.25rem">
+    <h4>FTTx · dove arriva la fibra</h4>
+    <p>FTTx (<em>Fiber to the x</em>) generalizza le architetture in cui varia la distanza tra la fibra e l'utente finale.</p>
+    <ul>
+      <li><strong>FTTN / FTTE</strong> (Fiber to the Node / Exchange): la fibra arriva a una cabina di controllo generale, l'"ultimo miglio" è ancora rame.</li>
+      <li><strong>FTTC</strong> (Fiber to the Cabinet): fibra fino all'armadio di strada, poi rame fino alle abitazioni. È il VDSL2/Vectoring tipico.</li>
+      <li><strong>FTTB</strong> (Fiber to the Building): la fibra raggiunge il limite esterno dell'edificio; in palazzi è praticamente FTTH.</li>
+      <li><strong>FTTH</strong> (Fiber to the Home): fibra fino al router dell'utente. Massime prestazioni, è quella usata da <strong>GPON</strong>.</li>
+    </ul>
+  </div>
+
+  <div class="sig-head" style="margin-top:2.5rem">
+    <div class="sig-num">B</div>
+    <div class="sig-body">
+      <h2>Fibra ottica</h2>
+      <p>Principio della riflessione interna totale, tipologie, finestre di lavoro, link budget, GPON.</p>
+    </div>
+    <span class="sig-badge">FIBRA</span>
+  </div>
+
+  <div class="explain-box">
+    <h4>Principio della fibra ottica</h4>
     <p>Un sottile filamento di vetro (silice) trasmette luce per <strong>riflessione interna totale</strong>. Il <em>core</em> ha indice di rifrazione leggermente maggiore del <em>cladding</em> che lo circonda → la luce non esce dal core.</p>
     <p><strong>Vantaggi rispetto al rame:</strong></p>
     <ul>
@@ -106,7 +149,7 @@
   </div>
 
   <div class="explain-box">
-    <h4>🌈 WDM — Wavelength Division Multiplexing</h4>
+    <h4>WDM — Wavelength Division Multiplexing</h4>
     <p>Una singola fibra trasporta più "colori" di luce contemporaneamente, ciascuno con il proprio canale dati. È come avere più fibre fisiche in un cavo solo.</p>
     <ul>
       <li><strong>CWDM (Coarse):</strong> ~8 canali distanziati di 20 nm. Economico. Usato in metro/access.</li>
@@ -136,7 +179,7 @@
   <h3 style="font-size:1.3rem;margin-bottom:1rem;color:var(--accent)">GPON — Gigabit Passive Optical Network</h3>
 
   <div class="explain-box">
-    <h4>🌳 Architettura GPON</h4>
+    <h4>Architettura GPON</h4>
     <p>Rete PON = <strong>Passive Optical Network</strong>: tra centrale e utenti ci sono solo dispositivi passivi (splitter), niente amplificatori → bassi costi di manutenzione.</p>
     <ul>
       <li><strong>OLT (Optical Line Terminal):</strong> in centrale, dialoga con tutti gli utenti del PON.</li>
@@ -153,7 +196,7 @@
   </div>
 
   <div class="explain-box">
-    <h4>📦 Incapsulamento GEM — GPON Encapsulation Method</h4>
+    <h4>Incapsulamento GEM — GPON Encapsulation Method</h4>
     <p>I dati dell'utente (Ethernet, IP, voce) vengono trasportati su GPON dentro <strong>GEM frame</strong>:</p>
     <ul>
       <li>Ogni GEM frame ha un header con <strong>Port-ID</strong> (12 bit) che identifica il flusso logico.</li>
@@ -164,7 +207,7 @@
     <p><strong>Sicurezza:</strong> il downstream è in chiaro a tutti gli ONU del PON. GPON cifra il payload utente con AES-128 e chiave per-ONU per evitare che un cliente legga il traffico di un altro.</p>
   </div>
     </section>
-    <nav class="pagenav"><a class="prev" href="wireless-80211.html"><span class="pn-dir">← Precedente</span><span class="pn-title">📶 Wireless 802.11</span></a><a class="next" href="laboratorio.html"><span class="pn-dir">Successivo →</span><span class="pn-title">🔧 Laboratorio</span></a></nav>
+    <nav class="pagenav"><a class="prev" href="wireless-80211.html"><span class="pn-dir">← Precedente</span><span class="pn-title">CH8 · Wireless 802.11</span></a><a class="next" href="laboratorio.html"><span class="pn-dir">Successivo →</span><span class="pn-title">L0 · Laboratorio</span></a></nav>
   </div>
 </main>
 

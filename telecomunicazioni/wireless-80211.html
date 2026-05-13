@@ -48,12 +48,63 @@
   <div class="content-main">
     <section class="section">
       <div class="sec-head">
-    <div class="sec-num">06</div>
+    <div class="sec-num">08</div>
     <div class="sec-body">
       <h2>Reti wireless · 802.11</h2>
-      <p>CSMA/CA, MIMO, varianti 802.11b/g/n/ac/ad, sicurezza WEP/WPA, BSS, beacon, link budget radio.</p>
+      <p>WPAN, WLAN, WWAN, satellite. Bande ISM, regola del 5, canali. CSMA/CA, MIMO, varianti 802.11, sicurezza WEP/WPA, BSS, beacon, link budget.</p>
     </div>
     <span class="sec-badge b-teal">WLAN</span>
+  </div>
+
+  <div class="explain-box">
+    <h4>🌐 Classificazione delle reti wireless</h4>
+    <p>Le reti senza fili si classificano per <strong>raggio operativo</strong>:</p>
+    <ul>
+      <li><strong>WPAN — Wireless Personal-Area Network:</strong> qualche metro. Bluetooth, Wi-Fi Direct, ZigBee, BLE. Standard IEEE <strong>802.15</strong>.</li>
+      <li><strong>WLAN — Wireless LAN:</strong> qualche centinaio di metri (stanza, casa, ufficio, campus). Wi-Fi su standard IEEE <strong>802.11</strong>. Fino a 300 m con AP esterni.</li>
+      <li><strong>WWAN — Wireless Wide-Area:</strong> chilometri (area metropolitana, gerarchia cellulare, ponti radio a microonde). <strong>WiMAX</strong> 802.16 fino a 50 km, broadband cellulare LTE/5G.</li>
+      <li><strong>Satellite:</strong> accesso da siti remoti tramite parabola direzionale puntata su un satellite GEO geostazionario.</li>
+    </ul>
+  </div>
+
+  <div class="explain-box">
+    <h4>🛰 Dispositivi e topologie nella WLAN</h4>
+    <div class="grid g2">
+      <div class="callout c-blue">
+        <strong>WT · Wireless Terminal</strong>
+        Dispositivi mobili o fissi con interfaccia 802.11: ricevono e trasmettono segnali radio.
+      </div>
+      <div class="callout c-teal">
+        <strong>AP · Access Point</strong>
+        Intermediary device con due compiti: interfacciarsi alla rete cablata, e permettere ai WT di accedere alla rete.
+      </div>
+      <div class="callout c-orange">
+        <strong>Antenne</strong>
+        Presenti in WT e AP per inviare/ricevere onde radio. Specifiche (paraboliche) per il segmento satellitare.
+      </div>
+      <div class="callout c-purple">
+        <strong>Topologie</strong>
+        <em>WLAN con infrastruttura</em>: più microcelle collegate, ognuna coperta da un AP. Permette l'accesso a Internet. <em>WLAN ad-hoc</em>: comunicazione diretta peer-to-peer tra device, senza AP.
+      </div>
+    </div>
+  </div>
+
+  <div class="explain-box">
+    <h4>📻 Il segnale radio · bande ISM e WLAN</h4>
+    <p>Le comunicazioni wireless usano lo spettro <strong>3 kHz – 300 GHz</strong>. WLAN, Bluetooth, cellular e satellite operano principalmente nelle bande <strong>UHF, SHF, EHF</strong> (microonde).</p>
+    <p>Le WLAN operano tipicamente a <strong>2.4 GHz</strong> o <strong>5 GHz</strong>. La 2.4 GHz è una banda <strong>ISM</strong> (Industrial, Scientific, Medical): liberalizzata dai governi, usabile <em>senza licenza</em> in area privata. Unici obblighi: rispettare i limiti di potenza e usare tecniche di <em>spread spectrum</em> (così il segnale appare come rumore ai dispositivi non interessati, riducendo le interferenze).</p>
+    <p><strong>Trade-off di frequenza:</strong> all'aumentare della frequenza aumentano riflessione e assorbimento → si riduce l'area coperta. Per questo la 2.4 GHz resta la banda più usata (più "lunga" la portata) anche se affollata.</p>
+  </div>
+
+  <div class="explain-box">
+    <h4>🎚 Canali 2.4 GHz · la regola del 5</h4>
+    <p>Gli standard internazionali hanno suddiviso la banda 2.4 GHz in <strong>14 sotto-bande da 22 MHz</strong>. Sono <em>parzialmente sovrapposti</em>: tra due canali vicini c'è forte interferenza → crollo delle prestazioni.</p>
+    <div class="note t-teal">
+      <strong>Regola del 5</strong>
+      Per trovare canali che <em>non</em> si sovrappongono, scegli canali distanti almeno 5 posizioni. Sequenza tipica in Europa/USA: <code>1 — 6 — 11</code>. Variante: <code>2 — 7 — 12</code>.
+    </div>
+    <p><strong>5 GHz:</strong> IEEE ha diviso la banda 5–6 GHz in canali da <strong>20 MHz</strong> con frequenze centrali distanziate di 5 MHz, applicando la stessa regola del 5 per la non-sovrapposizione. È possibile fare <strong>channel bonding</strong>: unire due canali da 20 MHz in uno da 40 MHz (e oltre, fino a 160 MHz su Wi-Fi 6).</p>
+    <p><strong>Dual band / tri band:</strong> i router moderni operano sia a 2.4 che a 5 GHz (dual), e i più nuovi aggiungono la <strong>60 GHz</strong> (Wi-Fi ad / WiGig). Utilità del multi-banda: la ISM è affollata, mentre a 5 GHz si ha <em>throughput più elevato</em> a parità di SNR.</p>
   </div>
 
   <div class="explain-box">
@@ -215,7 +266,7 @@
     <p style="font-family:var(--serif);font-size:.95rem"><strong>WiMAX (IEEE 802.16):</strong> standard per accesso wireless a banda larga su scala metropolitana. Range fino a 50 km, throughput decine di Mbps. Usato come "ultimo miglio" in zone non raggiunte da fibra. Largamente superato da LTE/5G nel mobile e da fibra nel fisso, ma sopravvive in nicchie (industria, dorsali wireless rurali).</p>
   </div>
     </section>
-    <nav class="pagenav"><a class="prev" href="nat.html"><span class="pn-dir">← Precedente</span><span class="pn-title">🔁 NAT</span></a><a class="next" href="fibra-gpon.html"><span class="pn-dir">Successivo →</span><span class="pn-title">💡 Fibra & GPON</span></a></nav>
+    <nav class="pagenav"><a class="prev" href="routing.html"><span class="pn-dir">← Precedente</span><span class="pn-title">CH7 · Routing</span></a><a class="next" href="fibra-gpon.html"><span class="pn-dir">Successivo →</span><span class="pn-title">CH9 · Fibra &amp; GPON</span></a></nav>
   </div>
 </main>
 
