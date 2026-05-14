@@ -583,7 +583,10 @@ html[data-theme="dark"] .term{
   border-radius:var(--r);
   padding:1.1rem; text-align:center;
 }
-.antenna-svg{ margin:0 auto 10px; display:block; }
+.antenna-svg{
+  margin:0 auto 12px; display:block;
+  width:100%; max-width:200px; height:auto;
+}
 .antenna-card h5{
   font-family:var(--mono); font-size:10px;
   letter-spacing:.14em; text-transform:uppercase;
