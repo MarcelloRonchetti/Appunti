@@ -83,6 +83,39 @@
     </ul>
   </div>
 
+  <div class="explain-box">
+    <h4>📦 Header IPv4 — 20 byte minimi (5 word da 32 bit)</h4>
+    <p>Ogni datagramma IP porta in testa una struttura fissa che il router legge per decidere dove inviarlo. I campi più importanti per il livello rete sono <strong>TTL</strong> (limita gli hop), <strong>Protocol</strong> (chi sta sopra: 6=TCP, 17=UDP, 1=ICMP) e i due indirizzi a 32 bit.</p>
+    <div class="bit-fields">
+      <div class="bf-ruler"><span>0</span><span>4</span><span>8</span><span>16</span><span>19</span><span>31</span></div>
+      <div class="bf-row">
+        <div class="bf-cell bf-c1" style="flex:4"><span class="bf-bits">4 b</span><span class="bf-name">Ver</span></div>
+        <div class="bf-cell bf-c1" style="flex:4"><span class="bf-bits">4 b</span><span class="bf-name">IHL</span></div>
+        <div class="bf-cell bf-c1" style="flex:8"><span class="bf-bits">8 b</span><span class="bf-name">ToS / DSCP</span></div>
+        <div class="bf-cell bf-c1" style="flex:16"><span class="bf-bits">16 bit</span><span class="bf-name">Total Length</span></div>
+      </div>
+      <div class="bf-row">
+        <div class="bf-cell bf-c2" style="flex:16"><span class="bf-bits">16 bit</span><span class="bf-name">Identification</span></div>
+        <div class="bf-cell bf-c2" style="flex:3"><span class="bf-bits">3 b</span><span class="bf-name">Flags</span></div>
+        <div class="bf-cell bf-c2" style="flex:13"><span class="bf-bits">13 bit</span><span class="bf-name">Fragment Offset</span></div>
+      </div>
+      <div class="bf-row">
+        <div class="bf-cell bf-c3" style="flex:8"><span class="bf-bits">8 b</span><span class="bf-name">TTL</span></div>
+        <div class="bf-cell bf-c3" style="flex:8"><span class="bf-bits">8 b</span><span class="bf-name">Protocol</span></div>
+        <div class="bf-cell bf-c3" style="flex:16"><span class="bf-bits">16 bit</span><span class="bf-name">Header Checksum</span></div>
+      </div>
+      <div class="bf-row">
+        <div class="bf-cell bf-c4" style="flex:32"><span class="bf-bits">32 bit</span><span class="bf-name">Source IP Address</span></div>
+      </div>
+      <div class="bf-row">
+        <div class="bf-cell bf-c5" style="flex:32"><span class="bf-bits">32 bit</span><span class="bf-name">Destination IP Address</span></div>
+      </div>
+      <div class="bf-row">
+        <div class="bf-cell bf-opt" style="flex:32"><span class="bf-bits">0–40 byte</span><span class="bf-name">Options + Padding (opzionale)</span></div>
+      </div>
+    </div>
+  </div>
+
   <div class="grid g2" style="margin-bottom:1.25rem">
     <div class="box">
       <div class="box-title">Classi IP storiche (deprecate ma utili)</div>
@@ -188,12 +221,17 @@
       <span class="badge b-blue">UDP — User Datagram Protocol</span>
       <h3>Connectionless · Best effort</h3>
       <p style="font-family:var(--serif);margin-bottom:.8rem">Nessuna connessione, nessuna garanzia di consegna. Velocità massima, overhead minimo.</p>
-      <p style="font-size:.85rem;font-family:var(--mono);color:rgba(10,10,15,.5);margin-bottom:.6rem">Header solo 8 byte:</p>
-      <div class="header-fields">
-        <div class="hf hf-c1"><span class="hf-bits">16 bit</span><span class="hf-name">Source Port</span></div>
-        <div class="hf hf-c1"><span class="hf-bits">16 bit</span><span class="hf-name">Dest. Port</span></div>
-        <div class="hf hf-c2"><span class="hf-bits">16 bit</span><span class="hf-name">Length</span></div>
-        <div class="hf hf-c2"><span class="hf-bits">16 bit</span><span class="hf-name">Checksum</span></div>
+      <p style="font-size:.85rem;font-family:var(--mono);color:rgba(10,10,15,.5);margin-bottom:.6rem">Header solo 8 byte (64 bit, 2 word):</p>
+      <div class="bit-fields">
+        <div class="bf-ruler"><span>0</span><span>16</span><span>31</span></div>
+        <div class="bf-row">
+          <div class="bf-cell bf-c1" style="flex:16"><span class="bf-bits">16 bit</span><span class="bf-name">Source Port</span></div>
+          <div class="bf-cell bf-c1" style="flex:16"><span class="bf-bits">16 bit</span><span class="bf-name">Dest. Port</span></div>
+        </div>
+        <div class="bf-row">
+          <div class="bf-cell bf-c2" style="flex:16"><span class="bf-bits">16 bit</span><span class="bf-name">Length</span></div>
+          <div class="bf-cell bf-c2" style="flex:16"><span class="bf-bits">16 bit</span><span class="bf-name">Checksum</span></div>
+        </div>
       </div>
       <p style="font-family:var(--serif);font-size:.88rem;color:rgba(10,10,15,.65);margin-top:.8rem"><strong>Usi tipici:</strong> DNS, DHCP, VoIP, streaming live, gaming online — applicazioni che preferiscono la velocità all'affidabilità.</p>
     </div>
@@ -201,21 +239,32 @@
       <span class="badge b-teal">TCP — Transmission Control Protocol</span>
       <h3>Connection-oriented · Affidabile</h3>
       <p style="font-family:var(--serif);margin-bottom:.8rem">Connessione, garanzia di consegna in ordine, controllo di flusso e congestione tramite sliding window.</p>
-      <p style="font-size:.85rem;font-family:var(--mono);color:rgba(10,10,15,.5);margin-bottom:.6rem">Header 20+ byte:</p>
-      <div class="header-fields">
-        <div class="hf hf-c2"><span class="hf-bits">16 b</span><span class="hf-name">Src Port</span></div>
-        <div class="hf hf-c2"><span class="hf-bits">16 b</span><span class="hf-name">Dst Port</span></div>
-      </div>
-      <div class="header-fields" style="margin-top:2px">
-        <div class="hf hf-c3"><span class="hf-bits">32 bit</span><span class="hf-name">Sequence Number</span></div>
-      </div>
-      <div class="header-fields" style="margin-top:2px">
-        <div class="hf hf-c4"><span class="hf-bits">32 bit</span><span class="hf-name">Acknowledgment Number</span></div>
-      </div>
-      <div class="header-fields" style="margin-top:2px">
-        <div class="hf hf-c5"><span class="hf-bits">8 b</span><span class="hf-name">HLen+Flags</span></div>
-        <div class="hf hf-c5"><span class="hf-bits">16 b</span><span class="hf-name">Window</span></div>
-        <div class="hf hf-c5"><span class="hf-bits">16 b</span><span class="hf-name">Checksum</span></div>
+      <p style="font-size:.85rem;font-family:var(--mono);color:rgba(10,10,15,.5);margin-bottom:.6rem">Header 20 byte minimo (5 word da 32 bit):</p>
+      <div class="bit-fields">
+        <div class="bf-ruler"><span>0</span><span>4</span><span>10</span><span>16</span><span>24</span><span>31</span></div>
+        <div class="bf-row">
+          <div class="bf-cell bf-c2" style="flex:16"><span class="bf-bits">16 bit</span><span class="bf-name">Source Port</span></div>
+          <div class="bf-cell bf-c2" style="flex:16"><span class="bf-bits">16 bit</span><span class="bf-name">Dest. Port</span></div>
+        </div>
+        <div class="bf-row">
+          <div class="bf-cell bf-c3" style="flex:32"><span class="bf-bits">32 bit</span><span class="bf-name">Sequence Number</span></div>
+        </div>
+        <div class="bf-row">
+          <div class="bf-cell bf-c4" style="flex:32"><span class="bf-bits">32 bit</span><span class="bf-name">Acknowledgment Number</span></div>
+        </div>
+        <div class="bf-row">
+          <div class="bf-cell bf-c5" style="flex:4"><span class="bf-bits">4 b</span><span class="bf-name">HLen</span></div>
+          <div class="bf-cell bf-c5" style="flex:6"><span class="bf-bits">6 b</span><span class="bf-name">Res.</span></div>
+          <div class="bf-cell bf-c5" style="flex:6"><span class="bf-bits">6 b</span><span class="bf-name">Flags</span></div>
+          <div class="bf-cell bf-c5" style="flex:16"><span class="bf-bits">16 bit</span><span class="bf-name">Window</span></div>
+        </div>
+        <div class="bf-row">
+          <div class="bf-cell bf-c1" style="flex:16"><span class="bf-bits">16 bit</span><span class="bf-name">Checksum</span></div>
+          <div class="bf-cell bf-c1" style="flex:16"><span class="bf-bits">16 bit</span><span class="bf-name">Urgent Pointer</span></div>
+        </div>
+        <div class="bf-row">
+          <div class="bf-cell bf-opt" style="flex:32"><span class="bf-bits">0–40 byte</span><span class="bf-name">Options (opzionale)</span></div>
+        </div>
       </div>
       <p style="font-family:var(--serif);font-size:.88rem;color:rgba(10,10,15,.65);margin-top:.8rem"><strong>Usi tipici:</strong> HTTP/HTTPS, SMTP, FTP, SSH — quando l'affidabilità è essenziale.</p>
     </div>

@@ -93,6 +93,68 @@
     </div>
   </div>
 
+  <div class="box" style="margin-bottom:1.25rem">
+    <div class="box-title">Come funziona PAT · tabella di traduzione</div>
+    <svg viewBox="0 0 600 230" style="width:100%;height:auto;display:block;max-width:720px;margin:.6rem auto" aria-label="Diagramma PAT con 3 host privati che condividono un IP pubblico">
+      <defs>
+        <marker id="nat-arr-priv" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+          <path d="M0 0 L10 5 L0 10 z" fill="var(--trace-2)"/>
+        </marker>
+        <marker id="nat-arr-pub" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+          <path d="M0 0 L10 5 L0 10 z" fill="var(--trace-1)"/>
+        </marker>
+      </defs>
+      <text x="80"  y="14" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="var(--ink-mute)" letter-spacing="1">LAN PRIVATA</text>
+      <text x="305" y="14" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="var(--ink-mute)" letter-spacing="1">ROUTER NAT</text>
+      <text x="525" y="14" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="var(--ink-mute)" letter-spacing="1">INTERNET</text>
+      <g font-family="JetBrains Mono, monospace" font-size="10">
+        <g transform="translate(20 30)">
+          <rect width="140" height="38" rx="4" fill="var(--trace-2-soft)" stroke="var(--trace-2)" stroke-width="1.5"/>
+          <text x="70" y="16" text-anchor="middle" fill="var(--ink)" font-weight="700">PC-A</text>
+          <text x="70" y="30" text-anchor="middle" fill="var(--ink-soft)">192.168.1.10:5000</text>
+        </g>
+        <g transform="translate(20 95)">
+          <rect width="140" height="38" rx="4" fill="var(--trace-2-soft)" stroke="var(--trace-2)" stroke-width="1.5"/>
+          <text x="70" y="16" text-anchor="middle" fill="var(--ink)" font-weight="700">PC-B</text>
+          <text x="70" y="30" text-anchor="middle" fill="var(--ink-soft)">192.168.1.11:5000</text>
+        </g>
+        <g transform="translate(20 160)">
+          <rect width="140" height="38" rx="4" fill="var(--trace-2-soft)" stroke="var(--trace-2)" stroke-width="1.5"/>
+          <text x="70" y="16" text-anchor="middle" fill="var(--ink)" font-weight="700">PC-C</text>
+          <text x="70" y="30" text-anchor="middle" fill="var(--ink-soft)">192.168.1.12:8080</text>
+        </g>
+      </g>
+      <g stroke="var(--trace-2)" stroke-width="1.5" fill="none">
+        <path d="M 160 49  L 220 80"  marker-end="url(#nat-arr-priv)"/>
+        <path d="M 160 114 L 220 114" marker-end="url(#nat-arr-priv)"/>
+        <path d="M 160 179 L 220 148" marker-end="url(#nat-arr-priv)"/>
+      </g>
+      <g transform="translate(225 50)">
+        <rect width="170" height="130" rx="6" fill="var(--bg-card)" stroke="var(--trace-1)" stroke-width="1.8"/>
+        <text x="85" y="20" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="var(--trace-1)" font-weight="700" letter-spacing="1">NAT TABLE</text>
+        <line x1="10" y1="28" x2="160" y2="28" stroke="var(--rule)"/>
+        <g font-family="JetBrains Mono, monospace" font-size="9" fill="var(--ink-soft)">
+          <text x="10" y="46">.10:5000 → :33001</text>
+          <text x="10" y="66">.11:5000 → :33002</text>
+          <text x="10" y="86">.12:8080 → :33003</text>
+        </g>
+        <line x1="10" y1="98" x2="160" y2="98" stroke="var(--rule)" stroke-dasharray="2 2"/>
+        <text x="85" y="117" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="var(--ink-mute)" font-style="italic">interno → esterno</text>
+      </g>
+      <g stroke="var(--trace-1)" stroke-width="1.5" fill="none">
+        <path d="M 395 80  L 455 95"  marker-end="url(#nat-arr-pub)"/>
+        <path d="M 395 114 L 455 114" marker-end="url(#nat-arr-pub)"/>
+        <path d="M 395 148 L 455 133" marker-end="url(#nat-arr-pub)"/>
+      </g>
+      <g transform="translate(460 70)">
+        <ellipse cx="65" cy="45" rx="65" ry="40" fill="var(--trace-1-soft)" stroke="var(--trace-1)" stroke-width="1.5"/>
+        <text x="65" y="40" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--ink)" font-weight="700">INTERNET</text>
+        <text x="65" y="56" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="var(--ink-soft)">91.10.10.2</text>
+      </g>
+      <text x="300" y="220" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="var(--ink-mute)" font-style="italic">3 host LAN → 1 IP pubblico · disambiguati dalla porta sorgente</text>
+    </svg>
+  </div>
+
   <div class="explain-box">
     <h4>📥 Port forwarding — esporre un servizio interno</h4>
     <p><strong>Problema:</strong> il NAT è asimmetrico — il traffico esce facilmente, ma uno dall'esterno non sa come raggiungere un server dentro la LAN (vede solo l'IP pubblico del router).</p>

@@ -993,6 +993,52 @@ html[data-theme="dark"] .code-block{ background:#0a121c; border-color:#22324a; }
 }
 .handshake-svg text{ fill:var(--ink); }
 
+/* ============ BIT-FIELD diagrams (TCP/UDP/IP/802.11 headers) ============ */
+.bit-fields{
+  font-family:var(--mono);
+  border:1px solid var(--rule); border-radius:var(--r);
+  overflow:hidden; margin:.6rem 0 1rem;
+  background:var(--bg-card);
+}
+.bf-ruler{
+  display:flex; background:var(--rule-soft);
+  font-size:.58rem; color:var(--ink-mute);
+  border-bottom:1px solid var(--rule);
+  letter-spacing:.08em; font-weight:600;
+}
+.bf-ruler span{
+  flex:1; text-align:center; padding:3px 0;
+  border-right:1px dashed var(--rule);
+}
+.bf-ruler span:last-child{ border-right:none; }
+.bf-ruler .bf-tick{ flex:0 0 auto; padding:3px 6px; }
+.bf-row{
+  display:flex; border-bottom:1px solid var(--rule);
+  min-height:46px;
+}
+.bf-row:last-child{ border-bottom:none; }
+.bf-cell{
+  padding:6px 4px; text-align:center;
+  border-right:1px solid var(--rule);
+  display:flex; flex-direction:column; justify-content:center;
+  min-width:0;
+}
+.bf-cell:last-child{ border-right:none; }
+.bf-cell .bf-bits{
+  font-size:.58rem; color:var(--ink-mute);
+  letter-spacing:.06em; margin-bottom:2px;
+}
+.bf-cell .bf-name{
+  font-weight:600; color:var(--ink); font-size:.74rem;
+  line-height:1.15;
+}
+.bf-cell.bf-opt{ background:repeating-linear-gradient(45deg, transparent 0 4px, var(--rule-soft) 4px 8px); }
+.bf-c1{ background:var(--trace-3-soft); }
+.bf-c2{ background:var(--trace-2-soft); }
+.bf-c3{ background:var(--trace-1-soft); }
+.bf-c4{ background:var(--trace-5-soft); }
+.bf-c5{ background:var(--trace-4-soft); }
+
 /* explain-box equation styling (already used inline) — neutralize harsh bg */
 .explain-box [style*="padding:1rem"]{
   background:var(--rule-soft) !important;

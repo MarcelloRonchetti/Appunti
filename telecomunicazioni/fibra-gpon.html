@@ -193,6 +193,55 @@
       <li>Distanza massima logica: 60 km; pratica: 20 km.</li>
       <li>Split ratio fino a 1:64 (oggi 1:128 con GPON XGS).</li>
     </ul>
+    <svg viewBox="0 0 620 240" style="width:100%;height:auto;display:block;max-width:760px;margin:1rem auto .4rem" aria-label="Topologia GPON con OLT, splitter e ONT">
+      <defs>
+        <marker id="gpon-arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+          <path d="M0 0 L10 5 L0 10 z" fill="currentColor"/>
+        </marker>
+      </defs>
+      <!-- OLT block at left -->
+      <g transform="translate(20 90)">
+        <rect width="120" height="60" rx="6" fill="var(--trace-1-soft)" stroke="var(--trace-1)" stroke-width="1.8"/>
+        <text x="60" y="22" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="12" fill="var(--ink)" font-weight="700">OLT</text>
+        <text x="60" y="38" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="var(--ink-soft)">Centrale</text>
+        <text x="60" y="51" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="var(--ink-mute)">ISP</text>
+      </g>
+      <!-- single feeder fiber -->
+      <line x1="140" y1="120" x2="265" y2="120" stroke="var(--trace-1)" stroke-width="2.5"/>
+      <text x="200" y="110" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="var(--ink-mute)" font-style="italic">feeder · una sola fibra</text>
+      <text x="200" y="138" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="var(--trace-4)">↓ 1490 nm  ↑ 1310 nm</text>
+      <!-- passive splitter (triangular block) -->
+      <g transform="translate(265 90)">
+        <polygon points="0,0 0,60 60,42 60,18" fill="var(--bg-card)" stroke="var(--trace-3)" stroke-width="1.8"/>
+        <text x="30" y="33" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="10" fill="var(--trace-3)" font-weight="700">1:32</text>
+        <text x="30" y="48" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" fill="var(--ink-mute)">SPLITTER</text>
+      </g>
+      <!-- fan-out fibers to ONTs -->
+      <g stroke="var(--trace-2)" stroke-width="1.4" fill="none">
+        <line x1="325" y1="100" x2="450" y2="30"/>
+        <line x1="325" y1="108" x2="450" y2="75"/>
+        <line x1="325" y1="120" x2="450" y2="120"/>
+        <line x1="325" y1="132" x2="450" y2="165"/>
+        <line x1="325" y1="140" x2="450" y2="210"/>
+      </g>
+      <!-- 5 ONTs on right (dots, more implied) -->
+      <g font-family="JetBrains Mono, monospace" font-size="9">
+        <g transform="translate(450 16)"><rect width="80" height="28" rx="3" fill="var(--trace-2-soft)" stroke="var(--trace-2)" stroke-width="1.2"/><text x="40" y="13" text-anchor="middle" fill="var(--ink)" font-weight="600">ONT</text><text x="40" y="24" text-anchor="middle" fill="var(--ink-mute)" font-size="8">utente 1</text></g>
+        <g transform="translate(450 61)"><rect width="80" height="28" rx="3" fill="var(--trace-2-soft)" stroke="var(--trace-2)" stroke-width="1.2"/><text x="40" y="13" text-anchor="middle" fill="var(--ink)" font-weight="600">ONT</text><text x="40" y="24" text-anchor="middle" fill="var(--ink-mute)" font-size="8">utente 2</text></g>
+        <g transform="translate(450 106)"><rect width="80" height="28" rx="3" fill="var(--trace-2-soft)" stroke="var(--trace-2)" stroke-width="1.2"/><text x="40" y="13" text-anchor="middle" fill="var(--ink)" font-weight="600">ONT</text><text x="40" y="24" text-anchor="middle" fill="var(--ink-mute)" font-size="8">utente 3</text></g>
+        <g transform="translate(450 151)"><rect width="80" height="28" rx="3" fill="var(--trace-2-soft)" stroke="var(--trace-2)" stroke-width="1.2"/><text x="40" y="13" text-anchor="middle" fill="var(--ink)" font-weight="600">ONT</text><text x="40" y="24" text-anchor="middle" fill="var(--ink-mute)" font-size="8">utente …</text></g>
+        <g transform="translate(450 196)"><rect width="80" height="28" rx="3" fill="var(--trace-2-soft)" stroke="var(--trace-2)" stroke-width="1.2"/><text x="40" y="13" text-anchor="middle" fill="var(--ink)" font-weight="600">ONT</text><text x="40" y="24" text-anchor="middle" fill="var(--ink-mute)" font-size="8">utente 32</text></g>
+      </g>
+      <!-- downstream/upstream icons -->
+      <g color="var(--trace-1)">
+        <line x1="200" y1="118" x2="225" y2="118" stroke="var(--trace-1)" stroke-width="1" marker-end="url(#gpon-arr)"/>
+      </g>
+      <g color="var(--trace-2)">
+        <line x1="225" y1="124" x2="200" y2="124" stroke="var(--trace-2)" stroke-width="1" marker-end="url(#gpon-arr)"/>
+      </g>
+      <!-- labels -->
+      <text x="310" y="225" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="var(--ink-mute)" font-style="italic">downstream broadcast 2.488 Gbps · upstream TDMA 1.244 Gbps</text>
+    </svg>
   </div>
 
   <div class="explain-box">

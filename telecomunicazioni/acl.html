@@ -65,6 +65,78 @@
       <li><strong>ACL standard:</strong> il più vicino possibile alla destinazione (filtrano solo per IP sorgente, quindi se messe vicino alla sorgente bloccherebbero anche traffico legittimo).</li>
       <li><strong>ACL estese:</strong> il più vicino possibile alla sorgente (filtrano per IP, protocollo, porte → si possono mettere all'origine senza danni collaterali, riducendo carico sulla rete).</li>
     </ul>
+    <svg viewBox="0 0 600 250" style="width:100%;height:auto;display:block;max-width:680px;margin:1rem auto .4rem" aria-label="Flusso di valutazione di una ACL">
+      <defs>
+        <marker id="acl-flow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+          <path d="M0 0 L10 5 L0 10 z" fill="var(--ink-mute)"/>
+        </marker>
+      </defs>
+      <!-- packet entering -->
+      <g transform="translate(20 105)">
+        <rect width="90" height="40" rx="20" fill="var(--trace-2-soft)" stroke="var(--trace-2)" stroke-width="1.5"/>
+        <text x="45" y="18" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--ink)" font-weight="700">pacchetto</text>
+        <text x="45" y="32" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="var(--ink-soft)">in arrivo</text>
+      </g>
+      <!-- arrow into rule list -->
+      <line x1="110" y1="125" x2="155" y2="125" stroke="var(--ink-mute)" stroke-width="1.4" marker-end="url(#acl-flow)"/>
+      <!-- rule list (3 rules + implicit deny) -->
+      <g font-family="JetBrains Mono, monospace" font-size="10">
+        <g transform="translate(160 30)">
+          <rect width="280" height="36" rx="4" fill="var(--trace-3-soft)" stroke="var(--trace-3)" stroke-width="1.4"/>
+          <text x="14" y="22" fill="var(--trace-3)" font-weight="700">10</text>
+          <text x="40" y="16" fill="var(--ink)" font-weight="600">permit ip 192.168.1.0/24 any</text>
+          <text x="40" y="29" fill="var(--ink-mute)" font-size="9">match → permit · stop</text>
+        </g>
+        <g transform="translate(160 76)">
+          <rect width="280" height="36" rx="4" fill="var(--trace-4-soft)" stroke="var(--trace-4)" stroke-width="1.4"/>
+          <text x="14" y="22" fill="var(--trace-4)" font-weight="700">20</text>
+          <text x="40" y="16" fill="var(--ink)" font-weight="600">deny tcp any host 10.0.0.5 eq 23</text>
+          <text x="40" y="29" fill="var(--ink-mute)" font-size="9">match → deny · stop</text>
+        </g>
+        <g transform="translate(160 122)">
+          <rect width="280" height="36" rx="4" fill="var(--trace-3-soft)" stroke="var(--trace-3)" stroke-width="1.4"/>
+          <text x="14" y="22" fill="var(--trace-3)" font-weight="700">30</text>
+          <text x="40" y="16" fill="var(--ink)" font-weight="600">permit tcp any any eq 443</text>
+          <text x="40" y="29" fill="var(--ink-mute)" font-size="9">match → permit · stop</text>
+        </g>
+        <g transform="translate(160 168)">
+          <rect width="280" height="36" rx="4" fill="var(--ink-mute)" fill-opacity=".12" stroke="var(--ink-mute)" stroke-width="1.4" stroke-dasharray="4 3"/>
+          <text x="14" y="22" fill="var(--ink-mute)" font-weight="700">∞</text>
+          <text x="40" y="16" fill="var(--ink-soft)" font-weight="600" font-style="italic">deny ip any any  (implicita)</text>
+          <text x="40" y="29" fill="var(--ink-mute)" font-size="9">tutto ciò che non è permesso viene scartato</text>
+        </g>
+      </g>
+      <!-- vertical flow arrows between rules -->
+      <g stroke="var(--ink-mute)" stroke-width="1.2" fill="none" stroke-dasharray="2 3">
+        <line x1="300" y1="66"  x2="300" y2="76"/>
+        <line x1="300" y1="112" x2="300" y2="122"/>
+        <line x1="300" y1="158" x2="300" y2="168"/>
+      </g>
+      <text x="304" y="74"  font-family="JetBrains Mono, monospace" font-size="8" fill="var(--ink-mute)" font-style="italic">no match</text>
+      <text x="304" y="120" font-family="JetBrains Mono, monospace" font-size="8" fill="var(--ink-mute)" font-style="italic">no match</text>
+      <text x="304" y="166" font-family="JetBrains Mono, monospace" font-size="8" fill="var(--ink-mute)" font-style="italic">no match</text>
+
+      <!-- outputs -->
+      <g transform="translate(465 50)">
+        <rect width="115" height="40" rx="6" fill="var(--trace-3)" fill-opacity=".18" stroke="var(--trace-3)" stroke-width="1.6"/>
+        <text x="57" y="18" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--trace-3)" font-weight="700">PERMIT</text>
+        <text x="57" y="32" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="var(--ink-soft)">pacchetto inoltrato</text>
+      </g>
+      <g transform="translate(465 165)">
+        <rect width="115" height="40" rx="6" fill="var(--trace-4)" fill-opacity=".15" stroke="var(--trace-4)" stroke-width="1.6"/>
+        <text x="57" y="18" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="11" fill="var(--trace-4)" font-weight="700">DENY</text>
+        <text x="57" y="32" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="var(--ink-soft)">pacchetto scartato</text>
+      </g>
+      <g stroke="var(--trace-3)" stroke-width="1.5" fill="none">
+        <line x1="440" y1="48"  x2="465" y2="65" marker-end="url(#acl-flow)"/>
+        <line x1="440" y1="140" x2="465" y2="75" marker-end="url(#acl-flow)"/>
+      </g>
+      <g stroke="var(--trace-4)" stroke-width="1.5" fill="none">
+        <line x1="440" y1="94"  x2="465" y2="180" marker-end="url(#acl-flow)"/>
+        <line x1="440" y1="186" x2="465" y2="186" marker-end="url(#acl-flow)"/>
+      </g>
+      <text x="300" y="232" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9" fill="var(--ink-mute)" font-style="italic">prima regola che fa match → decide · valutazione top-down · stop alla prima coincidenza</text>
+    </svg>
   </div>
 
   <div class="explain-box">

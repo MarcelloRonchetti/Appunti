@@ -204,18 +204,37 @@
 
   <div class="box" style="margin-bottom:1.25rem">
     <div class="box-title">Struttura del pacchetto 802.11 (MAC frame)</div>
-    <div class="header-fields">
-      <div class="hf hf-c1"><span class="hf-bits">2 byte</span><span class="hf-name">Frame Control</span></div>
-      <div class="hf hf-c1"><span class="hf-bits">2 byte</span><span class="hf-name">Duration / ID</span></div>
-      <div class="hf hf-c2"><span class="hf-bits">6 byte</span><span class="hf-name">Address 1</span></div>
-      <div class="hf hf-c2"><span class="hf-bits">6 byte</span><span class="hf-name">Address 2</span></div>
-      <div class="hf hf-c2"><span class="hf-bits">6 byte</span><span class="hf-name">Address 3</span></div>
-      <div class="hf hf-c3"><span class="hf-bits">2 byte</span><span class="hf-name">Seq Ctrl</span></div>
-      <div class="hf hf-c2"><span class="hf-bits">6 byte</span><span class="hf-name">Address 4*</span></div>
-      <div class="hf hf-c4"><span class="hf-bits">0-2312</span><span class="hf-name">Frame Body</span></div>
-      <div class="hf hf-c5"><span class="hf-bits">4 byte</span><span class="hf-name">FCS / CRC</span></div>
+    <div class="bit-fields">
+      <div class="bf-row">
+        <div class="bf-cell bf-c1" style="flex:2"><span class="bf-bits">2 B</span><span class="bf-name">Frame Ctrl</span></div>
+        <div class="bf-cell bf-c1" style="flex:2"><span class="bf-bits">2 B</span><span class="bf-name">Dur/ID</span></div>
+        <div class="bf-cell bf-c2" style="flex:6"><span class="bf-bits">6 B</span><span class="bf-name">Address 1<br><small style="font-weight:400;opacity:.7">RA</small></span></div>
+        <div class="bf-cell bf-c2" style="flex:6"><span class="bf-bits">6 B</span><span class="bf-name">Address 2<br><small style="font-weight:400;opacity:.7">TA</small></span></div>
+        <div class="bf-cell bf-c2" style="flex:6"><span class="bf-bits">6 B</span><span class="bf-name">Address 3<br><small style="font-weight:400;opacity:.7">BSSID</small></span></div>
+        <div class="bf-cell bf-c3" style="flex:2"><span class="bf-bits">2 B</span><span class="bf-name">Seq Ctrl</span></div>
+        <div class="bf-cell bf-opt" style="flex:6"><span class="bf-bits">6 B *</span><span class="bf-name">Addr 4<br><small style="font-weight:400;opacity:.7">WDS</small></span></div>
+        <div class="bf-cell bf-c4" style="flex:24"><span class="bf-bits">0–2312 B</span><span class="bf-name">Frame Body (payload + LLC/SNAP)</span></div>
+        <div class="bf-cell bf-c5" style="flex:4"><span class="bf-bits">4 B</span><span class="bf-name">FCS</span></div>
+      </div>
     </div>
-    <p style="font-family:var(--serif);font-size:.9rem;margin-top:.8rem;color:rgba(10,10,15,.65)">Address 4 presente solo nei frame WDS (wireless distribution system). I quattro campi indirizzo servono perché ci sono mittente, destinatario, BSSID e (in WDS) AP sorgente.</p>
+    <p style="font-family:var(--serif);font-size:.9rem;margin-top:.8rem;color:rgba(10,10,15,.65)"><strong>Address 4</strong> presente solo nei frame WDS (wireless distribution system). I quattro indirizzi separano: <strong>RA</strong> (receiver, prossimo hop), <strong>TA</strong> (transmitter, ultimo hop), <strong>BSSID</strong> (identificativo della cella), <strong>SA originale</strong> (solo WDS).</p>
+    <div class="bit-fields" style="margin-top:.6rem">
+      <div class="bf-ruler"><span>0</span><span>2</span><span>4</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span></div>
+      <div class="bf-row">
+        <div class="bf-cell bf-c1" style="flex:2"><span class="bf-bits">2 b</span><span class="bf-name">Proto Ver</span></div>
+        <div class="bf-cell bf-c1" style="flex:2"><span class="bf-bits">2 b</span><span class="bf-name">Type</span></div>
+        <div class="bf-cell bf-c1" style="flex:4"><span class="bf-bits">4 b</span><span class="bf-name">Subtype</span></div>
+        <div class="bf-cell bf-c3" style="flex:1"><span class="bf-bits">1</span><span class="bf-name">ToDS</span></div>
+        <div class="bf-cell bf-c3" style="flex:1"><span class="bf-bits">1</span><span class="bf-name">FrDS</span></div>
+        <div class="bf-cell bf-c3" style="flex:1"><span class="bf-bits">1</span><span class="bf-name">MF</span></div>
+        <div class="bf-cell bf-c3" style="flex:1"><span class="bf-bits">1</span><span class="bf-name">Retry</span></div>
+        <div class="bf-cell bf-c3" style="flex:1"><span class="bf-bits">1</span><span class="bf-name">PM</span></div>
+        <div class="bf-cell bf-c3" style="flex:1"><span class="bf-bits">1</span><span class="bf-name">MD</span></div>
+        <div class="bf-cell bf-c3" style="flex:1"><span class="bf-bits">1</span><span class="bf-name">Prot</span></div>
+        <div class="bf-cell bf-c3" style="flex:1"><span class="bf-bits">1</span><span class="bf-name">Ord</span></div>
+      </div>
+    </div>
+    <p style="font-family:var(--mono);font-size:.7rem;margin:.3rem 0 0;color:var(--ink-mute);text-align:center;font-style:italic">Zoom sul campo <strong>Frame Control</strong> (16 bit) — Type+Subtype determinano se è management/control/data</p>
   </div>
 
   <div class="divider"></div>
