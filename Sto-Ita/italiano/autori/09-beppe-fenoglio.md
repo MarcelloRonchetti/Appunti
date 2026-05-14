@@ -64,19 +64,25 @@ Pubblicato nel **1963**, *Una questione privata* è considerato uno dei più alt
 
 Italo Calvino, nella prefazione del 1964 al *Sentiero dei nidi di ragno*, lo definisce il romanzo che tutti i neorealisti avevano sognato di scrivere senza riuscirci.
 
-### Trama essenziale
+### Trama dettagliata
 
-Il protagonista è **Milton**, giovane partigiano nelle Langhe, studente di lettere, appassionato di letteratura inglese.
+Il protagonista è **Milton**, giovane partigiano azzurro (badogliano) nelle Langhe, studente di lettere, appassionato di letteratura inglese, brutto e timido.
 
-In un giorno di nebbia Milton torna alla villa di **Fulvia**, la ragazza di cui era innamorato prima della guerra. Fulvia non c'è: è sfollata altrove. La custode della villa lascia cadere un'allusione: forse, nei mesi precedenti, Fulvia aveva avuto una relazione con **Giorgio**, suo migliore amico, anch'egli partigiano.
+**1. L'incipit: la villa di Fulvia.** In un giorno di nebbia dell'autunno 1944, Milton si avvicina a cavallo (il cavallo si chiama *Hopkins*, come il poeta inglese) alla villa di **Fulvia**, la ragazza di cui era innamorato prima della guerra. Fulvia non c'è: la famiglia è sfollata a Torino. Lo accoglie la **custode**, che gli fa entrare, gli mostra le stanze, e nel corso del dialogo lascia cadere un'allusione precisa: durante l'estate, mentre Milton era già in montagna a combattere, Fulvia e **Giorgio Clerici** — suo migliore amico, anch'egli partigiano — si vedevano ogni giorno, restavano chiusi in casa per pomeriggi interi, ascoltavano dischi. La custode insinua che ci fosse una relazione.
 
-Da quel momento Milton è ossessionato dal dubbio. Deve sapere la verità. Decide di cercare Giorgio per chiedergli di dire la verità su Fulvia.
+**2. L'ossessione del dubbio.** Da quel momento Milton è divorato dalla gelosia. Non riesce più a pensare alla guerra: deve sapere la verità. Decide di andare a cercare Giorgio per costringerlo a parlare. Si mette in cammino verso il distaccamento di Giorgio, sotto la pioggia, nel fango.
 
-Ma Giorgio è stato catturato dai fascisti.
+**3. Giorgio catturato.** Arrivato al casolare dove Giorgio era acquartierato, Milton scopre che proprio quella mattina Giorgio è stato **catturato dai fascisti** durante un'imboscata: portato ad Alba, è ora prigioniero in attesa di fucilazione.
 
-Per liberarlo (o per costringerlo a parlare), Milton tenta un'azione disperata: catturare un soldato fascista da scambiare con Giorgio. Il piano fallisce, l'azione si trasforma in fuga, inseguimenti, sparatorie.
+**4. Il piano dello scambio.** Per salvarlo — e per costringerlo a dire la verità — Milton concepisce un piano disperato e personale, fuori dagli ordini partigiani: **catturare un soldato fascista** di pari grado da proporre in scambio. Si apposta lungo una strada, attende, e dopo ore riesce a catturare un **sergente** della Guardia Nazionale Repubblicana, isolato dalla colonna.
 
-Il romanzo si chiude in un finale ambiguo: Milton corre nella nebbia, inseguito, senza che si sappia con certezza se sopravvive.
+**5. L'uccisione accidentale.** Milton porta il sergente in un casolare, lo lega, lo interroga, gli annuncia lo scambio. Ma il prigioniero, in un momento di confusione, tenta di fuggire: Milton spara e lo **uccide per errore**. Senza ostaggio, il piano crolla. Ogni speranza di salvare Giorgio — e di scoprire la verità su Fulvia — è perduta.
+
+**6. La fucilazione dei partigiani.** Vagando disperato per le colline, Milton apprende da una vecchia contadina che i fascisti hanno fucilato una colonna di partigiani prigionieri come rappresaglia. Non sa se Giorgio fosse tra loro: anche questa certezza gli è negata.
+
+**7. Il ritorno alla villa e il rastrellamento.** Ossessionato dal ricordo di Fulvia, Milton decide di **tornare alla villa di Alba**, sperando di trovare lì qualcosa — un oggetto, una traccia, l'illusione del passato. Mentre si avvicina alla casa, viene sorpreso da un **rastrellamento nazifascista**. Inizia una fuga disperata attraverso i campi e le colline, inseguito dai soldati che gli sparano addosso.
+
+**8. Il finale aperto.** Il romanzo si chiude su Milton che corre nella nebbia, esausto, senza fiato, dopo essere stato ferito o solo sfiorato dai proiettili. Non sappiamo se si salva, se cade, se muore. La nebbia inghiotte tutto: il personaggio, la verità su Fulvia, la guerra.
 
 ### Il titolo
 
