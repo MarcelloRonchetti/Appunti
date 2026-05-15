@@ -19,3 +19,18 @@ Thumbs.db
 # Appunti tecnici locali per agent/editor
 Sto-Ita/CLAUDE.md
 Sto-Ita/.claude/
+
+# Dipendenze npm / Python
+node_modules/
+package-lock.json
+__pycache__/
+*.pyc
+*.pyo
+.env
+.env.local
+
+# Cache editor/IDE
+.idea/
+*.swp
+*.swo
+*~
