@@ -17,6 +17,8 @@ Questa checklist segue le lezioni svolte e serve per controllare rapidamente cos
   - *Niente di nuovo sul fronte occidentale* (Remarque)
   - *Come il vento cucito alla terra* (Tuti)
   - *La banda di via Panisperna* (Colangelo/Temporelli)
+  - *Una questione privata* (Fenoglio)
+  - *I giorni di vetro* (Verna)
 
 ## 1. Positivismo, Naturalismo e Verismo
 
