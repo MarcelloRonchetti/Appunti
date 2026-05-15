@@ -22,6 +22,48 @@ Il Positivismo si fonda su una piena fiducia nella scienza come strumento di con
 
 Secondo questa mentalità, l'uomo non è completamente libero e isolato: è condizionato dal corpo, dalla famiglia, dalla classe sociale, dall'ambiente in cui vive e dalle leggi biologiche. Questa visione avrà conseguenze importanti anche sulla letteratura.
 
+### Auguste Comte e la legge dei tre stadi
+
+Il vero fondatore del Positivismo filosofico è **Auguste Comte** (1798-1857), autore del *Corso di filosofia positiva* (1830-42). Comte sistematizza i principi del movimento e formula la celebre **legge dei tre stadi**, attraverso i quali, secondo lui, passa la storia del pensiero umano:
+
+1. **Stadio teologico**: l'uomo spiega i fenomeni attribuendoli a entità divine.
+2. **Stadio metafisico**: l'uomo spiega la realtà attraverso principi astratti e idee filosofiche universali — fase intermedia di transizione.
+3. **Stadio positivo**: l'umanità riconosce che l'unico sapere valido è quello scientifico. Scienza e conoscenza coincidono.
+
+Comte è anche il fondatore della **sociologia**: applica per primo il metodo scientifico allo studio della società. Il termine "positivismo" era stato però introdotto già da **Henri de Saint-Simon** (1760-1825), maestro di Comte, per indicare il metodo delle *discipline positive* (matematica, fisica, scienze naturali).
+
+### Darwin e l'evoluzionismo
+
+Pilastro scientifico del Positivismo è la teoria dell'evoluzione di **Charles Darwin** (1809-1882), esposta ne *L'origine della specie* (1859) e ne *L'origine dell'uomo* (1871). Darwin sostiene che le specie viventi non sono fisse, ma si evolvono nel tempo adattandosi all'ambiente attraverso la **selezione naturale**: gli individui con variazioni più favorevoli alla sopravvivenza si riproducono e trasmettono le caratteristiche ai discendenti.
+
+*L'origine dell'uomo* applica la teoria alla specie umana: anche l'uomo discende da forme di vita più antiche e condivide un antenato comune con le scimmie antropomorfe. La Chiesa condanna duramente la teoria, percepita come un attacco alla creazione divina. Il dibattito tra darwinisti e antievoluzionisti attraverserà tutto il Novecento.
+
+### Spencer e il darwinismo sociale
+
+**Herbert Spencer** (1820-1903), filosofo inglese, applica le teorie di Darwin alla società umana, dando origine al **darwinismo sociale**. Spencer conia l'espressione "sopravvivenza del più adatto" (*survival of the fittest*) e sostiene che anche nelle società valga questa legge: i più forti, i più abili, i più ricchi sono per natura destinati a prevalere sui più deboli, e questa selezione sociale è inevitabile e auspicabile, perché garantisce il progresso della specie.
+
+Le conseguenze sono devastanti: il darwinismo sociale fornisce una giustificazione pseudo-scientifica al razzismo, alle gerarchie tra "razze" e alla supremazia degli europei sui popoli colonizzati. È uno degli ingredienti culturali che alimenterà l'imperialismo ottocentesco e, più tardi, le ideologie totalitarie del Novecento.
+
+### Taine e il determinismo
+
+**Ippolito Taine** (1828-1893) porta il positivismo nel campo della storia e della critica letteraria. Teorizza un rigoroso **determinismo**: l'uomo non è libero, ma è il risultato di tre fattori che ne determinano il comportamento — l'**ambiente** (famiglia, educazione, contesto), la **razza** (concetto che oggi sappiamo essere pseudo-scientifico e che ha alimentato derive razziste), e il **momento storico** (cultura, valori, contraddizioni dell'epoca). Questa visione fornirà le basi teoriche al Naturalismo di Zola.
+
+### Lombroso e l'antropologia criminale
+
+In Italia, l'applicazione più nota del positivismo allo studio dell'uomo è quella di **Cesare Lombroso** (1835-1909), fondatore dell'**antropologia criminale**. Nella sua opera principale, ***L'uomo delinquente*** (1876), Lombroso sostiene che esista un "delinquente nato", riconoscibile da caratteristiche somatiche precise — fronte sfuggente, mandibola pronunciata, asimmetrie del cranio — che testimoniavano un'inferiorità biologica e un atavismo predisponente al crimine.
+
+Sono teorie oggi completamente screditate ma che all'epoca ebbero enorme fortuna e influenzarono profondamente il diritto penale e la giurisprudenza. Lombroso rappresenta il lato più problematico del positivismo: la fiducia cieca nella misurazione scientifica applicata all'uomo, che apre la strada anche alle teorie razziste.
+
+## 2b. Marx e la Comune di Parigi
+
+In parallelo al positivismo trionfante si sviluppa un pensiero radicalmente alternativo: quello di **Karl Marx** (1818-1883). Marx condivide con il positivismo l'attenzione all'analisi scientifica della società, ma ne ribalta la prospettiva ottimistica.
+
+Nel 1848, insieme a **Friedrich Engels**, pubblica il *Manifesto del Partito Comunista*, testo programmatico che chiama il proletariato di tutto il mondo a unirsi e a rovesciare l'ordine capitalistico. Denuncia come il sistema capitalistico, lungi dal portare benessere a tutti come prometteva la borghesia, abbia in realtà peggiorato le condizioni della classe operaia, ridotta a vendere la propria forza-lavoro in fabbriche con orari massacranti e salari da fame.
+
+Nel **1871**, in un clima di estremo fermento dopo la sconfitta francese nella guerra franco-prussiana, si verifica a Parigi un evento di straordinaria portata storica: la **Comune di Parigi**. Per circa due mesi (marzo-maggio 1871) i lavoratori parigini prendono il controllo della città, instaurando un'esperienza di governo popolare unica nella storia. La Comune viene schiacciata nel sangue dal governo di Adolphe Thiers durante la cosiddetta **Settimana di sangue** (21-28 maggio 1871), che provoca almeno 30.000 morti. Pur sconfitta, diventerà il simbolo della possibilità di un'alternativa rivoluzionaria al capitalismo.
+
+In risposta a queste pressioni dal basso, la politica europea sarà costretta nei decenni successivi a prendere provvedimenti a favore delle classi più deboli: nasceranno le prime forme di legislazione sociale, le prime tutele del lavoro, l'estensione progressiva del diritto di voto.
+
 ## 3. Dal Realismo al Naturalismo
 
 ### Il Realismo
@@ -129,6 +171,10 @@ Questa visione è centrale in Verga: la società è attraversata da una **fiuman
 | Documento umano | Frammento di vita rappresentato con effetto di realtà |
 | Ereditarietà | Condizionamento familiare e biologico |
 | Ambiente | Condizioni sociali e culturali che influenzano l'individuo |
+| Legge dei tre stadi | Comte: stadio teologico, metafisico, positivo |
+| Darwinismo sociale | Spencer: applicazione della selezione naturale alla società |
+| Determinismo | Taine: l'uomo è prodotto di razza, ambiente, momento storico |
+| Antropologia criminale | Lombroso: il "delinquente nato" e i tratti somatici |
 
 ## Sintesi finale
 
