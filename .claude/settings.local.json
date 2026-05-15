@@ -5,7 +5,9 @@
       "WebFetch(domain:api.anthropic.com)",
       "Read(//tmp/design-pkg/**)",
       "Bash(tar -tf pkg)",
-      "Bash(tar -xf pkg)"
+      "Bash(tar -xf pkg)",
+      "Bash(/var/data/python/bin/html5validator /home/marci/Appunti/Sistemi/simulazione_2024.html)",
+      "Bash(python3 -c ' *)"
     ]
   }
 }

@@ -1,0 +1,2023 @@
+<!DOCTYPE html>
+<html lang="it" class="theme-init">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Relazione di progetto · Palestra ecosostenibile — Sistemi e Reti 5F</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/tele-style.css">
+<style>
+/* =====================================================
+   RELAZIONE DI PROGETTO — overrides + estensioni
+   Variante "progetto/documento" sopra il tema tele.
+   Cambia: tipografia titoli (Fraunces), accent secondario teal,
+   blocchi 'scelta progettuale' e 'collegamento appunti'.
+   ===================================================== */
+:root{
+  --serif:'Fraunces','Cormorant Garamond',Georgia,serif;
+  --proj-warm:#9c4a14;       /* ambra ma più caldo, per i titoli */
+  --proj-deep:#0c5e6e;       /* teal profondo, per accento progettuale */
+  --paper-grain: #f7f2e6;
+}
+html[data-theme="dark"]{
+  --proj-warm:#f5b65e;
+  --proj-deep:#5fc6db;
+  --paper-grain:#1d2532;
+}
+body{
+  background-image:
+    linear-gradient(to right,  var(--bg-grid) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--bg-grid) 1px, transparent 1px),
+    radial-gradient(ellipse at top, rgba(184,83,15,.04) 0%, transparent 60%);
+  background-size: 24px 24px, 24px 24px, 100% 100%;
+}
+html[data-theme="dark"] body{
+  background-image:
+    linear-gradient(to right,  var(--bg-grid) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--bg-grid) 1px, transparent 1px),
+    radial-gradient(ellipse at top, rgba(245,182,94,.05) 0%, transparent 60%);
+}
+
+/* ============ FRONTESPIZIO ============ */
+.frontispiece{
+  background:var(--paper-grain);
+  border:1px solid var(--rule);
+  border-radius:var(--r-lg);
+  padding:2.5rem 2.2rem 2rem;
+  margin-bottom:2rem;
+  position:relative; overflow:hidden;
+}
+.frontispiece::before{
+  content:''; position:absolute; inset:0;
+  background:
+    linear-gradient(to right, var(--grid-glow) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-glow) 1px, transparent 1px);
+  background-size:32px 32px; opacity:.25; pointer-events:none;
+}
+.frontispiece > *{ position:relative; z-index:1; }
+.fp-stamp{
+  display:inline-flex; gap:.6rem; align-items:center;
+  font-family:var(--mono); font-size:10.5px;
+  letter-spacing:.18em; text-transform:uppercase;
+  color:var(--proj-warm); font-weight:700;
+  border:1.5px solid var(--proj-warm);
+  padding:5px 10px; border-radius:2px;
+  background:var(--bg);
+  margin-bottom:1.4rem;
+}
+.fp-stamp .fp-dot{
+  width:7px; height:7px; border-radius:50%;
+  background:var(--proj-warm);
+  box-shadow:0 0 6px var(--grid-glow);
+  animation:pulse 2.4s ease-in-out infinite;
+}
+.fp-meta-top{
+  display:flex; gap:1.5rem; flex-wrap:wrap;
+  font-family:var(--mono); font-size:11px;
+  letter-spacing:.12em; text-transform:uppercase;
+  color:var(--ink-mute); margin-bottom:1.2rem;
+}
+.fp-meta-top span b{ color:var(--ink); font-weight:600; }
+.fp-title{
+  font-family:var(--serif);
+  font-size:clamp(2.1rem, 4vw, 3rem);
+  font-weight:600; line-height:1.05; letter-spacing:-.015em;
+  color:var(--ink); margin-bottom:.45rem;
+  font-style:italic;
+}
+.fp-subtitle{
+  font-family:var(--display);
+  font-size:clamp(1.05rem, 1.7vw, 1.3rem);
+  font-weight:500; color:var(--proj-warm);
+  letter-spacing:-.005em;
+  margin-bottom:1.4rem;
+}
+.fp-traccia{
+  font-family:var(--sans); font-size:.97rem; line-height:1.7;
+  color:var(--ink-soft); max-width:780px;
+  border-left:3px solid var(--proj-deep);
+  padding:.4rem 0 .4rem 1.1rem;
+  margin-bottom:1.6rem;
+  font-style:italic;
+}
+.fp-meta-bottom{
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:1rem; padding-top:1.2rem;
+  border-top:1px dashed var(--rule);
+}
+.fp-cell{ font-family:var(--mono); }
+.fp-cell .fp-lbl{
+  font-size:9.5px; letter-spacing:.16em; text-transform:uppercase;
+  color:var(--ink-mute); margin-bottom:5px;
+}
+.fp-cell .fp-val{
+  font-size:1rem; font-weight:600;
+  color:var(--ink); line-height:1.25;
+}
+.fp-cell .fp-val em{ font-style:normal; color:var(--proj-deep); }
+
+/* ============ INDICE PROGETTO ============ */
+.toc{
+  background:var(--bg-card);
+  border:1px solid var(--rule);
+  border-radius:var(--r-lg);
+  padding:1.5rem 1.7rem;
+  margin-bottom:2rem;
+}
+.toc-title{
+  font-family:var(--mono); font-size:10.5px;
+  letter-spacing:.18em; text-transform:uppercase;
+  color:var(--proj-warm); font-weight:700;
+  display:flex; align-items:center; gap:10px;
+  margin-bottom:1rem;
+}
+.toc-title::before{
+  content:''; width:6px; height:6px; border-radius:50%;
+  background:var(--proj-warm);
+}
+.toc-title::after{
+  content:''; flex:1; height:1px; background:var(--rule);
+}
+.toc-grid{
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:1.2rem;
+}
+.toc-col h5{
+  font-family:var(--mono); font-size:10px;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--ink-mute); font-weight:600;
+  margin-bottom:.7rem; padding-bottom:.4rem;
+  border-bottom:1px solid var(--rule-soft);
+}
+.toc-col ol{
+  list-style:none; padding:0; margin:0;
+  font-family:var(--sans); font-size:.9rem;
+}
+.toc-col li{ margin-bottom:.35rem; }
+.toc-col a{
+  color:var(--ink-soft); text-decoration:none;
+  display:flex; gap:8px; align-items:baseline;
+  padding:3px 6px; margin:0 -6px; border-radius:3px;
+  transition:all .12s;
+}
+.toc-col a:hover{ color:var(--proj-warm); background:var(--rule-soft); }
+.toc-col a .toc-num{
+  font-family:var(--mono); font-size:.78rem;
+  color:var(--proj-warm); font-weight:600; min-width:32px;
+}
+
+/* ============ MACRO-SECTION (PRIMA / SECONDA PARTE) ============ */
+.macro-divider{
+  margin:3rem 0 2rem;
+  display:flex; align-items:center; gap:1.2rem;
+}
+.macro-divider .md-line{ flex:1; height:1px; background:var(--rule); }
+.macro-divider .md-label{
+  font-family:var(--serif); font-style:italic;
+  font-size:1.7rem; font-weight:500;
+  color:var(--proj-deep);
+  letter-spacing:.01em;
+}
+.macro-divider .md-tag{
+  font-family:var(--mono); font-size:10px;
+  letter-spacing:.18em; text-transform:uppercase;
+  color:var(--ink-mute); font-weight:600;
+  padding:4px 10px; border:1px solid var(--rule);
+  border-radius:2px;
+}
+
+/* sotto-sezione 1.x / 2.x */
+.sub-head{
+  margin:1.8rem 0 1.1rem;
+  padding-left:.2rem;
+  display:flex; gap:.9rem; align-items:baseline;
+  border-bottom:1px dashed var(--rule);
+  padding-bottom:.65rem;
+}
+.sub-head .sh-num{
+  font-family:var(--mono); font-size:.92rem;
+  font-weight:600; color:var(--proj-warm);
+  letter-spacing:.04em;
+}
+.sub-head h3{
+  font-family:var(--display);
+  font-size:1.32rem; font-weight:600;
+  color:var(--ink); letter-spacing:-.01em;
+}
+
+/* ============ CHOICE — scelta motivata ============ */
+.choice{
+  background:linear-gradient(180deg, var(--bg-card), var(--bg-elev));
+  border:1px solid var(--rule);
+  border-left:4px solid var(--proj-deep);
+  border-radius:var(--r);
+  padding:1.1rem 1.3rem;
+  margin:1rem 0 1.2rem;
+  position:relative;
+}
+.choice::before{
+  content:'⊙ scelta progettuale';
+  position:absolute; top:-9px; left:14px;
+  background:var(--bg);
+  font-family:var(--mono); font-size:9.5px;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--proj-deep); font-weight:700;
+  padding:1px 7px; border:1px solid var(--proj-deep);
+  border-radius:2px;
+}
+.choice .ch-q{
+  font-family:var(--display); font-size:1rem;
+  font-weight:600; color:var(--ink);
+  margin:.45rem 0 .55rem;
+}
+.choice .ch-why{
+  font-family:var(--sans); font-size:.92rem;
+  color:var(--ink-soft); line-height:1.65;
+}
+.choice .ch-why strong{ color:var(--ink); }
+
+/* ============ REF — collegamento appunti ============ */
+.ref{
+  display:flex; gap:.8rem; align-items:flex-start;
+  background:var(--trace-2-soft);
+  border:1px solid var(--trace-2);
+  border-radius:var(--r);
+  padding:.75rem 1rem;
+  margin:.8rem 0 1.1rem;
+  font-family:var(--sans); font-size:.88rem;
+  color:var(--ink);
+}
+.ref::before{
+  content:'↗'; font-family:var(--mono);
+  font-size:1.1rem; color:var(--trace-2);
+  font-weight:600; line-height:1; margin-top:1px;
+}
+.ref .ref-lbl{
+  font-family:var(--mono); font-size:9.5px;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--trace-2); font-weight:700;
+  display:block; margin-bottom:3px;
+}
+.ref a{
+  color:var(--trace-2); text-decoration:none;
+  border-bottom:1px solid currentColor;
+  font-weight:500;
+}
+.ref a:hover{ color:var(--ink); border-color:var(--ink); }
+
+/* ============ TWO-COL LAYOUT ============ */
+.two-col{
+  display:grid; gap:1.2rem;
+  grid-template-columns:1.4fr 1fr;
+  margin-bottom:1.2rem;
+}
+@media(max-width:760px){ .two-col{ grid-template-columns:1fr; } }
+
+/* ============ SVG containers ============ */
+.diagram{
+  background:var(--bg-card); border:1px solid var(--rule);
+  border-radius:var(--r-lg); padding:1.2rem;
+  margin:1rem 0 1.4rem;
+}
+.diagram .diag-cap{
+  font-family:var(--mono); font-size:10px;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--ink-mute); font-weight:600;
+  margin-bottom:.8rem; display:flex; align-items:center; gap:8px;
+}
+.diagram .diag-cap::before{
+  content:'◇'; color:var(--proj-warm);
+}
+.diagram svg{ width:100%; height:auto; display:block; }
+.diagram .diag-legend{
+  margin-top:.8rem; padding-top:.7rem;
+  border-top:1px dashed var(--rule);
+  display:flex; flex-wrap:wrap; gap:1rem;
+  font-family:var(--mono); font-size:10.5px;
+  color:var(--ink-mute); letter-spacing:.04em;
+}
+.diagram .diag-legend span{
+  display:inline-flex; align-items:center; gap:6px;
+}
+.diagram .diag-legend .lg-sw{
+  width:14px; height:8px; border-radius:1px;
+}
+
+/* ============ KEY-POINTS strip ============ */
+.kp-strip{
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:.7rem; margin:.8rem 0 1.2rem;
+}
+.kp-strip .kp{
+  background:var(--bg-card); border:1px solid var(--rule);
+  border-radius:var(--r);
+  padding:.85rem 1rem;
+}
+.kp .kp-icon{
+  font-family:var(--mono); font-size:1.1rem;
+  color:var(--proj-warm); font-weight:600;
+  margin-bottom:5px;
+}
+.kp .kp-text{
+  font-family:var(--sans); font-size:.86rem;
+  color:var(--ink-soft); line-height:1.5;
+}
+.kp .kp-text b{ color:var(--ink); font-weight:600; }
+
+/* ============ FORMULA row ============ */
+.formula-row{
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:.8rem; margin:.8rem 0 1.1rem;
+}
+.formula-row .formula{
+  background:var(--rule-soft);
+  border-left:3px solid var(--proj-deep);
+  border-radius:var(--r);
+  padding:.8rem 1rem;
+  font-family:var(--mono); font-size:.88rem;
+  color:var(--ink);
+}
+.formula-row .formula .f-lbl{
+  display:block;
+  font-size:9.5px; letter-spacing:.16em;
+  text-transform:uppercase; color:var(--proj-deep);
+  font-weight:600; margin-bottom:5px;
+}
+
+/* ============ CONCLUSIONI ============ */
+.conclusion{
+  background:var(--paper-grain);
+  border:1px solid var(--rule);
+  border-radius:var(--r-lg);
+  padding:1.8rem 2rem;
+  margin-top:2rem;
+}
+.conclusion h3{
+  font-family:var(--serif); font-style:italic;
+  font-size:1.45rem; font-weight:500;
+  color:var(--proj-deep); margin-bottom:.6rem;
+}
+.conclusion p{
+  font-family:var(--sans); font-size:.96rem;
+  color:var(--ink-soft); line-height:1.75;
+  margin-bottom:.7rem;
+}
+.conclusion p:last-child{ margin-bottom:0; }
+.conclusion strong{ color:var(--ink); }
+
+/* ============ SIDEBAR PROGETTO ============ */
+.proj-sn{ font-family:var(--mono); font-size:12.5px; }
+.proj-sn .psn-section{
+  margin-top:1rem; padding-top:.7rem;
+  border-top:1px solid var(--rule-soft);
+  font-size:9.5px; letter-spacing:.18em;
+  text-transform:uppercase; color:var(--ink-mute);
+  font-weight:700; margin-bottom:.4rem;
+}
+.proj-sn .psn-section:first-of-type{
+  margin-top:0; padding-top:0; border-top:none;
+}
+.proj-sn a{
+  display:flex; gap:8px; align-items:baseline;
+  padding:5px 10px; margin:0 -10px;
+  text-decoration:none; color:var(--ink-soft);
+  font-family:var(--sans); font-size:12.5px;
+  font-weight:500; border-radius:var(--r);
+  transition:all .12s; line-height:1.3;
+}
+.proj-sn a:hover{ color:var(--proj-warm); background:var(--rule-soft); }
+.proj-sn a .psn-no{
+  font-family:var(--mono); font-size:9.5px;
+  color:var(--proj-warm); font-weight:600;
+  letter-spacing:.05em; min-width:30px;
+  background:var(--trace-1-soft); padding:2px 5px; border-radius:2px;
+  text-align:center;
+}
+
+/* tweaks anchor offset */
+section[id]{ scroll-margin-top:80px; }
+</style>
+<script>
+(function(){
+  try{ document.documentElement.setAttribute("data-theme", localStorage.getItem("tele-theme") || "light"); }catch(e){}
+  document.documentElement.classList.remove("theme-init");
+})();
+</script>
+</head>
+<body>
+
+<!-- ============ TOP BAR ============ -->
+<div class="scope-bar">
+  <div class="scope-bar-inner">
+    <span class="scope-led"></span>
+    <span class="scope-tag"><a href="../index.html">← Home</a></span>
+    <span class="scope-tag"><a href="sistemi.html">← Sistemi</a></span>
+    <span class="scope-tag"><strong>PROGETTO</strong> · Simulazione 2024</span>
+    <span class="scope-spacer"></span>
+    <span class="scope-readout">
+      <span>5F · 2025/26</span>
+      <span><b>Sistemi e Reti</b></span>
+    </span>
+    <button class="theme-toggle" type="button" id="themeToggle">Tema</button>
+  </div>
+</div>
+
+<!-- ============ MAIN ============ -->
+<main class="scope-shell">
+
+  <!-- === SIDEBAR === -->
+  <aside class="sn proj-sn">
+    <a href="sistemi.html" class="sn-back">← Torna a Sistemi</a>
+
+    <div class="psn-section">Frontespizio</div>
+    <a href="#frontespizio"><span class="psn-no">00</span><span>Traccia &amp; ipotesi</span></a>
+
+    <div class="psn-section">Prima parte</div>
+    <a href="#p1-rete"><span class="psn-no">1.1</span><span>Architettura di rete</span></a>
+    <a href="#p1-software"><span class="psn-no">1.2</span><span>Architettura software</span></a>
+    <a href="#p1-dashboard"><span class="psn-no">1.3</span><span>Dashboard</span></a>
+
+    <div class="psn-section">Seconda parte</div>
+    <a href="#p2-smart"><span class="psn-no">2.1</span><span>Smart working</span></a>
+    <a href="#p2-cripto"><span class="psn-no">2.2</span><span>Crittografia</span></a>
+    <a href="#p2-integrita"><span class="psn-no">2.3</span><span>Integrità dati</span></a>
+    <a href="#p2-container"><span class="psn-no">2.4</span><span>Container</span></a>
+
+    <div class="psn-section">Chiusura</div>
+    <a href="#conclusioni"><span class="psn-no">⚑</span><span>Considerazioni finali</span></a>
+    <a href="#riferimenti"><span class="psn-no">§</span><span>Riferimenti appunti</span></a>
+  </aside>
+
+  <!-- === CONTENT === -->
+  <div class="content-main">
+
+    <!-- ============ FRONTESPIZIO ============ -->
+    <section id="frontespizio">
+      <div class="frontispiece">
+        <div class="fp-stamp">
+          <span class="fp-dot"></span>
+          Esame di Stato · Simulazione · Maggio 2024
+        </div>
+
+        <div class="fp-meta-top">
+          <span><b>Indirizzo:</b> ITTL Telecomunicazioni</span>
+          <span><b>Materia:</b> Sistemi e Reti</span>
+          <span><b>Tipologia:</b> Tema progettuale</span>
+        </div>
+
+        <h1 class="fp-title">Palestra ecosostenibile</h1>
+        <p class="fp-subtitle">Infrastruttura di rete e sistema informativo per produzione, monitoraggio e fruizione dell'energia</p>
+
+        <div class="fp-traccia">
+          Si vuole realizzare una palestra ecosostenibile, autonoma dal punto di vista del fabbisogno energetico. Gli attrezzi (cyclette, tapis roulant, ecc.) trasformano il lavoro muscolare in energia elettrica, identificano l'utente che li utilizza e forniscono telemetria su tempo, potenza ed energia prodotta. La palestra centralizza, accumula e ridistribuisce l'energia; i consumi vengono monitorati separatamente per illuminazione e forza motrice. I dati devono essere accessibili sulla rete pubblica sia in modalità M2M sia in modalità HMI.
+        </div>
+
+        <div class="fp-meta-bottom">
+          <div class="fp-cell">
+            <div class="fp-lbl">Sale attrezzate</div>
+            <div class="fp-val">2 <em>+ uffici + lounge</em></div>
+          </div>
+          <div class="fp-cell">
+            <div class="fp-lbl">Macchine stimate</div>
+            <div class="fp-val">~30 attive</div>
+          </div>
+          <div class="fp-cell">
+            <div class="fp-lbl">Utenti contemporanei</div>
+            <div class="fp-val">~80<em>/giorno</em></div>
+          </div>
+          <div class="fp-cell">
+            <div class="fp-lbl">Connettività</div>
+            <div class="fp-val">FTTH <em>+ IP statico</em></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- IPOTESI AGGIUNTIVE -->
+      <div class="panel">
+        <div class="panel-title">Ipotesi aggiuntive</div>
+        <p>La traccia chiede esplicitamente di formulare ipotesi: le elenco qui per ancorare le scelte successive di dimensionamento, scelta tecnologica e dimensionamento di rete.</p>
+        <div class="kp-strip">
+          <div class="kp">
+            <div class="kp-icon">⌬</div>
+            <div class="kp-text"><b>~30 macchine</b> generative distribuite su 2 sale, ognuna con MCU embedded e lettore RFID/NFC.</div>
+          </div>
+          <div class="kp">
+            <div class="kp-icon">⚡</div>
+            <div class="kp-text"><b>Inverter di accumulo</b> centrale (DC-bus + batterie + grid-tie) esposto via Modbus-TCP.</div>
+          </div>
+          <div class="kp">
+            <div class="kp-icon">📡</div>
+            <div class="kp-text"><b>Connettività</b>: fibra GPON con IP pubblico statico; backup 4G/5G per failover.</div>
+          </div>
+          <div class="kp">
+            <div class="kp-icon">🔌</div>
+            <div class="kp-text"><b>2 contatori MID</b> (illuminazione, forza motrice) su Modbus, oltre ai contatori per macchina.</div>
+          </div>
+          <div class="kp">
+            <div class="kp-icon">🖥</div>
+            <div class="kp-text"><b>Server on-prem</b> in rack con server fisico + virtualizzazione e backup off-site su cloud.</div>
+          </div>
+          <div class="kp">
+            <div class="kp-icon">🔐</div>
+            <div class="kp-text"><b>Autenticazione</b>: utenti con badge NFC; staff con credenziali su directory locale (LDAP).</div>
+          </div>
+        </div>
+        <p style="margin-top:.6rem">Tutto quello che segue (subnetting, scelta protocolli, sizing dei server) è coerente con queste ipotesi.</p>
+      </div>
+
+      <!-- INDICE -->
+      <div class="toc">
+        <div class="toc-title">Indice della relazione</div>
+        <div class="toc-grid">
+          <div class="toc-col">
+            <h5>Prima parte — progetto</h5>
+            <ol>
+              <li><a href="#p1-rete"><span class="toc-num">1.1</span><span>Architettura di rete e indirizzamento</span></a></li>
+              <li><a href="#p1-software"><span class="toc-num">1.2</span><span>Architettura software e protocolli</span></a></li>
+              <li><a href="#p1-dashboard"><span class="toc-num">1.3</span><span>Dashboard di visualizzazione</span></a></li>
+            </ol>
+          </div>
+          <div class="toc-col">
+            <h5>Seconda parte — quesiti</h5>
+            <ol>
+              <li><a href="#p2-smart"><span class="toc-num">2.1</span><span>Smart working amministrativo (VPN)</span></a></li>
+              <li><a href="#p2-cripto"><span class="toc-num">2.2</span><span>Tecniche di crittografia</span></a></li>
+              <li><a href="#p2-integrita"><span class="toc-num">2.3</span><span>Controllo dell'integrità</span></a></li>
+              <li><a href="#p2-container"><span class="toc-num">2.4</span><span>Container e isolamento</span></a></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MACRO: PRIMA PARTE ============ -->
+    <div class="macro-divider">
+      <span class="md-tag">Parte I</span>
+      <span class="md-label">Prima parte — progettazione</span>
+      <span class="md-line"></span>
+    </div>
+
+    <!-- ===== 1.1 ARCHITETTURA DI RETE ===== -->
+    <section id="p1-rete" class="section">
+      <div class="sig-head">
+        <div class="sig-num">1.1</div>
+        <div class="sig-body">
+          <h2>Architettura di rete</h2>
+          <p>Schema fisico-logico, segmentazione VLAN, piano di indirizzamento VLSM, sicurezza perimetrale.</p>
+        </div>
+        <span class="sig-badge">Reti</span>
+      </div>
+
+      <!-- Schema generale -->
+      <div class="sub-head"><span class="sh-num">1.1.1</span><h3>Visione d'insieme</h3></div>
+
+      <div class="explain-box">
+        <h4>Approccio</h4>
+        <p>Il sistema deve far convivere quattro mondi molto diversi: <strong>(a)</strong> i dispositivi IoT delle macchine — pochi byte ma molti nodi e connettività wireless; <strong>(b)</strong> gli utenti ospiti in lounge — banda variabile, traffico non fidato; <strong>(c)</strong> gli amministrativi — credenziali e dati sensibili; <strong>(d)</strong> i server pubblici che espongono dashboard e API M2M. La sola separazione fisica non basta: serve una <strong>segmentazione logica con VLAN</strong> e una <strong>DMZ</strong> per i servizi esposti, controllati da firewall e ACL.</p>
+      </div>
+
+      <div class="ref">
+        <div>
+          <span class="ref-lbl">Riferimenti agli appunti</span>
+          Cfr. <a href="../telecomunicazioni/switch-vlan.html">CH4 · Switch &amp; VLAN</a>, <a href="../telecomunicazioni/acl.html">CH5 · ACL</a>, <a href="../telecomunicazioni/nat.html">CH6 · NAT</a>, <a href="../telecomunicazioni/routing.html">CH7 · Routing</a>, <a href="../telecomunicazioni/wireless-80211.html">CH8 · Wireless 802.11</a>.
+        </div>
+      </div>
+
+      <!-- SVG schema rete -->
+      <div class="diagram">
+        <div class="diag-cap">Schema logico della rete — VLAN, DMZ e perimetro</div>
+        <svg viewBox="0 0 920 540" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schema della rete della palestra ecosostenibile">
+          <defs>
+            <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <path d="M0,0 L10,5 L0,10 z" fill="currentColor"/>
+            </marker>
+            <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+              <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(26,36,51,.05)" stroke-width="1"/>
+            </pattern>
+          </defs>
+          <rect width="920" height="540" fill="url(#grid)"/>
+
+          <!-- Internet cloud -->
+          <g transform="translate(370,18)">
+            <ellipse cx="90" cy="28" rx="90" ry="22" fill="var(--bg-card)" stroke="var(--ink-mute)" stroke-width="1.5"/>
+            <text x="90" y="33" text-anchor="middle" font-family="var(--mono)" font-size="13" fill="var(--ink)" font-weight="600">INTERNET</text>
+          </g>
+
+          <!-- ONT/Router perimetrale -->
+          <g transform="translate(390,90)">
+            <rect width="140" height="56" rx="4" fill="var(--trace-4-soft)" stroke="var(--trace-4)" stroke-width="1.5"/>
+            <text x="70" y="22" text-anchor="middle" font-family="var(--mono)" font-size="11" fill="var(--trace-4)" font-weight="600">ROUTER + FIREWALL</text>
+            <text x="70" y="40" text-anchor="middle" font-family="var(--mono)" font-size="9.5" fill="var(--ink-soft)">NAT/PAT · ACL · IPS</text>
+            <text x="70" y="52" text-anchor="middle" font-family="var(--mono)" font-size="9.5" fill="var(--ink-soft)">IP pub. statico</text>
+          </g>
+          <line x1="460" y1="68" x2="460" y2="90" stroke="var(--ink-mute)" stroke-width="1.5"/>
+
+          <!-- Switch L3 core -->
+          <g transform="translate(390,180)">
+            <rect width="140" height="40" rx="4" fill="var(--trace-3-soft)" stroke="var(--trace-3)" stroke-width="1.5"/>
+            <text x="70" y="18" text-anchor="middle" font-family="var(--mono)" font-size="11" fill="var(--trace-3)" font-weight="600">SWITCH L3 CORE</text>
+            <text x="70" y="32" text-anchor="middle" font-family="var(--mono)" font-size="9.5" fill="var(--ink-soft)">SVI · trunk 802.1Q · DHCP relay</text>
+          </g>
+          <line x1="460" y1="146" x2="460" y2="180" stroke="var(--ink-mute)" stroke-width="1.5"/>
+
+          <!-- VLAN cards (riga 1) -->
+          <g font-family="var(--mono)" font-size="10">
+            <!-- VLAN 10 macchine -->
+            <g transform="translate(20,260)">
+              <rect width="140" height="80" rx="4" fill="var(--trace-1-soft)" stroke="var(--trace-1)" stroke-width="1.5"/>
+              <text x="70" y="18" text-anchor="middle" fill="var(--trace-1)" font-weight="700">VLAN 10</text>
+              <text x="70" y="34" text-anchor="middle" fill="var(--ink)" font-size="11" font-weight="600">Macchine IoT</text>
+              <text x="70" y="50" text-anchor="middle" fill="var(--ink-soft)" font-size="9">10.10.10.0/24</text>
+              <text x="70" y="64" text-anchor="middle" fill="var(--ink-mute)" font-size="9">~30 host · WPA2-EAP</text>
+            </g>
+            <!-- VLAN 20 dashboard -->
+            <g transform="translate(180,260)">
+              <rect width="140" height="80" rx="4" fill="var(--trace-2-soft)" stroke="var(--trace-2)" stroke-width="1.5"/>
+              <text x="70" y="18" text-anchor="middle" fill="var(--trace-2)" font-weight="700">VLAN 20</text>
+              <text x="70" y="34" text-anchor="middle" fill="var(--ink)" font-size="11" font-weight="600">Dashboard parete</text>
+              <text x="70" y="50" text-anchor="middle" fill="var(--ink-soft)" font-size="9">10.10.20.0/28</text>
+              <text x="70" y="64" text-anchor="middle" fill="var(--ink-mute)" font-size="9">2 host · IP statici</text>
+            </g>
+            <!-- VLAN 30 uffici -->
+            <g transform="translate(340,260)">
+              <rect width="140" height="80" rx="4" fill="var(--trace-3-soft)" stroke="var(--trace-3)" stroke-width="1.5"/>
+              <text x="70" y="18" text-anchor="middle" fill="var(--trace-3)" font-weight="700">VLAN 30</text>
+              <text x="70" y="34" text-anchor="middle" fill="var(--ink)" font-size="11" font-weight="600">Uffici Admin</text>
+              <text x="70" y="50" text-anchor="middle" fill="var(--ink-soft)" font-size="9">10.10.30.0/24</text>
+              <text x="70" y="64" text-anchor="middle" fill="var(--ink-mute)" font-size="9">~10 host · LDAP+VPN</text>
+            </g>
+            <!-- VLAN 40 ospiti -->
+            <g transform="translate(500,260)">
+              <rect width="140" height="80" rx="4" fill="var(--trace-5-soft)" stroke="var(--trace-5)" stroke-width="1.5"/>
+              <text x="70" y="18" text-anchor="middle" fill="var(--trace-5)" font-weight="700">VLAN 40</text>
+              <text x="70" y="34" text-anchor="middle" fill="var(--ink)" font-size="11" font-weight="600">Wi-Fi ospiti</text>
+              <text x="70" y="50" text-anchor="middle" fill="var(--ink-soft)" font-size="9">10.10.40.0/23</text>
+              <text x="70" y="64" text-anchor="middle" fill="var(--ink-mute)" font-size="9">isolata · captive</text>
+            </g>
+            <!-- VLAN 99 mgmt -->
+            <g transform="translate(660,260)">
+              <rect width="120" height="80" rx="4" fill="var(--rule-soft)" stroke="var(--ink-mute)" stroke-width="1.5"/>
+              <text x="60" y="18" text-anchor="middle" fill="var(--ink)" font-weight="700">VLAN 99</text>
+              <text x="60" y="34" text-anchor="middle" fill="var(--ink)" font-size="11" font-weight="600">Management</text>
+              <text x="60" y="50" text-anchor="middle" fill="var(--ink-soft)" font-size="9">10.10.99.0/28</text>
+              <text x="60" y="64" text-anchor="middle" fill="var(--ink-mute)" font-size="9">SSH · SNMP</text>
+            </g>
+            <!-- DMZ -->
+            <g transform="translate(800,260)">
+              <rect width="100" height="80" rx="4" fill="var(--trace-4-soft)" stroke="var(--trace-4)" stroke-width="1.5"/>
+              <text x="50" y="18" text-anchor="middle" fill="var(--trace-4)" font-weight="700">VLAN 50</text>
+              <text x="50" y="34" text-anchor="middle" fill="var(--ink)" font-size="11" font-weight="600">DMZ</text>
+              <text x="50" y="50" text-anchor="middle" fill="var(--ink-soft)" font-size="9">10.10.50.0/29</text>
+              <text x="50" y="64" text-anchor="middle" fill="var(--ink-mute)" font-size="9">reverse proxy</text>
+            </g>
+          </g>
+
+          <!-- Linee dal core alle VLAN -->
+          <g stroke="var(--ink-mute)" stroke-width="1.2" fill="none">
+            <path d="M460 220 L90 260"/>
+            <path d="M460 220 L250 260"/>
+            <path d="M460 220 L410 260"/>
+            <path d="M460 220 L570 260"/>
+            <path d="M460 220 L720 260"/>
+            <path d="M460 220 L850 260"/>
+          </g>
+
+          <!-- Endpoint cluster sotto le VLAN -->
+          <g font-family="var(--mono)" font-size="9" fill="var(--ink-soft)">
+            <!-- macchine IoT -->
+            <g transform="translate(20,365)">
+              <rect width="140" height="55" rx="3" fill="var(--bg-card)" stroke="var(--rule)" stroke-dasharray="2 2"/>
+              <text x="10" y="16" fill="var(--ink)" font-weight="600">AP Wi-Fi 802.11ac</text>
+              <text x="10" y="30">SSID: gym-iot (hidden)</text>
+              <text x="10" y="44">Auth: WPA2-EAP/RADIUS</text>
+            </g>
+            <!-- Dashboard host -->
+            <g transform="translate(180,365)">
+              <rect width="140" height="55" rx="3" fill="var(--bg-card)" stroke="var(--rule)" stroke-dasharray="2 2"/>
+              <text x="10" y="16" fill="var(--ink)" font-weight="600">Tablet/Pi kiosk</text>
+              <text x="10" y="30">Browser fullscreen</text>
+              <text x="10" y="44">Cavo o WPA2-EAP</text>
+            </g>
+            <!-- Office -->
+            <g transform="translate(340,365)">
+              <rect width="140" height="55" rx="3" fill="var(--bg-card)" stroke="var(--rule)" stroke-dasharray="2 2"/>
+              <text x="10" y="16" fill="var(--ink)" font-weight="600">PC amministrazione</text>
+              <text x="10" y="30">Cablato + Wi-Fi backup</text>
+              <text x="10" y="44">Domain join LDAP</text>
+            </g>
+            <!-- Guests -->
+            <g transform="translate(500,365)">
+              <rect width="140" height="55" rx="3" fill="var(--bg-card)" stroke="var(--rule)" stroke-dasharray="2 2"/>
+              <text x="10" y="16" fill="var(--ink)" font-weight="600">2 AP lounge</text>
+              <text x="10" y="30">SSID: gym-guest</text>
+              <text x="10" y="44">PSK rotante + captive</text>
+            </g>
+            <!-- DMZ servers -->
+            <g transform="translate(800,365)">
+              <rect width="100" height="55" rx="3" fill="var(--bg-card)" stroke="var(--rule)" stroke-dasharray="2 2"/>
+              <text x="10" y="16" fill="var(--ink)" font-weight="600">nginx</text>
+              <text x="10" y="30">TLS 443 → backend</text>
+              <text x="10" y="44">WAF, rate-limit</text>
+            </g>
+          </g>
+
+          <!-- Server farm interna -->
+          <g transform="translate(310,455)">
+            <rect width="300" height="60" rx="4" fill="var(--bg-card)" stroke="var(--proj-deep)" stroke-width="1.5"/>
+            <text x="150" y="22" text-anchor="middle" font-family="var(--mono)" font-size="11" fill="var(--proj-deep)" font-weight="700">SERVER FARM (VLAN 60 — interna, non in figura)</text>
+            <text x="150" y="40" text-anchor="middle" font-family="var(--mono)" font-size="9.5" fill="var(--ink-soft)">MQTT broker · DB time-series · API · LDAP · RADIUS</text>
+            <text x="150" y="52" text-anchor="middle" font-family="var(--mono)" font-size="9.5" fill="var(--ink-mute)">10.10.60.0/27 · raggiungibile dalla DMZ via reverse proxy</text>
+          </g>
+          <line x1="850" y1="340" x2="610" y2="455" stroke="var(--proj-deep)" stroke-dasharray="3 3" stroke-width="1.2" fill="none"/>
+        </svg>
+        <div class="diag-legend">
+          <span><span class="lg-sw" style="background:var(--trace-1)"></span> macchine IoT</span>
+          <span><span class="lg-sw" style="background:var(--trace-2)"></span> dashboard</span>
+          <span><span class="lg-sw" style="background:var(--trace-3)"></span> uffici / core</span>
+          <span><span class="lg-sw" style="background:var(--trace-5)"></span> ospiti</span>
+          <span><span class="lg-sw" style="background:var(--trace-4)"></span> perimetro / DMZ</span>
+        </div>
+      </div>
+
+      <div class="choice">
+        <div class="ch-q">Perché 6 VLAN e non semplicemente 2 sottoreti (utenti / server)?</div>
+        <div class="ch-why">Le 6 VLAN nascono da <strong>livelli di fiducia diversi</strong>: il traffico ospite non deve nemmeno potersi <em>vedere</em> con quello amministrativo, le macchine IoT producono solo telemetria fissa (verso il broker), il management è raggiungibile <em>solo</em> dagli admin via VPN. Una segmentazione fine permette ACL chirurgiche al posto di policy ampie e di ridurre il <em>broadcast domain</em> (utile per gli AP). La VLAN <code>99</code> isolata per il management è una pratica standard: se un attaccante compromette un PC ospite, non vede nemmeno gli switch.</div>
+      </div>
+
+      <!-- 1.1.2 PIANO DI INDIRIZZAMENTO -->
+      <div class="sub-head"><span class="sh-num">1.1.2</span><h3>Piano di indirizzamento (VLSM)</h3></div>
+
+      <p>Parto dal blocco privato <code>10.10.0.0/16</code> (RFC 1918) e ritaglio sottoreti dimensionate sul fabbisogno reale di host. Lascio buffer per espansione (terza sala, nuove macchine).</p>
+
+      <table class="tbl">
+        <thead>
+          <tr>
+            <th>VLAN</th>
+            <th>Funzione</th>
+            <th>Subnet</th>
+            <th>Host utili</th>
+            <th>Gateway</th>
+            <th>DHCP</th>
+            <th>Note</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>10</code></td>
+            <td>Macchine IoT</td>
+            <td><code>10.10.10.0/24</code></td>
+            <td>254</td>
+            <td><code>10.10.10.1</code></td>
+            <td>sì (lease 7 gg)</td>
+            <td>Range riservato per MAC noti</td>
+          </tr>
+          <tr>
+            <td><code>20</code></td>
+            <td>Dashboard parete</td>
+            <td><code>10.10.20.0/28</code></td>
+            <td>14</td>
+            <td><code>10.10.20.1</code></td>
+            <td>statico</td>
+            <td>2 host fissi</td>
+          </tr>
+          <tr>
+            <td><code>30</code></td>
+            <td>Uffici amministrativi</td>
+            <td><code>10.10.30.0/24</code></td>
+            <td>254</td>
+            <td><code>10.10.30.1</code></td>
+            <td>sì</td>
+            <td>VPN-in da remoto</td>
+          </tr>
+          <tr>
+            <td><code>40</code></td>
+            <td>Wi-Fi ospiti</td>
+            <td><code>10.10.40.0/23</code></td>
+            <td>510</td>
+            <td><code>10.10.40.1</code></td>
+            <td>sì (lease 4 h)</td>
+            <td>Captive portal · nessun accesso interno</td>
+          </tr>
+          <tr>
+            <td><code>50</code></td>
+            <td>DMZ</td>
+            <td><code>10.10.50.0/29</code></td>
+            <td>6</td>
+            <td><code>10.10.50.1</code></td>
+            <td>statico</td>
+            <td>nginx, reverse proxy</td>
+          </tr>
+          <tr>
+            <td><code>60</code></td>
+            <td>Server farm interna</td>
+            <td><code>10.10.60.0/27</code></td>
+            <td>30</td>
+            <td><code>10.10.60.1</code></td>
+            <td>statico</td>
+            <td>broker, DB, LDAP, RADIUS</td>
+          </tr>
+          <tr>
+            <td><code>99</code></td>
+            <td>Management apparati</td>
+            <td><code>10.10.99.0/28</code></td>
+            <td>14</td>
+            <td><code>10.10.99.1</code></td>
+            <td>statico</td>
+            <td>SSH, SNMP, syslog</td>
+          </tr>
+          <tr class="hl">
+            <td colspan="2">Link router-firewall ↔ ISP</td>
+            <td><code>/30</code> assegnata dall'ISP</td>
+            <td>2</td>
+            <td colspan="3">IP pubblico statico per dashboard e API</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="choice">
+        <div class="ch-q">Perché VLSM e non un classico /24 per ciascuna VLAN?</div>
+        <div class="ch-why">Il VLSM permette di non "sprecare" host dove non servono (es. la VLAN dashboard ha 2 host: assegnare un /24 con 254 host disponibili sarebbe sciocco) e di lasciare margine dove serve (la VLAN ospiti potrebbe ospitare 200+ device contemporaneamente — meglio un <code>/23</code>). È una pratica netta che dimostra di aver capito il sizing.</div>
+      </div>
+
+      <div class="ref">
+        <div>
+          <span class="ref-lbl">Sui CIDR e VLSM</span>
+          Tutto il calcolo è un'applicazione diretta del subnetting visto in <a href="../telecomunicazioni/tcp-ip.html">CH3 · Suite TCP/IP</a>; il concetto di trunk 802.1Q e di SVI sui switch L3 è approfondito in <a href="../telecomunicazioni/switch-vlan.html">CH4 · Switch &amp; VLAN</a>.
+        </div>
+      </div>
+
+      <!-- 1.1.3 PERIMETRO E SICUREZZA -->
+      <div class="sub-head"><span class="sh-num">1.1.3</span><h3>Perimetro, NAT e ACL</h3></div>
+
+      <div class="two-col">
+        <div class="explain-box">
+          <h4>Configurazione del perimetro</h4>
+          <ul>
+            <li><strong>NAT/PAT</strong> in uscita: tutto <code>10.10.0.0/16</code> esce con l'IP pubblico statico (PAT overload).</li>
+            <li><strong>Port forwarding</strong>: <code>TCP/443</code> e <code>TCP/80</code> → reverse proxy in DMZ (<code>10.10.50.2</code>); <code>TCP/8883</code> per MQTT/TLS M2M esterni.</li>
+            <li><strong>Firewall stateful</strong>: regole inbound default-deny, eccezione solo per i due servizi pubblici sopra; regole outbound default-permit con liste di blocco categorie.</li>
+            <li><strong>IPS</strong>: signature-based su traffico DMZ ↔ Internet.</li>
+          </ul>
+        </div>
+
+        <div class="explain-box">
+          <h4>ACL inter-VLAN (estratto)</h4>
+          <ol>
+            <li>VLAN 40 (ospiti) → <strong>solo Internet</strong>, deny tutto interno.</li>
+            <li>VLAN 10 (macchine) → solo VLAN 60 porta <code>8883</code> (MQTT/TLS) verso il broker.</li>
+            <li>VLAN 20 (dashboard) → solo VLAN 60 porta <code>443</code>.</li>
+            <li>VLAN 30 (uffici) → VLAN 60 (HTTPS, LDAP), Internet, no SSH ad apparati.</li>
+            <li>VLAN 50 (DMZ) → VLAN 60 sulle sole porte di servizio (8883/443/5432).</li>
+            <li>VLAN 99 (mgmt) → raggiungibile <strong>solo</strong> da VPN amministrativa.</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="ref">
+        <div>
+          <span class="ref-lbl">Sintassi e ragionamento ACL</span>
+          La logica top-down, le wildcard mask e la differenza standard/estese sono in <a href="../telecomunicazioni/acl.html">CH5 · ACL</a>; le forme di NAT (statico/dinamico/PAT) e il <em>port forwarding</em> in <a href="../telecomunicazioni/nat.html">CH6 · NAT</a>.
+        </div>
+      </div>
+
+      <!-- 1.1.4 ROUTING + WIRELESS -->
+      <div class="sub-head"><span class="sh-num">1.1.4</span><h3>Routing interno e Wi-Fi</h3></div>
+
+      <div class="two-col">
+        <div class="panel">
+          <h4>Routing</h4>
+          <p>L'inter-VLAN routing è gestito dallo <strong>switch L3 core</strong> con SVI (una interfaccia virtuale per VLAN, che funge da gateway). Verso l'esterno: <strong>default route statica</strong> verso il firewall (<code>0.0.0.0/0 → 10.10.99.2</code>). All'interno della LAN non serve OSPF/RIP (rete piccola, single-router); manteniamo però la possibilità di abilitare <strong>OSPF area 0</strong> se in futuro nascono altre filiali (cfr. CH7).</p>
+        </div>
+
+        <div class="panel">
+          <h4>Wi-Fi</h4>
+          <p>Due SSID separati su 2 AP per sala + 2 in lounge:</p>
+          <ul>
+            <li><strong>gym-iot</strong>: WPA2-Enterprise + EAP-TLS, certificati per macchina rilasciati da CA interna, RADIUS in VLAN 60. SSID <em>nascosto</em>.</li>
+            <li><strong>gym-guest</strong>: WPA2-PSK con chiave rotante settimanale + captive portal. Banda limitata via QoS sull'AP.</li>
+          </ul>
+          <p>Banda 5 GHz preferita (meno congestione, 802.11ac). VLAN 10 e 40 mappate sui SSID via tagged trunk verso lo switch.</p>
+        </div>
+      </div>
+
+      <div class="ref">
+        <div>
+          <span class="ref-lbl">Wi-Fi e standard 802.11</span>
+          Modalità infrastructure, BSS/SSID, beacon, autenticazione 802.1X e differenze WPA2/WPA3 sono trattate in <a href="../telecomunicazioni/wireless-80211.html">CH8 · Wireless 802.11</a>; protocolli di routing (RIP/OSPF/BGP) e default route in <a href="../telecomunicazioni/routing.html">CH7 · Routing</a>.
+        </div>
+      </div>
+
+      <div class="choice">
+        <div class="ch-q">Perché EAP-TLS e non semplice PSK anche per le macchine?</div>
+        <div class="ch-why">Il PSK è una chiave statica condivisa: se una macchina viene rubata o rovinata, la chiave finisce in chiaro nella sua memoria flash, permettendo a chiunque la trovi di impersonarla sulla rete IoT. Con EAP-TLS ogni macchina ha un <strong>certificato individuale</strong> firmato dalla CA interna: se viene compromessa basta revocare quel certificato dalla CRL. Inoltre EAP-TLS dà autenticazione mutua (la macchina verifica anche l'identità della rete) — non si fa <em>rogue AP attack</em>.</div>
+      </div>
+
+    </section>
+
+    <!-- ===== 1.2 ARCHITETTURA SOFTWARE ===== -->
+    <section id="p1-software" class="section">
+      <div class="sig-head">
+        <div class="sig-num">1.2</div>
+        <div class="sig-body">
+          <h2>Architettura software</h2>
+          <p>Componenti, flusso dati, protocolli M2M e HMI, autenticazione utente sulle macchine.</p>
+        </div>
+        <span class="sig-badge b-teal">Software</span>
+      </div>
+
+      <!-- 1.2.1 componenti -->
+      <div class="sub-head"><span class="sh-num">1.2.1</span><h3>Decomposizione in componenti</h3></div>
+
+      <p>Distinguo nettamente le funzioni di <strong>raccolta</strong> (dati telemetrici dalle macchine al sistema) da quelle di <strong>fruizione</strong> (utenti umani e M2M che leggono i dati). Le prime sono <em>write-heavy</em>, ad alta frequenza, su payload piccoli; le seconde sono <em>read-heavy</em>, asincrone, eventualmente con aggregazioni storiche pesanti.</p>
+
+      <div class="kp-strip">
+        <div class="kp">
+          <div class="kp-icon">⌬</div>
+          <div class="kp-text"><b>Edge — macchina</b><br>Firmware MCU che campiona V/I, conteggia energia, identifica utente via RFID, pubblica telemetria.</div>
+        </div>
+        <div class="kp">
+          <div class="kp-icon">▣</div>
+          <div class="kp-text"><b>Broker MQTT</b><br>Hub centrale dei messaggi: disaccoppia produttori (macchine) da consumatori (DB, dashboard, UI).</div>
+        </div>
+        <div class="kp">
+          <div class="kp-icon">▤</div>
+          <div class="kp-text"><b>Ingestion service</b><br>Subscribe al broker, valida payload, persiste su DB time-series e su DB relazionale.</div>
+        </div>
+        <div class="kp">
+          <div class="kp-icon">⛁</div>
+          <div class="kp-text"><b>DB time-series + RDBMS</b><br>InfluxDB/TimescaleDB per le serie storiche, PostgreSQL per utenti, sessioni, fatturazione.</div>
+        </div>
+        <div class="kp">
+          <div class="kp-icon">⌗</div>
+          <div class="kp-text"><b>API REST + WebSocket</b><br>Espone i dati al frontend (HMI) e ai client M2M esterni; push real-time via WS.</div>
+        </div>
+        <div class="kp">
+          <div class="kp-icon">◐</div>
+          <div class="kp-text"><b>Frontend (HMI)</b><br>SPA web per utenti (consumi/produzione personale) e admin (dashboard gestionale).</div>
+        </div>
+        <div class="kp">
+          <div class="kp-icon">⚷</div>
+          <div class="kp-text"><b>Auth server</b><br>OAuth2/OIDC per gli umani, X.509 + JWT per le macchine, LDAP per lo staff.</div>
+        </div>
+        <div class="kp">
+          <div class="kp-icon">↻</div>
+          <div class="kp-text"><b>Reverse proxy + TLS</b><br>nginx in DMZ termina TLS, applica WAF e rate-limit, inoltra verso i servizi interni.</div>
+        </div>
+      </div>
+
+      <!-- 1.2.2 flusso dati -->
+      <div class="sub-head"><span class="sh-num">1.2.2</span><h3>Flusso dei dati e protocolli</h3></div>
+
+      <div class="diagram">
+        <div class="diag-cap">Flusso dati end-to-end · raccolta (sopra) e fruizione (sotto)</div>
+        <svg viewBox="0 0 920 460" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Flusso dei dati tra componenti">
+          <defs>
+            <marker id="arr2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+              <path d="M0,0 L10,5 L0,10 z" fill="var(--proj-warm)"/>
+            </marker>
+            <marker id="arr3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+              <path d="M0,0 L10,5 L0,10 z" fill="var(--trace-2)"/>
+            </marker>
+          </defs>
+
+          <!-- Etichette di lane -->
+          <text x="20" y="22" font-family="var(--mono)" font-size="10" fill="var(--proj-warm)" font-weight="700" letter-spacing="2">RACCOLTA  ↦</text>
+          <text x="20" y="252" font-family="var(--mono)" font-size="10" fill="var(--trace-2)" font-weight="700" letter-spacing="2">FRUIZIONE  ↤</text>
+
+          <!-- Lane RACCOLTA -->
+          <!-- macchina -->
+          <g transform="translate(40,50)">
+            <rect width="130" height="80" rx="4" fill="var(--trace-1-soft)" stroke="var(--trace-1)" stroke-width="1.5"/>
+            <text x="65" y="22" text-anchor="middle" font-family="var(--display)" font-size="13" fill="var(--ink)" font-weight="600">Macchina</text>
+            <text x="65" y="40" text-anchor="middle" font-family="var(--mono)" font-size="9.5" fill="var(--ink-soft)">ESP32 + RFID</text>
+            <text x="65" y="55" text-anchor="middle" font-family="var(--mono)" font-size="9.5" fill="var(--ink-soft)">campiona V·I·t</text>
+            <text x="65" y="70" text-anchor="middle" font-family="var(--mono)" font-size="9.5" fill="var(--ink-mute)">pub. ogni 1 s</text>
+          </g>
+
+          <!-- broker -->
+          <g transform="translate(290,50)">
+            <rect width="130" height="80" rx="4" fill="var(--trace-3-soft)" stroke="var(--trace-3)" stroke-width="1.5"/>
+            <text x="65" y="22" text-anchor="middle" font-family="var(--display)" font-size="13" fill="var(--ink)" font-weight="600">Broker MQTT</text>
+            <text x="65" y="40" text-anchor="middle" font-family="var(--mono)" font-size="9.5" fill="var(--ink-soft)">Mosquitto/EMQX</text>
+            <text x="65" y="55" text-anchor="middle" font-family="var(--mono)" font-size="9.5" fill="var(--ink-soft)">QoS 1, retain</text>
+            <text x="65" y="70" text-anchor="middle" font-family="var(--mono)" font-size="9.5" fill="var(--ink-mute)">topic gerarchici</text>
+          </g>
+
+          <!-- ingestion -->
+          <g transform="translate(540,50)">
+            <rect width="130" height="80" rx="4" fill="var(--trace-2-soft)" stroke="var(--trace-2)" stroke-width="1.5"/>
+            <text x="65" y="22" text-anchor="middle" font-family="var(--display)" font-size="13" fill="var(--ink)" font-weight="600">Ingestion</text>
+            <text x="65" y="40" text-anchor="middle" font-family="var(--mono)" font-size="9.5" fill="var(--ink-soft)">subscriber</text>
+            <text x="65" y="55" text-anchor="middle" font-family="var(--mono)" font-size="9.5" fill="var(--ink-soft)">valida + parse</text>
+            <text x="65" y="70" text-anchor="middle" font-family="var(--mono)" font-size="9.5" fill="var(--ink-mute)">batch insert</text>
+          </g>
+
+          <!-- DB -->
+          <g transform="translate(770,50)">
+            <rect width="130" height="80" rx="4" fill="var(--rule-soft)" stroke="var(--proj-deep)" stroke-width="1.5"/>
+            <text x="65" y="22" text-anchor="middle" font-family="var(--display)" font-size="13" fill="var(--ink)" font-weight="600">DB</text>
+            <text x="65" y="40" text-anchor="middle" font-family="var(--mono)" font-size="9.5" fill="var(--ink-soft)">Influx (serie)</text>
+            <text x="65" y="55" text-anchor="middle" font-family="var(--mono)" font-size="9.5" fill="var(--ink-soft)">PG (utenti)</text>
+            <text x="65" y="70" text-anchor="middle" font-family="var(--mono)" font-size="9.5" fill="var(--ink-mute)">backup off-site</text>
+          </g>
+
+          <!-- frecce raccolta -->
+          <g stroke="var(--proj-warm)" stroke-width="2" fill="none">
+            <line x1="170" y1="90" x2="285" y2="90" marker-end="url(#arr2)"/>
+            <line x1="420" y1="90" x2="535" y2="90" marker-end="url(#arr2)"/>
+            <line x1="670" y1="90" x2="765" y2="90" marker-end="url(#arr2)"/>
+          </g>
+          <g font-family="var(--mono)" font-size="9.5" fill="var(--proj-warm)" font-weight="600">
+            <text x="227" y="80" text-anchor="middle">MQTT/TLS</text>
+            <text x="227" y="105" text-anchor="middle">8883</text>
+            <text x="477" y="80" text-anchor="middle">MQTT</text>
+            <text x="477" y="105" text-anchor="middle">localhost</text>
+            <text x="717" y="80" text-anchor="middle">SQL</text>
+            <text x="717" y="105" text-anchor="middle">5432 / 8086</text>
+          </g>
+
+          <!-- centro: contatori e inverter -->
+          <g transform="translate(40,160)">
+            <rect width="180" height="60" rx="4" fill="var(--trace-4-soft)" stroke="var(--trace-4)" stroke-width="1.2" stroke-dasharray="3 3"/>
+            <text x="90" y="20" text-anchor="middle" font-family="var(--display)" font-size="12" fill="var(--ink)" font-weight="600">Contatori MID + Inverter</text>
+            <text x="90" y="36" text-anchor="middle" font-family="var(--mono)" font-size="9.5" fill="var(--ink-soft)">Modbus-TCP polled</text>
+            <text x="90" y="50" text-anchor="middle" font-family="var(--mono)" font-size="9.5" fill="var(--ink-mute)">illum. + forza motrice</text>
+          </g>
+          <line x1="220" y1="190" x2="350" y2="130" stroke="var(--trace-4)" stroke-dasharray="3 3" stroke-width="1.2" fill="none" marker-end="url(#arr2)"/>
+          <text x="285" y="155" font-family="var(--mono)" font-size="9" fill="var(--trace-4)" transform="rotate(-22 285 155)">bridge → MQTT</text>
+
+          <!-- separator -->
+          <line x1="20" y1="240" x2="900" y2="240" stroke="var(--ink-mute)" stroke-dasharray="3 6" stroke-width="1"/>
+
+          <!-- Lane FRUIZIONE -->
+          <!-- API -->
+          <g transform="translate(540,275)">
+            <rect width="130" height="80" rx="4" fill="var(--trace-2-soft)" stroke="var(--trace-2)" stroke-width="1.5"/>
+            <text x="65" y="22" text-anchor="middle" font-family="var(--display)" font-size="13" fill="var(--ink)" font-weight="600">API REST/WS</text>
+            <text x="65" y="40" text-anchor="middle" font-family="var(--mono)" font-size="9.5" fill="var(--ink-soft)">FastAPI/Node</text>
+            <text x="65" y="55" text-anchor="middle" font-family="var(--mono)" font-size="9.5" fill="var(--ink-soft)">JWT, OAuth2</text>
+            <text x="65" y="70" text-anchor="middle" font-family="var(--mono)" font-size="9.5" fill="var(--ink-mute)">paginazione</text>
+          </g>
+
+          <!-- proxy -->
+          <g transform="translate(290,275)">
+            <rect width="130" height="80" rx="4" fill="var(--trace-3-soft)" stroke="var(--trace-3)" stroke-width="1.5"/>
+            <text x="65" y="22" text-anchor="middle" font-family="var(--display)" font-size="13" fill="var(--ink)" font-weight="600">Reverse proxy</text>
+            <text x="65" y="40" text-anchor="middle" font-family="var(--mono)" font-size="9.5" fill="var(--ink-soft)">nginx in DMZ</text>
+            <text x="65" y="55" text-anchor="middle" font-family="var(--mono)" font-size="9.5" fill="var(--ink-soft)">TLS termination</text>
+            <text x="65" y="70" text-anchor="middle" font-family="var(--mono)" font-size="9.5" fill="var(--ink-mute)">WAF, rate-limit</text>
+          </g>
+
+          <!-- client umano -->
+          <g transform="translate(40,275)">
+            <rect width="130" height="80" rx="4" fill="var(--trace-5-soft)" stroke="var(--trace-5)" stroke-width="1.5"/>
+            <text x="65" y="22" text-anchor="middle" font-family="var(--display)" font-size="13" fill="var(--ink)" font-weight="600">HMI</text>
+            <text x="65" y="40" text-anchor="middle" font-family="var(--mono)" font-size="9.5" fill="var(--ink-soft)">Browser/SPA</text>
+            <text x="65" y="55" text-anchor="middle" font-family="var(--mono)" font-size="9.5" fill="var(--ink-soft)">utenti+admin</text>
+            <text x="65" y="70" text-anchor="middle" font-family="var(--mono)" font-size="9.5" fill="var(--ink-mute)">login OAuth2</text>
+          </g>
+
+          <!-- DB di nuovo -->
+          <g transform="translate(770,275)">
+            <rect width="130" height="80" rx="4" fill="var(--rule-soft)" stroke="var(--proj-deep)" stroke-width="1.5"/>
+            <text x="65" y="22" text-anchor="middle" font-family="var(--display)" font-size="13" fill="var(--ink)" font-weight="600">DB</text>
+            <text x="65" y="40" text-anchor="middle" font-family="var(--mono)" font-size="9.5" fill="var(--ink-soft)">read query</text>
+            <text x="65" y="55" text-anchor="middle" font-family="var(--mono)" font-size="9.5" fill="var(--ink-soft)">cache Redis</text>
+          </g>
+
+          <!-- frecce fruizione -->
+          <g stroke="var(--trace-2)" stroke-width="2" fill="none">
+            <line x1="285" y1="315" x2="170" y2="315" marker-end="url(#arr3)"/>
+            <line x1="535" y1="315" x2="420" y2="315" marker-end="url(#arr3)"/>
+            <line x1="765" y1="315" x2="670" y2="315" marker-end="url(#arr3)"/>
+          </g>
+          <g font-family="var(--mono)" font-size="9.5" fill="var(--trace-2)" font-weight="600">
+            <text x="227" y="305" text-anchor="middle">HTTPS</text>
+            <text x="227" y="330" text-anchor="middle">443 + WS</text>
+            <text x="477" y="305" text-anchor="middle">HTTP</text>
+            <text x="477" y="330" text-anchor="middle">interno 8000</text>
+            <text x="717" y="305" text-anchor="middle">SQL</text>
+            <text x="717" y="330" text-anchor="middle">5432 / 8086</text>
+          </g>
+
+          <!-- M2M esterni -->
+          <g transform="translate(40,395)">
+            <rect width="220" height="50" rx="4" fill="var(--bg-card)" stroke="var(--trace-4)" stroke-width="1.2" stroke-dasharray="3 3"/>
+            <text x="110" y="20" text-anchor="middle" font-family="var(--display)" font-size="12" fill="var(--ink)" font-weight="600">Client M2M esterni</text>
+            <text x="110" y="36" text-anchor="middle" font-family="var(--mono)" font-size="9.5" fill="var(--ink-mute)">REST + MQTT/TLS · API key + JWT</text>
+          </g>
+          <line x1="260" y1="420" x2="350" y2="355" stroke="var(--trace-4)" stroke-dasharray="3 3" stroke-width="1.2" fill="none" marker-end="url(#arr3)"/>
+        </svg>
+        <div class="diag-legend">
+          <span><span class="lg-sw" style="background:var(--proj-warm)"></span> raccolta (write)</span>
+          <span><span class="lg-sw" style="background:var(--trace-2)"></span> fruizione (read)</span>
+          <span><span class="lg-sw" style="background:var(--trace-4)"></span> attori esterni</span>
+        </div>
+      </div>
+
+      <table class="tbl">
+        <thead>
+          <tr><th>Tratta</th><th>Protocollo</th><th>Porta</th><th>Sicurezza</th><th>Perché</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Macchina → broker</td>
+            <td><code>MQTT</code> over TLS</td>
+            <td>8883</td>
+            <td>TLS 1.3 + cert client X.509</td>
+            <td>Pub/sub leggero, ritmo 1 msg/s, ideale per device a bassa potenza.</td>
+          </tr>
+          <tr>
+            <td>Broker → ingestion</td>
+            <td>MQTT loopback</td>
+            <td>1883 (interno)</td>
+            <td>solo localhost</td>
+            <td>Nessun overhead TLS dentro lo stesso host/VLAN.</td>
+          </tr>
+          <tr>
+            <td>Inverter/contatori → bridge</td>
+            <td><code>Modbus-TCP</code></td>
+            <td>502</td>
+            <td>VLAN dedicata, no inbound</td>
+            <td>Standard di fatto in ambito energy/industrial.</td>
+          </tr>
+          <tr>
+            <td>HMI ↔ proxy</td>
+            <td><code>HTTPS</code> + WSS</td>
+            <td>443</td>
+            <td>TLS 1.3 + OAuth2/OIDC</td>
+            <td>Rest per query storiche, WS per push real-time delle metriche.</td>
+          </tr>
+          <tr>
+            <td>M2M esterni → proxy</td>
+            <td><code>HTTPS</code> + <code>MQTT/TLS</code></td>
+            <td>443 / 8883</td>
+            <td>JWT + API key + rate-limit</td>
+            <td>Doppio canale: chi vuole un poll lo fa REST, chi vuole subscribe usa MQTT.</td>
+          </tr>
+          <tr>
+            <td>Macchine ↔ AP Wi-Fi</td>
+            <td>802.11ac</td>
+            <td>—</td>
+            <td>WPA2-EAP/TLS</td>
+            <td>Mutual auth con cert dedicato per macchina.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="choice">
+        <div class="ch-q">Perché MQTT e non solo HTTP/REST per la telemetria?</div>
+        <div class="ch-why">REST funziona, ma costringerebbe ogni macchina ad <strong>aprire una connessione TCP+TLS ogni secondo</strong> (pessimo per CPU e radio) o a fare polling. MQTT mantiene <strong>una sola connessione persistente</strong> per device, costa pochissimi byte di overhead, supporta QoS 1 (consegna garantita) e disaccoppia produttori e consumatori. Per la fruizione esterna mantengo comunque REST+WS, perché è più amichevole per integratori third-party che non parlano MQTT.</div>
+      </div>
+
+      <div class="ref">
+        <div>
+          <span class="ref-lbl">Connettività delle macchine</span>
+          La scelta dell'ESP32 e del Wi-Fi 802.11 come collante per il livello edge si appoggia su <a href="../tpsit/esp32.html">TPSIT · ESP32</a> e <a href="../tpsit/wifi.html">TPSIT · Wi-Fi</a>; il confronto con BLE/LoRaWAN/NB-IoT è in <a href="../tpsit/confronto.html">TPSIT · Confronto tecnologie</a>. Lo standard 802.11 e l'autenticazione Enterprise sono in <a href="../telecomunicazioni/wireless-80211.html">CH8 · Wireless 802.11</a>.
+        </div>
+      </div>
+
+      <!-- 1.2.3 AUTENTICAZIONE -->
+      <div class="sub-head"><span class="sh-num">1.2.3</span><h3>Autenticazione utente sulla macchina</h3></div>
+
+      <p>La traccia chiede esplicitamente come l'utente venga riconosciuto dalla singola macchina. Distinguo <strong>autenticazione</strong> (provo chi sei) da <strong>identificazione</strong> (associo la sessione al tuo profilo).</p>
+
+      <div class="diagram">
+        <div class="diag-cap">Sequenza · login utente sulla cyclette</div>
+        <svg viewBox="0 0 880 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sequenza di autenticazione utente">
+          <!-- attori -->
+          <g font-family="var(--display)" font-size="13" font-weight="600" fill="var(--ink)">
+            <text x="80" y="30" text-anchor="middle">Utente</text>
+            <text x="280" y="30" text-anchor="middle">Macchina (ESP32)</text>
+            <text x="500" y="30" text-anchor="middle">Auth server</text>
+            <text x="720" y="30" text-anchor="middle">Broker MQTT</text>
+          </g>
+          <!-- linee verticali -->
+          <g stroke="var(--ink-mute)" stroke-dasharray="3 3" stroke-width="1">
+            <line x1="80" y1="40" x2="80" y2="350"/>
+            <line x1="280" y1="40" x2="280" y2="350"/>
+            <line x1="500" y1="40" x2="500" y2="350"/>
+            <line x1="720" y1="40" x2="720" y2="350"/>
+          </g>
+
+          <!-- step 1 -->
+          <g>
+            <line x1="80" y1="65" x2="280" y2="65" stroke="var(--proj-warm)" stroke-width="2" marker-end="url(#arr2)"/>
+            <text x="180" y="58" text-anchor="middle" font-family="var(--mono)" font-size="10" fill="var(--proj-warm)" font-weight="600">1. avvicina badge NFC</text>
+          </g>
+          <!-- step 2 -->
+          <g>
+            <line x1="280" y1="105" x2="500" y2="105" stroke="var(--proj-warm)" stroke-width="2" marker-end="url(#arr2)"/>
+            <text x="390" y="98" text-anchor="middle" font-family="var(--mono)" font-size="10" fill="var(--proj-warm)" font-weight="600">2. POST /auth/nfc {uid_hash, machine_id, sig}</text>
+          </g>
+          <!-- step 3 -->
+          <g>
+            <line x1="500" y1="145" x2="280" y2="145" stroke="var(--trace-2)" stroke-width="2" marker-end="url(#arr3)"/>
+            <text x="390" y="138" text-anchor="middle" font-family="var(--mono)" font-size="10" fill="var(--trace-2)" font-weight="600">3. JWT firmato {user_id, exp 2h}</text>
+          </g>
+          <!-- step 4 -->
+          <g>
+            <line x1="280" y1="185" x2="80" y2="185" stroke="var(--trace-2)" stroke-width="2" marker-end="url(#arr3)"/>
+            <text x="180" y="178" text-anchor="middle" font-family="var(--mono)" font-size="10" fill="var(--trace-2)" font-weight="600">4. display: «Ciao Marco»</text>
+          </g>
+          <!-- step 5 -->
+          <g>
+            <line x1="280" y1="230" x2="720" y2="230" stroke="var(--proj-warm)" stroke-width="2" marker-end="url(#arr2)"/>
+            <text x="500" y="223" text-anchor="middle" font-family="var(--mono)" font-size="10" fill="var(--proj-warm)" font-weight="600">5. PUB gym/m05/session/start {user_id, ts}</text>
+          </g>
+          <!-- step 6 telemetria -->
+          <g>
+            <line x1="280" y1="280" x2="720" y2="280" stroke="var(--proj-warm)" stroke-width="1.6" marker-end="url(#arr2)"/>
+            <text x="500" y="273" text-anchor="middle" font-family="var(--mono)" font-size="10" fill="var(--proj-warm)" font-weight="600">6. PUB gym/m05/telemetry {P, E, t, sig HMAC} ogni 1 s</text>
+          </g>
+          <!-- end -->
+          <g>
+            <line x1="280" y1="325" x2="720" y2="325" stroke="var(--proj-warm)" stroke-width="2" marker-end="url(#arr2)"/>
+            <text x="500" y="318" text-anchor="middle" font-family="var(--mono)" font-size="10" fill="var(--proj-warm)" font-weight="600">7. PUB session/end {tot_E_kWh}</text>
+          </g>
+        </svg>
+      </div>
+
+      <div class="explain-box">
+        <h4>Garanzie a livello protocollo</h4>
+        <ul>
+          <li>Il <strong>UID NFC</strong> non viaggia in chiaro: la macchina invia <code>HMAC-SHA256(uid, salt)</code>, l'auth server fa il match. Anche chi sniffasse il MQTT (improbabile, è cifrato) non potrebbe risalire all'utente.</li>
+          <li>Il <strong>JWT</strong> contiene scope minimi (<code>energy:write:m05</code>) e scade in 2 ore — finita la sessione si invalida.</li>
+          <li>Ogni messaggio di telemetria include un <strong>HMAC</strong> calcolato dalla macchina con la sua chiave privata: l'ingestion service lo verifica prima di scrivere su DB. Una macchina <em>non può</em> firmare a nome di un'altra.</li>
+          <li>Il certificato X.509 della macchina è memorizzato in <strong>secure element</strong> (es. ATECC608) — non estraibile in chiaro dalla flash.</li>
+        </ul>
+      </div>
+
+      <div class="ref">
+        <div>
+          <span class="ref-lbl">Hash, HMAC e firma digitale</span>
+          Tutto il meccanismo di firma è una diretta applicazione di quanto visto in <a href="sistemi.html">Sistemi · Crittografia &amp; integrità</a>: hash crittografici, HMAC, firma con chiave privata. Lo scambio chiavi e i certificati X.509 sono coperti nella stessa pagina.
+        </div>
+      </div>
+
+      <div class="choice">
+        <div class="ch-q">Perché badge NFC e non login con app sul telefono?</div>
+        <div class="ch-why">Velocità e usabilità: <strong>l'utente non vuole tirare fuori il telefono ogni volta</strong> che cambia macchina. NFC è istantaneo, funziona anche con guanti sottili, non richiede pairing né batteria sulla card. L'app mobile resta come <em>secondo canale</em> per consultare lo storico, fare login federato (Google/Apple) e gestire il profilo. Il badge è il <em>tag</em>; l'app è il <em>profilo</em>.</div>
+      </div>
+    </section>
+
+    <!-- ===== 1.3 DASHBOARD ===== -->
+    <section id="p1-dashboard" class="section">
+      <div class="sig-head">
+        <div class="sig-num">1.3</div>
+        <div class="sig-body">
+          <h2>Dashboard di visualizzazione</h2>
+          <p>Hardware a parete e software di rendering per la visione real-time di produzione e consumi.</p>
+        </div>
+        <span class="sig-badge b-violet">HMI</span>
+      </div>
+
+      <div class="two-col">
+        <div class="explain-box">
+          <h4>Hardware proposto</h4>
+          <p>Per ciascuna delle 2 sale: un <strong>display 32"-43" 1920×1080</strong> in formato landscape, montato a parete sopra le macchine, alimentato da un <strong>mini-PC fanless</strong> (es. Intel NUC) o un <strong>Raspberry Pi 5</strong> in modalità kiosk.</p>
+          <ul>
+            <li>Connessione cablata Ethernet (cavo CAT6) verso la VLAN 20 — nessun Wi-Fi: stabilità prima di tutto.</li>
+            <li>Avvio automatico in modalità <em>kiosk</em> (Chromium/Firefox a tutto schermo, senza barra), con auto-reload se la pagina cade.</li>
+            <li>Watchdog hardware/software: se il PC freeza, riavvio automatico.</li>
+          </ul>
+        </div>
+
+        <div class="explain-box">
+          <h4>Software</h4>
+          <p>Due alternative valutate:</p>
+          <ol>
+            <li><strong>Pagina web custom</strong> servita dal backend, scritta in HTML/JS con <strong>Chart.js</strong> + WebSocket per il push real-time. Pro: aderente al brand della palestra; controllo totale dei layout.</li>
+            <li><strong>Grafana</strong> in modalità kiosk, attaccato direttamente a Influx. Pro: zero-code, già pronto, dashboarding maturo; con. meno personalizzabile.</li>
+          </ol>
+          <p>Scelgo <strong>(1)</strong>, mantenendo Grafana come strumento <em>interno</em> per gli amministratori.</p>
+        </div>
+      </div>
+
+      <div class="diagram">
+        <div class="diag-cap">Layout della dashboard a parete (mockup)</div>
+        <svg viewBox="0 0 920 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mockup della dashboard">
+          <!-- frame TV -->
+          <rect x="10" y="10" width="900" height="300" rx="10" fill="var(--ink)" opacity=".88"/>
+          <rect x="22" y="22" width="876" height="276" rx="6" fill="var(--bg-card)"/>
+          <!-- header -->
+          <rect x="22" y="22" width="876" height="40" rx="6" fill="var(--proj-deep)" opacity=".18"/>
+          <text x="40" y="48" font-family="var(--display)" font-size="16" fill="var(--ink)" font-weight="700">GreenGym · Sala 1</text>
+          <text x="880" y="48" text-anchor="end" font-family="var(--mono)" font-size="11" fill="var(--ink-soft)">17:42:03 · 24°C</text>
+
+          <!-- big number left -->
+          <text x="60" y="115" font-family="var(--mono)" font-size="11" fill="var(--ink-mute)" letter-spacing="2">PRODUZIONE OGGI</text>
+          <text x="60" y="180" font-family="var(--display)" font-size="64" fill="var(--proj-warm)" font-weight="700">14,3 kWh</text>
+          <text x="60" y="208" font-family="var(--sans)" font-size="13" fill="var(--ink-soft)">+22% vs media settimanale</text>
+
+          <text x="60" y="245" font-family="var(--mono)" font-size="11" fill="var(--ink-mute)" letter-spacing="2">CONSUMI</text>
+          <text x="60" y="280" font-family="var(--display)" font-size="22" fill="var(--ink)" font-weight="600">8,1 kWh <tspan font-size="13" fill="var(--ink-mute)">illum.</tspan>  ·  3,2 kWh <tspan font-size="13" fill="var(--ink-mute)">forza motrice</tspan></text>
+
+          <!-- right grid -->
+          <g transform="translate(440,80)">
+            <rect width="440" height="100" rx="4" fill="var(--bg-elev)" stroke="var(--rule)"/>
+            <text x="14" y="20" font-family="var(--mono)" font-size="10" fill="var(--ink-mute)" letter-spacing="2">POTENZA ULTIMI 60 MIN</text>
+            <!-- finta linea -->
+            <polyline points="14,90 50,75 90,80 130,55 170,40 220,60 260,30 310,50 360,35 410,28" fill="none" stroke="var(--proj-warm)" stroke-width="2"/>
+          </g>
+          <g transform="translate(440,200)">
+            <rect width="210" height="80" rx="4" fill="var(--bg-elev)" stroke="var(--rule)"/>
+            <text x="14" y="20" font-family="var(--mono)" font-size="10" fill="var(--ink-mute)" letter-spacing="2">UTENTI ATTIVI</text>
+            <text x="14" y="58" font-family="var(--display)" font-size="32" fill="var(--proj-deep)" font-weight="700">17</text>
+            <text x="80" y="58" font-family="var(--sans)" font-size="13" fill="var(--ink-soft)">su 22 macchine</text>
+          </g>
+          <g transform="translate(670,200)">
+            <rect width="210" height="80" rx="4" fill="var(--bg-elev)" stroke="var(--rule)"/>
+            <text x="14" y="20" font-family="var(--mono)" font-size="10" fill="var(--ink-mute)" letter-spacing="2">TOP CONTRIBUTORI</text>
+            <text x="14" y="42" font-family="var(--mono)" font-size="11" fill="var(--ink)">1. Marco R. — 0.42 kWh</text>
+            <text x="14" y="58" font-family="var(--mono)" font-size="11" fill="var(--ink-soft)">2. Sofia L. — 0.36 kWh</text>
+            <text x="14" y="74" font-family="var(--mono)" font-size="11" fill="var(--ink-soft)">3. Luca P. — 0.31 kWh</text>
+          </g>
+        </svg>
+      </div>
+
+      <div class="ref">
+        <div>
+          <span class="ref-lbl">Per la parte hardware</span>
+          Le scelte di alimentazione, dispositivi a basso consumo e mini-PC si connettono ai temi di IoT e edge computing trattati in <a href="../tpsit/esp32.html">TPSIT · ESP32</a> e in generale alla parte di indice <a href="../tpsit.html">TPSIT</a>.
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MACRO: SECONDA PARTE ============ -->
+    <div class="macro-divider">
+      <span class="md-tag">Parte II</span>
+      <span class="md-label">Seconda parte — quesiti</span>
+      <span class="md-line"></span>
+    </div>
+
+    <!-- ===== 2.1 SMART WORKING ===== -->
+    <section id="p2-smart" class="section">
+      <div class="sig-head">
+        <div class="sig-num">2.1</div>
+        <div class="sig-body">
+          <h2>Smart working amministrativo</h2>
+          <p>Accesso remoto sicuro al sistema informativo per gli impiegati degli uffici.</p>
+        </div>
+        <span class="sig-badge b-blue">Quesito 1</span>
+      </div>
+
+      <div class="explain-box">
+        <h4>Soluzione: VPN client-to-site</h4>
+        <p>Per permettere agli impiegati di lavorare da casa <strong>come se fossero in ufficio</strong>, propongo una <strong>VPN ad accesso remoto</strong> (client-to-site) terminata sul firewall perimetrale. Il client (PC personale o aziendale) stabilisce un tunnel cifrato verso il gateway VPN; una volta dentro, riceve un IP della VLAN 30 (uffici) e può raggiungere le risorse interne secondo le ACL già definite.</p>
+      </div>
+
+      <div class="diagram">
+        <div class="diag-cap">Schema VPN client-to-site</div>
+        <svg viewBox="0 0 880 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schema VPN per smart working">
+          <!-- impiegato -->
+          <g transform="translate(20,80)">
+            <rect width="160" height="70" rx="4" fill="var(--trace-5-soft)" stroke="var(--trace-5)" stroke-width="1.5"/>
+            <text x="80" y="22" text-anchor="middle" font-family="var(--display)" font-size="13" fill="var(--ink)" font-weight="600">Impiegato (casa)</text>
+            <text x="80" y="40" text-anchor="middle" font-family="var(--mono)" font-size="10" fill="var(--ink-soft)">PC + client VPN</text>
+            <text x="80" y="55" text-anchor="middle" font-family="var(--mono)" font-size="10" fill="var(--ink-mute)">cert + MFA TOTP</text>
+          </g>
+          <!-- internet -->
+          <g transform="translate(280,80)">
+            <ellipse cx="80" cy="35" rx="80" ry="22" fill="var(--bg-card)" stroke="var(--ink-mute)"/>
+            <text x="80" y="40" text-anchor="middle" font-family="var(--mono)" font-size="12" fill="var(--ink)" font-weight="600">INTERNET</text>
+          </g>
+          <!-- gateway VPN -->
+          <g transform="translate(490,80)">
+            <rect width="160" height="70" rx="4" fill="var(--trace-4-soft)" stroke="var(--trace-4)" stroke-width="1.5"/>
+            <text x="80" y="22" text-anchor="middle" font-family="var(--display)" font-size="13" fill="var(--ink)" font-weight="600">Gateway VPN</text>
+            <text x="80" y="40" text-anchor="middle" font-family="var(--mono)" font-size="10" fill="var(--ink-soft)">WireGuard / IPsec</text>
+            <text x="80" y="55" text-anchor="middle" font-family="var(--mono)" font-size="10" fill="var(--ink-mute)">UDP 51820 / 500</text>
+          </g>
+          <!-- LAN -->
+          <g transform="translate(720,80)">
+            <rect width="140" height="70" rx="4" fill="var(--trace-3-soft)" stroke="var(--trace-3)" stroke-width="1.5"/>
+            <text x="70" y="22" text-anchor="middle" font-family="var(--display)" font-size="13" fill="var(--ink)" font-weight="600">VLAN 30</text>
+            <text x="70" y="40" text-anchor="middle" font-family="var(--mono)" font-size="10" fill="var(--ink-soft)">uffici/server</text>
+            <text x="70" y="55" text-anchor="middle" font-family="var(--mono)" font-size="10" fill="var(--ink-mute)">10.10.30.0/24</text>
+          </g>
+          <!-- tunnel -->
+          <line x1="180" y1="115" x2="490" y2="115" stroke="var(--proj-deep)" stroke-width="3" stroke-dasharray="6 3"/>
+          <text x="335" y="105" text-anchor="middle" font-family="var(--mono)" font-size="11" fill="var(--proj-deep)" font-weight="700">tunnel cifrato (TLS 1.3 / IPsec ESP)</text>
+          <text x="335" y="135" text-anchor="middle" font-family="var(--mono)" font-size="9.5" fill="var(--ink-mute)">tutto il traffico ufficio passa qui dentro</text>
+          <line x1="650" y1="115" x2="720" y2="115" stroke="var(--ink-mute)" stroke-width="1.5"/>
+
+          <!-- bandiera MFA -->
+          <g transform="translate(220,180)">
+            <rect width="440" height="35" rx="4" fill="var(--bg-card)" stroke="var(--proj-warm)" stroke-dasharray="3 3" stroke-width="1.2"/>
+            <text x="220" y="22" text-anchor="middle" font-family="var(--mono)" font-size="10.5" fill="var(--proj-warm)" font-weight="600">login: certificato client × utente/password × OTP (multi-factor)</text>
+          </g>
+        </svg>
+      </div>
+
+      <div class="kp-strip">
+        <div class="kp">
+          <div class="kp-icon">⛨</div>
+          <div class="kp-text"><b>WireGuard</b> consigliato: codebase piccolo (~4k LOC), crittografia moderna (Curve25519, ChaCha20-Poly1305), riconnessione veloce. IPsec come alternativa enterprise.</div>
+        </div>
+        <div class="kp">
+          <div class="kp-icon">⚷</div>
+          <div class="kp-text"><b>Multi-factor</b>: certificato installato sul PC + password + OTP via app (TOTP RFC 6238). Tre fattori, nessuno usabile da solo.</div>
+        </div>
+        <div class="kp">
+          <div class="kp-icon">▤</div>
+          <div class="kp-text"><b>Split tunneling off</b>: tutto il traffico passa dalla VPN. Si perde un po' di banda ma si guadagna log centralizzato e blocco sui domini sensibili.</div>
+        </div>
+        <div class="kp">
+          <div class="kp-icon">🛡</div>
+          <div class="kp-text"><b>EDR sull'endpoint</b>: il PC remoto è il vero anello debole. Antivirus + disk encryption + policy MDM minime.</div>
+        </div>
+      </div>
+
+      <div class="explain-box">
+        <h4>Cosa <em>non</em> propongo: RDP/Anydesk diretto</h4>
+        <p>Esporre Remote Desktop o un client di teleassistenza direttamente su Internet è un anti-pattern: tutti gli scanner del mondo bombardano la porta 3389, e bastano credenziali deboli per entrare. La VPN <strong>chiude</strong> ogni servizio interno dietro un autenticatore unico e centralizzato. Se serve l'esperienza desktop remoto, lo si fa <em>dentro</em> la VPN.</p>
+      </div>
+
+      <div class="choice">
+        <div class="ch-q">Perché VPN e non un portale web HTTPS con tutti gli applicativi web-only?</div>
+        <div class="ch-why">Funzionerebbe per il gestionale, ma il sistema informativo della palestra include <strong>strumenti che non sono solo web</strong>: SMB per condividere documenti, software desktop di contabilità, accesso al database. La VPN dà accesso a livello rete, indipendente dall'applicazione. Inoltre l'IT amministra <em>una</em> superficie di attacco (il gateway VPN) anziché <em>n</em> portali web.</div>
+      </div>
+    </section>
+
+    <!-- ===== 2.2 CRITTOGRAFIA ===== -->
+    <section id="p2-cripto" class="section">
+      <div class="sig-head">
+        <div class="sig-num">2.2</div>
+        <div class="sig-body">
+          <h2>Tecniche di crittografia</h2>
+          <p>Simmetrica, asimmetrica, scambio di chiavi e applicazione concreta nel progetto.</p>
+        </div>
+        <span class="sig-badge b-teal">Quesito 2</span>
+      </div>
+
+      <div class="explain-box">
+        <h4>Cosa fa la crittografia</h4>
+        <p>Trasforma un messaggio in chiaro (<em>plaintext</em>) in un messaggio cifrato (<em>ciphertext</em>) tramite una funzione e una chiave, in modo che solo chi possiede la chiave corretta possa fare l'operazione inversa. Le tre proprietà che vogliamo garantire sono:</p>
+        <ul>
+          <li><strong>Confidenzialità</strong> — solo i destinatari leggono il messaggio.</li>
+          <li><strong>Autenticità</strong> — siamo sicuri di chi ha mandato il messaggio.</li>
+          <li><strong>Integrità</strong> — siamo sicuri che il messaggio non sia stato alterato (tema del quesito 2.3).</li>
+        </ul>
+      </div>
+
+      <!-- 2.2.1 SIMMETRICA -->
+      <div class="sub-head"><span class="sh-num">2.2.1</span><h3>Crittografia simmetrica</h3></div>
+
+      <p>Mittente e destinatario condividono <strong>la stessa chiave</strong>: la usano sia per cifrare sia per decifrare. Veloce e adatta a grandi volumi di dati, ma con un grosso problema: <em>come ci si scambia la chiave in modo sicuro?</em></p>
+
+      <table class="tbl">
+        <thead>
+          <tr><th>Algoritmo</th><th>Tipo</th><th>Lunghezza chiave</th><th>Stato</th><th>Uso tipico</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code>DES</code></td><td>blocco 64 bit</td><td>56 bit</td><td>obsoleto</td><td>solo storico</td></tr>
+          <tr><td><code>3DES</code></td><td>blocco 64 bit</td><td>112-168 bit</td><td>deprecato</td><td>legacy bancario</td></tr>
+          <tr class="hl"><td><code>AES</code></td><td>blocco 128 bit</td><td>128/192/256 bit</td><td>standard NIST</td><td>VPN, TLS, disk encryption</td></tr>
+          <tr><td><code>ChaCha20</code></td><td>flusso</td><td>256 bit</td><td>moderno</td><td>TLS, WireGuard, mobile</td></tr>
+        </tbody>
+      </table>
+
+      <div class="explain-box">
+        <h4>Modalità operative (cifrari a blocco)</h4>
+        <ul>
+          <li><strong>ECB</strong> — Electronic CodeBook: blocchi cifrati indipendentemente. <em>Da non usare mai</em> in pratica: pattern visibili (immagini "a piastrelle").</li>
+          <li><strong>CBC</strong> — Cipher Block Chaining: ogni blocco viene XOR-ato col precedente cifrato + IV iniziale. Buono ma non offre integrità.</li>
+          <li><strong>GCM</strong> — Galois/Counter Mode: cifratura + autenticazione (AEAD). <strong>Lo standard moderno</strong>: usato in TLS 1.3.</li>
+        </ul>
+      </div>
+
+      <div class="ref">
+        <div>
+          <span class="ref-lbl">In dettaglio sugli appunti</span>
+          AES (struttura, S-box, rounds), ChaCha20 e modalità ECB/CBC/GCM sono trattati in <a href="sistemi.html">Sistemi · Crittografia</a>.
+        </div>
+      </div>
+
+      <!-- 2.2.2 ASIMMETRICA -->
+      <div class="sub-head"><span class="sh-num">2.2.2</span><h3>Crittografia asimmetrica</h3></div>
+
+      <p>Ogni parte ha <strong>due chiavi</strong> matematicamente legate: una <em>pubblica</em> (distribuita liberamente) e una <em>privata</em> (mai condivisa). Quello che si cifra con la pubblica si decifra solo con la privata, e viceversa. Risolve il problema dello scambio chiave a costo di prestazioni molto inferiori (è 100-1000× più lenta della simmetrica).</p>
+
+      <div class="formula-row">
+        <div class="formula">
+          <span class="f-lbl">RSA — base aritmetica</span>
+          n = p · q · · · ϕ(n) = (p−1)(q−1)<br>
+          e · d ≡ 1 (mod ϕ(n))<br>
+          c = m<sup>e</sup> mod n · · · m = c<sup>d</sup> mod n
+        </div>
+        <div class="formula">
+          <span class="f-lbl">ECC — più chiave per bit</span>
+          curva: y² = x³ + ax + b (mod p)<br>
+          chiave 256 bit ECC ≈ 3072 bit RSA<br>
+          ideale per TLS, IoT, WireGuard
+        </div>
+      </div>
+
+      <table class="tbl">
+        <thead>
+          <tr><th>Algoritmo</th><th>Problema matematico</th><th>Lunghezza tipica</th><th>Uso</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code>RSA</code></td><td>fattorizzazione di numeri grandi</td><td>2048-4096 bit</td><td>cifratura, firma, certificati</td></tr>
+          <tr><td><code>ECC</code></td><td>logaritmo discreto su curva ellittica</td><td>256-521 bit</td><td>TLS moderno, mobile</td></tr>
+          <tr><td><code>DSA / ECDSA</code></td><td>logaritmo discreto</td><td>2048-256 bit</td><td>solo firma digitale</td></tr>
+          <tr><td><code>Diffie-Hellman</code></td><td>logaritmo discreto</td><td>2048+ bit</td><td>solo scambio chiave</td></tr>
+        </tbody>
+      </table>
+
+      <!-- 2.2.3 SCAMBIO -->
+      <div class="sub-head"><span class="sh-num">2.2.3</span><h3>Scambio di chiavi: Diffie-Hellman</h3></div>
+
+      <div class="diagram">
+        <div class="diag-cap">Diffie-Hellman classico — concetto</div>
+        <svg viewBox="0 0 880 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schema scambio Diffie-Hellman">
+          <g font-family="var(--display)" font-size="14" font-weight="600" fill="var(--ink)">
+            <text x="100" y="30" text-anchor="middle">Alice</text>
+            <text x="780" y="30" text-anchor="middle">Bob</text>
+          </g>
+          <text x="440" y="30" text-anchor="middle" font-family="var(--mono)" font-size="11" fill="var(--ink-mute)">canale pubblico (anche intercettato)</text>
+
+          <!-- noti pubblici -->
+          <g transform="translate(330,55)">
+            <rect width="220" height="40" rx="4" fill="var(--bg-card)" stroke="var(--rule)"/>
+            <text x="110" y="17" text-anchor="middle" font-family="var(--mono)" font-size="11" fill="var(--ink)" font-weight="600">noti a tutti: p (primo grande), g (generatore)</text>
+            <text x="110" y="32" text-anchor="middle" font-family="var(--mono)" font-size="9.5" fill="var(--ink-mute)">esempio didattico: p=23, g=5</text>
+          </g>
+
+          <!-- segreti privati -->
+          <g transform="translate(20,110)">
+            <rect width="180" height="40" rx="4" fill="var(--trace-1-soft)" stroke="var(--trace-1)"/>
+            <text x="90" y="17" text-anchor="middle" font-family="var(--mono)" font-size="11" fill="var(--trace-1)" font-weight="600">segreto a (es. 6)</text>
+            <text x="90" y="32" text-anchor="middle" font-family="var(--mono)" font-size="10" fill="var(--ink-soft)">A = g^a mod p = 8</text>
+          </g>
+          <g transform="translate(680,110)">
+            <rect width="180" height="40" rx="4" fill="var(--trace-2-soft)" stroke="var(--trace-2)"/>
+            <text x="90" y="17" text-anchor="middle" font-family="var(--mono)" font-size="11" fill="var(--trace-2)" font-weight="600">segreto b (es. 15)</text>
+            <text x="90" y="32" text-anchor="middle" font-family="var(--mono)" font-size="10" fill="var(--ink-soft)">B = g^b mod p = 19</text>
+          </g>
+
+          <!-- scambio -->
+          <line x1="200" y1="135" x2="680" y2="135" stroke="var(--proj-warm)" stroke-width="1.5" stroke-dasharray="4 3"/>
+          <text x="440" y="125" text-anchor="middle" font-family="var(--mono)" font-size="11" fill="var(--proj-warm)" font-weight="600">A →   ← B</text>
+
+          <!-- segreto comune -->
+          <g transform="translate(20,180)">
+            <rect width="180" height="50" rx="4" fill="var(--proj-deep)" opacity=".15" stroke="var(--proj-deep)"/>
+            <text x="90" y="20" text-anchor="middle" font-family="var(--mono)" font-size="11" fill="var(--proj-deep)" font-weight="700">K = B^a mod p</text>
+            <text x="90" y="38" text-anchor="middle" font-family="var(--mono)" font-size="10" fill="var(--ink)">K = 19^6 mod 23 = 2</text>
+          </g>
+          <g transform="translate(680,180)">
+            <rect width="180" height="50" rx="4" fill="var(--proj-deep)" opacity=".15" stroke="var(--proj-deep)"/>
+            <text x="90" y="20" text-anchor="middle" font-family="var(--mono)" font-size="11" fill="var(--proj-deep)" font-weight="700">K = A^b mod p</text>
+            <text x="90" y="38" text-anchor="middle" font-family="var(--mono)" font-size="10" fill="var(--ink)">K = 8^15 mod 23 = 2</text>
+          </g>
+          <text x="440" y="215" text-anchor="middle" font-family="var(--display)" font-size="14" fill="var(--proj-deep)" font-weight="700">stessa chiave K, mai trasmessa in chiaro</text>
+        </svg>
+      </div>
+
+      <div class="explain-box">
+        <h4>Punti chiave</h4>
+        <ul>
+          <li>L'attaccante che intercetta vede <em>solo</em> <code>p, g, A, B</code>: per ricavare <code>K</code> dovrebbe risolvere il <strong>logaritmo discreto</strong> — computazionalmente infattibile per p grandi.</li>
+          <li>Non offre autenticazione di per sé → da solo è vulnerabile a <em>man-in-the-middle</em>. In TLS si combina con un certificato X.509 firmato dalla CA.</li>
+          <li>Variante moderna: <strong>ECDHE</strong> (su curva ellittica + ephemeral) — chiavi monouso che danno <em>perfect forward secrecy</em>.</li>
+        </ul>
+      </div>
+
+      <div class="ref">
+        <div>
+          <span class="ref-lbl">Approfondimento</span>
+          Diffie-Hellman è trattato con esempi numerici e con codice Python (<code>diffhellm.py</code>) negli appunti di <a href="sistemi.html">Sistemi</a>. Per l'aritmetica modulare e il problema del logaritmo discreto, cfr. la stessa pagina.
+        </div>
+      </div>
+
+      <!-- 2.2.4 IBRIDA -->
+      <div class="sub-head"><span class="sh-num">2.2.4</span><h3>L'approccio ibrido (TLS, e cosa uso io)</h3></div>
+
+      <p>Nessun protocollo serio usa <em>solo</em> simmetrica o <em>solo</em> asimmetrica. <strong>TLS</strong> combina i due mondi e illustra perché:</p>
+
+      <ol>
+        <li>Il client si connette al server e riceve il <strong>certificato X.509</strong> (chiave pubblica + firma di una CA fidata).</li>
+        <li>Client e server eseguono uno <strong>scambio ECDHE</strong> per derivare un segreto comune di sessione (asimmetrica).</li>
+        <li>Da lì in poi tutto il traffico è cifrato con <strong>AES-GCM</strong> o <strong>ChaCha20-Poly1305</strong> usando quel segreto (simmetrica).</li>
+      </ol>
+
+      <div class="choice">
+        <div class="ch-q">Cosa uso nella palestra?</div>
+        <div class="ch-why">Tutta la comunicazione esterna passa da <strong>TLS 1.3</strong> (HTTPS, MQTT/TLS, VPN). I dati a riposo sui server sono cifrati con <strong>AES-256-GCM</strong> (full-disk + DB encryption). I certificati delle macchine sono <strong>ECDSA P-256</strong> per stare leggero (chiave 256 bit invece di 3072). Le password degli utenti web sono <em>hashate</em>, non cifrate (cfr. quesito 2.3).</div>
+      </div>
+    </section>
+
+    <!-- ===== 2.3 INTEGRITÀ ===== -->
+    <section id="p2-integrita" class="section">
+      <div class="sig-head">
+        <div class="sig-num">2.3</div>
+        <div class="sig-body">
+          <h2>Tecniche di controllo dell'integrità</h2>
+          <p>Hash crittografici, MAC, HMAC e firma digitale: cosa garantisce ciascuno.</p>
+        </div>
+        <span class="sig-badge b-magenta">Quesito 3</span>
+      </div>
+
+      <div class="explain-box">
+        <h4>Tre garanzie diverse</h4>
+        <p>"Integrità" è una proprietà sottile: bisogna distinguere cosa <em>esattamente</em> si sta proteggendo e contro chi.</p>
+        <table class="tbl">
+          <thead>
+            <tr><th>Tecnica</th><th>Integrità</th><th>Autenticità</th><th>Non-ripudio</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Hash semplice (SHA-256)</td><td>✓</td><td>✗</td><td>✗</td></tr>
+            <tr><td>HMAC (con chiave condivisa)</td><td>✓</td><td>✓ (mittente conosce la chiave)</td><td>✗</td></tr>
+            <tr><td>Firma digitale (chiave privata)</td><td>✓</td><td>✓</td><td>✓</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 2.3.1 HASH -->
+      <div class="sub-head"><span class="sh-num">2.3.1</span><h3>Hash crittografici</h3></div>
+
+      <p>Una funzione hash crittografica trasforma un input di lunghezza qualsiasi in un output a <em>lunghezza fissa</em> (il <em>digest</em>). Le proprietà fondamentali:</p>
+
+      <div class="kp-strip">
+        <div class="kp">
+          <div class="kp-icon">⟶</div>
+          <div class="kp-text"><b>Determinismo</b><br>stesso input → stesso digest, sempre.</div>
+        </div>
+        <div class="kp">
+          <div class="kp-icon">≢</div>
+          <div class="kp-text"><b>Effetto valanga</b><br>cambiare 1 bit di input → cambia ~50% del digest.</div>
+        </div>
+        <div class="kp">
+          <div class="kp-icon">⊥</div>
+          <div class="kp-text"><b>One-way</b><br>infattibile risalire dall'hash al messaggio.</div>
+        </div>
+        <div class="kp">
+          <div class="kp-icon">↔</div>
+          <div class="kp-text"><b>Resistenza alle collisioni</b><br>infattibile trovare due input con lo stesso hash.</div>
+        </div>
+      </div>
+
+      <table class="tbl">
+        <thead>
+          <tr><th>Funzione</th><th>Output</th><th>Stato</th><th>Note</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code>MD5</code></td><td>128 bit</td><td>compromesso</td><td>collisioni in pochi sec — vietato in security</td></tr>
+          <tr><td><code>SHA-1</code></td><td>160 bit</td><td>compromesso</td><td>collisione "SHAttered" 2017</td></tr>
+          <tr class="hl"><td><code>SHA-256</code> / <code>SHA-512</code></td><td>256 / 512 bit</td><td>standard</td><td>famiglia SHA-2, nessun attacco pratico</td></tr>
+          <tr><td><code>SHA-3</code> (Keccak)</td><td>variabile</td><td>standard</td><td>costruzione "spugna", diversa da SHA-2</td></tr>
+          <tr><td><code>BLAKE3</code></td><td>variabile</td><td>moderno</td><td>velocissimo, parallelizzabile</td></tr>
+        </tbody>
+      </table>
+
+      <div class="explain-box">
+        <h4>Caso d'uso 1 — verifica file scaricato</h4>
+        <p>Pubblico il digest <code>SHA-256</code> del firmware delle macchine sul sito. Quando una macchina aggiorna il firmware via OTA, ricalcola l'hash di quanto ha scaricato e lo confronta col digest atteso. Se differisce di un solo bit, scarta l'update.</p>
+
+        <h4 style="margin-top:1rem">Caso d'uso 2 — password storage</h4>
+        <p>Le password non si salvano <em>cifrate</em> (l'admin potrebbe decifrarle): si salvano <em>hashate</em> con <strong>salt</strong> univoco per utente e una funzione lenta (<strong>bcrypt</strong>, <strong>Argon2</strong>) per resistere a brute-force su GPU. Il login ricalcola l'hash della password digitata e confronta.</p>
+      </div>
+
+      <!-- 2.3.2 MAC / HMAC -->
+      <div class="sub-head"><span class="sh-num">2.3.2</span><h3>MAC e HMAC</h3></div>
+
+      <p>Il <strong>MAC</strong> (Message Authentication Code) lega un digest al possesso di una <em>chiave segreta condivisa</em>. Solo chi conosce la chiave può calcolarlo o verificarlo. Garantisce <em>integrità + autenticità</em>, non non-ripudio (entrambe le parti possono produrlo).</p>
+
+      <div class="formula-row">
+        <div class="formula">
+          <span class="f-lbl">HMAC — costruzione</span>
+          HMAC(K, m) = H( (K ⊕ opad) ‖ H( (K ⊕ ipad) ‖ m ) )<br>
+          dove H è una funzione hash (es. SHA-256)
+        </div>
+        <div class="formula">
+          <span class="f-lbl">Esempio nel progetto</span>
+          tag = HMAC-SHA256(K_macchina, payload)<br>
+          ingestion verifica → scrive su DB
+        </div>
+      </div>
+
+      <p>L'<strong>HMAC</strong> è la versione standardizzata: usa due hash annidati con chiave inserita due volte (ipad/opad), per prevenire <em>length-extension attack</em> tipici dei costrutti naive. È usato in TLS, JWT (HS256), API REST firmate (AWS Signature).</p>
+
+      <!-- 2.3.3 FIRMA DIGITALE -->
+      <div class="sub-head"><span class="sh-num">2.3.3</span><h3>Firma digitale</h3></div>
+
+      <p>La firma digitale combina hash + crittografia asimmetrica: il mittente <strong>firma il digest</strong> del messaggio con la propria <em>chiave privata</em>, chiunque verifica con la <em>chiave pubblica</em>. Garantisce <strong>integrità + autenticità + non-ripudio</strong> (il mittente non può negare, perché solo lui ha la chiave privata).</p>
+
+      <div class="diagram">
+        <div class="diag-cap">Firma e verifica</div>
+        <svg viewBox="0 0 880 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Processo di firma e verifica digitale">
+          <!-- mittente -->
+          <g transform="translate(20,30)">
+            <rect width="180" height="170" rx="4" fill="var(--trace-1-soft)" stroke="var(--trace-1)" stroke-width="1.5"/>
+            <text x="90" y="22" text-anchor="middle" font-family="var(--display)" font-size="13" fill="var(--ink)" font-weight="600">Mittente</text>
+            <text x="14" y="50" font-family="var(--mono)" font-size="10" fill="var(--ink-soft)">1. msg = "ciao"</text>
+            <text x="14" y="72" font-family="var(--mono)" font-size="10" fill="var(--ink-soft)">2. h = SHA-256(msg)</text>
+            <text x="14" y="94" font-family="var(--mono)" font-size="10" fill="var(--ink-soft)">3. firma = enc(h, K_priv)</text>
+            <text x="14" y="116" font-family="var(--mono)" font-size="10" fill="var(--ink-soft)">4. invia (msg, firma)</text>
+            <line x1="14" y1="135" x2="166" y2="135" stroke="var(--rule)" stroke-dasharray="2 2"/>
+            <text x="14" y="155" font-family="var(--mono)" font-size="9" fill="var(--ink-mute)">tiene K_priv segreta</text>
+          </g>
+          <!-- canale -->
+          <line x1="200" y1="115" x2="680" y2="115" stroke="var(--proj-warm)" stroke-width="2" marker-end="url(#arr2)"/>
+          <text x="440" y="105" text-anchor="middle" font-family="var(--mono)" font-size="11" fill="var(--proj-warm)" font-weight="600">(msg, firma) sul canale</text>
+          <!-- destinatario -->
+          <g transform="translate(680,30)">
+            <rect width="180" height="170" rx="4" fill="var(--trace-2-soft)" stroke="var(--trace-2)" stroke-width="1.5"/>
+            <text x="90" y="22" text-anchor="middle" font-family="var(--display)" font-size="13" fill="var(--ink)" font-weight="600">Destinatario</text>
+            <text x="14" y="50" font-family="var(--mono)" font-size="10" fill="var(--ink-soft)">1. riceve (msg, firma)</text>
+            <text x="14" y="72" font-family="var(--mono)" font-size="10" fill="var(--ink-soft)">2. h' = SHA-256(msg)</text>
+            <text x="14" y="94" font-family="var(--mono)" font-size="10" fill="var(--ink-soft)">3. h'' = dec(firma, K_pub)</text>
+            <text x="14" y="116" font-family="var(--mono)" font-size="10" fill="var(--ink-soft)">4. h' == h''? OK / KO</text>
+            <line x1="14" y1="135" x2="166" y2="135" stroke="var(--rule)" stroke-dasharray="2 2"/>
+            <text x="14" y="155" font-family="var(--mono)" font-size="9" fill="var(--ink-mute)">conosce solo K_pub</text>
+          </g>
+        </svg>
+      </div>
+
+      <div class="explain-box">
+        <h4>Algoritmi di firma</h4>
+        <ul>
+          <li><strong>RSA-PSS</strong> — versione moderna della firma RSA (PKCS#1 v2.1).</li>
+          <li><strong>ECDSA</strong> — curve ellittiche, chiavi corte, usato in TLS/Bitcoin.</li>
+          <li><strong>Ed25519</strong> — variante veloce e a chiave fissa di EdDSA, usato in SSH e WireGuard.</li>
+        </ul>
+      </div>
+
+      <div class="ref">
+        <div>
+          <span class="ref-lbl">Materiale di approfondimento</span>
+          La firma digitale, l'HMAC, le funzioni hash e i certificati X.509 (PKI) sono trattati negli appunti di <a href="sistemi.html">Sistemi · Crittografia &amp; integrità</a>, con il notebook <code>hash_e_crittografia.ipynb</code> per esempi pratici.
+        </div>
+      </div>
+
+      <div class="choice">
+        <div class="ch-q">Quale tecnica per quale dato nella palestra?</div>
+        <div class="ch-why">
+          <strong>Telemetria macchina → broker</strong>: HMAC-SHA256 (basta autenticità + integrità; le due parti sono fidate).<br>
+          <strong>Aggiornamento firmware OTA</strong>: firma digitale ECDSA (l'update parte da un'unica autorità — il vendor — e ogni macchina lo verifica con la chiave pubblica embedded).<br>
+          <strong>Token JWT API</strong>: HMAC (HS256) o ECDSA (ES256) a seconda che siano interni o esterni.<br>
+          <strong>Password admin</strong>: bcrypt con salt — un hash, non una crittografia.
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 2.4 CONTAINER ===== -->
+    <section id="p2-container" class="section">
+      <div class="sig-head">
+        <div class="sig-num">2.4</div>
+        <div class="sig-body">
+          <h2>Container e isolamento</h2>
+          <p>Cosa sono, come funzionano e perché tornano utili nel deploy del backend della palestra.</p>
+        </div>
+        <span class="sig-badge b-violet">Quesito 4</span>
+      </div>
+
+      <div class="explain-box">
+        <h4>Definizione</h4>
+        <p>Un <strong>container</strong> è un'unità di esecuzione che impacchetta un'applicazione insieme a tutte le sue dipendenze (librerie, configurazione, file system minimale) in modo che giri allo stesso modo su qualsiasi host che abbia installato il <em>runtime</em> (Docker, Podman, containerd). A differenza di una macchina virtuale, <strong>condivide il kernel</strong> dell'host: niente OS guest da bootare, niente overhead di virtualizzazione hardware.</p>
+      </div>
+
+      <div class="diagram">
+        <div class="diag-cap">Container vs macchina virtuale</div>
+        <svg viewBox="0 0 880 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Confronto container vs VM">
+          <!-- VM -->
+          <g transform="translate(40,20)">
+            <text x="0" y="14" font-family="var(--display)" font-size="13" fill="var(--ink)" font-weight="600">Macchine virtuali</text>
+            <rect x="0" y="30" width="370" height="220" rx="4" fill="var(--bg-card)" stroke="var(--rule)"/>
+            <!-- 3 VM -->
+            <g transform="translate(20,50)">
+              <rect width="100" height="180" rx="3" fill="var(--trace-1-soft)" stroke="var(--trace-1)"/>
+              <rect x="6" y="6" width="88" height="40" fill="var(--bg)" stroke="var(--ink-mute)"/>
+              <text x="50" y="30" text-anchor="middle" font-family="var(--mono)" font-size="9" fill="var(--ink)">App A</text>
+              <rect x="6" y="50" width="88" height="40" fill="var(--bg)" stroke="var(--ink-mute)"/>
+              <text x="50" y="74" text-anchor="middle" font-family="var(--mono)" font-size="9" fill="var(--ink)">Bins/Libs</text>
+              <rect x="6" y="94" width="88" height="80" fill="var(--bg)" stroke="var(--ink-mute)"/>
+              <text x="50" y="125" text-anchor="middle" font-family="var(--mono)" font-size="9" fill="var(--ink)">Guest OS</text>
+              <text x="50" y="142" text-anchor="middle" font-family="var(--mono)" font-size="9" fill="var(--ink-mute)">(kernel)</text>
+            </g>
+            <g transform="translate(135,50)">
+              <rect width="100" height="180" rx="3" fill="var(--trace-2-soft)" stroke="var(--trace-2)"/>
+              <rect x="6" y="6" width="88" height="40" fill="var(--bg)" stroke="var(--ink-mute)"/>
+              <text x="50" y="30" text-anchor="middle" font-family="var(--mono)" font-size="9" fill="var(--ink)">App B</text>
+              <rect x="6" y="50" width="88" height="40" fill="var(--bg)" stroke="var(--ink-mute)"/>
+              <text x="50" y="74" text-anchor="middle" font-family="var(--mono)" font-size="9" fill="var(--ink)">Bins/Libs</text>
+              <rect x="6" y="94" width="88" height="80" fill="var(--bg)" stroke="var(--ink-mute)"/>
+              <text x="50" y="125" text-anchor="middle" font-family="var(--mono)" font-size="9" fill="var(--ink)">Guest OS</text>
+            </g>
+            <g transform="translate(250,50)">
+              <rect width="100" height="180" rx="3" fill="var(--trace-3-soft)" stroke="var(--trace-3)"/>
+              <rect x="6" y="6" width="88" height="40" fill="var(--bg)" stroke="var(--ink-mute)"/>
+              <text x="50" y="30" text-anchor="middle" font-family="var(--mono)" font-size="9" fill="var(--ink)">App C</text>
+              <rect x="6" y="50" width="88" height="40" fill="var(--bg)" stroke="var(--ink-mute)"/>
+              <text x="50" y="74" text-anchor="middle" font-family="var(--mono)" font-size="9" fill="var(--ink)">Bins/Libs</text>
+              <rect x="6" y="94" width="88" height="80" fill="var(--bg)" stroke="var(--ink-mute)"/>
+              <text x="50" y="125" text-anchor="middle" font-family="var(--mono)" font-size="9" fill="var(--ink)">Guest OS</text>
+            </g>
+          </g>
+          <text x="225" y="265" text-anchor="middle" font-family="var(--mono)" font-size="10" fill="var(--ink-mute)">Hypervisor + Host OS</text>
+
+          <!-- Container -->
+          <g transform="translate(470,20)">
+            <text x="0" y="14" font-family="var(--display)" font-size="13" fill="var(--ink)" font-weight="600">Container</text>
+            <rect x="0" y="30" width="370" height="220" rx="4" fill="var(--bg-card)" stroke="var(--rule)"/>
+            <!-- container -->
+            <g transform="translate(20,50)">
+              <rect width="100" height="100" rx="3" fill="var(--trace-1-soft)" stroke="var(--trace-1)"/>
+              <rect x="6" y="6" width="88" height="40" fill="var(--bg)" stroke="var(--ink-mute)"/>
+              <text x="50" y="30" text-anchor="middle" font-family="var(--mono)" font-size="9" fill="var(--ink)">App A</text>
+              <rect x="6" y="50" width="88" height="44" fill="var(--bg)" stroke="var(--ink-mute)"/>
+              <text x="50" y="76" text-anchor="middle" font-family="var(--mono)" font-size="9" fill="var(--ink)">Bins/Libs</text>
+            </g>
+            <g transform="translate(135,50)">
+              <rect width="100" height="100" rx="3" fill="var(--trace-2-soft)" stroke="var(--trace-2)"/>
+              <rect x="6" y="6" width="88" height="40" fill="var(--bg)" stroke="var(--ink-mute)"/>
+              <text x="50" y="30" text-anchor="middle" font-family="var(--mono)" font-size="9" fill="var(--ink)">App B</text>
+              <rect x="6" y="50" width="88" height="44" fill="var(--bg)" stroke="var(--ink-mute)"/>
+              <text x="50" y="76" text-anchor="middle" font-family="var(--mono)" font-size="9" fill="var(--ink)">Bins/Libs</text>
+            </g>
+            <g transform="translate(250,50)">
+              <rect width="100" height="100" rx="3" fill="var(--trace-3-soft)" stroke="var(--trace-3)"/>
+              <rect x="6" y="6" width="88" height="40" fill="var(--bg)" stroke="var(--ink-mute)"/>
+              <text x="50" y="30" text-anchor="middle" font-family="var(--mono)" font-size="9" fill="var(--ink)">App C</text>
+              <rect x="6" y="50" width="88" height="44" fill="var(--bg)" stroke="var(--ink-mute)"/>
+              <text x="50" y="76" text-anchor="middle" font-family="var(--mono)" font-size="9" fill="var(--ink)">Bins/Libs</text>
+            </g>
+            <rect x="20" y="170" width="330" height="50" fill="var(--proj-deep)" opacity=".18" stroke="var(--proj-deep)"/>
+            <text x="185" y="200" text-anchor="middle" font-family="var(--mono)" font-size="10.5" fill="var(--proj-deep)" font-weight="700">Container engine + Host kernel condiviso</text>
+          </g>
+          <text x="655" y="265" text-anchor="middle" font-family="var(--mono)" font-size="10" fill="var(--ink-mute)">un solo OS, niente hypervisor</text>
+        </svg>
+      </div>
+
+      <div class="kp-strip">
+        <div class="kp">
+          <div class="kp-icon">⌬</div>
+          <div class="kp-text"><b>Isolamento namespace</b><br>processi, rete, mount, utenti separati per container (kernel feature di Linux).</div>
+        </div>
+        <div class="kp">
+          <div class="kp-icon">⚖</div>
+          <div class="kp-text"><b>cgroups</b><br>limiti di CPU, RAM, I/O per container — un container ribelle non affoga il vicino.</div>
+        </div>
+        <div class="kp">
+          <div class="kp-icon">▤</div>
+          <div class="kp-text"><b>Immagini stratificate</b><br>layer immutabili sovrapposti (UnionFS); riusa layer comuni → push/pull veloci.</div>
+        </div>
+        <div class="kp">
+          <div class="kp-icon">≡</div>
+          <div class="kp-text"><b>Riproducibilità</b><br>il <code>Dockerfile</code> è il "ricettario" — stessa immagine ovunque, stesso comportamento.</div>
+        </div>
+        <div class="kp">
+          <div class="kp-icon">⤴</div>
+          <div class="kp-text"><b>Avvio in millisecondi</b><br>nessun bootstrap di OS guest — pronto in &lt;1 s.</div>
+        </div>
+        <div class="kp">
+          <div class="kp-icon">↻</div>
+          <div class="kp-text"><b>Effimerità</b><br>un container muore "pulito"; lo stato persistente sta in <em>volumi</em> esterni.</div>
+        </div>
+      </div>
+
+      <div class="explain-box">
+        <h4>Container vs VM in tabella</h4>
+        <table class="tbl">
+          <thead><tr><th>Aspetto</th><th>Container</th><th>VM</th></tr></thead>
+          <tbody>
+            <tr><td>Kernel</td><td>condiviso con host</td><td>uno per VM</td></tr>
+            <tr><td>Avvio</td><td>millisecondi</td><td>10-60 secondi</td></tr>
+            <tr><td>Footprint immagine</td><td>10-200 MB</td><td>1-10 GB</td></tr>
+            <tr><td>Isolamento sicurezza</td><td>processo (più debole)</td><td>completo (hardware)</td></tr>
+            <tr><td>OS guest diverso</td><td>solo Linux su Linux</td><td>qualsiasi (Win, BSD…)</td></tr>
+            <tr><td>Densità su un host</td><td>centinaia</td><td>decine</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="explain-box">
+        <h4>Applicazione al progetto</h4>
+        <p>Il backend della palestra (broker MQTT, ingestion service, API REST, frontend, reverse proxy) viene impacchettato come <strong>microservizi container</strong> orchestrati da <code>docker compose</code> sul server on-prem. Vantaggi pratici:</p>
+        <ul>
+          <li>Deploy <em>identico</em> tra ambiente di sviluppo, staging e produzione (niente "funziona sul mio PC").</li>
+          <li>Aggiornamento di un singolo servizio (es. nuova versione dell'API) senza toccare gli altri.</li>
+          <li>Rollback istantaneo: basta rifare il <code>docker run</code> con il tag della versione precedente.</li>
+          <li>Scalabilità: se cresce il carico telemetrico, replico l'ingestion service su più container dietro un load balancer.</li>
+        </ul>
+      </div>
+
+      <div class="term">
+<span class="c-com"># estratto di docker-compose.yml — backend palestra</span>
+<span class="c-kw">services:</span>
+  <span class="c-fn">broker</span>:
+    <span class="c-kw">image:</span> eclipse-mosquitto:<span class="c-num">2.0</span>
+    <span class="c-kw">ports:</span> [<span class="c-str">"8883:8883"</span>]
+    <span class="c-kw">volumes:</span> [<span class="c-str">"./certs:/mosquitto/certs:ro"</span>]
+  <span class="c-fn">ingestion</span>:
+    <span class="c-kw">build:</span> ./ingestion
+    <span class="c-kw">depends_on:</span> [broker, db]
+  <span class="c-fn">api</span>:
+    <span class="c-kw">build:</span> ./api
+    <span class="c-kw">environment:</span>
+      DB_URL: <span class="c-str">postgres://api:***@db:5432/gym</span>
+  <span class="c-fn">db</span>:
+    <span class="c-kw">image:</span> timescale/timescaledb:<span class="c-num">2-pg15</span>
+    <span class="c-kw">volumes:</span> [<span class="c-str">"pg-data:/var/lib/postgresql/data"</span>]
+  <span class="c-fn">proxy</span>:
+    <span class="c-kw">image:</span> nginx:alpine
+    <span class="c-kw">ports:</span> [<span class="c-str">"443:443"</span>]
+</div>
+
+      <div class="choice">
+        <div class="ch-q">Container o VM per la palestra?</div>
+        <div class="ch-why">Per i <em>servizi applicativi</em> uso container — sono Linux, omogenei, voglio deploy rapidi e densità. Per la <em>VM domain controller / file server Windows</em> (uso ufficio, SMB, Active Directory) tengo una VM tradizionale: serve un OS diverso. La piattaforma è ibrida: <strong>Proxmox</strong> sul server fisico, una VM Linux che fa da <em>host Docker</em> per i container, una VM Windows accanto. Backup di entrambe sul NAS off-site.</div>
+      </div>
+    </section>
+
+    <!-- ============ CONCLUSIONI ============ -->
+    <section id="conclusioni">
+      <div class="conclusion">
+        <h3>Considerazioni finali</h3>
+        <p>Il progetto integra in modo organico tutte e tre le anime di un sistema informativo moderno: <strong>l'edge IoT</strong> (le macchine generative con MCU e Wi-Fi), <strong>il backend</strong> (broker, DB, API in container) e <strong>il frontend</strong> (dashboard a parete + portali web/mobile). La rete è segmentata in 6 VLAN per separare livelli di fiducia diversi, l'accesso pubblico ai dati passa solo da una DMZ irrobustita, e la sicurezza poggia su tre pilastri ortogonali: <em>cifratura</em> (TLS 1.3 ovunque + AES-GCM at-rest), <em>autenticazione</em> (X.509 per le macchine, OAuth2/MFA per gli umani), <em>integrità</em> (HMAC sulle telemetrie, firma ECDSA sulle release firmware).</p>
+        <p>Le scelte sono <em>pragmatiche</em>: dove possibile ho preferito standard maturi (MQTT, OAuth2, WireGuard) e separazione di responsabilità (un container per servizio, un servizio per problema). Le tecnologie vintage che la traccia non chiede esplicitamente (3DES, MD5, ECB, RDP esposto) sono <em>state evitate</em>, motivando il perché.</p>
+        <p>Chi legge questa relazione dovrebbe poter rispondere a tre domande senza dover guardare il codice: <strong>(1)</strong> dove vivono i dati e come ci si arriva, <strong>(2)</strong> chi può fare cosa e come si fida il sistema, <strong>(3)</strong> cosa succede se rompo X. Sono i tre assi che separano una rete progettata da una rete improvvisata.</p>
+      </div>
+    </section>
+
+    <!-- ============ RIFERIMENTI ============ -->
+    <section id="riferimenti">
+      <div class="panel">
+        <div class="panel-title">Indice dei collegamenti agli appunti</div>
+        <div class="toc-grid">
+          <div class="toc-col">
+            <h5>Telecomunicazioni</h5>
+            <ol>
+              <li><a href="../telecomunicazioni/tcp-ip.html"><span class="toc-num">CH3</span><span>Suite TCP/IP — IP, subnetting</span></a></li>
+              <li><a href="../telecomunicazioni/switch-vlan.html"><span class="toc-num">CH4</span><span>Switch &amp; VLAN — 802.1Q</span></a></li>
+              <li><a href="../telecomunicazioni/acl.html"><span class="toc-num">CH5</span><span>ACL — standard ed estese</span></a></li>
+              <li><a href="../telecomunicazioni/nat.html"><span class="toc-num">CH6</span><span>NAT — statico, dinamico, PAT</span></a></li>
+              <li><a href="../telecomunicazioni/routing.html"><span class="toc-num">CH7</span><span>Routing — RIP, OSPF</span></a></li>
+              <li><a href="../telecomunicazioni/wireless-80211.html"><span class="toc-num">CH8</span><span>Wireless 802.11 — WPA2/3</span></a></li>
+            </ol>
+          </div>
+          <div class="toc-col">
+            <h5>TPSIT</h5>
+            <ol>
+              <li><a href="../tpsit/esp32.html"><span class="toc-num">·</span><span>ESP32 — MCU IoT</span></a></li>
+              <li><a href="../tpsit/wifi.html"><span class="toc-num">·</span><span>Wi-Fi 802.11 ac/ax</span></a></li>
+              <li><a href="../tpsit/ble.html"><span class="toc-num">·</span><span>BLE — alternativo per indoor</span></a></li>
+              <li><a href="../tpsit/lorawan.html"><span class="toc-num">·</span><span>LoRaWAN — non scelto, contro</span></a></li>
+              <li><a href="../tpsit/confronto.html"><span class="toc-num">·</span><span>Confronto tecnologie wireless</span></a></li>
+            </ol>
+          </div>
+          <div class="toc-col">
+            <h5>Sistemi</h5>
+            <ol>
+              <li><a href="sistemi.html"><span class="toc-num">§</span><span>Crittografia simmetrica/asimmetrica</span></a></li>
+              <li><a href="sistemi.html"><span class="toc-num">§</span><span>Hash, HMAC, firma digitale</span></a></li>
+              <li><a href="sistemi.html"><span class="toc-num">§</span><span>Diffie-Hellman, PKI, X.509</span></a></li>
+              <li><a href="sistemi.html"><span class="toc-num">§</span><span>TLS — handshake</span></a></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- pagenav -->
+    <div class="pagenav">
+      <a href="sistemi.html" class="prev">
+        <span class="pn-dir">← precedente</span>
+        <span class="pn-title">Sistemi · Crittografia</span>
+      </a>
+      <a href="../index.html" class="next">
+        <span class="pn-dir">home →</span>
+        <span class="pn-title">Tutti gli appunti</span>
+      </a>
+    </div>
+
+  </div>
+</main>
+
+<footer class="scope-footer">
+  <span class="sf-dot"></span>
+  <span>Relazione di progetto · simulazione maggio 2024</span>
+  <span class="sf-spacer"></span>
+  <span>5F ITT · A.S. 2025/26 · Sistemi e Reti</span>
+</footer>
+
+<script>
+  // tema toggle (riusa la chiave 'tele-theme' come per le altre pagine telecom)
+  (function(){
+    var btn = document.getElementById('themeToggle');
+    if(!btn) return;
+    btn.addEventListener('click', function(){
+      var cur = document.documentElement.getAttribute('data-theme') || 'light';
+      var next = cur === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      try{ localStorage.setItem('tele-theme', next); }catch(e){}
+    });
+  })();
+</script>
+
+</body>
+</html>
