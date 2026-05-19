@@ -35,6 +35,8 @@ const pages = [
   { group: "Italiano · Libri", title: "Niente di nuovo sul fronte occidentale", sub: "Remarque", path: "Sto-Ita/italiano/libri/08-niente-di-nuovo-sul-fronte-occidentale.md" },
   { group: "Italiano · Libri", title: "Come il vento cucito alla terra", sub: "Tuti", path: "Sto-Ita/italiano/libri/09-come-il-vento-cucito-alla-terra.md" },
   { group: "Italiano · Libri", title: "La banda di via Panisperna", sub: "Colangelo/Temporelli", path: "Sto-Ita/italiano/libri/10-la-banda-di-via-panisperna.md" },
+  { group: "Italiano · Libri", title: "Una questione privata", sub: "Fenoglio", path: "Sto-Ita/italiano/libri/11-una-questione-privata.md" },
+  { group: "Italiano · Libri", title: "I giorni di vetro", sub: "Verna", path: "Sto-Ita/italiano/libri/12-i-giorni-di-vetro.md" },
   { group: "Italiano · Movimenti", title: "Positivismo, Naturalismo e Verismo", path: "Sto-Ita/italiano/movimenti/01-positivismo-naturalismo-verismo.md" },
   { group: "Italiano · Movimenti", title: "Decadentismo, Simbolismo ed Estetismo", path: "Sto-Ita/italiano/movimenti/02-decadentismo-simbolismo-estetismo.md" },
   { group: "Italiano · Movimenti", title: "Avanguardie, Futurismo e Crepuscolarismo", path: "Sto-Ita/italiano/movimenti/03-avanguardie-futurismo-crepuscolarismo.md" },
@@ -42,6 +44,7 @@ const pages = [
   { group: "Italiano · Movimenti", title: "Ermetismo", path: "Sto-Ita/italiano/movimenti/05-ermetismo.md" },
   { group: "Italiano · Movimenti", title: "Neorealismo", path: "Sto-Ita/italiano/movimenti/06-neorealismo.md" },
   { group: "Italiano · Movimenti", title: "Linea antinovecentista", path: "Sto-Ita/italiano/movimenti/07-linea-antinovecentista.md" },
+  { group: "Italiano", title: "Mappe visive italiano", path: "Sto-Ita/italiano/Mappe-visive.md" },
   { group: "Italiano", title: "Checklist italiano", path: "Sto-Ita/italiano/Checklist-Ita.md" },
   { group: "Educazione civica", title: "L'Unione Europea", path: "Educazione civica/Europa.md" },
   { group: "Educazione civica", title: "Il Manifesto di Ventotene", sub: "Spinelli, Rossi", path: "Educazione civica/Manifesto-di-Ventotene.md" },
@@ -159,6 +162,20 @@ function renderMarkdown(markdown) {
   while (i < lines.length) {
     const line = lines[i];
     const trimmed = line.trim();
+
+    if (trimmed === ":::html") {
+      closeP();
+      closeL();
+      const htmlLines = [];
+      i += 1;
+      while (i < lines.length && lines[i].trim() !== ":::") {
+        htmlLines.push(lines[i]);
+        i += 1;
+      }
+      out.push(htmlLines.join("\n"));
+      if (i < lines.length && lines[i].trim() === ":::") i += 1;
+      continue;
+    }
 
     if (trimmed.startsWith("```")) {
       if (inCode) {
