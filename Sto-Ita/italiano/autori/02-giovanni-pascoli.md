@@ -1,3 +1,8 @@
+---
+tags:
+  - Ita
+---
+
 # Giovanni Pascoli
 
 ## 1. Vita
@@ -34,7 +39,7 @@ Dentro ogni uomo vive un **fanciullo invisibile**. È la parte infantile che con
 
 ### Il poeta è il fanciullino
 
-Pascoli scrive: "Il poeta è il fanciullino che fa sentire la sua voce in noi". Il poeta non è un superuomo (come per D'Annunzio), non è un vate civile, non è uno scienziato sociale (come per i veristi). È un veggente umile, capace di accedere a una conoscenza che non passa per la ragione.
+Pascoli scrive: "Il poeta è il fanciullino che fa sentire la sua voce in noi". Il poeta non è un superuomo (come per [[03-gabriele-dannunzio|D'Annunzio]]), non è un vate civile, non è uno scienziato sociale (come per i veristi). È un veggente umile, capace di accedere a una conoscenza che non passa per la ragione.
 
 ### Cosa fa il fanciullino
 
@@ -223,11 +228,11 @@ Entrambi sono i due poli del Decadentismo italiano. Insieme rappresentano le due
 
 ## Collegamenti
 
-- **Decadentismo italiano**: insieme a D'Annunzio è uno dei due grandi poeti decadenti.
+- **Movimento di appartenenza**: [[02-decadentismo-simbolismo-estetismo|Decadentismo, Simbolismo ed Estetismo]] — Pascoli e [[03-gabriele-dannunzio|D'Annunzio]] sono i due grandi poeti decadenti italiani.
 - **Simbolismo**: linea Baudelaire-Verlaine-Mallarmé. Pascoli porta in Italia la poesia delle corrispondenze segrete.
-- **Freud**: anticipazione tematica di nido violato, sessualità rimossa, simbologia onirica (digitale purpurea).
+- **Freud**: anticipazione tematica di nido violato, sessualità rimossa, simbologia onirica (*Digitale purpurea*).
 - **Contini, *Il linguaggio di Pascoli***: saggio critico fondamentale, considera Pascoli il primo poeta italiano moderno.
-- **Ungaretti**: erede della linea pascoliana per la valorizzazione della parola breve, essenziale, fonicamente carica.
+- **[[06-giuseppe-ungaretti|Ungaretti]]**: erede della linea pascoliana per la valorizzazione della parola breve, essenziale, fonicamente carica (cfr. [[05-ermetismo|Ermetismo]]).
 
 ## Parole chiave
 

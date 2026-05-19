@@ -34,3 +34,13 @@ __pycache__/
 *.swp
 *.swo
 *~
+
+# Obsidian — stato runtime e binari plugin fuori dal repo,
+# la lista plugin (community-plugins.json) basta a reinstallarli
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.obsidian/plugins/*/data.json
+.obsidian/plugins/*/main.js
+.obsidian/plugins/*/styles.css
+.trash/

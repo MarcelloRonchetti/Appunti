@@ -1,3 +1,8 @@
+---
+tags:
+  - Ita
+---
+
 # Come il vento cucito alla terra
 
 ## Scheda

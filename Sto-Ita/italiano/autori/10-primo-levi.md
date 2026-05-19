@@ -1,3 +1,8 @@
+---
+tags:
+  - Ita
+---
+
 # Primo Levi
 
 ## 1. Vita
@@ -148,7 +153,7 @@ La sua specificità sta in alcuni tratti distintivi. Anzitutto Levi non si limit
 
 ## Collegamenti
 
-- **Modulo 8**: scrittori della memoria e narrativa italiana del dopoguerra.
+- **[[06-neorealismo|Neorealismo]] e narrativa del dopoguerra**: scrittori della memoria, fra cui Levi accanto a [[08-italo-calvino|Calvino]] e [[09-beppe-fenoglio|Fenoglio]] (Resistenza), Vittorini, Pavese.
 - **Educazione civica**: lo sterminio degli ebrei, leggi razziali, processo di Norimberga.
 - **Ebraismo italiano**: Levi insieme a Bassani, Ginzburg, Morante è una delle voci della memoria ebraica italiana.
 - **Resistenza**: Levi vi partecipa brevemente prima di essere catturato.

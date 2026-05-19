@@ -1,3 +1,8 @@
+---
+tags:
+  - Ita
+---
+
 # Il ritratto di Dorian Gray
 
 ## Scheda

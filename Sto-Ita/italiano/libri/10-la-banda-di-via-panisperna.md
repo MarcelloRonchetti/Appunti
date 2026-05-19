@@ -1,3 +1,8 @@
+---
+tags:
+  - Ita
+---
+
 # La banda di via Panisperna. Fermi, Majorana e i fisici che hanno cambiato la storia
 
 ## Scheda

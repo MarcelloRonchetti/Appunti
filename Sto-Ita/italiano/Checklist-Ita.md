@@ -1,3 +1,8 @@
+---
+tags:
+  - Ita
+---
+
 # Checklist italiano
 
 Questa checklist segue le lezioni svolte e serve per controllare rapidamente cosa ripassare.

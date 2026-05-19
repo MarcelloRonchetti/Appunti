@@ -1,3 +1,8 @@
+---
+tags:
+  - Ita
+---
+
 # Giovanni Verga
 
 ## 1. Vita
@@ -180,12 +185,13 @@ Le tecniche di Verga si possono sintetizzare in pochi tratti convergenti. Il **d
 
 ## Collegamenti
 
+- **Movimento di appartenenza**: [[01-positivismo-naturalismo-verismo|Positivismo, Naturalismo e Verismo]] — Verga ne è il maggiore esponente italiano.
 - **Naturalismo francese**: osservazione della realtà, ma Verga si distacca su impersonalità e pessimismo.
 - **Capuana**: teorico del Verismo, modello di romanzo psicologico verista (*Il Marchese di Roccaverdina*).
 - **Positivismo e darwinismo sociale**: lotta per la vita, selezione naturale.
 - **Questione meridionale**: arretratezza del Sud postunitario, latifondo, emigrazione.
-- **Romanzo della crisi**: Verga prepara, con la dissoluzione della famiglia e il pessimismo, il romanzo novecentesco di Svevo e Pirandello.
-- **Neorealismo**: ripresa dell'attenzione agli umili, del linguaggio popolare, del paesaggio meridionale (Verga modello per Vittorini, Pavese).
+- **[[04-romanzo-della-crisi|Romanzo della crisi]]**: Verga prepara, con la dissoluzione della famiglia e il pessimismo, il romanzo novecentesco di [[04-italo-svevo|Svevo]] e [[05-luigi-pirandello|Pirandello]].
+- **[[06-neorealismo|Neorealismo]]**: ripresa dell'attenzione agli umili, del linguaggio popolare, del paesaggio meridionale (Verga modello per Vittorini, Pavese; cfr. [[08-italo-calvino|Calvino]], [[09-beppe-fenoglio|Fenoglio]]).
 
 ## Parole chiave
 

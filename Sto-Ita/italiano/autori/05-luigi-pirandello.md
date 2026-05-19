@@ -1,3 +1,8 @@
+---
+tags:
+  - Ita
+---
+
 # Luigi Pirandello
 
 ## 1. Vita
@@ -10,7 +15,7 @@ Il nome del luogo assume quasi un valore simbolico: tutta la sua opera sarà seg
 
 Pirandello studia prima in Sicilia, poi a Roma e infine a Bonn, in Germania, dove si laurea con una tesi sul dialetto agrigentino.
 
-In questi anni entra in contatto con la cultura verista siciliana, l'ambiente di Verga e Capuana, da cui eredita l'attenzione per la realtà regionale, i ceti popolari e il rigore narrativo, anche se poi se ne distaccherà rifiutando l'oggettività. Allo stesso tempo si apre al pensiero europeo, alla filosofia, alla scienza e alla psicologia di fine Ottocento, in particolare alla cultura tedesca e francese che mette in crisi l'idea positivista di una realtà stabile e conoscibile. Da queste letture nasce la sua adesione alla filosofia del relativismo, cioè alla convinzione che non esistano verità assolute ma solo punti di vista soggettivi, idea che porterà al cuore della propria poetica. Decisivo è anche l'incontro con gli studi psicologici sull'identità, in particolare le ricerche di fine secolo di Binet e Janet sulla pluralità dell'io e sulla personalità multipla, alla base della sua visione dell'individuo come "uno, nessuno e centomila".
+In questi anni entra in contatto con la cultura verista siciliana, l'ambiente di [[01-giovanni-verga|Verga]] e Capuana, da cui eredita l'attenzione per la realtà regionale, i ceti popolari e il rigore narrativo, anche se poi se ne distaccherà rifiutando l'oggettività. Allo stesso tempo si apre al pensiero europeo, alla filosofia, alla scienza e alla psicologia di fine Ottocento, in particolare alla cultura tedesca e francese che mette in crisi l'idea positivista di una realtà stabile e conoscibile. Da queste letture nasce la sua adesione alla filosofia del relativismo, cioè alla convinzione che non esistano verità assolute ma solo punti di vista soggettivi, idea che porterà al cuore della propria poetica. Decisivo è anche l'incontro con gli studi psicologici sull'identità, in particolare le ricerche di fine secolo di Binet e Janet sulla pluralità dell'io e sulla personalità multipla, alla base della sua visione dell'individuo come "uno, nessuno e centomila".
 
 Nel 1893 pubblica il romanzo **L'esclusa**.
 
@@ -42,7 +47,7 @@ Muore a Roma nel 1936. Aveva chiesto un funerale semplice, senza cerimonie solen
 
 ## 2. Pensiero e poetica
 
-Pirandello è uno degli autori più importanti del **romanzo della crisi** e del teatro novecentesco. La sua opera nasce da alcune idee fondamentali che si intrecciano fra loro.
+Pirandello è uno degli autori più importanti del **[[04-romanzo-della-crisi|romanzo della crisi]]** e del teatro novecentesco. La sua opera nasce da alcune idee fondamentali che si intrecciano fra loro.
 
 Anzitutto la realtà non è unica: ciò che chiamiamo "realtà" cambia secondo il punto di vista di chi guarda, e ogni osservatore vede una propria versione dei fatti. Anche l'io non è stabile, perché l'identità personale non è un nucleo fisso ma una somma di stati d'animo, ricordi e ruoli che mutano nel tempo. Per stare nella società siamo costretti a indossare maschere, ad assumere ruoli (padre, professionista, cittadino) che nascondono o deformano l'io autentico, e la società stessa imprigiona la vita in forme rigide, fissando convenzioni, leggi, famiglia e lavoro in strutture che la soffocano. Da qui l'idea che non esista una verità assoluta: ognuno ha la propria, e tentare di imporne una unica diventa violenza o illusione (vedi *Così è (se vi pare)*). Infine, secondo il principio dell'umorismo, il comico nasconde spesso una sofferenza tragica: ciò che ci fa ridere, se osservato in profondità, rivela un dolore o una contraddizione.
 
@@ -294,8 +299,9 @@ La follia diventa una maschera scelta, una protezione dalla vita e dalle sue fal
 
 ## Collegamenti
 
-- **Romanzo della crisi**: identità instabile, narratore soggettivo, antieroe.
-- **Svevo**: crisi dell'io e autoinganno.
+- **Movimento di appartenenza**: [[04-romanzo-della-crisi|Romanzo della crisi]] — identità instabile, narratore soggettivo, antieroe.
+- **[[04-italo-svevo|Svevo]]**: crisi dell'io e autoinganno, l'altro grande autore italiano del romanzo della crisi.
+- **[[01-giovanni-verga|Verga]] e Capuana**: matrice verista siciliana, da cui Pirandello eredita l'attenzione regionale ma di cui rifiuta l'oggettività.
 - **Bergson**: vita come flusso.
 - **Simmel**: relativismo conoscitivo.
 - **Teatro moderno**: rottura della quarta parete e metateatro.

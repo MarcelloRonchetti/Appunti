@@ -1,3 +1,8 @@
+---
+tags:
+  - Ita
+---
+
 # Il Gattopardo
 
 ## Scheda

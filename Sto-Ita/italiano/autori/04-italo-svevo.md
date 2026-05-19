@@ -1,3 +1,8 @@
+---
+tags:
+  - Ita
+---
+
 # Italo Svevo
 
 ## 1. Vita
@@ -34,13 +39,13 @@ Nel 1905 conosce **James Joyce**, che lavora a Trieste come insegnante d'inglese
 
 ### Ultimi anni
 
-Nel 1923 Svevo pubblica **La coscienza di Zeno**, il suo romanzo più importante. Inizialmente non ottiene grande successo in Italia, ma viene valorizzato da Joyce e poi da **Eugenio Montale**, che contribuisce a farlo conoscere alla critica italiana.
+Nel 1923 Svevo pubblica **La coscienza di Zeno**, il suo romanzo più importante. Inizialmente non ottiene grande successo in Italia, ma viene valorizzato da Joyce e poi da **[[07-eugenio-montale|Eugenio Montale]]**, che contribuisce a farlo conoscere alla critica italiana.
 
 Svevo muore nel 1928 in seguito a un incidente stradale.
 
 ## 2. Svevo e il romanzo della crisi
 
-Svevo è uno dei principali autori italiani del **romanzo della crisi**, insieme a Pirandello. Le sue innovazioni si concentrano su pochi punti decisivi. Il protagonista è un **inetto**, antieroe per eccellenza, prodotto della "**noluntas**" di Schopenhauer, cioè della non-volontà, dell'incapacità di volere e quindi di agire. Il romanzo diventa un **antiromanzo** o **romanzo psicologico-analitico**: non valgono i fatti o gli avvenimenti, ma come vengono vissuti e percepiti dal personaggio. Il narratore non è più affidabile: la verità è quella della coscienza distorta del protagonista. Anche il tempo non è più cronologico ma soggettivo: la memoria associativa sostituisce la trama lineare.
+Svevo è uno dei principali autori italiani del **[[04-romanzo-della-crisi|romanzo della crisi]]**, insieme a [[05-luigi-pirandello|Pirandello]]. Le sue innovazioni si concentrano su pochi punti decisivi. Il protagonista è un **inetto**, antieroe per eccellenza, prodotto della "**noluntas**" di Schopenhauer, cioè della non-volontà, dell'incapacità di volere e quindi di agire. Il romanzo diventa un **antiromanzo** o **romanzo psicologico-analitico**: non valgono i fatti o gli avvenimenti, ma come vengono vissuti e percepiti dal personaggio. Il narratore non è più affidabile: la verità è quella della coscienza distorta del protagonista. Anche il tempo non è più cronologico ma soggettivo: la memoria associativa sostituisce la trama lineare.
 
 Il personaggio centrale della narrativa sveviana è l'**inetto**.
 
@@ -62,7 +67,7 @@ Per Svevo la funzione della letteratura è precisa: **conoscere se stessi**, app
 
 L'inetto svevianno è anche **figura dell'intellettuale moderno**. La sua esclusione dal mondo borghese gli consente di osservarlo con distacco, e gli permette di smascherare ciò che sembra vincente ma non lo è (i borghesi "sani" che in realtà sono cristallizzati). È personaggio raffinato e colto ma con una percezione minima di sé, marginale nella società; non promuove ideali, non propone riscatto, non insegna: è solo **descrizione del reale**. Per sopravvivere bisogna adattarsi, non combattere, e la letteratura testimonia, non insegna.
 
-In questo Svevo si distingue dal poeta-vate (D'Annunzio) e dall'esteta: il suo intellettuale non è guida né esempio, è solo testimone lucido della crisi.
+In questo Svevo si distingue dal poeta-vate ([[03-gabriele-dannunzio|D'Annunzio]]) e dall'esteta: il suo intellettuale non è guida né esempio, è solo testimone lucido della crisi.
 
 ## 3. Poetica e pensiero
 
@@ -233,11 +238,12 @@ Il romanzo si chiude con l'immagine di un'esplosione finale, un ordigno capace d
 
 ## 9. Collegamenti
 
-- **Romanzo della crisi**: Zeno è antieroe, malato, narratore inattendibile.
+- **Movimento di appartenenza**: [[04-romanzo-della-crisi|Romanzo della crisi]] — Zeno è antieroe, malato, narratore inattendibile.
 - **Freud**: psicoanalisi, inconscio, sogni, rapporto padre-figlio.
-- **Pirandello**: crisi dell'identità e relatività della verità.
+- **[[05-luigi-pirandello|Pirandello]]**: crisi dell'identità e relatività della verità.
 - **Joyce**: rinnovamento del romanzo europeo e attenzione alla coscienza.
-- **Montale**: contribuisce alla riscoperta critica di Svevo.
+- **[[07-eugenio-montale|Montale]]**: contribuisce alla riscoperta critica di Svevo.
+- **[[01-giovanni-verga|Verga]]**: il pessimismo verghiano prepara la dissoluzione novecentesca della famiglia e dell'io.
 
 ## Parole chiave
 

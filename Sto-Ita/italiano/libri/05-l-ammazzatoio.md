@@ -1,3 +1,8 @@
+---
+tags:
+  - Ita
+---
+
 # L'Ammazzatoio (L'Assommoir)
 
 ## Scheda

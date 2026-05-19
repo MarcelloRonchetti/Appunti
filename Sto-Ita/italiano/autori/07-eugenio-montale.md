@@ -1,3 +1,8 @@
+---
+tags:
+  - Ita
+---
+
 # Eugenio Montale
 
 ## 1. Vita
@@ -18,7 +23,7 @@ Nel 1925 pubblica la prima raccolta, **Ossi di seppia**.
 
 Sempre nel 1925 firma il **Manifesto degli intellettuali antifascisti** promosso da Benedetto Croce. Non è un militante politico attivo, ma resta estraneo al fascismo.
 
-Nel 1925 contribuisce anche alla riscoperta di **Italo Svevo**, scrivendo un importante articolo su di lui.
+Nel 1925 contribuisce anche alla riscoperta di **[[04-italo-svevo|Italo Svevo]]**, scrivendo un importante articolo su di lui.
 
 Nel 1927 si trasferisce a Firenze. Nel 1929 diventa direttore del **Gabinetto Vieusseux**, importante istituzione culturale. Nel 1938 perde l'incarico perché non iscritto al Partito fascista.
 
@@ -63,7 +68,7 @@ In questo Montale si collega a Leopardi: entrambi vedono il dolore come parte es
 
 ### Il poeta non è un vate
 
-Montale rifiuta l'idea dannunziana del poeta-vate. Il poeta, per lui, non può offrire verità assolute, perché non possiede una conoscenza superiore da trasmettere e la realtà stessa è opaca e indecifrabile; non può guidare le masse, e rifiuta perciò il ruolo profetico e politico che D'Annunzio si era attribuito, considerandolo falso e retorico; non può rivelare un senso definitivo, dato che la poesia può solo cogliere indizi parziali e mai dare una sintesi conclusiva del mondo; non può nemmeno usare parole solenni e risolutive, e rinuncia al linguaggio aulico e musicale a favore di una lingua asciutta, prosastica, antieroica.
+Montale rifiuta l'idea dannunziana del poeta-vate (cfr. [[03-gabriele-dannunzio|D'Annunzio]]). Il poeta, per lui, non può offrire verità assolute, perché non possiede una conoscenza superiore da trasmettere e la realtà stessa è opaca e indecifrabile; non può guidare le masse, e rifiuta perciò il ruolo profetico e politico che D'Annunzio si era attribuito, considerandolo falso e retorico; non può rivelare un senso definitivo, dato che la poesia può solo cogliere indizi parziali e mai dare una sintesi conclusiva del mondo; non può nemmeno usare parole solenni e risolutive, e rinuncia al linguaggio aulico e musicale a favore di una lingua asciutta, prosastica, antieroica.
 
 Può solo dire ciò che non è, ciò che non vuole, ciò che manca.
 
@@ -243,16 +248,17 @@ Il testo rovescia l'idea tradizionale della donna guida. Mosca non è Beatrice o
 
 ## 13. Montale e la linea antinovecentista
 
-Montale non è un poeta semplice da classificare. È vicino alla **linea antinovecentista** per più ragioni: per il rifiuto della retorica, dato che rinuncia ai toni alti, alla musicalità sontuosa e alle pose enfatiche tipiche di D'Annunzio; per l'uso di oggetti quotidiani, perché porta in poesia muri, orti, limoni, cocci, formiche, contro la nobiltà dei temi tradizionali; per il tono antieroico, in cui il soggetto poetico non è un eroe né un profeta, ma un uomo qualunque che osserva e dubita; per la sfiducia nel poeta-vate, di cui rifiuta il ruolo di guida spirituale o politica delle masse; e per il linguaggio aspro e concreto, che predilige parole secche, anche tecniche o rare, evitando il "bel canto" lirico.
+Montale non è un poeta semplice da classificare. È vicino alla **[[07-linea-antinovecentista|linea antinovecentista]]** per più ragioni: per il rifiuto della retorica, dato che rinuncia ai toni alti, alla musicalità sontuosa e alle pose enfatiche tipiche di D'Annunzio; per l'uso di oggetti quotidiani, perché porta in poesia muri, orti, limoni, cocci, formiche, contro la nobiltà dei temi tradizionali; per il tono antieroico, in cui il soggetto poetico non è un eroe né un profeta, ma un uomo qualunque che osserva e dubita; per la sfiducia nel poeta-vate, di cui rifiuta il ruolo di guida spirituale o politica delle masse; e per il linguaggio aspro e concreto, che predilige parole secche, anche tecniche o rare, evitando il "bel canto" lirico.
 
 Ma è anche vicino alla poesia moderna europea per la densità simbolica e il correlativo oggettivo.
 
 ## Collegamenti
 
+- **Movimento di appartenenza**: [[07-linea-antinovecentista|Linea antinovecentista]] — chiarezza relativa, oggetti concreti, antiretorica.
 - **Leopardi**: pessimismo e dolore universale.
-- **Ermetismo**: poesia concentrata, ma Montale non è pienamente ermetico.
-- **Linea antinovecentista**: chiarezza relativa, oggetti concreti, antiretorica.
-- **Svevo**: Montale contribuisce alla sua riscoperta.
+- **[[05-ermetismo|Ermetismo]]**: poesia concentrata, ma Montale non è pienamente ermetico (cfr. [[06-giuseppe-ungaretti|Ungaretti]]).
+- **[[04-italo-svevo|Svevo]]**: Montale contribuisce alla sua riscoperta nel 1925.
+- **[[03-gabriele-dannunzio|D'Annunzio]]**: rifiutato come modello del poeta-vate.
 - **Eliot**: correlativo oggettivo.
 - **Dante**: figura di Clizia e allegorismo.
 

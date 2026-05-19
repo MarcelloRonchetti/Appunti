@@ -1,3 +1,8 @@
+---
+tags:
+  - Ita
+---
+
 # Niente di nuovo sul fronte occidentale
 
 ## Scheda

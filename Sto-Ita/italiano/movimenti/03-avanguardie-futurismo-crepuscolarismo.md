@@ -1,3 +1,8 @@
+---
+tags:
+  - Ita
+---
+
 # Avanguardie, Futurismo e Crepuscolarismo
 
 ## 1. Le avanguardie storiche
@@ -72,7 +77,7 @@ Il testo mette in crisi l'idea tradizionale di poesia: invece di comunicare un m
 
 Il **Crepuscolarismo** è una tendenza poetica italiana dei primi anni del Novecento.
 
-Il termine richiama il "crepuscolo", cioè una luce debole, di fine giornata. Indica una poesia dimessa, malinconica, antieroica, lontana dai toni solenni di D'Annunzio.
+Il termine richiama il "crepuscolo", cioè una luce debole, di fine giornata. Indica una poesia dimessa, malinconica, antieroica, lontana dai toni solenni di [[03-gabriele-dannunzio|D'Annunzio]].
 
 I crepuscolari non vogliono essere poeti-vate. Rappresentano piccole cose quotidiane, oggetti minimi e insignificanti (una tazza, un fiore secco, un orologio) al posto di temi alti e solenni; ambienti provinciali, piccole città lontane dalla vita mondana e culturale, fatte di silenzio e abitudine; case modeste, interni borghesi senza lusso, con mobili vecchi, salotti polverosi e atmosfere stantie; oggetti comuni come cianfrusaglie, soprammobili e fotografie sbiadite, quelle che Gozzano chiama "buone cose di pessimo gusto". Vi torna spesso la malattia, soprattutto la tubercolosi (di cui muoiono Gozzano e Corazzini), vissuta come condizione esistenziale e simbolo di fragilità, e la noia, sensazione di vuoto e di tempo che non passa, opposta all'energia futurista. Domina poi un'ironia di fondo, distacco sorridente dal proprio ruolo di poeta e dalla retorica letteraria, un modo per non prendersi sul serio, e un profondo senso di inadeguatezza: il poeta si sente inutile, fuori posto rispetto alla società moderna e incapace di una poesia "grande".
 

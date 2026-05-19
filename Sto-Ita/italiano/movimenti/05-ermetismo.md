@@ -1,3 +1,8 @@
+---
+tags:
+  - Ita
+---
+
 # L'Ermetismo
 
 ## 1. Contesto storico e culturale
@@ -34,7 +39,7 @@ Un'altra influenza è la poesia metafisica europea, in particolare **T. S. Eliot
 
 Da Eliot deriva l'idea del **correlativo oggettivo**, cioè un oggetto, una situazione o un'immagine concreta che esprime uno stato d'animo o una condizione esistenziale.
 
-Questo concetto sarà molto importante anche per Montale, pur non essendo Montale un ermetico in senso stretto.
+Questo concetto sarà molto importante anche per [[07-eugenio-montale|Montale]], pur non essendo Montale un ermetico in senso stretto.
 
 ## 3. Caratteristiche della poesia ermetica
 
@@ -76,7 +81,7 @@ I temi più frequenti sono la solitudine, il dolore, la memoria e la precarietà
 
 ## 4. Ungaretti come precursore
 
-**Giuseppe Ungaretti** è considerato un precursore dell'Ermetismo, soprattutto per la prima fase della sua poesia, quella del *Porto sepolto* e dell'*Allegria*.
+**[[06-giuseppe-ungaretti|Giuseppe Ungaretti]]** è considerato un precursore dell'Ermetismo, soprattutto per la prima fase della sua poesia, quella del *Porto sepolto* e dell'*Allegria*.
 
 Sono molti gli elementi che lo avvicinano all'Ermetismo: l'uso della parola essenziale, i versi brevissimi, l'abolizione della punteggiatura, il valore dei silenzi, le analogie improvvise, la ricerca di "schegge" di verità e l'idea della poesia come scavo interiore.
 
@@ -118,7 +123,7 @@ Questa autonomia non significa indifferenza totale alla storia. Significa piutto
 
 L'Ermetismo punta su una lingua concentrata, simbolica e difficile.
 
-La **linea antinovecentista**, invece, preferisce la chiarezza e la discorsività, un tono quotidiano, il realismo psicologico e un lessico più vicino al parlato.
+La **[[07-linea-antinovecentista|linea antinovecentista]]**, invece, preferisce la chiarezza e la discorsività, un tono quotidiano, il realismo psicologico e un lessico più vicino al parlato.
 
 Autori come **Saba** e, in parte, **Montale** non appartengono pienamente all'Ermetismo, anche se condividono con il Novecento la crisi dell'uomo moderno.
 

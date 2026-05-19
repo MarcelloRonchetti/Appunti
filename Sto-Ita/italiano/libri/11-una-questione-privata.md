@@ -1,3 +1,8 @@
+---
+tags:
+  - Ita
+---
+
 # Una questione privata
 
 ## Scheda

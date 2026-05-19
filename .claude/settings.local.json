@@ -7,7 +7,14 @@
       "Bash(tar -tf pkg)",
       "Bash(tar -xf pkg)",
       "Bash(/var/data/python/bin/html5validator /home/marci/Appunti/Sistemi/simulazione_2024.html)",
-      "Bash(python3 -c ' *)"
+      "Bash(python3 -c ' *)",
+      "Bash(ls ~/.claude/)",
+      "Read(//home/marci/.claude/**)",
+      "Bash(git ls-remote *)",
+      "Bash(claude mcp *)",
+      "Bash(ls -la /home/marci/Appunti/.obsidian 2>&1 | head -20; echo \"---\"; find /home/marci -maxdepth 4 -name \".obsidian\" -type d 2>/dev/null | head -10)",
+      "Read(//home/marci/**)",
+      "Bash(git check-ignore *)"
     ]
   }
 }

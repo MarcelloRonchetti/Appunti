@@ -1,3 +1,8 @@
+---
+tags:
+  - Ita
+---
+
 # Positivismo, Naturalismo e Verismo
 
 ## 0. Contesto storico-economico
@@ -8,7 +13,7 @@ Nella **prima metà dell'Ottocento** si afferma in Europa una **borghesia liberi
 
 Verso la fine dell'Ottocento la borghesia liberista evolve in **borghesia imperialista**: gli Stati europei adottano una politica aggressiva di concorrenza tra nazioni, con corsa alle colonie in Africa e Asia, sviluppo industriale-bellico, tensioni che porteranno alla **prima guerra mondiale**. Lo sfruttamento delle masse contadine e operaie peggiora; le condizioni di vita nei quartieri popolari sono dure.
 
-In Italia, dopo l'unità del 1861, è particolarmente evidente la **questione meridionale**: il Sud, povero e arretrato, si trova ad affrontare un'unificazione che lo penalizza economicamente. È in questo contesto che Verga, Capuana e De Roberto raccontano la Sicilia.
+In Italia, dopo l'unità del 1861, è particolarmente evidente la **questione meridionale**: il Sud, povero e arretrato, si trova ad affrontare un'unificazione che lo penalizza economicamente. È in questo contesto che [[01-giovanni-verga|Verga]], Capuana e De Roberto raccontano la Sicilia.
 
 ## 1. Il Positivismo
 
@@ -116,7 +121,7 @@ Si sviluppa soprattutto negli anni Settanta e Ottanta dell'Ottocento, in un'Ital
 
 Gli autori veristi più importanti sono:
 
-- **Giovanni Verga** (1840-1922): siciliano, è il maggiore scrittore verista; con i *Malavoglia* e *Mastro-don Gesualdo* fonda il "ciclo dei vinti", grande affresco della società italiana attraversata dalla "lotta per la vita".
+- **[[01-giovanni-verga|Giovanni Verga]]** (1840-1922): siciliano, è il maggiore scrittore verista; con i *Malavoglia* e *Mastro-don Gesualdo* fonda il "ciclo dei vinti", grande affresco della società italiana attraversata dalla "lotta per la vita".
 - **Luigi Capuana** (1839-1915): siciliano, principale **teorico del Verismo**. Nei saggi raccolti in *Per l'arte* (1885) elabora i principi del movimento, distaccandosi dal Naturalismo zoliano: in Italia il Verismo deve concentrarsi sulla **regionalità** (paesaggi, dialetti, mentalità locali), non sulla scienza astratta. Capuana è anche autore del romanzo *Il marchese di Roccaverdina* (1901), studio quasi clinico dell'ossessione e del rimorso, che anticipa il romanzo psicologico novecentesco.
 - **Federico De Roberto** (1861-1927): siciliano anch'egli, autore de *I Viceré*, grande romanzo storico-verista sulla decadenza di una famiglia nobile catanese durante il Risorgimento e l'Unità.
 

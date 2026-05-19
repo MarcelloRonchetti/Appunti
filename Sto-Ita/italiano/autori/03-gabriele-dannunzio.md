@@ -1,10 +1,15 @@
+---
+tags:
+  - Ita
+---
+
 # Gabriele D'Annunzio
 
 ## 1. Vita
 
 **Gabriele D'Annunzio** nasce a **Pescara nel 1863**. Vive una giovinezza precoce: a sedici anni pubblica già la prima raccolta di poesie (*Primo vere*) e a venti anni è celebre nei salotti romani.
 
-A differenza di Pascoli, vissuto come letterato appartato, D'Annunzio costruisce sin dall'inizio se stesso come **personaggio pubblico**. Vuole essere non solo scrittore, ma idolo delle folle, mito di massa, modello di vita. È il primo "intellettuale-celebrità" italiano nel senso moderno.
+A differenza di [[02-giovanni-pascoli|Pascoli]], vissuto come letterato appartato, D'Annunzio costruisce sin dall'inizio se stesso come **personaggio pubblico**. Vuole essere non solo scrittore, ma idolo delle folle, mito di massa, modello di vita. È il primo "intellettuale-celebrità" italiano nel senso moderno.
 
 ### Le tappe della vita
 
@@ -184,12 +189,12 @@ Nel programma è citata la **visita virtuale** al Vittoriale con lo storico d'ar
 
 ## Collegamenti
 
-- **Decadentismo europeo**: estetismo, simbolo, sensualità, crisi della morale borghese.
+- **Movimento di appartenenza**: [[02-decadentismo-simbolismo-estetismo|Decadentismo, Simbolismo ed Estetismo]] — estetismo, simbolo, sensualità, crisi della morale borghese.
 - **Huysmans, *A rebours***: Andrea Sperelli è il "cugino italiano" di Des Esseintes.
 - **Wilde, *Il ritratto di Dorian Gray***: stessa figura del dandy esteta.
 - **Nietzsche**: mito del superuomo, ripreso e semplificato.
-- **Pascoli**: contemporaneo, decadentismo opposto (intimo vs. spettacolare).
-- **Futurismo**: culto dell'azione, della velocità, della guerra.
+- **[[02-giovanni-pascoli|Pascoli]]**: contemporaneo, decadentismo opposto (intimo vs. spettacolare).
+- **[[03-avanguardie-futurismo-crepuscolarismo|Futurismo]]**: culto dell'azione, della velocità, della guerra.
 - **Fascismo**: linguaggio, rituali, estetica della politica.
 - **Notturno e prosa frammentaria**: anticipazione del Novecento.
 

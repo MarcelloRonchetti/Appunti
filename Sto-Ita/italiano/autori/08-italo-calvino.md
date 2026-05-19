@@ -1,3 +1,8 @@
+---
+tags:
+  - Ita
+---
+
 # Italo Calvino
 
 ## 1. Vita
@@ -44,9 +49,9 @@ Muore nel 1985.
 
 ## 2. Calvino e il Neorealismo
 
-Calvino esordisce nel clima del **Neorealismo**.
+Calvino esordisce nel clima del **[[06-neorealismo|Neorealismo]]**.
 
-Il Neorealismo nasce dal bisogno di raccontare la guerra, il secondo conflitto mondiale come esperienza traumatica vissuta in prima persona da scrittori-soldati e civili; la Resistenza, cioè la lotta partigiana 1943-45, materia centrale di romanzi come *Il sentiero dei nidi di ragno* o *Una questione privata* di Fenoglio; il dopoguerra, fatto di rovine, fame, smarrimento morale e tentativi di ricominciare dopo il fascismo; la povertà, le condizioni di miseria delle classi popolari, soprattutto contadine e operaie, raccontate senza filtri retorici; la rinascita civile, cioè la speranza nella ricostruzione democratica del Paese, di cui la letteratura si sente parte attiva; e infine le realtà popolari e marginali, voci, dialetti, mestieri e quartieri prima esclusi dalla letteratura "alta".
+Il Neorealismo nasce dal bisogno di raccontare la guerra, il secondo conflitto mondiale come esperienza traumatica vissuta in prima persona da scrittori-soldati e civili; la Resistenza, cioè la lotta partigiana 1943-45, materia centrale di romanzi come *Il sentiero dei nidi di ragno* o *Una questione privata* di [[09-beppe-fenoglio|Fenoglio]]; il dopoguerra, fatto di rovine, fame, smarrimento morale e tentativi di ricominciare dopo il fascismo; la povertà, le condizioni di miseria delle classi popolari, soprattutto contadine e operaie, raccontate senza filtri retorici; la rinascita civile, cioè la speranza nella ricostruzione democratica del Paese, di cui la letteratura si sente parte attiva; e infine le realtà popolari e marginali, voci, dialetti, mestieri e quartieri prima esclusi dalla letteratura "alta".
 
 Calvino però non è mai un neorealista puro. Fin dall'inizio unisce esperienza storica concreta, cioè i fatti vissuti della Resistenza ligure che fanno da base autobiografica del *Sentiero*; gusto fiabesco, con un tono da racconto popolare, luoghi magici e oggetti carichi di mistero (il sentiero dei nidi, la pistola di Pin); attenzione ai personaggi marginali, bambini, partigiani rozzi, figure imperfette, lontani dagli eroi celebrativi; ironia, una distanza leggera dal materiale narrato, che evita la retorica e mantiene lucidità; e cura della costruzione narrativa, segno di uno scrittore già consapevole dei meccanismi della finzione.
 
@@ -216,8 +221,10 @@ Resta costante il bisogno di osservare la realtà con precisione, anche quando u
 
 ## Collegamenti
 
-- **Neorealismo**: esordio, Resistenza, dopoguerra.
+- **Movimento di appartenenza**: [[06-neorealismo|Neorealismo]] — esordio, Resistenza, dopoguerra (poi superato verso il fantastico-allegorico).
 - **Resistenza**: esperienza biografica e tema del primo romanzo.
+- **[[09-beppe-fenoglio|Fenoglio]]** e *Una questione privata*: altro grande romanzo resistenziale, che Calvino definì "il romanzo che i neorealisti avevano sognato di scrivere".
+- **[[10-primo-levi|Primo Levi]]**: contemporaneo, altra voce della memoria del Novecento (Lager invece che Resistenza).
 - **Vittorini e Pavese**: ambiente Einaudi e letteratura impegnata.
 - **Fiaba e romanzo d'avventura**: componente non realistica del *Sentiero*.
 - **Oulipo**: fase combinatoria e sperimentale.

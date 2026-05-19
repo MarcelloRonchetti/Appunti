@@ -1,3 +1,8 @@
+---
+tags:
+  - Ita
+---
+
 # La linea antinovecentista
 
 ## 1. Definizione
@@ -9,11 +14,11 @@ Gli autori di questa linea cercano una poesia più chiara e più discorsiva, pi�
 Tra i nomi principali si possono ricordare:
 
 - **Umberto Saba**;
-- **Eugenio Montale**, almeno per alcuni aspetti;
+- **[[07-eugenio-montale|Eugenio Montale]]**, almeno per alcuni aspetti;
 - **Vincenzo Cardarelli**;
 - più avanti anche poeti come **Sandro Penna** e **Giorgio Caproni**.
 
-Negli appunti questa linea è presentata soprattutto in opposizione all'Ermetismo.
+Negli appunti questa linea è presentata soprattutto in opposizione all'[[05-ermetismo|Ermetismo]].
 
 ## 2. Contesto culturale
 

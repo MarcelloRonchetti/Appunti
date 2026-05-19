@@ -1,3 +1,8 @@
+---
+tags:
+  - Ita
+---
+
 # Il romanzo della crisi
 
 ## 1. Contesto storico e culturale
@@ -40,7 +45,7 @@ Albert **Einstein** con la **teoria della relatività** (ristretta 1905, general
 
 Le conseguenze culturali sono enormi. Cade innanzitutto il realismo oggettivo, perché se anche le grandezze fisiche sono relative all'osservatore allora anche la realtà sociale e psicologica perde la sua presunta oggettività; cade poi l'idea di un tempo lineare uguale per tutti, sostituita dall'esperienza soggettiva del tempo; e da qui nasce una sorta di legittimazione filosofica dei nuovi tipi di romanzo, fondati su tempi soggettivi, narratori parziali e spazi mentali.
 
-Pirandello cita esplicitamente Copernico ed Einstein come **distruttori dell'antropocentrismo**: l'uomo non è più al centro dell'universo, e perde le sue verità assolute.
+[[05-luigi-pirandello|Pirandello]] cita esplicitamente Copernico ed Einstein come **distruttori dell'antropocentrismo**: l'uomo non è più al centro dell'universo, e perde le sue verità assolute.
 
 ### Bergson
 
@@ -88,7 +93,7 @@ Il **monologo interiore** riporta pensieri, emozioni e associazioni del personag
 
 Il **flusso di coscienza** cerca di rappresentare il pensiero nel suo scorrere libero, disordinato e immediato. La tecnica è legata soprattutto a **James Joyce**, autore dell'*Ulisse*.
 
-Svevo non usa il flusso di coscienza puro come Joyce, ma costruisce una narrazione memoriale e psicoanalitica, fondata su ricordi, autoanalisi e contraddizioni.
+[[04-italo-svevo|Svevo]] non usa il flusso di coscienza puro come Joyce, ma costruisce una narrazione memoriale e psicoanalitica, fondata su ricordi, autoanalisi e contraddizioni.
 
 ## 4. Il nuovo protagonista: l'antieroe
 

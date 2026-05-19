@@ -1,3 +1,8 @@
+---
+tags:
+  - Ita
+---
+
 # Giuseppe Ungaretti
 
 ## 1. Vita
@@ -165,15 +170,16 @@ Per Ungaretti la poesia non è opera staccata, ma esistenza fatta parola. Ogni l
 
 ## 17. Ungaretti e l'Ermetismo
 
-Ungaretti è considerato un **precursore dell'Ermetismo**. Lo anticipano la parola essenziale, il verso breve, l'uso dell'analogia, il valore del silenzio, la riduzione della sintassi e la ricerca di verità interiori più che descrittive. Tuttavia Ungaretti non è soltanto ermetico: la sua poesia nasce da un'esperienza concreta e autobiografica, soprattutto la guerra, e questo la distingue dagli sviluppi più astratti della corrente.
+Ungaretti è considerato un **precursore dell'[[05-ermetismo|Ermetismo]]**. Lo anticipano la parola essenziale, il verso breve, l'uso dell'analogia, il valore del silenzio, la riduzione della sintassi e la ricerca di verità interiori più che descrittive. Tuttavia Ungaretti non è soltanto ermetico: la sua poesia nasce da un'esperienza concreta e autobiografica, soprattutto la guerra, e questo la distingue dagli sviluppi più astratti della corrente.
 
 ## Collegamenti
 
-- **Ermetismo**: parola pura, analogia, essenzialità.
+- **Movimento di appartenenza**: [[05-ermetismo|Ermetismo]] — parola pura, analogia, essenzialità (Ungaretti ne è il precursore).
 - **Prima guerra mondiale**: esperienza decisiva della trincea.
 - **Leopardi**: dolore universale, rapporto finito/infinito.
 - **Simbolismo francese**: poesia come rivelazione.
-- **Montale**: entrambi rinnovano la poesia italiana, ma con esiti diversi.
+- **[[02-giovanni-pascoli|Pascoli]]**: linea della parola breve, essenziale, fonicamente carica, ereditata da Ungaretti.
+- **[[07-eugenio-montale|Montale]]**: entrambi rinnovano la poesia italiana, ma con esiti diversi (Montale appartiene alla [[07-linea-antinovecentista|linea antinovecentista]]).
 
 ## Parole chiave
 

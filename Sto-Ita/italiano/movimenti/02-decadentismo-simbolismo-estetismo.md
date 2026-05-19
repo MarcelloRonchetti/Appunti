@@ -1,3 +1,8 @@
+---
+tags:
+  - Ita
+---
+
 # Decadentismo, Simbolismo ed Estetismo
 
 ## 1. La crisi del Positivismo
@@ -22,7 +27,7 @@ I decadenti pensano che la realtà visibile non basti. Dietro le cose esistono s
 
 In Europa il Decadentismo si sviluppa già dagli anni Sessanta-Settanta dell'Ottocento (Baudelaire, *I fiori del male*, 1857). In **Italia**, invece, si afferma più tardi, dagli anni Ottanta-Novanta, per due ragioni: l'economia italiana procede più a rilento, l'industrializzazione e la modernizzazione sono più tardive; inoltre il potere culturale è detenuto da una ristretta **élite classicista** (Carducci e i suoi seguaci) che resiste al rinnovamento.
 
-I due grandi decadenti italiani sono **Pascoli** e **D'Annunzio**: il primo sviluppa un decadentismo "del nido", intimo e dimesso; il secondo un decadentismo "del Vittoriale", spettacolare ed estetizzante.
+I due grandi decadenti italiani sono **[[02-giovanni-pascoli|Pascoli]]** e **[[03-gabriele-dannunzio|D'Annunzio]]**: il primo sviluppa un decadentismo "del nido", intimo e dimesso; il secondo un decadentismo "del Vittoriale", spettacolare ed estetizzante.
 
 ## 3. Caratteristiche del Decadentismo
 
@@ -117,7 +122,7 @@ Il romanzo mostra un punto estremo del Decadentismo: l'artificio viene preferito
 
 ## 12. D'Annunzio e l'estetismo italiano
 
-In Italia l'Estetismo trova la sua espressione più evidente in **Gabriele D'Annunzio**, soprattutto nel romanzo *Il piacere*.
+In Italia l'Estetismo trova la sua espressione più evidente in **[[03-gabriele-dannunzio|Gabriele D'Annunzio]]**, soprattutto nel romanzo *Il piacere*.
 
 Il protagonista Andrea Sperelli vuole fare della propria vita un'opera d'arte, ma questo culto della bellezza lo rende incapace di vivere rapporti autentici. L'estetismo dannunziano è quindi affascinante ma anche fragile: dietro l'eleganza si nasconde una crisi morale.
 

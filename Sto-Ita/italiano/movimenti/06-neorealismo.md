@@ -1,3 +1,8 @@
+---
+tags:
+  - Ita
+---
+
 # Il Neorealismo
 
 ## 1. Contesto storico
@@ -16,7 +21,7 @@ Non bisogna però immaginarlo come una scuola con un programma unico. Il Neoreal
 
 Il termine "neorealismo" richiama un "nuovo realismo".
 
-Esistevano già forme di realismo nella letteratura e nel cinema (si pensi al Verismo di Verga), ma il Neorealismo italiano ha caratteristiche specifiche. Innanzitutto la materia è storica e recente: si raccontano la guerra, la Resistenza e il dopoguerra, cioè eventi appena vissuti dagli stessi autori e dal pubblico. I protagonisti sono popolari, perché si dà voce ai poveri, agli esclusi, ai lavoratori, ai bambini e ai partigiani, cioè a chi era stato escluso dalla letteratura "alta". Lo stile è antiretorico, perché rifiuta l'eleganza artificiale, la magniloquenza dannunziana e la retorica fascista in favore di una scrittura asciutta. Il realismo è anche ambientale e linguistico: si usano luoghi veri (strade, periferie, campagne) e linguaggi vicini al parlato, con dialetti e gergo. Infine, documento e racconto si mescolano: testimonianza diretta e invenzione narrativa convivono, così che la realtà venga organizzata in forma artistica senza perdere autenticità.
+Esistevano già forme di realismo nella letteratura e nel cinema (si pensi al [[01-positivismo-naturalismo-verismo|Verismo]] di [[01-giovanni-verga|Verga]]), ma il Neorealismo italiano ha caratteristiche specifiche. Innanzitutto la materia è storica e recente: si raccontano la guerra, la Resistenza e il dopoguerra, cioè eventi appena vissuti dagli stessi autori e dal pubblico. I protagonisti sono popolari, perché si dà voce ai poveri, agli esclusi, ai lavoratori, ai bambini e ai partigiani, cioè a chi era stato escluso dalla letteratura "alta". Lo stile è antiretorico, perché rifiuta l'eleganza artificiale, la magniloquenza dannunziana e la retorica fascista in favore di una scrittura asciutta. Il realismo è anche ambientale e linguistico: si usano luoghi veri (strade, periferie, campagne) e linguaggi vicini al parlato, con dialetti e gergo. Infine, documento e racconto si mescolano: testimonianza diretta e invenzione narrativa convivono, così che la realtà venga organizzata in forma artistica senza perdere autenticità.
 
 Nel cinema il termine circola già negli anni Trenta e Quaranta; viene associato anche al film *Ossessione* di **Luchino Visconti** (1943), spesso considerato un'anticipazione del Neorealismo.
 
@@ -85,7 +90,7 @@ Il titolo indica un punto di ripartenza traumatico: "anno zero" significa che do
 
 In letteratura il Neorealismo nasce dallo stesso bisogno di testimonianza.
 
-Dopo il fascismo, molti scrittori sentono di avere una responsabilità precisa. Devono raccontare la guerra, testimoniando bombardamenti, fame, fronte, prigionia e deportazione, esperienze di cui prima non si poteva parlare a causa della censura. Devono raccontare la Resistenza, fissando nella memoria collettiva la lotta partigiana e dando dignità letteraria a un'esperienza recente e fondativa per la Repubblica. Devono dare voce alle classi popolari, portando in letteratura contadini, operai, popolane e baraccati, prima esclusi o ridotti a macchiette. Vogliono inoltre contribuire alla ricostruzione morale del Paese, aiutando gli italiani a fare i conti con il fascismo, la guerra e la complicità, come premessa di una nuova coscienza civile. Cercano infine di superare l'isolamento degli intellettuali, uscendo dalla "torre d'avorio" della letteratura pura e partecipando a riviste, partiti e dibattiti pubblici (Vittorini sul *Politecnico*, Pavese e Calvino in Einaudi).
+Dopo il fascismo, molti scrittori sentono di avere una responsabilità precisa. Devono raccontare la guerra, testimoniando bombardamenti, fame, fronte, prigionia e deportazione, esperienze di cui prima non si poteva parlare a causa della censura. Devono raccontare la Resistenza, fissando nella memoria collettiva la lotta partigiana e dando dignità letteraria a un'esperienza recente e fondativa per la Repubblica. Devono dare voce alle classi popolari, portando in letteratura contadini, operai, popolane e baraccati, prima esclusi o ridotti a macchiette. Vogliono inoltre contribuire alla ricostruzione morale del Paese, aiutando gli italiani a fare i conti con il fascismo, la guerra e la complicità, come premessa di una nuova coscienza civile. Cercano infine di superare l'isolamento degli intellettuali, uscendo dalla "torre d'avorio" della letteratura pura e partecipando a riviste, partiti e dibattiti pubblici (Vittorini sul *Politecnico*, Pavese e [[08-italo-calvino|Calvino]] in Einaudi).
 
 Nasce la figura dell'**intellettuale impegnato**, che non si rifugia solo nella letteratura, ma partecipa al dibattito civile.
 
@@ -123,7 +128,7 @@ Calvino non presenta i partigiani come eroi perfetti. Il distaccamento del Dritt
 
 ### Beppe Fenoglio
 
-Fenoglio è uno degli autori più importanti della narrativa resistenziale.
+[[09-beppe-fenoglio|Fenoglio]] è uno degli autori più importanti della narrativa resistenziale.
 
 In *Una questione privata* la guerra partigiana si intreccia con una vicenda sentimentale: Milton cerca di capire se la donna amata, Fulvia, lo abbia tradito con l'amico Giorgio. La Resistenza resta centrale, ma viene vista attraverso una tensione privata, fatta di gelosia, memoria e ossessione.
 

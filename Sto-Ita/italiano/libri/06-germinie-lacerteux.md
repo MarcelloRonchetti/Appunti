@@ -1,3 +1,8 @@
+---
+tags:
+  - Ita
+---
+
 # Germinie Lacerteux
 
 ## Scheda

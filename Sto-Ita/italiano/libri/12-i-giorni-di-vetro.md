@@ -1,3 +1,8 @@
+---
+tags:
+  - Ita
+---
+
 # I giorni di vetro
 
 ## Scheda

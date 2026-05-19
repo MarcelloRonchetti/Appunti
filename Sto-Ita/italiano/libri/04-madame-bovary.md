@@ -1,3 +1,8 @@
+---
+tags:
+  - Ita
+---
+
 # Madame Bovary
 
 ## Scheda

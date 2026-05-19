@@ -1,3 +1,8 @@
+---
+tags:
+  - Ita
+---
+
 # Beppe Fenoglio
 
 ## 1. Vita
@@ -10,7 +15,7 @@ Dopo la guerra torna ad Alba, lavora come impiegato in un'azienda vinicola e scr
 
 Muore giovane, nel **1963**, di cancro ai polmoni, a soli 40 anni. Molte sue opere principali escono postume.
 
-La sua figura è quella di uno scrittore solitario, severo, ossessionato dalla precisione della parola. Non aderisce a scuole o correnti: è dentro il Neorealismo per i temi (guerra, Resistenza, mondo contadino) ma se ne distacca per stile, lingua e sguardo morale.
+La sua figura è quella di uno scrittore solitario, severo, ossessionato dalla precisione della parola. Non aderisce a scuole o correnti: è dentro il [[06-neorealismo|Neorealismo]] per i temi (guerra, Resistenza, mondo contadino) ma se ne distacca per stile, lingua e sguardo morale.
 
 ## 2. La poetica
 
@@ -62,7 +67,7 @@ Romanzo pubblicato pochi mesi prima della morte. È l'opera più studiata e quel
 
 Pubblicato nel **1963**, *Una questione privata* è considerato uno dei più alti romanzi sulla Resistenza italiana.
 
-Italo Calvino, nella prefazione del 1964 al *Sentiero dei nidi di ragno*, lo definisce il romanzo che tutti i neorealisti avevano sognato di scrivere senza riuscirci.
+[[08-italo-calvino|Italo Calvino]], nella prefazione del 1964 al *Sentiero dei nidi di ragno*, lo definisce il romanzo che tutti i neorealisti avevano sognato di scrivere senza riuscirci.
 
 ### Trama dettagliata
 
@@ -148,9 +153,11 @@ Calvino stesso riconobbe in Fenoglio la rappresentazione più matura e dolorosa 
 
 ## Collegamenti
 
-- **Neorealismo**: tematicamente vicino, ma con stile e sguardo che lo superano.
+- **Movimento di appartenenza**: [[06-neorealismo|Neorealismo]] — tematicamente vicino, ma con stile e sguardo che lo superano.
+- **Opera principale**: *Una questione privata* (1963).
 - **Resistenza**: esperienza biografica e materia narrativa centrale.
-- **Calvino**: confronto sul modo di raccontare la guerra partigiana.
+- **[[08-italo-calvino|Calvino]]**: confronto sul modo di raccontare la guerra partigiana.
+- **[[10-primo-levi|Primo Levi]]**: altra voce della memoria del Novecento (Lager invece che Resistenza).
 - **Letteratura anglosassone**: Hemingway, Faulkner, Conrad come modelli stilistici.
 - **Pavese**: altro scrittore piemontese, Langhe, mondo contadino, suicidio del 1950.
 
