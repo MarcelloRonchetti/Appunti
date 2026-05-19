@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="it" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Quiz · Appunti 5F</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #f1e7cf;
+    --paper-deep: #e6d9b8;
+    --ink: #2a2114;
+    --ink-soft: #5a4a32;
+    --accent: #8a2820;
+    --accent-soft: #b85040;
+    --gold: #a87f2f;
+    --green: #4a6b35;
+    --rule: rgba(42, 33, 20, 0.18);
+    --card-bg: #faf3e0;
+    --shadow: 0 8px 30px rgba(42, 33, 20, 0.12);
+    --serif-display: 'Cormorant Garamond', Georgia, serif;
+    --serif-body: 'Newsreader', Georgia, serif;
+    --sans: 'Inter', system-ui, sans-serif;
+    --mono: 'JetBrains Mono', monospace;
+  }
+  html[data-theme="dark"] {
+    --paper: #1c1812;
+    --paper-deep: #2a241b;
+    --ink: #f1e7cf;
+    --ink-soft: #c4b896;
+    --accent: #d65a4a;
+    --accent-soft: #e87864;
+    --gold: #d4a84a;
+    --green: #8aab68;
+    --rule: rgba(241, 231, 207, 0.18);
+    --card-bg: #25201a;
+    --shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: var(--sans);
+    background: var(--paper);
+    color: var(--ink);
+    min-height: 100vh;
+    line-height: 1.6;
+    background-image:
+      radial-gradient(circle at 20% 10%, rgba(168, 127, 47, 0.05) 0%, transparent 50%),
+      radial-gradient(circle at 80% 90%, rgba(138, 40, 32, 0.04) 0%, transparent 50%);
+  }
+  .topbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: var(--paper);
+    border-bottom: 1px solid var(--rule);
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .topbar-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .home-link {
+    color: var(--ink-soft);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding: 6px 10px;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    transition: all 0.15s ease;
+  }
+  .home-link:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+  }
+  .brand {
+    font-family: var(--serif-display);
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--ink);
+    letter-spacing: 0.02em;
+  }
+  .brand small {
+    font-family: var(--sans);
+    font-size: 0.65rem;
+    font-weight: 600;
+    color: var(--accent);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-left: 8px;
+  }
+  .topbar-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .subject-selector {
+    font-family: var(--sans);
+    font-size: 0.9rem;
+    padding: 6px 12px;
+    background: var(--card-bg);
+    color: var(--ink);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .subject-selector:focus {
+    outline: 2px solid var(--accent);
+    outline-offset: 1px;
+  }
+  .theme-btn {
+    background: var(--card-bg);
+    border: 1px solid var(--rule);
+    color: var(--ink);
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: all 0.15s ease;
+  }
+  .theme-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+  main {
+    max-width: 760px;
+    margin: 40px auto;
+    padding: 0 24px;
+  }
+  .stats-bar {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 24px;
+    padding: 12px 18px;
+    background: var(--card-bg);
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    font-family: var(--mono);
+    font-size: 0.82rem;
+    flex-wrap: wrap;
+  }
+  .stat { display: flex; align-items: baseline; gap: 6px; }
+  .stat-num { font-size: 1.15rem; font-weight: 600; color: var(--ink); }
+  .stat-label { color: var(--ink-soft); }
+  .stat.correct .stat-num { color: var(--green); }
+  .stat.wrong .stat-num { color: var(--accent); }
+  .reset-btn {
+    margin-left: auto;
+    background: transparent;
+    border: 1px solid var(--rule);
+    color: var(--ink-soft);
+    padding: 4px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: var(--sans);
+    font-size: 0.78rem;
+    transition: all 0.15s ease;
+  }
+  .reset-btn:hover { color: var(--accent); border-color: var(--accent); }
+
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    padding: 32px 36px;
+    box-shadow: var(--shadow);
+    position: relative;
+  }
+  .card::before {
+    content: "";
+    position: absolute;
+    top: 8px; left: 8px; right: 8px; bottom: 8px;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    pointer-events: none;
+  }
+  .card-meta {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+    position: relative;
+    z-index: 1;
+  }
+  .tag {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 3px 8px;
+    border-radius: 3px;
+    background: rgba(138, 40, 32, 0.08);
+    color: var(--accent);
+    border: 1px solid rgba(138, 40, 32, 0.2);
+  }
+  .tag.diff-facile { background: rgba(74, 107, 53, 0.1); color: var(--green); border-color: rgba(74, 107, 53, 0.3); }
+  .tag.diff-media  { background: rgba(168, 127, 47, 0.1); color: var(--gold); border-color: rgba(168, 127, 47, 0.3); }
+  .tag.diff-alta   { background: rgba(138, 40, 32, 0.1); color: var(--accent); border-color: rgba(138, 40, 32, 0.3); }
+  .tag.type {
+    background: transparent;
+    color: var(--ink-soft);
+    border-color: var(--rule);
+  }
+  .question {
+    font-family: var(--serif-body);
+    font-size: 1.25rem;
+    color: var(--ink);
+    line-height: 1.55;
+    margin-bottom: 24px;
+    position: relative;
+    z-index: 1;
+  }
+  .question .cloze-input {
+    font-family: var(--serif-body);
+    font-size: 1rem;
+    padding: 4px 10px;
+    margin: 0 4px;
+    border: none;
+    border-bottom: 2px solid var(--accent);
+    background: rgba(138, 40, 32, 0.05);
+    color: var(--ink);
+    min-width: 140px;
+    outline: none;
+  }
+  .question .cloze-input:focus { background: rgba(138, 40, 32, 0.12); }
+
+  .options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 24px;
+    position: relative;
+    z-index: 1;
+  }
+  .option-btn {
+    text-align: left;
+    padding: 14px 18px;
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: var(--serif-body);
+    font-size: 1rem;
+    color: var(--ink);
+    line-height: 1.5;
+    transition: all 0.15s ease;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .option-btn:hover:not(:disabled) {
+    border-color: var(--accent);
+    background: rgba(138, 40, 32, 0.04);
+  }
+  .option-btn:disabled { cursor: default; }
+  .option-letter {
+    font-family: var(--mono);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--accent);
+    flex-shrink: 0;
+    width: 24px;
+  }
+  .option-btn.correct {
+    background: rgba(74, 107, 53, 0.12);
+    border-color: var(--green);
+  }
+  .option-btn.correct .option-letter { color: var(--green); }
+  .option-btn.wrong {
+    background: rgba(138, 40, 32, 0.1);
+    border-color: var(--accent);
+  }
+  .option-btn.dimmed { opacity: 0.5; }
+
+  .open-area {
+    margin-bottom: 24px;
+    position: relative;
+    z-index: 1;
+  }
+  .open-area textarea {
+    width: 100%;
+    min-height: 110px;
+    padding: 12px 14px;
+    background: var(--paper);
+    color: var(--ink);
+    border: 1px solid var(--rule);
+    border-radius: 5px;
+    font-family: var(--serif-body);
+    font-size: 1rem;
+    line-height: 1.5;
+    resize: vertical;
+  }
+  .open-area textarea:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+  .keywords-hint {
+    margin-top: 8px;
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    color: var(--ink-soft);
+  }
+  .keywords-hint .kw {
+    background: rgba(168, 127, 47, 0.12);
+    color: var(--gold);
+    padding: 2px 6px;
+    border-radius: 3px;
+    margin-right: 4px;
+    display: inline-block;
+  }
+
+  .actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+  }
+  .btn {
+    font-family: var(--sans);
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 11px 22px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+  .btn-primary {
+    background: var(--accent);
+    color: var(--paper);
+  }
+  .btn-primary:hover { background: var(--accent-soft); }
+  .btn-primary:disabled { opacity: 0.4; cursor: not-allowed; }
+  .btn-ghost {
+    background: transparent;
+    color: var(--ink-soft);
+    border: 1px solid var(--rule);
+  }
+  .btn-ghost:hover { color: var(--ink); border-color: var(--ink); }
+  .btn-success {
+    background: var(--green);
+    color: var(--paper);
+  }
+  .btn-success:hover { opacity: 0.88; }
+
+  .feedback {
+    margin-top: 20px;
+    padding: 18px 22px;
+    border-left: 3px solid var(--accent);
+    background: rgba(138, 40, 32, 0.05);
+    border-radius: 0 5px 5px 0;
+    position: relative;
+    z-index: 1;
+  }
+  .feedback.correct { border-color: var(--green); background: rgba(74, 107, 53, 0.07); }
+  .feedback-title {
+    font-family: var(--sans);
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 8px;
+    color: var(--accent);
+  }
+  .feedback.correct .feedback-title { color: var(--green); }
+  .feedback-text {
+    font-family: var(--serif-body);
+    font-size: 1rem;
+    color: var(--ink);
+    line-height: 1.55;
+  }
+  .feedback-text strong { color: var(--ink); }
+
+  .self-rate {
+    display: flex;
+    gap: 10px;
+    margin-top: 16px;
+  }
+
+  .pool-empty {
+    text-align: center;
+    padding: 60px 30px;
+    background: var(--card-bg);
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+  }
+  .pool-empty h2 {
+    font-family: var(--serif-display);
+    font-size: 1.8rem;
+    color: var(--ink);
+    margin-bottom: 12px;
+  }
+  .pool-empty p {
+    font-family: var(--serif-body);
+    color: var(--ink-soft);
+    max-width: 480px;
+    margin: 0 auto 22px;
+  }
+  .pool-empty .ornament {
+    font-size: 1.5rem;
+    color: var(--gold);
+    margin: 14px 0 22px;
+  }
+
+  .footer {
+    margin-top: 50px;
+    padding-top: 24px;
+    border-top: 1px solid var(--rule);
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    color: var(--ink-soft);
+    text-align: center;
+  }
+  .footer a { color: var(--accent); text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+
+  @media (max-width: 600px) {
+    .card { padding: 22px 20px; }
+    .question { font-size: 1.1rem; }
+    .topbar { padding: 12px 16px; }
+    main { margin: 24px auto; padding: 0 16px; }
+  }
+</style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-left">
+      <a href="../index.html" class="home-link">← Home</a>
+      <div class="brand">Quiz <small>Appunti 5F</small></div>
+    </div>
+    <div class="topbar-right">
+      <select id="subjectSelect" class="subject-selector" aria-label="Materia">
+        <option value="italiano">Italiano</option>
+        <option value="storia" disabled>Storia (in arrivo)</option>
+        <option value="edu-civica" disabled>Ed. civica (in arrivo)</option>
+        <option value="telecomunicazioni" disabled>Telecomunicazioni (in arrivo)</option>
+        <option value="tpsit" disabled>TPSIT (in arrivo)</option>
+        <option value="sistemi" disabled>Sistemi (in arrivo)</option>
+      </select>
+      <button id="themeBtn" class="theme-btn" aria-label="Tema">☾</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="stats-bar" id="statsBar">
+      <div class="stat"><span class="stat-num" id="statTotal">–</span><span class="stat-label">totali</span></div>
+      <div class="stat"><span class="stat-num" id="statRemaining">–</span><span class="stat-label">rimaste</span></div>
+      <div class="stat correct"><span class="stat-num" id="statCorrect">–</span><span class="stat-label">giuste</span></div>
+      <div class="stat wrong"><span class="stat-num" id="statWrong">–</span><span class="stat-label">sbagliate</span></div>
+      <button class="reset-btn" id="resetBtn" title="Cancella progressi per questa materia">Resetta</button>
+    </div>
+
+    <div id="cardContainer"></div>
+
+    <div class="footer">
+      <span id="poolMeta">Caricamento…</span> ·
+      <a href="prompts/italiano.md">Prompt ChatGPT per generare nuove domande</a> ·
+      <a href="schema.md">Schema JSON</a>
+    </div>
+  </main>
+
+<script>
+(function () {
+  'use strict';
+
+  const $ = (sel) => document.querySelector(sel);
+  const card = $('#cardContainer');
+  const statsBar = $('#statsBar');
+  const subjectSelect = $('#subjectSelect');
+  const themeBtn = $('#themeBtn');
+  const resetBtn = $('#resetBtn');
+  const poolMeta = $('#poolMeta');
+
+  let pool = [];
+  let subjectMeta = null;
+  let currentSubject = subjectSelect.value;
+  let currentQuestion = null;
+  let answered = false;
+
+  // --- theme ---
+  const THEME_KEY = 'appunti-quiz-theme';
+  function applyTheme(t) {
+    document.documentElement.setAttribute('data-theme', t);
+    themeBtn.textContent = t === 'dark' ? '☀' : '☾';
+  }
+  applyTheme(localStorage.getItem(THEME_KEY) || 'light');
+  themeBtn.addEventListener('click', () => {
+    const cur = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    localStorage.setItem(THEME_KEY, cur);
+    applyTheme(cur);
+  });
+
+  // --- localStorage helpers ---
+  const KEY = (suffix) => `appunti-quiz-${suffix}-${currentSubject}`;
+  const readArr = (suffix) => {
+    try { return JSON.parse(localStorage.getItem(KEY(suffix)) || '[]'); }
+    catch { return []; }
+  };
+  const writeArr = (suffix, arr) => localStorage.setItem(KEY(suffix), JSON.stringify(arr));
+  const addToArr = (suffix, id) => {
+    const a = readArr(suffix);
+    if (!a.includes(id)) { a.push(id); writeArr(suffix, a); }
+  };
+
+  // --- stats ---
+  function refreshStats() {
+    const seen = readArr('seen');
+    const correct = readArr('correct');
+    const wrong = readArr('wrong');
+    $('#statTotal').textContent = pool.length;
+    $('#statRemaining').textContent = Math.max(pool.length - seen.length, 0);
+    $('#statCorrect').textContent = correct.length;
+    $('#statWrong').textContent = wrong.length;
+  }
+
+  // --- loader ---
+  async function loadSubject(id) {
+    currentSubject = id;
+    card.innerHTML = '<div class="pool-empty"><p>Caricamento domande…</p></div>';
+    try {
+      const res = await fetch(`data/${id}.json`, { cache: 'no-store' });
+      if (!res.ok) throw new Error('not found');
+      const data = await res.json();
+      subjectMeta = data;
+      pool = Array.isArray(data.questions) ? data.questions : [];
+      poolMeta.textContent = `${pool.length} domande · pool v.${data.version || 'sconosciuta'}`;
+      refreshStats();
+      next();
+    } catch (e) {
+      pool = [];
+      subjectMeta = null;
+      poolMeta.textContent = 'Pool non trovato.';
+      card.innerHTML = `
+        <div class="pool-empty">
+          <h2>Pool non disponibile</h2>
+          <p class="ornament">❦ ✦ ❦</p>
+          <p>Genera <code>quiz/data/${id}.json</code> con il prompt ChatGPT in <a href="prompts/${id}.md">prompts/${id}.md</a>, poi ricarica.</p>
+        </div>`;
+    }
+  }
+
+  // --- next question ---
+  function next() {
+    answered = false;
+    refreshStats();
+    const seen = new Set(readArr('seen'));
+    const remaining = pool.filter(q => !seen.has(q.id));
+    if (remaining.length === 0) {
+      renderEmpty();
+      return;
+    }
+    currentQuestion = remaining[Math.floor(Math.random() * remaining.length)];
+    render(currentQuestion);
+  }
+
+  // --- escape ---
+  function esc(s) {
+    return String(s).replace(/[&<>"']/g, c => (
+      { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c]
+    ));
+  }
+
+  // --- shuffle (for MC option order) ---
+  function shuffled(arr) {
+    const a = arr.slice();
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  }
+
+  // --- render: empty pool ---
+  function renderEmpty() {
+    currentQuestion = null;
+    card.innerHTML = `
+      <div class="pool-empty">
+        <h2>Hai visto tutte le domande</h2>
+        <p class="ornament">❦ ✦ ❦</p>
+        <p>Resetta i progressi per ricominciare, oppure usa il <a href="prompts/${currentSubject}.md">prompt ChatGPT</a> per generare nuove domande e ampliare il pool.</p>
+        <button class="btn btn-primary" onclick="window.__quizReset()">Resetta progressi</button>
+      </div>`;
+  }
+
+  // --- render: question ---
+  function render(q) {
+    const diffClass = `diff-${q.difficulty || 'media'}`;
+    const author = q.author ? `<span class="tag">${esc(q.author)}</span>` : '';
+    const meta = `
+      <div class="card-meta">
+        <span class="tag">${esc(q.topic || '—')}</span>
+        ${author}
+        <span class="tag ${diffClass}">${esc(q.difficulty || 'media')}</span>
+        <span class="tag type">${esc(q.type)}</span>
+      </div>`;
+
+    let body = '';
+    if (q.type === 'multiple-choice') body = renderMC(q);
+    else if (q.type === 'open')       body = renderOpen(q);
+    else if (q.type === 'cloze')      body = renderCloze(q);
+    else body = `<p>Tipo di domanda sconosciuto: <code>${esc(q.type)}</code></p>`;
+
+    card.innerHTML = `<article class="card">${meta}${body}</article>`;
+    bindHandlers(q);
+  }
+
+  function renderMC(q) {
+    // Shuffle option order, but track which index is the correct one in the shuffled array.
+    const orig = q.options.map((opt, idx) => ({ opt, isCorrect: idx === q.correct }));
+    const shuf = shuffled(orig);
+    currentQuestion._shuffled = shuf;
+    const letters = ['A', 'B', 'C', 'D', 'E', 'F'];
+    const opts = shuf.map((o, i) => `
+      <button class="option-btn" data-i="${i}">
+        <span class="option-letter">${letters[i]}</span>
+        <span>${esc(o.opt)}</span>
+      </button>`).join('');
+    return `
+      <div class="question">${esc(q.question)}</div>
+      <div class="options">${opts}</div>
+      <div class="actions">
+        <button class="btn btn-ghost" data-act="skip">Salta</button>
+      </div>
+      <div id="fb"></div>`;
+  }
+
+  function renderOpen(q) {
+    const kw = (q.keywords && q.keywords.length)
+      ? `<div class="keywords-hint">Cose da menzionare: ${q.keywords.map(k => `<span class="kw">${esc(k)}</span>`).join('')}</div>`
+      : '';
+    return `
+      <div class="question">${esc(q.question)}</div>
+      <div class="open-area">
+        <textarea id="openAnswer" placeholder="Scrivi qui la tua risposta (è solo per te — non viene salvata)…"></textarea>
+        ${kw}
+      </div>
+      <div class="actions">
+        <button class="btn btn-primary" data-act="show-model">Mostra risposta modello</button>
+        <button class="btn btn-ghost" data-act="skip">Salta</button>
+      </div>
+      <div id="fb"></div>`;
+  }
+
+  function renderCloze(q) {
+    const qHtml = esc(q.question).replace(/_{3,}/, `<input class="cloze-input" id="clozeInput" autocomplete="off" spellcheck="false" />`);
+    return `
+      <div class="question">${qHtml}</div>
+      <div class="actions">
+        <button class="btn btn-primary" data-act="check-cloze">Controlla</button>
+        <button class="btn btn-ghost" data-act="skip">Salta</button>
+      </div>
+      <div id="fb"></div>`;
+  }
+
+  // --- bind handlers per current card ---
+  function bindHandlers(q) {
+    card.querySelectorAll('.option-btn').forEach(btn => {
+      btn.addEventListener('click', () => handleMC(btn, q));
+    });
+    card.querySelectorAll('[data-act]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const act = btn.dataset.act;
+        if (act === 'skip') { skip(q); }
+        else if (act === 'show-model') { showOpenModel(q); }
+        else if (act === 'check-cloze') { checkCloze(q); }
+        else if (act === 'next') { next(); }
+        else if (act === 'rate-right') { selfRate(q, true); }
+        else if (act === 'rate-wrong') { selfRate(q, false); }
+      });
+    });
+    // Enter on cloze
+    const ci = card.querySelector('#clozeInput');
+    if (ci) {
+      ci.focus();
+      ci.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' && !answered) checkCloze(q);
+      });
+    }
+  }
+
+  // --- multiple choice answer ---
+  function handleMC(btn, q) {
+    if (answered) return;
+    answered = true;
+    const i = parseInt(btn.dataset.i, 10);
+    const picked = currentQuestion._shuffled[i];
+    const isRight = picked.isCorrect;
+    card.querySelectorAll('.option-btn').forEach((b, idx) => {
+      b.disabled = true;
+      const o = currentQuestion._shuffled[idx];
+      if (o.isCorrect) b.classList.add('correct');
+      else if (idx === i) b.classList.add('wrong');
+      else b.classList.add('dimmed');
+    });
+    recordAnswer(q.id, isRight);
+    showFeedback(isRight, q.explanation || '');
+  }
+
+  // --- open: show model ---
+  function showOpenModel(q) {
+    if (answered) return;
+    const ta = card.querySelector('#openAnswer');
+    if (ta) ta.disabled = true;
+    const actionsDiv = card.querySelector('.actions');
+    actionsDiv.innerHTML = `
+      <span style="font-family: var(--sans); color: var(--ink-soft); font-size: 0.9rem; align-self: center;">Come è andata?</span>
+      <button class="btn btn-success" data-act="rate-right">L'ho indovinata</button>
+      <button class="btn btn-ghost" data-act="rate-wrong">No / parziale</button>
+    `;
+    actionsDiv.querySelectorAll('[data-act]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const act = btn.dataset.act;
+        if (act === 'rate-right') selfRate(q, true);
+        else if (act === 'rate-wrong') selfRate(q, false);
+      });
+    });
+    const fb = $('#fb');
+    fb.innerHTML = `
+      <div class="feedback correct">
+        <div class="feedback-title">Risposta modello</div>
+        <div class="feedback-text">${esc(q.model_answer || '—')}</div>
+      </div>`;
+  }
+
+  function selfRate(q, isRight) {
+    if (answered) return;
+    answered = true;
+    recordAnswer(q.id, isRight);
+    // Append next button
+    const fb = $('#fb');
+    const nb = document.createElement('div');
+    nb.className = 'actions';
+    nb.style.marginTop = '18px';
+    nb.innerHTML = `<button class="btn btn-primary" data-act="next">Prossima →</button>`;
+    fb.appendChild(nb);
+    nb.querySelector('[data-act]').addEventListener('click', next);
+  }
+
+  // --- cloze check ---
+  function checkCloze(q) {
+    if (answered) return;
+    answered = true;
+    const ci = card.querySelector('#clozeInput');
+    const raw = (ci?.value || '').trim();
+    const norm = (s) => s.toLowerCase()
+      .normalize('NFD').replace(/[̀-ͯ]/g, '') // strip accents
+      .replace(/\s+/g, ' ').trim();
+    const accepted = [q.answer, ...(q.alt_answers || [])].map(norm);
+    const isRight = accepted.includes(norm(raw));
+    if (ci) {
+      ci.disabled = true;
+      ci.style.color = isRight ? 'var(--green)' : 'var(--accent)';
+      ci.style.borderBottomColor = isRight ? 'var(--green)' : 'var(--accent)';
+      if (!isRight && !raw) ci.value = '(vuoto)';
+    }
+    recordAnswer(q.id, isRight);
+    const expl = q.explanation || '';
+    const right = q.answer;
+    const msg = isRight
+      ? `<strong>Corretto.</strong> ${esc(expl)}`
+      : `Risposta giusta: <strong>${esc(right)}</strong>. ${esc(expl)}`;
+    showFeedback(isRight, msg, true);
+  }
+
+  // --- feedback box + advance button ---
+  function showFeedback(isRight, msg, htmlMsg = false) {
+    const fb = $('#fb');
+    const inner = htmlMsg ? msg : esc(msg);
+    fb.innerHTML = `
+      <div class="feedback ${isRight ? 'correct' : ''}">
+        <div class="feedback-title">${isRight ? 'Giusta' : 'Sbagliata'}</div>
+        <div class="feedback-text">${inner}</div>
+      </div>
+      <div class="actions" style="margin-top: 18px;">
+        <button class="btn btn-primary" data-act="next">Prossima →</button>
+      </div>`;
+    fb.querySelector('[data-act]').addEventListener('click', next);
+  }
+
+  // --- skip (mark as seen, neither correct nor wrong) ---
+  function skip(q) {
+    if (answered) return;
+    addToArr('seen', q.id);
+    refreshStats();
+    next();
+  }
+
+  // --- record answer (seen + correct/wrong) ---
+  function recordAnswer(id, isRight) {
+    addToArr('seen', id);
+    if (isRight) addToArr('correct', id);
+    else addToArr('wrong', id);
+    refreshStats();
+  }
+
+  // --- reset (exposed globally so empty pool button can call it) ---
+  function reset() {
+    if (!confirm(`Cancellare tutti i progressi per ${currentSubject}? Le domande torneranno tutte disponibili.`)) return;
+    localStorage.removeItem(KEY('seen'));
+    localStorage.removeItem(KEY('correct'));
+    localStorage.removeItem(KEY('wrong'));
+    refreshStats();
+    next();
+  }
+  window.__quizReset = reset;
+  resetBtn.addEventListener('click', reset);
+
+  // --- subject change ---
+  subjectSelect.addEventListener('change', (e) => loadSubject(e.target.value));
+
+  // --- init ---
+  loadSubject(currentSubject);
+})();
+</script>
+</body>
+</html>

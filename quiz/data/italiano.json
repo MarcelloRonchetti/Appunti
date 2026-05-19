@@ -1,0 +1,87 @@
+{
+  "subject": "italiano",
+  "version": "2026-05-19",
+  "note": "Pool di esempio con 6 domande per testare la pagina. Rigenera con il prompt in quiz/prompts/italiano.md per averne 50+ vere.",
+  "questions": [
+    {
+      "id": "ita-mc-001",
+      "type": "multiple-choice",
+      "topic": "Verismo",
+      "author": "Verga",
+      "difficulty": "media",
+      "question": "Cosa intende Verga con \"ideale dell'ostrica\" in Fantasticheria?",
+      "options": [
+        "L'aspirazione del povero a una vita di lusso al di fuori del proprio scoglio.",
+        "L'attaccamento alla famiglia, alla casa e al proprio luogo di origine come unica difesa contro la fiumana del progresso.",
+        "La rinuncia totale alla felicità in nome dell'arte.",
+        "La fede cieca nel progresso scientifico e tecnologico."
+      ],
+      "correct": 1,
+      "explanation": "L'ostrica si salva solo se resta attaccata al proprio scoglio: per Verga è la metafora del popolo che si conserva nella propria nicchia familiare, contrapposto alla \"fiumana del progresso\" che travolge chi se ne stacca (come 'Ntoni nei Malavoglia)."
+    },
+    {
+      "id": "ita-mc-002",
+      "type": "multiple-choice",
+      "topic": "Decadentismo",
+      "author": "Baudelaire",
+      "difficulty": "facile",
+      "question": "In quale poesia di Baudelaire la condizione del poeta è paragonata a un uccello goffo sul ponte di una nave?",
+      "options": [
+        "Corrispondenze",
+        "Spleen",
+        "L'albatro",
+        "Il viaggio"
+      ],
+      "correct": 2,
+      "explanation": "Ne L'albatro (I fiori del male) il poeta è come l'uccello marino: sublime in volo, ridicolo e impacciato quando viene catturato e messo in mezzo agli uomini."
+    },
+    {
+      "id": "ita-open-001",
+      "type": "open",
+      "topic": "Pascoli",
+      "author": "Pascoli",
+      "difficulty": "alta",
+      "question": "Spiega la poetica del fanciullino e come si manifesta nello stile di Myricae.",
+      "model_answer": "Per Pascoli (saggio Il fanciullino, 1897) dentro ogni adulto vive un bambino capace di stupirsi davanti alle piccole cose e di cogliere il mistero nascosto nella realtà. Il poeta è chi sa ancora ascoltare questa voce. In Myricae la poetica si traduce in versi brevi, paesaggi rurali quotidiani (campi, lampi, lavandare), uso di onomatopee, fonosimbolismo e termini tecnici-specifici della botanica/agricoltura: la realtà minuta diventa simbolo di un mistero più grande, in genere la morte e il nido familiare violato.",
+      "keywords": ["fanciullino", "piccole cose", "mistero", "onomatopee", "fonosimbolismo", "Myricae", "1897"]
+    },
+    {
+      "id": "ita-cloze-001",
+      "type": "cloze",
+      "topic": "Verismo",
+      "author": "Verga",
+      "difficulty": "facile",
+      "question": "Verga teorizza il principio dell'_____, secondo cui il narratore deve eclissarsi e lasciare che siano i fatti e i personaggi a parlare.",
+      "answer": "impersonalità",
+      "alt_answers": ["impersonalita"],
+      "explanation": "L'impersonalità (o regressione del narratore) è il pilastro tecnico del Verismo: il punto di vista si abbassa al livello del mondo popolare rappresentato."
+    },
+    {
+      "id": "ita-cloze-002",
+      "type": "cloze",
+      "topic": "Pirandello",
+      "author": "Pirandello",
+      "difficulty": "media",
+      "question": "Ne Il fu Mattia Pascal, lo \"strappo del cielo di _____\" indica il momento in cui l'illusione di una nuova identità si infrange davanti alla realtà.",
+      "answer": "carta",
+      "alt_answers": [],
+      "explanation": "Immagine pirandelliana: la realtà è uno scenario fittizio (cielo di carta) e basta un piccolo strappo perché tutto il dramma — l'identità che ci eravamo costruiti — crolli."
+    },
+    {
+      "id": "ita-mc-003",
+      "type": "multiple-choice",
+      "topic": "Primo Levi",
+      "author": "Primo Levi",
+      "difficulty": "media",
+      "question": "Nel capitolo \"Il canto di Ulisse\" di Se questo è un uomo, quale terzina dantesca Levi cerca disperatamente di ricordare per Pikolo?",
+      "options": [
+        "\"Nel mezzo del cammin di nostra vita…\"",
+        "\"Considerate la vostra semenza: / fatti non foste a viver come bruti, / ma per seguir virtute e canoscenza\"",
+        "\"Lasciate ogne speranza, voi ch'intrate\"",
+        "\"Amor, ch'a nullo amato amar perdona\""
+      ],
+      "correct": 1,
+      "explanation": "Inferno XXVI, vv. 118-120 — l'orazion picciola di Ulisse ai compagni. Per Levi la cultura diventa resistenza spirituale dentro il Lager: ricordare quei versi significa restare umani."
+    }
+  ]
+}

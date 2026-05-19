@@ -128,7 +128,16 @@ function renderTable(lines, start) {
 }
 
 function renderMarkdown(markdown) {
-  const lines = markdown.replace(/\r\n/g, "\n").split("\n");
+  let lines = markdown.replace(/\r\n/g, "\n").split("\n");
+
+  // Strip YAML frontmatter (---\n...\n---)
+  if (lines[0]?.trim() === "---") {
+    let end = lines.slice(1).findIndex(l => l.trim() === "---");
+    if (end !== -1) {
+      lines = lines.slice(end + 2);
+    }
+  }
+
   const out = [];
   let i = 0;
   let paragraph = [];
