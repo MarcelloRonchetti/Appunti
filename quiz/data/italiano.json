@@ -1,87 +1,655 @@
 {
   "subject": "italiano",
   "version": "2026-05-19",
-  "note": "Pool di esempio con 6 domande per testare la pagina. Rigenera con il prompt in quiz/prompts/italiano.md per averne 50+ vere.",
   "questions": [
     {
       "id": "ita-mc-001",
       "type": "multiple-choice",
-      "topic": "Verismo",
-      "author": "Verga",
+      "topic": "Positivismo, Naturalismo, Verismo",
       "difficulty": "media",
-      "question": "Cosa intende Verga con \"ideale dell'ostrica\" in Fantasticheria?",
+      "question": "Quale idea guida il romanzo sperimentale di Zola?",
       "options": [
-        "L'aspirazione del povero a una vita di lusso al di fuori del proprio scoglio.",
-        "L'attaccamento alla famiglia, alla casa e al proprio luogo di origine come unica difesa contro la fiumana del progresso.",
-        "La rinuncia totale alla felicità in nome dell'arte.",
-        "La fede cieca nel progresso scientifico e tecnologico."
+        "Il romanzo deve isolarsi dalla società e descrivere soltanto stati d'animo astratti.",
+        "Il romanziere osserva ambiente, eredità e condizioni sociali come uno scienziato osserva un fenomeno.",
+        "La narrazione deve cancellare ogni riferimento alla realtà storica e politica.",
+        "Il compito dello scrittore è celebrare l'eroe eccezionale fuori dalle leggi comuni."
       ],
       "correct": 1,
-      "explanation": "L'ostrica si salva solo se resta attaccata al proprio scoglio: per Verga è la metafora del popolo che si conserva nella propria nicchia familiare, contrapposto alla \"fiumana del progresso\" che travolge chi se ne stacca (come 'Ntoni nei Malavoglia)."
+      "explanation": "Zola applica alla narrativa il metodo positivista: l'uomo è studiato come prodotto di eredità, ambiente e condizioni storiche."
     },
     {
       "id": "ita-mc-002",
       "type": "multiple-choice",
-      "topic": "Decadentismo",
-      "author": "Baudelaire",
-      "difficulty": "facile",
-      "question": "In quale poesia di Baudelaire la condizione del poeta è paragonata a un uccello goffo sul ponte di una nave?",
-      "options": [
-        "Corrispondenze",
-        "Spleen",
-        "L'albatro",
-        "Il viaggio"
-      ],
-      "correct": 2,
-      "explanation": "Ne L'albatro (I fiori del male) il poeta è come l'uccello marino: sublime in volo, ridicolo e impacciato quando viene catturato e messo in mezzo agli uomini."
-    },
-    {
-      "id": "ita-open-001",
-      "type": "open",
-      "topic": "Pascoli",
-      "author": "Pascoli",
-      "difficulty": "alta",
-      "question": "Spiega la poetica del fanciullino e come si manifesta nello stile di Myricae.",
-      "model_answer": "Per Pascoli (saggio Il fanciullino, 1897) dentro ogni adulto vive un bambino capace di stupirsi davanti alle piccole cose e di cogliere il mistero nascosto nella realtà. Il poeta è chi sa ancora ascoltare questa voce. In Myricae la poetica si traduce in versi brevi, paesaggi rurali quotidiani (campi, lampi, lavandare), uso di onomatopee, fonosimbolismo e termini tecnici-specifici della botanica/agricoltura: la realtà minuta diventa simbolo di un mistero più grande, in genere la morte e il nido familiare violato.",
-      "keywords": ["fanciullino", "piccole cose", "mistero", "onomatopee", "fonosimbolismo", "Myricae", "1897"]
-    },
-    {
-      "id": "ita-cloze-001",
-      "type": "cloze",
-      "topic": "Verismo",
-      "author": "Verga",
-      "difficulty": "facile",
-      "question": "Verga teorizza il principio dell'_____, secondo cui il narratore deve eclissarsi e lasciare che siano i fatti e i personaggi a parlare.",
-      "answer": "impersonalità",
-      "alt_answers": ["impersonalita"],
-      "explanation": "L'impersonalità (o regressione del narratore) è il pilastro tecnico del Verismo: il punto di vista si abbassa al livello del mondo popolare rappresentato."
-    },
-    {
-      "id": "ita-cloze-002",
-      "type": "cloze",
-      "topic": "Pirandello",
-      "author": "Pirandello",
+      "topic": "Positivismo, Naturalismo, Verismo",
       "difficulty": "media",
-      "question": "Ne Il fu Mattia Pascal, lo \"strappo del cielo di _____\" indica il momento in cui l'illusione di una nuova identità si infrange davanti alla realtà.",
-      "answer": "carta",
-      "alt_answers": [],
-      "explanation": "Immagine pirandelliana: la realtà è uno scenario fittizio (cielo di carta) e basta un piccolo strappo perché tutto il dramma — l'identità che ci eravamo costruiti — crolli."
+      "question": "Quale differenza distingue meglio Naturalismo francese e Verismo italiano?",
+      "options": [
+        "Il Naturalismo rifiuta la realtà sociale, mentre il Verismo racconta solo aristocratici.",
+        "Il Naturalismo conserva spesso una fiducia progressista, mentre il Verismo verghiano e più pessimista e fatalista.",
+        "Il Naturalismo usa solo poesia, mentre il Verismo usa solo teatro.",
+        "Il Naturalismo nasce dopo il Futurismo, mentre il Verismo precede il Romanticismo."
+      ],
+      "correct": 1,
+      "explanation": "Il Naturalismo deriva dal clima positivista e riformatore; Verga riprende il metodo oggettivo ma rappresenta un mondo dominato da necessità economiche e sconfitta."
     },
     {
       "id": "ita-mc-003",
       "type": "multiple-choice",
+      "topic": "Verga",
+      "author": "Verga",
+      "difficulty": "facile",
+      "question": "Cosa intende Verga con l'ideale dell'ostrica in Fantasticheria?",
+      "options": [
+        "Il desiderio di lasciare il paese per salire nella società.",
+        "L'attaccamento alla famiglia, alla casa e al proprio ambiente come difesa contro il progresso che travolge.",
+        "La scelta di vivere isolati per dedicarsi all'arte pura.",
+        "La fiducia nella scienza come unica via di riscatto popolare."
+      ],
+      "correct": 1,
+      "explanation": "Come l'ostrica sullo scoglio, i personaggi popolari si salvano solo restando legati al loro mondo; chi tenta di staccarsene viene sconfitto."
+    },
+    {
+      "id": "ita-mc-004",
+      "type": "multiple-choice",
+      "topic": "Verga",
+      "author": "Verga",
+      "difficulty": "alta",
+      "question": "Nel Ciclo dei Vinti, che cosa accomuna I Malavoglia e Mastro-don Gesualdo?",
+      "options": [
+        "La celebrazione del successo economico come liberazione definitiva.",
+        "La vittoria dei personaggi che accettano la fiumana del progresso.",
+        "La rappresentazione di chi tenta di migliorare la propria condizione e viene comunque sconfitto.",
+        "La trasformazione del romanzo in manifesto politico socialista."
+      ],
+      "correct": 2,
+      "explanation": "Il ciclo segue i vinti dalla lotta per il pane alla scalata sociale: in ogni livello l'aspirazione al meglio produce perdita, isolamento e sconfitta."
+    },
+    {
+      "id": "ita-mc-005",
+      "type": "multiple-choice",
+      "topic": "Decadentismo, Simbolismo, Estetismo",
+      "author": "Baudelaire",
+      "difficulty": "facile",
+      "question": "In quale poesia di Baudelaire il poeta è paragonato a un uccello maestoso in volo ma goffo tra gli uomini?",
+      "options": [
+        "Corrispondenze",
+        "L'albatro",
+        "Spleen",
+        "Il vampiro"
+      ],
+      "correct": 1,
+      "explanation": "Nell'Albatro la grandezza del poeta emerge in alto, ma nella società comune diventa motivo di impaccio e derisione."
+    },
+    {
+      "id": "ita-mc-006",
+      "type": "multiple-choice",
+      "topic": "Decadentismo, Simbolismo, Estetismo",
+      "author": "Wilde",
+      "difficulty": "media",
+      "question": "Quale idea dell'estetismo emerge dal Ritratto di Dorian Gray?",
+      "options": [
+        "La bellezza e l'arte vengono poste al centro della vita, ma il culto dell'apparenza può diventare rovinoso.",
+        "La morale borghese e sempre confermata senza ambiguità.",
+        "La scienza positivista risolve ogni conflitto interiore.",
+        "La letteratura deve rinunciare allo stile per imitare il linguaggio tecnico."
+      ],
+      "correct": 0,
+      "explanation": "Dorian trasforma la bellezza in assoluto, ma il romanzo mostra il prezzo morale e psicologico di questa scelta."
+    },
+    {
+      "id": "ita-mc-007",
+      "type": "multiple-choice",
+      "topic": "Decadentismo, Simbolismo, Estetismo",
+      "author": "Baudelaire",
+      "difficulty": "alta",
+      "question": "Che cosa indica il principio delle corrispondenze nel Simbolismo?",
+      "options": [
+        "La coincidenza esatta tra parola poetica e dato scientifico.",
+        "La rete di legami segreti tra sensi, natura e interiorita, colta attraverso simboli e analogie.",
+        "L'obbligo di raccontare i fatti in ordine cronologico.",
+        "La cancellazione della musicalità per rendere il testo più oggettivo."
+      ],
+      "correct": 1,
+      "explanation": "Il simbolista non descrive solo la superficie: cerca nessi nascosti tra percezioni e mistero, spesso tramite analogia, sinestesia e musica verbale."
+    },
+    {
+      "id": "ita-mc-008",
+      "type": "multiple-choice",
+      "topic": "Pascoli",
+      "author": "Pascoli",
+      "difficulty": "facile",
+      "question": "Che cosa rappresenta il fanciullino pascoliano?",
+      "options": [
+        "La parte razionale che misura la realtà con criteri scientifici.",
+        "La voce interiore capace di stupore, intuizione e scoperta del mistero nelle piccole cose.",
+        "Un personaggio ricorrente dei romanzi veristi.",
+        "Il simbolo dell'eroe superomistico dannunziano."
+      ],
+      "correct": 1,
+      "explanation": "Per Pascoli il poeta ascolta il fanciullino, cioè uno sguardo infantile che coglie significati nascosti nella realtà quotidiana."
+    },
+    {
+      "id": "ita-mc-009",
+      "type": "multiple-choice",
+      "topic": "D'Annunzio",
+      "author": "D'Annunzio",
+      "difficulty": "media",
+      "question": "Che cosa si intende per panismo in D'Annunzio, soprattutto in Alcyone?",
+      "options": [
+        "La fusione sensuale tra io poetico e natura.",
+        "La rinuncia alla musicalità del verso.",
+        "Il rifiuto di ogni immagine naturale.",
+        "La descrizione documentaria della vita contadina."
+      ],
+      "correct": 0,
+      "explanation": "Nel panismo dannunziano l'individuo sembra sciogliersi nel paesaggio, in un'esperienza sensoriale e musicale di unione con la natura."
+    },
+    {
+      "id": "ita-mc-010",
+      "type": "multiple-choice",
+      "topic": "D'Annunzio",
+      "author": "D'Annunzio",
+      "difficulty": "media",
+      "question": "Quale evento storico lega D'Annunzio alla politica del primo dopoguerra?",
+      "options": [
+        "La fondazione del Partito Socialista Italiano.",
+        "L'impresa di Fiume, interpretata come gesto nazionalista e spettacolare.",
+        "La firma del Manifesto di Ventotene.",
+        "La partecipazione alla Resistenza nelle brigate Garibaldi."
+      ],
+      "correct": 1,
+      "explanation": "D'Annunzio occupa Fiume nel 1919, trasformando l'azione politica in rito pubblico, propaganda e messa in scena."
+    },
+    {
+      "id": "ita-mc-011",
+      "type": "multiple-choice",
+      "topic": "Avanguardie, Futurismo, Crepuscolarismo",
+      "author": "Marinetti",
+      "difficulty": "facile",
+      "question": "Quale carattere appartiene al Futurismo di Marinetti?",
+      "options": [
+        "Esaltazione di velocità, macchina, modernità e rottura con la tradizione.",
+        "Culto del passato classico e imitazione dei modelli antichi.",
+        "Ritorno alla metrica petrarchesca come unica forma poetica.",
+        "Rifiuto di ogni provocazione pubblica."
+      ],
+      "correct": 0,
+      "explanation": "Il Futurismo vuole rompere con musei, passatismo e linguaggio tradizionale, celebrando energia moderna e parole in libertà."
+    },
+    {
+      "id": "ita-mc-012",
+      "type": "multiple-choice",
+      "topic": "Avanguardie, Futurismo, Crepuscolarismo",
+      "author": "Gozzano",
+      "difficulty": "media",
+      "question": "Che cosa caratterizza spesso la poesia crepuscolare?",
+      "options": [
+        "Il tono dimesso, ironico e anti-eroico, con oggetti quotidiani e atmosfere provinciali.",
+        "La celebrazione aggressiva della guerra come igiene del mondo.",
+        "La costruzione di un poeta-vate solenne e trionfante.",
+        "L'eliminazione totale dell'io e dei ricordi."
+      ],
+      "correct": 0,
+      "explanation": "I crepuscolari abbassano il tono lirico: preferiscono malinconia, ironia, piccole cose e figure lontane dall'eroismo."
+    },
+    {
+      "id": "ita-mc-013",
+      "type": "multiple-choice",
+      "topic": "Romanzo della crisi",
+      "difficulty": "alta",
+      "question": "Quale tratto è tipico del romanzo della crisi del primo Novecento?",
+      "options": [
+        "Narratore onnisciente stabile, fiducia nel progresso e personaggi coerenti.",
+        "Centralita di inconscio, tempo soggettivo, identità instabile e narratori problematici.",
+        "Ritorno esclusivo all'epica cavalleresca.",
+        "Riduzione del romanzo a documento scientifico impersonale."
+      ],
+      "correct": 1,
+      "explanation": "Freud, Bergson e Nietzsche contribuiscono a incrinare l'idea di soggetto compatto: il romanzo mostra inetti, memorie deformate e coscienze contraddittorie."
+    },
+    {
+      "id": "ita-mc-014",
+      "type": "multiple-choice",
+      "topic": "Svevo",
+      "author": "Svevo",
+      "difficulty": "facile",
+      "question": "Quale motivo ricorrente apre e organizza una parte centrale della Coscienza di Zeno?",
+      "options": [
+        "La ricerca del manoscritto perduto.",
+        "L'ultima sigaretta, continuamente rimandata.",
+        "La missione militare sul fronte del Carso.",
+        "La conversione religiosa del protagonista."
+      ],
+      "correct": 1,
+      "explanation": "Il vizio del fumo mostra la volontà fragile di Zeno e il meccanismo autoironico con cui trasforma ogni promessa in rinvio."
+    },
+    {
+      "id": "ita-mc-015",
+      "type": "multiple-choice",
+      "topic": "Svevo",
+      "author": "Svevo",
+      "difficulty": "media",
+      "question": "Chi è il protagonista di Senilità?",
+      "options": [
+        "Alfonso Nitti",
+        "Emilio Brentani",
+        "Zeno Cosìni",
+        "Mattia Pascal"
+      ],
+      "correct": 1,
+      "explanation": "Emilio Brentani vive una condizione di inerzia emotiva e autoinganno, tipica dell'inetto sveviano."
+    },
+    {
+      "id": "ita-mc-016",
+      "type": "multiple-choice",
+      "topic": "Pirandello",
+      "author": "Pirandello",
+      "difficulty": "alta",
+      "question": "Nell'Umorismo, che differenza c'e tra avvertimento e sentimento del contrario?",
+      "options": [
+        "Il primo coglie la contraddizione comica, il secondo la approfondisce fino a comprenderne il dolore umano.",
+        "Il primo coincide con la tragedia, il secondo con il lieto fine.",
+        "Il primo riguarda solo il teatro, il secondo solo la poesia.",
+        "Il primo elimina la riflessione, il secondo elimina ogni comicita."
+      ],
+      "correct": 0,
+      "explanation": "L'avvertimento fa ridere della stranezza; il sentimento del contrario introduce riflessione e compassione, trasformando il comico in umoristico."
+    },
+    {
+      "id": "ita-mc-017",
+      "type": "multiple-choice",
+      "topic": "Pirandello",
+      "author": "Pirandello",
+      "difficulty": "facile",
+      "question": "Quale opera pirandelliana è centrale per il metateatro?",
+      "options": [
+        "Sei personaggi in cerca d'autore",
+        "I Malavoglia",
+        "Il piacere",
+        "Ossi di séppia"
+      ],
+      "correct": 0,
+      "explanation": "Sei personaggi in cerca d'autore mette in scena il teatro che riflette su sé stesso, sul rapporto tra personaggi, attori e autore."
+    },
+    {
+      "id": "ita-mc-018",
+      "type": "multiple-choice",
+      "topic": "Ungaretti",
+      "author": "Ungaretti",
+      "difficulty": "media",
+      "question": "Quale carattere stilistico appartiene all'Allegria di Ungaretti?",
+      "options": [
+        "Versi lunghi e narrativi, costruiti come romanzi in prosa.",
+        "Parola essenziale, pause, versi brevi e forte concentrazione espressiva.",
+        "Uso sistematico di rime comiche e dialettali.",
+        "Descrizione impersonale della vita operaia."
+      ],
+      "correct": 1,
+      "explanation": "Nell'Allegria la parola è ridotta all'essenziale: le pause e lo spazio bianco rendono più intensa l'esperienza della guerra e della fragilità."
+    },
+    {
+      "id": "ita-mc-019",
+      "type": "multiple-choice",
+      "topic": "Ermetismo",
+      "difficulty": "media",
+      "question": "Quale definizione descrive meglio l'Ermetismo?",
+      "options": [
+        "Poesia pura, concentrata sulla parola essenziale e su immagini dense, spesso difficili.",
+        "Narrativa realista con intrecci ampi e personaggi collettivi.",
+        "Teatro naturalista fondato sulla cronaca giudiziaria.",
+        "Poesia patriottica ottocentesca e celebrativa."
+      ],
+      "correct": 0,
+      "explanation": "Gli ermetici cercano una parola rarefatta e allusiva, lontana dal discorso esplicativo e dalla comunicazione quotidiana."
+    },
+    {
+      "id": "ita-mc-020",
+      "type": "multiple-choice",
+      "topic": "Montale",
+      "author": "Montale",
+      "difficulty": "facile",
+      "question": "Quale formula è associata alla poesia di Montale negli Ossi di séppia?",
+      "options": [
+        "Il male di vivere",
+        "La fiumana del progresso",
+        "La vita inimitabile",
+        "Le parole in libertà"
+      ],
+      "correct": 0,
+      "explanation": "Negli Ossi di séppia Montale esprime una condizione di aridità, limite e disarmonia, spesso riassunta nell'idea del male di vivere."
+    },
+    {
+      "id": "ita-mc-021",
+      "type": "multiple-choice",
+      "topic": "Montale",
+      "author": "Montale",
+      "difficulty": "media",
+      "question": "A quale raccolta appartengono gli Xenia dedicati alla moglie Drusilla Tanzi?",
+      "options": [
+        "Myricae",
+        "Satura",
+        "Il dolore",
+        "Alcyone"
+      ],
+      "correct": 1,
+      "explanation": "Gli Xenia sono una sezione di Satura e trasformano il ricordo della moglie in poesia colloquiale, ironica e affettuosa."
+    },
+    {
+      "id": "ita-mc-022",
+      "type": "multiple-choice",
+      "topic": "Neorealismo",
+      "difficulty": "facile",
+      "question": "Quale film è un riferimento centrale del Neorealismo cinematografico?",
+      "options": [
+        "Roma città aperta",
+        "Cabiria",
+        "La dolce vita",
+        "Il Gattopardo"
+      ],
+      "correct": 0,
+      "explanation": "Roma città aperta di Rossellini e uno dei simboli del cinema neorealista nato nel clima della guerra e del dopoguerra."
+    },
+    {
+      "id": "ita-mc-023",
+      "type": "multiple-choice",
+      "topic": "Calvino",
+      "author": "Calvino",
+      "difficulty": "media",
+      "question": "Chi e Pin nel Sentiero dei nidi di ragno?",
+      "options": [
+        "Un intellettuale che scrive memorie dal carcere.",
+        "Un bambino che osserva la Resistenza da una prospettiva marginale e straniante.",
+        "Un ufficiale tedesco in fuga.",
+        "Un operaio torinese nel dopoguerra."
+      ],
+      "correct": 1,
+      "explanation": "Pin permette a Calvino di raccontare la Resistenza senza retorica eroica, attraverso uno sguardo infantile e periferico."
+    },
+    {
+      "id": "ita-mc-024",
+      "type": "multiple-choice",
+      "topic": "Fenoglio",
+      "author": "Fenoglio",
+      "difficulty": "media",
+      "question": "Quale intreccio e al centro di Una questione privata?",
+      "options": [
+        "La gelosia amorosa di Milton per Fulvia e Giorgio dentro il contesto della Resistenza.",
+        "La scalata sociale di un muratore arricchito.",
+        "Il viaggio di ritorno da Auschwitz.",
+        "La fuga di un esteta inglese dal proprio ritratto."
+      ],
+      "correct": 0,
+      "explanation": "Il romanzo intreccia passione privata e guerra partigiana: la ricerca di Giorgio nasce dal dubbio amoroso di Milton."
+    },
+    {
+      "id": "ita-mc-025",
+      "type": "multiple-choice",
+      "topic": "Primo Levi",
+      "author": "Primo Levi",
+      "difficulty": "alta",
+      "question": "Nel Canto di Ulisse di Se questo è un uomo, perché il ricordo di Dante e decisivo?",
+      "options": [
+        "Perché permette a Levi di vincere un privilegio materiale immediato.",
+        "Perché mostra che la cultura può diventare resistenza umana anche nel Lager.",
+        "Perché dimostra che la memoria letteraria cancella il trauma.",
+        "Perché trasforma il capitolo in una parodia comica."
+      ],
+      "correct": 1,
+      "explanation": "Nel dialogo con Pikolo, ricordare Dante significa recuperare dignita, lingua e umanità in un luogo costruito per distruggerle."
+    },
+    {
+      "id": "ita-open-001",
+      "type": "open",
+      "topic": "Positivismo, Naturalismo, Verismo",
+      "difficulty": "media",
+      "question": "Spiega il legame tra Positivismo, Darwinismo e narrativa naturalista.",
+      "model_answer": "Il Positivismo valorizza scienza, osservazione e fiducia nelle leggi dei fenomeni. Il Darwinismo introduce l'idea di evoluzione e adattamento. Il Naturalismo trasferisce questo clima nel romanzo: ambiente, eredità e condizioni sociali diventano fattori che condizionano i personaggi.",
+      "keywords": ["Positivismo", "Darwin", "scienza", "ambiente", "eredità", "Naturalismo"]
+    },
+    {
+      "id": "ita-open-002",
+      "type": "open",
+      "topic": "Verga",
+      "author": "Verga",
+      "difficulty": "alta",
+      "question": "Spiega impersonalità e regressione del narratore nel Verismo verghiano.",
+      "model_answer": "L'impersonalità richiede che l'autore non giudichi apertamente i fatti. Con la regressione, il narratore assume lingua, valori e punto di vista dell'ambiente rappresentato, soprattutto popolare. Così il lettore percepisce i personaggi dall'interno del loro mondo, senza commento esterno moralistico.",
+      "keywords": ["impersonalità", "regressione", "narratore", "punto di vista", "mondo popolare", "Verismo"]
+    },
+    {
+      "id": "ita-open-003",
+      "type": "open",
+      "topic": "Decadentismo, Simbolismo, Estetismo",
+      "difficulty": "media",
+      "question": "Perché il Decadentismo nasce anche come crisi del Positivismo?",
+      "model_answer": "Il Decadentismo mette in dubbio l'ottimismo scientifico e la fiducia nella ragione. Al centro non ci sono più leggi oggettive, ma mistero, inconscio, analogia, bellezza e stati d'animo. Il poeta cerca verità nascoste che la scienza non sa spiegare.",
+      "keywords": ["crisi del Positivismo", "mistero", "irrazionale", "simbolo", "analogia", "bellezza"]
+    },
+    {
+      "id": "ita-open-004",
+      "type": "open",
+      "topic": "Pascoli",
+      "author": "Pascoli",
+      "difficulty": "alta",
+      "question": "Spiega come nido, trauma familiare e fonosimbolismo si collegano nella poesia di Pascoli.",
+      "model_answer": "Il trauma dell'uccisione del padre e le morti familiari rendono il nido il simbolo di protezione perduta. Nei testi di Myricae la realtà quotidiana e rurale si carica di inquietudine. Onomatopee, suoni e dettagli minuti non sono decorativi: suggeriscono paura, mistero e bisogno di rifugio.",
+      "keywords": ["nido", "10 agosto", "trauma", "Myricae", "onomatopee", "fonosimbolismo"]
+    },
+    {
+      "id": "ita-open-005",
+      "type": "open",
+      "topic": "D'Annunzio",
+      "author": "D'Annunzio",
+      "difficulty": "media",
+      "question": "Metti in relazione Andrea Sperelli, estetismo e superuomo dannunziano.",
+      "model_answer": "Andrea Sperelli incarna l'esteta che fa della vita un'opera d'arte e privilegia bellezza, raffinatezza e sensazioni. Questa figura anticipa il desiderio dannunziano di distinguersi dalla massa. Il superuomo aggiunge energia, dominio e gesto eccezionale, ma resta legato alla costruzione spettacolare dell'io.",
+      "keywords": ["Andrea Sperelli", "estetismo", "Il piacere", "vita come arte", "superuomo", "io eccezionale"]
+    },
+    {
+      "id": "ita-open-006",
+      "type": "open",
+      "topic": "Avanguardie, Futurismo, Crepuscolarismo",
+      "difficulty": "media",
+      "question": "Confronta Futurismo e Crepuscolarismo nel modo di intendere il poeta.",
+      "model_answer": "Il Futurismo vuole un poeta aggressivo, provocatore, immerso nella modernità, nella velocità e nella rottura delle forme. Il Crepuscolarismo abbassa invece il tono: il poeta è fragile, ironico, anti-eroico, legato a oggetti dimessi e atmosfere quotidiane. Entrambi reagiscono al poeta-vate, ma in direzioni opposte.",
+      "keywords": ["Futurismo", "Marinetti", "velocità", "Crepuscolarismo", "Gozzano", "anti-eroe"]
+    },
+    {
+      "id": "ita-open-007",
+      "type": "open",
+      "topic": "Romanzo della crisi",
+      "difficulty": "alta",
+      "question": "Spiega come Freud, Bergson e Nietzsche influenzano il romanzo della crisi.",
+      "model_answer": "Freud mette in primo piano inconscio e autoinganno; Bergson valorizza durata e tempo soggettivo; Nietzsche incrina certezze morali e identità stabili. Nel romanzo questi elementi producono personaggi inetti, narratori inattendibili, memoria frammentata e crisi del soggetto compatto.",
+      "keywords": ["Freud", "inconscio", "Bergson", "tempo soggettivo", "Nietzsche", "identità"]
+    },
+    {
+      "id": "ita-open-008",
+      "type": "open",
+      "topic": "Svevo",
+      "author": "Svevo",
+      "difficulty": "media",
+      "question": "Perché Zeno Cosìni e un inetto diverso dai personaggi veristi?",
+      "model_answer": "Zeno è inetto perché non domina la propria volontà e interpreta sé stesso attraverso autoanalisi, ironia e giustificazioni. A differenza dei personaggi veristi, non è solo schiacciato da condizioni sociali esterne: la sua crisi è psicologica, linguistica e conoscitiva. La malattia diventa anche modo di leggere la modernità.",
+      "keywords": ["Zeno", "inetto", "autoanalisi", "ironia", "malattia", "modernità"]
+    },
+    {
+      "id": "ita-open-009",
+      "type": "open",
+      "topic": "Pirandello",
+      "author": "Pirandello",
+      "difficulty": "alta",
+      "question": "Spiega il rapporto tra vita, forma e maschera in Pirandello.",
+      "model_answer": "Per Pirandello la vita è movimento continuo, mentre la forma la fissa in ruoli sociali e immagini rigide. La maschera è l'identità che gli altri ci attribuiscono e che spesso accettiamo per vivere. Da qui nasce il conflitto: nessuno coincide pienamente con una sola immagine di sé.",
+      "keywords": ["vita", "forma", "maschera", "identità", "ruolo sociale", "frammentazione"]
+    },
+    {
+      "id": "ita-open-010",
+      "type": "open",
+      "topic": "Ungaretti",
+      "author": "Ungaretti",
+      "difficulty": "media",
+      "question": "Che funzione ha la memoria autobiografica nei Fiumi di Ungaretti?",
+      "model_answer": "Ne I fiumi Ungaretti ripercorre luoghi decisivi della propria vita, dall'Egitto alla Francia fino al fronte italiano. I fiumi diventano tappe dell'identità e della memoria. In guerra, ricordare significa ricomporre per un momento la propria storia personale dentro una condizione estrema.",
+      "keywords": ["I fiumi", "memoria", "identità", "Egitto", "Francia", "guerra"]
+    },
+    {
+      "id": "ita-open-011",
+      "type": "open",
+      "topic": "Montale",
+      "author": "Montale",
+      "difficulty": "alta",
+      "question": "Spiega il correlativo oggettivo in Montale con riferimento agli Ossi di séppia.",
+      "model_answer": "Il correlativo oggettivo consiste nel rendere una condizione interiore attraverso oggetti, paesaggi o immagini concrete. Negli Ossi di séppia aridità, muri, meriggi, limoni e paesaggi liguri non sono semplici descrizioni: traducono limite, disarmonia e possibile attesa di un varco.",
+      "keywords": ["correlativo oggettivo", "Ossi di séppia", "oggetti", "paesaggio ligure", "male di vivere", "varco"]
+    },
+    {
+      "id": "ita-open-012",
+      "type": "open",
+      "topic": "Neorealismo",
+      "difficulty": "media",
+      "question": "Perché il Neorealismo è definito spesso un clima più che una scuola?",
+      "model_answer": "Il Neorealismo non ha un manifesto unico o regole fisse: nasce dal clima storico della guerra, della Resistenza e del dopoguerra. Scrittori e registi condividono attenzione alla realtà sociale, lingua più vicina al parlato, antiretorica e interesse per il popolo, ma con soluzioni diverse.",
+      "keywords": ["clima", "dopoguerra", "Resistenza", "antiretorica", "lingua parlata", "realtà sociale"]
+    },
+    {
+      "id": "ita-open-013",
+      "type": "open",
+      "topic": "Calvino",
+      "author": "Calvino",
+      "difficulty": "media",
+      "question": "Che cosa chiarisce Calvino nella prefazione del 1964 al Sentiero dei nidi di ragno?",
+      "model_answer": "Calvino rilegge il romanzo come tentativo giovanile di raccontare la Resistenza senza monumentalizzarla. La scelta di Pin evita il punto di vista eroico e adulto. La guerra partigiana appare così concreta, contraddittoria e filtrata da uno sguardo infantile e marginale.",
+      "keywords": ["prefazione 1964", "Pin", "Resistenza", "sguardo infantile", "anti-retorica", "neorealismo"]
+    },
+    {
+      "id": "ita-open-014",
+      "type": "open",
+      "topic": "Fenoglio",
+      "author": "Fenoglio",
+      "difficulty": "media",
+      "question": "Spiega il ruolo della lingua in Fenoglio, tra italiano, piemontese e inglese.",
+      "model_answer": "Fenoglio usa una lingua aspra e ibrida, legata alle Langhe ma nutrita anche da modelli inglesi e americani. L'italiano può mescolarsi a piemontesismi e calchi dall'inglese. Questo stile rende la Resistenza concreta, non celebrativa, e restituisce tensione morale ed epica quotidiana.",
+      "keywords": ["Fenoglio", "Langhe", "piemontese", "inglese", "Hemingway", "Resistenza"]
+    },
+    {
+      "id": "ita-open-015",
+      "type": "open",
       "topic": "Primo Levi",
       "author": "Primo Levi",
       "difficulty": "media",
-      "question": "Nel capitolo \"Il canto di Ulisse\" di Se questo è un uomo, quale terzina dantesca Levi cerca disperatamente di ricordare per Pikolo?",
-      "options": [
-        "\"Nel mezzo del cammin di nostra vita…\"",
-        "\"Considerate la vostra semenza: / fatti non foste a viver come bruti, / ma per seguir virtute e canoscenza\"",
-        "\"Lasciate ogne speranza, voi ch'intrate\"",
-        "\"Amor, ch'a nullo amato amar perdona\""
-      ],
-      "correct": 1,
-      "explanation": "Inferno XXVI, vv. 118-120 — l'orazion picciola di Ulisse ai compagni. Per Levi la cultura diventa resistenza spirituale dentro il Lager: ricordare quei versi significa restare umani."
+      "question": "Perché lo stile di Primo Levi viene spesso definito sobrio e razionale?",
+      "model_answer": "Levi racconta l'esperienza del Lager senza enfasi retorica, cercando precisione, chiarezza e misura. La formazione scientifica e il modello manzoniano lo aiutano a ordinare la testimonianza. Proprio la sobrietà rende più forte l'accusa morale, perché lascia parlare i fatti.",
+      "keywords": ["sobrietà", "chiarezza", "testimonianza", "Lager", "chimico", "Manzoni"]
+    },
+    {
+      "id": "ita-cloze-001",
+      "type": "cloze",
+      "topic": "Verga",
+      "author": "Verga",
+      "difficulty": "facile",
+      "question": "Verga teorizza il principio dell'_____, secondo cui l'autore deve eclissarsi e lasciare parlare fatti e personaggi.",
+      "answer": "impersonalità",
+      "alt_answers": ["impersonalità"],
+      "explanation": "L'impersonalità è centrale nel Verismo verghiano e si lega alla regressione del narratore."
+    },
+    {
+      "id": "ita-cloze-002",
+      "type": "cloze",
+      "topic": "Pascoli",
+      "author": "Pascoli",
+      "difficulty": "facile",
+      "question": "Il simbolo pascoliano della protezione familiare minacciata è il _____.",
+      "answer": "nido",
+      "alt_answers": ["nido familiare"],
+      "explanation": "Il nido rappresenta il bisogno di rifugio dopo i traumi familiari, ma anche la sua fragilità."
+    },
+    {
+      "id": "ita-cloze-003",
+      "type": "cloze",
+      "topic": "Pirandello",
+      "author": "Pirandello",
+      "difficulty": "media",
+      "question": "Nel Fu Mattia Pascal, lo strappo del cielo di _____ indica la rottura dell'illusione scenica e identitària.",
+      "answer": "carta",
+      "alt_answers": [],
+      "explanation": "Il cielo di carta è un'immagine della finzione che sostiene le certezze: basta uno strappo per far emergere la crisi."
+    },
+    {
+      "id": "ita-cloze-004",
+      "type": "cloze",
+      "topic": "Ungaretti",
+      "author": "Ungaretti",
+      "difficulty": "media",
+      "question": "La prima grande raccolta di Ungaretti, nata dall'esperienza della guerra, si intitola L'_____.",
+      "answer": "Allegria",
+      "alt_answers": ["allegria"],
+      "explanation": "L'Allegria raccoglie testi legati al fronte e alla scoperta essenziale della vita nella precarietà."
+    },
+    {
+      "id": "ita-cloze-005",
+      "type": "cloze",
+      "topic": "Ermetismo",
+      "difficulty": "facile",
+      "question": "L'Ermetismo ricerca una poesia pura fondata sulla parola _____.",
+      "answer": "essenziale",
+      "alt_answers": ["rarefatta", "scarna"],
+      "explanation": "La parola ermetica è concentrata, allusiva e lontana dalla spiegazione discorsiva."
+    },
+    {
+      "id": "ita-cloze-006",
+      "type": "cloze",
+      "topic": "Neorealismo",
+      "difficulty": "facile",
+      "question": "Il Neorealismo si sviluppa soprattutto nel clima storico della guerra, della Resistenza e del _____.",
+      "answer": "dopoguerra",
+      "alt_answers": ["secondo dopoguerra"],
+      "explanation": "Il dopoguerra porta attenzione a povertà, ricostruzione, popolo e responsabilità civile."
+    },
+    {
+      "id": "ita-cloze-007",
+      "type": "cloze",
+      "topic": "Calvino",
+      "author": "Calvino",
+      "difficulty": "facile",
+      "question": "Nel Sentiero dei nidi di ragno il protagonista bambino si chiama _____.",
+      "answer": "Pin",
+      "alt_answers": ["pin"],
+      "explanation": "Pin offre uno sguardo marginale e infantile sulla Resistenza."
+    },
+    {
+      "id": "ita-cloze-008",
+      "type": "cloze",
+      "topic": "Fenoglio",
+      "author": "Fenoglio",
+      "difficulty": "facile",
+      "question": "Una questione privata ha come protagonista il partigiano _____.",
+      "answer": "Milton",
+      "alt_answers": ["milton"],
+      "explanation": "Milton cerca Giorgio per chiarire il rapporto con Fulvia, intrecciando passione privata e guerra."
+    },
+    {
+      "id": "ita-cloze-009",
+      "type": "cloze",
+      "topic": "Primo Levi",
+      "author": "Primo Levi",
+      "difficulty": "facile",
+      "question": "Primo Levi fu deportato ad Auschwitz-Monowitz con la matricola _____.",
+      "answer": "174517",
+      "alt_answers": ["174.517"],
+      "explanation": "Il numero di matricola diventa il segno della riduzione della persona a oggetto amministrativo del Lager."
+    },
+    {
+      "id": "ita-cloze-010",
+      "type": "cloze",
+      "topic": "Primo Levi",
+      "author": "Primo Levi",
+      "difficulty": "media",
+      "question": "Ne I sommersi e i salvati, Levi chiama _____ l'area ambigua di compromessi, privilegi e responsabilità dentro il Lager.",
+      "answer": "zona grigia",
+      "alt_answers": ["la zona grigia"],
+      "explanation": "La zona grigia evita semplificazioni: mostra come il sistema concentrazionario deformi rapporti morali e responsabilità."
     }
   ]
 }
+
