@@ -1,3 +1,8 @@
+---
+tags:
+  - Sto
+---
+
 # Verso l'Europa unita: dal Manifesto di Ventotene all'Unione Europea
 
 ## 1. Le radici culturali dell'idea d'Europa

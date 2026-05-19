@@ -1,3 +1,8 @@
+---
+tags:
+  - Sto
+---
+
 # La Shoah: lo sterminio degli ebrei (1933-1945)
 
 ## 1. Premessa: terminologia e concetti

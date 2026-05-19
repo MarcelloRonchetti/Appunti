@@ -1,3 +1,8 @@
+---
+tags:
+  - Sto
+---
+
 # La Resistenza italiana e la Liberazione (1943-1945)
 
 ## 1. Il quadro: dall'8 settembre 1943 al 25 aprile 1945

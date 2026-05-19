@@ -1,3 +1,8 @@
+---
+tags:
+  - Sto
+---
+
 # Il Nazismo: dalla Repubblica di Weimar al Terzo Reich
 
 ## 1. La Repubblica di Weimar (1918-1933)

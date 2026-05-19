@@ -1,3 +1,8 @@
+---
+tags:
+  - Sto
+---
+
 # Le donne nella Grande Guerra (1914-1918)
 
 > *"La guerra ha fatto fare alle donne in pochi anni un cammino che senza di essa avrebbero compiuto in qualche secolo."*

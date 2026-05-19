@@ -1,3 +1,8 @@
+---
+tags:
+  - Sto
+---
+
 # Il primo dopoguerra in Europa (1918-1929)
 
 Questo modulo descrive il quadro politico-istituzionale dell'**Europa dei vincitori** (Francia, Gran Bretagna) e dei **vinti** (Austria) dopo il 1918, integrando le note già dedicate alla **Germania di Weimar** (`02-nazismo.md`), all'**Italia del biennio rosso e del fascismo** (`01-fascismo-italiano.md`), all'**URSS** (`03-rivoluzione-russa-stalinismo.md`) e agli **USA degli anni ruggenti** (`04-crisi-1929.md`).

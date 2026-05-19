@@ -1,3 +1,8 @@
+---
+tags:
+  - Sto
+---
+
 # La Prima guerra mondiale (1914-1918)
 
 ## 1. Le origini lontane: tensioni di fine Ottocento

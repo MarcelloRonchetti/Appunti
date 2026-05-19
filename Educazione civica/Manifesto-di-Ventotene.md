@@ -1,3 +1,8 @@
+---
+tags:
+  - Civ
+---
+
 # Il Manifesto di Ventotene
 
 **Altiero Spinelli, Ernesto Rossi — *Per un'Europa libera e unita* (1941)**

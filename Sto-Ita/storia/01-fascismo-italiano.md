@@ -1,3 +1,8 @@
+---
+tags:
+  - Sto
+---
+
 # Il Fascismo italiano (1919-1939)
 
 ## 1. Il dopoguerra italiano e il Biennio Rosso (1919-1920)

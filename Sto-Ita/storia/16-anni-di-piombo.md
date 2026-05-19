@@ -1,3 +1,8 @@
+---
+tags:
+  - Sto
+---
+
 # Gli anni di piombo: l'Italia degli anni Settanta
 
 ## 1. Il contesto: il "lungo Sessantotto" italiano

@@ -1,3 +1,8 @@
+---
+tags:
+  - Sto
+---
+
 # Il secondo dopoguerra in Italia e nel mondo (1945-1948)
 
 Questa nota integra le altre dedicate a temi del dopoguerra: per la **Resistenza** vedi `06-resistenza-e-liberazione.md`; per la **costruzione europea** vedi `07-europa-unita.md` e `Educazione civica/Manifesto-di-Ventotene.md`.

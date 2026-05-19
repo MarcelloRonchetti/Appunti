@@ -1,3 +1,8 @@
+---
+tags:
+  - Sto
+---
+
 # L'età giolittiana (1901-1914)
 
 ## 1. Il contesto: l'Italia all'inizio del Novecento

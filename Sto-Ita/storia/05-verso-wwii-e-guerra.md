@@ -1,3 +1,8 @@
+---
+tags:
+  - Sto
+---
+
 # Verso la Seconda Guerra Mondiale e la guerra fino al 1943
 
 ## Parte I — Verso la guerra (1929-1939)

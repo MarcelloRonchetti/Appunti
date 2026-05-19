@@ -1,3 +1,8 @@
+---
+tags:
+  - Sto
+---
+
 # L'età dell'imperialismo, la società di massa e il caso Dreyfus (1870-1914)
 
 ## 1. La Seconda rivoluzione industriale (1870-1914)

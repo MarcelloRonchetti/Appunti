@@ -1,3 +1,8 @@
+---
+tags:
+  - Sto
+---
+
 # La Rivoluzione Russa e l'URSS (1917-1939)
 
 ## PARTE I — LA RIVOLUZIONE RUSSA (1917-1924)

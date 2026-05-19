@@ -1,3 +1,8 @@
+---
+tags:
+  - Civ
+---
+
 # Europa
 
 ## Cos'è l'Unione Europea
