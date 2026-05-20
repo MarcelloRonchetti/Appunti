@@ -2,6 +2,101 @@
 
 Questa pagina raccoglie mappe per vedere il programma come un sistema di collegamenti: movimenti, autori, opere, temi e passaggi storici.
 
+## Mappa temporale
+
+:::html
+<section class="visual-map" aria-label="Timeline di italiano">
+  <div class="visual-map__header">
+    <span class="visual-map__eyebrow">1840 → 2024</span>
+    <div class="visual-map__title">Tutto il programma su un asse del tempo</div>
+    <div class="visual-map__subtitle">Tre corsie sovrapposte: i movimenti che dominano il periodo, le vite degli autori (segmento nascita → morte), le opere principali (anno di pubblicazione). Le colonne valgono 10 anni l'una.</div>
+  </div>
+  <div class="map-legend">
+    <span style="--dot:#8a2820">movimenti</span>
+    <span style="--dot:#4f6f3a">vita degli autori</span>
+    <span style="--dot:#7c5b9d">opere</span>
+  </div>
+  <div class="map-scroll">
+    <div class="timeline-board">
+      <div class="tl-year" style="--col:1">1840</div>
+      <div class="tl-year" style="--col:2">1850</div>
+      <div class="tl-year" style="--col:3">1860</div>
+      <div class="tl-year" style="--col:4">1870</div>
+      <div class="tl-year" style="--col:5">1880</div>
+      <div class="tl-year" style="--col:6">1890</div>
+      <div class="tl-year" style="--col:7">1900</div>
+      <div class="tl-year" style="--col:8">1910</div>
+      <div class="tl-year" style="--col:9">1920</div>
+      <div class="tl-year" style="--col:10">1930</div>
+      <div class="tl-year" style="--col:11">1940</div>
+      <div class="tl-year" style="--col:12">1950</div>
+      <div class="tl-year" style="--col:13">1960</div>
+      <div class="tl-year" style="--col:14">1970</div>
+      <div class="tl-year" style="--col:15">1980</div>
+      <div class="tl-year" style="--col:16">1990</div>
+      <div class="tl-year" style="--col:17">2000</div>
+      <div class="tl-year" style="--col:18">2010</div>
+      <div class="tl-year" style="--col:19">2020</div>
+
+      <a class="tl-bar" href="#/positivismo-naturalismo-e-verismo" style="--from:3;--to:5;--row:2"><strong>Positivismo · Naturalismo · Verismo</strong><span>1860–1880</span></a>
+      <a class="tl-bar" href="#/decadentismo-simbolismo-ed-estetismo" style="--from:5;--to:8;--row:3"><strong>Decadentismo · Simbolismo · Estetismo</strong><span>1880–1910</span></a>
+      <a class="tl-bar" href="#/avanguardie-futurismo-e-crepuscolarismo" style="--from:7;--to:9;--row:4"><strong>Avanguardie · Futurismo · Crepuscolari</strong><span>1909–1920</span></a>
+      <a class="tl-bar" href="#/romanzo-della-crisi" style="--from:7;--to:10;--row:5"><strong>Romanzo della crisi</strong><span>1900–1930</span></a>
+      <a class="tl-bar" href="#/ermetismo" style="--from:8;--to:11;--row:6"><strong>Ermetismo</strong><span>1914–1940</span></a>
+      <a class="tl-bar" href="#/neorealismo" style="--from:11;--to:13;--row:7"><strong>Neorealismo</strong><span>1943–1955</span></a>
+      <a class="tl-bar" href="#/linea-antinovecentista" style="--from:11;--to:15;--row:8"><strong>Secondo Novecento · linea antinovecentista</strong><span>1945–1980</span></a>
+
+      <div class="tl-divider" style="--row:9"><span>Autori</span></div>
+
+      <a class="tl-life" href="#/giovanni-verga" style="--from:1;--to:9;--row:10"><strong>Giovanni Verga</strong><span>1840 — 1922</span></a>
+      <a class="tl-life" href="#/giovanni-pascoli" style="--from:2;--to:8;--row:11"><strong>Giovanni Pascoli</strong><span>1855 — 1912</span></a>
+      <a class="tl-life" href="#/italo-svevo" style="--from:3;--to:9;--row:12"><strong>Italo Svevo</strong><span>1861 — 1928</span></a>
+      <a class="tl-life" href="#/gabriele-dannunzio" style="--from:3;--to:11;--row:13"><strong>Gabriele D'Annunzio</strong><span>1863 — 1938</span></a>
+      <a class="tl-life" href="#/luigi-pirandello" style="--from:3;--to:10;--row:14"><strong>Luigi Pirandello</strong><span>1867 — 1936</span></a>
+      <a class="tl-life" href="#/giuseppe-ungaretti" style="--from:5;--to:14;--row:15"><strong>Giuseppe Ungaretti</strong><span>1888 — 1970</span></a>
+      <a class="tl-life" href="#/eugenio-montale" style="--from:6;--to:15;--row:16"><strong>Eugenio Montale</strong><span>1896 — 1981</span></a>
+      <a class="tl-life" href="#/primo-levi" style="--from:9;--to:15;--row:17"><strong>Primo Levi</strong><span>1919 — 1987</span></a>
+      <a class="tl-life" href="#/beppe-fenoglio" style="--from:9;--to:13;--row:18"><strong>Beppe Fenoglio</strong><span>1922 — 1963</span></a>
+      <a class="tl-life" href="#/italo-calvino" style="--from:9;--to:15;--row:19"><strong>Italo Calvino</strong><span>1923 — 1985</span></a>
+
+      <div class="tl-divider" style="--row:20"><span>Opere principali</span></div>
+
+      <a class="tl-work" href="#/madame-bovary" style="--col:2;--row:21"><strong>Madame Bovary</strong><span>1857</span></a>
+      <a class="tl-work" href="#/l-ammazzatoio" style="--col:4;--row:21"><strong>L'Ammazzatoio</strong><span>1877</span></a>
+      <a class="tl-work" href="#/giovanni-verga" style="--col:5;--row:21"><strong>I Malavoglia</strong><span>1881</span></a>
+      <a class="tl-work" href="#/il-ritratto-di-dorian-gray" style="--col:6;--row:21"><strong>Dorian Gray</strong><span>1890</span></a>
+      <a class="tl-work" href="#/luigi-pirandello" style="--col:7;--row:21"><strong>Il fu Mattia Pascal</strong><span>1904</span></a>
+      <a class="tl-work" href="#/italo-svevo" style="--col:9;--row:21"><strong>La coscienza di Zeno</strong><span>1923</span></a>
+      <a class="tl-work" href="#/giuseppe-ungaretti" style="--col:10;--row:21"><strong>L'Allegria</strong><span>1931</span></a>
+      <a class="tl-work" href="#/italo-calvino" style="--col:11;--row:21"><strong>Sentiero dei nidi di ragno</strong><span>1947</span></a>
+      <a class="tl-work" href="#/il-gattopardo" style="--col:12;--row:21"><strong>Il Gattopardo</strong><span>1958</span></a>
+      <a class="tl-work" href="#/una-questione-privata" style="--col:13;--row:21"><strong>Una questione privata</strong><span>1963</span></a>
+      <a class="tl-work" href="#/italo-calvino" style="--col:14;--row:21"><strong>Le città invisibili</strong><span>1972</span></a>
+      <a class="tl-work" href="#/primo-levi" style="--col:15;--row:21"><strong>I sommersi e i salvati</strong><span>1986</span></a>
+
+      <a class="tl-work" href="#/germinie-lacerteux" style="--col:3;--row:22"><strong>Germinie Lacerteux</strong><span>1865</span></a>
+      <a class="tl-work" href="#/a-rebours" style="--col:5;--row:22"><strong>À rebours</strong><span>1884</span></a>
+      <a class="tl-work" href="#/giovanni-pascoli" style="--col:6;--row:22"><strong>Myricae</strong><span>1891</span></a>
+      <a class="tl-work" href="#/il-marchese-di-roccaverdina" style="--col:7;--row:22"><strong>Marchese di Roccaverdina</strong><span>1901</span></a>
+      <a class="tl-work" href="#/eugenio-montale" style="--col:9;--row:22"><strong>Ossi di seppia</strong><span>1925</span></a>
+      <a class="tl-work" href="#/primo-levi" style="--col:11;--row:22"><strong>Se questo è un uomo</strong><span>1947</span></a>
+      <a class="tl-work" href="#/primo-levi" style="--col:13;--row:22"><strong>La tregua</strong><span>1963</span></a>
+      <a class="tl-work" href="#/italo-calvino" style="--col:14;--row:22"><strong>Se una notte d'inverno</strong><span>1979</span></a>
+
+      <a class="tl-work" href="#/gabriele-dannunzio" style="--col:5;--row:23"><strong>Il piacere</strong><span>1889</span></a>
+      <a class="tl-work" href="#/avanguardie-futurismo-e-crepuscolarismo" style="--col:7;--row:23"><strong>Manifesto del Futurismo</strong><span>1909</span></a>
+      <a class="tl-work" href="#/luigi-pirandello" style="--col:9;--row:23"><strong>Uno, nessuno e centomila</strong><span>1926</span></a>
+      <a class="tl-work" href="#/italo-calvino" style="--col:13;--row:23"><strong>Le cosmicomiche</strong><span>1965</span></a>
+
+      <a class="tl-work" href="#/giovanni-verga" style="--col:5;--row:24"><strong>Mastro-don Gesualdo</strong><span>1889</span></a>
+      <a class="tl-work" href="#/niente-di-nuovo-sul-fronte-occidentale" style="--col:9;--row:24"><strong>Niente di nuovo sul fronte occidentale</strong><span>1929</span></a>
+      <a class="tl-work" href="#/come-il-vento-cucito-alla-terra" style="--col:19;--row:24"><strong>Come il vento cucito alla terra</strong><span>2022</span></a>
+      <a class="tl-work" href="#/i-giorni-di-vetro" style="--col:19;--row:25"><strong>I giorni di vetro</strong><span>2024</span></a>
+    </div>
+  </div>
+</section>
+:::
+
 ## Mappa generale
 
 :::html
