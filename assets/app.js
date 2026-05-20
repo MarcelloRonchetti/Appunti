@@ -1,55 +1,4 @@
-const pages = [
-  { group: "Storia", title: "Il Fascismo italiano", meta: "1919 — 1939", path: "Sto-Ita/storia/01-fascismo-italiano.md" },
-  { group: "Storia", title: "Nazismo", meta: "1919 — 1945", path: "Sto-Ita/storia/02-nazismo.md" },
-  { group: "Storia", title: "Rivoluzione russa e stalinismo", path: "Sto-Ita/storia/03-rivoluzione-russa-stalinismo.md" },
-  { group: "Storia", title: "La crisi del 1929", path: "Sto-Ita/storia/04-crisi-1929.md" },
-  { group: "Storia", title: "Verso la Seconda guerra mondiale", path: "Sto-Ita/storia/05-verso-wwii-e-guerra.md" },
-  { group: "Storia", title: "Resistenza e liberazione", path: "Sto-Ita/storia/06-resistenza-e-liberazione.md" },
-  { group: "Storia", title: "Europa unita", path: "Sto-Ita/storia/07-europa-unita.md" },
-  { group: "Storia", title: "Le donne nella Grande Guerra", path: "Sto-Ita/storia/08-donne-grande-guerra.md" },
-  { group: "Storia", title: "Italia post-unitaria", meta: "1861 — 1900", path: "Sto-Ita/storia/09-italia-postunitaria.md" },
-  { group: "Storia", title: "Imperialismo e società di massa", meta: "1870 — 1914", path: "Sto-Ita/storia/10-imperialismo-societa-massa.md" },
-  { group: "Storia", title: "L'età giolittiana", meta: "1901 — 1914", path: "Sto-Ita/storia/11-eta-giolittiana.md" },
-  { group: "Storia", title: "La Prima guerra mondiale", meta: "1914 — 1918", path: "Sto-Ita/storia/12-prima-guerra-mondiale.md" },
-  { group: "Storia", title: "Primo dopoguerra in Europa", meta: "1918 — 1929", path: "Sto-Ita/storia/13-primo-dopoguerra-europa.md" },
-  { group: "Storia", title: "La Shoah", meta: "1933 — 1945", path: "Sto-Ita/storia/14-shoah.md" },
-  { group: "Storia", title: "Secondo dopoguerra in Italia", meta: "1945 — 1948", path: "Sto-Ita/storia/15-secondo-dopoguerra-italia.md" },
-  { group: "Storia", title: "Gli anni di piombo", meta: "anni '70", path: "Sto-Ita/storia/16-anni-di-piombo.md" },
-  { group: "Italiano · Autori", title: "Giovanni Verga", path: "Sto-Ita/italiano/autori/01-giovanni-verga.md" },
-  { group: "Italiano · Autori", title: "Giovanni Pascoli", path: "Sto-Ita/italiano/autori/02-giovanni-pascoli.md" },
-  { group: "Italiano · Autori", title: "Gabriele D'Annunzio", path: "Sto-Ita/italiano/autori/03-gabriele-dannunzio.md" },
-  { group: "Italiano · Autori", title: "Italo Svevo", path: "Sto-Ita/italiano/autori/04-italo-svevo.md" },
-  { group: "Italiano · Autori", title: "Luigi Pirandello", path: "Sto-Ita/italiano/autori/05-luigi-pirandello.md" },
-  { group: "Italiano · Autori", title: "Giuseppe Ungaretti", path: "Sto-Ita/italiano/autori/06-giuseppe-ungaretti.md" },
-  { group: "Italiano · Autori", title: "Eugenio Montale", path: "Sto-Ita/italiano/autori/07-eugenio-montale.md" },
-  { group: "Italiano · Autori", title: "Italo Calvino", path: "Sto-Ita/italiano/autori/08-italo-calvino.md" },
-  { group: "Italiano · Autori", title: "Beppe Fenoglio", path: "Sto-Ita/italiano/autori/09-beppe-fenoglio.md" },
-  { group: "Italiano · Autori", title: "Primo Levi", path: "Sto-Ita/italiano/autori/10-primo-levi.md" },
-  { group: "Italiano · Libri", title: "Il Gattopardo", sub: "Tomasi di Lampedusa", path: "Sto-Ita/italiano/libri/01-il-gattopardo.md" },
-  { group: "Italiano · Libri", title: "Il ritratto di Dorian Gray", sub: "Wilde", path: "Sto-Ita/italiano/libri/02-il-ritratto-di-dorian-gray.md" },
-  { group: "Italiano · Libri", title: "A rebours", sub: "Huysmans", path: "Sto-Ita/italiano/libri/03-a-rebours.md" },
-  { group: "Italiano · Libri", title: "Madame Bovary", sub: "Flaubert", path: "Sto-Ita/italiano/libri/04-madame-bovary.md" },
-  { group: "Italiano · Libri", title: "L'Ammazzatoio", sub: "Zola", path: "Sto-Ita/italiano/libri/05-l-ammazzatoio.md" },
-  { group: "Italiano · Libri", title: "Germinie Lacerteux", sub: "Goncourt", path: "Sto-Ita/italiano/libri/06-germinie-lacerteux.md" },
-  { group: "Italiano · Libri", title: "Il Marchese di Roccaverdina", sub: "Capuana", path: "Sto-Ita/italiano/libri/07-il-marchese-di-roccaverdina.md" },
-  { group: "Italiano · Libri", title: "Niente di nuovo sul fronte occidentale", sub: "Remarque", path: "Sto-Ita/italiano/libri/08-niente-di-nuovo-sul-fronte-occidentale.md" },
-  { group: "Italiano · Libri", title: "Come il vento cucito alla terra", sub: "Tuti", path: "Sto-Ita/italiano/libri/09-come-il-vento-cucito-alla-terra.md" },
-  { group: "Italiano · Libri", title: "La banda di via Panisperna", sub: "Colangelo/Temporelli", path: "Sto-Ita/italiano/libri/10-la-banda-di-via-panisperna.md" },
-  { group: "Italiano · Libri", title: "Una questione privata", sub: "Fenoglio", path: "Sto-Ita/italiano/libri/11-una-questione-privata.md" },
-  { group: "Italiano · Libri", title: "I giorni di vetro", sub: "Verna", path: "Sto-Ita/italiano/libri/12-i-giorni-di-vetro.md" },
-  { group: "Italiano · Movimenti", title: "Positivismo, Naturalismo e Verismo", path: "Sto-Ita/italiano/movimenti/01-positivismo-naturalismo-verismo.md" },
-  { group: "Italiano · Movimenti", title: "Decadentismo, Simbolismo ed Estetismo", path: "Sto-Ita/italiano/movimenti/02-decadentismo-simbolismo-estetismo.md" },
-  { group: "Italiano · Movimenti", title: "Avanguardie, Futurismo e Crepuscolarismo", path: "Sto-Ita/italiano/movimenti/03-avanguardie-futurismo-crepuscolarismo.md" },
-  { group: "Italiano · Movimenti", title: "Romanzo della crisi", path: "Sto-Ita/italiano/movimenti/04-romanzo-della-crisi.md" },
-  { group: "Italiano · Movimenti", title: "Ermetismo", path: "Sto-Ita/italiano/movimenti/05-ermetismo.md" },
-  { group: "Italiano · Movimenti", title: "Neorealismo", path: "Sto-Ita/italiano/movimenti/06-neorealismo.md" },
-  { group: "Italiano · Movimenti", title: "Linea antinovecentista", path: "Sto-Ita/italiano/movimenti/07-linea-antinovecentista.md" },
-  { group: "Italiano", title: "Mappe visive italiano", path: "Sto-Ita/italiano/Mappe-visive.md" },
-  { group: "Italiano", title: "Checklist italiano", path: "Sto-Ita/italiano/Checklist-Ita.md" },
-  { group: "Educazione civica", title: "L'Unione Europea", path: "Educazione civica/Europa.md" },
-  { group: "Educazione civica", title: "Il Manifesto di Ventotene", sub: "Spinelli, Rossi", path: "Educazione civica/Manifesto-di-Ventotene.md" },
-  { group: "Educazione civica", title: "Mika — Cento giorni in Europa", path: "Educazione civica/Mika-Cento-giorni-Europa.md" },
-];
+const pages = Array.isArray(window.APPUNTI_PAGES) ? window.APPUNTI_PAGES : [];
 
 /* ========== DOM refs ========== */
 const navigation = document.getElementById("navigation");
@@ -88,8 +37,98 @@ function escapeRegex(s) {
   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
+const searchIndex = new Map();
+let searchIndexReady = false;
+let searchIndexPromise = null;
+
+function normalizeSearch(value) {
+  return String(value || "")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function markdownToSearchText(markdown) {
+  return markdown
+    .replace(/\r\n/g, "\n")
+    .replace(/^---[\s\S]*?---/, " ")
+    .replace(/```[\s\S]*?```/g, " ")
+    .replace(/:::html|:::/g, " ")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+    .replace(/[#>*_`|]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function makeSnippet(text, q) {
+  const normalized = normalizeSearch(text);
+  const pos = normalized.indexOf(q);
+  if (pos === -1) return "";
+  let start = Math.max(0, pos - 72);
+  let end = Math.min(text.length, pos + q.length + 110);
+  while (start > 0 && !/\s/.test(text[start])) start -= 1;
+  while (end < text.length && !/\s/.test(text[end])) end += 1;
+  const prefix = start > 0 ? "…" : "";
+  const suffix = end < text.length ? "…" : "";
+  return `${prefix}${text.slice(start, end).trim()}${suffix}`;
+}
+
+function highlightInside(el, query) {
+  if (!query) return;
+  const rx = new RegExp(escapeRegex(query), "gi");
+  const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, null);
+  const targets = [];
+  let n;
+  while ((n = walker.nextNode())) {
+    rx.lastIndex = 0;
+    if (rx.test(n.nodeValue)) targets.push(n);
+  }
+  targets.forEach((node) => {
+    const frag = document.createDocumentFragment();
+    const parts = node.nodeValue.split(rx);
+    const matches = node.nodeValue.match(rx) || [];
+    parts.forEach((part, idx) => {
+      if (part) frag.appendChild(document.createTextNode(part));
+      if (idx < matches.length) {
+        const mark = document.createElement("mark");
+        mark.className = "hl";
+        mark.textContent = matches[idx];
+        frag.appendChild(mark);
+      }
+    });
+    node.parentNode.replaceChild(frag, node);
+  });
+}
+
+function ensureSearchIndex() {
+  if (searchIndexReady) return Promise.resolve();
+  if (searchIndexPromise) return searchIndexPromise;
+  searchInput.parentElement.classList.add("is-indexing");
+  searchIndexPromise = Promise.allSettled(
+    pages.map(async (page) => {
+      const response = await fetch(encodeURI(page.path));
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      const markdown = await response.text();
+      const text = markdownToSearchText(markdown);
+      const slug = slugify(page.title);
+      searchIndex.set(slug, {
+        raw: text,
+        text: normalizeSearch(`${page.group} ${page.title} ${page.sub || ""} ${page.meta || ""} ${text}`),
+      });
+    }),
+  ).finally(() => {
+    searchIndexReady = true;
+    searchInput.parentElement.classList.remove("is-indexing");
+    applySearchFilter();
+  });
+  return searchIndexPromise;
+}
+
 function getCurrentSlug() {
-  return window.location.hash.replace(/^#\/?/, "") || slugify(pages[0].title);
+  return window.location.hash.replace(/^#\/?/, "") || (pages[0] ? slugify(pages[0].title) : "");
 }
 
 /* ========== Markdown renderer (extended from original) ========== */
@@ -309,9 +348,10 @@ function wireCollapsibles() {
   });
 }
 
-/* ========== Search filter (with highlight) ========== */
+/* ========== Search filter (with highlight + full text) ========== */
 function applySearchFilter() {
-  const q = (searchInput.value || "").trim().toLowerCase();
+  const raw = (searchInput.value || "").trim();
+  const q = normalizeSearch(raw);
   const wrap = searchInput.parentElement;
   wrap.classList.toggle("has-text", q.length > 0);
 
@@ -330,36 +370,33 @@ function applySearchFilter() {
     return;
   }
 
-  const rx = new RegExp(escapeRegex(q), "gi");
+  if (q.length >= 2 && !searchIndexReady) ensureSearchIndex();
+
   links.forEach((a) => {
     if (!a.dataset.original) a.dataset.original = a.innerHTML;
-    const match = a.textContent.toLowerCase().includes(q);
-    a.classList.toggle("hidden", !match);
     a.innerHTML = a.dataset.original;
-    if (match) {
-      const walker = document.createTreeWalker(a, NodeFilter.SHOW_TEXT, null);
-      const targets = [];
-      let n;
-      while ((n = walker.nextNode())) {
-        rx.lastIndex = 0;
-        if (rx.test(n.nodeValue)) targets.push(n);
+
+    const slug = a.dataset.page;
+    const indexed = searchIndex.get(slug);
+    const visibleText = normalizeSearch(a.textContent);
+    const titleMatch = visibleText.includes(q);
+    const fullTextMatch = indexed ? indexed.text.includes(q) : false;
+    const match = titleMatch || fullTextMatch;
+
+    a.classList.toggle("hidden", !match);
+    if (!match) return;
+
+    if (!titleMatch && indexed) {
+      const snippet = makeSnippet(indexed.raw, q);
+      if (snippet) {
+        const hit = document.createElement("small");
+        hit.className = "search-hit";
+        hit.textContent = snippet;
+        a.appendChild(hit);
       }
-      targets.forEach((node) => {
-        const frag = document.createDocumentFragment();
-        const parts = node.nodeValue.split(rx);
-        const matches = node.nodeValue.match(rx) || [];
-        parts.forEach((p, idx) => {
-          if (p) frag.appendChild(document.createTextNode(p));
-          if (idx < matches.length) {
-            const mk = document.createElement("mark");
-            mk.className = "hl";
-            mk.textContent = matches[idx];
-            frag.appendChild(mk);
-          }
-        });
-        node.parentNode.replaceChild(frag, node);
-      });
     }
+
+    highlightInside(a, raw);
   });
 
   sections.forEach((s) => {
@@ -550,6 +587,7 @@ async function loadPage() {
 
 /* ========== Search wiring ========== */
 searchInput.addEventListener("input", applySearchFilter);
+searchInput.addEventListener("focus", ensureSearchIndex);
 searchInput.addEventListener("keydown", (e) => {
   if (e.key === "Escape") {
     searchInput.value = "";

@@ -781,9 +781,9 @@ footer a:hover { color: var(--accent); }
 
 <!-- STATS -->
 <section class="stats">
-  <div class="stat"><span class="n">8</span><span class="l">Storia · pagine</span></div>
-  <div class="stat"><span class="n">10</span><span class="l">Italiano · autori</span></div>
-  <div class="stat"><span class="n">3</span><span class="l">Civica · documenti</span></div>
+  <div class="stat" data-page-count="Storia"><span class="n">16</span><span class="l">Storia · pagine</span></div>
+  <div class="stat" data-page-count-prefix="Italiano"><span class="n">31</span><span class="l">Italiano · schede</span></div>
+  <div class="stat" data-page-count="Educazione civica"><span class="n">3</span><span class="l">Civica · documenti</span></div>
   <div class="stat"><span class="n">10</span><span class="l">Telecom · canali</span></div>
   <div class="stat"><span class="n">9</span><span class="l">TPSIT · pagine</span></div>
   <div class="stat"><span class="n">6</span><span class="l">Sistemi · domande</span></div>
@@ -806,7 +806,7 @@ footer a:hover { color: var(--accent); }
 </div>
 
 <section class="destinations">
-  <a class="card" href="Appunti.html">
+  <a class="card" href="Appunti.html#/il-fascismo-italiano">
     <span class="roman">I</span>
     <h3>Storia</h3>
     <p class="kicker">Dal Novecento alla Resistenza</p>
@@ -821,7 +821,7 @@ footer a:hover { color: var(--accent); }
     <span class="more">Sfoglia la raccolta <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
   </a>
 
-  <a class="card" href="Appunti.html">
+  <a class="card" href="Appunti.html#/mappe-visive-italiano">
     <span class="roman">II</span>
     <h3>Italiano</h3>
     <p class="kicker">Autori, libri, movimenti</p>
@@ -839,7 +839,7 @@ footer a:hover { color: var(--accent); }
 
 <!-- Civica strip -->
 <div class="civica-strip">
-  <a class="civica-card" href="Appunti.html">
+  <a class="civica-card" href="Appunti.html#/l-unione-europea">
     <span class="badge">III</span>
     <div>
       <h3>Educazione Civica</h3>
@@ -949,7 +949,7 @@ footer a:hover { color: var(--accent); }
 
 <section class="featured">
   <div class="featured-grid">
-    <a class="feat" href="Appunti.html">
+    <a class="feat" href="Appunti.html#/il-manifesto-di-ventotene">
       <span class="tag">Civica · Europa</span>
       <h4>Manifesto di Ventotene</h4>
       <p>Spinelli, Rossi, Colorni e l'idea di una federazione europea nata sull'isola. Il testo, il contesto, l'eredità nell'UE.</p>
@@ -988,7 +988,7 @@ footer a:hover { color: var(--accent); }
   <div>
     <a href="https://github.com/MarcelloRonchetti/Appunti">Sorgente</a>
     &nbsp;·&nbsp;
-    <a href="Appunti.html">Archivio Sto-Ita</a>
+    <a href="Appunti.html#/mappe-visive-italiano">Archivio Sto-Ita</a>
     &nbsp;·&nbsp;
     <a href="telecomunicazioni.html">Telecom</a>
     &nbsp;·&nbsp;
@@ -998,7 +998,26 @@ footer a:hover { color: var(--accent); }
   </div>
 </footer>
 
+<script src="assets/pages-data.js"></script>
 <script>
+/* HOME COUNTS FROM SHARED MANIFEST */
+(function () {
+  const pages = Array.isArray(window.APPUNTI_PAGES) ? window.APPUNTI_PAGES : [];
+  if (!pages.length) return;
+  document.querySelectorAll('[data-page-count]').forEach((el) => {
+    const group = el.dataset.pageCount;
+    const count = pages.filter((p) => p.group === group).length;
+    const n = el.querySelector('.n');
+    if (n && count) n.textContent = count;
+  });
+  document.querySelectorAll('[data-page-count-prefix]').forEach((el) => {
+    const prefix = el.dataset.pageCountPrefix;
+    const count = pages.filter((p) => p.group.startsWith(prefix)).length;
+    const n = el.querySelector('.n');
+    if (n && count) n.textContent = count;
+  });
+})();
+
 /* THEME TOGGLE */
 (function () {
   const root = document.documentElement;

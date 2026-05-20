@@ -254,6 +254,22 @@ aside.nav::-webkit-scrollbar-thumb {
 .search.has-text .search-clear {
   display: inline-flex;
 }
+.search.is-indexing::after {
+  content: "";
+  position: absolute;
+  right: 35px;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  border: 1.5px solid var(--gold);
+  border-top-color: transparent;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  animation: searchSpin 0.75s linear infinite;
+}
+@keyframes searchSpin {
+  to { transform: translateY(-50%) rotate(360deg); }
+}
 
 .nav-section {
   margin-bottom: 18px;
@@ -352,6 +368,19 @@ aside.nav::-webkit-scrollbar-thumb {
   color: var(--muted);
   font-style: italic;
   font-weight: 400;
+}
+#navigation a .search-hit {
+  margin-top: 4px;
+  padding-top: 4px;
+  border-top: 1px solid var(--rule-soft);
+  font-size: 11px;
+  font-style: normal;
+  line-height: 1.35;
+}
+#navigation a .search-hit::before {
+  content: "Nel testo: ";
+  color: var(--gold);
+  font-weight: 700;
 }
 #navigation a.hidden {
   display: none;
