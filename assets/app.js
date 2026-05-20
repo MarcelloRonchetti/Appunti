@@ -475,6 +475,7 @@ async function loadPage() {
 
   document.title = `${page.title} | Appunti Sto-Ita`;
   titleEl.textContent = page.title;
+  document.body.classList.toggle("is-italian", (page.group || "").startsWith("Italiano"));
   setCrumbs(page);
   metaEl.innerHTML = "";
   content.innerHTML = '<p class="loading">Carico gli appunti…</p>';
@@ -536,6 +537,67 @@ async function loadPage() {
     document.body.classList.toggle("reading");
     btn.classList.toggle("active");
     localStorage.setItem("appunti-reading", document.body.classList.contains("reading") ? "1" : "0");
+  });
+})();
+
+/* ========== Timeline overlay ========== */
+(function () {
+  const openBtn = document.getElementById("btn-timeline");
+  const overlay = document.getElementById("timeline-overlay");
+  const closeBtn = document.getElementById("timeline-overlay-close");
+  const body = document.getElementById("timeline-overlay-body");
+  if (!openBtn || !overlay || !closeBtn || !body) return;
+
+  const TIMELINE_SRC = "Sto-Ita/italiano/Mappe-visive.md";
+  let loaded = false;
+
+  async function ensureLoaded() {
+    if (loaded) return;
+    try {
+      const res = await fetch(encodeURI(TIMELINE_SRC));
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const md = await res.text();
+      const match = md.match(/:::html\s*([\s\S]*?)\s*:::/);
+      if (!match) throw new Error("Mappa temporale non trovata");
+      const tmp = document.createElement("div");
+      tmp.innerHTML = match[1];
+      const section = tmp.querySelector("#timeline-source") || tmp.querySelector(".visual-map");
+      if (!section) throw new Error("Section .visual-map mancante");
+      section.classList.add("in-overlay");
+      body.innerHTML = "";
+      body.appendChild(section);
+      loaded = true;
+    } catch (err) {
+      body.innerHTML = `<p class="loading">Non riesco a caricare la mappa: ${err.message}</p>`;
+    }
+  }
+
+  function open() {
+    overlay.hidden = false;
+    requestAnimationFrame(() => overlay.classList.add("is-open"));
+    overlay.setAttribute("aria-hidden", "false");
+    document.body.classList.add("timeline-open");
+    ensureLoaded();
+  }
+
+  function close() {
+    overlay.classList.remove("is-open");
+    overlay.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("timeline-open");
+    setTimeout(() => {
+      if (!overlay.classList.contains("is-open")) overlay.hidden = true;
+    }, 200);
+  }
+
+  openBtn.addEventListener("click", open);
+  closeBtn.addEventListener("click", close);
+  overlay.addEventListener("click", (e) => {
+    if (e.target === overlay) close();
+    const link = e.target.closest && e.target.closest('a[href^="#/"]');
+    if (link) close();
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && overlay.classList.contains("is-open")) close();
   });
 })();
 

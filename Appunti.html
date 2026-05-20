@@ -48,6 +48,19 @@
             />
           </svg>
         </button>
+        <button
+          class="iconbtn"
+          id="btn-timeline"
+          title="Apri mappa temporale di italiano"
+          aria-label="Apri mappa temporale di italiano"
+        >
+          <svg viewBox="0 0 24 24">
+            <path d="M3 18h18M6 18V8m6 10V5m6 13v-7" />
+            <circle cx="6" cy="8" r="1.2" />
+            <circle cx="12" cy="5" r="1.2" />
+            <circle cx="18" cy="11" r="1.2" />
+          </svg>
+        </button>
         <button class="iconbtn" id="btn-theme" title="Tema chiaro/scuro" aria-label="Tema">
           <svg viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z" /></svg>
         </button>
@@ -88,6 +101,13 @@
         <div class="toc-label">Indice della pagina</div>
         <div id="toc"></div>
       </aside>
+    </div>
+
+    <div id="timeline-overlay" class="timeline-overlay" hidden aria-hidden="true" role="dialog" aria-label="Mappa temporale di italiano">
+      <button class="timeline-overlay__close" id="timeline-overlay-close" type="button" aria-label="Chiudi mappa temporale">×</button>
+      <div class="timeline-overlay__body" id="timeline-overlay-body">
+        <p class="loading">Carico la mappa…</p>
+      </div>
     </div>
 
     <button id="totop" aria-label="Torna su" title="Torna su">
