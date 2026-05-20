@@ -5,7 +5,7 @@ Questa pagina raccoglie mappe per vedere il programma come un sistema di collega
 ## Mappa temporale
 
 :::html
-<section class="visual-map" aria-label="Timeline di italiano">
+<section class="visual-map visual-map--full" aria-label="Timeline di italiano">
   <div class="visual-map__header">
     <span class="visual-map__eyebrow">1840 → 2024</span>
     <div class="visual-map__title">Tutto il programma su un asse del tempo</div>
