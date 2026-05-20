@@ -147,18 +147,6 @@ Riprendono temi mitologici e classici (Ulisse, Alessandro, Achille). Pascoli rei
 
 **Tecnica**: poesia quasi-impressionista. Pochi tocchi di colore. Niente narrazione: pura visione.
 
-### Il lampo
-
-**Scena**: un istante. Lampo che illumina la notte, e per un attimo si vede una casa con la finestra aperta, gli occhi spalancati di chi guarda. Subito dopo: buio.
-
-**Significato**: la conoscenza è momentanea, frammentaria. La realtà si rivela un attimo e subito si nasconde. Il lampo è metafora del fanciullino stesso: visione fugace del mistero.
-
-### Il tuono
-
-**Scena**: notte di temporale. Il tuono spaventa il bambino. Ma sotto, nel buio, una madre che culla e canta. Il tuono finisce; la canzone della madre rimane.
-
-**Significato**: minaccia esterna (il tuono = il mondo violento) contro nido interno (la madre = la protezione). Schema classico pascoliano.
-
 ### Il gelsomino notturno (Canti di Castelvecchio)
 
 **Occasione**: la poesia nasce per il matrimonio dell'amico **Gabriele Briganti** nel 1901. Pascoli la pubblica come dono per le nozze.
@@ -174,38 +162,6 @@ Riprendono temi mitologici e classici (Ulisse, Alessandro, Achille). Pascoli rei
 **Scena**: dopo un temporale, torna il sereno. Stelle, campane, luna, silenzio. La sera è dolcissima.
 
 **Significato**: la sera è la **vecchiaia del poeta**. Dopo una vita di lutti e tempeste, arriva una quiete. Non è felicità: è esaurimento, accettazione, attesa della morte. La rima "sera/serenità" è il messaggio.
-
-### Nebbia (Canti di Castelvecchio)
-
-**Scena**: il poeta invoca la nebbia perché copra il mondo, nasconda il dolore, isoli il nido.
-
-**Significato**: la nebbia è l'unico schermo possibile contro l'angoscia della morte. Ma è schermo, non rimedio: il dolore resta sotto, solo nascosto.
-
-### La tessitrice (Myricae)
-
-**Scena**: il poeta torna a San Mauro, dopo molti anni, e va a trovare una giovane tessitrice che aveva amato. Le siede accanto alla panca dove un tempo lei filava. Le parla, lei risponde solo con cenni muti. Solo a un certo punto si capisce: **la tessitrice è morta da molti anni**, vive solo nel ricordo del poeta. Sta tessendo il proprio sudario.
-
-**Significato**: l'amore perduto come morte, la memoria come unica realtà residua, il dialogo impossibile con i morti.
-
-### Le monache di Sogliano (Myricae)
-
-**Occasione**: visita alle sorelle Ida e Maria al monastero di Sogliano, dove erano educande.
-
-**Temi**: la sofferenza delle giovani educande costrette in convento; la freddezza delle monache adulte; la morte come unico rimedio. Topos romantico della **monacazione forzata**, ripresa con il pessimismo decadente.
-
-### Digitale purpurea (Poemetti)
-
-**Scena**: dialogo tra due donne adulte, **Maria** e **Rachele**, che ricordano un episodio del loro tempo di educande in convento. Una suora aveva proibito loro di respirare il profumo di una digitale, fiore rosso porpora, perché velenosa.
-
-**Lettura**: il fiore proibito è simbolo della **sessualità adolescenziale**, di una tentazione vietata e perciò più forte. Si associa l'idea di morte all'idea di piacere proibito. **Anticipazione di temi freudiani**: rimozione, conflitto tra innocenza infantile e scoperta del sesso, fiore-feticcio.
-
-**Connessione biografica**: la figura di Rachele allude al matrimonio della sorella Ida, vissuto da Pascoli come "lutto" e violazione del nido.
-
-### Italy (Poemetti)
-
-**Tema**: l'**emigrazione italiana** verso le Americhe, vista da Castelvecchio. Una bambina italo-americana, **Maria-Molly**, torna in Italia per curarsi la tubercolosi nella casa della nonna in campagna. All'inizio non si capiscono: la bambina parla un misto di italiano e inglese ("Italy"), la nonna non capisce. Poi, lentamente, attraverso gesti e tenerezza, si stabilisce un linguaggio comune. La nonna però muore, sacrificandosi al posto della nipote, che invece si salverà.
-
-**Importanza**: prima poesia italiana sull'emigrazione. Pascoli, ex-socialista e umanitario, denuncia l'ingiustizia che costringe i contadini italiani a partire. Il **nido** assume qui dimensione **storica**: è la patria, dalla quale i "rondinotti" sono costretti ad allontanarsi.
 
 ### La grande proletaria si è mossa (1911)
 

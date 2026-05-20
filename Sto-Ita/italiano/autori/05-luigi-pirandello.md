@@ -221,23 +221,11 @@ La vicenda di Adriano Meis dimostra che non basta cambiare nome per essere liber
 
 Al centro del romanzo c'è la crisi dell'identità: Mattia non sa più chi sia, perché nome, ruolo e famiglia gli sono stati tolti e nessuna nuova identità lo ricostruisce davvero. A questo si lega il tema del doppio, perché Mattia Pascal e Adriano Meis sono due facce della stessa persona, segno che l'io non è mai uno solo. La famiglia appare come trappola: il primo matrimonio con Romilda e la convivenza con la suocera sono il modello pirandelliano della famiglia-prigione. Adriano Meis dimostra l'impossibilità di vivere senza forma, perché la libertà assoluta dalla società equivale a non esistere, e ogni tentativo di liberarsi dai vincoli fallisce o produce nuove prigionie. Importante è anche il narratore inattendibile, in prima persona, retrospettivo e soggettivo, che non offre una verità oggettiva ma il punto di vista limitato del protagonista. Infine emerge la "filosofia del lontano", la capacità di vedere la vita "da fuori", da una distanza che svela l'assurdità delle cose ma rende impossibile parteciparvi.
 
-### La filosofia del lontano
+### Io e l'ombra mia
 
-Mattia osserva la vita da fuori. Solo prendendo distanza dalle cose si può capirne l'assurdità.
+Adriano Meis, libero da ogni vincolo sociale, scopre di essere ridotto a un'ombra: senza documenti, senza relazioni riconosciute, è come un fantasma che cammina. La libertà assoluta lo rende invisibile e privo di consistenza giuridica.
 
-Ma chi si mette completamente fuori dalla vita non è libero: diventa un'ombra.
-
-Il brano spesso indicato come **Io e l'ombra mia** chiarisce questa condizione. Adriano Meis non è più una persona pienamente reale: è come un'ombra che cammina, priva di consistenza giuridica e sociale. La libertà assoluta lo rende invisibile.
-
-### Il lanternino Sofia
-
-Anselmo Paleari, padrone di casa di Adriano Meis a Roma, è il **personaggio-filosofo** del romanzo: filosofo artigianale, anonimo, eppure rigorosamente argomentativo. Espone a Mattia la teoria del **lanternino**.
-
-Ogni uomo, secondo Paleari, è come un **lanternino**: ha una sua piccola luce che illumina parzialmente il mondo. Senza quella luce, non si accorgerebbe del buio circostante. Ma ogni lanternino ha un colore diverso: ognuno vede la realtà con una luce soggettiva. È il **relativismo conoscitivo** in forma quasi favolistica.
-
-Quando i lanternini di molti individui si accordano fra loro, danno vita ai **lanternoni**: le grandi ideologie, le religioni, le costruzioni collettive di senso (cristianesimo, patria, scienza) che si propongono di dare un significato all'esistenza. I lanternoni possono spegnersi col tempo (la fede medievale che svanisce, l'ottimismo positivista che crolla), ma i lanternini continuano a rifarsi a quegli ideali ormai morti, pur di non vedere il buio. Oppure si aggirano sperduti, senza più orientamento.
-
-È una delle pagine più importanti del romanzo, perché descrive lo **smarrimento della modernità**: l'uomo che ha perso le grandi ideologie e cerca disperatamente un nuovo lanternone.
+Il brano mostra la "filosofia del lontano" pirandelliana: solo prendendo distanza dalla vita se ne coglie l'assurdità, ma chi esce del tutto dalle forme cessa di esistere.
 
 ### Lo strappo nel cielo di carta
 
@@ -312,14 +300,6 @@ I temi principali sono il conflitto tra vita e arte, l'impossibilità di rappres
 La prima rappresentazione a Roma nel 1921 fu accolta male, ma l'opera ebbe poi grande successo europeo.
 
 L'opera rompe la separazione tradizionale tra realtà e finzione. Gli spettatori non assistono solo a una storia, ma vedono il teatro mentre prova a costruire una storia e fallisce. Pirandello mostra che ogni rappresentazione deforma la vita: gli attori imitano, ma i personaggi pretendono una verità assoluta del proprio dolore.
-
-## 18. Enrico IV
-
-Il tema centrale è la follia.
-
-Il protagonista cade da cavallo durante una mascherata storica in cui interpretava Enrico IV. Dopo il trauma crede davvero di essere l'imperatore. In seguito guarisce, ma continua a fingere la follia.
-
-La follia diventa una maschera scelta, una protezione dalla vita e dalle sue falsità.
 
 ## Collegamenti
 

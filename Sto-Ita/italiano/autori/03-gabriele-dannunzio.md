@@ -122,25 +122,11 @@ Nel romanzo D'Annunzio analizza con freddezza la **falsità dell'esteta**. Compr
 
 Andrea è cosciente dell'immoralità della sua vita ma sceglie di **automistificarsi**: si rifiuta di scegliere tra bene e male, tra moralità e immoralità. È quindi assenza totale di un quadro morale: è il vero **psicologismo** del romanzo, l'analisi spietata degli stati d'animo del protagonista (e dell'autore).
 
-## 6. La vergine delle rocce (1895)
+## 6. Cenni alle altre opere narrative
 
-Romanzo del **passaggio dall'esteta al superuomo**. Protagonista **Claudio Cantelmi**, aristocratico romano che incarna ancora il culto della bellezza, ma aggiunge un'ambizione politica nuova: vuole **governare il mondo** (almeno l'Italia).
+Oltre a *Il piacere*, D'Annunzio scrive altri romanzi che segnano il passaggio dall'esteta al superuomo: ***L'innocente*** (1892), ***Trionfo della morte*** (1894), ***Le vergini delle rocce*** (1895, protagonista Claudio Cantelmi che cerca di generare il "futuro re di Roma"), ***Il fuoco*** (1900, romanzo a chiave sulla relazione con Eleonora Duse), ***Forse che sì forse che no*** (1910, con l'aviatore Paolo Tarsis). In tutti il superuomo è sopraffatto dalla passione e dalla donna fatale e fallisce: il vitalismo si rivela autodistruttivo.
 
-### Trama
-
-Claudio si trasferisce da Roma (corrotta capitale moderna) in una villa nobiliare fuori città, e lì cerca una donna del suo rango con cui generare il "**futuro re di Roma**", il superuomo che dovrà guidare la nazione. Conosce tre sorelle Capece-Montaga, di una famiglia nobile decaduta: una rappresenta la passione (Massimilla), una la purezza spirituale (Anatolia), la terza i valori familiari (Violante). Claudio non riesce a scegliere. Le tre donne, malate o destinate alla morte, non possono dargli l'erede. Il progetto fallisce. Claudio si rifugia nella letteratura.
-
-### Significato e novità
-
-Il romanzo segna la transizione da esteta a superuomo: l'eroe non vive più solo per sé, vuole agire pubblicamente, ma fallisce perché la realtà non è all'altezza dei suoi sogni. Vi domina un forte **disprezzo per la borghesia e la democrazia**, perché Claudio considera il popolo rozzo e la politica democratica volgare, e sogna un'aristocrazia restaurata. La narrazione è caratterizzata da una **forte simbologia**: l'aereo come fuga, la donna come allegoria della società, il paesaggio come specchio dell'anima. Il romanzo si carica inoltre di lunghi discorsi di **introspezione filosofica**, con pagine teoriche sulla società e sulla bellezza. Compare infine l'**esaltazione della macchina**: nel romanzo iniziano a entrare la velocità, le automobili, gli aerei, e D'Annunzio si mostra ambivalente — ne è affascinato, ma sa che la macchina è "più grande dell'uomo".
-
-## 7. Il fuoco e altri romanzi del superuomo
-
-Dopo *Le vergini delle rocce* si succedono altri romanzi del superuomo. ***L'innocente*** (1892) racconta di un nobile che uccide il figlio illegittimo della moglie per "purificare" la stirpe. ***Trionfo della morte*** (1894) mette in scena un esteta ossessionato dall'amante che decide di trascinarla con sé in un omicidio-suicidio. ***Il fuoco*** (1900) è un romanzo a chiave sulla relazione di D'Annunzio con Eleonora Duse, ambientato a Venezia, e presenta il superuomo come artista totale. ***Forse che sì forse che no*** (1910), infine, ha come protagonista l'aviatore Paolo Tarsis, nuovo superuomo della modernità tecnologica.
-
-In tutti questi romanzi il superuomo è **sopraffatto dalla passione, dalla donna, dalla società**. Il vitalismo si rivela autodistruttivo. Il superuomo è dunque ancora un esteta che fallisce, perché è dominato dai sensi.
-
-## 8. Le Laudi e Alcyone
+## 7. Le Laudi e Alcyone
 
 L'opera poetica più importante di D'Annunzio è il ciclo delle **Laudi del cielo, del mare, della terra e degli eroi**, progettato in 7 libri (alcuni mai completati), composti a partire dal 1903 e ispirati al *Cantico delle creature* di San Francesco.
 
@@ -185,23 +171,17 @@ Pubblicata nel **1903**. Diario lirico di un'estate trascorsa dal poeta in **Ver
 
 **Significato**: è il manifesto del **panismo dannunziano**. L'uomo si scioglie nella natura, diventa parte del flusso vitale del cosmo. È anche una poesia erotica velata: la pioggia che bagna gli amanti, la metamorfosi vegetale, il "silenzio" che precede l'unione.
 
-## 9. Il teatro
+## 8. Cenni al teatro e al Notturno
 
-Negli anni del superuomo, D'Annunzio scrive anche per il teatro, soprattutto per Eleonora Duse: ***La città morta*** (1898), ***La Gioconda*** (1899), ***Francesca da Rimini*** (1901), ***La figlia di Iorio*** (1904, capolavoro teatrale, ambientato in Abruzzo), ***La nave*** (1908). Sono tragedie liriche che mescolano alta letteratura, mitologia, dramma erotico, atmosfere primitive. ***La figlia di Iorio*** è quella più riuscita, con un coro di donne abruzzesi e un sapore arcaico-pagano molto efficace.
+Per Eleonora Duse D'Annunzio scrive anche tragedie liriche (*La città morta*, *La Gioconda*, *Francesca da Rimini*, *La figlia di Iorio*, *La nave*). Nella vecchiaia, dopo l'incidente di volo del 1916, compone il ***Notturno*** (1921), prosa frammentaria scritta al buio su strisce di carta: anticipa il frammento novecentesco.
 
-## 10. Il Notturno (1921)
-
-Opera della **vecchiaia**, scritta dopo l'incidente di volo del 1916 in cui D'Annunzio perse temporaneamente la vista. Costretto all'**immobilità** in una stanza buia, scrive su strisce di carta annotazioni frammentarie, ricordi, visioni.
-
-Il libro si presenta come una prosa frammentata, non narrativa, fatta di impressioni rapide e ricordi; la forma è più moderna, vicina al frammento novecentesco, e il tono è interiore, intimo, lontano dalla solennità precedente. È l'opera più "moderna" di D'Annunzio: anticipa la prosa frammentaria del Novecento.
-
-## 11. D'Annunzio e la politica
+## 9. D'Annunzio e la politica
 
 D'Annunzio è figura politica oltre che letteraria, e il suo contributo (negativo o positivo, dipende dai punti di vista) è enorme. C'è anzitutto il **mito dell'azione**: agire come valore in sé, anche con violenza. A questo si lega il **culto dell'eroismo**, in cui il guerriero, il combattente, il condottiero sono superiori alla massa. Il quadro è completato dal **nazionalismo**, fondato sulla superiorità della nazione italiana e sulla sua missione storica. Sul piano della pratica politica D'Annunzio inventa l'**estetizzazione della politica**: la politica come spettacolo, dramma, liturgia. Coerente con questo è l'**uso spettacolare della parola pubblica**, con discorsi costruiti come opere d'arte, fatti di immagini, ripetizioni e ritmo, e l'invenzione di **gesti simbolici e rituali collettivi** — cortei, saluti romani, motti, adunate — che il fascismo riprenderà direttamente.
 
 L'**impresa di Fiume** (1919-1920) è il laboratorio politico in cui D'Annunzio sperimenta la sintesi tra teatro, arte e potere. Mussolini ne riprenderà ogni elemento.
 
-## 12. Il Vittoriale degli Italiani
+## 10. Il Vittoriale degli Italiani
 
 A Gardone Riviera, sul lago di Garda, D'Annunzio costruisce dal 1921 in poi il **Vittoriale**: una villa-museo-mausoleo che è la sua **ultima opera d'arte**, la sua autobiografia in pietre, oggetti, reliquie.
 
