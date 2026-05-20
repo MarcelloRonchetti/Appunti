@@ -5,6 +5,30 @@ tags:
 
 # Giuseppe Ungaretti
 
+
+## Mappa visiva
+
+:::html
+<section class="visual-map" aria-label="Mappa visiva autore">
+  <div class="visual-map__header">
+    <span class="visual-map__eyebrow">mappa autore</span>
+    <div class="visual-map__title">Ungaretti: guerra, memoria e parola essenziale</div>
+    <div class="visual-map__subtitle">L’esperienza del fronte riduce tutto all’essenziale: la poesia diventa scavo, frammento, pausa, tentativo di salvare l’umano nel limite.</div>
+  </div>
+  <div class="map-scroll">
+    <div class="author-flow">
+      <div class="author-step author-step--context"><span>contesto</span><strong>Avanguardie e Grande Guerra</strong><small>Parigi, cultura europea e fronte del Carso: modernità e trauma storico si incontrano.</small></div>
+      <div class="author-step author-step--turn"><span>svolta</span><strong>Il soldato-poeta</strong><small>In trincea la vita appare fragile: ogni parola pesa perché nasce vicino alla morte.</small></div>
+      <div class="author-step author-step--poetics"><span>poetica</span><strong>Scavo e analogia</strong><small>La poesia cerca il porto sepolto: una verità profonda raggiunta per lampi.</small></div>
+      <div class="author-step author-step--works"><span>opere</span><strong>Allegria, Sentimento, Dolore</strong><small>Dal diario di guerra alla ricomposizione classica e al lutto personale e storico.</small></div>
+      <div class="author-step author-step--style"><span>stile</span><strong>Verso breve e silenzio</strong><small>Parola isolata, spazi bianchi, ritmo spezzato e massima concentrazione espressiva.</small></div>
+      <div class="author-step author-step--links"><span>collegamenti</span><strong>Precursore dell’Ermetismo</strong><small>Da collegare a Quasimodo, Montale, guerra e poesia pura.</small></div>
+    </div>
+  </div>
+  <div class="author-links-mini"><a href="#/ermetismo">Movimento: Ermetismo</a><a href="#/eugenio-montale">Montale</a><a href="#/niente-di-nuovo-sul-fronte-occidentale">Libro: Niente di nuovo</a></div>
+</section>
+:::
+
 ## 1. Vita
 
 **Giuseppe Ungaretti** nasce nel 1888 ad **Alessandria d'Egitto** da genitori italiani originari della Toscana.

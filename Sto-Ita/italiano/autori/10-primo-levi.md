@@ -5,6 +5,30 @@ tags:
 
 # Primo Levi
 
+
+## Mappa visiva
+
+:::html
+<section class="visual-map" aria-label="Mappa visiva autore">
+  <div class="visual-map__header">
+    <span class="visual-map__eyebrow">mappa autore</span>
+    <div class="visual-map__title">Primo Levi: testimoniare per capire il Lager</div>
+    <div class="visual-map__subtitle">Levi unisce memoria, precisione scientifica e responsabilità morale: raccontare Auschwitz significa rendere comprensibile un sistema progettato per distruggere l’umano.</div>
+  </div>
+  <div class="map-scroll">
+    <div class="author-flow">
+      <div class="author-step author-step--context"><span>contesto</span><strong>Shoah e deportazione</strong><small>Torino, leggi razziali, arresto, Auschwitz-Monowitz e ritorno alla scrittura.</small></div>
+      <div class="author-step author-step--turn"><span>svolta</span><strong>Sopravvivere e raccontare</strong><small>La testimonianza nasce dal dovere di ricordare e spiegare, non dal semplice sfogo.</small></div>
+      <div class="author-step author-step--poetics"><span>poetica</span><strong>Chiarezza contro orrore</strong><small>Stile sobrio, razionale, preciso: la lucidità rende più forte l’accusa morale.</small></div>
+      <div class="author-step author-step--works"><span>opere</span><strong>Se questo è un uomo e Sommersi</strong><small>Dal racconto del Lager alla riflessione sulla zona grigia e sulla memoria.</small></div>
+      <div class="author-step author-step--style"><span>stile</span><strong>Scienza, etica, Manzoni</strong><small>Ordine, misura, esempi concreti e lingua controllata contro la confusione del trauma.</small></div>
+      <div class="author-step author-step--links"><span>collegamenti</span><strong>Memoria e responsabilità</strong><small>Da collegare a Shoah, Neorealismo, Dante, testimonianza e secondo Novecento.</small></div>
+    </div>
+  </div>
+  <div class="author-links-mini"><a href="#/italo-calvino">Calvino</a><a href="#/beppe-fenoglio">Fenoglio</a><a href="#/mappe-visive-italiano">Mappa generale</a></div>
+</section>
+:::
+
 ## 1. Vita
 
 **Primo Levi** nasce a **Torino nel 1919** in una famiglia ebraica borghese, colta e laica.

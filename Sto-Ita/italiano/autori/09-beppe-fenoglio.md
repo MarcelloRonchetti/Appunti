@@ -5,6 +5,30 @@ tags:
 
 # Beppe Fenoglio
 
+
+## Mappa visiva
+
+:::html
+<section class="visual-map" aria-label="Mappa visiva autore">
+  <div class="visual-map__header">
+    <span class="visual-map__eyebrow">mappa autore</span>
+    <div class="visual-map__title">Fenoglio: Resistenza, scelta morale e questione privata</div>
+    <div class="visual-map__subtitle">Fenoglio racconta la guerra partigiana senza retorica: dentro la storia collettiva inserisce ossessioni private, paesaggi duri e una lingua tesa.</div>
+  </div>
+  <div class="map-scroll">
+    <div class="author-flow">
+      <div class="author-step author-step--context"><span>contesto</span><strong>Langhe e Resistenza</strong><small>La guerra civile e il territorio piemontese diventano spazio morale, non solo sfondo.</small></div>
+      <div class="author-step author-step--turn"><span>svolta</span><strong>Privato dentro la storia</strong><small>Milton cerca Giorgio per amore e gelosia mentre intorno continua la lotta partigiana.</small></div>
+      <div class="author-step author-step--poetics"><span>poetica</span><strong>Antiretorica partigiana</strong><small>Gli eroi sono fragili, sporchi, contraddittori: la scelta resta però decisiva.</small></div>
+      <div class="author-step author-step--works"><span>opere</span><strong>Johnny e Una questione privata</strong><small>La Resistenza diventa epica aspra, incompiuta, personale e collettiva insieme.</small></div>
+      <div class="author-step author-step--style"><span>stile</span><strong>Lingua ibrida</strong><small>Italiano, piemontese, calchi inglesi e ritmo secco modellano una voce unica.</small></div>
+      <div class="author-step author-step--links"><span>collegamenti</span><strong>Confronto con Calvino</strong><small>Calvino usa Pin e la leggerezza; Fenoglio usa Milton, nebbia e tensione tragica.</small></div>
+    </div>
+  </div>
+  <div class="author-links-mini"><a href="#/neorealismo">Movimento: Neorealismo</a><a href="#/italo-calvino">Calvino</a><a href="#/una-questione-privata">Libro: Una questione privata</a></div>
+</section>
+:::
+
 ## 1. Vita
 
 **Beppe Fenoglio** nasce nel **1922** ad **Alba**, in Piemonte, in una famiglia di modesta condizione (il padre è macellaio).

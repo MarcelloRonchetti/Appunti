@@ -5,6 +5,30 @@ tags:
 
 # Giovanni Verga
 
+
+## Mappa visiva
+
+:::html
+<section class="visual-map" aria-label="Mappa visiva autore">
+  <div class="visual-map__header">
+    <span class="visual-map__eyebrow">mappa autore</span>
+    <div class="visual-map__title">Verga: dalla realtà sociale alla sconfitta dei vinti</div>
+    <div class="visual-map__subtitle">La mappa mostra come la scelta verista trasformi ambiente, lingua e destino in un sistema chiuso: chi prova a salire viene travolto dalla fiumana del progresso.</div>
+  </div>
+  <div class="map-scroll">
+    <div class="author-flow">
+      <div class="author-step author-step--context"><span>contesto</span><strong>Italia postunitaria e Naturalismo</strong><small>Scienza, questione sociale e modello francese: Zola e il romanzo come osservazione della realtà.</small></div>
+      <div class="author-step author-step--turn"><span>svolta</span><strong>Conversione verista</strong><small>Da narrativa mondana a Nedda, Vita dei campi e mondo popolare siciliano.</small></div>
+      <div class="author-step author-step--poetics"><span>poetica</span><strong>Impersonalità e regressione</strong><small>L’autore si eclissa; il narratore assume valori, lingua e punto di vista della comunità rappresentata.</small></div>
+      <div class="author-step author-step--works"><span>opere</span><strong>Vinti, Malavoglia, Gesualdo</strong><small>La lotta per il pane e per la roba produce perdita, isolamento e sconfitta.</small></div>
+      <div class="author-step author-step--style"><span>stile</span><strong>Discorso corale e straniamento</strong><small>Proverbi, parlato collettivo, punto di vista interno e giudizi rovesciati.</small></div>
+      <div class="author-step author-step--links"><span>collegamenti</span><strong>Progresso contro appartenenza</strong><small>Da confrontare con Naturalismo, Neorealismo e romanzo sociale del Novecento.</small></div>
+    </div>
+  </div>
+  <div class="author-links-mini"><a href="#/positivismo-naturalismo-e-verismo">Movimento: Verismo</a><a href="#/l-ammazzatoio">Libro: L’Ammazzatoio</a><a href="#/il-marchese-di-roccaverdina">Libro: Il Marchese di Roccaverdina</a></div>
+</section>
+:::
+
 ## 1. Vita
 
 **Giovanni Verga** nasce a **Catania nel 1840** da una famiglia di proprietari terrieri di origine nobiliare. La sua origine siciliana è fondamentale: anche quando vivrà a lungo a Firenze e a Milano, il mondo contadino dell'isola, i paesi, la mentalità popolare e le differenze sociali della Sicilia resteranno al centro della sua opera matura.

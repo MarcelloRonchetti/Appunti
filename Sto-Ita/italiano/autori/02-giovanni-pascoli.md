@@ -5,6 +5,30 @@ tags:
 
 # Giovanni Pascoli
 
+
+## Mappa visiva
+
+:::html
+<section class="visual-map" aria-label="Mappa visiva autore">
+  <div class="visual-map__header">
+    <span class="visual-map__eyebrow">mappa autore</span>
+    <div class="visual-map__title">Pascoli: dal trauma al simbolo delle piccole cose</div>
+    <div class="visual-map__subtitle">Tutto parte dalla frattura del nido: la poesia non spiega razionalmente il mondo, ma ne ascolta segnali, suoni e misteri nascosti.</div>
+  </div>
+  <div class="map-scroll">
+    <div class="author-flow">
+      <div class="author-step author-step--context"><span>contesto</span><strong>Crisi del Positivismo</strong><small>La fiducia nella ragione si incrina: il reale appare pieno di mistero e zone oscure.</small></div>
+      <div class="author-step author-step--turn"><span>svolta</span><strong>10 agosto e nido violato</strong><small>Il trauma familiare diventa centro emotivo e simbolico della poesia pascoliana.</small></div>
+      <div class="author-step author-step--poetics"><span>poetica</span><strong>Il fanciullino</strong><small>Il poeta conserva lo stupore infantile e vede l’invisibile nelle cose minime.</small></div>
+      <div class="author-step author-step--works"><span>opere</span><strong>Myricae e Canti</strong><small>Campi, temporali, uccelli, casa e sera diventano immagini di inquietudine e protezione fragile.</small></div>
+      <div class="author-step author-step--style"><span>stile</span><strong>Fonosimbolismo</strong><small>Onomatopee, analogie, termini precisi e suoni suggeriscono più di quanto spiegano.</small></div>
+      <div class="author-step author-step--links"><span>collegamenti</span><strong>Natura come interiorità</strong><small>Da mettere accanto a Decadentismo, D’Annunzio e Montale.</small></div>
+    </div>
+  </div>
+  <div class="author-links-mini"><a href="#/decadentismo-simbolismo-ed-estetismo">Movimento: Decadentismo</a><a href="#/gabriele-d-annunzio">D’Annunzio</a><a href="#/eugenio-montale">Montale</a></div>
+</section>
+:::
+
 ## 1. Vita
 
 **Giovanni Pascoli** nasce nel **1855 a San Mauro di Romagna** (oggi San Mauro Pascoli), quarto di dieci figli. La sua vita è dominata da una serie di lutti familiari che lasciano un'impronta indelebile su tutta la sua poesia.

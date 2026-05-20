@@ -5,6 +5,30 @@ tags:
 
 # Gabriele D'Annunzio
 
+
+## Mappa visiva
+
+:::html
+<section class="visual-map" aria-label="Mappa visiva autore">
+  <div class="visual-map__header">
+    <span class="visual-map__eyebrow">mappa autore</span>
+    <div class="visual-map__title">D’Annunzio: estetismo, natura e costruzione dell’io</div>
+    <div class="visual-map__subtitle">La sua traiettoria passa dalla vita come opera d’arte al superuomo e alla politica-spettacolo: letteratura, corpo e gesto pubblico si fondono.</div>
+  </div>
+  <div class="map-scroll">
+    <div class="author-flow">
+      <div class="author-step author-step--context"><span>contesto</span><strong>Decadentismo ed estetismo</strong><small>Arte, bellezza e sensazione diventano valori assoluti contro la normalità borghese.</small></div>
+      <div class="author-step author-step--turn"><span>svolta</span><strong>Vita inimitabile</strong><small>L’autore costruisce sé stesso come personaggio: lusso, scandalo, successo, scena pubblica.</small></div>
+      <div class="author-step author-step--poetics"><span>poetica</span><strong>Esteta e superuomo</strong><small>Andrea Sperelli cerca la bellezza; il superuomo vuole dominio, eccezione e superiorità.</small></div>
+      <div class="author-step author-step--works"><span>opere</span><strong>Il piacere e Alcyone</strong><small>Dal romanzo dell’esteta alla poesia del panismo e della fusione sensuale con la natura.</small></div>
+      <div class="author-step author-step--style"><span>stile</span><strong>Musicalità e preziosismo</strong><small>Lessico ricercato, ritmo, sensazioni, analogie e parola come materia sonora.</small></div>
+      <div class="author-step author-step--links"><span>collegamenti</span><strong>Poeta-vate e politica</strong><small>Interventismo e Fiume collegano letteratura, nazionalismo e spettacolarizzazione.</small></div>
+    </div>
+  </div>
+  <div class="author-links-mini"><a href="#/decadentismo-simbolismo-ed-estetismo">Movimento: Decadentismo</a><a href="#/giovanni-pascoli">Pascoli</a><a href="#/il-ritratto-di-dorian-gray">Libro: Dorian Gray</a></div>
+</section>
+:::
+
 ## 1. Vita
 
 **Gabriele D'Annunzio** nasce a **Pescara nel 1863**. Vive una giovinezza precoce: a sedici anni pubblica già la prima raccolta di poesie (*Primo vere*) e a venti anni è celebre nei salotti romani.

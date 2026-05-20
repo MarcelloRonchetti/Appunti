@@ -5,6 +5,30 @@ tags:
 
 # Luigi Pirandello
 
+
+## Mappa visiva
+
+:::html
+<section class="visual-map" aria-label="Mappa visiva autore">
+  <div class="visual-map__header">
+    <span class="visual-map__eyebrow">mappa autore</span>
+    <div class="visual-map__title">Pirandello: identità, maschera e frattura della forma</div>
+    <div class="visual-map__subtitle">La mappa ruota intorno a una tensione: la vita scorre, la società la blocca in forme e ruoli. Da qui nascono umorismo, novelle, romanzi e metateatro.</div>
+  </div>
+  <div class="map-scroll">
+    <div class="author-flow">
+      <div class="author-step author-step--context"><span>contesto</span><strong>Crisi delle certezze</strong><small>Relativismo, psicologia e modernità mettono in dubbio identità unica e verità oggettiva.</small></div>
+      <div class="author-step author-step--turn"><span>svolta</span><strong>Vita contro forma</strong><small>La vita è movimento; la forma è il ruolo fisso che gli altri ci impongono.</small></div>
+      <div class="author-step author-step--poetics"><span>poetica</span><strong>Maschera e umorismo</strong><small>L’umorismo passa dal comico alla pietà: vede il contrario e ne comprende il dolore.</small></div>
+      <div class="author-step author-step--works"><span>opere</span><strong>Novelle, Pascal, Uno nessuno</strong><small>Personaggi in trappola cercano fughe, identità alternative o dissoluzione dell’io.</small></div>
+      <div class="author-step author-step--style"><span>stile</span><strong>Paradosso e metateatro</strong><small>Dialoghi, ragionamenti, scene spezzate e teatro che riflette sul teatro.</small></div>
+      <div class="author-step author-step--links"><span>collegamenti</span><strong>Io frantumato</strong><small>Da collegare a Svevo, romanzo della crisi, relativismo e Novecento.</small></div>
+    </div>
+  </div>
+  <div class="author-links-mini"><a href="#/romanzo-della-crisi">Movimento: Romanzo della crisi</a><a href="#/italo-svevo">Svevo</a><a href="#/eugenio-montale">Montale</a></div>
+</section>
+:::
+
 ## 1. Vita
 
 **Luigi Pirandello** nasce nel 1867 vicino ad Agrigento, allora chiamata Girgenti, in una località chiamata **Caos**.

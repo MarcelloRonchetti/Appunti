@@ -5,6 +5,30 @@ tags:
 
 # Eugenio Montale
 
+
+## Mappa visiva
+
+:::html
+<section class="visual-map" aria-label="Mappa visiva autore">
+  <div class="visual-map__header">
+    <span class="visual-map__eyebrow">mappa autore</span>
+    <div class="visual-map__title">Montale: male di vivere, oggetti e varco impossibile</div>
+    <div class="visual-map__subtitle">Montale non offre messaggi positivi: costruisce una poesia di oggetti concreti che traducono aridità, limite e attesa di un senso quasi sempre negato.</div>
+  </div>
+  <div class="map-scroll">
+    <div class="author-flow">
+      <div class="author-step author-step--context"><span>contesto</span><strong>Novecento anti-vate</strong><small>Dopo D’Annunzio, il poeta non guida le masse e non possiede verità definitive.</small></div>
+      <div class="author-step author-step--turn"><span>svolta</span><strong>Male di vivere</strong><small>La realtà appare disarmonica: il soggetto urta contro muri, meriggi, aridità.</small></div>
+      <div class="author-step author-step--poetics"><span>poetica</span><strong>Correlativo oggettivo</strong><small>Gli oggetti diventano equivalenti concreti di stati interiori e conoscenza negativa.</small></div>
+      <div class="author-step author-step--works"><span>opere</span><strong>Ossi, Occasioni, Bufera, Satura</strong><small>Dal paesaggio ligure alla memoria femminile, dalla storia alla poesia colloquiale.</small></div>
+      <div class="author-step author-step--style"><span>stile</span><strong>Aspro e preciso</strong><small>Lessico concreto, immagini secche, tono antiretorico, ironia nelle opere tarde.</small></div>
+      <div class="author-step author-step--links"><span>collegamenti</span><strong>Crisi e antinovecentismo</strong><small>Da confrontare con Ungaretti, Ermetismo, Svevo e linea antinovecentista.</small></div>
+    </div>
+  </div>
+  <div class="author-links-mini"><a href="#/ermetismo">Movimento: Ermetismo</a><a href="#/linea-antinovecentista">Linea antinovecentista</a><a href="#/giuseppe-ungaretti">Ungaretti</a></div>
+</section>
+:::
+
 ## 1. Vita
 
 **Eugenio Montale** nasce a Genova nel 1896 da una famiglia borghese.

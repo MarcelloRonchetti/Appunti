@@ -5,6 +5,30 @@ tags:
 
 # Italo Svevo
 
+
+## Mappa visiva
+
+:::html
+<section class="visual-map" aria-label="Mappa visiva autore">
+  <div class="visual-map__header">
+    <span class="visual-map__eyebrow">mappa autore</span>
+    <div class="visual-map__title">Svevo: l’inetto che trasforma la malattia in conoscenza</div>
+    <div class="visual-map__subtitle">Svevo sposta il romanzo dentro la coscienza: il problema non è solo vivere, ma raccontarsi senza potersi mai conoscere davvero.</div>
+  </div>
+  <div class="map-scroll">
+    <div class="author-flow">
+      <div class="author-step author-step--context"><span>contesto</span><strong>Trieste e Mitteleuropa</strong><small>Città di confine, cultura commerciale, Joyce, Freud, Schopenhauer e Darwin.</small></div>
+      <div class="author-step author-step--turn"><span>svolta</span><strong>L’inetto moderno</strong><small>Alfonso, Emilio e Zeno non dominano la vita: esitano, si giustificano, si osservano.</small></div>
+      <div class="author-step author-step--poetics"><span>poetica</span><strong>Malattia e autoanalisi</strong><small>La malattia non è solo debolezza: rivela la crisi dell’uomo moderno.</small></div>
+      <div class="author-step author-step--works"><span>opere</span><strong>Una vita, Senilità, Zeno</strong><small>Il percorso va dall’insuccesso dell’inetto alla scrittura ambigua e terapeutica di Zeno.</small></div>
+      <div class="author-step author-step--style"><span>stile</span><strong>Ironia e inattendibilità</strong><small>Il narratore non offre verità stabili: memoria e giustificazioni deformano i fatti.</small></div>
+      <div class="author-step author-step--links"><span>collegamenti</span><strong>Romanzo della crisi</strong><small>Da confrontare con Pirandello, Freud, Bergson e la crisi dell’identità.</small></div>
+    </div>
+  </div>
+  <div class="author-links-mini"><a href="#/romanzo-della-crisi">Movimento: Romanzo della crisi</a><a href="#/luigi-pirandello">Pirandello</a><a href="#/eugenio-montale">Montale</a></div>
+</section>
+:::
+
 ## 1. Vita
 
 **Italo Svevo** è lo pseudonimo di **Aron Hector Schmitz** (italianizzato in Ettore Schmitz). Nasce a **Trieste nel 1861** da una famiglia borghese di **triplice cultura**: tedesca (Schmitz, dal padre boemo-tedesco), ebraica (Aron, dalla famiglia materna), italiana (l'ambiente della città). Questa stratificazione culturale è centrale per capire la sua opera.

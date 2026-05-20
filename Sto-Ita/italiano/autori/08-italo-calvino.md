@@ -5,6 +5,30 @@ tags:
 
 # Italo Calvino
 
+
+## Mappa visiva
+
+:::html
+<section class="visual-map" aria-label="Mappa visiva autore">
+  <div class="visual-map__header">
+    <span class="visual-map__eyebrow">mappa autore</span>
+    <div class="visual-map__title">Calvino: dalla Resistenza alla letteratura come laboratorio</div>
+    <div class="visual-map__subtitle">Calvino parte dal Neorealismo, ma non resta lì: usa sguardo infantile, fiaba, razionalità e gioco combinatorio per capire la realtà senza imitarla soltanto.</div>
+  </div>
+  <div class="map-scroll">
+    <div class="author-flow">
+      <div class="author-step author-step--context"><span>contesto</span><strong>Resistenza e dopoguerra</strong><small>Brigate partigiane, Einaudi, PCI e clima neorealista del secondo dopoguerra.</small></div>
+      <div class="author-step author-step--turn"><span>svolta</span><strong>Pin e lo sguardo laterale</strong><small>Il Sentiero evita l’eroismo celebrativo: la guerra è vista da un bambino marginale.</small></div>
+      <div class="author-step author-step--poetics"><span>poetica</span><strong>Leggerezza e struttura</strong><small>La letteratura ordina il caos con forme limpide, fantastiche, combinatorie.</small></div>
+      <div class="author-step author-step--works"><span>opere</span><strong>Sentiero, Antenati, Oulipo</strong><small>Dal racconto resistenziale alla trilogia fantastica e alla metanarrazione.</small></div>
+      <div class="author-step author-step--style"><span>stile</span><strong>Precisione e straniamento</strong><small>Lingua chiara, invenzione, distanza ironica e costruzioni narrative controllate.</small></div>
+      <div class="author-step author-step--links"><span>collegamenti</span><strong>Oltre il Neorealismo</strong><small>Da mettere accanto a Fenoglio, Pavese, fiaba moderna e sperimentazione.</small></div>
+    </div>
+  </div>
+  <div class="author-links-mini"><a href="#/neorealismo">Movimento: Neorealismo</a><a href="#/beppe-fenoglio">Fenoglio</a><a href="#/una-questione-privata">Libro: Una questione privata</a></div>
+</section>
+:::
+
 ## 1. Vita
 
 **Italo Calvino** nasce nel 1923 a **Santiago de Las Vegas**, a Cuba, dove i genitori lavoravano come studiosi di agronomia e botanica.
