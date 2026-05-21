@@ -1,6 +1,6 @@
 {
   "subject": "italiano",
-  "version": "2026-05-19",
+  "version": "2026-05-21",
   "questions": [
     {
       "id": "ita-mc-001",
@@ -649,6 +649,270 @@
       "answer": "zona grigia",
       "alt_answers": ["la zona grigia"],
       "explanation": "La zona grigia evita semplificazioni: mostra come il sistema concentrazionario deformi rapporti morali e responsabilità."
+    },
+    {
+      "id": "ita-mc-026",
+      "type": "multiple-choice",
+      "topic": "Verga",
+      "author": "Verga",
+      "difficulty": "media",
+      "question": "Nei Malavoglia, cosa rappresenta la casa del nespolo per la famiglia Toscano?",
+      "options": [
+        "Un semplice luogo di lavoro legato all'attività della pesca.",
+        "Il simbolo dell'identità familiare e del legame con la tradizione, perduta dopo il fallimento dell'affare dei lupini.",
+        "Una dimora signorile che testimonia l'ascesa economica della famiglia.",
+        "Un nascondiglio dove 'Ntoni si rifugia dopo essere tornato dal servizio militare."
+      ],
+      "correct": 1,
+      "explanation": "La casa del nespolo è il nido domestico e il segno della continuità familiare: la sua perdita coincide con la disgregazione dei Malavoglia, mentre il riacquisto finale conferma il valore conservativo dell'ideale dell'ostrica."
+    },
+    {
+      "id": "ita-mc-027",
+      "type": "multiple-choice",
+      "topic": "Pascoli",
+      "author": "Pascoli",
+      "difficulty": "facile",
+      "question": "A quale evento biografico si ricollega la poesia X Agosto di Pascoli?",
+      "options": [
+        "Alla morte della sorella Ida, che lo abbandona per sposarsi.",
+        "All'uccisione del padre Ruggero, avvenuta il 10 agosto 1867.",
+        "Alla perdita della cattedra universitaria a Bologna.",
+        "Alla notte di San Lorenzo come simbolo astratto del dolore cosmico, senza riferimento autobiografico."
+      ],
+      "correct": 1,
+      "explanation": "X Agosto fonde il ricordo dell'assassinio del padre con il pianto delle stelle cadenti: la rondine e il padre uccisi nello stesso giorno proiettano il lutto privato sull'intero cosmo, malato di male."
+    },
+    {
+      "id": "ita-mc-028",
+      "type": "multiple-choice",
+      "topic": "Pascoli",
+      "author": "Pascoli",
+      "difficulty": "media",
+      "question": "Quale immagine domina Il gelsomino notturno e ne chiarisce il senso?",
+      "options": [
+        "Il viaggio del poeta nel bosco notturno, in cerca di un'epifania mistica.",
+        "Il fiore che si apre di notte mentre nella casa si compie la generazione di una nuova vita, vissuta dal poeta come esclusione.",
+        "La descrizione realistica di un giardino di campagna ai primi di settembre.",
+        "La meditazione filosofica sull'incertezza del destino dell'anima dopo la morte."
+      ],
+      "correct": 1,
+      "explanation": "Pascoli scrive Il gelsomino notturno per le nozze dell'amico Briganti: il fiore che si schiude allude all'unione coniugale e alla nascita, da cui il poeta del nido violato si sente per sempre escluso."
+    },
+    {
+      "id": "ita-mc-029",
+      "type": "multiple-choice",
+      "topic": "D'Annunzio",
+      "author": "D'Annunzio",
+      "difficulty": "alta",
+      "question": "Nel Piacere, come si conclude la parabola di Andrea Sperelli rispetto al suo ideale estetico?",
+      "options": [
+        "Trionfa imponendo la propria arte alla società romana e fondando una nuova scuola di gusto.",
+        "Si redime nell'amore puro per Maria Ferres, che lo libera dal vizio dell'estetismo.",
+        "Fallisce: confonde Elena e Maria, perde entrambe e finisce a seguire mestamente la vendita all'asta delle sue mobilia.",
+        "Si converte alla vita ascetica ritirandosi in convento dopo il duello con il rivale."
+      ],
+      "correct": 2,
+      "explanation": "Il romanzo si chiude sulla scena dell'asta degli arredi di casa Sperelli: l'esteta non riesce a fare della propria vita un'opera d'arte e si rivela il primo dei vinti dannunziani, sconfitto dalla propria volontà imperfetta."
+    },
+    {
+      "id": "ita-mc-030",
+      "type": "multiple-choice",
+      "topic": "Svevo",
+      "author": "Svevo",
+      "difficulty": "alta",
+      "question": "Qual è la funzione del dottor S. nella Coscienza di Zeno?",
+      "options": [
+        "È il narratore onnisciente che racconta in terza persona la vita di Zeno.",
+        "È lo psicoanalista che pubblica per vendetta il memoriale del paziente, inquadrandolo come falso e inattendibile fin dalla prefazione.",
+        "È un amico di gioventù di Zeno, testimone del matrimonio con Augusta.",
+        "È il padre di Zeno, evocato nelle pagine sulla morte del genitore."
+      ],
+      "correct": 1,
+      "explanation": "La Prefazione del dottor S. denuncia il paziente che ha abbandonato la cura e pubblica le memorie per ripicca: questa cornice rende strutturalmente inattendibile il racconto di Zeno e mette in discussione la stessa psicoanalisi."
+    },
+    {
+      "id": "ita-mc-031",
+      "type": "multiple-choice",
+      "topic": "Svevo",
+      "author": "Svevo",
+      "difficulty": "alta",
+      "question": "Come si chiude la Coscienza di Zeno nella pagina finale?",
+      "options": [
+        "Con la guarigione di Zeno, che ritrova salute psichica grazie alla psicoanalisi.",
+        "Con il suicidio del protagonista, incapace di accettare la propria inettitudine.",
+        "Con la visione apocalittica di un'esplosione futura che distruggerà la Terra ammalata: la salute coinciderà con la fine della malattia umana.",
+        "Con il ritorno definitivo di Zeno al laboratorio chimico del padre."
+      ],
+      "correct": 2,
+      "explanation": "Nella pagina finale Zeno immagina un ordigno che riporterà la Terra a uno stato di nebulosa senza parassiti e malattie: una conclusione catastrofica che lega malattia individuale e crisi della civiltà del primo Novecento."
+    },
+    {
+      "id": "ita-mc-032",
+      "type": "multiple-choice",
+      "topic": "Pirandello",
+      "author": "Pirandello",
+      "difficulty": "media",
+      "question": "Nella novella Il treno ha fischiato, cosa rappresenta il fischio del treno per Belluca?",
+      "options": [
+        "Un segnale che gli ricorda l'orario di lavoro in ufficio.",
+        "L'improvvisa apertura dell'immaginazione su un mondo lontano, dopo anni di vita schiacciata: un'evasione che i colleghi scambiano per follia.",
+        "Una minaccia di guerra che lo costringe a partire come soldato.",
+        "Il segno del ritorno di un parente emigrato in America."
+      ],
+      "correct": 1,
+      "explanation": "Belluca, sepolto dalla routine impiegatizia e da una famiglia di disgraziati, sente il fischio e scopre che esiste il resto del mondo: la sua improvvisa libertà mentale è interpretata come pazzia, tipico schema pirandelliano dell'inconciliabilità tra forma sociale e vita."
+    },
+    {
+      "id": "ita-mc-033",
+      "type": "multiple-choice",
+      "topic": "Pirandello",
+      "author": "Pirandello",
+      "difficulty": "media",
+      "question": "Quale dispositivo teatrale rende Sei personaggi in cerca d'autore un manifesto del metateatro?",
+      "options": [
+        "L'uso di una lingua dialettale che rompe la convenzione naturalistica.",
+        "L'irruzione dei sei personaggi sul palcoscenico durante le prove di un'altra commedia, che mette in scena il rapporto tra arte e realtà.",
+        "L'inserimento di canzoni e numeri musicali tipici del varietà.",
+        "L'eliminazione totale degli attori in favore di marionette."
+      ],
+      "correct": 1,
+      "explanation": "I personaggi, abbandonati dal loro autore, invadono il teatro mentre una compagnia sta provando un altro testo: la cornice rende esplicita la riflessione sul teatro come finzione e sul rapporto tra creature di carta e attori in carne e ossa."
+    },
+    {
+      "id": "ita-mc-034",
+      "type": "multiple-choice",
+      "topic": "Montale",
+      "author": "Montale",
+      "difficulty": "alta",
+      "question": "Chi è la figura femminile di Clizia, centrale in Le occasioni e nella Bufera?",
+      "options": [
+        "La moglie Drusilla Tanzi, cui Montale dedicherà più tardi gli Xenia.",
+        "La studiosa americana Irma Brandeis, trasfigurata in donna-angelo e portatrice di valori salvifici contro la barbarie del fascismo e della guerra.",
+        "Un personaggio di pura invenzione mitologica, senza alcun referente biografico.",
+        "La figura di Esterina, dedicataria della raccolta Ossi di seppia."
+      ],
+      "correct": 1,
+      "explanation": "Clizia è il senhal poetico di Irma Brandeis: figura della donna-angelo stilnovistica reinterpretata in chiave moderna, diventa nei testi degli anni Trenta-Quaranta segno di resistenza spirituale al male storico."
+    },
+    {
+      "id": "ita-mc-035",
+      "type": "multiple-choice",
+      "topic": "Primo Levi",
+      "author": "Primo Levi",
+      "difficulty": "media",
+      "question": "Cosa caratterizza Il sistema periodico di Primo Levi?",
+      "options": [
+        "Un manuale scolastico di chimica organica scritto in collaborazione con altri scienziati.",
+        "Una raccolta di racconti autobiografici e familiari in cui ciascun capitolo è intitolato a un elemento della tavola periodica.",
+        "Un romanzo storico sulla fondazione della comunità ebraica di Torino.",
+        "Una raccolta di poesie scritte ad Auschwitz e ritrovate dopo la liberazione."
+      ],
+      "correct": 1,
+      "explanation": "Il sistema periodico (1975) intreccia memoria familiare ebraica, mestiere di chimico ed esperienza del Lager: ogni elemento (Argon, Ferro, Cerio…) diventa metafora di una vicenda umana e morale."
+    },
+    {
+      "id": "ita-open-016",
+      "type": "open",
+      "topic": "Verga",
+      "author": "Verga",
+      "difficulty": "alta",
+      "question": "Perché Rosso Malpelo può essere letto come il prototipo del vinto verghiano?",
+      "model_answer": "Rosso Malpelo è marchiato da un pregiudizio popolare (i capelli rossi = malvagità) che ne determina il destino. Lavora nella cava come il padre Mastro Misciu, ne eredita lo strumento e infine la stessa fine, perdendosi nelle gallerie. Verga adotta la prospettiva interna della comunità mineraria: la regressione del narratore mostra come la società stessa produca il vinto, condannandolo prima ancora che agisca. Malpelo introduce così l'idea, sistematizzata nel Ciclo dei Vinti, che la sconfitta nasca dall'urto tra individuo e mondo, non dalla colpa morale.",
+      "keywords": ["pregiudizio", "regressione", "cava", "Ciclo dei Vinti", "Mastro Misciu", "impersonalità"]
+    },
+    {
+      "id": "ita-open-017",
+      "type": "open",
+      "topic": "Pascoli",
+      "author": "Pascoli",
+      "difficulty": "alta",
+      "question": "Che posizione assume Pascoli nel discorso La grande proletaria si è mossa e come si concilia con la sua poetica del nido?",
+      "model_answer": "Nel discorso del 1911, in occasione della guerra di Libia, Pascoli giustifica l'impresa coloniale italiana presentando l'Italia come una nazione povera e proletaria che cerca terra per i propri emigranti. È una posizione nazionalista che proietta sul piano collettivo lo stesso bisogno di protezione, casa e famiglia che alimenta la poetica del nido: la patria diventa nido allargato da difendere ed espandere. La contraddizione tra il poeta intimista delle piccole cose e il propagandista coloniale mostra come il mito del nido, da rifugio affettivo, possa trasformarsi in retorica di esclusione verso l'altro.",
+      "keywords": ["Libia 1911", "colonialismo", "nido", "emigrazione", "nazionalismo", "patria-nido"]
+    },
+    {
+      "id": "ita-open-018",
+      "type": "open",
+      "topic": "D'Annunzio",
+      "author": "D'Annunzio",
+      "difficulty": "alta",
+      "question": "In che modo D'Annunzio reinterpreta il superuomo di Nietzsche e quali differenze emergono rispetto al modello originario?",
+      "model_answer": "Nietzsche pensa il superuomo come progetto etico-filosofico: oltrepassamento dell'uomo, trasvalutazione dei valori, fedeltà alla terra. D'Annunzio ne fa invece un mito estetizzante e politico: il superuomo è l'artista-eroe che afferma la propria volontà attraverso il lusso, il bello, il dominio, fino all'azione politica e militare (impresa di Fiume, Vittoriale come opera d'arte vivente). Cade quindi la dimensione critica nietzschiana e resta una versione ideologica, vitalistica e nazionalista, leggibile come anticipazione di certi miti del primo Novecento e del fascismo.",
+      "keywords": ["volontà di potenza", "estetismo", "politica", "Vittoriale", "Fiume", "vitalismo"]
+    },
+    {
+      "id": "ita-open-019",
+      "type": "open",
+      "topic": "Svevo",
+      "author": "Svevo",
+      "difficulty": "alta",
+      "question": "Quale ruolo svolge l'amicizia con James Joyce nella riscoperta di Svevo e nel suo inserimento nel modernismo europeo?",
+      "model_answer": "Trieste mette in contatto Svevo, impiegato e scrittore semi-sconosciuto, con Joyce, che gli dà lezioni di inglese e legge i suoi primi romanzi. È Joyce a far conoscere La coscienza di Zeno ai critici francesi (Larbaud, Crémieux), favorendone la riscoperta dopo il 1925. Sul piano letterario, Svevo condivide con Joyce l'attenzione alla coscienza dell'inetto, il tempo soggettivo, l'ironia sul personaggio borghese e l'uso di una lingua impura: ciò lo iscrive a pieno titolo nel modernismo europeo, accanto a Joyce, Proust e Musil, oltre la cornice italiana del romanzo verista.",
+      "keywords": ["Trieste", "Joyce", "Larbaud", "modernismo", "inetto", "tempo soggettivo"]
+    },
+    {
+      "id": "ita-open-020",
+      "type": "open",
+      "topic": "Montale",
+      "author": "Montale",
+      "difficulty": "alta",
+      "question": "Come si esprime la poetica negativa di Montale nella poesia Non chiederci la parola?",
+      "model_answer": "La poesia, posta in apertura degli Ossi di seppia, è una dichiarazione di poetica in negativo: Montale rifiuta il ruolo del poeta vate, ottimista e portatore di verità. Al lettore può solo dire quello che non è, quello che non vuole: rinuncia alla parola assoluta, propone una poesia scabra ed essenziale, fatta di immagini di un paesaggio ligure arido e di un male di vivere diffuso. Si oppone così tanto al magistero dannunziano quanto al fascismo dei consensi, scegliendo un'etica della reticenza che diventerà il timbro degli Ossi e del correlativo oggettivo.",
+      "keywords": ["poetica negativa", "anti-vate", "male di vivere", "Liguria", "reticenza", "Ossi di seppia"]
+    },
+    {
+      "id": "ita-open-021",
+      "type": "open",
+      "topic": "Primo Levi",
+      "author": "Primo Levi",
+      "difficulty": "alta",
+      "question": "Cosa intende Levi per vergogna del sopravvissuto ne I sommersi e i salvati?",
+      "model_answer": "Quarant'anni dopo Auschwitz, Levi torna sull'esperienza del Lager e mette al centro la condizione di chi è sopravvissuto. La vergogna nasce dalla consapevolezza che a sopravvivere sono stati spesso non i migliori, ma chi ha saputo o dovuto compromettersi nella zona grigia, mentre i sommersi, i veri testimoni integrali, sono morti. A questa colpa oggettivamente immeritata si aggiunge il dovere etico di testimoniare per chi non può più parlare, contro ogni semplificazione manichea o tentazione di negazionismo. La vergogna diventa così categoria morale del Novecento.",
+      "keywords": ["sopravvissuto", "zona grigia", "sommersi", "testimonianza", "colpa", "Lager"]
+    },
+    {
+      "id": "ita-cloze-011",
+      "type": "cloze",
+      "topic": "Verga",
+      "author": "Verga",
+      "difficulty": "media",
+      "question": "Nella prefazione a I Malavoglia, Verga descrive la modernità come una _____ del progresso che travolge i deboli e produce i vinti.",
+      "answer": "fiumana",
+      "alt_answers": ["fiumana del progresso"],
+      "explanation": "L'immagine della fiumana del progresso, irresistibile e cieca, è la cornice teorica del Ciclo dei Vinti: la storia procede come un fiume in piena, indifferente a chi resta indietro."
+    },
+    {
+      "id": "ita-cloze-012",
+      "type": "cloze",
+      "topic": "D'Annunzio",
+      "author": "D'Annunzio",
+      "difficulty": "facile",
+      "question": "La raccolta poetica che contiene La sera fiesolana e La pioggia nel pineto è _____, terzo libro delle Laudi.",
+      "answer": "Alcyone",
+      "alt_answers": ["Alcione"],
+      "explanation": "Alcyone (1903) è il libro centrale dell'esperienza panica dannunziana: una stagione estiva in Toscana in cui poeta e natura si fondono."
+    },
+    {
+      "id": "ita-cloze-013",
+      "type": "cloze",
+      "topic": "Pirandello",
+      "author": "Pirandello",
+      "difficulty": "media",
+      "question": "In Uno, nessuno e centomila il protagonista _____ Moscarda scopre, per una battuta della moglie sul suo naso storto, che gli altri vedono in lui mille persone diverse dalla sua immagine di sé.",
+      "answer": "Vitangelo",
+      "alt_answers": ["Gengè", "Genge"],
+      "explanation": "Da quel piccolo incidente Vitangelo Moscarda inizia il percorso di scomposizione dell'identità: l'io non esiste come unità, ma solo come somma delle maschere altrui."
+    },
+    {
+      "id": "ita-cloze-014",
+      "type": "cloze",
+      "topic": "Montale",
+      "author": "Montale",
+      "difficulty": "media",
+      "question": "Negli Ossi di seppia, il frutto agrumato dei _____ diventa oggetto-simbolo di un'epifania povera ma possibile, contrapposta alla retorica dannunziana.",
+      "answer": "limoni",
+      "alt_answers": ["limone"],
+      "explanation": "I limoni apre programmaticamente la raccolta: contro i bossi e i ligustri dei poeti laureati, Montale sceglie un paesaggio quotidiano dove la verità balena per istanti, schema del futuro correlativo oggettivo."
     }
   ]
 }

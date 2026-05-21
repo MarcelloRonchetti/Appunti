@@ -145,6 +145,28 @@ Inizia ora.
 
 ---
 
+## Stato attuale del pool (aggiornato 2026-05-21)
+
+Il file `quiz/data/italiano.json` contiene **70 domande** (35 mc, 21 open, 14 cloze). Quando usi il prompt B, parti da questi ID:
+
+- `ita-mc-036`, `037`, …
+- `ita-open-022`, `023`, …
+- `ita-cloze-015`, `016`, …
+
+Distribuzione attuale per topic (per scegliere su cosa espandere):
+
+| Topic | n. domande |
+|---|---|
+| Verga, Pirandello | 7 |
+| Pascoli, D'Annunzio, Svevo, Montale, Primo Levi | 6 |
+| Decadentismo/Simbolismo/Estetismo | 4 |
+| Positivismo/Naturalismo/Verismo, Avanguardie/Futurismo/Crepuscolarismo, Ungaretti, Neorealismo, Calvino, Fenoglio | 3 |
+| Romanzo della crisi, Ermetismo | 2 |
+
+I topic più poveri (Romanzo della crisi, Ermetismo, Calvino, Fenoglio, Ungaretti, Neorealismo) sono i candidati naturali per la prossima espansione.
+
+---
+
 ## Come usare
 
 1. Apri ChatGPT, incolla il **prompt A** (sostituendo data se vuoi).
