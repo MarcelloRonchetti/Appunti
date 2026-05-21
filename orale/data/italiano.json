@@ -1,0 +1,94 @@
+{
+  "subject": "italiano",
+  "version": "2026-05-21",
+  "autori": [
+    {
+      "id": "pascoli",
+      "nome": "Giovanni Pascoli",
+      "contesto": "1855 — 1912 · simbolismo, fanciullino, nido",
+      "tag": ["simbolismo", "fanciullino", "nido", "decadentismo"],
+      "puntiChiave": [
+        "Apertura biografica: il 10 agosto 1867 il padre Ruggero viene ucciso, delitto impunito — è il trauma fondante che attraversa tutta l'opera.",
+        "Poetica del fanciullino (saggio 1897): il poeta è il bambino interiore che vede analogie e mistero nelle piccole cose, dove l'adulto razionale non guarda.",
+        "Simbolo del nido: la famiglia ricostruita a Castelvecchio con le sorelle, rifugio chiuso e fragile contro la violenza del mondo esterno.",
+        "Opere chiave: Myricae (1891, poetica delle piccole cose) e Canti di Castelvecchio (1903, lutto e natura).",
+        "Stile: fonosimbolismo, onomatopee, lessico tecnico-naturalistico mescolato a parole infantili e latinismi — un italiano nuovo (Contini).",
+        "Posizione storica: voce del Decadentismo italiano, faccia dimessa e intimista, opposta al superuomo dannunziano.",
+        "Chiusura: poeta-vate dell'Italia umbertina (La grande proletaria si è mossa, 1911) ma con interiorità inquieta e profondamente moderna."
+      ],
+      "collegamenti": [
+        { "id": "dannunzio", "tipo": "autore", "motivo": "i due volti del Decadentismo italiano: nido vs. superuomo" },
+        { "id": "montale", "tipo": "autore", "motivo": "natura come schermo dell'interiorità, eredità del fonosimbolismo" },
+        { "id": "ungaretti", "tipo": "autore", "motivo": "erede della parola breve, essenziale, fonicamente carica" },
+        { "id": "x-agosto", "tipo": "poesia", "motivo": "testo-manifesto del nido violato e del trauma del padre" },
+        { "id": "il-gelsomino-notturno", "tipo": "poesia", "motivo": "esclusione del poeta dalla vita normale, simbolismo sessuale velato" }
+      ],
+      "citazioni": [
+        { "testo": "È dentro di noi un fanciullino che non solo ha brividi, come credeva Cebes Tebano, ma lagrime ancora e tripudi suoi.", "fonte": "Il fanciullino, 1897" },
+        { "testo": "San Lorenzo, io lo so perché tanto / di stelle per l'aria tranquilla / arde e cade…", "fonte": "X Agosto" },
+        { "testo": "E tu, Cielo, dall'alto dei mondi / sereni, infinito, immortale, / oh! d'un pianto di stelle lo inondi / quest'atomo opaco del Male!", "fonte": "X Agosto, ultima strofa" }
+      ],
+      "dateFatti": [
+        { "anno": "1855", "evento": "Nasce a San Mauro di Romagna, quarto di dieci figli." },
+        { "anno": "1867", "evento": "10 agosto: il padre Ruggero viene ucciso a fucilate; delitto impunito." },
+        { "anno": "1891", "evento": "Pubblica Myricae (poi ampliata fino al 1903)." },
+        { "anno": "1897", "evento": "Saggio Il fanciullino sulla rivista Il Marzocco." },
+        { "anno": "1903", "evento": "Pubblica i Canti di Castelvecchio." },
+        { "anno": "1911", "evento": "Discorso La grande proletaria si è mossa: appoggio alla guerra di Libia." },
+        { "anno": "1912", "evento": "Muore a Bologna di cancro." }
+      ],
+      "domandeProf": [
+        "Cosa intende Pascoli per nido e perché è insieme protezione e prigione?",
+        "Differenza tra fanciullino pascoliano e superuomo dannunziano?",
+        "Cos'è il fonosimbolismo? Fai un esempio concreto da Myricae.",
+        "Perché Contini considera Pascoli il primo poeta italiano moderno?",
+        "Come si concilia il Pascoli intimista con il nazionalista de La grande proletaria si è mossa?"
+      ],
+      "paroleChiave": [
+        { "termine": "fanciullino", "definizione": "Bambino interiore che vede stupore e analogie nelle piccole cose; è la voce vera del poeta." },
+        { "termine": "nido", "definizione": "Nucleo familiare protettivo e ossessivo; centro emotivo e simbolico dell'opera." },
+        { "termine": "fonosimbolismo", "definizione": "Uso di suoni e onomatopee perché la sonorità della parola allude essa stessa al significato." },
+        { "termine": "myricae", "definizione": "Tamerici virgiliane, piante umili: programma poetico delle piccole cose quotidiane." },
+        { "termine": "decadentismo dimesso", "definizione": "Il Pascoli intimo e simbolico opposto al Decadentismo esibito del Vittoriale dannunziano." }
+      ]
+    }
+  ],
+  "poesie": [
+    {
+      "id": "x-agosto",
+      "titolo": "X Agosto",
+      "autoreId": "pascoli",
+      "contesto": "Myricae, 1896 · simbolismo, lutto, nido violato",
+      "tag": ["myricae", "nido", "lutto", "simbolismo"],
+      "puntiChiave": [
+        "Apertura: notte di San Lorenzo, 10 agosto — le stelle cadenti sono lacrime cosmiche di pietà universale.",
+        "Struttura simmetrica: due morti parallele — la rondine e l'uomo — entrambe spezzate mentre tornavano al nido portando cibo o doni.",
+        "Riferimento biografico implicito: l'uomo ucciso è il padre Ruggero, assassinato il 10 agosto 1867; mai nominato, ma centrale.",
+        "Simbolo del nido violato: la coperta della casa romita, i piccoli che attendono invano — il dolore privato si fa universale.",
+        "Stile: paratassi, ripetizioni, ossimori (cielo sereno/pianto, atomo opaco del Male), sintassi quasi liturgica.",
+        "Chiusura: il cielo testimone muto, l'ossimoro finale 'atomo opaco del Male' che inchioda la Terra a punto di violenza nel cosmo."
+      ],
+      "collegamenti": [
+        { "id": "pascoli", "tipo": "autore", "motivo": "torna all'autore per inquadrare la poetica del nido e del fanciullino" },
+        { "id": "lavandare", "tipo": "poesia", "motivo": "altra Myricae costruita sul simbolo dell'assenza e della solitudine" },
+        { "id": "novembre", "tipo": "poesia", "motivo": "altra Myricae sul rovesciamento finale: la natura sembra viva, ma è morte" }
+      ],
+      "testo": "San Lorenzo, io lo so perché tanto\ndi stelle per l'aria tranquilla\narde e cade, perché sì gran pianto\nnella concava volta sfavilla.\n\nRitornava una rondine al tetto:\nl'uccisero: cadde tra spini:\nella aveva nel becco un insetto:\nla cena dei suoi rondinini.\n\nOra è là, come in croce, che tende\nquel verme a quel cielo lontano;\ne il suo nido è nell'ombra, che attende,\nche pigola sempre più piano.\n\nAnche un uomo tornava al suo nido:\nl'uccisero: disse: Perdono;\ne restò negli aperti occhi un grido:\nportava due bambole in dono…\n\nOra là, nella casa romita,\nlo aspettano, aspettano in vano:\negli immobile, attonito, addita\nle bambole al cielo lontano.\n\nE tu, Cielo, dall'alto dei mondi\nsereni, infinito, immortale,\noh! d'un pianto di stelle lo inondi\nquest'atomo opaco del Male!",
+      "dateFatti": [
+        { "anno": "1867", "evento": "10 agosto: assassinio del padre, data biografica fondante che la poesia evoca implicitamente." },
+        { "anno": "1896", "evento": "Composta e inserita nella terza edizione di Myricae." }
+      ],
+      "domandeProf": [
+        "Perché Pascoli sceglie la notte di San Lorenzo come cornice?",
+        "Cosa simboleggiano la rondine e l'uomo, e perché sono messi in parallelo?",
+        "Come funziona l'ossimoro 'atomo opaco del Male' nell'ultima strofa?",
+        "Che ruolo ha il Cielo: testimone, giudice, o semplice spettatore impotente?"
+      ],
+      "paroleChiave": [
+        { "termine": "atomo opaco del Male", "definizione": "Immagine cosmica della Terra come minuscolo punto oscuro e malvagio nell'universo sereno." },
+        { "termine": "nido", "definizione": "Famiglia protettiva spezzata dalla violenza esterna: rondinini e bambini che attendono invano." },
+        { "termine": "parallelismo rondine-uomo", "definizione": "Struttura portante della poesia: due morti speculari elevano il lutto privato a simbolo universale." }
+      ]
+    }
+  ]
+}

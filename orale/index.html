@@ -1,0 +1,1375 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Banco d'orale · Italiano · Appunti 5F</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #f1e7cf;
+    --paper-deep: #e6d9b8;
+    --ink: #2a2114;
+    --ink-soft: #5a4a32;
+    --ink-faint: #8a7a5e;
+    --accent: #8a2820;
+    --accent-soft: #b85040;
+    --gold: #a87f2f;
+    --green: #4a6b35;
+    --rule: rgba(42, 33, 20, 0.18);
+    --rule-soft: rgba(42, 33, 20, 0.10);
+    --card-bg: #faf3e0;
+    --card-bg-deep: #f5ecd0;
+    --shadow: 0 8px 30px rgba(42, 33, 20, 0.12);
+    --shadow-strong: 0 18px 50px rgba(42, 33, 20, 0.25);
+    --serif-display: 'Cormorant Garamond', Georgia, serif;
+    --serif-body: 'Newsreader', Georgia, serif;
+    --sans: 'Inter', system-ui, sans-serif;
+    --mono: 'JetBrains Mono', monospace;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; }
+  body {
+    font-family: var(--sans);
+    background: var(--paper);
+    color: var(--ink);
+    min-height: 100vh;
+    line-height: 1.6;
+    background-image:
+      radial-gradient(circle at 18% 12%, rgba(168, 127, 47, 0.07) 0%, transparent 55%),
+      radial-gradient(circle at 82% 88%, rgba(138, 40, 32, 0.05) 0%, transparent 55%);
+  }
+  a { color: var(--accent); }
+
+  /* ---------- top bar ---------- */
+  .topbar {
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    background: var(--paper);
+    border-bottom: 1px solid var(--rule);
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .topbar-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .home-link {
+    color: var(--ink-soft);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding: 6px 10px;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    transition: all 0.15s ease;
+  }
+  .home-link:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+  }
+  .brand {
+    font-family: var(--serif-display);
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--ink);
+    letter-spacing: 0.02em;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+  .brand small {
+    font-family: var(--sans);
+    font-size: 0.65rem;
+    font-weight: 600;
+    color: var(--accent);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+  .topbar-right {
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    color: var(--ink-faint);
+    letter-spacing: 0.05em;
+  }
+
+  /* ---------- breadcrumb ---------- */
+  .crumbs {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 14px 24px 0;
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    color: var(--ink-soft);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+    min-height: 0;
+  }
+  .crumbs:empty { padding: 0; min-height: 0; }
+  .crumbs .crumb {
+    color: var(--ink-soft);
+    text-decoration: none;
+    padding: 3px 8px;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    transition: all 0.15s ease;
+    cursor: pointer;
+    background: none;
+    font-family: var(--mono);
+    font-size: 0.78rem;
+  }
+  .crumbs .crumb:hover {
+    color: var(--accent);
+    border-color: var(--rule);
+    background: rgba(138, 40, 32, 0.04);
+  }
+  .crumbs .crumb.current {
+    color: var(--ink);
+    font-weight: 600;
+    cursor: default;
+  }
+  .crumbs .crumb.current:hover {
+    background: none;
+    border-color: transparent;
+    color: var(--ink);
+  }
+  .crumbs .sep { color: var(--ink-faint); }
+
+  /* ---------- main shell ---------- */
+  main {
+    max-width: 960px;
+    margin: 28px auto 64px;
+    padding: 0 24px;
+  }
+
+  /* ---------- index hero ---------- */
+  .hero {
+    text-align: center;
+    margin-bottom: 36px;
+    padding: 18px 0 24px;
+  }
+  .hero .eyebrow {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    color: var(--accent);
+    margin-bottom: 14px;
+  }
+  .hero h1 {
+    font-family: var(--serif-display);
+    font-size: 3.1rem;
+    font-weight: 600;
+    line-height: 1.05;
+    color: var(--ink);
+    margin-bottom: 14px;
+    letter-spacing: -0.005em;
+  }
+  .hero p {
+    font-family: var(--serif-body);
+    font-size: 1.15rem;
+    color: var(--ink-soft);
+    max-width: 540px;
+    margin: 0 auto 26px;
+    font-style: italic;
+  }
+  .hero .ornament {
+    color: var(--gold);
+    font-size: 1.2rem;
+    margin: 8px 0 20px;
+    letter-spacing: 0.5em;
+  }
+  .cta-random {
+    font-family: var(--sans);
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    padding: 14px 32px;
+    border-radius: 6px;
+    border: none;
+    background: var(--accent);
+    color: var(--paper);
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(138, 40, 32, 0.25);
+    transition: all 0.18s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .cta-random:hover {
+    background: var(--accent-soft);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(138, 40, 32, 0.3);
+  }
+  .cta-random:active { transform: translateY(0); }
+  .cta-random .icon { font-size: 1.1rem; }
+
+  /* ---------- segmented tabs ---------- */
+  .seg-wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 28px;
+  }
+  .seg {
+    display: inline-flex;
+    background: var(--card-bg);
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    padding: 4px;
+    gap: 4px;
+    box-shadow: 0 2px 8px rgba(42, 33, 20, 0.06);
+  }
+  .seg-btn {
+    font-family: var(--sans);
+    font-size: 0.88rem;
+    font-weight: 600;
+    padding: 8px 22px;
+    border: none;
+    background: transparent;
+    color: var(--ink-soft);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    letter-spacing: 0.03em;
+  }
+  .seg-btn.active {
+    background: var(--accent);
+    color: var(--paper);
+  }
+  .seg-btn:not(.active):hover { color: var(--ink); }
+  .seg-count {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    opacity: 0.8;
+    margin-left: 6px;
+  }
+
+  /* ---------- tiles ---------- */
+  .tile-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 14px;
+  }
+  .group-head {
+    grid-column: 1 / -1;
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--ink-faint);
+    padding: 14px 0 4px;
+    border-bottom: 1px solid var(--rule-soft);
+    margin-bottom: 4px;
+  }
+  .group-head:first-child { padding-top: 0; }
+  .tile {
+    background: var(--card-bg);
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    padding: 16px 18px;
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.18s ease;
+    font-family: var(--sans);
+    color: var(--ink);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    min-height: 92px;
+    position: relative;
+    overflow: hidden;
+  }
+  .tile::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 6px;
+    pointer-events: none;
+    box-shadow: inset 0 0 0 1px transparent;
+    transition: box-shadow 0.18s ease;
+  }
+  .tile:hover {
+    transform: translateY(-2px);
+    border-color: var(--accent);
+    box-shadow: var(--shadow);
+  }
+  .tile:hover::after { box-shadow: inset 0 0 0 1px var(--accent); }
+  .tile .tile-name {
+    font-family: var(--serif-display);
+    font-size: 1.32rem;
+    font-weight: 600;
+    color: var(--ink);
+    line-height: 1.15;
+  }
+  .tile .tile-tag {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    color: var(--ink-soft);
+    letter-spacing: 0.04em;
+  }
+  .tile.poesia .tile-name { font-style: italic; }
+
+  /* ---------- card view ---------- */
+  .card-view {
+    background: var(--card-bg);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 40px 44px;
+    box-shadow: var(--shadow);
+    position: relative;
+  }
+  .card-view::before {
+    content: "";
+    position: absolute;
+    top: 8px; left: 8px; right: 8px; bottom: 8px;
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    pointer-events: none;
+  }
+  .card-eyebrow {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--accent);
+    margin-bottom: 12px;
+    position: relative;
+    z-index: 1;
+  }
+  .card-title {
+    font-family: var(--serif-display);
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: var(--ink);
+    line-height: 1.05;
+    margin-bottom: 12px;
+    position: relative;
+    z-index: 1;
+    letter-spacing: -0.005em;
+  }
+  .card-title.poesia { font-style: italic; }
+  .card-context {
+    font-family: var(--serif-body);
+    font-size: 1.05rem;
+    color: var(--ink-soft);
+    margin-bottom: 8px;
+    position: relative;
+    z-index: 1;
+  }
+  .card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 22px;
+    position: relative;
+    z-index: 1;
+  }
+  .chip {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    text-transform: lowercase;
+    letter-spacing: 0.06em;
+    padding: 3px 8px;
+    border-radius: 3px;
+    background: rgba(138, 40, 32, 0.07);
+    color: var(--accent);
+    border: 1px solid rgba(138, 40, 32, 0.18);
+  }
+  .card-guide {
+    font-family: var(--serif-body);
+    font-style: italic;
+    color: var(--ink-soft);
+    border-top: 1px solid var(--rule-soft);
+    border-bottom: 1px solid var(--rule-soft);
+    padding: 14px 0;
+    margin-bottom: 24px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* ---------- help button grid ---------- */
+  .help-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 28px;
+    position: relative;
+    z-index: 1;
+  }
+  .help-btn {
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    padding: 18px 14px;
+    cursor: pointer;
+    font-family: var(--sans);
+    color: var(--ink);
+    transition: all 0.18s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+    position: relative;
+  }
+  .help-btn .help-icon {
+    font-size: 1.6rem;
+    line-height: 1;
+  }
+  .help-btn .help-label {
+    font-size: 0.84rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+  .help-btn:hover:not(:disabled) {
+    transform: translateY(-3px);
+    border-color: var(--accent);
+    color: var(--accent);
+    box-shadow: 0 6px 16px rgba(138, 40, 32, 0.14);
+    background: var(--card-bg-deep);
+  }
+  .help-btn:active:not(:disabled) { transform: translateY(0); }
+  .help-btn:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+  }
+  .help-btn:disabled::after {
+    content: attr(data-empty-label);
+    position: absolute;
+    bottom: -22px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    color: var(--ink-faint);
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    pointer-events: none;
+  }
+  .help-btn:disabled:hover::after { opacity: 1; }
+
+  .card-footer {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-top: 1px solid var(--rule-soft);
+    padding-top: 22px;
+    position: relative;
+    z-index: 1;
+  }
+  .btn {
+    font-family: var(--sans);
+    font-size: 0.92rem;
+    font-weight: 600;
+    padding: 11px 22px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .btn-primary {
+    background: var(--accent);
+    color: var(--paper);
+  }
+  .btn-primary:hover { background: var(--accent-soft); }
+  .btn-ghost {
+    background: transparent;
+    color: var(--ink-soft);
+    border: 1px solid var(--rule);
+  }
+  .btn-ghost:hover { color: var(--ink); border-color: var(--ink); }
+
+  /* ---------- drawer ---------- */
+  .overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(42, 33, 20, 0.45);
+    backdrop-filter: blur(2px);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.22s ease, visibility 0.22s ease;
+    z-index: 90;
+  }
+  .overlay.open { opacity: 1; visibility: visible; }
+
+  .drawer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 440px;
+    max-width: 100%;
+    height: 100%;
+    background: var(--card-bg);
+    box-shadow: var(--shadow-strong);
+    transform: translateX(105%);
+    transition: transform 0.28s cubic-bezier(0.22, 0.61, 0.36, 1);
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid var(--rule);
+  }
+  .drawer.open { transform: translateX(0); }
+  .drawer-head {
+    padding: 22px 26px 18px;
+    border-bottom: 1px solid var(--rule);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    background: var(--card-bg-deep);
+  }
+  .drawer-head-text { min-width: 0; }
+  .drawer-eyebrow {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--accent);
+    margin-bottom: 4px;
+  }
+  .drawer-title {
+    font-family: var(--serif-display);
+    font-size: 1.55rem;
+    font-weight: 600;
+    color: var(--ink);
+    line-height: 1.1;
+  }
+  .drawer-close {
+    background: transparent;
+    border: 1px solid var(--rule);
+    color: var(--ink-soft);
+    width: 36px;
+    height: 36px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.15rem;
+    flex-shrink: 0;
+    transition: all 0.15s ease;
+  }
+  .drawer-close:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+  }
+  .drawer-body {
+    flex: 1;
+    overflow-y: auto;
+    padding: 22px 26px 32px;
+    font-family: var(--serif-body);
+    font-size: 1rem;
+    color: var(--ink);
+    line-height: 1.6;
+  }
+  .drawer-body h4 {
+    font-family: var(--sans);
+    font-weight: 600;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--ink-soft);
+    margin-bottom: 10px;
+  }
+  .drawer-body ol, .drawer-body ul {
+    list-style: none;
+    counter-reset: drawer-item;
+  }
+  .drawer-body ol.numbered li {
+    counter-increment: drawer-item;
+    padding: 10px 0 10px 38px;
+    border-bottom: 1px solid var(--rule-soft);
+    position: relative;
+  }
+  .drawer-body ol.numbered li::before {
+    content: counter(drawer-item, decimal-leading-zero);
+    position: absolute;
+    left: 0;
+    top: 12px;
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    color: var(--accent);
+    font-weight: 600;
+  }
+  .drawer-body ol.numbered li:last-child { border-bottom: none; }
+  .drawer-body ul.bullets li {
+    padding: 8px 0 8px 18px;
+    position: relative;
+    border-bottom: 1px solid var(--rule-soft);
+  }
+  .drawer-body ul.bullets li:last-child { border-bottom: none; }
+  .drawer-body ul.bullets li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    top: 8px;
+    color: var(--gold);
+    font-weight: 700;
+  }
+
+  /* drawer specific layouts */
+  .link-item {
+    width: 100%;
+    text-align: left;
+    background: transparent;
+    border: 1px solid var(--rule);
+    border-radius: 5px;
+    padding: 12px 14px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    color: var(--ink);
+    font-family: var(--serif-body);
+    font-size: 0.98rem;
+    line-height: 1.45;
+    transition: all 0.15s ease;
+    display: block;
+  }
+  .link-item:hover {
+    border-color: var(--accent);
+    background: rgba(138, 40, 32, 0.04);
+    transform: translateX(2px);
+  }
+  .link-item .link-arrow {
+    color: var(--accent);
+    font-weight: 700;
+    margin-right: 6px;
+  }
+  .link-item .link-name { font-weight: 600; color: var(--ink); }
+  .link-item .link-type {
+    font-family: var(--mono);
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--ink-faint);
+    margin-left: 6px;
+  }
+  .link-item .link-reason {
+    display: block;
+    font-style: italic;
+    color: var(--ink-soft);
+    font-size: 0.9rem;
+    margin-top: 4px;
+  }
+
+  .poem {
+    font-family: var(--serif-body);
+    font-size: 1.02rem;
+    line-height: 1.7;
+    color: var(--ink);
+    white-space: pre-line;
+    background: var(--paper);
+    border-left: 3px solid var(--accent);
+    padding: 18px 22px;
+    border-radius: 0 5px 5px 0;
+    font-style: italic;
+  }
+  .quote {
+    border-left: 3px solid var(--gold);
+    padding: 14px 18px;
+    background: rgba(168, 127, 47, 0.06);
+    border-radius: 0 4px 4px 0;
+    margin-bottom: 14px;
+  }
+  .quote-text {
+    font-family: var(--serif-body);
+    font-style: italic;
+    color: var(--ink);
+    font-size: 1.02rem;
+    line-height: 1.55;
+  }
+  .quote-source {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    color: var(--ink-soft);
+    margin-top: 6px;
+    letter-spacing: 0.04em;
+  }
+
+  .timeline {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    gap: 6px 14px;
+  }
+  .timeline .year {
+    font-family: var(--mono);
+    font-weight: 600;
+    color: var(--accent);
+    padding: 8px 0;
+    border-right: 2px solid var(--rule);
+    padding-right: 12px;
+    text-align: right;
+    font-size: 0.85rem;
+  }
+  .timeline .event {
+    padding: 8px 0;
+    color: var(--ink);
+    font-size: 0.96rem;
+    border-bottom: 1px solid var(--rule-soft);
+  }
+  .timeline .event:last-of-type { border-bottom: none; }
+
+  .keyterms li {
+    padding: 10px 0;
+    border-bottom: 1px solid var(--rule-soft);
+  }
+  .keyterms li:last-child { border-bottom: none; }
+  .keyterms .term {
+    font-family: var(--serif-display);
+    font-weight: 600;
+    color: var(--accent);
+    font-size: 1.08rem;
+  }
+  .keyterms .def {
+    display: block;
+    color: var(--ink);
+    font-size: 0.96rem;
+    margin-top: 3px;
+  }
+
+  /* ---------- empty / loading states ---------- */
+  .state-box {
+    background: var(--card-bg);
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    padding: 60px 36px;
+    text-align: center;
+    box-shadow: var(--shadow);
+  }
+  .state-box h2 {
+    font-family: var(--serif-display);
+    font-size: 1.8rem;
+    color: var(--ink);
+    margin-bottom: 10px;
+  }
+  .state-box .ornament {
+    color: var(--gold);
+    font-size: 1.3rem;
+    margin: 10px 0 18px;
+    letter-spacing: 0.5em;
+  }
+  .state-box p {
+    font-family: var(--serif-body);
+    color: var(--ink-soft);
+    max-width: 540px;
+    margin: 0 auto 14px;
+    font-size: 1.02rem;
+  }
+  .state-box code {
+    font-family: var(--mono);
+    font-size: 0.88rem;
+    background: rgba(138, 40, 32, 0.08);
+    padding: 2px 7px;
+    border-radius: 3px;
+    color: var(--accent);
+  }
+
+  /* ---------- responsive ---------- */
+  @media (max-width: 720px) {
+    .hero h1 { font-size: 2.3rem; }
+    .hero p { font-size: 1rem; }
+    .card-view { padding: 26px 22px; }
+    .card-title { font-size: 2rem; }
+    .help-grid { grid-template-columns: repeat(2, 1fr); }
+    .topbar { padding: 12px 16px; }
+    main { padding: 0 16px; }
+    .tile-grid { grid-template-columns: 1fr; }
+    .crumbs { padding: 12px 16px 0; }
+  }
+  @media (max-width: 640px) {
+    .drawer { width: 100%; border-left: none; }
+    .help-grid { grid-template-columns: repeat(2, 1fr); }
+    .hero h1 { font-size: 2rem; }
+    .card-view { padding: 22px 18px; }
+    .card-view::before { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-left">
+    <a href="../index.html" class="home-link">← Home</a>
+    <a href="#" class="brand" id="brandLink">Banco d'orale <small>Italiano · Maturità 5F</small></a>
+  </div>
+  <div class="topbar-right">🎙️ esercizio orale</div>
+</header>
+
+<nav class="crumbs" id="crumbs" aria-label="Percorso"></nav>
+
+<main id="main"></main>
+
+<!-- Drawer (riutilizzato per tutti gli aiuti) -->
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle">
+  <div class="drawer-head">
+    <div class="drawer-head-text">
+      <div class="drawer-eyebrow" id="drawerEyebrow">Aiuto</div>
+      <div class="drawer-title" id="drawerTitle">—</div>
+    </div>
+    <button class="drawer-close" id="drawerClose" aria-label="Chiudi">✕</button>
+  </div>
+  <div class="drawer-body" id="drawerBody"></div>
+</aside>
+
+<script>
+(function () {
+  'use strict';
+
+  // ----------------------------------------------------------
+  // Stato in memoria
+  // ----------------------------------------------------------
+  let data = null;          // { autori: [...], poesie: [...] }
+  let byId = { autore: new Map(), poesia: new Map() };
+  let currentCard = null;   // { tipo, id }
+  let breadcrumb = [];      // [{ tipo, id }, ...]
+  let openDrawer = null;    // string id or null
+
+  // ----------------------------------------------------------
+  // Aiuti: definizione dei 6 bottoni
+  // ----------------------------------------------------------
+  const HELPS = [
+    { id: 'puntiChiave',  icon: '📌', label: 'Punti chiave',     short: 'Punti chiave' },
+    { id: 'collegamenti', icon: '🔗', label: 'Collegamenti',     short: 'Collegamenti' },
+    { id: 'testo',        icon: '📜', label: 'Testo / citazione', short: 'Testo' },
+    { id: 'dateFatti',    icon: '📅', label: 'Date / fatti',     short: 'Date e fatti' },
+    { id: 'domandeProf',  icon: '❓', label: 'Domande prof',     short: 'Domande prof' },
+    { id: 'paroleChiave', icon: '🔤', label: 'Parole-chiave',    short: 'Parole-chiave' }
+  ];
+
+  // ----------------------------------------------------------
+  // DOM
+  // ----------------------------------------------------------
+  const $ = (sel) => document.querySelector(sel);
+  const main = $('#main');
+  const crumbsEl = $('#crumbs');
+  const overlay = $('#overlay');
+  const drawer = $('#drawer');
+  const drawerEyebrow = $('#drawerEyebrow');
+  const drawerTitle = $('#drawerTitle');
+  const drawerBody = $('#drawerBody');
+  const drawerClose = $('#drawerClose');
+  const brandLink = $('#brandLink');
+
+  // ----------------------------------------------------------
+  // Util
+  // ----------------------------------------------------------
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/[&<>"']/g, c => (
+      { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c]
+    ));
+  }
+  function pick(arr) {
+    return arr[Math.floor(Math.random() * arr.length)];
+  }
+  function getCardObj(tipo, id) {
+    return byId[tipo] ? byId[tipo].get(id) : null;
+  }
+  function cardDisplayName(c) {
+    if (!c) return '—';
+    if (c.tipo === 'autore') {
+      const a = getCardObj('autore', c.id);
+      return a ? a.nome : c.id;
+    }
+    const p = getCardObj('poesia', c.id);
+    return p ? p.titolo : c.id;
+  }
+  function hasContent(card, field) {
+    if (!card) return false;
+    if (field === 'testo') {
+      if (card.testo && String(card.testo).trim()) return true;
+      if (Array.isArray(card.citazioni) && card.citazioni.length) return true;
+      return false;
+    }
+    const v = card[field];
+    if (!v) return false;
+    if (Array.isArray(v)) return v.length > 0;
+    return String(v).trim().length > 0;
+  }
+
+  // ----------------------------------------------------------
+  // Routing (hash-based)
+  // ----------------------------------------------------------
+  function parseHash() {
+    const h = (window.location.hash || '').replace(/^#\/?/, '');
+    if (!h) return { view: 'index' };
+    const parts = h.split('/').filter(Boolean);
+    if (parts.length >= 2 && (parts[0] === 'autori' || parts[0] === 'poesie')) {
+      const tipo = parts[0] === 'autori' ? 'autore' : 'poesia';
+      return { view: 'card', tipo, id: decodeURIComponent(parts[1]) };
+    }
+    return { view: 'invalid', raw: h };
+  }
+  function setHash(tipo, id, opts) {
+    const seg = tipo === 'autore' ? 'autori' : 'poesie';
+    const next = `#/${seg}/${encodeURIComponent(id)}`;
+    if (window.location.hash === next) {
+      // already there — force re-render
+      render();
+    } else {
+      if (opts && opts.replace) {
+        history.replaceState(null, '', next);
+        render();
+      } else {
+        window.location.hash = next;
+      }
+    }
+  }
+  function goIndex() {
+    breadcrumb = [];
+    currentCard = null;
+    if (window.location.hash) {
+      window.location.hash = '';
+    } else {
+      render();
+    }
+  }
+
+  // ----------------------------------------------------------
+  // Navigation actions
+  // ----------------------------------------------------------
+  // From an index tile: reset breadcrumb, start fresh with this card
+  function navigateFromIndex(tipo, id) {
+    breadcrumb = [{ tipo, id }];
+    setHash(tipo, id);
+  }
+  // From a "collegamento" inside a drawer: push to breadcrumb
+  function navigateFromLink(tipo, id) {
+    // Push if different from current
+    const last = breadcrumb[breadcrumb.length - 1];
+    if (!last || last.tipo !== tipo || last.id !== id) {
+      breadcrumb.push({ tipo, id });
+    }
+    closeDrawer();
+    setHash(tipo, id);
+  }
+  // From a breadcrumb click: truncate
+  function navigateFromCrumb(index) {
+    if (index < 0 || index >= breadcrumb.length) return;
+    breadcrumb = breadcrumb.slice(0, index + 1);
+    const target = breadcrumb[breadcrumb.length - 1];
+    setHash(target.tipo, target.id);
+  }
+  // Random
+  function navigateRandom() {
+    if (!data) return;
+    const pool = [
+      ...(data.autori || []).map(a => ({ tipo: 'autore', id: a.id })),
+      ...(data.poesie || []).map(p => ({ tipo: 'poesia', id: p.id }))
+    ];
+    if (pool.length === 0) return;
+    const choice = pick(pool);
+    breadcrumb = [choice];
+    setHash(choice.tipo, choice.id);
+  }
+
+  // ----------------------------------------------------------
+  // Drawer
+  // ----------------------------------------------------------
+  function openHelp(helpId) {
+    if (!currentCard) return;
+    const card = getCardObj(currentCard.tipo, currentCard.id);
+    if (!card) return;
+    if (!hasContent(card, helpId)) return;
+    openDrawer = helpId;
+    const meta = HELPS.find(h => h.id === helpId);
+    drawerEyebrow.textContent = meta.short;
+    drawerTitle.textContent = `${meta.icon} ${meta.label}`;
+    drawerBody.innerHTML = renderHelpBody(card, helpId);
+    // Bind link-items inside drawer body
+    drawerBody.querySelectorAll('[data-link-tipo]').forEach(el => {
+      el.addEventListener('click', () => {
+        const t = el.dataset.linkTipo;
+        const id = el.dataset.linkId;
+        navigateFromLink(t, id);
+      });
+    });
+    overlay.classList.add('open');
+    drawer.classList.add('open');
+    drawerClose.focus();
+  }
+  function closeDrawer() {
+    openDrawer = null;
+    overlay.classList.remove('open');
+    drawer.classList.remove('open');
+  }
+  overlay.addEventListener('click', closeDrawer);
+  drawerClose.addEventListener('click', closeDrawer);
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && openDrawer) closeDrawer();
+  });
+
+  function renderHelpBody(card, helpId) {
+    if (helpId === 'puntiChiave') {
+      const items = (card.puntiChiave || []).map(p => `<li>${esc(p)}</li>`).join('');
+      return `<ol class="numbered">${items}</ol>`;
+    }
+    if (helpId === 'collegamenti') {
+      const items = (card.collegamenti || []).map(c => {
+        const tipo = c.tipo === 'autore' ? 'autore' : 'poesia';
+        const target = getCardObj(tipo, c.id);
+        const name = target ? (tipo === 'autore' ? target.nome : target.titolo) : c.id;
+        const missing = !target ? ` <span style="color:var(--ink-faint);font-size:.78rem;">(non in archivio)</span>` : '';
+        const reason = c.motivo ? `<span class="link-reason">${esc(c.motivo)}</span>` : '';
+        if (!target) {
+          return `<div class="link-item" style="cursor:default;opacity:.55;">
+            <span class="link-arrow">→</span>
+            <span class="link-name">${esc(name)}</span>
+            <span class="link-type">${tipo}</span>${missing}
+            ${reason}
+          </div>`;
+        }
+        return `<button class="link-item" data-link-tipo="${tipo}" data-link-id="${esc(c.id)}">
+          <span class="link-arrow">→</span>
+          <span class="link-name">${esc(name)}</span>
+          <span class="link-type">${tipo}</span>
+          ${reason}
+        </button>`;
+      }).join('');
+      return items || '<p style="color:var(--ink-soft);">Nessun collegamento.</p>';
+    }
+    if (helpId === 'testo') {
+      // Poesie → testo integrale. Autori → citazioni.
+      if (currentCard.tipo === 'poesia' && card.testo) {
+        return `<div class="poem">${esc(card.testo)}</div>`;
+      }
+      const citations = card.citazioni || [];
+      if (citations.length === 0) {
+        return '<p style="color:var(--ink-soft);">Nessuna citazione.</p>';
+      }
+      return citations.map(c => `
+        <div class="quote">
+          <div class="quote-text">«${esc(c.testo)}»</div>
+          ${c.fonte ? `<div class="quote-source">— ${esc(c.fonte)}</div>` : ''}
+        </div>
+      `).join('');
+    }
+    if (helpId === 'dateFatti') {
+      const items = (card.dateFatti || []).map(d => `
+        <div class="year">${esc(d.anno)}</div>
+        <div class="event">${esc(d.evento)}</div>
+      `).join('');
+      return `<div class="timeline">${items}</div>`;
+    }
+    if (helpId === 'domandeProf') {
+      const items = (card.domandeProf || []).map(q => `<li>${esc(q)}</li>`).join('');
+      return `<ol class="numbered">${items}</ol>`;
+    }
+    if (helpId === 'paroleChiave') {
+      const items = (card.paroleChiave || []).map(p => `
+        <li>
+          <span class="term">${esc(p.termine)}</span>
+          <span class="def">${esc(p.definizione)}</span>
+        </li>
+      `).join('');
+      return `<ul class="keyterms">${items}</ul>`;
+    }
+    return '';
+  }
+
+  // ----------------------------------------------------------
+  // Render: breadcrumb
+  // ----------------------------------------------------------
+  function renderCrumbs() {
+    if (breadcrumb.length === 0) {
+      crumbsEl.innerHTML = '';
+      return;
+    }
+    const parts = breadcrumb.map((c, i) => {
+      const name = cardDisplayName(c);
+      const isLast = i === breadcrumb.length - 1;
+      const cls = 'crumb' + (isLast ? ' current' : '');
+      return `<button class="${cls}" data-crumb="${i}" ${isLast ? 'aria-current="page"' : ''}>${esc(name)}</button>`;
+    });
+    const sep = '<span class="sep">→</span>';
+    crumbsEl.innerHTML = parts.join(sep);
+    crumbsEl.querySelectorAll('button[data-crumb]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const i = parseInt(btn.dataset.crumb, 10);
+        if (i === breadcrumb.length - 1) return; // current
+        navigateFromCrumb(i);
+      });
+    });
+  }
+
+  // ----------------------------------------------------------
+  // Render: index view
+  // ----------------------------------------------------------
+  let activeTab = 'autori';
+  function renderIndex() {
+    breadcrumb = [];
+    currentCard = null;
+    const autori = data.autori || [];
+    const poesie = data.poesie || [];
+
+    main.innerHTML = `
+      <section class="hero">
+        <div class="eyebrow">🎙️ Banco d'orale · Italiano</div>
+        <h1>L'orale come traccia.</h1>
+        <div class="ornament">❦ ✦ ❦</div>
+        <p>Scegli da dove iniziare. O lascia che decida il caso.</p>
+        <button class="cta-random" id="ctaRandom"><span class="icon">↻</span> Carta random</button>
+      </section>
+
+      <div class="seg-wrap">
+        <div class="seg" role="tablist">
+          <button class="seg-btn ${activeTab === 'autori' ? 'active' : ''}" data-tab="autori" role="tab">
+            Autori <span class="seg-count">${autori.length}</span>
+          </button>
+          <button class="seg-btn ${activeTab === 'poesie' ? 'active' : ''}" data-tab="poesie" role="tab">
+            Poesie <span class="seg-count">${poesie.length}</span>
+          </button>
+        </div>
+      </div>
+
+      <div id="tileArea"></div>
+    `;
+
+    $('#ctaRandom').addEventListener('click', navigateRandom);
+    main.querySelectorAll('.seg-btn').forEach(b => {
+      b.addEventListener('click', () => {
+        activeTab = b.dataset.tab;
+        renderIndex();
+      });
+    });
+    renderTiles();
+  }
+
+  function renderTiles() {
+    const area = $('#tileArea');
+    if (!area) return;
+    if (activeTab === 'autori') {
+      const autori = data.autori || [];
+      if (autori.length === 0) {
+        area.innerHTML = `<div class="state-box"><p>Nessun autore nel pool.</p></div>`;
+        return;
+      }
+      const tiles = autori.map(a => `
+        <button class="tile autore" data-tipo="autore" data-id="${esc(a.id)}">
+          <div class="tile-name">${esc(a.nome)}</div>
+          <div class="tile-tag">${esc((a.tag && a.tag[0]) || a.contesto || '')}</div>
+        </button>
+      `).join('');
+      area.innerHTML = `<div class="tile-grid">${tiles}</div>`;
+    } else {
+      // Poesie raggruppate per autore
+      const poesie = data.poesie || [];
+      if (poesie.length === 0) {
+        area.innerHTML = `<div class="state-box"><p>Nessuna poesia nel pool.</p></div>`;
+        return;
+      }
+      const groups = new Map();
+      poesie.forEach(p => {
+        const key = p.autoreId || '_';
+        if (!groups.has(key)) groups.set(key, []);
+        groups.get(key).push(p);
+      });
+      // Order groups by autori[] order, then leftovers
+      const autoriOrder = (data.autori || []).map(a => a.id);
+      const orderedKeys = [
+        ...autoriOrder.filter(id => groups.has(id)),
+        ...[...groups.keys()].filter(k => !autoriOrder.includes(k))
+      ];
+      const html = orderedKeys.map(key => {
+        const autore = getCardObj('autore', key);
+        const groupName = autore ? autore.nome : (key === '_' ? 'Senza autore' : key);
+        const tiles = groups.get(key).map(p => `
+          <button class="tile poesia" data-tipo="poesia" data-id="${esc(p.id)}">
+            <div class="tile-name">${esc(p.titolo)}</div>
+            <div class="tile-tag">${esc((p.tag && p.tag[0]) || p.contesto || '')}</div>
+          </button>
+        `).join('');
+        return `
+          <div class="group-head">${esc(groupName)}</div>
+          ${tiles}
+        `;
+      }).join('');
+      area.innerHTML = `<div class="tile-grid">${html}</div>`;
+    }
+
+    area.querySelectorAll('.tile').forEach(t => {
+      t.addEventListener('click', () => {
+        navigateFromIndex(t.dataset.tipo, t.dataset.id);
+      });
+    });
+  }
+
+  // ----------------------------------------------------------
+  // Render: card view
+  // ----------------------------------------------------------
+  function renderCardView(tipo, id) {
+    const card = getCardObj(tipo, id);
+    if (!card) {
+      main.innerHTML = `
+        <div class="state-box">
+          <h2>Carta non trovata</h2>
+          <div class="ornament">❦ ✦ ❦</div>
+          <p>Non c'è nessun ${esc(tipo)} con id <code>${esc(id)}</code>.</p>
+          <button class="btn btn-primary" id="backIndex">← Torna all'indice</button>
+        </div>`;
+      $('#backIndex').addEventListener('click', goIndex);
+      return;
+    }
+    currentCard = { tipo, id };
+
+    // If breadcrumb is empty (e.g. arrived via direct URL/refresh), seed with current card
+    if (breadcrumb.length === 0) {
+      breadcrumb = [{ tipo, id }];
+    } else {
+      // Make sure last entry matches current; if not, push
+      const last = breadcrumb[breadcrumb.length - 1];
+      if (!last || last.tipo !== tipo || last.id !== id) {
+        breadcrumb.push({ tipo, id });
+      }
+    }
+
+    const title = tipo === 'autore' ? card.nome : card.titolo;
+    const titleClass = tipo === 'poesia' ? ' poesia' : '';
+    const eyebrow = tipo === 'autore' ? 'Autore' : 'Poesia';
+    const tagsHtml = (card.tag || []).map(t => `<span class="chip">${esc(t)}</span>`).join('');
+
+    // 6 help buttons (always 6, disable if no content)
+    const helpsHtml = HELPS.map(h => {
+      const has = hasContent(card, h.id);
+      const dis = has ? '' : 'disabled';
+      return `
+        <button class="help-btn" data-help="${h.id}" ${dis} data-empty-label="non disponibile">
+          <span class="help-icon">${h.icon}</span>
+          <span class="help-label">${h.label}</span>
+        </button>
+      `;
+    }).join('');
+
+    main.innerHTML = `
+      <article class="card-view">
+        <div class="card-eyebrow">${eyebrow}</div>
+        <h1 class="card-title${titleClass}">${esc(title)}</h1>
+        ${card.contesto ? `<div class="card-context">${esc(card.contesto)}</div>` : ''}
+        ${tagsHtml ? `<div class="card-tags">${tagsHtml}</div>` : ''}
+        <div class="card-guide">Prova a esporre ad alta voce. Usa gli aiuti solo se ti blocchi.</div>
+        <div class="help-grid">${helpsHtml}</div>
+        <div class="card-footer">
+          <button class="btn btn-primary" id="anotherRandom"><span>↻</span> Altra carta random</button>
+          <button class="btn btn-ghost" id="backToIndex">← Indice</button>
+        </div>
+      </article>
+    `;
+
+    main.querySelectorAll('.help-btn').forEach(b => {
+      if (b.disabled) return;
+      b.addEventListener('click', () => openHelp(b.dataset.help));
+    });
+    $('#anotherRandom').addEventListener('click', () => {
+      closeDrawer();
+      navigateRandom();
+    });
+    $('#backToIndex').addEventListener('click', () => {
+      closeDrawer();
+      goIndex();
+    });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  // ----------------------------------------------------------
+  // Main render dispatcher
+  // ----------------------------------------------------------
+  function render() {
+    if (!data) return; // not loaded yet
+    closeDrawer();
+    const route = parseHash();
+    if (route.view === 'invalid') {
+      console.warn('[banco-orale] hash invalido:', route.raw, '→ ritorno all\'indice');
+      // Clear hash to keep URL clean
+      if (window.location.hash) {
+        history.replaceState(null, '', window.location.pathname + window.location.search);
+      }
+      renderIndex();
+      renderCrumbs();
+      return;
+    }
+    if (route.view === 'index') {
+      renderIndex();
+      renderCrumbs();
+      return;
+    }
+    // card view
+    renderCardView(route.tipo, route.id);
+    renderCrumbs();
+  }
+
+  // ----------------------------------------------------------
+  // Brand link → home (index of banco d'orale)
+  // ----------------------------------------------------------
+  brandLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    goIndex();
+  });
+
+  // ----------------------------------------------------------
+  // Hashchange listener
+  // ----------------------------------------------------------
+  window.addEventListener('hashchange', render);
+
+  // ----------------------------------------------------------
+  // Boot
+  // ----------------------------------------------------------
+  function showLoading() {
+    main.innerHTML = `
+      <div class="state-box">
+        <h2>Caricamento…</h2>
+        <div class="ornament">❦ ✦ ❦</div>
+        <p>Sto leggendo il pool di autori e poesie.</p>
+      </div>`;
+  }
+  function showLoadError(detail) {
+    main.innerHTML = `
+      <div class="state-box">
+        <h2>Pool non disponibile</h2>
+        <div class="ornament">❦ ✦ ❦</div>
+        <p>Non sono riuscito a caricare <code>data/italiano.json</code>.</p>
+        <p>Genera il file con il prompt in <code>orale/prompts/italiano.md</code>, poi ricarica la pagina.</p>
+        ${detail ? `<p style="font-family:var(--mono);font-size:.78rem;color:var(--ink-faint);">${esc(detail)}</p>` : ''}
+      </div>`;
+  }
+
+  async function boot() {
+    showLoading();
+    try {
+      const res = await fetch('./data/italiano.json', { cache: 'no-store' });
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      const json = await res.json();
+      // Validate minimal shape
+      if (!json || (typeof json !== 'object')) throw new Error('JSON non valido');
+      data = {
+        autori: Array.isArray(json.autori) ? json.autori : [],
+        poesie: Array.isArray(json.poesie) ? json.poesie : [],
+        version: json.version || ''
+      };
+      // Index by id
+      byId.autore = new Map(data.autori.map(a => [a.id, a]));
+      byId.poesia = new Map(data.poesie.map(p => [p.id, p]));
+      render();
+    } catch (e) {
+      console.error('[banco-orale] errore caricamento dati:', e);
+      showLoadError(e.message || String(e));
+    }
+  }
+  boot();
+})();
+</script>
+</body>
+</html>
