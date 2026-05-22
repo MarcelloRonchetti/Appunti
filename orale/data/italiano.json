@@ -6,7 +6,12 @@
       "id": "pascoli",
       "nome": "Giovanni Pascoli",
       "contesto": "1855 — 1912 · simbolismo, fanciullino, nido",
-      "tag": ["simbolismo", "fanciullino", "nido", "decadentismo"],
+      "tag": [
+        "simbolismo",
+        "fanciullino",
+        "nido",
+        "decadentismo"
+      ],
       "puntiChiave": [
         "Apertura biografica: il 10 agosto 1867 il padre Ruggero viene ucciso, delitto impunito — è il trauma fondante che attraversa tutta l'opera.",
         "Poetica del fanciullino (saggio 1897): il poeta è il bambino interiore che vede analogie e mistero nelle piccole cose, dove l'adulto razionale non guarda.",
@@ -17,25 +22,75 @@
         "Chiusura: poeta-vate dell'Italia umbertina (La grande proletaria si è mossa, 1911) ma con interiorità inquieta e profondamente moderna."
       ],
       "collegamenti": [
-        { "id": "dannunzio", "tipo": "autore", "motivo": "i due volti del Decadentismo italiano: nido vs. superuomo" },
-        { "id": "montale", "tipo": "autore", "motivo": "natura come schermo dell'interiorità, eredità del fonosimbolismo" },
-        { "id": "ungaretti", "tipo": "autore", "motivo": "erede della parola breve, essenziale, fonicamente carica" },
-        { "id": "x-agosto", "tipo": "poesia", "motivo": "testo-manifesto del nido violato e del trauma del padre" },
-        { "id": "il-gelsomino-notturno", "tipo": "poesia", "motivo": "esclusione del poeta dalla vita normale, simbolismo sessuale velato" }
+        {
+          "id": "dannunzio",
+          "tipo": "autore",
+          "motivo": "i due volti del Decadentismo italiano: nido vs. superuomo"
+        },
+        {
+          "id": "montale",
+          "tipo": "autore",
+          "motivo": "natura come schermo dell'interiorità, eredità del fonosimbolismo"
+        },
+        {
+          "id": "ungaretti",
+          "tipo": "autore",
+          "motivo": "erede della parola breve, essenziale, fonicamente carica"
+        },
+        {
+          "id": "x-agosto",
+          "tipo": "poesia",
+          "motivo": "testo-manifesto del nido violato e del trauma del padre"
+        },
+        {
+          "id": "il-gelsomino-notturno",
+          "tipo": "poesia",
+          "motivo": "esclusione del poeta dalla vita normale, simbolismo sessuale velato"
+        }
       ],
       "citazioni": [
-        { "testo": "È dentro di noi un fanciullino che non solo ha brividi, come credeva Cebes Tebano, ma lagrime ancora e tripudi suoi.", "fonte": "Il fanciullino, 1897" },
-        { "testo": "San Lorenzo, io lo so perché tanto / di stelle per l'aria tranquilla / arde e cade…", "fonte": "X Agosto" },
-        { "testo": "E tu, Cielo, dall'alto dei mondi / sereni, infinito, immortale, / oh! d'un pianto di stelle lo inondi / quest'atomo opaco del Male!", "fonte": "X Agosto, ultima strofa" }
+        {
+          "testo": "È dentro di noi un fanciullino che non solo ha brividi, come credeva Cebes Tebano, ma lagrime ancora e tripudi suoi.",
+          "fonte": "Il fanciullino, 1897"
+        },
+        {
+          "testo": "San Lorenzo, io lo so perché tanto / di stelle per l'aria tranquilla / arde e cade…",
+          "fonte": "X Agosto"
+        },
+        {
+          "testo": "E tu, Cielo, dall'alto dei mondi / sereni, infinito, immortale, / oh! d'un pianto di stelle lo inondi / quest'atomo opaco del Male!",
+          "fonte": "X Agosto, ultima strofa"
+        }
       ],
       "dateFatti": [
-        { "anno": "1855", "evento": "Nasce a San Mauro di Romagna, quarto di dieci figli." },
-        { "anno": "1867", "evento": "10 agosto: il padre Ruggero viene ucciso a fucilate; delitto impunito." },
-        { "anno": "1891", "evento": "Pubblica Myricae (poi ampliata fino al 1903)." },
-        { "anno": "1897", "evento": "Saggio Il fanciullino sulla rivista Il Marzocco." },
-        { "anno": "1903", "evento": "Pubblica i Canti di Castelvecchio." },
-        { "anno": "1911", "evento": "Discorso La grande proletaria si è mossa: appoggio alla guerra di Libia." },
-        { "anno": "1912", "evento": "Muore a Bologna di cancro." }
+        {
+          "anno": "1855",
+          "evento": "Nasce a San Mauro di Romagna, quarto di dieci figli."
+        },
+        {
+          "anno": "1867",
+          "evento": "10 agosto: il padre Ruggero viene ucciso a fucilate; delitto impunito."
+        },
+        {
+          "anno": "1891",
+          "evento": "Pubblica Myricae (poi ampliata fino al 1903)."
+        },
+        {
+          "anno": "1897",
+          "evento": "Saggio Il fanciullino sulla rivista Il Marzocco."
+        },
+        {
+          "anno": "1903",
+          "evento": "Pubblica i Canti di Castelvecchio."
+        },
+        {
+          "anno": "1911",
+          "evento": "Discorso La grande proletaria si è mossa: appoggio alla guerra di Libia."
+        },
+        {
+          "anno": "1912",
+          "evento": "Muore a Bologna di cancro."
+        }
       ],
       "domandeProf": [
         "Cosa intende Pascoli per nido e perché è insieme protezione e prigione?",
@@ -45,11 +100,1152 @@
         "Come si concilia il Pascoli intimista con il nazionalista de La grande proletaria si è mossa?"
       ],
       "paroleChiave": [
-        { "termine": "fanciullino", "definizione": "Bambino interiore che vede stupore e analogie nelle piccole cose; è la voce vera del poeta." },
-        { "termine": "nido", "definizione": "Nucleo familiare protettivo e ossessivo; centro emotivo e simbolico dell'opera." },
-        { "termine": "fonosimbolismo", "definizione": "Uso di suoni e onomatopee perché la sonorità della parola allude essa stessa al significato." },
-        { "termine": "myricae", "definizione": "Tamerici virgiliane, piante umili: programma poetico delle piccole cose quotidiane." },
-        { "termine": "decadentismo dimesso", "definizione": "Il Pascoli intimo e simbolico opposto al Decadentismo esibito del Vittoriale dannunziano." }
+        {
+          "termine": "fanciullino",
+          "definizione": "Bambino interiore che vede stupore e analogie nelle piccole cose; è la voce vera del poeta."
+        },
+        {
+          "termine": "nido",
+          "definizione": "Nucleo familiare protettivo e ossessivo; centro emotivo e simbolico dell'opera."
+        },
+        {
+          "termine": "fonosimbolismo",
+          "definizione": "Uso di suoni e onomatopee perché la sonorità della parola allude essa stessa al significato."
+        },
+        {
+          "termine": "myricae",
+          "definizione": "Tamerici virgiliane, piante umili: programma poetico delle piccole cose quotidiane."
+        },
+        {
+          "termine": "decadentismo dimesso",
+          "definizione": "Il Pascoli intimo e simbolico opposto al Decadentismo esibito del Vittoriale dannunziano."
+        }
+      ]
+    },
+    {
+      "id": "dannunzio",
+      "nome": "Gabriele D'Annunzio",
+      "contesto": "1863 — 1938 · estetismo, superuomo, panismo",
+      "tag": [
+        "estetismo",
+        "superuomo",
+        "panismo",
+        "vate",
+        "decadentismo"
+      ],
+      "puntiChiave": [
+        "Apertura biografica: nasce a Pescara nel 1863, a sedici anni pubblica Primo vere e a venti è già celebre nei salotti romani — il primo intellettuale-celebrità italiano.",
+        "Posizionamento: rappresenta il volto opposto del Decadentismo italiano rispetto a Pascoli — estetismo spettacolare e grandezza esibita contro il nido dimesso e intimo.",
+        "Fase estetica: con Il piacere (1889) crea Andrea Sperelli, dandy aristocratico che vive solo per la bellezza e per il piacere sull'esempio di Des Esseintes di Huysmans.",
+        "Svolta superomistica (dal 1894): da Le vergini delle rocce e Il fuoco l'esteta evolve in superuomo nietzschiano semplificato — l'uomo eccezionale che si dà leggi proprie e vuole guidare le masse.",
+        "Vertice lirico: con il ciclo delle Laudi e in particolare Alcyone (1903) realizza il panismo, la fusione sensuale dell'io con la natura, attraverso musicalità estrema e lessico prezioso.",
+        "Vita inimitabile: costruisce sé stesso come opera d'arte totale — debiti, Eleonora Duse, Capponcina a Settignano, fuga in Francia, imprese di guerra (volo su Vienna, beffa di Buccari).",
+        "Politica e Fiume: nel 1919-1920 occupa Fiume con i legionari e instaura la Reggenza del Carnaro — laboratorio di estetizzazione della politica che il fascismo riprenderà.",
+        "Chiusura: dal 1921 al Vittoriale di Gardone Riviera, casa-museo-mausoleo, ultima opera d'arte; muore nel 1938, padre simbolico ma scomodo del fascismo."
+      ],
+      "collegamenti": [
+        {
+          "id": "pascoli",
+          "tipo": "autore",
+          "motivo": "i due volti opposti del Decadentismo italiano: superuomo spettacolare vs. fanciullino del nido"
+        },
+        {
+          "id": "montale",
+          "tipo": "autore",
+          "motivo": "Montale reagisce contro la musicalità sontuosa e il panismo dannunziano cercando una poesia scarna e disillusa"
+        },
+        {
+          "id": "ungaretti",
+          "tipo": "autore",
+          "motivo": "anche Ungaretti supera il dannunzianesimo, riducendo la parola all'essenziale; ma il Notturno frammentario anticipa il Novecento"
+        },
+        {
+          "id": "la-pioggia-nel-pineto",
+          "tipo": "poesia",
+          "motivo": "manifesto del panismo: gli amanti si sciolgono nel bosco in metamorfosi vegetale"
+        },
+        {
+          "id": "la-sera-fiesolana",
+          "tipo": "poesia",
+          "motivo": "lauda alla sera come divinità femminile, vertice della religiosità estetica dannunziana"
+        }
+      ],
+      "citazioni": [
+        {
+          "testo": "Bisogna fare la propria vita come si fa un'opera d'arte.",
+          "fonte": "Il piacere, 1889 — programma di Andrea Sperelli"
+        },
+        {
+          "testo": "Taci. Su le soglie / del bosco non odo / parole che dici / umane; ma odo / parole più nuove / che parlano gocciole e foglie / lontane.",
+          "fonte": "La pioggia nel pineto, Alcyone, 1903"
+        },
+        {
+          "testo": "Laudata sii pel tuo viso di perla, / o Sera, e pe' tuoi grandi umidi occhi ove si tace / l'acqua del cielo!",
+          "fonte": "La sera fiesolana, Alcyone, 1903"
+        }
+      ],
+      "dateFatti": [
+        {
+          "anno": "1863",
+          "evento": "Nasce a Pescara."
+        },
+        {
+          "anno": "1879",
+          "evento": "A sedici anni pubblica la prima raccolta Primo vere."
+        },
+        {
+          "anno": "1889",
+          "evento": "Pubblica Il piacere, romanzo manifesto dell'estetismo italiano."
+        },
+        {
+          "anno": "1903",
+          "evento": "Esce Alcyone, terzo libro delle Laudi, capolavoro lirico."
+        },
+        {
+          "anno": "1918",
+          "evento": "Volo su Vienna e beffa di Buccari, imprese di guerra mitizzate."
+        },
+        {
+          "anno": "1919",
+          "evento": "Settembre: occupa Fiume e instaura la Reggenza italiana del Carnaro (fino al dicembre 1920)."
+        },
+        {
+          "anno": "1921",
+          "evento": "Si ritira al Vittoriale degli Italiani a Gardone Riviera."
+        },
+        {
+          "anno": "1938",
+          "evento": "Muore al Vittoriale."
+        }
+      ],
+      "domandeProf": [
+        "Cos'è il panismo dannunziano e in quale opera trova la sua espressione più alta?",
+        "Differenza fondamentale tra il Decadentismo di Pascoli e quello di D'Annunzio?",
+        "Cosa significa 'vita come opera d'arte' e in che modo D'Annunzio la realizza biograficamente?",
+        "In che senso D'Annunzio è precursore del fascismo? Qual è il ruolo dell'impresa di Fiume?",
+        "Come reinterpreta D'Annunzio il superuomo di Nietzsche, e perché i suoi superuomini romanzeschi finiscono sempre sconfitti?"
+      ],
+      "paroleChiave": [
+        {
+          "termine": "estetismo",
+          "definizione": "Culto della bellezza come valore assoluto e sostituto della morale; l'arte non ha scopo se non sé stessa."
+        },
+        {
+          "termine": "superuomo",
+          "definizione": "Individuo eccezionale che si dà leggi proprie e vuole dominare la massa; ripresa semplificata di Nietzsche."
+        },
+        {
+          "termine": "panismo",
+          "definizione": "Fusione sensuale dell'io del poeta con la natura, fino a perdere i confini personali; cuore di Alcyone."
+        },
+        {
+          "termine": "vita inimitabile",
+          "definizione": "Costruzione della propria biografia come opera d'arte spettacolare e irripetibile, in scena per il pubblico."
+        },
+        {
+          "termine": "vate",
+          "definizione": "Poeta-guida del popolo, voce della nazione; ruolo che D'Annunzio rivendica di imporre alla modernità borghese."
+        },
+        {
+          "termine": "Alcyone",
+          "definizione": "Terzo libro delle Laudi (1903), diario lirico di un'estate in Versilia, capolavoro del panismo."
+        }
+      ]
+    },
+    {
+      "id": "montale",
+      "nome": "Eugenio Montale",
+      "contesto": "1896 — 1981 · linea antinovecentista, correlativo oggettivo, male di vivere",
+      "tag": [
+        "male-di-vivere",
+        "correlativo-oggettivo",
+        "ossi-di-seppia",
+        "nobel",
+        "antinovecentismo"
+      ],
+      "puntiChiave": [
+        "Apertura biografica: nasce a Genova nel 1896, estati a Monterosso nelle Cinque Terre — il paesaggio ligure aspro e assolato diventa il fondale simbolico di tutta la sua poesia.",
+        "Formazione da autodidatta: simbolisti francesi, crepuscolari, e soprattutto T.S. Eliot da cui eredita il concetto di correlativo oggettivo.",
+        "Antifascismo civile: nel 1925 firma il Manifesto Croce; nel 1938 perde la direzione del Gabinetto Vieusseux perché rifiuta la tessera del Partito fascista.",
+        "Ossi di seppia (1925): male di vivere, paesaggio ligure, opposizione muro/varco — manifesto della poetica dell'oggetto e dell'antiretorica.",
+        "Le occasioni (1939) e La bufera (1956): poesia più difficile e memoriale, figura salvifica di Clizia (Irma Brandeis) come donna-angelo laica di fronte alla barbarie storica.",
+        "Svolta di Satura (1971) e sezione Xenia: tono prosastico, ironico, satirico — la moglie Mosca (Drusilla Tanzi) sostituisce Clizia come donna concreta e quotidiana.",
+        "Nobel 1975 con il discorso È ancora possibile la poesia?: la poesia è inutile alla logica del mercato, e proprio per questo difende uno spazio di lucidità nella società di massa.",
+        "Chiusura: appartiene alla linea antinovecentista per antiretorica e oggetti quotidiani, ma è anche europeo per densità simbolica — alternativa lucida sia a D'Annunzio sia all'Ermetismo."
+      ],
+      "collegamenti": [
+        {
+          "id": "dannunzio",
+          "tipo": "autore",
+          "motivo": "rifiuto esplicito del poeta-vate dannunziano: lingua asciutta contro retorica solenne"
+        },
+        {
+          "id": "ungaretti",
+          "tipo": "autore",
+          "motivo": "stessa generazione e poesia essenziale, ma Montale resta fuori dall'Ermetismo puro"
+        },
+        {
+          "id": "pascoli",
+          "tipo": "autore",
+          "motivo": "eredità della poesia delle piccole cose e della natura come schermo dell'interiorità"
+        },
+        {
+          "id": "svevo",
+          "tipo": "autore",
+          "motivo": "Montale nel 1925 firma l'articolo che riscopre Svevo e lo lancia in Italia"
+        },
+        {
+          "id": "non-chiederci-la-parola",
+          "tipo": "poesia",
+          "motivo": "manifesto della crisi della parola poetica e del rifiuto del poeta-vate"
+        }
+      ],
+      "citazioni": [
+        {
+          "testo": "Codesto solo oggi possiamo dirti, / ciò che non siamo, ciò che non vogliamo.",
+          "fonte": "Non chiederci la parola, Ossi di seppia, 1925"
+        },
+        {
+          "testo": "Non chiederci la parola che squadri da ogni lato / l'animo nostro informe, e a lettere di fuoco / lo dichiari e risplenda come un croco / perduto in mezzo a un polveroso prato.",
+          "fonte": "Non chiederci la parola, Ossi di seppia"
+        },
+        {
+          "testo": "Spesso il male di vivere ho incontrato: / era il rivo strozzato che gorgoglia, / era l'incartocciarsi della foglia / riarsa, era il cavallo stramazzato.",
+          "fonte": "Spesso il male di vivere ho incontrato, Ossi di seppia"
+        }
+      ],
+      "dateFatti": [
+        {
+          "anno": "1896",
+          "evento": "Nasce a Genova; estati a Monterosso, nelle Cinque Terre."
+        },
+        {
+          "anno": "1925",
+          "evento": "Pubblica Ossi di seppia e firma il Manifesto degli intellettuali antifascisti di Croce; scrive l'articolo che rilancia Svevo."
+        },
+        {
+          "anno": "1929",
+          "evento": "Diventa direttore del Gabinetto Vieusseux a Firenze."
+        },
+        {
+          "anno": "1938",
+          "evento": "Perde la direzione del Vieusseux perché non iscritto al Partito fascista."
+        },
+        {
+          "anno": "1939",
+          "evento": "Pubblica Le occasioni: poesia più concentrata, entra in scena Clizia."
+        },
+        {
+          "anno": "1956",
+          "evento": "Pubblica La bufera e altro: la storia (guerra, dopoguerra) entra nella poesia."
+        },
+        {
+          "anno": "1971",
+          "evento": "Pubblica Satura, con la sezione Xenia dedicata alla moglie Mosca."
+        },
+        {
+          "anno": "1975",
+          "evento": "Riceve il Premio Nobel per la letteratura; discorso È ancora possibile la poesia?"
+        },
+        {
+          "anno": "1981",
+          "evento": "Muore a Milano."
+        }
+      ],
+      "domandeProf": [
+        "Cosa intende Montale per male di vivere e perché lo esprime tramite oggetti concreti?",
+        "Spiega cos'è il correlativo oggettivo e da chi lo deriva.",
+        "Differenza fra il poeta-vate dannunziano e il poeta che emerge da Non chiederci la parola.",
+        "Chi è Clizia, chi è Mosca, e cosa cambia fra Le occasioni e Xenia?",
+        "Cosa cambia in Satura rispetto alle prime tre raccolte e perché si parla di svolta?"
+      ],
+      "paroleChiave": [
+        {
+          "termine": "male di vivere",
+          "definizione": "Condizione universale di sofferenza nata dalla sproporzione tra il desiderio di senso e una realtà arida e indifferente."
+        },
+        {
+          "termine": "correlativo oggettivo",
+          "definizione": "Oggetto concreto (rivo strozzato, foglia secca, cavallo stramazzato) che traduce uno stato interiore senza dichiararlo."
+        },
+        {
+          "termine": "varco",
+          "definizione": "Possibile apertura oltre la realtà quotidiana: miracolo laico, epifania, incontro — quasi sempre solo intravisto."
+        },
+        {
+          "termine": "Clizia",
+          "definizione": "Donna-angelo intellettuale ispirata a Irma Brandeis, figura salvifica di Le occasioni e La bufera."
+        },
+        {
+          "termine": "Mosca",
+          "definizione": "Soprannome di Drusilla Tanzi (per la forte miopia): moglie concreta e quotidiana, protagonista di Xenia."
+        },
+        {
+          "termine": "antinovecentismo",
+          "definizione": "Linea che rifiuta retorica alta, sublime e poeta-vate a favore di lingua asciutta e oggetti quotidiani."
+        }
+      ]
+    },
+    {
+      "id": "verga",
+      "nome": "Giovanni Verga",
+      "contesto": "1840 — 1922 · Verismo, impersonalità, regressione",
+      "tag": [
+        "verismo",
+        "ciclo-dei-vinti",
+        "impersonalità",
+        "morale-dell-ostrica"
+      ],
+      "puntiChiave": [
+        "Apertura biografica: nasce a Catania nel 1840, attraversa Firenze e Milano (incontro con la Scapigliatura e con Capuana), poi torna in Sicilia dove muore nel 1922.",
+        "Tre fasi: romantico-patriottica, mondana (Storia di una capinera, Eva), poi la svolta verista dal 1874 con Nedda e la conversione completa fra Fantasticheria e Rosso Malpelo.",
+        "Poetica: rifiuta il naturalismo zoliano come 'finto verismo' e fonda il Verismo italiano sull'idea che l'opera debba sembrare 'essersi fatta da sé'.",
+        "Tecniche: impersonalità (eclissi dell'autore), regressione del narratore al livello dei personaggi, straniamento, discorso indiretto libero, proverbi e coro del paese.",
+        "Morale dell'ostrica e Ciclo dei Vinti: chi si stacca dal proprio scoglio sociale viene divorato; cinque romanzi previsti, completati solo Malavoglia e Mastro-don Gesualdo.",
+        "Vita dei campi (1880) e Novelle rusticane (1883): Rosso Malpelo, La lupa, Fantasticheria (manifesto dell'ostrica), La roba, Libertà sui fatti di Bronte.",
+        "I Malavoglia (1881): famiglia di pescatori di Aci Trezza, la Provvidenza, il debito dei lupini con zio Crocifisso, la fiumana del progresso che travolge tutti; il ritorno alla casa del nespolo non sana la frattura.",
+        "Mastro-don Gesualdo (1889): rovescio dei Malavoglia, vinto dalla ricchezza; muore solo nel palazzo Leyra mentre la servitù discute chi debba chiamare il prete."
+      ],
+      "collegamenti": [
+        {
+          "id": "pirandello",
+          "tipo": "autore",
+          "motivo": "Pirandello eredita la matrice verista siciliana ma ne rifiuta l'oggettività"
+        },
+        {
+          "id": "svevo",
+          "tipo": "autore",
+          "motivo": "il pessimismo verghiano prepara la dissoluzione novecentesca della famiglia e dell'io"
+        },
+        {
+          "id": "fenoglio",
+          "tipo": "autore",
+          "motivo": "Neorealismo: attenzione agli umili, linguaggio popolare e paesaggio antiretorico"
+        },
+        {
+          "id": "calvino",
+          "tipo": "autore",
+          "motivo": "Verga modello per la prima stagione neorealista del Sentiero dei nidi di ragno"
+        },
+        {
+          "id": "primo-levi",
+          "tipo": "autore",
+          "motivo": "narratore che si fa da parte e lascia parlare gli umiliati, eredità di un'etica dell'impersonalità"
+        }
+      ],
+      "citazioni": [
+        {
+          "testo": "Chi osserva questo spettacolo non ha il diritto di giudicarlo; è già molto se riesce a trarsi un istante fuori del campo della lotta per studiarla senza passione.",
+          "fonte": "Prefazione a I Malavoglia, 1881"
+        },
+        {
+          "testo": "Il movente dell'attività umana che produce la fiumana del progresso è preso nelle sue cause più modeste e materiali.",
+          "fonte": "Prefazione a I Malavoglia (fiumana del progresso)"
+        },
+        {
+          "testo": "Roba mia, vientene con me!",
+          "fonte": "La roba, Novelle rusticane, 1883"
+        }
+      ],
+      "dateFatti": [
+        {
+          "anno": "1840",
+          "evento": "Nasce a Catania da famiglia di proprietari terrieri."
+        },
+        {
+          "anno": "1874",
+          "evento": "Pubblica Nedda: primo bozzetto siciliano, apre la stagione verista."
+        },
+        {
+          "anno": "1880",
+          "evento": "Vita dei campi (Rosso Malpelo, La lupa, Fantasticheria)."
+        },
+        {
+          "anno": "1881",
+          "evento": "I Malavoglia, primo romanzo del Ciclo dei Vinti."
+        },
+        {
+          "anno": "1883",
+          "evento": "Novelle rusticane (La roba, Libertà sui fatti di Bronte 1860)."
+        },
+        {
+          "anno": "1889",
+          "evento": "Mastro-don Gesualdo, secondo romanzo del Ciclo dei Vinti."
+        },
+        {
+          "anno": "1922",
+          "evento": "Muore a Catania, isolato dalla vita letteraria."
+        }
+      ],
+      "domandeProf": [
+        "In cosa Verga si distacca dal Naturalismo di Zola?",
+        "Cosa significa la 'morale dell'ostrica' e dove viene formulata per la prima volta?",
+        "Spiega impersonalità, regressione e straniamento con un esempio dai Malavoglia.",
+        "Perché Mastro-don Gesualdo è il rovescio dei Malavoglia pur restando dentro il Ciclo dei Vinti?",
+        "Come funziona il 'coro del paese' in Aci Trezza?"
+      ],
+      "paroleChiave": [
+        {
+          "termine": "impersonalità",
+          "definizione": "Eclissi dell'autore: il narratore non giudica, l'opera deve sembrare essersi fatta da sé."
+        },
+        {
+          "termine": "regressione",
+          "definizione": "Il narratore si abbassa al livello linguistico e mentale dei personaggi rappresentati."
+        },
+        {
+          "termine": "straniamento",
+          "definizione": "Effetto di lettura: fatti tragici raccontati come normali dalla voce popolare generano denuncia indiretta."
+        },
+        {
+          "termine": "morale dell'ostrica",
+          "definizione": "Chi resta attaccato al proprio scoglio sociale sopravvive; chi si stacca viene divorato."
+        },
+        {
+          "termine": "fiumana del progresso",
+          "definizione": "Corrente storica che da lontano sembra avanzata e da vicino è soprusi, vittime e selezione."
+        },
+        {
+          "termine": "vinti",
+          "definizione": "Coloro che vengono travolti dal cambiamento sociale a ogni gradino della scala."
+        }
+      ]
+    },
+    {
+      "id": "svevo",
+      "nome": "Italo Svevo",
+      "contesto": "1861 — 1928 · romanzo della crisi, inetto, autoanalisi",
+      "tag": [
+        "inetto",
+        "romanzo-della-crisi",
+        "psicoanalisi",
+        "trieste"
+      ],
+      "puntiChiave": [
+        "Apertura biografica: pseudonimo di Aron Hector Schmitz, nasce a Trieste mitteleuropea da famiglia ebraica di triplice cultura (tedesca, ebraica, italiana); lo pseudonimo è già un programma.",
+        "Formazione commerciale in Baviera, impiegato in banca per vent'anni, poi industriale nella ditta di vernici per navi del suocero Veneziani.",
+        "Letture decisive: Schopenhauer (noluntas e pessimismo), Darwin (lotta per la vita), Marx, e più tardi Freud usato come strumento narrativo, non come terapia.",
+        "L'inetto è l'antieroe sveviano: vuole agire ma non riesce, si analizza fino alla paralisi, vive di propositi rimandati e si crede superiore mentre gli altri vincono.",
+        "Tre tappe dell'inetto: Alfonso Nitti in Una vita (1892, suicidio), Emilio Brentani in Senilità (1898, autoinganno), Zeno Cosini nella Coscienza (1923, lucidità ironica).",
+        "La coscienza di Zeno (1923): autobiografia scritta per il dottor S., struttura per nuclei (fumo, padre, matrimonio, moglie e amante, associazione con Guido, psicoanalisi), non cronologica.",
+        "Narratore inattendibile: Zeno mente al medico, al lettore e a se stesso; la verità non sta nei fatti ma nelle contraddizioni e nell'autoinganno.",
+        "Finale apocalittico: la malattia diventa categoria universale, la civiltà del progresso è essa stessa malata e si chiude con la visione di un ordigno che restituisce la Terra al nulla."
+      ],
+      "collegamenti": [
+        {
+          "id": "pirandello",
+          "tipo": "autore",
+          "motivo": "i due grandi del romanzo della crisi: identità frammentata e narratore soggettivo"
+        },
+        {
+          "id": "verga",
+          "tipo": "autore",
+          "motivo": "il pessimismo verista prepara la dissoluzione della famiglia e dell'io novecentesco"
+        },
+        {
+          "id": "montale",
+          "tipo": "autore",
+          "motivo": "Montale è fra i primi a riscoprire criticamente Svevo in Italia"
+        },
+        {
+          "id": "ungaretti",
+          "tipo": "autore",
+          "motivo": "stesso clima di crisi dell'io e della guerra come orizzonte apocalittico"
+        }
+      ],
+      "citazioni": [
+        {
+          "testo": "L'ultima sigaretta.",
+          "fonte": "La coscienza di Zeno, capitolo Il fumo (formula ripetuta del rimando)"
+        },
+        {
+          "testo": "La vita attuale è inquinata alle radici. Forse traverso una catastrofe inaudita prodotta dagli ordigni ritorneremo alla salute.",
+          "fonte": "La coscienza di Zeno, finale apocalittico"
+        },
+        {
+          "testo": "La mia inferiorità si trasformava in superiorità.",
+          "fonte": "La coscienza di Zeno, capitolo Psico-analisi (parafrasi del meccanismo dell'autoinganno)"
+        }
+      ],
+      "dateFatti": [
+        {
+          "anno": "1861",
+          "evento": "Nasce a Trieste come Aron Hector Schmitz."
+        },
+        {
+          "anno": "1892",
+          "evento": "Pubblica Una vita (titolo originario: Un inetto)."
+        },
+        {
+          "anno": "1898",
+          "evento": "Pubblica Senilità: insuccesso, lungo silenzio letterario."
+        },
+        {
+          "anno": "1905",
+          "evento": "Conosce a Trieste James Joyce, che lo incoraggia a non smettere."
+        },
+        {
+          "anno": "1923",
+          "evento": "Pubblica La coscienza di Zeno."
+        },
+        {
+          "anno": "1925",
+          "evento": "Lancio europeo grazie a Joyce e in Italia grazie a Montale (il 'caso Svevo')."
+        },
+        {
+          "anno": "1928",
+          "evento": "Muore in un incidente stradale."
+        }
+      ],
+      "domandeProf": [
+        "Cos'è l'inetto e come evolve nei tre romanzi?",
+        "Perché diciamo che Zeno è un narratore inattendibile?",
+        "Che uso fa Svevo della psicoanalisi freudiana?",
+        "Spiega il rovesciamento salute/malattia nella Coscienza di Zeno.",
+        "Perché il finale del romanzo è 'apocalittico' e che senso ha rispetto al mito del progresso?"
+      ],
+      "paroleChiave": [
+        {
+          "termine": "inetto",
+          "definizione": "Antieroe novecentesco incapace di agire, prigioniero di propositi sempre rimandati."
+        },
+        {
+          "termine": "noluntas",
+          "definizione": "Non-volontà schopenhaueriana: paralisi della scelta che genera l'inettitudine."
+        },
+        {
+          "termine": "autoinganno",
+          "definizione": "Meccanismo con cui il personaggio si racconta una versione comoda dei propri atti."
+        },
+        {
+          "termine": "narratore inattendibile",
+          "definizione": "Voce in prima persona che mente, omette e deforma: la verità sta nelle contraddizioni."
+        },
+        {
+          "termine": "salute / malattia",
+          "definizione": "Coppia rovesciata: la normalità borghese è cristallizzazione, la nevrosi è lucidità."
+        },
+        {
+          "termine": "ultima sigaretta",
+          "definizione": "Simbolo della volontà debole: rito del rimando travestito da proposito di cambiamento."
+        }
+      ]
+    },
+    {
+      "id": "pirandello",
+      "nome": "Luigi Pirandello",
+      "contesto": "1867 — 1936 · relativismo, maschera, metateatro",
+      "tag": [
+        "umorismo",
+        "maschera",
+        "metateatro",
+        "romanzo-della-crisi"
+      ],
+      "puntiChiave": [
+        "Apertura biografica: nasce nel 1867 a Caos, vicino Girgenti; il toponimo diventa quasi un programma poetico di realtà instabile.",
+        "Formazione fra Sicilia, Roma e Bonn (tesi sul dialetto agrigentino); eredità verista di Verga e Capuana ma apertura al relativismo di Simmel, Bergson e agli studi di Binet sulla pluralità dell'io.",
+        "Crisi del 1903: allagamento della miniera di zolfo e follia della moglie Antonietta; nascono i temi della famiglia come trappola e dell'identità in frantumi.",
+        "Vita vs forma: la vita è flusso continuo (Bergson), la società la fissa in maschere e ruoli che la imprigionano; le 'tre gabbie' sono matrimonio, urbanizzazione e meccanismo economico.",
+        "Saggio L'umorismo (1908): distinzione fra avvertimento del contrario (riso immediato) e sentimento del contrario (comprensione dolorosa della sofferenza dietro al comico).",
+        "Novelle per un anno: Il treno ha fischiato (Belluca e l'evasione mentale), La carriola (l'avvocato che fa la carriola alla cagna), La patente (Chiàrchiaro accetta la maschera di iettatore).",
+        "Romanzi della crisi: L'esclusa, Il fu Mattia Pascal (1904, strappo nel cielo di carta, filosofia del lontano), I vecchi e i giovani, Quaderni di Serafino Gubbio, Uno nessuno e centomila (1926, 'non conclude').",
+        "Teatro in tre fasi: borghese-dialettale, grottesco, metateatro con la trilogia (Sei personaggi 1921, Ciascuno a suo modo, Questa sera si recita a soggetto) ed Enrico IV; Nobel nel 1934, muore nel 1936."
+      ],
+      "collegamenti": [
+        {
+          "id": "svevo",
+          "tipo": "autore",
+          "motivo": "i due maestri italiani del romanzo della crisi: identità frammentata e narratore soggettivo"
+        },
+        {
+          "id": "verga",
+          "tipo": "autore",
+          "motivo": "matrice verista siciliana ereditata e poi capovolta nel relativismo"
+        },
+        {
+          "id": "montale",
+          "tipo": "autore",
+          "motivo": "stesso orizzonte di crisi delle certezze e di parola che dice solo ciò che non siamo"
+        },
+        {
+          "id": "calvino",
+          "tipo": "autore",
+          "motivo": "metateatro e finzione consapevole anticipano la metanarrativa calviniana"
+        }
+      ],
+      "citazioni": [
+        {
+          "testo": "Io sono colei che mi si crede.",
+          "fonte": "Così è (se vi pare), battuta finale della signora Ponza"
+        },
+        {
+          "testo": "Oreste-Amleto: se nel cielo di carta del teatrino si facesse uno strappo, addio tragedia.",
+          "fonte": "Il fu Mattia Pascal, cap. XII (strappo nel cielo di carta, parafrasi)"
+        },
+        {
+          "testo": "Io sono il fu Mattia Pascal.",
+          "fonte": "Il fu Mattia Pascal, conclusione"
+        }
+      ],
+      "dateFatti": [
+        {
+          "anno": "1867",
+          "evento": "Nasce a Caos, vicino Girgenti (Agrigento)."
+        },
+        {
+          "anno": "1903",
+          "evento": "Allagamento della miniera di zolfo e follia di Antonietta: anno della svolta."
+        },
+        {
+          "anno": "1904",
+          "evento": "Il fu Mattia Pascal."
+        },
+        {
+          "anno": "1908",
+          "evento": "Saggio L'umorismo: avvertimento e sentimento del contrario."
+        },
+        {
+          "anno": "1921",
+          "evento": "Sei personaggi in cerca d'autore (fischiato a Roma, poi trionfo europeo)."
+        },
+        {
+          "anno": "1926",
+          "evento": "Uno, nessuno e centomila (il 'non conclude')."
+        },
+        {
+          "anno": "1934",
+          "evento": "Premio Nobel per la letteratura."
+        },
+        {
+          "anno": "1936",
+          "evento": "Muore a Roma."
+        }
+      ],
+      "domandeProf": [
+        "Spiega la distinzione vita / forma e collegala a Bergson.",
+        "Che differenza c'è tra avvertimento e sentimento del contrario? Fai un esempio.",
+        "Perché Mattia Pascal non riesce a essere libero anche dopo essere stato dato per morto?",
+        "Cosa significa che Moscarda è 'uno, nessuno e centomila'?",
+        "Cos'è il metateatro e perché Sei personaggi in cerca d'autore lo inaugura?"
+      ],
+      "paroleChiave": [
+        {
+          "termine": "vita / forma",
+          "definizione": "Vita è flusso continuo, forma è il ruolo fisso che la società impone bloccando il movimento."
+        },
+        {
+          "termine": "maschera",
+          "definizione": "Ruolo sociale che permette di vivere nella comunità ma imprigiona l'io autentico."
+        },
+        {
+          "termine": "umorismo",
+          "definizione": "Riflessione che dal riso (avvertimento del contrario) passa alla pietà (sentimento del contrario)."
+        },
+        {
+          "termine": "relativismo",
+          "definizione": "Non esiste una verità unica: ogni punto di vista vale, nessuno coincide con la realtà."
+        },
+        {
+          "termine": "trappola",
+          "definizione": "Famiglia, lavoro, convenzioni, linguaggio: le gabbie dell'uomo moderno."
+        },
+        {
+          "termine": "metateatro",
+          "definizione": "Teatro nel teatro che mette in scena i propri meccanismi e rompe la quarta parete."
+        }
+      ]
+    },
+    {
+      "id": "calvino",
+      "nome": "Italo Calvino",
+      "contesto": "1923 — 1985 · Neorealismo, Oulipo, metanarrazione",
+      "tag": [
+        "neorealismo",
+        "oulipo",
+        "metanarrazione",
+        "trilogia-fantastica"
+      ],
+      "puntiChiave": [
+        "Apertura biografica: nato a Cuba nel 1923, cresciuto a Sanremo in famiglia di scienziati, eredita lo sguardo razionale e preciso che marcherà tutto lo stile.",
+        "Resistenza nelle Brigate Garibaldi in Liguria (1944-45): esperienza che diventa materia del Sentiero dei nidi di ragno.",
+        "Esordio neorealista: Il sentiero dei nidi di ragno (1947) racconta la Resistenza con lo sguardo laterale del bambino Pin, evitando l'epica e fondendo realismo e fiaba.",
+        "Distaccamento del Dritto e personaggio di Kim: i partigiani non sono eroi ma figure imperfette, la differenza con i fascisti sta nel senso storico della scelta.",
+        "Prefazione 1964 al Sentiero: il Neorealismo non fu una scuola ma un bisogno collettivo, un clima, fatto di tante voci e di molte Italie.",
+        "Trilogia I nostri antenati (Il visconte dimezzato, Il barone rampante, Il cavaliere inesistente): allegorie dell'uomo moderno scisso, distanziato, vuoto.",
+        "Fase combinatoria e Oulipo: Le città invisibili (1972), Il castello dei destini incrociati (1973), Se una notte d'inverno un viaggiatore (1979) — metanarrazione e gioco di strutture.",
+        "Chiusura: Lezioni americane (postume 1988) — leggerezza, rapidità, esattezza, visibilità, molteplicità: testamento poetico per il nuovo millennio."
+      ],
+      "collegamenti": [
+        {
+          "id": "fenoglio",
+          "tipo": "autore",
+          "motivo": "due Resistenze a confronto: Pin fiabesco vs. Milton tragico"
+        },
+        {
+          "id": "primo-levi",
+          "tipo": "autore",
+          "motivo": "contemporaneo, altra voce della memoria del Novecento: Lager invece che Resistenza"
+        },
+        {
+          "id": "montale",
+          "tipo": "autore",
+          "motivo": "rigore formale e diffidenza dalla retorica, due nobiltà del secondo Novecento"
+        },
+        {
+          "id": "pirandello",
+          "tipo": "autore",
+          "motivo": "metanarrazione e gioco col lettore: dai Sei personaggi a Se una notte d'inverno un viaggiatore"
+        }
+      ],
+      "citazioni": [
+        {
+          "testo": "Il Neorealismo non fu una scuola. […] Fu un insieme di voci, in gran parte periferiche, una molteplice scoperta delle diverse Italie.",
+          "fonte": "Prefazione al Sentiero dei nidi di ragno, 1964"
+        },
+        {
+          "testo": "Prendete la mia leggerezza come qualcosa di serio.",
+          "fonte": "Lezioni americane, 1988 (Leggerezza)"
+        },
+        {
+          "testo": "L'inferno dei viventi non è qualcosa che sarà; se ce n'è uno, è quello che è già qui, l'inferno che abitiamo tutti i giorni.",
+          "fonte": "Le città invisibili, 1972 (finale)"
+        }
+      ],
+      "dateFatti": [
+        {
+          "anno": "1923",
+          "evento": "Nasce a Santiago de Las Vegas (Cuba); nel 1925 la famiglia rientra a Sanremo."
+        },
+        {
+          "anno": "1944-45",
+          "evento": "Partecipa alla Resistenza nelle Brigate Garibaldi in Liguria."
+        },
+        {
+          "anno": "1947",
+          "evento": "Pubblica Il sentiero dei nidi di ragno e si laurea in Lettere; inizia a lavorare per Einaudi."
+        },
+        {
+          "anno": "1956",
+          "evento": "Dopo l'invasione sovietica dell'Ungheria lascia il PCI."
+        },
+        {
+          "anno": "1957-59",
+          "evento": "Esce la trilogia I nostri antenati con Il barone rampante (1957) e Il cavaliere inesistente (1959)."
+        },
+        {
+          "anno": "1972",
+          "evento": "Pubblica Le città invisibili; vive a Parigi vicino all'Oulipo."
+        },
+        {
+          "anno": "1979",
+          "evento": "Pubblica Se una notte d'inverno un viaggiatore, vertice della sua metanarrazione."
+        },
+        {
+          "anno": "1985",
+          "evento": "Muore a Siena; le Lezioni americane usciranno postume nel 1988."
+        }
+      ],
+      "domandeProf": [
+        "In che senso Calvino è dentro il Neorealismo e in che senso lo supera fin dal Sentiero?",
+        "Perché scegliere come protagonista un bambino come Pin? Che effetto produce sul racconto della Resistenza?",
+        "Cosa rappresenta il personaggio di Kim e quale problema morale solleva?",
+        "I nostri antenati sono romanzi fantastici: di che cosa parlano davvero?",
+        "Cosa intende Calvino per leggerezza nelle Lezioni americane? È fuga dalla realtà?"
+      ],
+      "paroleChiave": [
+        {
+          "termine": "punto di vista infantile",
+          "definizione": "Lo sguardo laterale di Pin che smonta l'epica della Resistenza mostrandola come avventura confusa."
+        },
+        {
+          "termine": "fiabesco",
+          "definizione": "Dimensione magica e avventurosa dentro il realismo: oggetti carichi (la pistola), luoghi segreti (il sentiero)."
+        },
+        {
+          "termine": "allegoria",
+          "definizione": "Nella trilogia I nostri antenati le figure impossibili parlano in modo indiretto della condizione moderna."
+        },
+        {
+          "termine": "combinatoria",
+          "definizione": "Letteratura come gioco di strutture, regole e simmetrie: eredità dell'Oulipo."
+        },
+        {
+          "termine": "metanarrazione",
+          "definizione": "La narrazione che riflette su sé stessa, sul leggere e sullo scrivere (Se una notte d'inverno un viaggiatore)."
+        },
+        {
+          "termine": "leggerezza",
+          "definizione": "Prima delle Lezioni americane: capacità di sottrarre peso alle cose senza perderne la verità."
+        }
+      ]
+    },
+    {
+      "id": "fenoglio",
+      "nome": "Beppe Fenoglio",
+      "contesto": "1922 — 1963 · Resistenza, Langhe, lingua mista",
+      "tag": [
+        "resistenza",
+        "langhe",
+        "anglofilia",
+        "antiretorica"
+      ],
+      "puntiChiave": [
+        "Apertura biografica: nato ad Alba nel 1922, formazione anglofila (traduce Coleridge, Hopkins, Marlowe), modelli Hemingway e Faulkner.",
+        "Resistenza nelle formazioni autonome badogliane sulle Langhe (1944-45): esperienza diretta che diventa materia ossessiva di tutta l'opera.",
+        "Scrittura appartata e revisione continua: lavora come impiegato in un'azienda vinicola; molte opere escono postume.",
+        "Lingua mista come marchio: italiano letterario, dialetto piemontese e calchi dall'inglese costruiscono un italiano artificiale e tesissimo.",
+        "Antiepica della Resistenza: nessun trionfo, nessuna ideologia esplicita — la guerra è esperienza di morte, paura, errore, scelta morale.",
+        "Una questione privata (1963): Milton, partigiano timido e intellettuale, lascia la guerra per inseguire il dubbio sulla relazione tra Fulvia e Giorgio.",
+        "Il partigiano Johnny (postumo 1968): capolavoro incompiuto, alter ego dell'autore, italiano-inglese sperimentale, realismo fisico di fango e fame.",
+        "Chiusura: Calvino lo definisce 'il romanzo che i neorealisti avevano sognato di scrivere'; muore nel 1963 a soli 40 anni."
+      ],
+      "collegamenti": [
+        {
+          "id": "calvino",
+          "tipo": "autore",
+          "motivo": "due Resistenze a confronto: Pin fiabesco vs. Milton tragico"
+        },
+        {
+          "id": "primo-levi",
+          "tipo": "autore",
+          "motivo": "altra voce della memoria del Novecento: Lager invece che Resistenza partigiana"
+        },
+        {
+          "id": "verga",
+          "tipo": "autore",
+          "motivo": "mondo rurale duro e povero, ma La malora delle Langhe sostituisce I Malavoglia dei pescatori"
+        },
+        {
+          "id": "ungaretti",
+          "tipo": "autore",
+          "motivo": "guerra raccontata senza retorica, con lingua essenziale e tagliente"
+        }
+      ],
+      "citazioni": [
+        {
+          "testo": "Scrivo […] per un ovvio bisogno spirituale.",
+          "fonte": "Appunti partigiani (nota dell'autore)"
+        },
+        {
+          "testo": "Sono entrato in clandestinità il giorno 9 settembre 1943.",
+          "fonte": "Il partigiano Johnny (incipit del materiale autobiografico)"
+        }
+      ],
+      "dateFatti": [
+        {
+          "anno": "1922",
+          "evento": "Nasce ad Alba in famiglia di modesta condizione (il padre è macellaio)."
+        },
+        {
+          "anno": "1943",
+          "evento": "Dopo l'8 settembre sale in collina, prima con i badogliani poi con i partigiani azzurri."
+        },
+        {
+          "anno": "1952",
+          "evento": "Esordio con I ventitré giorni della città di Alba (Einaudi)."
+        },
+        {
+          "anno": "1954",
+          "evento": "Pubblica La malora, romanzo del mondo contadino povero delle Langhe."
+        },
+        {
+          "anno": "1959",
+          "evento": "Pubblica Primavera di bellezza."
+        },
+        {
+          "anno": "1963",
+          "evento": "Esce Una questione privata; muore di cancro ai polmoni a 40 anni."
+        },
+        {
+          "anno": "1968",
+          "evento": "Pubblicazione postuma del Partigiano Johnny."
+        }
+      ],
+      "domandeProf": [
+        "Perché Una questione privata si intitola così? Cosa cambia rispetto al modello del romanzo resistenziale?",
+        "Chi è Milton e perché è una figura nuova nel panorama della letteratura sulla Resistenza?",
+        "Che ruolo ha la nebbia nel romanzo, e perché è un personaggio a tutti gli effetti?",
+        "Come si caratterizza la lingua di Fenoglio? Da dove vengono i calchi inglesi?",
+        "Perché Calvino lo considera il vertice del Neorealismo, anche se Fenoglio non è propriamente neorealista?"
+      ],
+      "paroleChiave": [
+        {
+          "termine": "questione privata",
+          "definizione": "Il dramma intimo (gelosia, amore, dubbio) che diventa più urgente della Storia collettiva."
+        },
+        {
+          "termine": "nebbia",
+          "definizione": "Simbolo dominante delle Langhe: indistinzione fra realtà, ossessione, verità e morte."
+        },
+        {
+          "termine": "lingua mista",
+          "definizione": "Italiano letterario + piemontese + calchi inglesi: un italiano artificiale e teso, mai parlato."
+        },
+        {
+          "termine": "antiepica",
+          "definizione": "Rifiuto della retorica eroica: i partigiani sono fragili, contraddittori, soli."
+        },
+        {
+          "termine": "Milton",
+          "definizione": "Partigiano-intellettuale, timido e ossessionato, opposto al partigiano celebrativo."
+        }
+      ]
+    },
+    {
+      "id": "primo-levi",
+      "nome": "Primo Levi",
+      "contesto": "1919 — 1987 · Shoah, testimonianza, zona grigia",
+      "tag": [
+        "shoah",
+        "testimonianza",
+        "lager",
+        "zona-grigia"
+      ],
+      "puntiChiave": [
+        "Apertura biografica: nato a Torino nel 1919 in famiglia ebraica borghese, laureato in chimica nel 1941 nonostante le leggi razziali del 1938.",
+        "Cattura il 13 dicembre 1943 in Val d'Aosta come partigiano inesperto: si dichiara ebreo per non essere fucilato e finisce a Fossoli, poi ad Auschwitz-Monowitz nel febbraio 1944 (matricola 174.517).",
+        "Sopravvive grazie al laboratorio di chimica del campo; liberato dall'Armata Rossa nel gennaio 1945, torna a Torino dopo un viaggio di mesi.",
+        "Se questo è un uomo (1947, ripubblicato Einaudi 1958): testimonianza del Lager come esperimento di disumanizzazione, con stile da rapporto scientifico.",
+        "Capitolo Il canto di Ulisse: Levi insegna a Pikolo l'Inferno XXVI di Dante — 'Fatti non foste a viver come bruti' diventa atto di resistenza spirituale.",
+        "La tregua (1963, premio Campiello), Il sistema periodico (1975), La chiave a stella (1978, premio Strega): scienza, lavoro e mestiere come dignità dell'uomo.",
+        "I sommersi e i salvati (1986): testamento intellettuale sulla zona grigia, sulla vergogna del sopravvissuto e sul rischio di dimenticare e ripetere.",
+        "Chiusura: muore l'11 aprile 1987 a Torino, caduto dalla tromba delle scale di casa (morte interpretata dai più come suicidio)."
+      ],
+      "collegamenti": [
+        {
+          "id": "calvino",
+          "tipo": "autore",
+          "motivo": "stessa generazione e stessa Einaudi: due voci della memoria del Novecento, Lager vs. Resistenza"
+        },
+        {
+          "id": "fenoglio",
+          "tipo": "autore",
+          "motivo": "altra memoria della guerra: Resistenza partigiana vs. deportazione razziale"
+        },
+        {
+          "id": "ungaretti",
+          "tipo": "autore",
+          "motivo": "poesia di guerra essenziale e la poesia in epigrafe a Se questo è un uomo come comando civile"
+        },
+        {
+          "id": "montale",
+          "tipo": "autore",
+          "motivo": "stessa misura sobria, rifiuto della retorica, etica della parola precisa"
+        }
+      ],
+      "citazioni": [
+        {
+          "testo": "Voi che vivete sicuri / nelle vostre tiepide case […] / Considerate se questo è un uomo / che lavora nel fango / che non conosce pace / che lotta per mezzo pane / che muore per un sì o per un no.",
+          "fonte": "Se questo è un uomo, poesia in epigrafe, 1947"
+        },
+        {
+          "testo": "Considerate la vostra semenza: / fatti non foste a viver come bruti, / ma per seguir virtute e canoscenza.",
+          "fonte": "Dante, Inferno XXVI (cit. nel cap. Il canto di Ulisse di Se questo è un uomo)"
+        },
+        {
+          "testo": "Come se anch'io lo sentissi per la prima volta: come uno squillo di tromba, come la voce di Dio.",
+          "fonte": "Se questo è un uomo, cap. Il canto di Ulisse"
+        }
+      ],
+      "dateFatti": [
+        {
+          "anno": "1919",
+          "evento": "Nasce a Torino in famiglia ebraica borghese."
+        },
+        {
+          "anno": "1938",
+          "evento": "Leggi razziali fasciste: studia chimica fra restrizioni crescenti."
+        },
+        {
+          "anno": "1943",
+          "evento": "13 dicembre: catturato come partigiano in Val d'Aosta, si dichiara ebreo."
+        },
+        {
+          "anno": "1944",
+          "evento": "Febbraio: deportato ad Auschwitz-Monowitz, matricola 174.517."
+        },
+        {
+          "anno": "1945",
+          "evento": "Gennaio: liberato dall'Armata Rossa; lungo viaggio di ritorno verso Torino."
+        },
+        {
+          "anno": "1947",
+          "evento": "Pubblica Se questo è un uomo presso il piccolo editore De Silva; nel 1958 lo ripubblica Einaudi."
+        },
+        {
+          "anno": "1986",
+          "evento": "Pubblica I sommersi e i salvati, suo testamento intellettuale."
+        },
+        {
+          "anno": "1987",
+          "evento": "11 aprile: muore a Torino, cadendo dalla tromba delle scale di casa."
+        }
+      ],
+      "domandeProf": [
+        "Perché il titolo Se questo è un uomo è una domanda morale e non solo descrittiva?",
+        "Cosa racconta il capitolo Il canto di Ulisse e perché è il cuore spirituale del libro?",
+        "Cosa intende Levi per zona grigia ne I sommersi e i salvati?",
+        "Come si lega in Levi la formazione di chimico al modo di scrivere?",
+        "Che rapporto c'è fra la sobrietà dello stile e la forza dell'accusa?"
+      ],
+      "paroleChiave": [
+        {
+          "termine": "zona grigia",
+          "definizione": "Spazio ambiguo tra vittime e carnefici: Kapo, prigionieri privilegiati, collaboratori — la Shoah non è bianco/nero."
+        },
+        {
+          "termine": "vergogna del sopravvissuto",
+          "definizione": "Il sospetto di essersi salvati a scapito di altri: i veri testimoni, i 'sommersi', sono morti."
+        },
+        {
+          "termine": "testimonianza",
+          "definizione": "Dovere morale di raccontare per non dimenticare e perché 'è avvenuto, dunque può avvenire ancora'."
+        },
+        {
+          "termine": "Häftling",
+          "definizione": "Prigioniero del Lager, ridotto a numero tatuato sul braccio (Levi è 174.517)."
+        },
+        {
+          "termine": "Musulmano",
+          "definizione": "Muselmann: prigioniero ridotto a stato terminale di esaurimento, ormai prossimo alla morte."
+        },
+        {
+          "termine": "canto di Ulisse",
+          "definizione": "Inferno XXVI di Dante: 'fatti non foste a viver come bruti' come ultima difesa dell'umano dentro Auschwitz."
+        }
+      ]
+    },
+    {
+      "id": "ungaretti",
+      "nome": "Giuseppe Ungaretti",
+      "contesto": "1888 — 1970 · ermetismo, parola essenziale",
+      "tag": [
+        "ermetismo",
+        "guerra",
+        "parola-essenziale",
+        "novecento"
+      ],
+      "puntiChiave": [
+        "Apertura biografica: nasce nel 1888 ad Alessandria d'Egitto da genitori toscani — il deserto, il padre morto al Canale di Suez e la lontananza dall'Italia restano memoria fondante.",
+        "Formazione a Parigi (1912): frequenta Apollinaire, Picasso, Modigliani e assorbe Bergson — qui scopre simbolismo francese e avanguardie, una poesia moderna libera dalle forme tradizionali.",
+        "La guerra del Carso: si arruola volontario interventista, vive la trincea come esperienza traumatica e da quei foglietti di trincea nascono Il porto sepolto (1916) e L'Allegria.",
+        "Poetica della parola essenziale: rifiuta la retorica, frantuma il verso fino al versicolo di una sola parola, fa del bianco della pagina silenzio attivo carico di senso.",
+        "Analogia e scavo: la poesia è discesa nel proprio porto sepolto, accosta immagini lontane per via intuitiva e riporta alla luce schegge di verità, non sistemi.",
+        "Seconda fase, Sentimento del tempo (1933): torna a forme più tradizionali, riemerge la sintassi articolata, centrali tempo, memoria e religione nel clima del ritorno all'ordine.",
+        "Terza fase, Il dolore (1947): il lutto del figlio Antonietto morto in Brasile si apre al dolore universale della Seconda guerra mondiale.",
+        "Chiusura: è considerato il principale precursore dell'Ermetismo italiano (Quasimodo, Luzi), ma se ne distingue per la matrice autobiografica e di trincea della sua poesia."
+      ],
+      "collegamenti": [
+        {
+          "id": "pascoli",
+          "tipo": "autore",
+          "motivo": "eredita la linea della parola breve, essenziale, fonicamente carica"
+        },
+        {
+          "id": "dannunzio",
+          "tipo": "autore",
+          "motivo": "rovescia l'estetismo del superuomo: parola nuda contro parola esibita"
+        },
+        {
+          "id": "montale",
+          "tipo": "autore",
+          "motivo": "altro grande rinnovatore del Novecento, ma su linea antinovecentista opposta all'ermetismo"
+        },
+        {
+          "id": "veglia",
+          "tipo": "poesia",
+          "motivo": "testo-manifesto della scoperta della vita di fronte al cadavere del compagno"
+        },
+        {
+          "id": "san-martino-del-carso",
+          "tipo": "poesia",
+          "motivo": "analogia tra paese distrutto e cuore del poeta, geografia esterna che diventa interiore"
+        }
+      ],
+      "citazioni": [
+        {
+          "testo": "M'illumino / d'immenso",
+          "fonte": "Mattina, L'Allegria"
+        },
+        {
+          "testo": "Si sta come / d'autunno / sugli alberi / le foglie",
+          "fonte": "Soldati, L'Allegria"
+        },
+        {
+          "testo": "Un'intera nottata / buttato vicino / a un compagno / massacrato…",
+          "fonte": "Veglia, L'Allegria"
+        }
+      ],
+      "dateFatti": [
+        {
+          "anno": "1888",
+          "evento": "Nasce ad Alessandria d'Egitto da genitori toscani."
+        },
+        {
+          "anno": "1912",
+          "evento": "Si trasferisce a Parigi: avanguardie, Apollinaire, Bergson."
+        },
+        {
+          "anno": "1915",
+          "evento": "Si arruola volontario, combatte sul Carso e poi in Francia."
+        },
+        {
+          "anno": "1916",
+          "evento": "Pubblica Il porto sepolto, scritto in trincea."
+        },
+        {
+          "anno": "1919",
+          "evento": "Pubblica Allegria di naufragi, poi confluita ne L'Allegria (1931)."
+        },
+        {
+          "anno": "1933",
+          "evento": "Sentimento del tempo: ritorno all'ordine e dimensione religiosa."
+        },
+        {
+          "anno": "1947",
+          "evento": "Il dolore: lutto per il figlio Antonietto e per la Seconda guerra mondiale."
+        },
+        {
+          "anno": "1969",
+          "evento": "Pubblica l'opera complessiva con il titolo Vita d'un uomo."
+        },
+        {
+          "anno": "1970",
+          "evento": "Muore a Milano."
+        }
+      ],
+      "domandeProf": [
+        "Cosa intende Ungaretti per parola essenziale e perché frantuma il verso?",
+        "Spiega il titolo paradossale L'Allegria: perché allegria in mezzo alla guerra?",
+        "Cos'è il porto sepolto, in senso biografico e in senso simbolico?",
+        "Perché Ungaretti è considerato precursore dell'Ermetismo, ma anche distinto da esso?",
+        "Differenza tra la prima e la seconda fase: cosa cambia da L'Allegria a Sentimento del tempo?"
+      ],
+      "paroleChiave": [
+        {
+          "termine": "parola essenziale",
+          "definizione": "Parola nuda, isolata e necessaria, che da sola sostiene il peso del verso."
+        },
+        {
+          "termine": "versicolo",
+          "definizione": "Verso brevissimo, anche di una sola parola, tipico de L'Allegria."
+        },
+        {
+          "termine": "analogia",
+          "definizione": "Accostamento intuitivo di immagini lontane, senza nessi logici espliciti."
+        },
+        {
+          "termine": "porto sepolto",
+          "definizione": "Segreto profondo dell'uomo e della poesia, da raggiungere per scavo interiore."
+        },
+        {
+          "termine": "allegria",
+          "definizione": "Slancio vitale paradossale che nasce davanti alla morte, non felicità superficiale."
+        },
+        {
+          "termine": "ermetismo",
+          "definizione": "Corrente poetica novecentesca di parola pura, analogia e silenzio, di cui Ungaretti è precursore."
+        }
       ]
     }
   ],
@@ -59,7 +1255,12 @@
       "titolo": "X Agosto",
       "autoreId": "pascoli",
       "contesto": "Myricae, 1896 · simbolismo, lutto, nido violato",
-      "tag": ["myricae", "nido", "lutto", "simbolismo"],
+      "tag": [
+        "myricae",
+        "nido",
+        "lutto",
+        "simbolismo"
+      ],
       "puntiChiave": [
         "Apertura: notte di San Lorenzo, 10 agosto — le stelle cadenti sono lacrime cosmiche di pietà universale.",
         "Struttura simmetrica: due morti parallele — la rondine e l'uomo — entrambe spezzate mentre tornavano al nido portando cibo o doni.",
@@ -69,14 +1270,32 @@
         "Chiusura: il cielo testimone muto, l'ossimoro finale 'atomo opaco del Male' che inchioda la Terra a punto di violenza nel cosmo."
       ],
       "collegamenti": [
-        { "id": "pascoli", "tipo": "autore", "motivo": "torna all'autore per inquadrare la poetica del nido e del fanciullino" },
-        { "id": "lavandare", "tipo": "poesia", "motivo": "altra Myricae costruita sul simbolo dell'assenza e della solitudine" },
-        { "id": "novembre", "tipo": "poesia", "motivo": "altra Myricae sul rovesciamento finale: la natura sembra viva, ma è morte" }
+        {
+          "id": "pascoli",
+          "tipo": "autore",
+          "motivo": "torna all'autore per inquadrare la poetica del nido e del fanciullino"
+        },
+        {
+          "id": "lavandare",
+          "tipo": "poesia",
+          "motivo": "altra Myricae costruita sul simbolo dell'assenza e della solitudine"
+        },
+        {
+          "id": "novembre",
+          "tipo": "poesia",
+          "motivo": "altra Myricae sul rovesciamento finale: la natura sembra viva, ma è morte"
+        }
       ],
       "testo": "San Lorenzo, io lo so perché tanto\ndi stelle per l'aria tranquilla\narde e cade, perché sì gran pianto\nnella concava volta sfavilla.\n\nRitornava una rondine al tetto:\nl'uccisero: cadde tra spini:\nella aveva nel becco un insetto:\nla cena dei suoi rondinini.\n\nOra è là, come in croce, che tende\nquel verme a quel cielo lontano;\ne il suo nido è nell'ombra, che attende,\nche pigola sempre più piano.\n\nAnche un uomo tornava al suo nido:\nl'uccisero: disse: Perdono;\ne restò negli aperti occhi un grido:\nportava due bambole in dono…\n\nOra là, nella casa romita,\nlo aspettano, aspettano in vano:\negli immobile, attonito, addita\nle bambole al cielo lontano.\n\nE tu, Cielo, dall'alto dei mondi\nsereni, infinito, immortale,\noh! d'un pianto di stelle lo inondi\nquest'atomo opaco del Male!",
       "dateFatti": [
-        { "anno": "1867", "evento": "10 agosto: assassinio del padre, data biografica fondante che la poesia evoca implicitamente." },
-        { "anno": "1896", "evento": "Composta e inserita nella terza edizione di Myricae." }
+        {
+          "anno": "1867",
+          "evento": "10 agosto: assassinio del padre, data biografica fondante che la poesia evoca implicitamente."
+        },
+        {
+          "anno": "1896",
+          "evento": "Composta e inserita nella terza edizione di Myricae."
+        }
       ],
       "domandeProf": [
         "Perché Pascoli sceglie la notte di San Lorenzo come cornice?",
@@ -85,9 +1304,1546 @@
         "Che ruolo ha il Cielo: testimone, giudice, o semplice spettatore impotente?"
       ],
       "paroleChiave": [
-        { "termine": "atomo opaco del Male", "definizione": "Immagine cosmica della Terra come minuscolo punto oscuro e malvagio nell'universo sereno." },
-        { "termine": "nido", "definizione": "Famiglia protettiva spezzata dalla violenza esterna: rondinini e bambini che attendono invano." },
-        { "termine": "parallelismo rondine-uomo", "definizione": "Struttura portante della poesia: due morti speculari elevano il lutto privato a simbolo universale." }
+        {
+          "termine": "atomo opaco del Male",
+          "definizione": "Immagine cosmica della Terra come minuscolo punto oscuro e malvagio nell'universo sereno."
+        },
+        {
+          "termine": "nido",
+          "definizione": "Famiglia protettiva spezzata dalla violenza esterna: rondinini e bambini che attendono invano."
+        },
+        {
+          "termine": "parallelismo rondine-uomo",
+          "definizione": "Struttura portante della poesia: due morti speculari elevano il lutto privato a simbolo universale."
+        }
+      ]
+    },
+    {
+      "id": "la-sera-fiesolana",
+      "titolo": "La sera fiesolana",
+      "autoreId": "dannunzio",
+      "contesto": "Alcyone, 1903 · panismo, lauda laica, sera come divinità",
+      "tag": [
+        "alcyone",
+        "panismo",
+        "musicalità",
+        "lauda"
+      ],
+      "puntiChiave": [
+        "Apertura: una sera di giugno sulle colline di Fiesole presso Firenze; la pioggia sta cessando, l'estate sta cominciando.",
+        "Tema: la sera è personificata come divinità femminile che scende sul mondo, a cui il poeta rivolge una lauda laica per la sua bellezza serena e pia.",
+        "Struttura: tre lunghe strofe descrittive scandite dal ritornello 'Laudata sii' (tre volte) che richiama il Cantico delle creature di San Francesco.",
+        "Tecniche: allitterazioni, sinestesie ('freschi pensieri', 'voce sommessa'), lessico botanico raro, ritmo lungo e musicale dei versi liberi.",
+        "Religiosità estetica: l'atmosfera è religiosa-pagana, perché la natura è sacra ma di una sacralità estetica, non cristiana.",
+        "Panismo: piena fusione tra paesaggio e sentimento — la sera è specchio dell'anima del poeta e dell'amata (Ermione, Eleonora Duse).",
+        "Chiusura: l'invocazione alla sera diventa preghiera cosmica; la natura è celebrata come unico luogo del sacro nella modernità senza Dio."
+      ],
+      "collegamenti": [
+        {
+          "id": "dannunzio",
+          "tipo": "autore",
+          "motivo": "torna all'autore per inquadrare Alcyone e il panismo nel ciclo delle Laudi"
+        },
+        {
+          "id": "la-pioggia-nel-pineto",
+          "tipo": "poesia",
+          "motivo": "compagna ideale: altra grande lirica di Alcyone, panismo erotico nel bosco vs. lauda contemplativa alla sera"
+        },
+        {
+          "id": "x-agosto",
+          "tipo": "poesia",
+          "motivo": "contrasto frontale con Pascoli: lì il cielo è testimone muto del Male, qui la sera è divinità da lodare"
+        },
+        {
+          "id": "i-limoni",
+          "tipo": "poesia",
+          "motivo": "Montale rovescia il sacro panico in epifania dimessa, contro la grandiosità dannunziana"
+        }
+      ],
+      "testo": "Fresche le mie parole ne la sera\nti sien come il fruscìo che fan le foglie\ndel gelso ne la man di chi le coglie\nsilenzioso e ancor s'attarda a l'opra lenta\nsu l'alta scala che s'annera\ncontro il fusto che s'inargenta\ncon le sue rame spoglie\nmentre la Luna è prossima a le soglie\ncerule e par che innanzi a sé distenda un velo\nove il nostro sogno si giace\ne par che la campagna già si senta\nda lei sommersa nel notturno gelo\ne da lei beva la sperata pace\nsenza vederla.\n\nLaudata sii pel tuo viso di perla,\no Sera, e pe' tuoi grandi umidi occhi ove si tace\nl'acqua del cielo!\n\nDolci le mie parole ne la sera\nti sien come la pioggia che bruiva\ntepida e fuggitiva,\ncommiato lacrimoso de la primavera,\nsu i gelsi e su gli olmi e su le viti\ne su i pini dai novelli rosei diti\nche giocano con l'aura che si perde,\ne su 'l grano che non è biondo ancóra\ne non è verde,\ne su 'l fieno che già patì la falce\ne trascolora,\ne su gli olivi, su i fratelli olivi\nche fan di santità pallidi i clivi\ne sorridenti.\n\nLaudata sii per le tue vesti aulenti,\no Sera, e pel cinto che ti cinge come il salce\nil fien che odora!\n\nIo ti dirò verso quali reami\nd'amor ci chiami il fiume, le cui fonti\neterne a l'ombra de gli antichi rami\nparlano nel mistero sacro dei monti;\ne ti dirò per qual segreto\nle colline su i limpidi orizzonti\ns'incùrvino come labbra che un divieto\nchiuda, e perché la volontà di dire\nle faccia belle\noltre ogni uman desire\ne nel silenzio lor sempre novelle\nconsolatrici, sì che pare\nche ogni sera l'anima le possa amare\nd'amor più forte.\n\nLaudata sii per la tua pura morte,\no Sera, e per l'attesa che in te fa palpitare\nle prime stelle!",
+      "dateFatti": [
+        {
+          "anno": "1899",
+          "evento": "Composta nella villa La Capponcina di Settignano (Toscana), durante il soggiorno con Eleonora Duse."
+        },
+        {
+          "anno": "1903",
+          "evento": "Pubblicata in Alcyone, terzo libro delle Laudi del cielo, del mare, della terra e degli eroi."
+        }
+      ],
+      "domandeProf": [
+        "Perché D'Annunzio usa il ritornello 'Laudata sii' e a quale modello francescano si rifà?",
+        "In che senso la religiosità di questa poesia è estetica e non cristiana?",
+        "Come si manifesta il panismo nella Sera fiesolana, e in che modo differisce da quello della Pioggia nel pineto?",
+        "Quali tecniche linguistiche (sinestesie, allitterazioni, lessico botanico) costruiscono la musicalità del testo?",
+        "Confronta la sera dannunziana con il cielo pascoliano di X Agosto: due Decadentismi a confronto."
+      ],
+      "paroleChiave": [
+        {
+          "termine": "lauda",
+          "definizione": "Preghiera laica e laudatoria; D'Annunzio riusa la forma del Cantico delle creature in chiave estetica."
+        },
+        {
+          "termine": "panismo",
+          "definizione": "Fusione sensuale tra il poeta e la natura personificata come divinità femminile."
+        },
+        {
+          "termine": "sinestesia",
+          "definizione": "Figura retorica che fonde sensazioni di sensi diversi (es. 'vesti aulenti' lega vista e olfatto)."
+        },
+        {
+          "termine": "Ermione",
+          "definizione": "Doppio letterario di Eleonora Duse, presenza muta in molte liriche di Alcyone."
+        }
+      ]
+    },
+    {
+      "id": "la-pioggia-nel-pineto",
+      "titolo": "La pioggia nel pineto",
+      "autoreId": "dannunzio",
+      "contesto": "Alcyone, 1903 · panismo, fusione natura-uomo, musicalità",
+      "tag": [
+        "alcyone",
+        "panismo",
+        "musicalità",
+        "metamorfosi"
+      ],
+      "puntiChiave": [
+        "Apertura: il poeta cammina con l'amata Ermione (Eleonora Duse trasfigurata in ninfa) in una pineta della Versilia mentre comincia a piovere.",
+        "Struttura: quattro strofe di 32 versi (128 versi totali), scandite dai ritornelli 'Taci' e 'Piove', con progressione musicale (pioggia che cresce, culmina, decresce).",
+        "Metamorfosi panica: nei versi finali di ogni strofa gli amanti si trasformano in elementi del bosco — volti silvani, capelli che profumano come ginestre, pelle vegetale.",
+        "Riferimento mitico: Ermione è figlia di Menelao ed Elena, in alcune versioni del mito si trasforma in albero; qui esce 'dalla corteccia' come ninfa silvana.",
+        "Tecniche: onomatopee ('crepitano', 'scricchia', 'stride'), allitterazioni di liquide e sibilanti, lessico botanico esatto (pini, mirti, tamerici, ginestre), sinestesie.",
+        "Significato: manifesto del panismo dannunziano — l'uomo si scioglie nella natura e diventa parte del flusso vitale del cosmo; sotto la superficie, poesia erotica velata.",
+        "Chiusura: il silenzio finale, dopo la pioggia, è il momento della fusione totale: non più due amanti distinti, ma un unico essere vegetale-umano."
+      ],
+      "collegamenti": [
+        {
+          "id": "dannunzio",
+          "tipo": "autore",
+          "motivo": "torna all'autore per inquadrare panismo, Alcyone e poetica dell'eros cosmico"
+        },
+        {
+          "id": "la-sera-fiesolana",
+          "tipo": "poesia",
+          "motivo": "altra grande lirica di Alcyone: lauda contemplativa alla sera vs. metamorfosi panica nel bosco"
+        },
+        {
+          "id": "x-agosto",
+          "tipo": "poesia",
+          "motivo": "contrasto con Pascoli: lì la natura è simbolo del lutto, qui è luogo di fusione erotica e vitale"
+        },
+        {
+          "id": "meriggiare-pallido-e-assorto",
+          "tipo": "poesia",
+          "motivo": "Montale rovescia il panismo in disagio esistenziale: la natura non accoglie ma respinge"
+        },
+        {
+          "id": "i-limoni",
+          "tipo": "poesia",
+          "motivo": "Montale contro il lessico prezioso dannunziano: pini e ginestre vs. piante umili e quotidiane"
+        }
+      ],
+      "testo": "Taci. Su le soglie\ndel bosco non odo\nparole che dici\numane; ma odo\nparole più nuove\nche parlano gocciole e foglie\nlontane.\nAscolta. Piove\ndalle nuvole sparse.\nPiove su le tamerici\nsalmastre ed arse,\npiove su i pini\nscagliosi ed irti,\npiove su i mirti\ndivini,\nsu le ginestre fulgenti\ndi fiori accolti,\nsu i ginepri folti\ndi coccole aulenti,\npiove su i nostri vólti\nsilvani,\npiove su le nostre mani\nignude,\nsu i nostri vestimenti\nleggieri,\nsu i freschi pensieri\nche l'anima schiude\nnovella,\nsu la favola bella\nche ieri\nm'illuse, che oggi t'illude,\no Ermione.\n\nOdi? La pioggia cade\nsu la solitaria\nverdura\ncon un crepitìo che dura\ne varia nell'aria\nsecondo le fronde\npiù rade, men rade.\nAscolta. Risponde\nal pianto il canto\ndelle cicale\nche il pianto australe\nnon impaura,\nné il ciel cinerino.\nE il pino\nha un suono, e il mirto\naltro suono, e il ginepro\naltro ancóra, stromenti\ndiversi\nsotto innumerevoli dita.\nE immersi\nnoi siam nello spirto\nsilvestre,\nd'arborea vita viventi;\ne il tuo vólto ebro\nè molle di pioggia\ncome una foglia,\ne le tue chiome\nauliscono come\nle chiare ginestre,\no creatura terrestre\nche hai nome\nErmione.\n\nAscolta, ascolta. L'accordo\ndelle aeree cicale\na poco a poco\npiù sordo\nsi fa sotto il pianto\nche cresce;\nma un canto vi si mesce\npiù roco\nche di laggiù sale,\ndall'umida ombra remota.\nPiù sordo e più fioco\ns'allenta, si spegne.\nSola una nota\nancor trema, si spegne,\nrisorge, trema, si spegne.\nNon s'ode voce del mare.\nOr s'ode su tutta la fronda\ncrosciare\nl'argentea pioggia\nche monda,\nil croscio che varia\nsecondo la fronda\npiù folta, men folta.\nAscolta.\nLa figlia dell'aria\nè muta; ma la figlia\ndel limo lontana,\nla rana,\ncanta nell'ombra più fonda,\nchi sa dove, chi sa dove!\nE piove su le tue ciglia,\nErmione.\n\nPiove su le tue ciglia nere\nsì che par tu pianga\nma di piacere; non bianca\nma quasi fatta virente,\npar da scorza tu esca.\nE tutta la vita è in noi fresca\naulente,\nil cuor nel petto è come pèsca\nintatta,\ntra le pàlpebre gli occhi\nson come polle tra l'erbe,\ni denti negli alvèoli\ncon come mandorle acerbe.\nE andiam di fratta in fratta,\nor congiunti or disciolti\n(e il verde vigor rude\nci allaccia i mallèoli\nc'intrica i ginocchi)\nchi sa dove, chi sa dove!\nE piove su i nostri vólti\nsilvani,\npiove su le nostre mani\nignude,\nsu i nostri vestimenti\nleggieri,\nsu i freschi pensieri\nche l'anima schiude\nnovella,\nsu la favola bella\nche ieri\nm'illuse, che oggi t'illude,\no Ermione.",
+      "dateFatti": [
+        {
+          "anno": "1902",
+          "evento": "Composta in Versilia (Marina di Pisa) durante l'estate trascorsa con Eleonora Duse."
+        },
+        {
+          "anno": "1903",
+          "evento": "Pubblicata in Alcyone, terzo libro delle Laudi."
+        }
+      ],
+      "domandeProf": [
+        "Che cos'è il panismo e come si realizza concretamente nella Pioggia nel pineto?",
+        "Analizza la struttura delle quattro strofe e la progressione musicale della pioggia.",
+        "Chi è Ermione, e perché il nome rimanda al mito greco?",
+        "Quali tecniche fonosimboliche e onomatopeiche usa D'Annunzio per imitare il rumore della pioggia?",
+        "Confronta la natura di D'Annunzio con quella di Pascoli (X Agosto) e di Montale (Meriggiare pallido e assorto)."
+      ],
+      "paroleChiave": [
+        {
+          "termine": "panismo",
+          "definizione": "Fusione sensuale e mistica dell'io con la natura, fino alla metamorfosi vegetale."
+        },
+        {
+          "termine": "Ermione",
+          "definizione": "Doppio letterario di Eleonora Duse; nome mitico (figlia di Menelao ed Elena) che evoca la metamorfosi in albero."
+        },
+        {
+          "termine": "fonosimbolismo",
+          "definizione": "Uso del suono delle parole per imitare e suggerire il significato (la pioggia che 'crepita', 'scroscia')."
+        },
+        {
+          "termine": "metamorfosi vegetale",
+          "definizione": "Trasformazione degli amanti in elementi del bosco: volti silvani, capelli-ginestra, scorza."
+        }
+      ]
+    },
+    {
+      "id": "non-chiederci-la-parola",
+      "titolo": "Non chiederci la parola",
+      "autoreId": "montale",
+      "contesto": "Ossi di seppia, 1925 · manifesto della poetica, crisi della parola",
+      "tag": [
+        "ossi-di-seppia",
+        "manifesto",
+        "antinovecentismo",
+        "male-di-vivere"
+      ],
+      "puntiChiave": [
+        "Apertura: il poeta si rivolge direttamente al lettore e nega di poter offrire una parola definitiva sull'esistenza.",
+        "Tre strofe da quattro versi: una struttura simmetrica e secca che riflette il rifiuto del canto fluido.",
+        "Negazione della poesia tradizionale: niente formule, niente verità assolute, niente messaggi consolatori — il poeta non è più vate.",
+        "Opposizione fra l'uomo sicuro di sé (che non vede la propria ombra) e il poeta che invece percepisce l'ombra, cioè il lato oscuro e indecifrabile dell'esistenza.",
+        "Paesaggio simbolico: il 'prato polveroso' e il 'muro scalcinato' sono immagini della desolazione moderna e dell'aridità interiore.",
+        "Chiusura folgorante: la celebre formula 'ciò che non siamo, ciò che non vogliamo' definisce la poesia come lucidità negativa, unica forma onesta di parlare."
+      ],
+      "collegamenti": [
+        {
+          "id": "montale",
+          "tipo": "autore",
+          "motivo": "torna all'autore per inquadrare la poetica degli Ossi e la linea antinovecentista"
+        },
+        {
+          "id": "dannunzio",
+          "tipo": "autore",
+          "motivo": "rifiuto esplicito del modello del poeta-vate dannunziano"
+        },
+        {
+          "id": "meriggiare-pallido-e-assorto",
+          "tipo": "poesia",
+          "motivo": "altra poesia-chiave degli Ossi sul muro come limite invalicabile"
+        }
+      ],
+      "testo": "Non chiederci la parola che squadri da ogni lato\nl'animo nostro informe, e a lettere di fuoco\nlo dichiari e risplenda come un croco\nperduto in mezzo a un polveroso prato.\n\nAh l'uomo che se ne va sicuro,\nagli altri ed a se stesso amico,\ne l'ombra sua non cura che la canicola\nstampa sopra uno scalcinato muro!\n\nNon domandarci la formula che mondi possa aprirti,\nsì qualche storta sillaba e secca come un ramo.\nCodesto solo oggi possiamo dirti,\nciò che non siamo, ciò che non vogliamo.",
+      "dateFatti": [
+        {
+          "anno": "1925",
+          "evento": "Pubblicata in Ossi di seppia, prima raccolta di Montale, presso l'editore Gobetti."
+        }
+      ],
+      "domandeProf": [
+        "Perché questa poesia è considerata un manifesto della poetica montaliana?",
+        "Cosa significa l'opposizione fra l'uomo sicuro di sé e l'uomo che vede la propria ombra?",
+        "Spiega la chiusura 'ciò che non siamo, ciò che non vogliamo': che tipo di poesia propone Montale?",
+        "Come si collega questa poesia al rifiuto del poeta-vate dannunziano?"
+      ],
+      "paroleChiave": [
+        {
+          "termine": "storta sillaba",
+          "definizione": "Immagine della parola poetica nuova: spezzata, secca, antiretorica — opposta al verso musicale tradizionale."
+        },
+        {
+          "termine": "lucidità negativa",
+          "definizione": "Onestà del poeta che rinuncia a verità positive e si limita a dire ciò che non è e ciò che non vuole."
+        },
+        {
+          "termine": "ombra",
+          "definizione": "Parte oscura e indecifrabile dell'esistenza, ignorata dall'uomo sicuro di sé ma vista dal poeta."
+        }
+      ]
+    },
+    {
+      "id": "i-limoni",
+      "titolo": "I limoni",
+      "autoreId": "montale",
+      "contesto": "Ossi di seppia, 1925 · manifesto poetico, paesaggio ligure umile",
+      "tag": [
+        "ossi-di-seppia",
+        "manifesto",
+        "paesaggio",
+        "varco",
+        "epifania"
+      ],
+      "puntiChiave": [
+        "Apertura polemica: Montale prende le distanze dai 'poeti laureati', cioè dai poeti ufficiali e dal linguaggio alto della tradizione.",
+        "Scelta antinovecentista del paesaggio umile: viuzze, fossi, orti, alberi di limoni — luoghi dimessi, contro i giardini nobili della lirica precedente.",
+        "I limoni come simbolo: il loro giallo acceso negli orti modesti è una possibile rivelazione semplice e improvvisa, opposta alla nobiltà artificiosa.",
+        "Tema del varco: per un istante il mondo sembra nascondere un segreto, un 'anello che non tiene' che potrebbe aprirsi — è il miracolo laico di Montale.",
+        "Fragilità della rivelazione: subito la città, il rumore e la vita quotidiana richiudono il varco — la speranza è intermittente, mai certezza stabile.",
+        "Funzione di manifesto di Ossi di seppia: rifiuto della tradizione aulica, scelta di un linguaggio aspro e di un paesaggio povero come unico luogo possibile della poesia."
+      ],
+      "collegamenti": [
+        {
+          "id": "montale",
+          "tipo": "autore",
+          "motivo": "manifesto della poetica antinovecentista e del paesaggio ligure"
+        },
+        {
+          "id": "dannunzio",
+          "tipo": "autore",
+          "motivo": "rifiuto del linguaggio alto e dei paesaggi nobili della tradizione lirica"
+        },
+        {
+          "id": "la-pioggia-nel-pineto",
+          "tipo": "poesia",
+          "motivo": "controcanto dannunziano: paesaggio sontuoso e panico, opposto agli orti dimessi"
+        }
+      ],
+      "testo": "Ascoltami, i poeti laureati\nsi muovono soltanto fra le piante\ndai nomi poco usati: bossi ligustri o acanti.\nIo, per me, amo le strade che riescono agli erbosi\nfossi dove in pozzanghere\nmezzo seccate agguantano i ragazzi\nqualche sparuta anguilla:\nle viuzze che seguono i ciglioni,\ndiscendono tra i ciuffi delle canne\ne mettono negli orti, tra gli alberi dei limoni.\n\nMeglio se le gazzarre degli uccelli\nsi spengono inghiottite dall'azzurro:\npiù chiaro si ascolta il susurro\ndei rami amici nell'aria che quasi non si muove,\ne i sensi di quest'odore\nche non sa staccarsi da terra\ne piove in petto una dolcezza inquieta.\nQui delle divertite passioni\nper miracolo tace la guerra,\nqui tocca anche a noi poveri la nostra parte di ricchezza\ned è l'odore dei limoni.\n\nVedi, in questi silenzi in cui le cose\ns'abbandonano e sembrano vicine\na tradire il loro ultimo segreto,\ntalora ci si aspetta\ndi scoprire uno sbaglio di Natura,\nil punto morto del mondo, l'anello che non tiene,\nil filo da disbrogliare che finalmente ci metta\nnel mezzo di una verità.\nLo sguardo fruga d'intorno,\nla mente indaga accorda disunisce\nnel profumo che dilaga\nquando il giorno più languisce.\nSono i silenzi in cui si vede\nin ogni ombra umana che si allontana\nqualche disturbata Divinità.\n\nMa l'illusione manca e ci riporta il tempo\nnelle città rumorose dove l'azzurro si mostra\nsoltanto a pezzi, in alto, tra le cimase.\nLa pioggia stanca la terra, di poi; s'affolta\nil tedio dell'inverno sulle case,\nla luce si fa avara — amara l'anima.\nQuando un giorno da un malchiuso portone\ntra gli alberi di una corte\nci si mostrano i gialli dei limoni;\ne il gelo del cuore si sfa,\ne in petto ci scrosciano\nle loro canzoni\nle trombe d'oro della solarità.",
+      "dateFatti": [
+        {
+          "anno": "1925",
+          "evento": "Pubblicata in apertura di Ossi di seppia, con funzione programmatica di manifesto."
+        }
+      ],
+      "domandeProf": [
+        "Perché I limoni è considerato un manifesto della poetica di Ossi di seppia?",
+        "Cosa rappresentano i limoni e perché Montale sceglie un simbolo così umile?",
+        "Come si manifesta in questa poesia il tema del varco?",
+        "Quale polemica letteraria contiene l'attacco contro i 'poeti laureati'?"
+      ],
+      "paroleChiave": [
+        {
+          "termine": "poeti laureati",
+          "definizione": "I poeti ufficiali, classicisti o dannunziani, legati al linguaggio alto che Montale rifiuta."
+        },
+        {
+          "termine": "anello che non tiene",
+          "definizione": "Punto debole nella catena del reale: lo spiraglio per cui il varco potrebbe aprirsi."
+        },
+        {
+          "termine": "epifania montaliana",
+          "definizione": "Rivelazione improvvisa e fragile nascosta in oggetti dimessi come i limoni gialli di un orto."
+        }
+      ]
+    },
+    {
+      "id": "meriggiare-pallido-e-assorto",
+      "titolo": "Meriggiare pallido e assorto",
+      "autoreId": "montale",
+      "contesto": "Ossi di seppia, 1925 · paesaggio ligure, male di vivere",
+      "tag": [
+        "ossi-di-seppia",
+        "paesaggio",
+        "male-di-vivere",
+        "muro",
+        "correlativo-oggettivo"
+      ],
+      "puntiChiave": [
+        "Apertura: il verbo 'meriggiare' all'infinito rende impersonale e universale l'esperienza — non un io lirico, ma una condizione.",
+        "Prima parte descrittiva: crepe del suolo, sterpi, formiche, serpi tra le pietre, merli, mare che luccica in lontananza — paesaggio ligure arido e immobile.",
+        "Concretezza sensibile: caldo, suoni di insetti, vista del mare tra i rami; il senso esistenziale nasce dai dettagli, non da un ragionamento astratto.",
+        "Svolta nella seconda parte: la descrizione si trasforma in riflessione — vivere è camminare lungo una muraglia con cocci aguzzi in cima.",
+        "Correlativo oggettivo della muraglia: il muro è il limite invalicabile dell'esistenza, i cocci sono il dolore che impedisce ogni superamento.",
+        "Chiusura: l'uomo intuisce qualcosa 'oltre' (il mare luccicante) ma non trova la via d'accesso — vivere significa sentire il limite.",
+        "Posizione nella raccolta: insieme a Non chiederci la parola e Spesso il male di vivere è una delle tre poesie-pilastro degli Ossi."
+      ],
+      "collegamenti": [
+        {
+          "id": "montale",
+          "tipo": "autore",
+          "motivo": "torna all'autore per la poetica del muro e del varco"
+        },
+        {
+          "id": "non-chiederci-la-parola",
+          "tipo": "poesia",
+          "motivo": "stessa raccolta, stessa visione antiretorica e lucidità negativa"
+        },
+        {
+          "id": "spesso-il-male-di-vivere-ho-incontrato",
+          "tipo": "poesia",
+          "motivo": "altra poesia-pilastro degli Ossi sul male di vivere espresso per oggetti"
+        }
+      ],
+      "testo": "Meriggiare pallido e assorto\npresso un rovente muro d'orto,\nascoltare tra i pruni e gli sterpi\nschiocchi di merli, frusci di serpi.\n\nNelle crepe del suolo o su la veccia\nspiar le file di rosse formiche\nch'ora si rompono ed ora s'intrecciano\na sommo di minuscole biche.\n\nOsservare tra frondi il palpitare\nlontano di scaglie di mare\nmentre si levano tremuli scricchi\ndi cicale dai calvi picchi.\n\nE andando nel sole che abbaglia\nsentire con triste meraviglia\ncom'è tutta la vita e il suo travaglio\nin questo seguitare una muraglia\nche ha in cima cocci aguzzi di bottiglia.",
+      "dateFatti": [
+        {
+          "anno": "1916",
+          "evento": "Composta — è uno dei testi più antichi della raccolta."
+        },
+        {
+          "anno": "1925",
+          "evento": "Pubblicata in Ossi di seppia."
+        }
+      ],
+      "domandeProf": [
+        "Perché Montale usa il verbo 'meriggiare' all'infinito?",
+        "Come si passa dalla descrizione del paesaggio alla riflessione esistenziale?",
+        "Cosa simboleggiano la muraglia e i cocci aguzzi di bottiglia?",
+        "Che funzione ha il mare visto tra i rami?",
+        "In che senso questa poesia è un esempio di correlativo oggettivo?"
+      ],
+      "paroleChiave": [
+        {
+          "termine": "muraglia",
+          "definizione": "Limite invalicabile dell'esistenza: l'uomo cammina lungo il muro senza poterlo superare."
+        },
+        {
+          "termine": "cocci aguzzi di bottiglia",
+          "definizione": "Frammenti taglienti in cima al muro: immagine concreta del dolore che impedisce ogni superamento."
+        },
+        {
+          "termine": "meriggiare",
+          "definizione": "Riposare nell'ora più calda del giorno: verbo all'infinito che rende l'esperienza universale e impersonale."
+        }
+      ]
+    },
+    {
+      "id": "spesso-il-male-di-vivere-ho-incontrato",
+      "titolo": "Spesso il male di vivere ho incontrato",
+      "autoreId": "montale",
+      "contesto": "Ossi di seppia, 1925 · poetica del male di vivere",
+      "tag": [
+        "ossi-di-seppia",
+        "male-di-vivere",
+        "correlativo-oggettivo",
+        "indifferenza"
+      ],
+      "puntiChiave": [
+        "È la poesia più chiara sulla poetica del male di vivere: lo definisce attraverso immagini concrete invece di dichiararlo astrattamente.",
+        "Tre correlativi del male: il rivo strozzato (vita oppressa), la foglia accartocciata (consumarsi), il cavallo stramazzato (crollo brutale).",
+        "L'unico bene possibile è l'indifferenza, definita 'divina' perché permette un distacco quasi sovrumano dal dolore.",
+        "Tre correlativi del bene: la statua (immobilità impassibile), la nuvola (leggerezza che scorre senza essere toccata), il falco alto nel cielo (visione superiore).",
+        "Struttura simmetrica e bilanciata: due strofe da quattro versi, tre immagini per il male e tre per l'indifferenza — l'opposizione regge tutto il testo.",
+        "L'indifferenza non è freddezza morale ma distanza protettiva, una forma di salvezza quasi impossibile per l'uomo comune."
+      ],
+      "collegamenti": [
+        {
+          "id": "montale",
+          "tipo": "autore",
+          "motivo": "torna all'autore per la centralità del male di vivere nella poetica"
+        },
+        {
+          "id": "meriggiare-pallido-e-assorto",
+          "tipo": "poesia",
+          "motivo": "altra poesia degli Ossi sul male di vivere espresso per immagini concrete"
+        },
+        {
+          "id": "non-chiederci-la-parola",
+          "tipo": "poesia",
+          "motivo": "stessa raccolta, stessa estetica della negazione e dell'antiretorica"
+        }
+      ],
+      "testo": "Spesso il male di vivere ho incontrato:\nera il rivo strozzato che gorgoglia,\nera l'incartocciarsi della foglia\nriarsa, era il cavallo stramazzato.\n\nBene non seppi, fuori del prodigio\nche schiude la divina Indifferenza:\nera la statua nella sonnolenza\ndel meriggio, e la nuvola, e il falco alto levato.",
+      "dateFatti": [
+        {
+          "anno": "1925",
+          "evento": "Pubblicata in Ossi di seppia, sezione omonima."
+        }
+      ],
+      "domandeProf": [
+        "Cosa intende Montale per male di vivere?",
+        "Spiega i tre correlativi oggettivi del male nella prima strofa.",
+        "Perché l'Indifferenza è definita 'divina'?",
+        "Come funziona la simmetria fra le due strofe (tre immagini + tre immagini)?",
+        "L'indifferenza montaliana è una forma di salvezza o di rinuncia?"
+      ],
+      "paroleChiave": [
+        {
+          "termine": "rivo strozzato",
+          "definizione": "Ruscello bloccato che gorgoglia ostruito: immagine concreta della vita oppressa e impedita."
+        },
+        {
+          "termine": "divina Indifferenza",
+          "definizione": "Distacco quasi sovrumano dal dolore, unico bene possibile contro il male di vivere."
+        },
+        {
+          "termine": "falco alto levato",
+          "definizione": "Rapace che vola in alto e osserva da lontano: simbolo della visione superiore e distaccata."
+        }
+      ]
+    },
+    {
+      "id": "ho-sceso-dandoti-il-braccio",
+      "titolo": "Ho sceso, dandoti il braccio",
+      "autoreId": "montale",
+      "contesto": "Satura, Xenia II, 1971 · memoria della moglie Mosca",
+      "tag": [
+        "satura",
+        "xenia",
+        "mosca",
+        "memoria",
+        "poesia-quotidiana"
+      ],
+      "puntiChiave": [
+        "Apertura: il poeta si rivolge alla moglie morta, Drusilla Tanzi (Mosca), in tono colloquiale e dimesso — niente più solennità.",
+        "Le 'scale' come simbolo concreto: il lungo cammino della vita condivisa, fatto di gesti minimi e quotidiani.",
+        "Rovesciamento al cuore della poesia: la moglie era miope, ma vedeva più in profondità di lui — paradosso della miopia come vista interiore.",
+        "Il poeta credeva di accompagnarla, ma in realtà era lei a guidare lui: scoperta postuma del proprio smarrimento.",
+        "Differenza con Clizia: Mosca non è la donna-angelo di Le occasioni, non è Beatrice — è una presenza concreta, quotidiana, con saggezza istintiva.",
+        "Cifra di Satura: tono prosastico, lessico colloquiale, abbandono dei grandi simboli — la poesia si avvicina alla prosa e al diario.",
+        "Chiusura: la moglie come autentica guida — la grandezza è nella normalità che dopo la sua morte rivela la propria indispensabilità."
+      ],
+      "collegamenti": [
+        {
+          "id": "montale",
+          "tipo": "autore",
+          "motivo": "torna all'autore per la svolta di Satura e Xenia"
+        },
+        {
+          "id": "non-chiederci-la-parola",
+          "tipo": "poesia",
+          "motivo": "confronto con il Montale degli Ossi: dalla negazione lirica alla quotidianità prosastica"
+        },
+        {
+          "id": "pascoli",
+          "tipo": "autore",
+          "motivo": "altro poeta del lutto domestico: parallelo e contrasto sulla figura femminile"
+        }
+      ],
+      "testo": "Ho sceso, dandoti il braccio, almeno un milione di scale\ne ora che non ci sei è il vuoto ad ogni gradino.\nAnche così è stato breve il nostro lungo viaggio.\nIl mio dura tuttora, né più mi occorrono\nle coincidenze, le prenotazioni,\nle trappole, gli scorni di chi crede\nche la realtà sia quella che si vede.\n\nHo sceso milioni di scale dandoti il braccio\nnon già perché con quattr'occhi forse si vede di più.\nCon te le ho scese perché sapevo che di noi due\nle sole vere pupille, sebbene tanto offuscate,\nerano le tue.",
+      "dateFatti": [
+        {
+          "anno": "1963",
+          "evento": "Muore Drusilla Tanzi, la moglie Mosca: trauma all'origine della sezione Xenia."
+        },
+        {
+          "anno": "1971",
+          "evento": "Pubblicata in Satura, sezione Xenia II."
+        }
+      ],
+      "domandeProf": [
+        "Cosa rappresenta l'immagine delle scale nella poesia?",
+        "Spiega il paradosso della miopia di Mosca come vista interiore.",
+        "Qual è la differenza fra Mosca (Xenia) e Clizia (Le occasioni)?",
+        "Perché si parla di svolta prosastica in Satura?",
+        "Come cambia la figura femminile rispetto alla tradizione della donna-angelo?"
+      ],
+      "paroleChiave": [
+        {
+          "termine": "Mosca",
+          "definizione": "Soprannome di Drusilla Tanzi, moglie di Montale, chiamata così per la forte miopia e gli occhiali spessi."
+        },
+        {
+          "termine": "Xenia",
+          "definizione": "Dal greco 'doni agli ospiti': sezione di Satura come piccoli doni poetici alla moglie scomparsa."
+        },
+        {
+          "termine": "vere pupille",
+          "definizione": "Paradosso finale: gli occhi offuscati di Mosca erano gli unici davvero capaci di vedere la realtà."
+        }
+      ]
+    },
+    {
+      "id": "lavandare",
+      "titolo": "Lavandare",
+      "autoreId": "pascoli",
+      "contesto": "Myricae, 1894 · simbolismo, abbandono, fonosimbolismo",
+      "tag": [
+        "myricae",
+        "abbandono",
+        "fonosimbolismo",
+        "paesaggio"
+      ],
+      "puntiChiave": [
+        "Apertura: madrigale di 11 versi (due terzine e una quartina), paesaggio autunnale fissato in pochi tocchi visivi e sonori.",
+        "Quadro iniziale: nel campo mezzo grigio e mezzo nero resta un aratro abbandonato, simbolo dell'assenza e della solitudine.",
+        "Scena centrale: sulle rive di un canale le lavandaie battono i panni con tonfi spessi e cantilenano lunghe cantilene.",
+        "Il canto popolare riportato è una rispetta marchigiano-romagnola sull'abbandono amoroso (la foglia, il vento di novembre).",
+        "Simbolismo: il paesaggio esterno si fa proiezione dell'interiorità — l'aratro vuoto e la canzone esprimono lo stesso vuoto del poeta.",
+        "Stile: nominale, frammentario, fonosimbolico (sciabordare, tonfi spessi), colori netti alla maniera impressionista.",
+        "Chiusura: tre soli oggetti (aratro, lavandaie, canto) bastano a costruire un'allegoria dell'abbandono universale."
+      ],
+      "collegamenti": [
+        {
+          "id": "pascoli",
+          "tipo": "autore",
+          "motivo": "esempio puro di poetica delle piccole cose e del fanciullino che vede simboli nel quotidiano"
+        },
+        {
+          "id": "x-agosto",
+          "tipo": "poesia",
+          "motivo": "altra Myricae costruita sul tema dell'attesa e dell'assenza che spezza il nido"
+        },
+        {
+          "id": "novembre",
+          "tipo": "poesia",
+          "motivo": "stesso paesaggio autunnale e stessa illusione della natura che nasconde la morte"
+        }
+      ],
+      "testo": "Nel campo mezzo grigio e mezzo nero\nresta un aratro senza buoi, che pare\ndimenticato, tra il vapor leggero.\n\nE cadenzato dalla gora viene\nlo sciabordare delle lavandare\ncon tonfi spessi e lunghe cantilene:\n\nIl vento soffia e nevica la frasca,\ne tu non torni ancora al tuo paese!\nquando partisti, come son rimasta!\ncome l'aratro in mezzo alla maggese.",
+      "dateFatti": [
+        {
+          "anno": "1894",
+          "evento": "Inserita nella seconda edizione di Myricae (la prima è del 1891)."
+        },
+        {
+          "anno": "1903",
+          "evento": "Confluisce nell'edizione definitiva di Myricae."
+        }
+      ],
+      "domandeProf": [
+        "Perché l'aratro abbandonato è la chiave simbolica della poesia?",
+        "Che funzione ha il canto popolare delle lavandaie nella struttura del testo?",
+        "Come funziona il fonosimbolismo nei versi 'sciabordare' e 'tonfi spessi'?",
+        "Perché si parla di poesia 'impressionista' per Lavandare?",
+        "Come si lega Lavandare al programma della poetica delle piccole cose (myricae)?"
+      ],
+      "paroleChiave": [
+        {
+          "termine": "maggese",
+          "definizione": "Campo lasciato a riposo per un anno: simbolo di sospensione e abbandono."
+        },
+        {
+          "termine": "gora",
+          "definizione": "Canale d'acqua per i lavatoi o per i mulini: luogo del lavoro femminile contadino."
+        },
+        {
+          "termine": "fonosimbolismo",
+          "definizione": "Suoni della parola che evocano direttamente il senso (sciabordare = rumore dei panni nell'acqua)."
+        }
+      ]
+    },
+    {
+      "id": "temporale",
+      "titolo": "Temporale",
+      "autoreId": "pascoli",
+      "contesto": "Myricae, 1894 · simbolismo, bozzetto impressionista",
+      "tag": [
+        "myricae",
+        "natura",
+        "impressionismo",
+        "fonosimbolismo"
+      ],
+      "puntiChiave": [
+        "Apertura: brevissimo bozzetto di 6 versi novenari, parte della sezione 'Tristezze' di Myricae.",
+        "Tecnica pittorica: tre colori netti — rosso dei nembi, nero del mare, bianco dell'ala del gabbiano.",
+        "Componente sonora: il 'bubbolìo lontano' del tuono apre la scena come un suono ovattato e minaccioso.",
+        "Casa-rifugio: 'come un'ala di gabbiano' una casa bianca lampeggia nel buio, simbolo di nido fragile contro la tempesta.",
+        "Stile: sintassi nominale pura, niente verbi finiti, accostamenti per giustapposizione cromatica e sonora.",
+        "Significato: minimalismo decadente — pochi tocchi bastano a evocare l'angoscia cosmica del temporale incombente.",
+        "Chiusura: si lega a Il lampo e Il tuono, formando con essi il piccolo trittico atmosferico di Myricae."
+      ],
+      "collegamenti": [
+        {
+          "id": "il-lampo",
+          "tipo": "poesia",
+          "motivo": "stesso trittico atmosferico di Myricae, stessa tecnica del bozzetto fulmineo"
+        },
+        {
+          "id": "il-tuono",
+          "tipo": "poesia",
+          "motivo": "chiude il trittico del temporale, stessa struttura sonora e simbolica"
+        },
+        {
+          "id": "pascoli",
+          "tipo": "autore",
+          "motivo": "esempio del fonosimbolismo e della sintassi nominale che Contini segnala come modernità"
+        }
+      ],
+      "testo": "Un bubbolìo lontano…\n\nRosseggia l'orizzonte,\ncome affocato, a mare:\nnero di pece, a monte,\nstracci di nubi chiare:\ntra il nero un casolare:\nun'ala di gabbiano.",
+      "dateFatti": [
+        {
+          "anno": "1894",
+          "evento": "Compare nella sezione 'Tristezze' di Myricae, seconda edizione."
+        },
+        {
+          "anno": "1903",
+          "evento": "Resta in tutte le edizioni successive di Myricae fino alla definitiva."
+        }
+      ],
+      "domandeProf": [
+        "Perché Temporale è considerata una poesia 'impressionista'?",
+        "Come funziona la triade cromatica rosso-nero-bianco?",
+        "Cosa simboleggia il casolare bianco 'come un'ala di gabbiano'?",
+        "Che effetto produce la sintassi nominale senza verbi finiti?",
+        "Come si collega Temporale agli altri due bozzetti Il lampo e Il tuono?"
+      ],
+      "paroleChiave": [
+        {
+          "termine": "bubbolìo",
+          "definizione": "Rumore sordo e ovattato del tuono lontano, parola fonosimbolica."
+        },
+        {
+          "termine": "casolare",
+          "definizione": "Piccola casa di campagna: simbolo del nido fragile minacciato dal temporale."
+        },
+        {
+          "termine": "sintassi nominale",
+          "definizione": "Costruzione per soli sostantivi senza verbi finiti: frammenta e visualizza la scena."
+        }
+      ]
+    },
+    {
+      "id": "il-lampo",
+      "titolo": "Il lampo",
+      "autoreId": "pascoli",
+      "contesto": "Myricae, 1894 · simbolismo, visione fulminea",
+      "tag": [
+        "myricae",
+        "natura",
+        "morte",
+        "fonosimbolismo"
+      ],
+      "puntiChiave": [
+        "Apertura: 8 versi novenari, parte del trittico atmosferico di Myricae con Temporale e Il tuono.",
+        "Scena: nella notte buia un lampo squarcia il cielo e illumina per un istante terra e cielo come due grandi occhi sbarrati.",
+        "Immagine centrale: una casa appare e scompare 'come un occhio, che, largo, esterrefatto, s'aprì si chiuse, nella notte nera'.",
+        "Analogia visionaria: il paesaggio si fa volto umano spaventato — la natura partecipa dello sgomento del poeta.",
+        "Simbolismo: il lampo è epifania improvvisa di una verità nascosta, ma rivela solo l'orrore di un mondo violento.",
+        "Stile: ripetizioni ('e cielo e terra'), aggettivazione esasperata ('bianca bianca'), sintassi spezzata da due punti.",
+        "Chiusura: l'apertura-chiusura dell'occhio-casa rimanda al lampo stesso, un attimo di rivelazione e poi di nuovo il buio."
+      ],
+      "collegamenti": [
+        {
+          "id": "il-tuono",
+          "tipo": "poesia",
+          "motivo": "secondo movimento del dittico: dopo la visione del lampo arriva il suono del tuono"
+        },
+        {
+          "id": "temporale",
+          "tipo": "poesia",
+          "motivo": "stesso trittico atmosferico, stessa tecnica del bozzetto simbolico"
+        },
+        {
+          "id": "pascoli",
+          "tipo": "autore",
+          "motivo": "esempio di analogia decadente: la natura come volto umano sconvolto"
+        }
+      ],
+      "testo": "E cielo e terra si mostrò qual era:\n\nla terra ansante, livida, in sussulto;\nil cielo ingombro, tragico, disfatto:\nbianca bianca nel tacito tumulto\nuna casa apparì sparì d'un tratto;\ncome un occhio, che, largo, esterrefatto,\ns'aprì si chiuse, nella notte nera.",
+      "dateFatti": [
+        {
+          "anno": "1894",
+          "evento": "Pubblicata nella seconda edizione di Myricae, sezione 'Tristezze'."
+        },
+        {
+          "anno": "1903",
+          "evento": "Confermata nell'edizione definitiva insieme al trittico Temporale-Il lampo-Il tuono."
+        }
+      ],
+      "domandeProf": [
+        "Perché la casa è paragonata a un occhio esterrefatto?",
+        "Come dialogano Il lampo e Il tuono come dittico?",
+        "Che effetto produce la geminazione 'bianca bianca'?",
+        "Qual è il rapporto fra visione e mistero nei bozzetti di Myricae?",
+        "Come si manifesta il simbolismo decadente in soli 8 versi?"
+      ],
+      "paroleChiave": [
+        {
+          "termine": "esterrefatto",
+          "definizione": "Sbalordito, terrorizzato: aggettivo che umanizza l'occhio-casa."
+        },
+        {
+          "termine": "analogia",
+          "definizione": "Accostamento intuitivo fra realtà diverse (casa = occhio), tipico del Simbolismo."
+        },
+        {
+          "termine": "epifania",
+          "definizione": "Rivelazione improvvisa di un senso nascosto, qui affidata al guizzo del lampo."
+        }
+      ]
+    },
+    {
+      "id": "il-tuono",
+      "titolo": "Il tuono",
+      "autoreId": "pascoli",
+      "contesto": "Myricae, 1894 · simbolismo, fonosimbolismo, nido",
+      "tag": [
+        "myricae",
+        "natura",
+        "nido",
+        "fonosimbolismo"
+      ],
+      "puntiChiave": [
+        "Apertura: 8 versi novenari, gemello di Il lampo — dopo la visione, arriva il suono.",
+        "Scena: nella notte nera 'come il nulla' un tuono rimbomba, rotola, rimbalza, si placa e poi torna a echeggiare.",
+        "Suono protagonista: il verso simula con la 'r' e i verbi onomatopeici ('rimbombò, rimbalzò, rotolò') il fragore che riempie il vuoto.",
+        "Chiusura sul nido: 'e poi tacque, e poi ruppe in un singulto; / e a vedersi obliate, a non ne pianti, / risero le stelle' — qui la versione canonica si chiude con il pianto di una madre e il dolce canto di una culla.",
+        "Simbolismo: il tuono spaventa, ma poi il canto materno riapre il nido — protezione fragile contro la violenza del cosmo.",
+        "Stile: paratassi, accumulo di verbi al passato remoto, fonosimbolismo basato sulla 'r' vibrante.",
+        "Chiusura: il dittico Lampo-Tuono mostra l'oscillazione pascoliana tra terrore cosmico e rifugio domestico."
+      ],
+      "collegamenti": [
+        {
+          "id": "il-lampo",
+          "tipo": "poesia",
+          "motivo": "prima parte del dittico: visione del lampo prima del suono del tuono"
+        },
+        {
+          "id": "temporale",
+          "tipo": "poesia",
+          "motivo": "stesso trittico atmosferico di Myricae"
+        },
+        {
+          "id": "pascoli",
+          "tipo": "autore",
+          "motivo": "manifesto del fonosimbolismo e del simbolo del nido materno"
+        }
+      ],
+      "testo": "E nella notte nera come il nulla,\na un tratto, col fragor d'arduo dirupo\nche frana, il tuono rimbombò di schianto:\nrimbombò, rimbalzò, rotolò cupo,\ne tacque, e poi rimareggiò rinfranto,\ne poi vanì. Soave allora un canto\ns'udì di madre, e il moto di una culla.",
+      "dateFatti": [
+        {
+          "anno": "1894",
+          "evento": "Compare nella seconda edizione di Myricae accanto a Il lampo e Temporale."
+        },
+        {
+          "anno": "1903",
+          "evento": "Mantenuta nell'edizione definitiva del 1903."
+        }
+      ],
+      "domandeProf": [
+        "Come si costruisce il fonosimbolismo nei verbi 'rimbombò, rimbalzò, rotolò'?",
+        "Qual è il significato della chiusa col canto di madre e la culla?",
+        "Perché Il lampo e Il tuono vanno letti insieme come dittico?",
+        "Che funzione ha il nido (culla, canto materno) come risposta al terrore cosmico?",
+        "Come si lega Il tuono al simbolismo di Lavandare e X Agosto?"
+      ],
+      "paroleChiave": [
+        {
+          "termine": "rimareggiò",
+          "definizione": "Risuonò di nuovo come un'onda di mare: neologismo fonosimbolico pascoliano."
+        },
+        {
+          "termine": "culla",
+          "definizione": "Simbolo del nido protettivo materno opposto al fragore del tuono."
+        },
+        {
+          "termine": "paratassi",
+          "definizione": "Sequenza di frasi coordinate per giustapposizione, senza subordinate."
+        }
+      ]
+    },
+    {
+      "id": "novembre",
+      "titolo": "Novembre",
+      "autoreId": "pascoli",
+      "contesto": "Myricae, 1891 · simbolismo, illusione, morte",
+      "tag": [
+        "myricae",
+        "natura",
+        "morte",
+        "estate-di-san-martino"
+      ],
+      "puntiChiave": [
+        "Apertura: tre strofe saffiche (endecasillabi + quinario) ispirate all'estate di San Martino in novembre.",
+        "Quadro illusorio: l'aria limpida, il sole, il profumo dell'albicocco fanno credere alla primavera.",
+        "Scarto improvviso: l'ultima strofa rovescia tutto — 'È l'estate, / fredda, dei morti', sintagma centrale della poesia.",
+        "Simbolismo della natura che inganna: la vita è solo apparenza, sotto c'è sempre la morte che incombe.",
+        "Suono finale: il 'cader fragile di foglie' chiude la poesia con un fonosimbolismo di leggerezza funebre.",
+        "Stile: lessico tecnico-botanico (albicocco, biancospino), latinismi ('asciutto', 'silenzio'), aggettivazione fredda.",
+        "Chiusura: una delle Myricae più dense — quattordici versi che incarnano la 'menzogna della natura consolatrice'."
+      ],
+      "collegamenti": [
+        {
+          "id": "lavandare",
+          "tipo": "poesia",
+          "motivo": "stessa stagione autunnale e stesso paesaggio simbolico di assenza"
+        },
+        {
+          "id": "pascoli",
+          "tipo": "autore",
+          "motivo": "esempio chiaro del decadentismo pascoliano: natura ambigua, morte sotto la superficie"
+        },
+        {
+          "id": "montale",
+          "tipo": "autore",
+          "motivo": "anticipa l'idea di natura come correlativo di un male di vivere"
+        }
+      ],
+      "testo": "Gemmea l'aria, il sole così chiaro\nche tu ricerchi gli albicocchi in fiore,\ne del prunalbo l'odorino amaro\nsenti nel cuore…\n\nMa secco è il pruno, e le stecchite piante\ndi nere trame segnano il sereno,\nvuoto il cielo, e cavo al piè sonante\nsembra il terreno.\n\nSilenzio, intorno: solo, alle ventate,\nodi lontano, da giardini ed orti,\ndi foglie un cader fragile. È l'estate,\nfredda, dei morti.",
+      "dateFatti": [
+        {
+          "anno": "1891",
+          "evento": "Pubblicata nella prima edizione di Myricae."
+        },
+        {
+          "anno": "1903",
+          "evento": "Confermata nell'edizione definitiva di Myricae."
+        }
+      ],
+      "domandeProf": [
+        "Come funziona il rovesciamento finale 'È l'estate, / fredda, dei morti'?",
+        "Perché Novembre è un esempio di 'natura che inganna' in Pascoli?",
+        "Che ruolo ha il lessico botanico preciso (albicocco, prunalbo)?",
+        "Come si lega l'estate di San Martino alla simbologia della morte?",
+        "Perché Novembre è considerata una delle Myricae più simboliste?"
+      ],
+      "paroleChiave": [
+        {
+          "termine": "gemmea",
+          "definizione": "Limpida come una gemma: latinismo prezioso che apre la falsa primavera."
+        },
+        {
+          "termine": "prunalbo",
+          "definizione": "Biancospino: pianta concreta che inganna con l'illusione del fiore."
+        },
+        {
+          "termine": "estate dei morti",
+          "definizione": "L'estate di San Martino in novembre: bella ma effimera, prossima alla morte invernale."
+        }
+      ]
+    },
+    {
+      "id": "il-gelsomino-notturno",
+      "titolo": "Il gelsomino notturno",
+      "autoreId": "pascoli",
+      "contesto": "Canti di Castelvecchio, 1903 · simbolismo, esclusione, eros velato",
+      "tag": [
+        "canti-di-castelvecchio",
+        "nido",
+        "simbolismo",
+        "eros"
+      ],
+      "puntiChiave": [
+        "Occasione: composta per le nozze dell'amico Gabriele Briganti (1901), dono nuziale del poeta.",
+        "Struttura: sei quartine di novenari, costruite su tre piani — il giardino notturno, la casa illuminata, il cielo stellato.",
+        "Scena esterna: si aprono i fiori del gelsomino, gli insetti notturni sciamano, le api tornano alle celle ma non trovano più posto.",
+        "Scena interna: in una casa lontana si vede un lume, ed è l'attimo della prima notte di nozze degli sposi.",
+        "Simbolismo erotico velato: il fiore che si schiude, gli insetti che penetrano, l'urna che si dischiude alludono all'atto sessuale.",
+        "Esclusione del poeta: Pascoli resta fuori, può solo guardare — il nido coniugale altrui gli è precluso per sempre.",
+        "Chiusura: 'È l'alba: si chiudono i petali / un poco gualciti; si cova, / dentro l'urna molle e segreta, / non so che felicità nuova.' — nasce un figlio, ma la nascita è sempre altrui."
+      ],
+      "collegamenti": [
+        {
+          "id": "pascoli",
+          "tipo": "autore",
+          "motivo": "manifesto della rinuncia alla vita adulta e dell'ossessione del nido"
+        },
+        {
+          "id": "x-agosto",
+          "tipo": "poesia",
+          "motivo": "altro grande testo del nido — qui non violato dall'esterno ma precluso al poeta stesso"
+        },
+        {
+          "id": "dannunzio",
+          "tipo": "autore",
+          "motivo": "contrasto netto col panismo erotico de La pioggia nel pineto: qui l'eros è guardato dal di fuori"
+        }
+      ],
+      "testo": "E s'aprono i fiori notturni,\nnell'ora che penso ai miei cari.\nSono apparse in mezzo ai viburni\nle farfalle crepuscolari.\n\nDa un pezzo si tacquero i gridi:\nlà sola una casa bisbiglia.\nSotto l'ali dormono i nidi,\ncome gli occhi sotto le ciglia.\n\nDai calici aperti si esala\nl'odore di fragole rosse.\nSplende un lume là nella sala.\nNasce l'erba sopra le fosse.\n\nUn'ape tardiva sussurra\ntrovando già prese le celle.\nLa Chioccetta per l'aia azzurra\nva col suo pigolio di stelle.\n\nPer tutta la notte s'esala\nl'odore che passa col vento.\nPassa il lume su per la scala;\nbrilla al primo piano: s'è spento…\n\nÈ l'alba: si chiudono i petali\nun poco gualciti; si cova,\ndentro l'urna molle e segreta,\nnon so che felicità nuova.",
+      "dateFatti": [
+        {
+          "anno": "1901",
+          "evento": "Composta per le nozze dell'amico Gabriele Briganti."
+        },
+        {
+          "anno": "1903",
+          "evento": "Pubblicata nei Canti di Castelvecchio."
+        }
+      ],
+      "domandeProf": [
+        "In che senso Il gelsomino notturno è una poesia 'erotica' senza nominare mai l'eros?",
+        "Cosa simboleggia l'ape che non trova più posto nelle celle?",
+        "Come si lega la chiusa 'felicità nuova' al tema della nascita e dell'esclusione del poeta?",
+        "Che ruolo ha la Chioccetta (Pleiadi) e il piano cosmico?",
+        "Perché questa è la poesia chiave del nido in Canti di Castelvecchio?"
+      ],
+      "paroleChiave": [
+        {
+          "termine": "Chioccetta",
+          "definizione": "Nome popolare delle Pleiadi: piccola costellazione associata alla covata, simbolo materno-cosmico."
+        },
+        {
+          "termine": "urna molle e segreta",
+          "definizione": "Il calice del gelsomino: simbolo velato del grembo femminile e del concepimento."
+        },
+        {
+          "termine": "celle",
+          "definizione": "Le cellette dell'alveare: simbolo del nido coniugale già occupato, da cui l'ape (il poeta) è esclusa."
+        }
+      ]
+    },
+    {
+      "id": "la-mia-sera",
+      "titolo": "La mia sera",
+      "autoreId": "pascoli",
+      "contesto": "Canti di Castelvecchio, 1903 · simbolismo, vecchiaia, quiete",
+      "tag": [
+        "canti-di-castelvecchio",
+        "nido",
+        "vecchiaia",
+        "fonosimbolismo"
+      ],
+      "puntiChiave": [
+        "Apertura: cinque strofe di novenari e quinari — dopo una giornata di temporali, torna la quiete della sera.",
+        "Quadro naturale: i lampi tacciono, le rane gracidano, le stelle si accendono, le campane suonano lontano.",
+        "Allegoria: la sera è la vecchiaia del poeta — dopo una vita di lutti e tempeste, arriva una pace stanca.",
+        "Rima-chiave: 'sera / serenità' / 'sera / nera' — il suono regge tutto il senso del testo.",
+        "Ritorno al nido: nella chiusa la madre invisibile canta una ninna nanna che culla il poeta-bambino verso il sonno.",
+        "Stile: fonosimbolismo dolce, lessico infantile ('don don'), regressione del poeta adulto al fanciullo che si addormenta.",
+        "Chiusura: la sera non è felicità ma esaurimento accettato — la morte è attesa come ultima ninna nanna."
+      ],
+      "collegamenti": [
+        {
+          "id": "pascoli",
+          "tipo": "autore",
+          "motivo": "testamento poetico: il nido materno ricostruito alla fine della vita"
+        },
+        {
+          "id": "il-gelsomino-notturno",
+          "tipo": "poesia",
+          "motivo": "altra grande poesia notturna dei Canti di Castelvecchio, simmetrica per atmosfera"
+        },
+        {
+          "id": "x-agosto",
+          "tipo": "poesia",
+          "motivo": "il cerchio si chiude: dal padre ucciso nella notte alla madre che canta nella sera"
+        }
+      ],
+      "testo": "Il giorno fu pieno di lampi;\nma ora verranno le stelle,\nle tacite stelle. Nei campi\nc'è un breve gre gre di ranelle.\nLe tremule foglie dei pioppi\ntrascorre una gioia leggera.\nNel giorno, che lampi! che scoppi!\nChe pace, la sera!\n\nSi devono aprire le stelle\nnel cielo sì tenero e vivo.\nLà, presso le allegre ranelle,\nsinghiozza monotono un rivo.\nDi tutto quel cupo tumulto,\ndi tutta quell'aspra bufera,\nnon resta che un dolce singulto\nnell'umida sera.\n\nÈ, quella infinita tempesta,\nfinita in un rivo canoro.\nDei fulmini fragili restano\ncirruli ed irridescenze d'oro.\nO stanco dolore, riposa!\nLa nube nel giorno più nera\nfu quella che vedo più rosa\nnell'ultima sera.\n\nChe voli di rondini intorno!\nChe gridi nell'aria serena!\nLa fame del povero giorno\nprolunga la garrula cena.\nLa parte, sì piccola, i nidi\nnel giorno non l'ebbero intera.\nNé io… e che voli, che gridi,\nmia limpida sera!\n\nDon… Don… E mi dicono, Dormi!\nmi cantano, Dormi! sussurrano,\nDormi! bisbigliano, Dormi!\nlà, voci di tenebra azzurra…\nMi sembrano canti di culla,\nche fanno ch'io torni com'era…\nsentivo mia madre… poi nulla…\nsul far della sera.",
+      "dateFatti": [
+        {
+          "anno": "1900",
+          "evento": "Composizione attribuita al periodo di Castelvecchio."
+        },
+        {
+          "anno": "1903",
+          "evento": "Pubblicata nei Canti di Castelvecchio come uno dei testi-chiave della raccolta."
+        }
+      ],
+      "domandeProf": [
+        "Cosa simboleggia la sera nella poesia? Perché non è semplice quiete ma stanchezza?",
+        "Come funziona la rima sera/serenità come perno del testo?",
+        "Che ruolo ha il 'don don' delle campane e la regressione infantile nell'ultima strofa?",
+        "Come si lega La mia sera a Il gelsomino notturno nel disegno dei Canti di Castelvecchio?",
+        "Perché si parla di 'testamento poetico' pascoliano per questo testo?"
+      ],
+      "paroleChiave": [
+        {
+          "termine": "sera",
+          "definizione": "Doppio simbolo: fine della giornata e vecchiaia del poeta, attesa serena della morte."
+        },
+        {
+          "termine": "gre gre",
+          "definizione": "Onomatopea del gracidio delle rane: fonosimbolismo regressivo, infantile."
+        },
+        {
+          "termine": "ninna nanna",
+          "definizione": "Schema metrico e tematico finale: il poeta-bambino si addormenta cullato dalla madre."
+        },
+        {
+          "termine": "Castelvecchio",
+          "definizione": "Casa-nido del poeta in Garfagnana, luogo della pacificazione e della scrittura tarda."
+        }
+      ]
+    },
+    {
+      "id": "veglia",
+      "titolo": "Veglia",
+      "autoreId": "ungaretti",
+      "contesto": "L'Allegria, 1916 · Cima Quattro 23 dicembre 1915",
+      "tag": [
+        "allegria",
+        "guerra",
+        "carso",
+        "morte-vita"
+      ],
+      "puntiChiave": [
+        "Apertura: una notte di trincea passata accanto al cadavere di un compagno ucciso — situazione concretissima, datata e localizzata come una pagina di diario.",
+        "Prima parte: l'orrore fisico della morte — corpo massacrato, bocca digrignata volta al plenilunio, mani penetrate nel silenzio.",
+        "Svolta capovolgente: proprio davanti alla morte il poeta scrive lettere piene d'amore e scopre un fortissimo attaccamento alla vita.",
+        "Tema chiave: dalla morte nasce la coscienza del valore della vita — è il nucleo paradossale dell'Allegria.",
+        "Stile: participi violenti (massacrato, digrignata), versicoli, assenza di punteggiatura, pause bianche cariche di tensione.",
+        "Chiusura: la dichiarazione finale 'Non sono mai stato / tanto / attaccato alla vita' come folgorazione esistenziale."
+      ],
+      "collegamenti": [
+        {
+          "id": "ungaretti",
+          "tipo": "autore",
+          "motivo": "torna all'autore per la poetica della parola essenziale"
+        },
+        {
+          "id": "fratelli",
+          "tipo": "poesia",
+          "motivo": "altra notte di trincea: la scoperta della fragilità comune"
+        },
+        {
+          "id": "sono-una-creatura",
+          "tipo": "poesia",
+          "motivo": "rovescio di Veglia: qui il dolore prosciuga la vita invece di esaltarla"
+        }
+      ],
+      "testo": "Un'intera nottata\nbuttato vicino\na un compagno\nmassacrato\ncon la sua bocca\ndigrignata\nvolta al plenilunio\ncon la congestione\ndelle sue mani\npenetrata\nnel mio silenzio\nho scritto\nlettere piene d'amore\n\nNon sono mai stato\ntanto\nattaccato alla vita",
+      "dateFatti": [
+        {
+          "anno": "1915",
+          "evento": "23 dicembre: composta a Cima Quattro, sul fronte del Carso."
+        },
+        {
+          "anno": "1916",
+          "evento": "Pubblicata ne Il porto sepolto."
+        }
+      ],
+      "domandeProf": [
+        "Perché proprio davanti al cadavere il poeta dice di essere così attaccato alla vita?",
+        "Come funziona il contrasto tra prima e seconda parte della poesia?",
+        "Che valore hanno i participi 'massacrato' e 'digrignata' nello stile di Ungaretti?",
+        "In che senso Veglia rappresenta il nucleo paradossale del titolo L'Allegria?"
+      ],
+      "paroleChiave": [
+        {
+          "termine": "veglia",
+          "definizione": "Notte trascorsa accanto al morto: rito antico che qui diventa esperienza di rivelazione."
+        },
+        {
+          "termine": "plenilunio",
+          "definizione": "Luna piena indifferente che illumina il cadavere — natura muta davanti all'orrore."
+        },
+        {
+          "termine": "attaccamento alla vita",
+          "definizione": "Reazione vitale incontenibile che nasce dal contatto diretto con la morte."
+        }
+      ]
+    },
+    {
+      "id": "fratelli",
+      "titolo": "Fratelli",
+      "autoreId": "ungaretti",
+      "contesto": "L'Allegria, 1916 · Mariano 15 luglio 1916",
+      "tag": [
+        "allegria",
+        "guerra",
+        "carso",
+        "fratellanza"
+      ],
+      "puntiChiave": [
+        "Situazione: nella notte di trincea due reparti si incontrano e qualcuno grida 'Fratelli' — la parola arriva nel buio come scoperta improvvisa.",
+        "Tema centrale: la fratellanza degli uomini di fronte alla morte, una solidarietà elementare che precede ogni divisione di schieramento.",
+        "Immagine chiave: la parola 'fratelli' come 'foglia appena nata', fragile e tremante — la stessa fragilità della vita in trincea.",
+        "Stile: parola isolata che porta da sola tutto il peso, allitterazioni sottili, ripetizione di 'fratelli' come scoperta che si rinnova.",
+        "Chiusura: la guerra che dovrebbe opporre gli uomini fa emergere invece la coscienza di una comune fragilità."
+      ],
+      "collegamenti": [
+        {
+          "id": "ungaretti",
+          "tipo": "autore",
+          "motivo": "manifesto della parola isolata come scoperta esistenziale"
+        },
+        {
+          "id": "veglia",
+          "tipo": "poesia",
+          "motivo": "altra rivelazione notturna in trincea: la vita riscoperta nell'orrore"
+        },
+        {
+          "id": "soldati",
+          "tipo": "poesia",
+          "motivo": "stessa analogia foglia-uomo, stessa fragilità condivisa"
+        }
+      ],
+      "testo": "Di che reggimento siete\nfratelli?\n\nParola tremante\nnella notte\n\nFoglia appena nata\n\nNell'aria spasimante\ninvolontaria rivolta\ndell'uomo presente alla sua\nfragilità\n\nFratelli",
+      "dateFatti": [
+        {
+          "anno": "1916",
+          "evento": "15 luglio: composta a Mariano, sul Carso."
+        },
+        {
+          "anno": "1916",
+          "evento": "Pubblicata ne Il porto sepolto."
+        }
+      ],
+      "domandeProf": [
+        "Perché la parola 'fratelli' viene paragonata a una 'foglia appena nata'?",
+        "Che senso ha che la parola compaia all'inizio in forma di domanda e poi torni isolata alla fine?",
+        "Come si lega Fratelli al titolo dell'opera, L'Allegria?",
+        "In che modo questa poesia esprime la poetica della parola essenziale?"
+      ],
+      "paroleChiave": [
+        {
+          "termine": "fratelli",
+          "definizione": "Parola-grido che riconosce nei soldati nemici la stessa fragilità umana."
+        },
+        {
+          "termine": "foglia appena nata",
+          "definizione": "Analogia per la parola: fragile, tenera, appena affiorata alla vita."
+        },
+        {
+          "termine": "involontaria rivolta",
+          "definizione": "Reazione istintiva dell'uomo che si scopre esposto alla propria fragilità."
+        }
+      ]
+    },
+    {
+      "id": "soldati",
+      "titolo": "Soldati",
+      "autoreId": "ungaretti",
+      "contesto": "L'Allegria, 1918 · Bosco di Courton luglio 1918",
+      "tag": [
+        "allegria",
+        "guerra",
+        "francia",
+        "analogia"
+      ],
+      "puntiChiave": [
+        "Brevità estrema: quattro versi, una sola analogia — è una delle poesie più concentrate di tutta la letteratura italiana.",
+        "Analogia centrale: i soldati stanno alla vita come le foglie d'autunno stanno al ramo — basta un soffio per cadere.",
+        "Importanza del titolo: senza 'Soldati' come primo termine del paragone la poesia resterebbe enigmatica.",
+        "Significato universale: la precarietà dei soldati diventa immagine della precarietà di tutti gli uomini.",
+        "Stile: forma impersonale 'si sta', niente verbi forti, musicalità ottenuta con pochissimi elementi e con il bianco della pagina."
+      ],
+      "collegamenti": [
+        {
+          "id": "ungaretti",
+          "tipo": "autore",
+          "motivo": "massima sintesi della poetica della parola essenziale e dell'analogia"
+        },
+        {
+          "id": "fratelli",
+          "tipo": "poesia",
+          "motivo": "stessa fragilità della vita in trincea, stessa immagine vegetale"
+        }
+      ],
+      "testo": "Si sta come\nd'autunno\nsugli alberi\nle foglie",
+      "dateFatti": [
+        {
+          "anno": "1918",
+          "evento": "Luglio: composta al Bosco di Courton, fronte francese."
+        },
+        {
+          "anno": "1931",
+          "evento": "Confluisce ne L'Allegria nella sezione Girovago."
+        }
+      ],
+      "domandeProf": [
+        "Perché il titolo è decisivo per capire la poesia?",
+        "Come funziona qui l'analogia ungarettiana?",
+        "Perché si può dire che la brevità non è povertà ma concentrazione?",
+        "Quale concezione della vita emerge da questi quattro versi?"
+      ],
+      "paroleChiave": [
+        {
+          "termine": "analogia",
+          "definizione": "Accostamento intuitivo tra soldati e foglie autunnali, senza spiegazioni logiche."
+        },
+        {
+          "termine": "precarietà",
+          "definizione": "Condizione di chi è appeso alla vita come una foglia al ramo."
+        }
+      ]
+    },
+    {
+      "id": "san-martino-del-carso",
+      "titolo": "San Martino del Carso",
+      "autoreId": "ungaretti",
+      "contesto": "L'Allegria, 1916 · Valloncello dell'Albero Isolato 27 agosto 1916",
+      "tag": [
+        "allegria",
+        "guerra",
+        "carso",
+        "memoria"
+      ],
+      "puntiChiave": [
+        "Situazione: il paese di San Martino del Carso è stato raso al suolo dai bombardamenti — restano solo brandelli di muro.",
+        "Analogia portante: il paese distrutto è il poeta — la geografia esterna si rovescia in geografia interiore.",
+        "Struttura simmetrica: due quartine parallele sul paese, due sui compagni morti, poi la chiusura sul cuore.",
+        "Chiusura folgorante: 'Il mio cuore / è il paese più straziato' — il cuore diventa cimitero della memoria, più devastato del paese stesso.",
+        "Stile: parole semplici, ripetizioni, sottrazione totale di retorica, niente descrizione patetica delle rovine.",
+        "Tema: la memoria come unico modo per salvare i morti dalla distruzione."
+      ],
+      "collegamenti": [
+        {
+          "id": "ungaretti",
+          "tipo": "autore",
+          "motivo": "torna all'autore per la poetica della guerra e dell'analogia"
+        },
+        {
+          "id": "sono-una-creatura",
+          "tipo": "poesia",
+          "motivo": "altro Carso come correlativo interiore del dolore"
+        },
+        {
+          "id": "pellegrinaggio",
+          "tipo": "poesia",
+          "motivo": "stesso paesaggio devastato come spazio del dolore"
+        }
+      ],
+      "testo": "Di queste case\nnon è rimasto\nche qualche\nbrandello di muro\n\nDi tanti\nche mi corrispondevano\nnon è rimasto\nneppure tanto\n\nMa nel cuore\nnessuna croce manca\n\nÈ il mio cuore\nil paese più straziato",
+      "dateFatti": [
+        {
+          "anno": "1916",
+          "evento": "27 agosto: composta al Valloncello dell'Albero Isolato, sul Carso."
+        },
+        {
+          "anno": "1916",
+          "evento": "Pubblicata ne Il porto sepolto."
+        }
+      ],
+      "domandeProf": [
+        "Come funziona l'analogia tra il paese distrutto e il cuore del poeta?",
+        "Perché la chiusura 'il paese più straziato' è il vero centro della poesia?",
+        "Che ruolo ha la simmetria tra le strofe sul paese e quelle sui compagni?",
+        "In che senso il cuore diventa cimitero della memoria?"
+      ],
+      "paroleChiave": [
+        {
+          "termine": "brandelli di muro",
+          "definizione": "Resti del paese bombardato: immagine secca della distruzione bellica."
+        },
+        {
+          "termine": "corrispondevano",
+          "definizione": "I compagni che gli erano legati da affetto e scambio, ora morti."
+        },
+        {
+          "termine": "paese straziato",
+          "definizione": "Il cuore del poeta come luogo interiore devastato più del paese reale."
+        }
+      ]
+    },
+    {
+      "id": "sono-una-creatura",
+      "titolo": "Sono una creatura",
+      "autoreId": "ungaretti",
+      "contesto": "L'Allegria, 1916 · Valloncello di Cima Quattro 5 agosto 1916",
+      "tag": [
+        "allegria",
+        "guerra",
+        "carso",
+        "dolore"
+      ],
+      "puntiChiave": [
+        "Analogia centrale: il paesaggio arido e pietroso del Carso diventa immagine del dolore interiore del poeta.",
+        "Immagine chiave: la pietra del Monte San Michele, fredda, dura, prosciugata come il pianto del poeta.",
+        "Tema: vivere significa soffrire — il dolore è così profondo che non riesce nemmeno a trasformarsi in lacrime.",
+        "Chiusura paradossale: la morte appare come possibile riposo, 'si sconta vivendo' — formula che fa eco a una visione religioso-tragica della vita.",
+        "Stile: pietra-poeta in parallelismo serrato, ripetizioni martellanti, sintassi minima.",
+        "Collegamento con Pellegrinaggio: stessa idea della vita come cammino doloroso, stessa pietra del Carso come correlativo del dolore."
+      ],
+      "collegamenti": [
+        {
+          "id": "ungaretti",
+          "tipo": "autore",
+          "motivo": "torna all'autore per la poetica del paesaggio come correlativo interiore"
+        },
+        {
+          "id": "san-martino-del-carso",
+          "tipo": "poesia",
+          "motivo": "stesso Carso, stessa analogia tra paesaggio e cuore"
+        },
+        {
+          "id": "pellegrinaggio",
+          "tipo": "poesia",
+          "motivo": "stessa idea della vita come pena da scontare camminando"
+        }
+      ],
+      "testo": "Come questa pietra\ndel S. Michele\ncosì fredda\ncosì dura\ncosì prosciugata\ncosì refrattaria\ncosì totalmente\ndisanimata\n\nCome questa pietra\nè il mio pianto\nche non si vede\n\nLa morte\nsi sconta\nvivendo",
+      "dateFatti": [
+        {
+          "anno": "1916",
+          "evento": "5 agosto: composta al Valloncello di Cima Quattro, sul Carso."
+        },
+        {
+          "anno": "1916",
+          "evento": "Pubblicata ne Il porto sepolto."
+        }
+      ],
+      "domandeProf": [
+        "Perché la pietra del San Michele diventa simbolo del dolore?",
+        "Come va interpretata la chiusura 'La morte / si sconta / vivendo'?",
+        "Che rapporto c'è tra paesaggio esterno e interiorità in questa poesia?",
+        "Confronta Sono una creatura con Veglia: cosa cambia nel rapporto vita-morte?"
+      ],
+      "paroleChiave": [
+        {
+          "termine": "pietra del San Michele",
+          "definizione": "Roccia del Carso che diventa immagine del cuore disseccato dal dolore."
+        },
+        {
+          "termine": "disanimata",
+          "definizione": "Senza anima, priva di vita — qualità della pietra trasferita all'interiorità del poeta."
+        },
+        {
+          "termine": "si sconta vivendo",
+          "definizione": "Formula che concepisce la vita come pena da espiare, già anticipo della morte."
+        }
+      ]
+    },
+    {
+      "id": "i-fiumi",
+      "titolo": "I fiumi",
+      "autoreId": "ungaretti",
+      "contesto": "L'Allegria, 1916 · Cotici 16 agosto 1916",
+      "tag": [
+        "allegria",
+        "guerra",
+        "carso",
+        "memoria",
+        "identita"
+      ],
+      "puntiChiave": [
+        "Situazione: dopo un assalto il poeta si immerge nell'Isonzo come in un battesimo — il contatto con l'acqua riapre la memoria.",
+        "I quattro fiumi della vita: Serchio (origini toscane familiari), Nilo (infanzia in Egitto), Senna (formazione a Parigi), Isonzo (la guerra del Carso).",
+        "Tema centrale: i fiumi come tappe biografiche — l'acqua ricompone l'identità frammentata del poeta.",
+        "Significato spirituale: immerso nell'Isonzo si sente 'una docile fibra dell'universo', in armonia momentanea con il cosmo.",
+        "Differenza dalle poesie brevi della trincea: qui Ungaretti distende il verso e costruisce una vera autobiografia per immagini d'acqua.",
+        "Stile: pur essendo lunga, conserva versi spezzati, analogie, assenza di punteggiatura forte — il diario poetico si fa meditazione.",
+        "Chiusura: la nostalgia ('la mia nostalgia') torna come tessuto di vita, ma il momento dell'immersione resta epifania."
+      ],
+      "collegamenti": [
+        {
+          "id": "ungaretti",
+          "tipo": "autore",
+          "motivo": "poesia-bilancio dell'intera biografia del poeta"
+        },
+        {
+          "id": "veglia",
+          "tipo": "poesia",
+          "motivo": "stesso contesto di trincea, ma qui la rivelazione è di armonia, non di orrore"
+        },
+        {
+          "id": "il-porto-sepolto",
+          "tipo": "poesia",
+          "motivo": "stesso scavo nella memoria e nel proprio passato profondo"
+        }
+      ],
+      "testo": "Mi tengo a quest'albero mutilato\nabbandonato in questa dolina\nche ha il languore\ndi un circo\nprima o dopo lo spettacolo\ne guardo\nil passaggio quieto\ndelle nuvole sulla luna\n\nStamani mi sono disteso\nin un'urna d'acqua\ne come una reliquia\nho riposato\n\n[…]\n\nQuesto è l'Isonzo\ne qui meglio\nmi sono riconosciuto\nuna docile fibra\ndell'universo\n\nIl mio supplizio\nè quando\nnon mi credo\nin armonia\n\n[…]\n\nQuesti sono\ni miei fiumi\n\nQuesto è il Serchio\nal quale hanno attinto\nduemil'anni forse\ndi gente mia campagnola\ne mio padre e mia madre\n\nQuesto è il Nilo\nche mi ha visto\nnascere e crescere\ne ardere d'inconsapevolezza\nnelle distese pianure\n\nQuesta è la Senna\ne in quel suo torbido\nmi sono rimescolato\ne mi sono conosciuto\n\nQuesti sono i miei fiumi\ncontati nell'Isonzo\n\nQuesta è la mia nostalgia\nche in ognuno\nmi traspare\nora ch'è notte\nche la mia vita mi pare\nuna corolla\ndi tenebre",
+      "dateFatti": [
+        {
+          "anno": "1916",
+          "evento": "16 agosto: composta a Cotici, sul Carso, dopo un'azione militare."
+        },
+        {
+          "anno": "1916",
+          "evento": "Pubblicata ne Il porto sepolto."
+        }
+      ],
+      "domandeProf": [
+        "Perché i quattro fiumi e in che ordine vanno raccontati?",
+        "Che valore ha l'immersione nell'Isonzo: battesimo, purificazione, riconoscimento?",
+        "Come si lega questa poesia all'idea di scavo e di porto sepolto?",
+        "Perché I fiumi è una poesia diversa dalle altre brevi dell'Allegria?",
+        "Che cosa significa sentirsi 'docile fibra dell'universo'?"
+      ],
+      "paroleChiave": [
+        {
+          "termine": "i quattro fiumi",
+          "definizione": "Serchio, Nilo, Senna, Isonzo: le tappe geografiche e biografiche del poeta."
+        },
+        {
+          "termine": "urna d'acqua",
+          "definizione": "Immagine sacrale dell'Isonzo: il poeta vi si distende come reliquia."
+        },
+        {
+          "termine": "docile fibra dell'universo",
+          "definizione": "Coscienza di essere parte armonica del cosmo, raggiunta per un istante nell'acqua."
+        },
+        {
+          "termine": "corolla di tenebre",
+          "definizione": "Metafora finale: la vita come fiore notturno, bellezza e oscurità insieme."
+        }
+      ]
+    },
+    {
+      "id": "il-porto-sepolto",
+      "titolo": "Il porto sepolto",
+      "autoreId": "ungaretti",
+      "contesto": "L'Allegria, 1916 · Mariano 29 giugno 1916",
+      "tag": [
+        "allegria",
+        "guerra",
+        "poetica",
+        "memoria"
+      ],
+      "puntiChiave": [
+        "Poesia-manifesto della poetica ungarettiana: dà il titolo alla raccolta del 1916.",
+        "Doppio significato del titolo: in senso biografico è l'antico porto tolemaico sommerso che ad Alessandria d'Egitto gli avevano descritto; in senso simbolico è il segreto profondo dell'uomo.",
+        "Il poeta come palombaro: scende nell'abisso interiore, raggiunge il porto sepolto e riemerge con frammenti di canto.",
+        "Tema della verità parziale: dalla discesa non si torna con una verità totale ma con 'schegge di assoluto'.",
+        "Chiusura: ciò che resta è 'un nulla / d'inesauribile segreto' — la poesia rivela e insieme custodisce il mistero.",
+        "Stile: pochi versi, parola isolata, sospensione — coerente con l'idea che la verità si dice per allusione, non per descrizione."
+      ],
+      "collegamenti": [
+        {
+          "id": "ungaretti",
+          "tipo": "autore",
+          "motivo": "testo programmatico per capire la poetica dello scavo"
+        },
+        {
+          "id": "i-fiumi",
+          "tipo": "poesia",
+          "motivo": "stessa discesa nel proprio passato profondo, qui per via di acqua e memoria"
+        }
+      ],
+      "testo": "Vi arriva il poeta\ne poi torna alla luce con i suoi canti\ne li disperde\n\nDi questa poesia\nmi resta\nquel nulla\nd'inesauribile segreto",
+      "dateFatti": [
+        {
+          "anno": "1916",
+          "evento": "29 giugno: composta a Mariano, sul Carso."
+        },
+        {
+          "anno": "1916",
+          "evento": "Dà il titolo alla raccolta Il porto sepolto, stampata in 80 copie da Ettore Serra."
+        }
+      ],
+      "domandeProf": [
+        "Cosa rappresenta il porto sepolto in senso biografico e in senso simbolico?",
+        "Perché il poeta 'disperde' i canti dopo averli riportati alla luce?",
+        "Cosa significa 'un nulla / d'inesauribile segreto'?",
+        "In che senso questa poesia è il manifesto della poetica dello scavo?"
+      ],
+      "paroleChiave": [
+        {
+          "termine": "porto sepolto",
+          "definizione": "Luogo nascosto della verità, antico porto sommerso e segreto interiore del poeta."
+        },
+        {
+          "termine": "scavo",
+          "definizione": "Discesa interiore del poeta per riportare alla luce frammenti di senso."
+        },
+        {
+          "termine": "inesauribile segreto",
+          "definizione": "Mistero che la poesia sfiora senza mai esaurire: ciò che resta dopo i versi."
+        }
+      ]
+    },
+    {
+      "id": "pellegrinaggio",
+      "titolo": "Pellegrinaggio",
+      "autoreId": "ungaretti",
+      "contesto": "L'Allegria, 1916 · Valloncello dell'Albero Isolato 16 agosto 1916",
+      "tag": [
+        "allegria",
+        "guerra",
+        "carso",
+        "dolore"
+      ],
+      "puntiChiave": [
+        "Situazione: il poeta-soldato si trascina nella trincea fangosa tra macerie e distruzione.",
+        "Titolo come metafora: il cammino fisico del soldato è anche cammino interiore attraverso il dolore — il pellegrinaggio non ha santuario.",
+        "Immagine chiave: 'Ungaretti / uomo di pena' — il poeta si firma come creatura ferita, in una dimensione quasi cristologica.",
+        "Tema: sofferenza, fatica e resistenza si intrecciano alla ricerca di una luce lontana ('un'illusione') che giustifichi il passo successivo.",
+        "Stile: versi brevi, ripetizioni del trascinarsi, pause bianche che mimano la fatica del passo.",
+        "Chiusura: il riflettore della trincea, miraggio mare, è l'unica luce a cui aggrapparsi — non salvezza, ma illusione di salvezza."
+      ],
+      "collegamenti": [
+        {
+          "id": "ungaretti",
+          "tipo": "autore",
+          "motivo": "torna all'autore per il tema della vita come cammino di pena"
+        },
+        {
+          "id": "sono-una-creatura",
+          "tipo": "poesia",
+          "motivo": "stessa idea della vita come pena da scontare, stesso Carso"
+        },
+        {
+          "id": "san-martino-del-carso",
+          "tipo": "poesia",
+          "motivo": "stesso paesaggio devastato come spazio del cammino"
+        }
+      ],
+      "testo": "In agguato\nin queste budella\ndi macerie\nore e ore\nho strascicato\nla mia carcassa\nusata dal fango\ncome una suola\no come un seme\ndi spinalba\n\nUngaretti\nuomo di pena\nti basta un'illusione\nper farti coraggio\n\nUn riflettore\ndi là\nmette un mare\nnella nebbia",
+      "dateFatti": [
+        {
+          "anno": "1916",
+          "evento": "16 agosto: composta al Valloncello dell'Albero Isolato, sul Carso."
+        },
+        {
+          "anno": "1916",
+          "evento": "Pubblicata ne Il porto sepolto."
+        }
+      ],
+      "domandeProf": [
+        "Perché il titolo Pellegrinaggio è una metafora e non una descrizione?",
+        "Cosa significa la firma 'Ungaretti / uomo di pena'?",
+        "Che funzione ha il riflettore nella chiusura?",
+        "Come si lega Pellegrinaggio alle altre poesie del Carso (San Martino, Sono una creatura)?"
+      ],
+      "paroleChiave": [
+        {
+          "termine": "pellegrinaggio",
+          "definizione": "Cammino di sofferenza nella trincea, metafora della vita come prova senza santuario."
+        },
+        {
+          "termine": "uomo di pena",
+          "definizione": "Auto-definizione del poeta come creatura ferita, eco di sapore cristologico."
+        },
+        {
+          "termine": "illusione",
+          "definizione": "Miraggio (qui il riflettore-mare) che basta a fare coraggio nel buio."
+        }
       ]
     }
   ]
