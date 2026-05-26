@@ -7,6 +7,14 @@ tags:
 
 Lo stalinismo nasce dopo la Rivoluzione russa e la guerra civile, quando l'URSS deve scegliere come costruire il socialismo in un paese ancora agricolo e isolato. La successione a Lenin diventa quindi insieme lotta personale per il potere e scelta di modello economico-politico: pianificazione forzata, controllo del partito e repressione.
 
+## Filo logico
+
+- Dopo Lenin, la domanda è doppia: chi guida il partito e quale strada prende l'URSS.
+- Stalin vince perché controlla la burocrazia del partito e isola i rivali uno alla volta.
+- Una volta al potere abbandona la NEP: industrializzazione e collettivizzazione servono a rendere l'URSS una potenza moderna.
+- Il prezzo è enorme: requisizioni, carestie, deportazioni, gulag e Grande Terrore eliminano ogni opposizione reale o presunta.
+- In politica estera l'URSS passa dall'isolamento ai fronti antifascisti, poi al patto con Hitler per guadagnare tempo.
+
 ## 1. L'ascesa di Stalin
 
 **Lenin muore il 21 gennaio 1924**, dopo una serie di ictus che lo avevano già reso inabile dal 1922.

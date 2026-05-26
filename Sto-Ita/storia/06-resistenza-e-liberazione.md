@@ -5,6 +5,14 @@ tags:
 
 # La Resistenza italiana e la Liberazione (1943-1945)
 
+## Filo logico
+
+- L'8 settembre non porta subito la pace: crea un vuoto di potere e lascia esercito e popolazione senza ordini chiari.
+- La Germania occupa il Centro-Nord e Mussolini fonda la RSI: l'Italia si divide tra Regno del Sud e fascismo di Salò.
+- La Resistenza nasce dentro questa frattura: combatte i tedeschi, la RSI e prepara anche il futuro politico del paese.
+- Il CLN dà unità politica a forze diverse, mentre le brigate partigiane agiscono in montagna, città, fabbriche e campagne.
+- La Liberazione del 1945 non chiude solo la guerra: apre la strada a Repubblica, Costituzione e antifascismo costituzionale.
+
 ## 1. Il quadro: dall'8 settembre 1943 al 25 aprile 1945
 
 La Resistenza italiana è il movimento di lotta armata e politica condotto dall'**8 settembre 1943** (annuncio dell'armistizio di Cassibile) al **25 aprile 1945** (insurrezione generale del Nord) contro l'occupazione tedesca e contro la **Repubblica Sociale Italiana (RSI)** di Mussolini, lo stato fantoccio nazista nato il 23 settembre 1943 con sede a Salò sul lago di Garda.

@@ -7,6 +7,14 @@ tags:
 
 Questo capitolo mette insieme due piani che vanno tenuti collegati: da una parte la crisi dell'ordine internazionale nato dopo il 1919, dall'altra l'aggressività di Germania, Italia e Giappone. La guerra scoppia quando le potenze revisioniste capiscono che la Società delle Nazioni e le democrazie occidentali non riescono più a fermarle.
 
+## Filo logico
+
+- Versailles lascia molti Stati insoddisfatti e la Società delle Nazioni non ha strumenti reali per imporre la pace.
+- Giappone, Italia e Germania testano questa debolezza con aggressioni progressive: Manciuria, Etiopia, Spagna, Austria, Sudeti.
+- L'appeasement prova a evitare la guerra, ma di fatto convince Hitler che Francia e Gran Bretagna non reagiranno subito.
+- Il Patto Molotov-Ribbentrop elimina il rischio di una guerra immediata su due fronti: l'attacco alla Polonia fa esplodere il conflitto.
+- Dal 1941 entrano in gioco URSS e USA: la guerra diventa mondiale, poi tra 1942 e 1943 l'iniziativa passa agli Alleati.
+
 ## Parte I — Verso la guerra (1929-1939)
 
 ## 1. La fragilità dell'ordine post-bellico

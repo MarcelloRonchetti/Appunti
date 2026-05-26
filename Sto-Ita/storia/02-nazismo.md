@@ -7,6 +7,14 @@ tags:
 
 Per capire il nazismo bisogna partire dalla crisi tedesca dopo la Prima guerra mondiale: sconfitta militare, trattato di Versailles, paura della rivoluzione comunista e debolezza della nuova democrazia. Hitler non nasce "dal nulla": usa queste fratture, poi la crisi del 1929, per trasformare un partito estremista in regime totalitario.
 
+## Filo logico
+
+- La Repubblica di Weimar nasce già fragile: deve gestire sconfitta, rivoluzione, Versailles e violenza politica.
+- La stabilizzazione del 1924-1929 sembra risolvere la crisi, ma dipende molto dai capitali americani.
+- La crisi del 1929 rompe quell'equilibrio: disoccupazione e paura sociale fanno crescere il consenso nazista.
+- Hitler arriva al governo per via legale, poi usa emergenza, propaganda e violenza per distruggere la democrazia dall'interno.
+- Il regime tiene insieme repressione, consenso, razzismo, riarmo e politica estera aggressiva: tutto prepara la guerra.
+
 ## 1. La Repubblica di Weimar (1918-1933)
 
 ### La nascita della Repubblica
