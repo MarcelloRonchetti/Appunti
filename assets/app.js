@@ -475,7 +475,12 @@ async function loadPage() {
 
   document.title = `${page.title} | Appunti Sto-Ita`;
   titleEl.textContent = page.title;
-  document.body.classList.toggle("is-italian", (page.group || "").startsWith("Italiano"));
+  const groupName = page.group || "";
+  document.body.classList.toggle("is-italian", groupName.startsWith("Italiano"));
+  document.body.classList.toggle(
+    "is-storia",
+    groupName === "Storia" || groupName.startsWith("Ripasso")
+  );
   setCrumbs(page);
   metaEl.innerHTML = "";
   content.innerHTML = '<p class="loading">Carico gli appunti…</p>';
@@ -548,25 +553,42 @@ async function loadPage() {
   const body = document.getElementById("timeline-overlay-body");
   if (!openBtn || !overlay || !closeBtn || !body) return;
 
-  const TIMELINE_SRC = "Sto-Ita/italiano/Mappe-visive.md";
-  let loaded = false;
+  const SOURCES = {
+    italiano: "Sto-Ita/italiano/Mappe-visive.md",
+    storia: "Sto-Ita/storia/Mappe-visive.md",
+  };
+  const cache = {};
+  let currentKey = null;
 
-  async function ensureLoaded() {
-    if (loaded) return;
-    try {
-      const res = await fetch(encodeURI(TIMELINE_SRC));
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const md = await res.text();
-      const match = md.match(/:::html\s*([\s\S]*?)\s*:::/);
-      if (!match) throw new Error("Mappa temporale non trovata");
-      const tmp = document.createElement("div");
-      tmp.innerHTML = match[1];
-      const section = tmp.querySelector("#timeline-source") || tmp.querySelector(".visual-map");
-      if (!section) throw new Error("Section .visual-map mancante");
-      section.classList.add("in-overlay");
+  function activeKey() {
+    if (document.body.classList.contains("is-storia")) return "storia";
+    return "italiano";
+  }
+
+  async function ensureLoaded(key) {
+    if (currentKey === key && cache[key]) {
       body.innerHTML = "";
-      body.appendChild(section);
-      loaded = true;
+      body.appendChild(cache[key]);
+      return;
+    }
+    body.innerHTML = '<p class="loading">Carico la mappa…</p>';
+    try {
+      if (!cache[key]) {
+        const res = await fetch(encodeURI(SOURCES[key]));
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const md = await res.text();
+        const match = md.match(/:::html\s*([\s\S]*?)\s*:::/);
+        if (!match) throw new Error("Mappa temporale non trovata");
+        const tmp = document.createElement("div");
+        tmp.innerHTML = match[1];
+        const section = tmp.querySelector("#timeline-source") || tmp.querySelector(".visual-map");
+        if (!section) throw new Error("Section .visual-map mancante");
+        section.classList.add("in-overlay");
+        cache[key] = section;
+      }
+      body.innerHTML = "";
+      body.appendChild(cache[key]);
+      currentKey = key;
     } catch (err) {
       body.innerHTML = `<p class="loading">Non riesco a caricare la mappa: ${err.message}</p>`;
     }
@@ -577,7 +599,7 @@ async function loadPage() {
     requestAnimationFrame(() => overlay.classList.add("is-open"));
     overlay.setAttribute("aria-hidden", "false");
     document.body.classList.add("timeline-open");
-    ensureLoaded();
+    ensureLoaded(activeKey());
   }
 
   function close() {
