@@ -1,0 +1,735 @@
+{
+  "subject": "storia",
+  "version": "2026-05-26",
+  "questions": [
+    {
+      "id": "sto-mc-001",
+      "type": "multiple-choice",
+      "topic": "Nazismo",
+      "difficulty": "media",
+      "question": "Quale fattore rese fragile la Repubblica di Weimar fin dall'inizio?",
+      "options": [
+        "La vittoria tedesca nella Prima guerra mondiale.",
+        "Il peso di Versailles, delle riparazioni e della colpa di guerra.",
+        "Il divieto del suffragio universale maschile e femminile.",
+        "L'assenza di partiti estremisti."
+      ],
+      "correct": 1,
+      "explanation": "Weimar nasce dopo la sconfitta e viene associata al Diktat di Versailles, alle riparazioni e all'umiliazione nazionale."
+    },
+    {
+      "id": "sto-mc-002",
+      "type": "multiple-choice",
+      "topic": "Nazismo",
+      "difficulty": "facile",
+      "question": "Che cosa accadde dopo il Putsch di Monaco del 1923?",
+      "options": [
+        "Hitler prese subito il potere.",
+        "Hitler fu arrestato e in carcere scrisse il Mein Kampf.",
+        "La Germania invase la Polonia.",
+        "Il NSDAP divenne un partito liberale."
+      ],
+      "correct": 1,
+      "explanation": "Il putsch fallì; Hitler fu arrestato e usò il carcere per elaborare la propria ideologia nel Mein Kampf."
+    },
+    {
+      "id": "sto-mc-003",
+      "type": "multiple-choice",
+      "topic": "Nazismo",
+      "difficulty": "media",
+      "question": "Che cosa indica il Lebensraum nell'ideologia nazista?",
+      "options": [
+        "Lo spazio vitale da conquistare a Est, a danno dei popoli considerati inferiori.",
+        "Un piano di case popolari per disoccupati tedeschi.",
+        "La rinuncia alla politica estera aggressiva.",
+        "L'accordo commerciale con gli Stati Uniti."
+      ],
+      "correct": 0,
+      "explanation": "Il Lebensraum lega razzismo, imperialismo e guerra: la Germania deve espandersi verso Est."
+    },
+    {
+      "id": "sto-mc-004",
+      "type": "multiple-choice",
+      "topic": "Nazismo",
+      "difficulty": "alta",
+      "question": "Quale evento accelerò lo smantellamento della democrazia tedesca nel 1933?",
+      "options": [
+        "La Conferenza di Yalta.",
+        "L'incendio del Reichstag e le misure contro gli oppositori.",
+        "La nascita dell'ONU.",
+        "La firma del Patto di Londra."
+      ],
+      "correct": 1,
+      "explanation": "Dopo l'incendio del Reichstag il regime usa l'emergenza per colpire comunisti e oppositori, fino ai pieni poteri."
+    },
+    {
+      "id": "sto-mc-005",
+      "type": "multiple-choice",
+      "topic": "Nazismo",
+      "difficulty": "media",
+      "question": "Perché la Notte dei lunghi coltelli rafforzò Hitler?",
+      "options": [
+        "Eliminò i vertici delle SA, rassicurando esercito e conservatori.",
+        "Portò alla caduta definitiva delle SS.",
+        "Restituì libertà ai partiti democratici.",
+        "Fermò il riarmo tedesco."
+      ],
+      "correct": 0,
+      "explanation": "Nel giugno 1934 Hitler fece uccidere Röhm e i capi SA; l'esercito approvò e le SS si rafforzarono."
+    },
+    {
+      "id": "sto-mc-006",
+      "type": "multiple-choice",
+      "topic": "Stalinismo",
+      "difficulty": "media",
+      "question": "Quale vantaggio ebbe Stalin nella successione a Lenin?",
+      "options": [
+        "Il controllo delle nomine come Segretario Generale.",
+        "Il comando dell'Armata Rossa come Trotskij.",
+        "Il sostegno pubblico del testamento di Lenin.",
+        "La difesa del pluralismo politico."
+      ],
+      "correct": 0,
+      "explanation": "Stalin costruì potere attraverso l'apparato del partito, controllando carriere e fedeltà."
+    },
+    {
+      "id": "sto-mc-007",
+      "type": "multiple-choice",
+      "topic": "Stalinismo",
+      "difficulty": "facile",
+      "question": "Qual era l'obiettivo dei piani quinquennali?",
+      "options": [
+        "Tornare alla NEP.",
+        "Industrializzare rapidamente l'URSS puntando su industria pesante ed energia.",
+        "Ridurre il ruolo dello Stato nell'economia.",
+        "Sviluppare solo beni di lusso."
+      ],
+      "correct": 1,
+      "explanation": "I piani quinquennali servivano a trasformare l'URSS in potenza industriale, con costi sociali enormi."
+    },
+    {
+      "id": "sto-mc-008",
+      "type": "multiple-choice",
+      "topic": "Stalinismo",
+      "difficulty": "media",
+      "question": "Che rapporto c'è tra collettivizzazione e Holodomor?",
+      "options": [
+        "La collettivizzazione evitò ogni carestia.",
+        "Requisizioni e guerra ai kulaki contribuirono alla carestia ucraina del 1932-1933.",
+        "L'Holodomor avvenne prima della rivoluzione russa.",
+        "La collettivizzazione riguardò solo le fabbriche."
+      ],
+      "correct": 1,
+      "explanation": "La politica agricola staliniana spezzò le campagne con requisizioni, deportazioni e controllo degli spostamenti."
+    },
+    {
+      "id": "sto-mc-009",
+      "type": "multiple-choice",
+      "topic": "Stalinismo",
+      "difficulty": "alta",
+      "question": "A cosa servirono i processi di Mosca?",
+      "options": [
+        "A garantire liberi processi agli oppositori.",
+        "A mettere in scena confessioni forzate ed eliminare la vecchia guardia bolscevica.",
+        "A far tornare Trotskij al potere.",
+        "A chiudere i Gulag."
+      ],
+      "correct": 1,
+      "explanation": "I processi spettacolo furono uno strumento del Grande Terrore: accuse costruite, confessioni estorte, fucilazioni."
+    },
+    {
+      "id": "sto-mc-010",
+      "type": "multiple-choice",
+      "topic": "Stalinismo",
+      "difficulty": "media",
+      "question": "Perché il Patto Molotov-Ribbentrop fu sorprendente?",
+      "options": [
+        "Unì tatticamente due nemici ideologici, Germania nazista e URSS.",
+        "Fece entrare l'URSS nella NATO.",
+        "Impose a Hitler il rispetto di Versailles.",
+        "Fondò la Società delle Nazioni."
+      ],
+      "correct": 0,
+      "explanation": "Il patto di non aggressione diede a Hitler libertà contro la Polonia e a Stalin tempo e sfere d'influenza."
+    },
+    {
+      "id": "sto-mc-011",
+      "type": "multiple-choice",
+      "topic": "Crisi del 1929",
+      "difficulty": "facile",
+      "question": "Che cosa caratterizza gli Anni Ruggenti negli USA?",
+      "options": [
+        "Consumi di massa, credito, automobile, radio e cinema.",
+        "Ritorno a un'economia agricola chiusa.",
+        "Abolizione della pubblicità.",
+        "Fine della produzione industriale."
+      ],
+      "correct": 0,
+      "explanation": "Gli anni Venti americani furono anni di boom e cultura di massa, ma con squilibri profondi."
+    },
+    {
+      "id": "sto-mc-012",
+      "type": "multiple-choice",
+      "topic": "Crisi del 1929",
+      "difficulty": "media",
+      "question": "Il caso Sacco e Vanzetti mostra soprattutto:",
+      "options": [
+        "Il clima di paura rossa e pregiudizio anti-italiano.",
+        "La nascita del New Deal.",
+        "La fine della speculazione borsistica.",
+        "La politica estera di Hitler."
+      ],
+      "correct": 0,
+      "explanation": "Il processo ai due anarchici italiani si colloca nella Red Scare e nella xenofobia degli anni Venti."
+    },
+    {
+      "id": "sto-mc-013",
+      "type": "multiple-choice",
+      "topic": "Crisi del 1929",
+      "difficulty": "media",
+      "question": "Quali furono radici importanti della crisi del 1929?",
+      "options": [
+        "Sovrapproduzione, disuguaglianze, speculazione e credito facile.",
+        "Piena occupazione stabile e salari alti per tutti.",
+        "Abolizione delle banche private.",
+        "Scarsità assoluta di beni industriali."
+      ],
+      "correct": 0,
+      "explanation": "Il sistema produceva più di quanto il mercato potesse assorbire, mentre la borsa cresceva su debito e aspettative fragili."
+    },
+    {
+      "id": "sto-mc-014",
+      "type": "multiple-choice",
+      "topic": "Crisi del 1929",
+      "difficulty": "alta",
+      "question": "Perché il Piano Dawes rese fragile il rapporto USA-Europa?",
+      "options": [
+        "Creò un circuito di prestiti USA alla Germania, riparazioni agli ex vincitori e debiti verso gli USA.",
+        "Isolò completamente la Germania dai capitali americani.",
+        "Cancellò tutte le riparazioni tedesche.",
+        "Rese l'Europa indipendente dalla finanza americana."
+      ],
+      "correct": 0,
+      "explanation": "Quando gli USA richiamarono capitali, il meccanismo dei prestiti e dei pagamenti europei collassò."
+    },
+    {
+      "id": "sto-mc-015",
+      "type": "multiple-choice",
+      "topic": "Crisi del 1929",
+      "difficulty": "media",
+      "question": "Quale principio distingue il New Deal dal liberismo classico?",
+      "options": [
+        "Intervento attivo dello Stato per sostenere banche, lavoro, agricoltura e domanda.",
+        "Totale rifiuto dell'intervento pubblico.",
+        "Creazione di un partito unico.",
+        "Abolizione della previdenza sociale."
+      ],
+      "correct": 0,
+      "explanation": "Roosevelt rompe con il laissez-faire: lo Stato interviene per salvare economia e fiducia democratica."
+    },
+    {
+      "id": "sto-mc-016",
+      "type": "multiple-choice",
+      "topic": "Seconda guerra mondiale",
+      "difficulty": "media",
+      "question": "Che cosa rappresenta Monaco 1938?",
+      "options": [
+        "Il culmine dell'appeasement: i Sudeti sono ceduti alla Germania senza invitare la Cecoslovacchia.",
+        "La resa del Giappone.",
+        "Il processo ai criminali nazisti.",
+        "La nascita della NATO."
+      ],
+      "correct": 0,
+      "explanation": "Monaco illuse le democrazie di salvare la pace, ma incoraggiò l'espansione hitleriana."
+    },
+    {
+      "id": "sto-mc-017",
+      "type": "multiple-choice",
+      "topic": "Seconda guerra mondiale",
+      "difficulty": "facile",
+      "question": "Quale evento dà inizio alla guerra in Europa?",
+      "options": [
+        "L'invasione tedesca della Polonia il 1° settembre 1939.",
+        "Pearl Harbor.",
+        "Lo sbarco in Normandia.",
+        "La Conferenza di Yalta."
+      ],
+      "correct": 0,
+      "explanation": "Dopo l'attacco alla Polonia, Francia e Gran Bretagna dichiarano guerra alla Germania il 3 settembre."
+    },
+    {
+      "id": "sto-mc-018",
+      "type": "multiple-choice",
+      "topic": "Seconda guerra mondiale",
+      "difficulty": "media",
+      "question": "Che cosa indica la Blitzkrieg?",
+      "options": [
+        "Guerra lampo con uso coordinato di aviazione, carri armati e fanteria motorizzata.",
+        "Guerra statica di trincea.",
+        "Resistenza partigiana urbana.",
+        "Blocco navale inglese."
+      ],
+      "correct": 0,
+      "explanation": "La guerra lampo punta a rompere rapidamente il fronte con velocità e coordinamento."
+    },
+    {
+      "id": "sto-mc-019",
+      "type": "multiple-choice",
+      "topic": "Seconda guerra mondiale",
+      "difficulty": "media",
+      "question": "Perché il 1941 è decisivo?",
+      "options": [
+        "Germania invade l'URSS e il Giappone attacca Pearl Harbor, portando in guerra gli USA.",
+        "Si conclude il Congresso di Vienna.",
+        "L'Italia firma i Patti Lateranensi.",
+        "La Francia vince a Stalingrado."
+      ],
+      "correct": 0,
+      "explanation": "Nel 1941 la guerra diventa davvero mondiale e l'Asse affronta URSS e Stati Uniti."
+    },
+    {
+      "id": "sto-mc-020",
+      "type": "multiple-choice",
+      "topic": "Seconda guerra mondiale",
+      "difficulty": "alta",
+      "question": "Quale sequenza riassume la svolta del 1942-43?",
+      "options": [
+        "Midway, El Alamein, Stalingrado.",
+        "Monaco, Anschluss, Stresa.",
+        "Versailles, Dawes, Locarno.",
+        "Yalta, ONU, Norimberga."
+      ],
+      "correct": 0,
+      "explanation": "Tra Pacifico, Africa e fronte orientale l'espansione dell'Asse viene fermata."
+    },
+    {
+      "id": "sto-mc-021",
+      "type": "multiple-choice",
+      "topic": "Resistenza e liberazione",
+      "difficulty": "media",
+      "question": "Perché l'8 settembre 1943 è uno spartiacque per l'Italia?",
+      "options": [
+        "Armistizio annunciato, fuga del re e di Badoglio, esercito senza ordini.",
+        "Fondazione del PNF.",
+        "Firma dei Patti Lateranensi.",
+        "Sbarco in Normandia."
+      ],
+      "correct": 0,
+      "explanation": "L'armistizio apre collasso dello Stato, occupazione tedesca, RSI e Resistenza."
+    },
+    {
+      "id": "sto-mc-022",
+      "type": "multiple-choice",
+      "topic": "Resistenza e liberazione",
+      "difficulty": "facile",
+      "question": "Che cos'era la RSI?",
+      "options": [
+        "Uno Stato fantoccio fascista dipendente dalla Germania nazista.",
+        "Il governo antifascista del CLN.",
+        "La Repubblica nata nel 1946.",
+        "Una brigata partigiana cattolica."
+      ],
+      "correct": 0,
+      "explanation": "La Repubblica Sociale Italiana nasce nel settembre 1943 dopo la liberazione di Mussolini."
+    },
+    {
+      "id": "sto-mc-023",
+      "type": "multiple-choice",
+      "topic": "Resistenza e liberazione",
+      "difficulty": "media",
+      "question": "Quale associazione è corretta?",
+      "options": [
+        "Brigate Garibaldi - PCI.",
+        "Fiamme Verdi - Partito Nazista.",
+        "Giustizia e Libertà - RSI.",
+        "Brigate Matteotti - monarchici fascisti."
+      ],
+      "correct": 0,
+      "explanation": "Le Brigate Garibaldi erano legate al PCI e furono tra le formazioni più numerose."
+    },
+    {
+      "id": "sto-mc-024",
+      "type": "multiple-choice",
+      "topic": "Resistenza e liberazione",
+      "difficulty": "alta",
+      "question": "Che effetto ebbe il Proclama Alexander?",
+      "options": [
+        "Invitò i partigiani a sospendere le operazioni nell'inverno 1944, lasciandoli più esposti ai rastrellamenti.",
+        "Ordinò la resa tedesca immediata.",
+        "Fondò la RSI.",
+        "Avviò il referendum del 1946."
+      ],
+      "correct": 0,
+      "explanation": "Con il fronte fermo sulla Linea Gotica, molte bande partigiane restarono isolate durante l'inverno."
+    },
+    {
+      "id": "sto-mc-025",
+      "type": "multiple-choice",
+      "topic": "Resistenza e liberazione",
+      "difficulty": "media",
+      "question": "Le Fosse Ardeatine furono:",
+      "options": [
+        "Una rappresaglia nazista dopo l'attentato dei GAP in via Rasella.",
+        "Una conferenza diplomatica del 1945.",
+        "La battaglia finale del Pacifico.",
+        "Il luogo della firma dell'armistizio."
+      ],
+      "correct": 0,
+      "explanation": "Dopo via Rasella, i nazisti fucilarono 335 uomini alle cave Ardeatine."
+    },
+    {
+      "id": "sto-open-001",
+      "type": "open",
+      "topic": "Nazismo",
+      "difficulty": "media",
+      "question": "Spiega perché la crisi di Weimar favorì l'ascesa del nazismo.",
+      "model_answer": "Weimar nasce dopo la sconfitta ed è associata al Diktat di Versailles, alle riparazioni e alla colpa di guerra. Le crisi economiche e la violenza politica indeboliscono la fiducia nella democrazia. Il nazismo sfrutta paura, nazionalismo e bisogno di ordine promettendo rivincita e indicando capri espiatori.",
+      "keywords": [
+        "Versailles",
+        "riparazioni",
+        "1929",
+        "violenza politica",
+        "nazionalismo"
+      ]
+    },
+    {
+      "id": "sto-open-002",
+      "type": "open",
+      "topic": "Nazismo",
+      "difficulty": "alta",
+      "question": "Descrivi i cardini dell'ideologia nazista.",
+      "model_answer": "L'ideologia nazista unisce razzismo biologico, antisemitismo, anticomunismo, culto del Führer e rifiuto di Versailles. Il Lebensraum trasforma questi principi in progetto di espansione verso Est. La guerra non è quindi un incidente, ma parte del programma politico e razziale hitleriano.",
+      "keywords": [
+        "razzismo",
+        "antisemitismo",
+        "Führer",
+        "Lebensraum",
+        "Versailles"
+      ]
+    },
+    {
+      "id": "sto-open-003",
+      "type": "open",
+      "topic": "Stalinismo",
+      "difficulty": "media",
+      "question": "Come Stalin costruì il proprio potere dopo Lenin?",
+      "model_answer": "Stalin usò il ruolo di Segretario Generale per controllare l'apparato e le nomine del partito. Prima isolò Trotskij, poi Zinov'ev e Kamenev, infine Bucharin e i sostenitori della NEP. La sua forza fu soprattutto burocratica: occupò la macchina del partito e la trasformò in strumento personale.",
+      "keywords": [
+        "Segretario Generale",
+        "Trotskij",
+        "Bucharin",
+        "apparato",
+        "nomine"
+      ]
+    },
+    {
+      "id": "sto-open-004",
+      "type": "open",
+      "topic": "Stalinismo",
+      "difficulty": "alta",
+      "question": "Collega piani quinquennali, collettivizzazione e costi umani.",
+      "model_answer": "I piani quinquennali puntano a industrializzare rapidamente l'URSS, soprattutto con industria pesante ed energia. Per finanziare lo sviluppo Stalin impone la collettivizzazione, requisendo grano e colpendo i kulaki. Il risultato è modernizzazione forzata, ma anche deportazioni, carestie, Holodomor e Gulag.",
+      "keywords": [
+        "piani quinquennali",
+        "collettivizzazione",
+        "kulaki",
+        "Holodomor",
+        "Gulag"
+      ]
+    },
+    {
+      "id": "sto-open-005",
+      "type": "open",
+      "topic": "Crisi del 1929",
+      "difficulty": "media",
+      "question": "Spiega le contraddizioni degli Anni Ruggenti.",
+      "model_answer": "Gli anni Venti americani mostrano boom dei consumi, produzione di massa, radio, cinema e automobile. Però la ricchezza è distribuita male, l'agricoltura soffre e la crescita dipende da credito e speculazione. Accanto al sogno americano emergono anche proibizionismo, razzismo, paura rossa e intolleranza.",
+      "keywords": [
+        "consumi",
+        "credito",
+        "squilibri",
+        "proibizionismo",
+        "Red Scare"
+      ]
+    },
+    {
+      "id": "sto-open-006",
+      "type": "open",
+      "topic": "Crisi del 1929",
+      "difficulty": "alta",
+      "question": "Dal crollo di Wall Street alla Grande Depressione: ricostruisci la spirale.",
+      "model_answer": "Il crollo borsistico distrugge risparmi e fiducia. Le banche restringono il credito, le imprese licenziano, i consumi calano e nuovi fallimenti aggravano la crisi. Poiché gli Stati Uniti richiamano capitali dall'Europa, la depressione diventa mondiale e travolge anche il sistema dei debiti e delle riparazioni.",
+      "keywords": [
+        "borsa",
+        "banche",
+        "credito",
+        "disoccupazione",
+        "Europa"
+      ]
+    },
+    {
+      "id": "sto-open-007",
+      "type": "open",
+      "topic": "Crisi del 1929",
+      "difficulty": "media",
+      "question": "Quali furono obiettivi e limiti del New Deal?",
+      "model_answer": "Il New Deal mira a salvare economia e democrazia attraverso l'intervento dello Stato. Usa riforme bancarie, sussidi agricoli, lavori pubblici e previdenza sociale. Ricostruisce fiducia e riduce la crisi, ma non elimina del tutto la disoccupazione: la piena ripresa arriverà con l'economia di guerra.",
+      "keywords": [
+        "Roosevelt",
+        "Stato",
+        "AAA",
+        "WPA",
+        "Social Security"
+      ]
+    },
+    {
+      "id": "sto-open-008",
+      "type": "open",
+      "topic": "Seconda guerra mondiale",
+      "difficulty": "alta",
+      "question": "Dal Fronte di Stresa al Patto Molotov-Ribbentrop: spiega il percorso verso la guerra.",
+      "model_answer": "Il Fronte di Stresa tenta di contenere il riarmo tedesco, ma si rompe con la guerra d'Etiopia e l'avvicinamento tra Italia e Germania. L'appeasement culmina a Monaco con la cessione dei Sudeti. Dopo l'occupazione di Praga, Francia e Gran Bretagna garantiscono la Polonia; Hitler allora firma il patto con Stalin e attacca a Est.",
+      "keywords": [
+        "Stresa",
+        "Etiopia",
+        "appeasement",
+        "Monaco",
+        "Molotov-Ribbentrop"
+      ]
+    },
+    {
+      "id": "sto-open-009",
+      "type": "open",
+      "topic": "Seconda guerra mondiale",
+      "difficulty": "media",
+      "question": "Spiega il passaggio dal 25 luglio all'8 settembre 1943.",
+      "model_answer": "Dopo sbarco in Sicilia e crisi militare, il Gran Consiglio sfiducia Mussolini il 25 luglio e il re lo fa arrestare. Badoglio firma l'armistizio a Cassibile il 3 settembre, ma lo annuncia solo l'8. La fuga del re e la mancanza di ordini lasciano l'esercito allo sbando, mentre i tedeschi occupano l'Italia centro-settentrionale.",
+      "keywords": [
+        "25 luglio",
+        "Badoglio",
+        "Cassibile",
+        "8 settembre",
+        "occupazione tedesca"
+      ]
+    },
+    {
+      "id": "sto-open-010",
+      "type": "open",
+      "topic": "Resistenza e liberazione",
+      "difficulty": "media",
+      "question": "Perché la Resistenza è guerra di liberazione, civile e politica?",
+      "model_answer": "È guerra di liberazione perché combatte l'occupazione tedesca; è guerra civile perché oppone italiani antifascisti e fascisti della RSI; è guerra politica perché il CLN prepara l'Italia del dopoguerra. Per questo la Resistenza non è solo militare, ma fondativa per la Repubblica.",
+      "keywords": [
+        "tedeschi",
+        "RSI",
+        "CLN",
+        "guerra civile",
+        "Repubblica"
+      ]
+    },
+    {
+      "id": "sto-open-011",
+      "type": "open",
+      "topic": "Resistenza e liberazione",
+      "difficulty": "media",
+      "question": "Descrivi il ruolo delle donne nella Resistenza.",
+      "model_answer": "Le donne furono staffette, combattenti, infermiere, organizzatrici e collegamento tra bande e città. Il loro contributo fu spesso meno visibile delle azioni armate maschili, ma decisivo. Le note ricordano circa 35.000 donne combattenti e 70.000 staffette, con figure come Irma Bandiera e Tina Anselmi.",
+      "keywords": [
+        "staffette",
+        "combattenti",
+        "collegamenti",
+        "Irma Bandiera",
+        "Tina Anselmi"
+      ]
+    },
+    {
+      "id": "sto-open-012",
+      "type": "open",
+      "topic": "Resistenza e liberazione",
+      "difficulty": "alta",
+      "question": "Collega Resistenza, referendum del 1946 e Costituzione.",
+      "model_answer": "La Resistenza crea l'arco dei partiti antifascisti che guidano la transizione. Il 2 giugno 1946 il referendum sceglie la Repubblica e votano anche le donne per la prima volta. La Costituzione del 1948 nasce dal compromesso tra cattolici, comunisti, socialisti, liberali e azionisti, portando dentro l'eredità antifascista del CLN.",
+      "keywords": [
+        "CLN",
+        "2 giugno 1946",
+        "donne",
+        "Costituzione",
+        "antifascismo"
+      ]
+    },
+    {
+      "id": "sto-cloze-001",
+      "type": "cloze",
+      "topic": "Nazismo",
+      "difficulty": "facile",
+      "question": "Dopo la morte di Hindenburg, Hitler concentra il potere nella figura del _____.",
+      "answer": "Führer",
+      "alt_answers": [
+        "Fuhrer"
+      ],
+      "explanation": "Dal 1934 Hitler unisce carica di presidente e cancelliere, chiedendo fedeltà personale all'esercito."
+    },
+    {
+      "id": "sto-cloze-002",
+      "type": "cloze",
+      "topic": "Nazismo",
+      "difficulty": "media",
+      "question": "Il pogrom antiebraico del 9-10 novembre 1938 è noto come Notte dei _____.",
+      "answer": "cristalli",
+      "alt_answers": [
+        "Cristalli",
+        "cristalli infranti"
+      ],
+      "explanation": "La Kristallnacht prende il nome dai vetri infranti di negozi e sinagoghe devastati."
+    },
+    {
+      "id": "sto-cloze-003",
+      "type": "cloze",
+      "topic": "Stalinismo",
+      "difficulty": "facile",
+      "question": "La carestia ucraina del 1932-1933 è chiamata _____.",
+      "answer": "Holodomor",
+      "alt_answers": [
+        "holodomor"
+      ],
+      "explanation": "È una delle tragedie centrali della collettivizzazione staliniana."
+    },
+    {
+      "id": "sto-cloze-004",
+      "type": "cloze",
+      "topic": "Stalinismo",
+      "difficulty": "media",
+      "question": "La rete dei campi di lavoro forzato sovietici è chiamata _____.",
+      "answer": "Gulag",
+      "alt_answers": [
+        "gulag"
+      ],
+      "explanation": "Nei Gulag finirono milioni di prigionieri politici e comuni."
+    },
+    {
+      "id": "sto-cloze-005",
+      "type": "cloze",
+      "topic": "Crisi del 1929",
+      "difficulty": "facile",
+      "question": "Il 24 ottobre 1929 è ricordato come _____.",
+      "answer": "giovedì nero",
+      "alt_answers": [
+        "giovedi nero",
+        "Giovedì nero"
+      ],
+      "explanation": "È il giorno simbolico del panico finanziario di Wall Street."
+    },
+    {
+      "id": "sto-cloze-006",
+      "type": "cloze",
+      "topic": "Crisi del 1929",
+      "difficulty": "media",
+      "question": "Roosevelt parlava alla nazione via radio con i discorsi del _____.",
+      "answer": "caminetto",
+      "alt_answers": [
+        "fireside chats",
+        "discorsi del caminetto"
+      ],
+      "explanation": "I fireside chats costruirono fiducia con linguaggio diretto e semplice."
+    },
+    {
+      "id": "sto-cloze-007",
+      "type": "cloze",
+      "topic": "Seconda guerra mondiale",
+      "difficulty": "media",
+      "question": "Lo sbarco in Normandia del 6 giugno 1944 prende il nome operativo di _____.",
+      "answer": "Overlord",
+      "alt_answers": [
+        "operazione Overlord",
+        "Operation Overlord"
+      ],
+      "explanation": "Il D-Day aprì il secondo fronte in Francia."
+    },
+    {
+      "id": "sto-cloze-008",
+      "type": "cloze",
+      "topic": "Seconda guerra mondiale",
+      "difficulty": "alta",
+      "question": "La conferenza del 20 gennaio 1942 sulla soluzione finale si svolse a _____.",
+      "answer": "Wannsee",
+      "alt_answers": [
+        "conferenza di Wannsee"
+      ],
+      "explanation": "A Wannsee il regime coordinò lo sterminio degli ebrei europei."
+    },
+    {
+      "id": "sto-cloze-009",
+      "type": "cloze",
+      "topic": "Resistenza e liberazione",
+      "difficulty": "facile",
+      "question": "Il Comitato di Liberazione Nazionale è indicato dalla sigla _____.",
+      "answer": "CLN",
+      "alt_answers": [
+        "cln",
+        "Comitato di Liberazione Nazionale"
+      ],
+      "explanation": "Il CLN coordina i partiti antifascisti nella lotta politica e militare."
+    },
+    {
+      "id": "sto-cloze-010",
+      "type": "cloze",
+      "topic": "Resistenza e liberazione",
+      "difficulty": "facile",
+      "question": "L'insurrezione generale del Nord è legata alla data del _____.",
+      "answer": "25 aprile",
+      "alt_answers": [
+        "venticinque aprile",
+        "25 Aprile"
+      ],
+      "explanation": "Il 25 aprile 1945 il CLNAI proclama l'insurrezione generale."
+    },
+    {
+      "id": "sto-open-013",
+      "type": "open",
+      "topic": "Nazismo",
+      "difficulty": "alta",
+      "question": "Confronta fascismo italiano e nazismo tedesco su Stato, capo e razzismo.",
+      "model_answer": "Il fascismo italiano resta un totalitarismo imperfetto perché accanto al PNF sopravvivono monarchia e Chiesa. Nel nazismo, dopo il 1934, il Führer concentra il vertice dello Stato e l'esercito gli giura fedeltà personale. Inoltre il razzismo è centrale fin dall'origine nel nazismo, mentre nel fascismo italiano diventa decisivo più tardi, soprattutto con le leggi razziali del 1938.",
+      "keywords": [
+        "totalitarismo imperfetto",
+        "monarchia",
+        "Chiesa",
+        "Führer",
+        "razzismo",
+        "1938"
+      ]
+    },
+    {
+      "id": "sto-open-014",
+      "type": "open",
+      "topic": "Stalinismo",
+      "difficulty": "media",
+      "question": "Spiega il ruolo della propaganda e del culto di Stalin nel regime sovietico.",
+      "model_answer": "Il culto di Stalin viene costruito gradualmente dalla propaganda, presentandolo come erede legittimo di Lenin e guida infallibile dell'URSS. Foto, testi, arte ufficiale e realismo socialista servono a cancellare gli avversari e a imporre un'immagine unica del potere. Il culto personale aiuta a mascherare repressione, privilegi della nomenklatura e violenza politica.",
+      "keywords": [
+        "culto di Stalin",
+        "Lenin",
+        "propaganda",
+        "realismo socialista",
+        "nomenklatura",
+        "repressione"
+      ]
+    },
+    {
+      "id": "sto-open-015",
+      "type": "open",
+      "topic": "Seconda guerra mondiale",
+      "difficulty": "media",
+      "question": "Perché le conferenze alleate e Yalta anticipano il nuovo ordine mondiale del dopoguerra?",
+      "model_answer": "Le conferenze tra Alleati coordinano la sconfitta dell'Asse, ma preparano anche gli equilibri successivi. A Yalta si decide la divisione della Germania in zone d'occupazione, si discute la Polonia e si progetta l'ONU con il Consiglio di Sicurezza. Le promesse non mantenute sulle elezioni libere in Europa orientale anticipano la futura divisione tra blocco occidentale e blocco sovietico.",
+      "keywords": [
+        "Yalta",
+        "Germania",
+        "Polonia",
+        "ONU",
+        "Consiglio di Sicurezza",
+        "Cortina di Ferro"
+      ]
+    }
+  ]
+}

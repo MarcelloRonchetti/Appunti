@@ -435,7 +435,7 @@
     <div class="topbar-right">
       <select id="subjectSelect" class="subject-selector" aria-label="Materia">
         <option value="italiano">Italiano</option>
-        <option value="storia" disabled>Storia (in arrivo)</option>
+        <option value="storia">Storia</option>
         <option value="edu-civica" disabled>Ed. civica (in arrivo)</option>
         <option value="telecomunicazioni" disabled>Telecomunicazioni (in arrivo)</option>
         <option value="tpsit" disabled>TPSIT (in arrivo)</option>
@@ -458,7 +458,7 @@
 
     <div class="footer">
       <span id="poolMeta">Caricamento…</span> ·
-      <a href="prompts/italiano.md">Prompt ChatGPT per generare nuove domande</a> ·
+      <a id="promptLink" href="prompts/italiano.md">Prompt ChatGPT per generare nuove domande</a> ·
       <a href="schema.md">Schema JSON</a>
     </div>
   </main>
@@ -474,6 +474,7 @@
   const themeBtn = $('#themeBtn');
   const resetBtn = $('#resetBtn');
   const poolMeta = $('#poolMeta');
+  const promptLink = $('#promptLink');
 
   let pool = [];
   let subjectMeta = null;
@@ -520,6 +521,7 @@
   // --- loader ---
   async function loadSubject(id) {
     currentSubject = id;
+    promptLink.href = `prompts/${id}.md`;
     card.innerHTML = '<div class="pool-empty"><p>Caricamento domande…</p></div>';
     try {
       const res = await fetch(`data/${id}.json`, { cache: 'no-store' });
