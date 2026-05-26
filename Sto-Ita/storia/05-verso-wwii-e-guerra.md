@@ -29,6 +29,8 @@ L'ordine costruito a **Versailles** (1919) si rivela fragile per molteplici ragi
 
 ### I regimi autoritari in Europa centro-orientale
 
+La fragilità dell'ordine europeo non riguarda solo Germania e Italia. In molti paesi la democrazia liberale appare debole, e l'autoritarismo sembra una risposta rapida a crisi economiche, sociali e nazionali.
+
 Sul modello fascista, nascono regimi autoritari soprattutto nei paesi a economia agricola e con forti tensioni etniche:
 - **Polonia** (Piłsudski, dal 1926).
 - **Portogallo** (Salazar, dal 1932: "Estado Novo").
@@ -45,6 +47,8 @@ Sul modello fascista, nascono regimi autoritari soprattutto nei paesi a economia
 
 ## 2. Le aggressioni che minano la pace
 
+Le aggressioni degli anni Trenta sono prove generali: ogni potenza revisionista verifica fin dove può spingersi senza provocare una reazione concreta delle democrazie.
+
 ### Le ambizioni giapponesi in Asia
 
 - **1931**: il Giappone invade la **Manciuria**, regione cinese ricchissima di ferro e carbone. Vi installa lo stato fantoccio del **Manciukuò**.
@@ -53,6 +57,8 @@ Sul modello fascista, nascono regimi autoritari soprattutto nei paesi a economia
 - **1937**: il Giappone invade la Cina propriamente detta; **Massacro di Nanchino** (dicembre 1937).
 
 ### La guerra d'Etiopia (1935-1936)
+
+La guerra d'Etiopia è importante anche per gli equilibri europei: rompe l'intesa tra Italia, Francia e Gran Bretagna e spinge Mussolini verso Hitler.
 
 (Vedi `01-fascismo-italiano.md`.) L'Italia attacca l'Etiopia; le sanzioni della Società delle Nazioni sono parziali e inefficaci; il fascismo proclama l'Impero. L'Italia abbandona la SdN nel 1937.
 
@@ -77,6 +83,8 @@ La guerra dura **3 anni** ed è il **banco di prova della Seconda guerra mondial
 
 ## 3. Le conferenze degli anni '30
 
+Dopo le prime aggressioni, la diplomazia europea prova a contenere Hitler e Mussolini. Ma ogni conferenza mostra anche quanto sia difficile difendere la pace senza voler davvero rischiare una guerra.
+
 ### Il Fronte di Stresa (aprile 1935)
 
 In risposta al riarmo tedesco e alla reintroduzione della leva obbligatoria, **Italia**, **Francia** e **Gran Bretagna** si incontrano a **Stresa** (lago Maggiore) per riconfermare i Patti di Locarno e impegnarsi a difendere l'indipendenza dell'Austria.
@@ -84,6 +92,8 @@ In risposta al riarmo tedesco e alla reintroduzione della leva obbligatoria, **I
 Il fronte si rompe pochi mesi dopo, quando l'Italia attacca l'Etiopia e Francia e Gran Bretagna applicano le sanzioni: l'Italia si avvicina alla Germania.
 
 ### Asse Roma-Berlino e Anti-Comintern
+
+Rotto il Fronte di Stresa, le alleanze si ricompongono: l'Italia si avvicina alla Germania e l'anticomunismo diventa un collante tra le potenze autoritarie.
 
 - **Ottobre 1936**: **Asse Roma-Berlino** (l'espressione è di Mussolini): primo riavvicinamento ideologico tra Italia e Germania.
 - **Novembre 1936**: **Patto Anti-Comintern** tra Germania e Giappone (in funzione anti-sovietica). Italia aderisce nel 1937.
@@ -104,6 +114,8 @@ Il fronte si rompe pochi mesi dopo, quando l'Italia attacca l'Etiopia e Francia 
 - Chamberlain tornando a Londra agita il documento e dichiara: "*Peace for our time*" ("Pace per il nostro tempo"). È l'illusione tipica dell'appeasement.
 
 ### La fine dell'appeasement
+
+L'occupazione di Boemia e Moravia cambia tutto: Hitler non sta più solo riunendo popolazioni tedesche, ma sta distruggendo Stati indipendenti. A quel punto l'appeasement perde credibilità.
 
 - **15 marzo 1939**: la Germania occupa **Boemia e Moravia** (Protettorato del Reich); la **Slovacchia** diventa Stato satellite. La Cecoslovacchia è cancellata.
 - **Aprile 1939**: l'**Italia invade l'Albania**, annessa all'Impero.
@@ -131,6 +143,8 @@ Fin qui si sono viste le premesse diplomatiche e ideologiche; dal 1939 quelle te
 
 ## 4. L'inizio del conflitto (1939)
 
+L'attacco alla Polonia unisce i due elementi decisivi: la copertura diplomatica del patto con Stalin e la strategia militare della guerra lampo. Per questo la crisi europea diventa guerra mondiale.
+
 ### L'invasione della Polonia
 
 - **1° settembre 1939**: la **Germania invade la Polonia**. È la **guerra lampo** (**Blitzkrieg**): impiego coordinato di aviazione (Luftwaffe), carri armati (Panzer) e fanteria motorizzata. La Polonia è schiacciata in poche settimane.
@@ -140,6 +154,8 @@ Fin qui si sono viste le premesse diplomatiche e ideologiche; dal 1939 quelle te
 - **Dicembre 1939**: l'URSS attacca la **Finlandia** (Guerra d'inverno) e viene **espulsa dalla Società delle Nazioni**.
 
 ### La "strana guerra" (Drôle de guerre)
+
+La dichiarazione di guerra non significa subito offensiva sul fronte occidentale. Francia e Gran Bretagna restano sulla difensiva, lasciando a Hitler il tempo di scegliere dove colpire.
 
 Da settembre 1939 a maggio 1940, sul fronte occidentale non avvengono operazioni significative: Francia e Gran Bretagna si trincerano dietro la **Linea Maginot** (sistema fortificato lungo il confine franco-tedesco, costruito tra il 1929 e il 1936). È la **"guerra fasulla"**.
 
@@ -163,6 +179,8 @@ Da settembre 1939 a maggio 1940, sul fronte occidentale non avvengono operazioni
 
 ## 5. L'Italia entra in guerra
 
+Il successo tedesco in Francia cambia i calcoli di Mussolini. L'Italia entra non perché sia pronta, ma perché il fascismo teme di restare escluso dalla vittoria.
+
 ### Le esitazioni di Mussolini
 
 L'Italia non è preparata militarmente: dipende dall'estero per il **50% delle materie prime**, l'industria bellica è inadeguata, l'esercito è male armato. Per questo, Mussolini si dichiara inizialmente "**non belligerante**" (settembre 1939).
@@ -170,6 +188,8 @@ L'Italia non è preparata militarmente: dipende dall'estero per il **50% delle m
 Quando però la caduta della Francia appare imminente, Mussolini decide di entrare in guerra per "**non arrivare tardi al tavolo della pace**" e cogliere la sua parte di bottino.
 
 ### Il discorso del 10 giugno 1940
+
+La dichiarazione di guerra serve anche alla propaganda: Mussolini presenta l'intervento come occasione imperiale, anche se la realtà militare italiana è molto più debole.
 
 **10 giugno 1940**: Mussolini dichiara guerra a Francia e Gran Bretagna dal balcone di **Piazza Venezia** a Roma. Gli obiettivi propagandistici:
 - Egemonia italiana nel **Mediterraneo** ("**Mare Nostrum**").
@@ -197,6 +217,8 @@ Mussolini non vuole essere subordinato a Hitler: progetta una "**guerra parallel
 
 ## 6. La svolta del 1941
 
+Il 1941 allarga definitivamente il conflitto: la Germania attacca l'URSS e il Giappone provoca l'entrata in guerra degli Stati Uniti. Da guerra europea diventa guerra mondiale.
+
 ### Operazione Barbarossa: l'attacco all'URSS
 
 - **22 giugno 1941**: la Germania attacca l'**URSS** (**Operazione Barbarossa**, dal nome dell'imperatore medievale Federico Barbarossa). Il patto di non aggressione del 1939 era solo tattico: l'espansione verso est (**Lebensraum**) era da sempre un obiettivo ideologico nazista.
@@ -205,6 +227,8 @@ Mussolini non vuole essere subordinato a Hitler: progetta una "**guerra parallel
 - È una **guerra di sterminio**: gli **Einsatzgruppen** (squadre di sterminio delle SS) seguono le truppe e massacrano ebrei e commissari politici sovietici. **Massacro di Babi Yar** (Kiev, 29-30 settembre 1941): oltre 33.000 ebrei uccisi in due giorni.
 
 ### La resistenza sovietica
+
+Il fallimento della guerra lampo in URSS è decisivo: la Germania viene trascinata in una guerra lunga, di logoramento, proprio ciò che Hitler voleva evitare.
 
 - L'**inverno russo** (uno dei più rigidi del secolo) blocca l'avanzata tedesca a dicembre 1941. I soldati tedeschi non hanno equipaggiamenti invernali (Hitler contava sulla Blitzkrieg).
 - I sovietici applicano la **tecnica della terra bruciata** (la stessa usata contro Napoleone nel 1812): distruggono tutto ciò che non possono portare via.
@@ -236,6 +260,8 @@ Con l'invasione dell'URSS (Operazione Barbarossa) la persecuzione nazista degli 
 
 ### La Conferenza di Wannsee (20 gennaio 1942)
 
+Wannsee non inventa lo sterminio, che è già iniziato a Est; serve però a coordinarlo burocraticamente e a trasformarlo in un sistema continentale.
+
 A **Wannsee**, sobborgo di Berlino, **Reinhard Heydrich** riunisce 15 alti funzionari del regime per coordinare la **"soluzione finale della questione ebraica"** (*Endlösung*): lo sterminio totale degli ebrei d'Europa. Adolf Eichmann ne redige il verbale.
 
 ### I campi di sterminio
@@ -259,6 +285,8 @@ A differenza dei campi di concentramento (Dachau, Buchenwald, ecc.), i **campi d
 ---
 
 ## 8. La svolta del 1942-1943
+
+Le svolte avvengono su fronti diversi ma hanno lo stesso effetto: l'Asse perde l'iniziativa. Da questo momento Germania, Italia e Giappone combattono sempre più in difesa.
 
 ### Il fronte del Pacifico
 
@@ -289,6 +317,8 @@ Stalingrado è la **prima grande sconfitta della Wehrmacht**: da questo momento 
 
 ## 9. La caduta del fascismo (luglio 1943)
 
+Le sconfitte militari arrivano dentro l'Italia sotto forma di bombardamenti, scioperi e sfiducia nel regime. La caduta di Mussolini nasce quindi dall'intreccio tra guerra esterna e crisi interna.
+
 ### Il bombardamento di San Lorenzo
 
 - **19 luglio 1943**: l'aviazione alleata bombarda il quartiere romano di **San Lorenzo** (importante scalo ferroviario). Roma, che era stata risparmiata, scopre la guerra. Le vittime sono oltre 3.000.
@@ -310,6 +340,8 @@ Il governo Badoglio mantiene formalmente l'alleanza con la Germania ("la guerra 
 
 ### L'armistizio dell'8 settembre 1943
 
+L'armistizio dovrebbe segnare l'uscita dell'Italia dalla guerra fascista, ma viene gestito in modo confuso. Per questo apre una fase ancora più drammatica: occupazione tedesca, RSI e Resistenza.
+
 - **3 settembre 1943**: armistizio di **Cassibile** firmato segretamente in Sicilia tra Italia e alleati.
 - **8 settembre 1943**: l'**armistizio è reso pubblico** dal generale Eisenhower; Badoglio è costretto a confermarlo via radio. La popolazione lo accoglie con illusione di pace.
 - **Notte 8-9 settembre 1943**: il **re e Badoglio fuggono da Roma a Brindisi**, già in mano agli alleati. L'esercito italiano è abbandonato senza ordini ("sbando dell'8 settembre"): i soldati sono catturati dai tedeschi, fucilati o deportati nei campi di lavoro come **IMI** (Internati Militari Italiani, oltre 600.000).
@@ -327,6 +359,8 @@ Il governo Badoglio mantiene formalmente l'alleanza con la Germania ("la guerra 
 ---
 
 ## 10. La vittoria degli Alleati (1944-1945)
+
+Dopo il 1943 gli Alleati avanzano da più direzioni: anglo-americani a ovest e nel Mediterraneo, sovietici da est. La Germania viene progressivamente stretta in una morsa.
 
 ### Lo sbarco in Normandia (D-Day, 6 giugno 1944)
 
@@ -389,6 +423,8 @@ Le bombe restano il **primo e ultimo uso militare di armi nucleari** nella stori
 ---
 
 ## 13. Verso un nuovo ordine mondiale: l'ONU
+
+La fine della guerra impone di costruire un nuovo sistema internazionale. L'ONU nasce dal fallimento della Società delle Nazioni, ma anche dalla consapevolezza dei crimini e delle distruzioni appena avvenute.
 
 ### La nascita delle Nazioni Unite
 

@@ -19,6 +19,8 @@ Per capire il nazismo bisogna partire dalla crisi tedesca dopo la Prima guerra m
 
 ### La nascita della Repubblica
 
+La Repubblica nasce quindi come risposta alla sconfitta e al caos rivoluzionario, non come progetto condiviso da tutto il paese. Questo pesa fin dall'inizio: molti tedeschi la associano alla resa e all'umiliazione.
+
 - **9 novembre 1918**: di fronte alla sconfitta militare e ai moti rivoluzionari, il **Kaiser Guglielmo II abdica**. Viene proclamata la **Repubblica**.
 - Reparti dell'esercito si ammutinano e si formano **consigli di operai, soldati e marinai** (modello sovietico) che controllano i punti strategici delle città.
 - Il governo provvisorio è affidato al socialdemocratico **Friedrich Ebert** (SPD), che firma l'**armistizio di Compiègne (11 novembre 1918)** con Francia e Gran Bretagna.
@@ -38,6 +40,8 @@ La situazione è esplosiva: l'estrema sinistra spinge per una rivoluzione di tip
 
 ### La Costituzione di Weimar (agosto 1919)
 
+Dopo la repressione delle rivolte, la nuova classe dirigente prova a dare stabilità alla Germania con una costituzione democratica. Il problema è che questa democrazia nasce in mezzo a forze che non la accettano davvero.
+
 Le elezioni del gennaio 1919 danno la maggioranza ai socialdemocratici (38%); si forma una coalizione SPD + cattolici (**Zentrum**) + liberaldemocratici. **Ebert** è confermato Presidente della Repubblica.
 
 Caratteristiche della Costituzione (firmata a **Weimar**):
@@ -48,6 +52,8 @@ Caratteristiche della Costituzione (firmata a **Weimar**):
 
 ### Gli anni difficili (1919-1923)
 
+Le istituzioni democratiche appena nate devono subito affrontare crisi economiche, violenza politica e risentimento nazionale. Sono questi traumi a rendere credibile la propaganda di chi promette ordine e rivincita.
+
 - **Trattato di Versailles (giugno 1919)**: imposto alla Germania, è giudicato umiliante (**Diktat**): perdita di territori (Alsazia-Lorena alla Francia, parte della Posnania alla Polonia, città di Danzica città libera), riduzione drastica dell'esercito, divieto di unione con l'Austria, **clausola della "colpa di guerra"**, riparazioni economiche enormi.
 - **Assassinii politici** da parte dell'estrema destra: nel 1921 viene ucciso il cattolico **Matthias Erzberger** (firmatario dell'armistizio); nel 1922 il ministro degli esteri ebreo **Walther Rathenau** (firmatario del Trattato di Rapallo con l'URSS, 1922).
 - **Iperinflazione (1922-1923)**: nel 1921 1 dollaro = 65 marchi; nel novembre 1923 = oltre 4.000 miliardi di marchi. Devastante per i salariati e per chi vive di redditi fissi; favorisce speculatori e proprietari terrieri. Il malcontento delle classi medie sarà uno dei fattori del successo nazista.
@@ -55,6 +61,8 @@ Caratteristiche della Costituzione (firmata a **Weimar**):
 - **Putsch di Monaco (8-9 novembre 1923)**: tentato colpo di Stato di **Hitler** (allora capo del NSDAP bavarese), fallisce. Hitler è arrestato e condannato a 5 anni (ne sconta 9 mesi); in carcere scrive il **"Mein Kampf"** ("La mia battaglia"), manifesto della sua ideologia.
 
 ### La stabilizzazione (1924-1929)
+
+Dopo il caos dei primi anni, la Germania sembra rientrare in una fase più normale. Però la stabilità non è solidissima: dipende molto dai prestiti americani e non cancella il rancore verso Versailles.
 
 Grazie agli aiuti economici americani, la Germania si riprende:
 
@@ -68,6 +76,8 @@ Grazie agli aiuti economici americani, la Germania si riprende:
 ---
 
 ## 2. L'ideologia nazista
+
+Dentro questa Germania instabile si forma l'ideologia nazista: prende paure già diffuse, come anticomunismo, nazionalismo e antisemitismo, e le trasforma in un programma politico totalitario.
 
 ### Hitler e il NSDAP
 
@@ -93,6 +103,8 @@ Il "Mein Kampf" e gli scritti di **Alfred Rosenberg** (ideologo del partito) fis
 
 ## 3. L'ascesa al potere (1929-1933)
 
+Finché l'economia regge, il nazismo resta minoritario. La svolta arriva quando la crisi del 1929 distrugge la fiducia nella Repubblica e spinge milioni di elettori verso soluzioni radicali.
+
 ### L'effetto della crisi del 1929
 
 L'economia tedesca, dipendente dai capitali americani, crolla con la Grande Depressione: la produzione industriale si dimezza, la disoccupazione sale a oltre 6 milioni nel 1932. Il malcontento generale alimenta il consenso al nazismo:
@@ -105,6 +117,8 @@ I governi del **cancelliere Heinrich Brüning** (1930-1932) sono deboli, costret
 
 ### La nomina a cancelliere
 
+Il passaggio decisivo non è un colpo di Stato immediato, ma un accordo con le élite conservatrici. Pensano di usare Hitler contro la sinistra; invece gli consegnano gli strumenti per prendere tutto il potere.
+
 - **Aprile 1932**: Hitler si candida alla presidenza contro Hindenburg e perde.
 - **Luglio 1932**: NSDAP primo partito.
 - Nei mesi successivi tentativi falliti di formare un governo. L'industria pesante e gli ambienti conservatori spingono per un accordo con Hitler, convinti di poterlo controllare.
@@ -115,6 +129,8 @@ Hitler arriva al potere **legalmente**, attraverso le procedure costituzionali: 
 ---
 
 ## 4. La costruzione dello Stato totalitario (1933-1934)
+
+Una volta entrato al governo, Hitler non aspetta: usa legalità, emergenza e violenza per svuotare la democrazia dall'interno. Ogni passaggio riduce un centro di opposizione diverso.
 
 In sei mesi Hitler smantella la democrazia (Mussolini in Italia ci aveva impiegato circa due anni dal 1922-1924).
 
@@ -130,6 +146,8 @@ A pochi giorni dalle nuove elezioni, l'edificio del Parlamento tedesco viene inc
 In un clima di intimidazioni delle SA, NSDAP ottiene il **43,9%** (non la maggioranza assoluta). Hitler ottiene comunque dal Parlamento (con i seggi comunisti annullati e i deputati socialdemocratici pressati dalle SA) la **Legge dei Pieni Poteri (Ermächtigungsgesetz, 23 marzo 1933)**: il governo può legiferare senza il Parlamento per quattro anni.
 
 ### Lo smantellamento delle istituzioni democratiche
+
+Dopo l'incendio del Reichstag e la Legge dei Pieni Poteri, il regime può trasformare la repressione in sistema. Non si limita a vincere le elezioni: elimina gli strumenti stessi della vita democratica.
 
 - Aprile 1933: **boicottaggio dei negozi ebrei**; epurazione degli ebrei dai pubblici uffici.
 - **10 maggio 1933**: roghi pubblici dei libri di autori "non tedeschi" (ebrei, marxisti, pacifisti) — la celebre frase di **Heinrich Heine**: "*dove si bruciano i libri, si finirà col bruciare gli uomini*".
@@ -156,6 +174,8 @@ A differenza dell'Italia (dove Mussolini doveva fare i conti con monarchia e Chi
 
 ## 5. Stato e società nazista
 
+Conquistato lo Stato, il nazismo deve controllare anche la società. Per questo combina polizia, propaganda, scuola, tempo libero e culto del capo: non basta obbedire, bisogna identificarsi con il regime.
+
 ### Apparati di controllo
 
 - **Gestapo** (Geheime Staatspolizei, polizia segreta): sotto il controllo delle SS.
@@ -178,6 +198,8 @@ A differenza di Mussolini, Hitler costruisce un vero e proprio culto carismatico
 ---
 
 ## 6. Le persecuzioni
+
+Il controllo totalitario ha anche un volto persecutorio. Il regime costruisce la propria unità indicando nemici interni: prima politici, poi sociali e razziali.
 
 ### Contro gli oppositori politici
 
@@ -205,6 +227,8 @@ Persecuzione progressiva:
 
 ## 7. La politica economica nazista
 
+L'economia nazista serve a due obiettivi collegati: ottenere consenso riducendo la disoccupazione e preparare materialmente la guerra. Per questo lavori pubblici, autarchia e riarmo vanno letti insieme.
+
 ### Obiettivi: piena occupazione e riarmo
 
 Il regime persegue due obiettivi simultanei:
@@ -226,6 +250,8 @@ I salari restano bassi, ma la disoccupazione scende drasticamente (dai 6 milioni
 ---
 
 ## 8. La politica estera fino al 1939
+
+La politica estera traduce in azione i punti dell'ideologia: cancellare Versailles, riunire i tedeschi e conquistare spazio a Est. Ogni successo senza reazione incoraggia Hitler a fare il passo successivo.
 
 (Per i dettagli e gli eventi della guerra vedi `05-verso-wwii-e-guerra.md`. Qui le tappe principali del nazismo.)
 

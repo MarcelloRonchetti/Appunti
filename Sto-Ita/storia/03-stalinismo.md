@@ -23,6 +23,8 @@ Nel suo **"Testamento"** (lettera ai dirigenti, dicembre 1922-gennaio 1923) Leni
 
 ### I quattro protagonisti della successione
 
+La successione non è solo una gara personale: dietro ogni leader c'è una diversa idea di rivoluzione, economia e rapporto con l'Europa. La vittoria di Stalin decide quindi anche la direzione futura dell'URSS.
+
 | Nome | Visione | Punto di forza | Destino |
 |---|---|---|---|
 | **Lev Trotsky** | "Rivoluzione permanente": il socialismo in Russia non può sopravvivere senza la rivoluzione operaia in Europa | Carismatico, eroe della guerra civile, creatore dell'Armata Rossa | Isolato 1927, esiliato 1929, **assassinato in Messico nel 1940** da agente NKVD |
@@ -31,6 +33,8 @@ Nel suo **"Testamento"** (lettera ai dirigenti, dicembre 1922-gennaio 1923) Leni
 | **Iosif Stalin** ★ VINCE ★ | "Socialismo in un solo paese": costruire il socialismo in Russia senza aspettare l'Europa | **Controllo burocratico totale** come Segretario Generale dal 1922 | VINCE — nel 1929 è l'unico leader rimasto |
 
 ### La strategia di Stalin
+
+Stalin non vince perché è il più carismatico, ma perché controlla la macchina del partito. In un sistema a partito unico, controllare nomine e carriere significa controllare il potere reale.
 
 - Stalin **controlla le nomine** dei funzionari di partito a tutti i livelli (carica di Segretario Generale dal 1922).
 - Costruisce una rete di **fedelissimi** che gli devono la carriera.
@@ -44,11 +48,15 @@ Nel suo **"Testamento"** (lettera ai dirigenti, dicembre 1922-gennaio 1923) Leni
 
 ## 2. L'industrializzazione forzata dell'URSS
 
+Una volta eliminati i rivali, Stalin può imporre il suo progetto: trasformare rapidamente l'URSS in una potenza industriale. La modernizzazione non viene presentata come scelta economica, ma come necessità per sopravvivere in un mondo ostile.
+
 ### La fine della NEP
 
 I contadini, di fronte ai prezzi bassi imposti dallo Stato per i cereali, **rifiutano di vendere il grano** all'ammasso statale (crisi degli ammassi 1927). Per Stalin è il fallimento della NEP: il piccolo capitalismo agrario è incompatibile con la costruzione del socialismo.
 
 ### I piani quinquennali
+
+Il piano quinquennale è lo strumento con cui lo Stato sostituisce il mercato: decide che cosa produrre, dove investire e quali settori sacrificare. L'industria pesante viene prima dei consumi della popolazione.
 
 L'obiettivo è trasformare in pochi anni l'URSS da paese agricolo arretrato a grande potenza industriale. La pianificazione è affidata al **Gosplan** (Comitato di pianificazione statale).
 
@@ -59,6 +67,8 @@ L'obiettivo è trasformare in pochi anni l'URSS da paese agricolo arretrato a gr
 | **III Piano quinquennale** | 1938-1942 | Industria militare; **interrotto** dall'invasione tedesca del 1941 |
 
 ### Risultati
+
+I risultati spiegano perché il regime può presentarsi come forza modernizzatrice. Però questi successi vanno sempre collegati ai costi sociali e umani che li rendono possibili.
 
 - **Centrali elettriche** (Dnepr), **acciaierie** (Magnitogorsk), **officine trattori** a Stalingrado.
 - Nascita di nuove città industriali (Magnitogorsk, Komsomolsk).
@@ -80,6 +90,8 @@ Per stimolare la produzione si introduce il **lavoro a cottimo** e si esaltano g
 
 ## 3. La collettivizzazione e la "dekulakizzazione"
 
+Industrializzazione e agricoltura sono legate: per finanziare fabbriche e città, Stalin vuole controllare il grano. La collettivizzazione serve proprio a togliere autonomia ai contadini e mettere la campagna al servizio dello Stato.
+
 ### La collettivizzazione forzata (1929-1933)
 
 - **Dicembre 1929**: lancio della **collettivizzazione integrale** delle terre.
@@ -90,6 +102,8 @@ Per stimolare la produzione si introduce il **lavoro a cottimo** e si esaltano g
 
 ### La "dekulakizzazione"
 
+Quando i contadini resistono, il regime trasforma il conflitto economico in lotta contro un nemico di classe. Così la repressione diventa giustificata come difesa del socialismo.
+
 I **kulaki** (contadini "ricchi", in realtà spesso solo proprietari di pochi ettari) sono identificati come "nemici di classe". Stalin li suddivide formalmente in tre categorie:
 1. I **"controrivoluzionari attivi"**: fucilati o deportati nei **gulag**.
 2. I **"kulaki passivi"**: deportati in Siberia, Asia centrale.
@@ -98,6 +112,8 @@ I **kulaki** (contadini "ricchi", in realtà spesso solo proprietari di pochi et
 In pratica la categorizzazione è arbitraria: chiunque opponga resistenza viene etichettato come kulako. Si stima che **5-10 milioni di persone** siano state deportate o uccise.
 
 ### La risposta dei contadini e l'Holodomor
+
+La violenza dello Stato produce una risposta disperata nelle campagne. Il risultato non è solo economico, ma umano: la requisizione forzata rompe il mondo contadino e porta alla carestia.
 
 I contadini reagiscono **macellando il bestiame** e **bruciando il grano** piuttosto che cederlo. Il numero dei capi di bestiame crolla.
 
@@ -110,6 +126,8 @@ Per fermare la fuga dei contadini dalle campagne il governo:
 ---
 
 ## 4. La società sovietica e le "Grandi purghe"
+
+Il controllo dell'economia richiede anche controllo politico e sociale. Più il sistema diventa centralizzato, più Stalin teme deviazioni, opposizioni e autonomie dentro lo stesso partito.
 
 ### Il partito-Stato
 
@@ -146,6 +164,8 @@ Si stima che il Grande Terrore sia costato oltre **700.000 esecuzioni** dirette 
 
 ## 5. I caratteri dello stalinismo
 
+Accanto alla repressione fisica, lo stalinismo costruisce consenso e obbedienza attraverso cultura, scuola, propaganda e culto del capo. Il potere deve apparire inevitabile e persino paterno.
+
 ### Conformismo culturale
 
 - **Realismo socialista**: unica corrente artistica ammessa. L'arte deve celebrare il proletariato e il regime. Vietate le avanguardie.
@@ -164,6 +184,8 @@ A differenza di Hitler — la cui figura carismatica preesiste al regime — il 
 ---
 
 ## 6. La politica estera sovietica
+
+All'esterno Stalin alterna ideologia e sicurezza nazionale. L'URSS sostiene l'antifascismo, ma quando si sente isolata dalle democrazie occidentali sceglie un accordo tattico con Hitler.
 
 - **1922-1933**: relativo isolamento. Cooperazione con la Repubblica di Weimar (Trattato di Rapallo, 1922).
 - **Comintern (Terza Internazionale)**: organizzazione fondata da Lenin nel **1919** per coordinare i partiti comunisti mondiali.
