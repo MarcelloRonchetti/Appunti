@@ -43,6 +43,16 @@ Sul modello fascista, nascono regimi autoritari soprattutto nei paesi a economia
 - **Gran Bretagna**: governi di coalizione (Ramsay **MacDonald** dal 1929, Stanley Baldwin, Neville **Chamberlain** dal 1937). Esiste anche un movimento fascista, la **British Union of Fascists** di Oswald Mosley, ma resta marginale.
 - **Francia**: instabilità governativa, forte tensione politica. A destra movimenti reazionari come **Action Française** e **Croix-de-Feu**. A sinistra il **Fronte Popolare** (Léon Blum, 1936-1938) introduce per primo le ferie pagate, le 40 ore settimanali e nazionalizzazioni — ma cade per le opposizioni interne.
 
+### Il programma di Hitler
+
+Dietro alle aggressioni naziste c'è un disegno politico esplicito, formulato già nel *Mein Kampf* (1925) e progressivamente messo in atto. Si articola in **tre obiettivi**:
+
+1. **Cancellare il trattato di Versailles**, considerato ingiusto e umiliante per la Germania.
+2. **Riunire sotto il Reich tutti i tedeschi** sparsi in Europa centrale (Austria, Sudeti, Danzica, Volga, Transilvania…).
+3. **Annientare l'Unione Sovietica** in quanto culla del comunismo e ostacolo all'espansione tedesca verso est (**Lebensraum**, "spazio vitale").
+
+Hitler, veterano della Grande Guerra, è consapevole del rischio di una **guerra su due fronti**: per questo, almeno fino al 1939, evita lo scontro diretto con Francia e Gran Bretagna e punta a ottenere il massimo per via diplomatica, sfruttando la debolezza dell'appeasement.
+
 ---
 
 ## 2. Le aggressioni che minano la pace
@@ -108,7 +118,7 @@ Rotto il Fronte di Stresa, le alleanze si ricompongono: l'Italia si avvicina all
 
 ### Anschluss e Conferenza di Monaco
 
-- **Marzo 1938**: **Anschluss** (annessione) dell'Austria al Reich. Mussolini, ormai alleato, non si oppone (a differenza del 1934).
+- **Marzo 1938**: **Anschluss** (annessione) dell'Austria al Reich. Mussolini, ormai alleato, non si oppone (a differenza del 1934). Un **plebiscito** un mese dopo ratifica l'unione con maggioranza schiacciante (oltre il 99%, in un voto evidentemente non libero ma con consenso reale diffuso).
 - Hitler punta sui **Sudeti** (regione cecoslovacca a maggioranza tedesca). La Cecoslovacchia, nata nel 1918, comprende cechi, slovacchi, tedeschi, ungheresi, polacchi: un mosaico di nazionalità.
 - **29-30 settembre 1938**: **Conferenza di Monaco**. Vi partecipano **Germania, Italia, Gran Bretagna, Francia** (Hitler, Mussolini, Chamberlain, Daladier). **La Cecoslovacchia non è invitata.** Si decide di **cedere i Sudeti alla Germania**.
 - Chamberlain tornando a Londra agita il documento e dichiara: "*Peace for our time*" ("Pace per il nostro tempo"). È l'illusione tipica dell'appeasement.
@@ -121,7 +131,7 @@ L'occupazione di Boemia e Moravia cambia tutto: Hitler non sta più solo riunend
 - **Aprile 1939**: l'**Italia invade l'Albania**, annessa all'Impero.
 - Hitler rivendica **Danzica** (città libera dal 1919, popolata da tedeschi) e il **corridoio polacco** che separa la Germania dalla Prussia orientale.
 - Francia e Gran Bretagna **abbandonano l'appeasement** e garantiscono militarmente la Polonia.
-- **22 maggio 1939**: **Patto d'Acciaio** tra Italia e Germania (alleanza militare offensiva e difensiva).
+- **22 maggio 1939**: **Patto d'Acciaio** tra Italia e Germania (alleanza militare offensiva e difensiva). Mussolini e il ministro degli esteri **Ciano** sanno che l'Italia non è pronta per una guerra prima di **due o tre anni**; Hitler li rassicura sulle tempistiche, ma di fatto pochi mesi dopo invade la Polonia trascinando l'Italia nel conflitto.
 
 ### Il Patto Molotov-Ribbentrop (23 agosto 1939)
 
@@ -168,6 +178,7 @@ Da settembre 1939 a maggio 1940, sul fronte occidentale non avvengono operazioni
 - **22 giugno 1940**: armistizio franco-tedesco firmato a **Compiègne**, nello stesso vagone in cui era stato firmato l'armistizio del 1918 (umiliazione simbolica).
 - La Francia è divisa: Nord e costa atlantica occupate dai tedeschi; Sud (zona "libera") sotto il **regime di Vichy** del maresciallo **Philippe Pétain**, governo collaborazionista filo-fascista.
 - **18 giugno 1940**: il generale **Charles de Gaulle**, da Londra, lancia via radio (BBC) il celebre **appello alla resistenza**: nasce la **France Libre**.
+- **3 luglio 1940**: a **Mers-el-Kébir** (Algeria), la flotta britannica attacca e distrugge la flotta francese ormeggiata nel porto, per impedire che cada in mani tedesche. Migliaia di marinai francesi muoiono. È un atto unilaterale brutale che rompe ogni residuo rapporto tra Vichy e Londra, ma assicura alla Royal Navy il controllo del Mediterraneo.
 
 ### La Battaglia d'Inghilterra
 
@@ -241,11 +252,20 @@ L'opinione pubblica americana è isolazionista, ma Roosevelt (rieletto nel novem
 
 - **Marzo 1941**: **Lend-Lease Act** (Legge "Affitti e Prestiti"): gli USA possono fornire materiali bellici, viveri, navi a "qualunque paese la cui difesa sia ritenuta vitale per gli Stati Uniti" — in pratica Gran Bretagna, URSS, Cina.
 - **14 agosto 1941**: **Carta Atlantica**, firmata da **Roosevelt e Churchill** al largo di Terranova. Documento che fissa i principi del dopoguerra: autodeterminazione dei popoli, libertà dei mari, accesso alle risorse, rinuncia all'aggressione. Ispirata ai 14 punti di Wilson, anticipa l'ONU.
-- **7 dicembre 1941**: il Giappone, alleato dell'Asse, attacca a sorpresa la flotta americana a **Pearl Harbor** (Hawaii). Affonda 8 navi da battaglia, distrugge 188 aerei, uccide oltre 2.400 americani. L'obiettivo giapponese è eliminare la flotta USA del Pacifico per espandersi senza ostacoli verso le risorse del sud-est asiatico.
+- **7 dicembre 1941**: il Giappone, alleato dell'Asse, attacca a sorpresa la flotta americana a **Pearl Harbor** (Hawaii). Affonda 8 navi da battaglia, distrugge 188 aerei, uccide oltre 2.400 americani. L'obiettivo giapponese è eliminare la flotta USA del Pacifico per espandersi senza ostacoli verso le risorse del sud-est asiatico. L'espansione viene giustificata ideologicamente con la **Sfera di Co-prosperità della Grande Asia Orientale** (*Daitōa Kyōeiken*): un blocco economico-politico guidato da Tokyo che dovrebbe "liberare" l'Asia dal colonialismo europeo — di fatto sostituendo i vecchi padroni con uno nuovo.
 - **8 dicembre 1941**: USA e Gran Bretagna **dichiarano guerra al Giappone**.
 - **11 dicembre 1941**: **Germania e Italia dichiarano guerra agli USA** (in adempimento al patto tripartito Berlino-Roma-Tokyo del 1940). Roosevelt ha così le mani libere per impegnarsi sul fronte europeo.
 
 La guerra è ora **veramente mondiale**.
+
+### Il Patto delle Nazioni Unite (1° gennaio 1942)
+
+A Washington, tra dicembre 1941 e gennaio 1942, si riuniscono **26 Stati** in guerra contro l'Asse. Il **1° gennaio 1942** firmano la **Dichiarazione delle Nazioni Unite**, in cui si impegnano a:
+- aderire ai principi della **Carta Atlantica**;
+- combattere fino alla **resa totale** dell'Asse;
+- **non concludere paci separate**.
+
+Quest'ultimo punto è decisivo: trasforma il conflitto in una guerra all'annientamento, senza più possibilità di compromessi diplomatici come nel 1918. È anche il primo uso ufficiale dell'espressione "Nazioni Unite", che darà il nome all'organizzazione del 1945.
 
 ---
 
@@ -313,6 +333,28 @@ In Africa settentrionale, dopo lunghi scontri, il generale britannico **Bernard 
 
 Stalingrado è la **prima grande sconfitta della Wehrmacht**: da questo momento i tedeschi sono in difensiva su tutti i fronti.
 
+### La Battaglia dell'Atlantico
+
+Parallelamente ai grandi fronti terrestri, sull'Atlantico si combatte la **più lunga battaglia della guerra** (1939-1945). I sommergibili tedeschi (**U-Boot**) dell'ammiraglio **Dönitz** cercano di affondare i convogli che riforniscono la Gran Bretagna e poi l'URSS dagli Stati Uniti (Lend-Lease). Per due anni gli U-Boot dominano l'oceano.
+
+Nel **1943** la situazione si rovescia grazie a:
+- il **sistema dei convogli** scortati da cacciatorpediniere;
+- i **radar** e il **sonar** sempre più sofisticati;
+- la decifrazione dei codici tedeschi della macchina **Enigma** (lavoro di Bletchley Park);
+- l'uso massiccio di aviazione a lungo raggio.
+
+Da maggio 1943 le perdite tedesche diventano insostenibili: la **Battaglia dell'Atlantico è vinta dagli Alleati**, garantendo le linee di rifornimento per la guerra in Europa.
+
+### La resistenza jugoslava di Tito
+
+La Jugoslavia è il paese europeo dove la **Resistenza** assume la dimensione più imponente. Dopo lo sfaldamento dell'esercito regolare nell'aprile 1941, **Josip Broz "Tito"**, capo del Partito Comunista jugoslavo, fonda l'**Esercito Popolare di Liberazione della Jugoslavia** (partigiani comunisti).
+
+- I partigiani di Tito controllano vaste zone di montagna e impegnano numerose divisioni dell'Asse, alleggerendo gli altri fronti.
+- Sono affiancati e talvolta contrastati dai **četnici** monarchici di Draža Mihailović (filo-britannici ma in parte collaborazionisti).
+- Dal 1943 Churchill e Stalin riconoscono Tito come unico interlocutore. Alla fine della guerra Tito libera la Jugoslavia in larga parte con le proprie forze e instaura un **regime comunista autonomo** da Mosca — caso unico nell'Europa orientale.
+
+Nel **maggio 1943**, per togliere alle resistenze comuniste l'etichetta di "agenti di Mosca" e renderle accettabili agli alleati occidentali, Stalin scioglie il **Comintern** (Internazionale Comunista).
+
 ---
 
 ## 9. La caduta del fascismo (luglio 1943)
@@ -362,6 +404,17 @@ L'armistizio dovrebbe segnare l'uscita dell'Italia dalla guerra fascista, ma vie
 
 Dopo il 1943 gli Alleati avanzano da più direzioni: anglo-americani a ovest e nel Mediterraneo, sovietici da est. La Germania viene progressivamente stretta in una morsa.
 
+### La campagna d'Italia e la Linea Gustav (1943-1945)
+
+Dopo lo sbarco in Sicilia e l'armistizio di settembre 1943, gli Alleati risalgono la penisola contro una difesa tedesca durissima. I tedeschi, occupata l'Italia centro-settentrionale, allestiscono una serie di linee fortificate che attraversano la penisola da costa a costa:
+
+- **Linea Gustav**: la più nota, da **Gaeta** al fiume **Sangro**, perno della difesa sull'Appennino centrale. Cuore della linea è l'abbazia di **Monte Cassino**.
+- **Battaglia di Monte Cassino** (gennaio-maggio 1944): quattro offensive alleate consecutive, sanguinosissime. Il **15 febbraio 1944** l'antica abbazia benedettina viene **rasa al suolo dai bombardamenti** alleati (poi si scoprirà che i tedeschi non vi erano dentro). Solo a **maggio 1944** la linea cede, anche grazie al **Corpo di spedizione francese** (con truppe coloniali marocchine) e al **II Corpo polacco** del generale Anders, che piantano la bandiera polacca sulle rovine dell'abbazia.
+- **4 giugno 1944**: gli Alleati entrano a **Roma** (due giorni prima del D-Day).
+- **Linea Gotica**: nuova linea difensiva tedesca lungo l'Appennino tosco-emiliano (Versilia-Pesaro). Resiste dall'estate 1944 alla primavera 1945; sarà sfondata solo nell'aprile 1945, contemporaneamente all'insurrezione del Nord.
+
+La campagna d'Italia è lunga, lenta e costosa: oltre 300.000 vittime alleate e tedesche. È il fronte dove la **Resistenza italiana** opera fianco a fianco con gli Alleati.
+
 ### Lo sbarco in Normandia (D-Day, 6 giugno 1944)
 
 - **6 giugno 1944**: gli Alleati guidati dal generale **Dwight D. Eisenhower** sbarcano in **Normandia** (operazione **Overlord**). È il più grande sbarco anfibio della storia: ~156.000 uomini il primo giorno, su cinque spiagge (Utah, Omaha, Gold, Juno, Sword).
@@ -388,6 +441,10 @@ Dopo Stalingrado, l'Armata Rossa avanza inarrestabile verso ovest:
 
 I "Tre Grandi" (Roosevelt/Truman, Churchill, Stalin) si incontrano più volte per coordinare la guerra e disegnare il dopoguerra:
 
+- **Conferenza di Casablanca (14-24 gennaio 1943)** — Marocco. Vi partecipano **Roosevelt, Churchill** e **De Gaulle**; Stalin è assente (impegnato a Stalingrado). Tre decisioni capitali:
+  - Richiesta di **resa incondizionata** dell'Asse — nessuna pace negoziata, solo l'annientamento dei regimi nazifascisti.
+  - Priorità al teatro europeo rispetto al Pacifico.
+  - Invasione del "**ventre molle dell'Asse**" (espressione di Churchill): l'Italia. Da qui nasce l'operazione Husky (sbarco in Sicilia, luglio 1943).
 - **Conferenza di Teheran (28 nov. - 1 dic. 1943)**: primo incontro dei Tre Grandi. Decisione del secondo fronte in Francia (Overlord).
 - **Conferenza di Yalta (4-11 febbraio 1945)** — in Crimea, decisiva. Stabilisce:
   - **Divisione della Germania** in 4 zone d'occupazione (USA, URSS, UK, Francia).
