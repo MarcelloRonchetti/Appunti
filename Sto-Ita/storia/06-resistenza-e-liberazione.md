@@ -59,10 +59,7 @@ L'**armistizio di Cassibile** è firmato il 3 settembre 1943, ma viene reso pubb
 
 L'annuncio è **ambiguo e tardivo**: nessun ordine chiaro all'esercito, nessuna preparazione per affrontare la prevedibile reazione tedesca. Il **9 settembre** il re Vittorio Emanuele III, Badoglio, lo Stato Maggiore e parte della famiglia reale **fuggono da Roma** verso Brindisi, abbandonando l'esercito senza direttive. È la "fuga di Pescara", percepita come una diserzione.
 
-**Conseguenze militari**:
-- Crollo dell'esercito italiano (~1.000.000 di soldati): smobilitazione caotica, fughe, diserzioni.
-- I tedeschi, già pronti con il **Piano Achse**, occupano in pochi giorni il Centro-Nord.
-- **600.000 militari italiani** vengono internati in Germania come **IMI (Internati Militari Italiani)**: rifiutano in maggioranza di aderire alla RSI o alla Wehrmacht; subiscono fame, lavoro forzato, ~50.000 morti.
+Le conseguenze militari sono catastrofiche. L'esercito italiano, circa un milione di soldati lasciati senza ordini, **si disgrega**: c'è chi diserta, chi torna a casa, chi tenta di unirsi agli Alleati, chi raggiunge le prime formazioni partigiane sulle montagne. I tedeschi, che si erano preparati a questa eventualità con il **Piano Achse**, in pochi giorni occupano militarmente tutto il Centro-Nord. Circa **600.000 militari italiani** vengono catturati e deportati in Germania come **IMI (Internati Militari Italiani)**: in maggioranza rifiutano di aderire alla RSI o alla Wehrmacht, e per questo subiscono fame, freddo e lavoro forzato. Circa **50.000 di loro non torneranno** più a casa.
 
 ### Episodi-simbolo della disintegrazione
 
@@ -81,20 +78,15 @@ Mussolini, liberato sul **Gran Sasso** il 12 settembre 1943 dai paracadutisti te
 
 ### Caratteri della RSI
 
-- **Stato fantoccio** dipendente dalla Germania nazista (controllo SS, Wehrmacht).
-- **Manifesto di Verona (14 novembre 1943)**: programma del nuovo Partito Fascista Repubblicano, di facciata "socializzante" (cogestione operaia, nazionalizzazioni) per recuperare consenso popolare. Antisemitismo esplicito: gli ebrei diventano "stranieri di nazionalità nemica".
-- **Processo di Verona (gennaio 1944)**: condanna a morte e fucilazione dei gerarchi che il 25 luglio 1943 avevano votato l'ordine del giorno Grandi contro Mussolini, **Galeazzo Ciano** (genero del Duce) compreso.
-- **Brigate Nere** (giugno 1944): milizia volontaria fascista, responsabile di rappresaglie e torture contro i partigiani.
-- **Bande nere autonome**: la X MAS di Junio Valerio **Borghese**, la **Banda Koch**, la **Banda Carità** sono tristemente note per la brutalità contro civili e antifascisti.
+La Repubblica Sociale è prima di tutto uno **Stato fantoccio**: il vero potere è nelle mani delle SS e della Wehrmacht, e Mussolini non controlla né l'esercito tedesco né la sua stessa repressione. Per cercare di recuperare un consenso popolare ormai perso, il regime adotta il **Manifesto di Verona** (14 novembre 1943), il programma del nuovo Partito Fascista Repubblicano: contiene una facciata "socializzante" — cogestione operaia, nazionalizzazione delle grandi imprese — e un antisemitismo molto più esplicito di prima, con gli ebrei dichiarati "stranieri di nazionalità nemica".
+
+La RSI si distingue subito per la **violenza interna**. Con il **Processo di Verona** (gennaio 1944) Mussolini fa condannare a morte e fucilare i gerarchi che il 25 luglio avevano votato l'ordine del giorno Grandi contro di lui, tra cui **Galeazzo Ciano**, suo stesso genero: è la vendetta personale che chiude la spaccatura del fascismo. Sul fronte militare e poliziesco nascono le **Brigate Nere** (giugno 1944), milizia volontaria del partito incaricata della "guerra ai banditi", cioè la repressione dei partigiani con rappresaglie e torture. A queste si affiancano **bande autonome** ancora più feroci: la **X MAS** di Junio Valerio Borghese, la **Banda Koch** e la **Banda Carità** restano tristemente note per la brutalità contro civili e antifascisti.
 
 ### La persecuzione degli ebrei italiani
 
-La dipendenza dalla Germania rende l'Italia occupata parte diretta della macchina persecutoria nazista. Dopo il 1943 la persecuzione non è più solo discriminazione: diventa deportazione.
+La dipendenza dalla Germania trasforma l'Italia occupata in parte attiva della macchina persecutoria nazista. Dopo il 1943 la persecuzione non è più solo discriminazione amministrativa, come era stata con le leggi razziali del 1938: diventa **deportazione e sterminio**.
 
-- **16 ottobre 1943, "sabato nero del ghetto di Roma"**: razzia tedesca nel ghetto, **1.024 ebrei deportati** ad Auschwitz; tornano in 16 (una sola donna).
-- Complessivamente, dalla RSI vengono **deportati oltre 7.500 ebrei italiani**: ne sopravvivono circa 800.
-- Il campo di transito di **Fossoli** (Modena) e poi quello di **Bolzano** sono le tappe italiane verso Auschwitz.
-- **Primo Levi** (chimico torinese) è arrestato il 13 dicembre 1943 a Brusson, deportato ad Auschwitz; la sua testimonianza è in *Se questo è un uomo* (1947).
+Il momento simbolo è il **"sabato nero del ghetto di Roma"** (16 ottobre 1943): una razzia delle SS porta via **1.024 ebrei romani**, deportati ad Auschwitz; ne torneranno indietro **soltanto 16**, una sola donna fra loro. Complessivamente, durante la RSI vengono deportati **oltre 7.500 ebrei italiani**: ne sopravvivono circa 800. I campi di transito di **Fossoli** (Modena) e poi di **Bolzano** funzionano come tappa italiana lungo la rotta verso Auschwitz. È in questo contesto che, il 13 dicembre 1943, viene arrestato a Brusson **Primo Levi**, giovane chimico torinese, poi deportato ad Auschwitz: dalla sua esperienza nascerà *Se questo è un uomo* (1947), una delle testimonianze fondamentali sulla Shoah.
 
 ---
 
@@ -194,24 +186,17 @@ La Liberazione è il risultato dell'avanzata alleata e dell'insurrezione partigi
 
 ### La svolta
 
-- **9 aprile 1945**: offensiva alleata finale sul fronte appenninico.
-- **Aprile 1945**: i partigiani entrano in Bologna (21), Genova (24) — Genova è l'unica grande città a ottenere la **resa di un'intera divisione tedesca alla Resistenza** prima dell'arrivo alleato (il generale Meinhold firma davanti al CLN ligure di Remo Scappini).
+Nei primi mesi del 1945 la situazione precipita. Il **9 aprile** scatta l'offensiva alleata finale sul fronte appenninico, che sfonda la Linea Gotica. Nelle settimane successive le grandi città del Nord vengono liberate dai partigiani prima ancora che arrivino gli Alleati: Bologna è raggiunta il **21 aprile**, Genova il **24 aprile**. Il caso genovese è eccezionale, perché è l'unica grande città in cui un'intera **divisione tedesca si arrende direttamente alla Resistenza** (il generale Meinhold firma la resa davanti al CLN ligure di Remo Scappini), senza aspettare le truppe alleate.
 
 ### L'insurrezione del 25 aprile
 
-Il **CLNAI**, riunito a Milano (sede del cardinale Schuster), **proclama l'insurrezione generale** il 25 aprile 1945:
-- Milano, Torino, tutte le città del Nord scendono in sciopero e lottano.
-- Le fabbriche occupate dagli operai impediscono la distruzione tedesca degli impianti.
-- Il **25 aprile** diventa **festa nazionale della Liberazione** (Decreto Legislativo 22 aprile 1946).
+Il **25 aprile 1945**, riunito a Milano nella sede del cardinale Schuster, il **CLNAI proclama l'insurrezione generale**. Milano, Torino e tutte le grandi città del Nord scendono contemporaneamente in sciopero e in lotta armata. Le **fabbriche occupate dagli operai** giocano un ruolo decisivo: impediscono la distruzione tedesca degli impianti industriali, salvando le basi materiali della futura ricostruzione economica. È il giorno simbolo della Liberazione, e per questo diventerà **festa nazionale** (Decreto Legislativo del 22 aprile 1946).
 
 ### La fine di Mussolini
 
-La morte di Mussolini chiude simbolicamente il fascismo repubblicano e la guerra civile. Piazzale Loreto mostra però anche quanto violenta e lacerata sia stata la fine del regime.
+La morte di Mussolini chiude simbolicamente il fascismo repubblicano e la guerra civile. Il 25 aprile incontra a Milano l'arcivescovo Schuster sperando in una resa onorevole, ma rifiuta le condizioni imposte dal CLN e fugge verso la Svizzera con la colonna degli ultimi fedeli. Il **27 aprile** a **Dongo**, sul lago di Como, la colonna viene bloccata dai partigiani della 52ª brigata Garibaldi: Mussolini, travestito da soldato tedesco, viene riconosciuto e catturato. Il giorno successivo, **28 aprile**, lui e l'amante **Claretta Petacci** sono fucilati a **Giulino di Mezzegra** dal "colonnello Valerio" (il comunista **Walter Audisio**).
 
-- **25 aprile**: Mussolini incontra l'arcivescovo Schuster a Milano, sperando in una resa onorevole; rifiuta le condizioni e fugge verso la Svizzera.
-- **27 aprile, Dongo (CO)**: la sua colonna è bloccata dai partigiani della 52ª brigata Garibaldi. Mussolini è riconosciuto travestito da soldato tedesco.
-- **28 aprile, Giulino di Mezzegra**: Mussolini e Claretta Petacci sono fucilati dal "colonnello Valerio" (**Walter Audisio**, comunista).
-- **29 aprile, Piazzale Loreto, Milano**: i corpi di Mussolini, Petacci e altri gerarchi sono esposti **a testa in giù** al distributore di benzina di piazzale Loreto — simbolicamente, lo stesso luogo dove l'anno prima i nazifascisti avevano esposto 15 partigiani fucilati. Una scena macabra, contestata anche da molti antifascisti (Pertini, Parri).
+Il **29 aprile**, a Milano, i corpi di Mussolini, Petacci e di altri gerarchi vengono **esposti a testa in giù** in **Piazzale Loreto**, al distributore di benzina dove l'anno prima i nazifascisti avevano esposto i corpi di 15 partigiani fucilati. La scena è macabra e violenta, contestata anche da molti antifascisti — come Pertini e Parri — ma esprime la rabbia accumulata in venti anni di dittatura e due anni di guerra civile.
 
 ### Resa tedesca
 
@@ -233,10 +218,9 @@ Il significato della Resistenza non è solo militare. La lotta contro fascismo e
 
 ### L'eredità politica
 
-Qui si vede il collegamento tra Resistenza e dopoguerra: i partiti del CLN diventano protagonisti della Repubblica e scrivono insieme la Costituzione.
+L'eredità più importante della Resistenza non è militare ma politica: i partiti del CLN diventano i protagonisti della nuova Italia repubblicana e scrivono insieme la Costituzione.
 
-- **2 giugno 1946**: referendum istituzionale → **Repubblica** (54,3%). Le donne **votano per la prima volta** (suffragio esteso il 31 gennaio 1945).
-- **Costituzione del 1948**: nasce dal CLN. I principi fondamentali sono il frutto del compromesso fra cattolici, comunisti, socialisti, liberali, azionisti — l'arco costituzionale antifascista.
-- **Articolo 1**: "L'Italia è una Repubblica democratica fondata sul lavoro" (formula di compromesso tra "Repubblica dei lavoratori" comunista e "Repubblica del lavoro" democristiana).
-- **XII disposizione transitoria**: vieta la riorganizzazione del disciolto Partito Fascista. Base della **Legge Scelba (1952)** e della **Legge Mancino (1993)** sull'apologia di fascismo.
+Il **2 giugno 1946** gli italiani sono chiamati al **referendum istituzionale**: vince la **Repubblica** con il 54,3%. È un voto storico anche perché per la prima volta le **donne italiane votano** (il suffragio era stato esteso il 31 gennaio 1945). Nello stesso giorno si eleggono i membri dell'Assemblea Costituente che, fra il 1946 e il 1947, elaborano la **Costituzione**, entrata in vigore il **1° gennaio 1948**. Il testo nasce dal compromesso storico fra cattolici, comunisti, socialisti, liberali e azionisti — quello che verrà chiamato "**arco costituzionale antifascista**".
+
+Sintesi di questo compromesso è già l'**Articolo 1** — "L'Italia è una Repubblica democratica fondata sul lavoro" — che media tra la "Repubblica dei lavoratori" voluta dai comunisti e la "Repubblica del lavoro" preferita dai democristiani. A chiudere il cerchio con il passato c'è la **XII disposizione transitoria**, che vieta la riorganizzazione del disciolto Partito Fascista: è la base giuridica della **Legge Scelba (1952)** e poi della **Legge Mancino (1993)** sull'apologia di fascismo.
 

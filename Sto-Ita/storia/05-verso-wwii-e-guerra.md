@@ -157,11 +157,11 @@ L'attacco alla Polonia unisce i due elementi decisivi: la copertura diplomatica 
 
 ### L'invasione della Polonia
 
-- **1° settembre 1939**: la **Germania invade la Polonia**. È la **guerra lampo** (**Blitzkrieg**): impiego coordinato di aviazione (Luftwaffe), carri armati (Panzer) e fanteria motorizzata. La Polonia è schiacciata in poche settimane.
-- **3 settembre 1939**: **Francia e Gran Bretagna dichiarano guerra alla Germania**. Inizia la Seconda guerra mondiale.
-- **17 settembre 1939**: l'**URSS invade la Polonia orientale** secondo gli accordi segreti.
-- **28 settembre 1939**: Polonia spartita tra Germania e URSS.
-- **Dicembre 1939**: l'URSS attacca la **Finlandia** (Guerra d'inverno) e viene **espulsa dalla Società delle Nazioni**.
+Il **1° settembre 1939** la Germania invade la **Polonia**. È il primo banco di prova della **guerra lampo (Blitzkrieg)**: una nuova dottrina militare basata sull'azione coordinata di **aviazione (Luftwaffe), carri armati (Panzer) e fanteria motorizzata**. L'idea è semplice: sfondare velocemente le linee nemiche, accerchiare le unità avversarie e impedire qualsiasi controffensiva organizzata. La Polonia, divisa anche al suo interno, viene schiacciata in poche settimane.
+
+Stavolta, però, le potenze occidentali non si limitano a protestare: il **3 settembre 1939** **Francia e Gran Bretagna dichiarano guerra alla Germania**. È l'inizio ufficiale della Seconda guerra mondiale.
+
+Il **17 settembre 1939**, secondo gli accordi segreti del Patto Molotov-Ribbentrop, anche l'**URSS invade la Polonia da Est**: l'**28 settembre** il paese è formalmente spartito tra Germania e Unione Sovietica. Poche settimane dopo, nel **dicembre 1939**, Stalin attacca la **Finlandia** (Guerra d'inverno) per spostare ancora più a Ovest il confine sovietico; per questo aggressione l'URSS viene **espulsa dalla Società delle Nazioni** — l'ultima azione significativa di quell'organismo, ormai svuotato di senso.
 
 ### La "strana guerra" (Drôle de guerre)
 
@@ -171,20 +171,19 @@ Da settembre 1939 a maggio 1940, sul fronte occidentale non avvengono operazioni
 
 ### La caduta della Francia (1940)
 
-- **Aprile 1940**: la Germania invade **Danimarca** e **Norvegia** per assicurarsi i rifornimenti di ferro svedese.
-- **10 maggio 1940**: offensiva tedesca a ovest. I tedeschi aggirano la Linea Maginot passando per le **Ardenne** (considerate "impraticabili" dai francesi) e per il Belgio neutrale. È un'altra guerra lampo.
-- **27 maggio - 4 giugno 1940**: il corpo di spedizione britannico è accerchiato a **Dunkerque**, ma riesce a evacuare 338.000 uomini verso l'Inghilterra (**operazione Dynamo**).
-- **14 giugno 1940**: i tedeschi entrano a **Parigi**.
-- **22 giugno 1940**: armistizio franco-tedesco firmato a **Compiègne**, nello stesso vagone in cui era stato firmato l'armistizio del 1918 (umiliazione simbolica).
-- La Francia è divisa: Nord e costa atlantica occupate dai tedeschi; Sud (zona "libera") sotto il **regime di Vichy** del maresciallo **Philippe Pétain**, governo collaborazionista filo-fascista.
-- **18 giugno 1940**: il generale **Charles de Gaulle**, da Londra, lancia via radio (BBC) il celebre **appello alla resistenza**: nasce la **France Libre**.
-- **3 luglio 1940**: a **Mers-el-Kébir** (Algeria), la flotta britannica attacca e distrugge la flotta francese ormeggiata nel porto, per impedire che cada in mani tedesche. Migliaia di marinai francesi muoiono. È un atto unilaterale brutale che rompe ogni residuo rapporto tra Vichy e Londra, ma assicura alla Royal Navy il controllo del Mediterraneo.
+Nell'**aprile 1940** Hitler rompe la "guerra fasulla" con l'invasione di **Danimarca e Norvegia**, indispensabili per assicurarsi i rifornimenti di ferro svedese. Il **10 maggio 1940** parte l'offensiva contro la Francia: i tedeschi aggirano la **Linea Maginot** passando attraverso le **Ardenne** (considerate "impraticabili" dai francesi) e attraverso il Belgio neutrale. Ancora una volta è guerra lampo: in poche settimane le difese francesi crollano.
+
+Tra il **27 maggio e il 4 giugno 1940** il corpo di spedizione britannico, accerchiato a **Dunkerque**, viene evacuato in extremis verso l'Inghilterra grazie all'**operazione Dynamo**: 338.000 uomini sono salvati con una flotta improvvisata di navi militari e civili. È una sconfitta strategica, ma anche un evento simbolico che alimenterà la futura resistenza britannica.
+
+Il **14 giugno** i tedeschi entrano a **Parigi**; pochi giorni dopo, il **22 giugno 1940**, la Francia firma l'**armistizio di Compiègne**, scelto da Hitler nello stesso vagone ferroviario in cui era stato firmato l'armistizio del 1918, per restituire alla Francia l'umiliazione subita allora. Il paese viene **diviso in due**: il Nord e la costa atlantica restano sotto occupazione tedesca, mentre il Sud diventa la "zona libera" del **regime di Vichy**, guidato dal maresciallo **Philippe Pétain**, vecchio eroe della Prima guerra mondiale e ora capo di un governo collaborazionista filo-fascista.
+
+Pochi giorni prima della resa, il **18 giugno 1940**, il generale **Charles de Gaulle** lancia da Londra, via radio BBC, il celebre **appello alla resistenza**: nasce la **France Libre**, che continuerà la guerra a fianco degli Alleati. Sul piano militare, il **3 luglio 1940** la Royal Navy attacca a **Mers-el-Kébir**, in Algeria, la flotta francese ormeggiata per impedire che cada in mano tedesca: migliaia di marinai francesi muoiono. È un atto brutale, che chiude ogni residuo rapporto tra Vichy e Londra, ma assicura agli inglesi il controllo del Mediterraneo.
 
 ### La Battaglia d'Inghilterra
 
-- **Maggio 1940**: **Winston Churchill** sostituisce Chamberlain come premier britannico. Rifiuta ogni trattativa con Hitler. Celebre il discorso del 13 maggio: "*Non posso offrirvi che sangue, fatica, lacrime e sudore*".
-- Hitler progetta lo sbarco in Inghilterra (**Operazione Leone Marino**, *Seelöwe*); per realizzarlo, deve prima conquistare il dominio dei cieli.
-- **Battaglia d'Inghilterra** (luglio-ottobre 1940): la **Luftwaffe** bombarda l'Inghilterra (**Blitz** di Londra). La **RAF** (Royal Air Force) resiste grazie ai radar e ai caccia Spitfire e Hurricane. È la **prima sconfitta** strategica di Hitler.
+Caduta la Francia, la Germania resta padrona dell'Europa continentale: l'unica grande potenza ancora in guerra a Ovest è la Gran Bretagna. Nel **maggio 1940 Winston Churchill** sostituisce Chamberlain alla guida del governo britannico e rifiuta categoricamente ogni trattativa con Hitler. Il suo primo discorso ai Comuni, il 13 maggio, è rimasto celebre: "*Non posso offrirvi che sangue, fatica, lacrime e sudore*".
+
+Hitler progetta allora un'invasione anfibia dell'isola, l'**Operazione Leone Marino** (*Seelöwe*); per riuscire, però, ha bisogno di conquistare prima il **dominio dei cieli**. Tra **luglio e ottobre 1940** si combatte così la **Battaglia d'Inghilterra**, la prima grande battaglia aerea della storia. La **Luftwaffe** bombarda sistematicamente porti, aeroporti e poi la stessa **Londra** (il cosiddetto **Blitz**), ma la **RAF** (Royal Air Force), pur in netta inferiorità numerica, resiste grazie a una rete moderna di **radar** e ai caccia **Spitfire e Hurricane**. Hitler è costretto a rimandare e poi ad annullare lo sbarco: è la **prima sconfitta strategica** del Reich.
 
 ---
 
@@ -232,10 +231,11 @@ Il 1941 allarga definitivamente il conflitto: la Germania attacca l'URSS e il Gi
 
 ### Operazione Barbarossa: l'attacco all'URSS
 
-- **22 giugno 1941**: la Germania attacca l'**URSS** (**Operazione Barbarossa**, dal nome dell'imperatore medievale Federico Barbarossa). Il patto di non aggressione del 1939 era solo tattico: l'espansione verso est (**Lebensraum**) era da sempre un obiettivo ideologico nazista.
-- L'URSS è impreparata: Stalin aveva fatto giustiziare i suoi migliori generali nelle purghe del 1937-38; non ha creduto agli avvertimenti dei servizi segreti.
-- **Avanzata fulminea**: in tre mesi i tedeschi occupano un terzo della produzione di grano sovietica, metà del carbone e dell'acciaio. Penetrano fino alle porte di **Leningrado** (assedio dal settembre 1941, durerà 872 giorni e farà oltre 1 milione di morti) e di **Mosca**.
-- È una **guerra di sterminio**: gli **Einsatzgruppen** (squadre di sterminio delle SS) seguono le truppe e massacrano ebrei e commissari politici sovietici. **Massacro di Babi Yar** (Kiev, 29-30 settembre 1941): oltre 33.000 ebrei uccisi in due giorni.
+Il **22 giugno 1941** la Germania attacca l'**URSS** scatenando l'**Operazione Barbarossa**, dal nome dell'imperatore medievale Federico Barbarossa. Il patto di non aggressione firmato con Stalin nel 1939 era stato sin dall'inizio solo tattico: per Hitler la conquista dello **spazio vitale (Lebensraum)** a Est, ai danni dei popoli slavi e contro il "bolscevismo giudaico", era un obiettivo ideologico irrinunciabile.
+
+L'URSS arriva impreparata all'attacco. Stalin aveva **decapitato il proprio esercito** nelle grandi purghe del 1937-38, eliminando o deportando gran parte dell'alto comando, e fino all'ultimo si era rifiutato di credere agli avvertimenti dei propri servizi segreti. L'avanzata tedesca è **fulminea**: in tre mesi vengono occupati un terzo della produzione di grano sovietica e metà del carbone e dell'acciaio. La Wehrmacht arriva alle porte di **Leningrado** — dove inizia un assedio di **872 giorni** che farà oltre un milione di morti — e di **Mosca**.
+
+Sin dall'inizio, però, sul fronte orientale non è una guerra come le altre: è una vera e propria **guerra di sterminio**. Al seguito delle truppe operano gli **Einsatzgruppen**, squadre mobili delle SS incaricate di **fucilare ebrei e commissari politici sovietici** nei territori occupati. Il **massacro di Babi Yar**, vicino a Kiev (29-30 settembre 1941), in cui oltre 33.000 ebrei vengono uccisi in due giorni, diventa il simbolo di questa nuova dimensione della guerra: la guerra ideologica si confonde definitivamente con il genocidio.
 
 ### La resistenza sovietica
 
@@ -248,15 +248,13 @@ Il fallimento della guerra lampo in URSS è decisivo: la Germania viene trascina
 
 ### L'entrata in guerra degli Stati Uniti
 
-L'opinione pubblica americana è isolazionista, ma Roosevelt (rieletto nel novembre 1940) sostiene gli alleati:
+L'opinione pubblica americana è ancora largamente isolazionista, ma Roosevelt, rieletto nel novembre 1940 per il suo terzo mandato, lavora per portare gli USA al fianco degli Alleati senza scatenare un'opposizione interna troppo forte.
 
-- **Marzo 1941**: **Lend-Lease Act** (Legge "Affitti e Prestiti"): gli USA possono fornire materiali bellici, viveri, navi a "qualunque paese la cui difesa sia ritenuta vitale per gli Stati Uniti" — in pratica Gran Bretagna, URSS, Cina.
-- **14 agosto 1941**: **Carta Atlantica**, firmata da **Roosevelt e Churchill** al largo di Terranova. Documento che fissa i principi del dopoguerra: autodeterminazione dei popoli, libertà dei mari, accesso alle risorse, rinuncia all'aggressione. Ispirata ai 14 punti di Wilson, anticipa l'ONU.
-- **7 dicembre 1941**: il Giappone, alleato dell'Asse, attacca a sorpresa la flotta americana a **Pearl Harbor** (Hawaii). Affonda 8 navi da battaglia, distrugge 188 aerei, uccide oltre 2.400 americani. L'obiettivo giapponese è eliminare la flotta USA del Pacifico per espandersi senza ostacoli verso le risorse del sud-est asiatico. L'espansione viene giustificata ideologicamente con la **Sfera di Co-prosperità della Grande Asia Orientale** (*Daitōa Kyōeiken*): un blocco economico-politico guidato da Tokyo che dovrebbe "liberare" l'Asia dal colonialismo europeo — di fatto sostituendo i vecchi padroni con uno nuovo.
-- **8 dicembre 1941**: USA e Gran Bretagna **dichiarano guerra al Giappone**.
-- **11 dicembre 1941**: **Germania e Italia dichiarano guerra agli USA** (in adempimento al patto tripartito Berlino-Roma-Tokyo del 1940). Roosevelt ha così le mani libere per impegnarsi sul fronte europeo.
+Il primo passo decisivo è il **Lend-Lease Act** del **marzo 1941** (legge "Affitti e Prestiti"): gli Stati Uniti possono fornire materiali bellici, viveri e navi a "qualunque paese la cui difesa sia ritenuta vitale per gli Stati Uniti" — in pratica Gran Bretagna, URSS e Cina. È la fine dell'isolazionismo economico: l'America diventa "**arsenale delle democrazie**" senza ancora entrare in guerra. Il **14 agosto 1941**, su una nave al largo di Terranova, Roosevelt e Churchill firmano la **Carta Atlantica**, che fissa i principi del dopoguerra (autodeterminazione dei popoli, libertà dei mari, accesso alle risorse, rinuncia all'aggressione). Ispirata ai 14 punti di Wilson, anticipa quello che diventerà lo spirito dell'ONU.
 
-La guerra è ora **veramente mondiale**.
+La svolta arriva il **7 dicembre 1941**, quando il **Giappone** — alleato dell'Asse — attacca a sorpresa la flotta americana a **Pearl Harbor**, alle Hawaii. In poche ore vengono affondate 8 navi da battaglia, distrutti 188 aerei, uccisi oltre 2.400 americani. L'obiettivo strategico giapponese è eliminare la flotta statunitense del Pacifico per espandersi liberamente verso le risorse del sud-est asiatico (petrolio, gomma, materie prime). Sul piano ideologico, Tokyo presenta la propria espansione attraverso la **Sfera di Co-prosperità della Grande Asia Orientale** (*Daitōa Kyōeiken*): un blocco economico-politico che dovrebbe "liberare" l'Asia dal colonialismo europeo, sostituendo però i vecchi padroni con uno nuovo.
+
+L'effetto è immediato: l'**8 dicembre 1941** USA e Gran Bretagna dichiarano guerra al Giappone; il **11 dicembre** Germania e Italia dichiarano a loro volta guerra agli Stati Uniti, in adempimento al patto tripartito Berlino-Roma-Tokyo del 1940. Roosevelt ha così le mani libere per impegnarsi anche sul fronte europeo, e la guerra diventa **veramente mondiale**.
 
 ### Il Patto delle Nazioni Unite (1° gennaio 1942)
 
@@ -275,8 +273,9 @@ Con l'invasione dell'URSS (Operazione Barbarossa) la persecuzione nazista degli 
 
 ### Dalle fucilazioni allo sterminio industriale
 
-- **Einsatzgruppen**: squadre mobili di sterminio delle SS al seguito della Wehrmacht; fucilano in massa ebrei e commissari politici nei territori occupati. **Babi Yar (Kiev, 29-30 settembre 1941)**: 33.771 ebrei fucilati in due giorni.
-- I metodi sono lenti, traumatizzanti per i carnefici e poco "efficienti": i nazisti cercano una soluzione più sistematica.
+La prima fase dello sterminio è opera degli **Einsatzgruppen**, squadre mobili delle SS al seguito della Wehrmacht: nei territori sovietici occupati radunano gli ebrei delle città, li portano nei boschi o in fosse comuni e li **fucilano a migliaia**. L'episodio più noto è il massacro di **Babi Yar**, alle porte di Kiev (29-30 settembre 1941), dove vengono uccisi **33.771 ebrei in due giorni**.
+
+Questo metodo, però, ha tre problemi che mettono in difficoltà il regime: è **lento** rispetto al numero di vittime previste, è **traumatizzante per i carnefici stessi** (molti soldati cedono psicologicamente) ed è **visibile**, perché lascia tracce davanti a centinaia di testimoni. I nazisti cercano allora una soluzione più "efficiente" e "discreta": è da qui che nasce l'idea dei campi di sterminio con camere a gas.
 
 ### La Conferenza di Wannsee (20 gennaio 1942)
 
@@ -322,16 +321,11 @@ In Africa settentrionale, dopo lunghi scontri, il generale britannico **Bernard 
 
 ### Stalingrado (ottobre 1942 - febbraio 1943)
 
-È il punto di svolta sul fronte orientale:
+Sul fronte orientale il punto di svolta è la battaglia di **Stalingrado** (oggi Volgograd), sul fiume Volga. Hitler vuole conquistare la città per due ragioni che si intrecciano: una **strategica** — controllare il Volga e aprirsi la strada verso il Caucaso ricco di petrolio — e una **simbolica**, perché la città porta il nome di Stalin e cadere significherebbe umiliarlo pubblicamente.
 
-- Hitler vuole conquistare **Stalingrado** (oggi Volgograd) sul Volga, sia per ragioni strategiche (controllo del fiume e accesso al Caucaso petrolifero) sia simboliche (porta il nome di Stalin).
-- I tedeschi della **VI armata** del generale **Paulus** entrano in città nel settembre 1942.
-- I sovietici resistono casa per casa in una battaglia urbana terribile.
-- **19 novembre 1942**: i sovietici contrattaccano (Operazione **Urano**) e accerchiano la VI armata.
-- Hitler vieta la ritirata.
-- **2 febbraio 1943**: Paulus si arrende con i resti della sua armata. Oltre **800.000 morti** complessivi tra i due eserciti.
+Nel settembre 1942 la **VI armata** del generale **Paulus** entra in città, ma trova una resistenza casa per casa, strada per strada: i sovietici trasformano ogni edificio in una piccola fortezza, in una delle battaglie urbane più sanguinose della storia. Il **19 novembre 1942** l'Armata Rossa lancia la grande controffensiva (**Operazione Urano**) e in pochi giorni accerchia completamente la VI armata tedesca dentro la città. Hitler vieta la ritirata, ordinando ai soldati di combattere fino all'ultimo. Il **2 febbraio 1943** Paulus si arrende con i resti del suo esercito: complessivamente la battaglia provoca **oltre 800.000 morti** tra i due fronti.
 
-Stalingrado è la **prima grande sconfitta della Wehrmacht**: da questo momento i tedeschi sono in difensiva su tutti i fronti.
+Stalingrado è la **prima grande sconfitta della Wehrmacht** dall'inizio della guerra: da questo momento i tedeschi sono in difensiva su tutti i fronti, e il mito della loro invincibilità è definitivamente infranto.
 
 ### La Battaglia dell'Atlantico
 
@@ -384,10 +378,9 @@ Il governo Badoglio mantiene formalmente l'alleanza con la Germania ("la guerra 
 
 L'armistizio dovrebbe segnare l'uscita dell'Italia dalla guerra fascista, ma viene gestito in modo confuso. Per questo apre una fase ancora più drammatica: occupazione tedesca, RSI e Resistenza.
 
-- **3 settembre 1943**: armistizio di **Cassibile** firmato segretamente in Sicilia tra Italia e alleati.
-- **8 settembre 1943**: l'**armistizio è reso pubblico** dal generale Eisenhower; Badoglio è costretto a confermarlo via radio. La popolazione lo accoglie con illusione di pace.
-- **Notte 8-9 settembre 1943**: il **re e Badoglio fuggono da Roma a Brindisi**, già in mano agli alleati. L'esercito italiano è abbandonato senza ordini ("sbando dell'8 settembre"): i soldati sono catturati dai tedeschi, fucilati o deportati nei campi di lavoro come **IMI** (Internati Militari Italiani, oltre 600.000).
-- **Massacri di soldati italiani** in Grecia (eccidio della Divisione Acqui a **Cefalonia**, 22-24 settembre: oltre 5.000 fucilati dai tedeschi).
+Il **3 settembre 1943** il governo italiano firma segretamente in Sicilia l'**armistizio di Cassibile** con gli alleati. Per ragioni strategiche americane, però, l'accordo resta nascosto fino al **8 settembre 1943**, quando il generale Eisenhower lo annuncia via radio e Badoglio è costretto a confermarlo, dopo un disperato tentativo di far rinviare l'annuncio. La popolazione lo accoglie con un'illusoria sensazione di pace.
+
+In realtà la situazione precipita subito. Nella **notte tra l'8 e il 9 settembre** il re e Badoglio **fuggono da Roma a Brindisi**, già controllata dagli alleati, abbandonando l'esercito senza ordini chiari. Lo "**sbando dell'8 settembre**" lascia centinaia di migliaia di soldati italiani allo sbaraglio: chi non riesce a fuggire o a unirsi alla Resistenza viene catturato dai tedeschi e deportato nei campi di lavoro del Reich come **IMI (Internati Militari Italiani)** — oltre **600.000 uomini**, di cui circa 50.000 moriranno per fame, freddo e maltrattamenti. Il caso più tragico è quello di **Cefalonia** (22-24 settembre 1943), dove la **Divisione Acqui**, dopo aver rifiutato di consegnare le armi ai tedeschi, è massacrata: oltre **5.000 soldati italiani fucilati**.
 
 ### La Repubblica Sociale Italiana
 
@@ -417,42 +410,29 @@ La campagna d'Italia è lunga, lenta e costosa: oltre 300.000 vittime alleate e 
 
 ### Lo sbarco in Normandia (D-Day, 6 giugno 1944)
 
-- **6 giugno 1944**: gli Alleati guidati dal generale **Dwight D. Eisenhower** sbarcano in **Normandia** (operazione **Overlord**). È il più grande sbarco anfibio della storia: ~156.000 uomini il primo giorno, su cinque spiagge (Utah, Omaha, Gold, Juno, Sword).
-- Apertura del **secondo fronte** in Europa occidentale, atteso da tempo da Stalin.
-- **25 agosto 1944**: liberazione di **Parigi**. **De Gaulle** entra in città alla testa delle forze francesi libere.
+Il **6 giugno 1944**, il celebre **D-Day**, gli Alleati guidati dal generale **Dwight D. Eisenhower** sbarcano sulle coste della **Normandia** dando il via all'**operazione Overlord**: è il più grande sbarco anfibio della storia, con circa **156.000 uomini** che mettono piede su cinque spiagge (in codice Utah, Omaha, Gold, Juno e Sword) il primo giorno. L'operazione apre finalmente il **secondo fronte in Europa occidentale**, atteso da tempo da Stalin per alleggerire la pressione sul fronte orientale. Le perdite degli Alleati sono pesantissime, soprattutto a Omaha, ma il successo è strategicamente decisivo: dopo settimane di combattimenti in Normandia, le truppe alleate dilagano in Francia e il **25 agosto 1944 liberano Parigi**, dove **De Gaulle** entra in città alla testa delle forze francesi libere.
 
 ### L'avanzata sovietica
 
-Dopo Stalingrado, l'Armata Rossa avanza inarrestabile verso ovest:
-- **Estate 1944**: operazione **Bagration**, distrugge il Gruppo d'armate Centro tedesco in Bielorussia.
-- **Autunno 1944 - inverno 1945**: i sovietici occupano Polonia, Romania, Bulgaria, Ungheria.
-- **Aprile 1945**: battaglia di **Berlino**. La città è circondata e bombardata.
+A Est, dopo la vittoria di Stalingrado, l'**Armata Rossa** avanza inarrestabile verso ovest. Nell'**estate 1944** scatta l'**operazione Bagration**, che distrugge il Gruppo d'armate Centro tedesco in Bielorussia: è una delle più grandi disfatte militari della Wehrmacht. Tra l'autunno 1944 e l'inverno 1945 i sovietici occupano **Polonia, Romania, Bulgaria e Ungheria**, di fatto preparando l'assetto futuro dell'Europa orientale sotto influenza sovietica. Nell'**aprile 1945** comincia la battaglia di **Berlino**: la città è circondata, bombardata casa per casa, ridotta a un cumulo di rovine.
 
 ### La fine del Reich
 
-- **25 aprile 1945**: insurrezione generale del Nord Italia; truppe USA e URSS si incontrano sull'**Elba** a Torgau.
-- **28 aprile 1945**: Mussolini è catturato e fucilato dai partigiani a Giulino di Mezzegra.
-- **30 aprile 1945**: **suicidio di Hitler** nel bunker della Cancelleria a Berlino.
-- **7-8 maggio 1945**: la Germania firma la **resa incondizionata** a Reims e a Berlino. **V-E Day** (Victory in Europe Day).
+Aprile 1945 segna la fine simultanea del fascismo italiano e del Reich tedesco. Il **25 aprile** scoppia l'**insurrezione generale del Nord Italia** e le truppe americane e sovietiche si incontrano sull'**Elba** a Torgau, segnando il punto di congiunzione fisico dei due fronti. Il **28 aprile** Mussolini, catturato dai partigiani mentre tenta di fuggire verso la Svizzera, viene fucilato a **Giulino di Mezzegra**. Due giorni dopo, il **30 aprile 1945**, Hitler si **suicida nel bunker della Cancelleria** di Berlino assediata. Il **7-8 maggio 1945** la Germania firma la **resa incondizionata** prima a Reims e poi a Berlino davanti ai sovietici: è il **V-E Day** (Victory in Europe Day), la vittoria in Europa.
 
 ---
 
 ## 11. Le Conferenze degli Alleati e Yalta
 
-I "Tre Grandi" (Roosevelt/Truman, Churchill, Stalin) si incontrano più volte per coordinare la guerra e disegnare il dopoguerra:
+I "Tre Grandi" — Roosevelt (poi Truman), Churchill (poi Attlee) e Stalin — si incontrano più volte tra il 1943 e il 1945 per coordinare la guerra e disegnare l'assetto del mondo dopo la sconfitta dell'Asse. Ogni conferenza segna un passaggio diverso del progressivo equilibrio di forze tra USA, URSS e Gran Bretagna.
 
-- **Conferenza di Casablanca (14-24 gennaio 1943)** — Marocco. Vi partecipano **Roosevelt, Churchill** e **De Gaulle**; Stalin è assente (impegnato a Stalingrado). Tre decisioni capitali:
-  - Richiesta di **resa incondizionata** dell'Asse — nessuna pace negoziata, solo l'annientamento dei regimi nazifascisti.
-  - Priorità al teatro europeo rispetto al Pacifico.
-  - Invasione del "**ventre molle dell'Asse**" (espressione di Churchill): l'Italia. Da qui nasce l'operazione Husky (sbarco in Sicilia, luglio 1943).
-- **Conferenza di Teheran (28 nov. - 1 dic. 1943)**: primo incontro dei Tre Grandi. Decisione del secondo fronte in Francia (Overlord).
-- **Conferenza di Yalta (4-11 febbraio 1945)** — in Crimea, decisiva. Stabilisce:
-  - **Divisione della Germania** in 4 zone d'occupazione (USA, URSS, UK, Francia).
-  - **Confini europei** post-bellici: l'URSS mantiene il controllo dei territori liberati a Est.
-  - **Polonia**: confini spostati a Ovest, governo "di unità nazionale" (di fatto sovietico).
-  - **ONU**: organizzazione delle Nazioni Unite con 5 membri permanenti del Consiglio di Sicurezza con diritto di veto (USA, URSS, UK, Cina, Francia).
-  - Stalin promette **elezioni libere** in Polonia — promessa non mantenuta: è l'origine della futura **Cortina di Ferro**.
-- **Conferenza di Potsdam (17 luglio - 2 agosto 1945)**: Truman (FDR morto il 12 aprile), Attlee (Churchill perde le elezioni durante la conferenza), Stalin. Confermata l'occupazione della Germania; ultimatum al Giappone.
+Il primo incontro importante è la **Conferenza di Casablanca** (14-24 gennaio 1943), in Marocco, con **Roosevelt, Churchill e De Gaulle** (Stalin è assente perché impegnato a Stalingrado). Da qui escono tre decisioni capitali: la richiesta di **resa incondizionata** dell'Asse — nessuna pace negoziata, solo l'annientamento dei regimi nazifascisti —, la priorità al teatro **europeo rispetto al Pacifico** ("Germany first") e la scelta di colpire il "**ventre molle dell'Asse**", cioè l'Italia, da cui nascerà lo sbarco in Sicilia di luglio.
+
+Alla **Conferenza di Teheran** (novembre-dicembre 1943) i Tre Grandi si incontrano per la prima volta tutti insieme. Stalin ottiene l'impegno formale all'apertura del **secondo fronte in Francia** entro il 1944 (operazione Overlord), in cambio della propria promessa di entrare in guerra contro il Giappone dopo la sconfitta della Germania.
+
+La conferenza decisiva per il dopoguerra è quella di **Yalta** (4-11 febbraio 1945), in Crimea, quando ormai la Germania sta per crollare. Si stabilisce la **divisione della Germania in quattro zone d'occupazione** (USA, URSS, Gran Bretagna, Francia), si definiscono i **confini europei**: l'URSS mantiene il controllo dei territori liberati a Est, la **Polonia** vede i propri confini spostati a Ovest e riceve un governo "di unità nazionale" di fatto sovietico, mentre Stalin promette **elezioni libere** che però non si terranno. Si stabilisce inoltre la nascita dell'**ONU**, con un Consiglio di Sicurezza di **5 membri permanenti con diritto di veto** (USA, URSS, UK, Cina, Francia). Yalta è insieme l'apice della cooperazione tra Alleati e il primo passo verso la **Cortina di Ferro**.
+
+L'ultima è la **Conferenza di Potsdam** (luglio-agosto 1945), già a guerra in Europa finita: Truman ha sostituito Roosevelt (morto il 12 aprile), Attlee sostituisce Churchill durante la conferenza stessa (perché i conservatori perdono le elezioni britanniche), solo Stalin è ancora al suo posto. Si conferma l'occupazione della Germania, si concorda l'espulsione dei tedeschi dall'Europa orientale e si lancia un **ultimatum al Giappone**: resa incondizionata o "distruzione rapida e totale".
 
 ---
 
@@ -460,22 +440,15 @@ I "Tre Grandi" (Roosevelt/Truman, Churchill, Stalin) si incontrano più volte pe
 
 ### Il fronte del Pacifico
 
-Dopo Midway (giugno 1942) gli americani riconquistano isola per isola (tattica dell'**island hopping**):
-- **Iwo Jima** (febbraio-marzo 1945): battaglia sanguinosa, simbolo della guerra nel Pacifico (la famosa foto della bandiera USA piantata sul Monte Suribachi).
-- **Okinawa** (aprile-giugno 1945): ultima grande battaglia, oltre 200.000 morti.
-- I giapponesi resistono fanaticamente, anche con i **kamikaze** (piloti suicidi).
+Mentre in Europa la guerra si chiude, sul Pacifico continua. Dopo la vittoria di **Midway** (giugno 1942), gli americani riconquistano lentamente il dominio dell'oceano con la tattica dell'**island hopping**: invece di attaccare ogni isola tenuta dai giapponesi, ne saltano alcune e occupano quelle strategicamente più importanti per avvicinarsi al Giappone. Le battaglie più sanguinose della fase finale sono quelle di **Iwo Jima** (febbraio-marzo 1945) — diventata simbolo della guerra nel Pacifico grazie alla celebre foto della bandiera americana piantata sul Monte Suribachi — e di **Okinawa** (aprile-giugno 1945), con oltre **200.000 morti**. I giapponesi resistono fanaticamente, anche grazie ai **kamikaze**, piloti suicidi che si schiantano con i loro aerei contro le navi nemiche.
 
 ### Hiroshima e Nagasaki
 
-Truman teme che un'invasione del Giappone costerebbe centinaia di migliaia di vite americane. Decide di usare la nuova **arma atomica** sviluppata nel **Progetto Manhattan**:
+Davanti a una resistenza così tenace, il presidente **Truman** (succeduto a Roosevelt) teme che un'invasione del Giappone costerebbe centinaia di migliaia di vite americane. Decide quindi di usare la nuova **arma atomica** sviluppata in segreto nel **Progetto Manhattan**, da poco testata con successo nel deserto del New Mexico.
 
-- **6 agosto 1945**: il B-29 *Enola Gay* sgancia su **Hiroshima** la bomba all'uranio "**Little Boy**". ~140.000 morti entro fine 1945.
-- **8 agosto 1945**: l'**URSS dichiara guerra al Giappone** (come promesso a Yalta) e invade la Manciuria.
-- **9 agosto 1945**: bomba al plutonio "**Fat Man**" su **Nagasaki**. ~70.000 morti.
-- **15 agosto 1945**: l'imperatore **Hirohito** annuncia alla radio la resa.
-- **2 settembre 1945**: resa formale firmata sull'USS Missouri nella baia di Tokyo. **Fine della Seconda guerra mondiale.**
+Il **6 agosto 1945** il bombardiere B-29 *Enola Gay* sgancia su **Hiroshima** la bomba all'uranio "**Little Boy**": la città viene distrutta in pochi secondi, e si stima che entro fine 1945 le vittime — per esplosione, ustioni e radiazioni — siano circa **140.000**. Due giorni dopo, l'**8 agosto**, l'**URSS dichiara guerra al Giappone** come promesso a Yalta e invade la Manciuria. Il **9 agosto** una seconda bomba, al plutonio, "**Fat Man**", viene sganciata su **Nagasaki**, provocando altre **70.000 vittime**.
 
-Le bombe restano il **primo e ultimo uso militare di armi nucleari** nella storia.
+Lo shock è troppo grande: il **15 agosto 1945** l'imperatore **Hirohito** annuncia per radio la resa — è la prima volta che parla pubblicamente al suo popolo —, e il **2 settembre 1945** la resa formale viene firmata a bordo della corazzata americana **USS Missouri**, nella baia di Tokyo. È la **fine della Seconda guerra mondiale**. Le bombe atomiche di Hiroshima e Nagasaki restano fino a oggi il **primo e unico uso militare di armi nucleari** nella storia.
 
 ---
 
