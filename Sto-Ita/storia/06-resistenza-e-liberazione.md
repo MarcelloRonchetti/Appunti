@@ -116,7 +116,7 @@ Al Nord opera il **CLNAI (CLN Alta Italia)**, con sede a Milano, presieduto da *
 - **Staffette**: trasportano armi, viveri, ordini in bicicletta, sfruttando la minore sospettabilità.
 - **Combattenti**: alcune unità (es. la "Stella Rossa" di **Mario Musolesi**, le brigate emiliane) ammettevano donne armate.
 - **Gruppi di Difesa della Donna** (1943): organizzazione di massa antifascista promossa da PCI, PSIUP, PdA. Sosteneva i partigiani con cibo, asili, propaganda.
-- **Medaglia d'oro al valor militare** alla Resistenza: 19 donne, tra cui **Irma Bandiera** (torturata e uccisa a Bologna), **Tina Anselmi** (futura ministra DC, prima donna ministro in Italia, 1976), **Norma Cossetto** (vittima delle foibe 1943).
+- **Figure femminili da ricordare**: **Irma Bandiera** (partigiana torturata e uccisa a Bologna, medaglia d'oro al valor militare) e **Tina Anselmi** (staffetta partigiana, poi prima donna ministra in Italia nel 1976).
 
 ---
 

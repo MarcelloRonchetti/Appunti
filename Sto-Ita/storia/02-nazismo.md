@@ -155,7 +155,7 @@ A differenza dell'Italia (dove Mussolini doveva fare i conti con monarchia e Chi
 - **Ministero della Propaganda** (1933), guidato da **Joseph Goebbels**: controlla stampa, radio, cinema, arte.
 - **Gioventù Hitleriana (Hitlerjugend)** per i ragazzi 14-18; **BDM (Bund Deutscher Mädel)** per le ragazze. Indottrinamento dalla nascita.
 - **Fronte del Lavoro** sostituisce i sindacati.
-- **Kraft durch Freude** ("Forza attraverso la gioia"): organizzazione del tempo libero, equivalente al Dopolavoro fascista. Vacanze, sport, cinema; motto **"Arbeit macht frei"** ("Il lavoro rende liberi") sui campi.
+- **Kraft durch Freude** ("Forza attraverso la gioia"): organizzazione del tempo libero, equivalente al Dopolavoro fascista. Vacanze, sport, cinema: anche il tempo libero diventa strumento di consenso.
 
 ### Il culto del Führer
 
@@ -191,7 +191,7 @@ Persecuzione progressiva:
    - **Legge sulla cittadinanza del Reich**: solo i cittadini "di sangue tedesco" sono cittadini a pieno titolo. Gli ebrei diventano "sudditi".
 3. **Notte dei cristalli (Kristallnacht, 9-10 novembre 1938)**: pogrom organizzato dal regime in tutta la Germania (e in Austria, dopo l'Anschluss). Devastate sinagoghe, distrutti negozi ebrei (i vetri infranti danno il nome alla notte), uccisi circa 100 ebrei, deportate decine di migliaia nei campi. Agli ebrei viene imposta una "tassa di espiazione".
 4. **1941**: obbligo di portare la **stella gialla**.
-5. **Conferenza di Wannsee (gennaio 1942)**: si decide la "**soluzione finale**" (Endlösung): lo sterminio sistematico degli ebrei d'Europa nei campi di sterminio (Auschwitz-Birkenau, Treblinka, Sobibor, Belzec, Chelmno, Majdanek). È la **Shoah**.
+5. **Conferenza di Wannsee (gennaio 1942)**: i vertici nazisti coordinano la "**soluzione finale**" (Endlösung), cioè lo sterminio sistematico degli ebrei d'Europa, già avviato con le fucilazioni di massa a Est e poi realizzato nei campi di sterminio (Auschwitz-Birkenau, Treblinka, Sobibor, Belzec, Chelmno, Majdanek). È la **Shoah**.
 
 ---
 
