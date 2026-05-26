@@ -1250,12 +1250,9 @@ body.is-storia #btn-timeline {
   display: inline-flex;
 }
 
-body.is-storia #btn-timeline {
-  --timeline-label: "Apri mappa temporale di storia";
-}
-
 /* ===== Storia timeline variant: full text, no truncation ===== */
-.timeline-board--storia {
+.timeline-board--storia,
+.timeline-overlay__body .timeline-board--storia {
   min-width: 2480px;
   grid-template-columns: repeat(17, minmax(138px, 1fr));
   grid-auto-rows: minmax(38px, auto);

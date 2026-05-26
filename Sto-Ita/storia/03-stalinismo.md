@@ -5,6 +5,8 @@ tags:
 
 # Lo Stalinismo (1924-1939)
 
+Lo stalinismo nasce dopo la Rivoluzione russa e la guerra civile, quando l'URSS deve scegliere come costruire il socialismo in un paese ancora agricolo e isolato. La successione a Lenin diventa quindi insieme lotta personale per il potere e scelta di modello economico-politico: pianificazione forzata, controllo del partito e repressione.
+
 ## 1. L'ascesa di Stalin
 
 **Lenin muore il 21 gennaio 1924**, dopo una serie di ictus che lo avevano già reso inabile dal 1922.

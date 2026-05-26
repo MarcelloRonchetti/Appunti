@@ -5,6 +5,8 @@ tags:
 
 # Verso la Seconda Guerra Mondiale e la guerra (1929-1945)
 
+Questo capitolo mette insieme due piani che vanno tenuti collegati: da una parte la crisi dell'ordine internazionale nato dopo il 1919, dall'altra l'aggressività di Germania, Italia e Giappone. La guerra scoppia quando le potenze revisioniste capiscono che la Società delle Nazioni e le democrazie occidentali non riescono più a fermarle.
+
 ## Parte I — Verso la guerra (1929-1939)
 
 ## 1. La fragilità dell'ordine post-bellico
@@ -116,6 +118,8 @@ Hitler ha così le **spalle libere a Est** per attaccare la Polonia.
 ---
 
 ## Parte II — La guerra (1939-1945)
+
+Fin qui si sono viste le premesse diplomatiche e ideologiche; dal 1939 quelle tensioni diventano guerra aperta. La Germania punta sulla guerra lampo per vincere prima che gli avversari possano mobilitare tutte le loro risorse.
 
 ## 4. L'inizio del conflitto (1939)
 

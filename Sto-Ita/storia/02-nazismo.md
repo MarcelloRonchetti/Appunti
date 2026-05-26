@@ -5,6 +5,8 @@ tags:
 
 # Il Nazismo: dalla Repubblica di Weimar al Terzo Reich
 
+Per capire il nazismo bisogna partire dalla crisi tedesca dopo la Prima guerra mondiale: sconfitta militare, trattato di Versailles, paura della rivoluzione comunista e debolezza della nuova democrazia. Hitler non nasce "dal nulla": usa queste fratture, poi la crisi del 1929, per trasformare un partito estremista in regime totalitario.
+
 ## 1. La Repubblica di Weimar (1918-1933)
 
 ### La nascita della Repubblica
